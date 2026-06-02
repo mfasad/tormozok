@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Все разделы — ТормозОК</title>
+    <meta name="description" content="Все тематические разделы сайта ТормозОК. Удобная навигация по категориям.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tormozok.vercel.app/categories.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    <style>
+        .categories-hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #f8fafc 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0 40px; text-align: center;
+        }
+        .categories-hero h1 { font-size: 2rem; color: var(--text); margin-bottom: 8px; }
+        .categories-hero p { color: var(--text-secondary); font-size: 1.1rem; }
+        .cat-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px; padding: 40px 0 60px;
+        }
+        .cat-page-card {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 24px; border-radius: 16px;
+            background: var(--card-bg, #fff);
+            border: 1px solid var(--border);
+            text-decoration: none; color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cat-page-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        .cat-page-icon {
+            font-size: 2.4rem; flex-shrink: 0;
+            width: 56px; height: 56px; display: flex;
+            align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            border-radius: 14px;
+        }
+        .cat-page-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+        .cat-page-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 6px; }
+        .cat-page-count {
+            font-size: 0.82rem; font-weight: 600;
+            color: var(--primary); background: rgba(37,99,235,0.08);
+            padding: 3px 10px; border-radius: 20px; display: inline-block;
+        }
+        @media (max-width: 640px) {
+            .cat-page-grid { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 40px; }
+            .cat-page-card { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🛑</span>
+                <span>ТормозОК</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/diskovye-tormoza/" class="nav-link">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="nav-link">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="nav-link">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="nav-link">🌬️ Вакуумный усилитель</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/diskovye-tormoza/" class="dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="categories-hero">
+        <div class="container">
+            <h1>📂 Все разделы</h1>
+            <p>Удобная навигация по всем тематическим разделам</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="cat-page-grid">
+            <a href="/category/diskovye-tormoza/" class="cat-page-card">
+            <div class="cat-page-icon">💿</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Дисковые тормоза</div>
+                <div class="cat-page-desc">Выбор, замена и обслуживание передних и задних дисковых тормозов.</div>
+            </div>
+        </a>
+<a href="/category/barabannye-mekhanizmy/" class="cat-page-card">
+            <div class="cat-page-icon">🥁</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Барабанные механизмы</div>
+                <div class="cat-page-desc">Ремонт, регулировка и замена колодок в барабанных тормозных системах.</div>
+            </div>
+        </a>
+<a href="/category/tormoznaya-zhidkost/" class="cat-page-card">
+            <div class="cat-page-icon">💧</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Тормозная жидкость</div>
+                <div class="cat-page-desc">Виды жидкостей DOT, сроки замены и правила прокачки системы.</div>
+            </div>
+        </a>
+<a href="/category/vakuumnyj-usilitel/" class="cat-page-card">
+            <div class="cat-page-icon">🌬️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Вакуумный усилитель</div>
+                <div class="cat-page-desc">Диагностика неисправностей, замена и регулировка штока вакуумника.</div>
+            </div>
+        </a>
+<a href="/category/ruchnoj-tormoz/" class="cat-page-card">
+            <div class="cat-page-icon">🅿️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Ручной тормоз</div>
+                <div class="cat-page-desc">Настройка тросов, замена колодок стояночного тормоза и электронного ручника.</div>
+            </div>
+        </a>
+<a href="/category/supporty-i-porshni/" class="cat-page-card">
+            <div class="cat-page-icon">🔧</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Суппорты и поршни</div>
+                <div class="cat-page-desc">Ремкомплект суппортов, смазка направляющих и устранение закисания.</div>
+            </div>
+        </a>
+<a href="/category/tormoznye-trubki/" class="cat-page-card">
+            <div class="cat-page-icon">🔩</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Тормозные трубки</div>
+                <div class="cat-page-desc">Замена магистралей, развальцовка трубок и устранение течей.</div>
+            </div>
+        </a>
+<a href="/category/diagnostika-neispravnostej/" class="cat-page-card">
+            <div class="cat-page-icon">🔍</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Диагностика неисправностей</div>
+                <div class="cat-page-desc">Причины скрипа, вибрации, проваливания педали и биения руля.</div>
+            </div>
+        </a>
+<a href="/category/velosipednye-tormoza/" class="cat-page-card">
+            <div class="cat-page-icon">🚲</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Велосипедные тормоза</div>
+                <div class="cat-page-desc">Настройка гидравлики и механики, замена колодок и роторов на велосипеде.</div>
+            </div>
+        </a>
+<a href="/category/instrumenty-i-raskhodniki/" class="cat-page-card">
+            <div class="cat-page-icon">🛠️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Инструменты и расходники</div>
+                <div class="cat-page-desc">Обзоры станков для развальцовки, смазок, красок и приспособлений для прокачки.</div>
+            </div>
+        </a>
+<a href="/category/abs-i-elektronika/" class="cat-page-card">
+            <div class="cat-page-icon">⚡</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">ABS и электроника</div>
+                <div class="cat-page-desc">Принцип работы антиблокировочной системы, датчики и ошибки на панели.</div>
+            </div>
+        </a>
+<a href="/category/podbor-zapchastej/" class="cat-page-card">
+            <div class="cat-page-icon">📦</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Подбор запчастей</div>
+                <div class="cat-page-desc">Артикулы дисков, колодок и тросов для популярных моделей автомобилей.</div>
+            </div>
+        </a>
+<a href="/category/bezopasnost-i-normy/" class="cat-page-card">
+            <div class="cat-page-icon">📏</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Безопасность и нормы</div>
+                <div class="cat-page-desc">Допустимый износ деталей, длина тормозного пути и правила эксплуатации.</div>
+            </div>
+        </a>
+<a href="/category/drugoe/" class="cat-page-card">
+            <div class="cat-page-icon">📁</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Другое</div>
+                <div class="cat-page-desc">Прочие вопросы по тормозным системам спецтехники, самолетов и редкие случаи.</div>
+            </div>
+        </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🛑 ТормозОК</div>
+                    <p class="footer-about">Энциклопедия тормозных систем автомобилей и велосипедов с инструкциями по ремонту и подбору запчастей.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a></li>
+<li><a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a></li>
+<li><a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a></li>
+<li><a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a></li>
+<li><a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a></li>
+<li><a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

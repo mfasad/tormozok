@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип работы тормозов автомобиля: гидравлика, системы и безопасность — ТормозОК</title>
+    <meta name="description" content="Подробный разбор принципа работы тормозной системы автомобиля. Изучите гидравлику, вакуумный усилитель, ABS и типы тормозных механизмов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/printsip-raboty-tormozov-avtomobilya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы тормозов автомобиля: гидравлика, системы и безопасность">
+    <meta property="og:description" content="Подробный разбор принципа работы тормозной системы автомобиля. Изучите гидравлику, вакуумный усилитель, ABS и типы тормозных механизмов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/" class="pb-nav-active">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diskovye-tormoza/">Дисковые тормоза</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы тормозов автомобиля: гидравлика, системы и безопасность</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-и-гидравлическое-основное">Физика процесса и гидравлическое основное</a></li><li><a href="#усилие-и-его-трансформация-роль-вакуумного-усилителя">Усилие и его трансформация: роль вакуумного усилителя</a></li><li><a href="#рабочие-механизмы-дисковые-и-барабанные-системы">Рабочие механизмы: дисковые и барабанные системы</a></li><li><a href="#электронная-эра-abs-и-системы-стабилизации">Электронная эра: ABS и системы стабилизации</a></li><li><a href="#материалы-и-износ-колодки-диски-и-жидкость">Материалы и износ: колодки, диски и жидкость</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#faq-частые-вопросы-о-тормозной-системе">FAQ: Частые вопросы о тормозной системе</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ko/kogda-nuzhno-menyat-perednie-tormoznye-diski.html">Когда менять передние тормозные диски: признаки и сроки замены</a></li><li><a href="/articles/d/di/disk-tormoznoj-mtz-82-starogo-obraztsa.html">Тормозной диск МТЗ 82 старого образца: выбор, замена и диагностика</a></li><li><a href="/articles/c/ch/chem-obrabotat-tormoznye-diski-chtoby-ne-rzhaveli.html">Чем обработать тормозные диски от коррозии: способы и средства</a></li><li><a href="/articles/d/di/diski-tormoznye-lynx-otzyvy.html">Диски тормозные Lynx: отзывы, плюсы, минусы и выбор модели</a></li><li><a href="/articles/z/za/zamena-tormoznykh-diskov-reglament.html">Регламент замены тормозных дисков: сроки, признаки и нормы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы тормозов автомобиля: от педали до остановки</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-и-гидравлическое-основное">Физика процесса и гидравлическое основное</a></li><li><a href="#усилие-и-его-трансформация-роль-вакуумного-усилителя">Усилие и его трансформация: роль вакуумного усилителя</a></li><li><a href="#рабочие-механизмы-дисковые-и-барабанные-системы">Рабочие механизмы: дисковые и барабанные системы</a></li><li><a href="#электронная-эра-abs-и-системы-стабилизации">Электронная эра: ABS и системы стабилизации</a></li><li><a href="#материалы-и-износ-колодки-диски-и-жидкость">Материалы и износ: колодки, диски и жидкость</a></li><li><a href="#диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</a></li><li><a href="#faq-частые-вопросы-о-тормозной-системе">FAQ: Частые вопросы о тормозной системе</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Каждый раз, когда вы нажимаете на педаль тормоза, происходит сложный физико-механический процесс, который превращает кинетическую энергию движения в тепловую. Это действие кажется мгновенным, но за ним стоит слаженная работа множества узлов, от педали управления до дисков, контактирующих с дорогой. Понимание того, как именно функционирует <strong>тормозная система</strong>, критически важно не только для правильной эксплуатации автомобиля, но и для своевременного выявления неисправностей.</p>
+
+<p>Автомобильная инженерия превратила простую идею трения в высокотехнологичный комплекс безопасности. Если раньше водители полагались лишь на мускульную силу ног, то современные машины оснащены <em>вакуумными усилителями</em>, электронными блоками управления и антиблокировочными системами. Без этих компонентов остановка тяжелого транспортного средства на высокой скорости была бы практически невозможна без огромных усилий.</p>
+
+<h2 id="физика-процесса-и-гидравлическое-основное">Физика процесса и гидравлическое основное</h2>
+
+<p>В основе работы любой современной тормозной системы лежит фундаментальный закон физики, открытый Блезом Паскалем. Этот закон гласит, что давление, приложенное к жидкости в замкнутом сосуде, передается без изменений в каждую точку этой жидкости. Именно этот принцип позволяет водителю, приложив небольшое усилие к педали, создать колоссальное давление в узлах, которые останавливают колеса.</p>
+
+<p>Когда вы нажимаете на педаль, вы толкаете поршень в главном тормозном цилиндре. Он вытесняет <strong>тормозную жидкость</strong>, которая заполняет всю систему магистралей и шлангов. Жидкость является идеальной средой для передачи усилия, так как она практически несжимаема. В отличие от воздуха, который сжимается и гасит энергию, жидкость мгновенно передает вектор движения на рабочие механизмы.</p>
+
+<p>Важно учитывать, что давление распределяется равномерно по всей системе. Если вы нажали на педаль с усилием, создающим 10 атмосфер в главном цилиндре, то и в каждом колесном цилиндре (суппорте) будет ровно 10 атмосфер. Однако, так как площадь поршней на колесах значительно больше площади поршня педали, усилие на тормозных колодках многократно возрастает, обеспечивая необходимую силу торможения.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Любая утечка тормозной жидкости или попадание воздуха в систему нарушает принцип несжимаемости. Воздух сжимается под нагрузкой, что приводит к «проваливанию» педали и полной потере тормозного усилия.</p>
+</blockquote>
+
+<h2 id="усилие-и-его-трансформация-роль-вакуумного-усилителя">Усилие и его трансформация: роль вакуумного усилителя</h2>
+
+<p>Современный автомобиль весит более тонны, и преодолеть инерцию такого веса, используя только силу ног водителя, крайне сложно. Для решения этой задачи инженеры внедрили <strong>вакуумный усилитель тормозов</strong>. Этот узел находится между педалью и главным цилиндром и использует разрежение во впускном коллекторе двигателя (или от вакуумного насоса в дизелях) для создания дополнительной силы.</p>
+
+<p>Принцип работы довольно прост: с одной стороны мембраны усилителя находится вакуум, а с другой — нормальное атмосферное давление. Когда вы нажимаете на педаль, клапан открывает доступ воздуха в одну из камер, создавая разницу давлений. Эта разница давит на мембрану с огромной силой, толкая шток главного цилиндра. В результате, усилие ноги водителя умножается в несколько раз.</p>
+
+<p>Если двигатель заглушен, вакуум в усилителе сохраняется несколько нажатий, после чего эффективность торможения резко падает. Это защитная мера и индикатор неисправности. В случае остановки двигателя на ходу, водителю придется прикладывать значительно больше усилий для остановки машины, так как электроника и гидравлика останутся без усилителя.</p>
+
+<div class="pb-poll" id="poll-0837ad2a"><div class="pb-poll-question">📊 Какой тип тормозов установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только дисковые</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только барабанные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Спереди дисковые, сзади барабанные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="рабочие-механизмы-дисковые-и-барабанные-системы">Рабочие механизмы: дисковые и барабанные системы</h2>
+
+<p>Финальный этап передачи усилия происходит непосредственно в области колеса, где происходят превращения энергии. Наиболее распространенным вариантом в современном автомобилестроении являются <strong>дисковые тормоза</strong>. Они состоят из вращающегося диска, жестко закрепленного на ступице, и суппорта, который зажимает диск с двух сторон.</p>
+
+<p>Внутри суппорта находятся поршни, которые под давлением жидкости выдвигаются и прижимают <em>тормозные колодки</em> к поверхности диска. Трение между фрикционными накладками колодок и металлом диска замедляет вращение колеса. Дисковые системы обеспечивают лучшую теплоотдачу, что критично при частых и интенсивных торможениях, так как они меньше склонны к перегреву.</p>
+
+<p>Барабанные механизмы, хотя и считаются более устаревшими, все еще встречаются на задней оси бюджетных автомобилей и грузовиков. В них тормозные колодки находятся внутри вращающегося барабана. При нажатии на педаль разжимной механизм расправляет колодки наружу, прижимая их к внутренней стенке барабана. Их главное преимущество — защита от грязи и дешевизна, но они хуже отводят тепло и склонны к заклиниванию.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка состояния тормозной системы</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр колодок</span></label><label class="check-item"><input type="checkbox"><span>Измерение толщины диска</span></label><label class="check-item"><input type="checkbox"><span>Проверка уровня жидкости</span></label><label class="check-item"><input type="checkbox"><span>Осмотр шлангов на трещины</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="электронная-эра-abs-и-системы-стабилизации">Электронная эра: ABS и системы стабилизации</h2>
+
+<p>С развитием электроники тормозная система перестала быть чисто механической. Главным достижением стала <strong>антиблокировочная система (ABS)</strong>. Она предотвращает блокировку колес при экстренном торможении. Если колесо перестает вращаться и начинает буксовать по поверхности, машина теряет управляемость и начинает скользить по инерции.</p>
+
+<p>ABS работает за счет датчиков скорости на каждом колесе и гидравлического модулятора. Блок управления анализирует скорость вращения: если он фиксирует, что колесо блокируется (скорость резко падает), он мгновенно сбрасывает давление в этом контуре, позволяя колесу снова начать вращаться. Процесс сброса и возвращения давления происходит десятки раз в секунду, что водитель ощущает как пульсацию педали.</p>
+
+<p>Современные системы, такие как ESP (система курсовой устойчивости), идут еще дальше. Они могут не просто регулировать давление для предотвращения блокировки, но и избирательно подтормаживать конкретное колесо, чтобы выправить занос автомобиля. Это становится возможным благодаря сложной алгебре, которую проводит бортовой компьютер, сравнивая данные с датчиков поворота руля и акселерометров.</p>
+
+<details class="pb-accordion"><summary>Как работает ABS при экстренном торможении на льду?</summary><div class="pb-accordion-body"><p>На льду эффективность торможения может быть ниже, чем на сухом асфальте, так как максимальное сцепление достигается в момент начала проскальзывания. ABS предотвращает полную блокировку, позволяя колесу скользить минимально, сохраняя управляемость, но иногда увеличивая тормозной путь на глубоком снегу или льду по сравнению с юзом опытного водителя.</p></div></details>
+
+<h2 id="материалы-и-износ-колодки-диски-и-жидкость">Материалы и износ: колодки, диски и жидкость</h2>
+
+<p>Эффективность тормозов напрямую зависит от состояния расходных материалов. <strong>Тормозные колодки</strong> — это самый быстротребуемый элемент. Фрикционный материал колодок должен выдерживать экстремальные температуры, достигая 500-800 градусов Цельсия, не теряя своих свойств. Существуют различные составы: органические, керамические и металлизированные, каждый из которых имеет свои плюсы и минусы.</p>
+
+<p>Тормозные диски также подвержены износу. Со временем на них образуются канавки, и они истончаются. Критическим моментом является перегрев металла, который может привести к появлению трещин или деформации («биению» диска), что ощущается через руль при торможении. Важно вовремя заменять изношенные элементы, чтобы избежать дорогостоящего ремонта суппортов.</p>
+
+<p>Тормозная жидкость — это не просто «масло», а сложная химическая смесь, обычно на гликолевой основе. Её ключевое свойство — высокая температура кипения. Если жидкость закипит, образуются паровые пробки, которые сжимаются, и педаль провалится в пол. Жидкость гигроскопична, то есть впитывает влагу из воздуха, что со временем понижает её точку кипения.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип материала</th>
+<th>Преимущества</th>
+<th>Недостатки</th>
+<th>Срок службы (примерный)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Органические колодки</td>
+<td>Тихие, мягкие, не пылят</td>
+<td>Быстро изнашиваются, боятся влаги</td>
+<td>20 000 — 30 000 км</td>
+</tr>
+<tr>
+<td>Керамические колодки</td>
+<td>Высокая стойкость к перегреву, долговечны</td>
+<td>Высокая цена, требуют прогрева</td>
+<td>50 000 — 70 000 км</td>
+</tr>
+<tr>
+<td>Металлизированные колодки</td>
+<td>Дешевые, эффективные для спорта</td>
+<td>Сильно пылят, шумные, портят диски</td>
+<td>30 000 — 40 000 км</td>
+</tr>
+<tr>
+<td>Вентилируемые диски</td>
+<td>Лучшее охлаждение, меньше деформация</td>
+<td>Сложнее в производстве, дороже</td>
+<td>80 000 — 120 000 км</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Проверяйте цвет тормозной жидкости. Если она стала темной и мутной, это верный признак того, что она потеряла свои свойства и насытилась влагой. Замену рекомендуется проводить каждые 2 года независимо от пробега.</p></aside>
+
+<h2 id="диагностика-и-типичные-неисправности">Диагностика и типичные неисправности</h2>
+
+<p>Поломки в тормозной системе редко происходят внезапно без предупреждения. Обычно они сопровождаются характерными признаками. Если педаль тормоза стала «ватной» или проваливается, это может указывать на попадание воздуха в систему или неисправность главного цилиндра. Скрип или скрежет при нажатии часто говорит об истончении колодок до металлического основания.</p>
+
+<p>Вибрация руля или кузова при торможении — верный признак деформации тормозных дисков. Это происходит из-за перегрева и последующего неравномерного охлаждения диска. В таком случае диск либо подлежит проточке (если есть запас по толщине), либо замене. Игнорирование этой проблемы ведет к ускоренному износу суппортов и снижению общей эффективности.</p>
+
+<p>Сбои в работе ABS также заметны: педаль может пульсировать при обычном нажатии в городском цикле, а не только при экстренном торможении. Это может означать неисправность датчика скорости или грязь на зубчатом венце. Также стоит обратить внимание на подтекание жидкости под автомобилем — это аварийная ситуация, требующая немедленной остановки и вызова эвакуатора.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не допускайте смешивания тормозных жидкостей разных классов (например, DOT 3 и DOT 5). Жидкости на силиконовой основе (DOT 5) несовместимы с гликолевыми (DOT 3, DOT 4, DOT 5.1), их смешивание может привести к разрушению резиновых уплотнений и отказу всей системы.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка уровня и качества тормозной жидкости, а также визуальный осмотр колодок и дисков — это основа безопасности вашего автомобиля, которую нельзя откладывать.</p></aside>
+
+<h2 id="faq-частые-вопросы-о-тормозной-системе">FAQ: Частые вопросы о тормозной системе</h2>
+
+<details>
+<summary>Почему педаль тормоза становится твердой при заведенном двигателе?</summary>
+<p>Это нормальное явление, если двигатель был заглушен. Вакуумный усилитель требует работы двигателя для поддержания разрежения. После остановки двигателя запас вакуума расходуется на 2-3 нажатия педали. Если педаль твердая при работающем двигателе, возможно, неисправен усилитель или подсос воздуха в вакуумной магистрали.</p>
+</details>
+
+<details>
+<summary>Что такое «самопроизвольное торможение» и почему оно происходит?</summary>
+<p>Это ситуация, когда автомобиль снижает скорость без нажатия на педаль. Частые причины: заклинивший поршень суппорта, неправильно отрегулированный ручной тормоз или грязь в главном цилиндре, которая мешает поршню полностью возвратиться, оставляя колодки прижатыми к диску.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать тормозную жидкость DOT 5 вместо DOT 4?</summary>
+<p>Нет, этого делать категорически нельзя. DOT 5 — это силиконовая жидкость, которая не смешивается с гликолевыми жидкостями (DOT 3, DOT 4, DOT 5.1). Попадание даже небольшого количества DOT 5 в систему, рассчитанную на DOT 4, может вызвать серьезную коррозию и разрушение резиновых манжет.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять тормозную жидкость каждые 2 года или 40 000 — 50 000 км пробега, в зависимости от условий эксплуатации. Из-за гигроскопичности жидкость впитывает влагу, что снижает её температуру кипения и может привести к отказу тормозов при интенсивной езде.</p>
+</details>
+
+<blockquote>
+<p>⚠️ Внимание: Технические регламенты обслуживания и спецификации жидкостей могут меняться производителями автомобилей. Всегда сверяйте данные в сервисной книге вашего конкретного автомобиля, так как требования для <em>Toyota Camry</em> могут отличаться от <em>BMW X5</em>.</p>
+</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ko/kogda-nuzhno-menyat-perednie-tormoznye-diski.html" class="pb-related-card">
+                <span class="pb-related-title">Когда менять передние тормозные диски: признаки и сроки замены</span>
+                <span class="pb-related-desc">Узнайте, как понять, что тормозные диски износились. Признаки биения, вибрация, шум, критическая тол</span>
+            </a><a href="/articles/d/di/disk-tormoznoj-mtz-82-starogo-obraztsa.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной диск МТЗ 82 старого образца: выбор, замена и диагностика</span>
+                <span class="pb-related-desc">Полный гид по тормозным дискам МТЗ 82 старого образца. Как отличить оригинал, признаки износа, пошаг</span>
+            </a><a href="/articles/c/ch/chem-obrabotat-tormoznye-diski-chtoby-ne-rzhaveli.html" class="pb-related-card">
+                <span class="pb-related-title">Чем обработать тормозные диски от коррозии: способы и средства</span>
+                <span class="pb-related-desc">Полный гид по защите тормозных дисков от ржавчины. Обзор антикоррозийных составов, методы нанесения </span>
+            </a><a href="/articles/d/di/diski-tormoznye-lynx-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Диски тормозные Lynx: отзывы, плюсы, минусы и выбор модели</span>
+                <span class="pb-related-desc">Честные отзывы о тормозных дисках Lynx. Обзор качества, сравнение с аналогами, нюансы при установке </span>
+            </a><a href="/articles/z/za/zamena-tormoznykh-diskov-reglament.html" class="pb-related-card">
+                <span class="pb-related-title">Регламент замены тормозных дисков: сроки, признаки и нормы</span>
+                <span class="pb-related-desc">Полный гид по регламенту замены тормозных дисков. Узнайте допустимый износ, минимальную толщину и ка</span>
+            </a><a href="/articles/p/pr/protochka-tormoznykh-diskov-na-yuzhnoportovoj.html" class="pb-related-card">
+                <span class="pb-related-title">Проточка тормозных дисков на Южнопортовой: цены, сроки, оборудование</span>
+                <span class="pb-related-desc">Профессиональная проточка тормозных дисков на Южнопортовой. Восстановление геометрии, устранение бие</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

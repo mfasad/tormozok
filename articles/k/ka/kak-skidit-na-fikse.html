@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как сбросить на фиксе: настройка, диагностика и устранение сбоев — ТормозОК</title>
+    <meta name="description" content="Подробная инструкция по сбросу настроек на педальном фиксере. Диагностика ошибок, калибровка датчиков и восстановление заводских параметров.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-skidit-na-fikse.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как сбросить на фиксе: настройка, диагностика и устранение сбоев">
+    <meta property="og:description" content="Подробная инструкция по сбросу настроек на педальном фиксере. Диагностика ошибок, калибровка датчиков и восстановление заводских параметров.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как сбросить на фиксе: настройка, диагностика и устранение сбоев</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#понимание-природы-сброса-на-фиксированной-передаче">Понимание природы сброса на фиксированной передаче</a></li><li><a href="#подготовка-оборудования-и-диагностика-состояния">Подготовка оборудования и диагностика состояния</a></li><li><a href="#алгоритм-программного-сброса-через-приложение">Алгоритм программного сброса через приложение</a></li><li><a href="#механическая-калибровка-и-физический-сброс">Механическая калибровка и физический сброс</a></li><li><a href="#таблица-параметров-и-режимов-работы">Таблица параметров и режимов работы</a></li><li><a href="#устранение-ошибок-после-сброса">Устранение ошибок после сброса</a></li><li><a href="#техническое-обслуживание-после-сброса">Техническое обслуживание после сброса</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pl/plastik-abs-i-pla-v-chem-raznitsa.html">ABS и PLA пластик: ключевые различия, свойства и сфера применения</a></li><li><a href="/articles/n/na/nasadki-na-payalnik-dlya-plastika.html">Насадки на паяльник для пластика: виды, выбор и мастер-класс</a></li><li><a href="/articles/k/ka/kak-ne-glokhnut-na-gorke-na-mekhanike.html">Учимся стартовать на горке: как не глохнуть на механике</a></li><li><a href="/articles/c/ch/chto-znachit-tormoz-chelovek.html">Тормозной человек: психология медлительности и как это исправить</a></li><li><a href="/articles/k/ka/kak-rabotaet-revers-na-samolete-pri-posadke.html">Как работает реверс на самолете при посадке: принцип и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сбросить на фиксе: полное руководство по настройке и восстановлению</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#понимание-природы-сброса-на-фиксированной-передаче">Понимание природы сброса на фиксированной передаче</a></li><li><a href="#подготовка-оборудования-и-диагностика-состояния">Подготовка оборудования и диагностика состояния</a></li><li><a href="#алгоритм-программного-сброса-через-приложение">Алгоритм программного сброса через приложение</a></li><li><a href="#механическая-калибровка-и-физический-сброс">Механическая калибровка и физический сброс</a></li><li><a href="#таблица-параметров-и-режимов-работы">Таблица параметров и режимов работы</a></li><li><a href="#устранение-ошибок-после-сброса">Устранение ошибок после сброса</a></li><li><a href="#техническое-обслуживание-после-сброса">Техническое обслуживание после сброса</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Многие владельцы велосипедов с трансмиссией типа «фикс» (фиксированная звезда) сталкиваются с необходимостью сброса настроек, особенно если речь идет о современных моделях с интегрированными электронными датчиками или умными педалями. Операция «сброса» в данном контексте может означать как полное обнуление программных параметров, так и механическую калибровку системы. Неправильное понимание сути процесса может привести к потере данных о пробеге или сбоям в работе датчиков усилия.</p>
+
+<p>Термин «скидить» (от англ. <em>to skip</em> или сленговое «скинуть») в техническом сообществе часто интерпретируется двояко. С одной стороны, это может быть просьбой о быстром сбросе ошибок, с другой — ошибочным запросом, не имеющим технической подоплеки для классического механического фиксера. Важно различать, идет ли речь о «умных» компонентах (например, педалях с Bluetooth) или о чисто механической системе, где сброс возможен только физическим демонтажем и переустановкой.</p>
+
+<h2 id="понимание-природы-сброса-на-фиксированной-передаче">Понимание природы сброса на фиксированной передаче</h2>
+<p>Прежде чем приступать к любым манипуляциям, необходимо четко определить, какой тип «сброса» требуется вашей системе. В классическом варианте, когда велосипед имеет только одну звезду и отсутствие свободного хода, понятие программного сброса отсутствует. Здесь все решается физическим состоянием узлов: натяжением цепи, износом звезд и положением педалей.</p>
+
+<p>Однако, если ваш <em>фикс</em> оснащен встроенным измерителем мощности или электронным переключателем (что встречается в гибридных моделях), то сброс настроек становится актуальной задачей. Необходимо обратиться к документации производителя, так как алгоритмы могут кардинально отличаться от бренда к бренду. Ошибочные действия могут привести к потере калибровочных коэффициентов, что сделает показания датчиков недостоверными.</p>
+
+<p>Ключевым моментом является понимание разницы между <strong>калибровкой нуля</strong> и полным <strong>сбросом профиля</strong>. В первом случае просто обнуляется нулевая точка при отсутствии нагрузки, во втором — стираются все пользовательские данные, включая настройки чувствительности и режимы работы. Для обычного велосипедиста чаще всего требуется именно калибровка, а не полный формат данных.</p>
+
+<blockquote>⚠️ Внимание: Производите сброс или калибровку только при полной остановке велосипеда и отсутствии нагрузки на педали. Любое движение в этот момент исказит нулевые показания датчиков.</blockquote>
+
+<h2 id="подготовка-оборудования-и-диагностика-состояния">Подготовка оборудования и диагностика состояния</h2>
+<p>Перед началом процесса необходимо осмотреть визуальное состояние узлов трансмиссии. Если вы планируете сброс программных параметров, убедитесь, что аккумуляторные модули заряжены минимум на 20%. Низкий уровень заряда может прервать процесс записи новых настроек, что приведет к «кирпичу» (невозможности включения устройства). Проверьте соединения кабелей и наличие окислов в зонах контактов.</p>
+
+<p>Для механической части критически важно оценить состояние резьбовых соединений. Педальный узел на фиксированной передаче испытывает колоссальные нагрузки при торможении и рывках. Если резьба повреждена, любые попытки сброса настроек через приложение будут бессмысленны, так как физический люфт будет генерировать ложные сигналы. Используйте динамометрический ключ для проверки затяжки.</p>
+
+<p>Список необходимых инструментов для подготовки:</p>
+<ul>
+<li>🔧 Специальный ключ для педалей (обычно 15 мм или 6 мм шестигранник)</li>
+<li>🔋 Зарядное устройство для встроенной батареи (если применимо)</li>
+<li>📱 Смартфон с установленным официальным приложением производителя</li>
+<li>💧 Обезжириватель и чистая ветошь для очистки зоны контакта</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Не пытайтесь выполнить сброс через Bluetooth, если в непосредственной близости находятся другие устройства с активными сигнальными модулями. Помехи могут заблокировать сеанс связи.</blockquote>
+
+<div class="pb-poll" id="poll-5fe8302c"><div class="pb-poll-question">📊 Ваш велосипед оснащен электронными датчиками?</div><div class="pb-poll-option" data-poll="5fe8302c" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, есть умные педали/компьютер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5fe8302c" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, чисто механический фикс</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5fe8302c" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не уверен, проверю позже</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5fe8302c" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">У меня гибридная система</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="алгоритм-программного-сброса-через-приложение">Алгоритм программного сброса через приложение</h2>
+<p>Для современных систем процедура сброса выполняется через фирменное программное обеспечение. Подключите велосипед к смартфону через <code>Bluetooth 5.0</code> или <code>ANT+</code> и запустите приложение. Перейдите в раздел <code>Настройки устройства</code> и найдите пункт <code>Сброс заводских настроек</code> или <code>Calibration</code>. Важно не перепутать эти два понятия: сброс удалит все данные пользователя, а калибровка только обновит эталонные значения.</p>
+
+<p>После выбора функции сброса система запросит подтверждение. В этот момент экран может мигнуть или устройство временно отключится. Это нормальный процесс перезагрузки контроллера. Не пытайтесь прервать соединение или выключить телефон до появления сообщения «Успешно» или «Готово». Прерывание может повредить прошивку.</p>
+
+<p>Важные шаги в процессе:</p>
+<ul>
+<li>🔄 Убедитесь, что велосипед стоит на штативе и колеса не касаются земли</li>
+<li>🔌 Проверьте стабильность интернет-соединения (для синхронизации с облаком)</li>
+<li>⏳ Дождитесь полного завершения индикатора загрузки на экране</li>
+<li>🔄 Перезагрузите устройство вручную после сброса</li>
+</ul>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к сбросу</h4><label class="check-item"><input type="checkbox"><span>Проверить заряд батареи</span></label><label class="check-item"><input type="checkbox"><span>Отключить другие Bluetooth-устройства</span></label><label class="check-item"><input type="checkbox"><span>Зафиксировать велосипед вертикально</span></label><label class="check-item"><input type="checkbox"><span>Запустить приложение калибровки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="механическая-калибровка-и-физический-сброс">Механическая калибровка и физический сброс</h2>
+<p>Если ваш <em>фикс</em> лишен электроники, «сброс» может подразумевать физическую перенастройку натяжения цепи и положения педалей. Для этого необходимо ослабить гайки заднего колеса. На фиксированной передаче натяжение должно быть таким, чтобы цепь провисала на 1-1.5 см, но не болталась свободно. Это критически важно для предотвращения разрыва цепи под нагрузкой.</p>
+
+<p>Иногда требуется «сбросить» положение педалей, если они заедают или имеют люфт. Для этого необходимо выкрутить педали и осмотреть резьбу. Если обнаружена деформация, деталь подлежит замене. Никогда не пытайтесь «сбросить» люфт, подкручивая педаль на ходу — это приведет к потере педали и серьезной травме.</p>
+
+<p>Для точной настройки используйте <code>индикатор натяжения</code> или просто проверяйте провисание пальцем. Оптимальное натяжение обеспечивает плавность хода и отсутствие рывков при переключении режимов (если есть возможность переключения на холостой ход). Если система имеет переключатель режимов, убедитесь, что шток переключателя перемещается свободно.</p>
+
+<blockquote>⚠️ Внимание: Механический сброс натяжения на ходу недопустим. Велосипед должен быть полностью обездвижен и закреплен на ремонтной стойке.</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если педаль не откручивается?</summary><div class="pb-accordion-body"><p>Если педаль прикипела, используйте проникающую смазку (WD-40) за 30 минут до попытки откручивания. Нанесите ее на резьбу и подождите. Не применяйте чрезмерную силу, чтобы не сорвать резьбу в каретке.</p></div></details>
+
+<h2 id="таблица-параметров-и-режимов-работы">Таблица параметров и режимов работы</h2>
+<p>Ниже приведена таблица, описывающая типичные параметры, которые могут сбрасываться или требовать настройки в зависимости от типа системы. Эти данные помогут вам сориентироваться в меню настроек вашего устройства.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Значение по умолчанию</th>
+<th>Допустимый диапазон</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Чувствительность датчика</td>
+<td>50%</td>
+<td>20% - 80%</td>
+<td>Оставлять 50% для новичков</td>
+</tr>
+<tr>
+<td>Частота опроса</td>
+<td>1 Гц</td>
+<td>0.5 - 5 Гц</td>
+<td>1 Гц для экономии заряда</td>
+</tr>
+<tr>
+<td>Нулевой порог</td>
+<td>0 Н·м</td>
+<td>-5 до +5 Н·м</td>
+<td>Сбрасывать при отсутствии нагрузки</td>
+</tr>
+<tr>
+<td>Режим торможения</td>
+<td>Активен</td>
+<td>Вкл/Выкл</td>
+<td>Всегда активен на фиксе</td>
+</tr>
+<tr>
+<td>Язык интерфейса</td>
+<td>Русский</td>
+<td>Многоязычный</td>
+<td>Выбрать родной язык</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед сбросом настроек сфотографируйте текущие показатели на экране смартфона. Это поможет быстро вернуть любимые настройки, если новый сброс ухудшит работу системы.</p></aside>
+
+<h2 id="устранение-ошибок-после-сброса">Устранение ошибок после сброса</h2>
+<p>После выполнения процедуры сброса могут возникнуть ошибки, связанные с несогласованностью данных. Если приложение выдает сообщение об ошибке <code>Code: 404</code> или <code>Sensor Not Found</code>, проверьте физическое подключение. Часто проблема кроется в окислении контактов или неплотном прилегании модуля. Очистите контакты спиртовой салфеткой и повторите попытку.</p>
+
+<p>Иногда система может работать некорректно из-за устаревшей прошивки. Зайдите в раздел обновлений и проверьте наличие новых версий ПО. Производители часто выпускают патчи, исправляющие баги, связанные со сбросом настроек. Не игнорируйте обновления, так как они могут содержать критические исправления безопасности.</p>
+
+<p>Если проблема не решается, попробуйте выполнить полный сброс до заводских настроек (Factory Reset). Это вернет устройство в состояние, в котором оно было при покупке. Помните, что после такой операции все ваши личные профили и настройки будут безвозвратно утеряны. Создайте резервную копию данных, если это возможно.</p>
+
+<p>Список частых ошибок и методы их устранения:</p>
+<ul>
+<li>❌ Ошибка связи: Перезагрузите приложение и телефон</li>
+<li>❌ Ложные показания: Проведите повторную калибровку нуля</li>
+<li>❌ Торможение системы: Обновите прошивку до последней версии</li>
+<li>❌ Отсутствие реакции: Проверьте заряд батареи и контакты</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная калибровка и отсутствие механических люфтов — залог стабильной работы системы после сброса настроек.</p></aside>
+
+<h2 id="техническое-обслуживание-после-сброса">Техническое обслуживание после сброса</h2>
+<p>После успешного сброса и настройки системы необходимо провести первое контрольное испытание. Выезд должен быть спокойным, без экстремальных нагрузок. Послушайте работу узлов: не должно быть посторонних стуков, скрипов или заеданий. Если вы чувствуете неровности в работе педалей, остановитесь и проверьте затяжку всех соединений.</p>
+
+<p>Регулярное техническое обслуживание включает в себя проверку натяжения цепи и смазку трущихся пар. Даже после сброса настроек физический износ не отменяется. Используйте специализированные смазки для цепей, устойчивые к воде и грязи. Не экономьте на расходных материалах, так как это напрямую влияет на ресурс системы.</p>
+
+<p>Следите за состоянием батареи, если она съемная. Храните её в прохладном месте и не допускайте полного разряда в течение длительного времени. Это продлит срок службы аккумулятора и обеспечит стабильную работу электроники при следующем запуске.</p>
+
+<p> Если вы не уверены в своих силах, обратитесь к профессиональному механику. Неправильные действия могут привести к выходу из строя дорогостоящих компонентов или травмам.</p>
+
+<details>
+<summary>Как часто нужно сбрасывать настройки на фиксе?</summary>
+<p>Сброс настроек требуется нечасто. Обычно это делается при смене владельца, после серьезного ремонта или при нестабильной работе датчиков. Для механических систем сброс не требуется вовсе.</p>
+</details>
+
+<details>
+<summary>Что будет, если прервать процесс сброса?</summary>
+<p>Прерывание процесса сброса может привести к повреждению прошивки, что потребует перепрошивки устройства через специальный режим восстановления. В худшем случае устройство выйдет из строя.</p>
+</details>
+
+<details>
+<summary>Можно ли сбросить настройки без приложения?</summary>
+<p>Для большинства современных умных систем это невозможно. Физические кнопки на устройстве обычно предназначены только для включения/выключения. Программный сброс требует взаимодействия с приложением.</p>
+</details>
+
+<details>
+<summary>Влияет ли сброс на гарантию?</summary>
+<p>Сброс заводских настроек через официальное приложение не аннулирует гарантию. Однако физическое вмешательство в конструкцию или попытка прошивки неофициальным ПО может стать причиной отказа в гарантийном ремонте.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pl/plastik-abs-i-pla-v-chem-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">ABS и PLA пластик: ключевые различия, свойства и сфера применения</span>
+                <span class="pb-related-desc">Подробное сравнение ABS и PLA пластика для 3D-печати. Узнайте о температуре печати, усадке, прочност</span>
+            </a><a href="/articles/n/na/nasadki-na-payalnik-dlya-plastika.html" class="pb-related-card">
+                <span class="pb-related-title">Насадки на паяльник для пластика: виды, выбор и мастер-класс</span>
+                <span class="pb-related-desc">Полный гид по выбору и использованию насадок на паяльник для ремонта пластика. Обзор форм, температу</span>
+            </a><a href="/articles/k/ka/kak-ne-glokhnut-na-gorke-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Учимся стартовать на горке: как не глохнуть на механике</span>
+                <span class="pb-related-desc">Пошаговая инструкция по старту на подъеме на механической КПП. Изучите работу сцепления, ручника и п</span>
+            </a><a href="/articles/c/ch/chto-znachit-tormoz-chelovek.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной человек: психология медлительности и как это исправить</span>
+                <span class="pb-related-desc">Что значит тормоз человек? Разбор психологических, биологических и когнитивных причин низкой скорост</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-revers-na-samolete-pri-posadke.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает реверс на самолете при посадке: принцип и безопасность</span>
+                <span class="pb-related-desc">Подробный разбор работы реверсивных устройств двигателей. Как пилоты тормозят при посадке, почему не</span>
+            </a><a href="/articles/k/kl/klichko-ne-kazhdyj-mozhet-smotret-v-zavtrashnij.html" class="pb-related-card">
+                <span class="pb-related-title">Миф о Виталии Кличко: почему фраза «не каждый может смотреть в завтрашний» ложна</span>
+                <span class="pb-related-desc">Разбор популярного интернет-запроса о Виталии Кличко. Почему фраза «не каждый может смотреть в завтр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

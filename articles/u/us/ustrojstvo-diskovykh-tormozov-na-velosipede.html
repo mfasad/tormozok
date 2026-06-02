@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как устроены дисковые тормоза велосипеда: гид по гидравлике и механике — ТормозОК</title>
+    <meta name="description" content="Подробный разбор конструкции дисковых тормозов велосипеда. Изучите устройство суппорта, гидравлической линии, ротора и принципы работы тормозной системы.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/u/us/ustrojstvo-diskovykh-tormozov-na-velosipede.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как устроены дисковые тормоза велосипеда: гид по гидравлике и механике">
+    <meta property="og:description" content="Подробный разбор конструкции дисковых тормозов велосипеда. Изучите устройство суппорта, гидравлической линии, ротора и принципы работы тормозной системы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/velosipednye-tormoza/">Велосипедные тормоза</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как устроены дисковые тормоза велосипеда: гид по гидравлике и механике</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основы-работы-гидравлической-системы">Основы работы гидравлической системы</a></li><li><a href="#конструкция-суппорта-и-поршневой-группы">Конструкция суппорта и поршневой группы</a></li><li><a href="#роторы-сердце-системы-охлаждения">Роторы: сердце системы охлаждения</a></li><li><a href="#механические-дисковые-тормоза-особенности-и-отличия">Механические дисковые тормоза: особенности и отличия</a></li><li><a href="#таблица-сравнения-характеристик-тормозных-систем">Таблица сравнения характеристик тормозных систем</a></li><li><a href="#колодки-и-материалы-накладки">Колодки и материалы накладки</a></li><li><a href="#установка-и-центровка-суппорта">Установка и центровка суппорта</a></li><li><a href="#диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-kolodok-na-velosipede-s-diskovymi-tormozami.html">Замена колодок на дисковых тормозах велосипеда: пошаговая инструкция</a></li><li><a href="/articles/t/to/tormoznoj-mekhanizm-dlya-velosipeda.html">Тормозной механизм для велосипеда: виды, выбор и ремонт 2026</a></li><li><a href="/articles/k/ka/kak-uznat-kakaya-karetka-na-velosipede.html">Как узнать тип каретки велосипеда: 5 способов идентификации</a></li><li><a href="/articles/k/ka/kak-prokachat-tormoza-na-velosipede-s-gidravlicheskimi-tormozami-v-domashnikh-usloviyakh.html">Как прокачать гидравлические тормоза на велосипеде: инструкция</a></li><li><a href="/articles/u/us/ustanovka-zadnego-diskovogo-tormoza-na-velosiped.html">Установка заднего дискового тормоза на велосипед: инструкция и нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Устройство дисковых тормозов на велосипеде: полный разбор конструкции</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основы-работы-гидравлической-системы">Основы работы гидравлической системы</a></li><li><a href="#конструкция-суппорта-и-поршневой-группы">Конструкция суппорта и поршневой группы</a></li><li><a href="#роторы-сердце-системы-охлаждения">Роторы: сердце системы охлаждения</a></li><li><a href="#механические-дисковые-тормоза-особенности-и-отличия">Механические дисковые тормоза: особенности и отличия</a></li><li><a href="#таблица-сравнения-характеристик-тормозных-систем">Таблица сравнения характеристик тормозных систем</a></li><li><a href="#колодки-и-материалы-накладки">Колодки и материалы накладки</a></li><li><a href="#установка-и-центровка-суппорта">Установка и центровка суппорта</a></li><li><a href="#диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Дисковые тормоза стали стандартом для современного велосипеда, обеспечивая стабильное замедление в любых погодных условиях. В отличие от классических ободных систем, здесь тормозной момент создается за счет зажима вращающегося <strong>ротора</strong> специальными колодками внутри <strong>суппорта</strong>. Это конструктивное решение позволяет избегать перегрева обода и сохранять эффективность торможения даже на затяжных спусках.</p>
+
+<p>Механизм может быть реализован в двух основных вариантах: гидравлическом и механическом. В первом случае усилие от рычага передается через <strong>тормозную жидкость</strong> или масло, во втором — через тросовую систему. Понимание того, как именно устроен каждый элемент, критически важно для качественного обслуживания и безопасной езды на сложном рельефе.</p>
+
+<h2 id="основы-работы-гидравлической-системы">Основы работы гидравлической системы</h2>
+
+<p>Гидравлика считается вершиной эволюции велосипедных тормозов благодаря своей мощности и саморегулируемости. Принцип действия основан на законе Паскаля: давление, приложенное к несжимаемой жидкости в замкнутом объеме, передается одинаково во всех направлениях. Когда вы нажимаете на <strong>ручку тормоза</strong>, поршень в манетке выталкивает жидкость по шлангу прямо в камеру суппорта.</p>
+
+<p>Внутри суппорта давление увеличивает объем, заставляя поршни выдвигаться и сжимать колодки о <strong>металлический диск</strong>. Ключевым преимуществом здесь является равномерное распределение усилия: даже если один поршень заедает, второй продолжает работать, обеспечивая стабильную работу всей системы. Гибкий шланг, заполненный маслом, не растягивается под нагрузкой, что дает мгновенный отклик на нажатие.</p>
+
+<p>Для функционирования системы требуется специфическая среда передачи давления. Производитель <em>Shimano</em> использует минеральное масло, тогда как бренды <em>SRAM</em> и <em>Magura</em> предпочитают DOT-жидкость. Эти жидкости не смешиваются, и перепутать их категорически нельзя, так как это приведет к разрушению резиновых уплотнителей и полной потере тормозов.</p>
+
+<blockquote>⚠️ Внимание: Используйте ТОЛЬКО жидкость, рекомендованную производителем тормозов. Смешивание минерального масла и DOT-жидкости вызывает набухание уплотнений и немедленный отказ системы.</blockquote>
+
+<h2 id="конструкция-суппорта-и-поршневой-группы">Конструкция суппорта и поршневой группы</h2>
+
+<p>Суппорт — это основной исполнительный механизм, который крепится к раме или вилке велосипеда. Внутри корпуса расположены поршни, количество которых варьируется от одного до четырех и более. В бюджетных моделях часто встречается однопоршневая схема, где один поршень давит на активную колодку, а пассивная перемещается за счет пружины.</p>
+
+<p>Более продвинутые системы имеют два и более поршня с обеих сторон от ротора. Это обеспечивает идеальную центровку колодок и prevents перекос, который может привести к трению о диск. Материалы поршней также различаются: алюминиевые поршни легкие и дешевые, но могут быть склонны к коррозии, а стальные — более надежные и долговечные.</p>
+
+<ul>
+<li>🔩 Два поршня (2-piston) — стандарт для большинства горных велосипедов среднего уровня.</li>
+<li>🔩 Четыре поршня (4-piston) — используются на мощных эндуро и даунхилл велосипедах.</li>
+<li>🔩 Плавающий суппорт — позволяет всему корпусу перемещаться для лучшей центровки колодок.</li>
+</ul>
+
+<p>Важно отметить, что конструкция корпуса суппорта должна обеспечивать эффективный отвод тепла. Металлический корпус выступает радиатором, отводящим тепло от колодок, чтобы избежать эффекта затухания тормозов при длительном нажатии.</p>
+
+<div class="pb-poll" id="poll-ada18394"><div class="pb-poll-question">📊 Какой тип тормозов установлен на вашем велосипеде?</div><div class="pb-poll-option" data-poll="ada18394" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Гидравлика</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ada18394" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Механика (тросовые)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ada18394" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ободные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ada18394" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет тормозов (группсетомакс?)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="роторы-сердце-системы-охлаждения">Роторы: сердце системы охлаждения</h2>
+
+<p>Ротор представляет собой металлический диск, закрепленный на ступице колеса. Именно он вращается вместе с колесом и зажимается колодками при торможении. Эффективность торможения напрямую зависит от площади поверхности ротора и его способности рассеивать тепло. Чем больше диаметр ротора, тем меньше усилий нужно приложить к ручке для остановки велосипеда.</p>
+
+<p>Существует три основных метода крепления ротора к ступице: <em>Centerlock</em> (система Shimano) и два типа болтовых креплений — 6-болтовое (IS) и 4-болтовое (редко). Центровка ротора относительно суппорта — критический параметр, так как малейшее биение вызовет сильный шум и вибрацию («скрип»).</p>
+
+<p>Материал ротора также имеет значение. Стандартные стальные диски дешевы, но подвержены ржавчине. Некоторые производители предлагают титановые или композитные роторы, которые легче и не ржавеют, но они значительно дороже и требуют специального ухода. На самых мощных тормозах используются роторы с вентиляционными каналами внутри для улучшенного отвода тепла.</p>
+
+<details class="pb-accordion"><summary>Почему скрипят тормоза?</summary><div class="pb-accordion-body"><p>Скрип чаще всего возникает из-за загрязнения колодок или ротора маслом, либо из-за отсутствия центровки. Также причиной может быть износ колодок до металлического основания.</ spoiler</p></div></details>
+
+<h2 id="механические-дисковые-тормоза-особенности-и-отличия">Механические дисковые тормоза: особенности и отличия</h2>
+
+<p>Механические дисковые тормоза работают по принципу тросового привода, похожему на классические ободные тормоза, но с использованием дискового суппорта. При нажатии на ручку трос натягивается и приводит в действие механизм внутри суппорта. В таких системах часто используется однопоршневая схема, где активный поршень двигается к ротору, а пассивный отъезжает назад.</p>
+
+<p>Главное преимущество механики — простота обслуживания и отсутствие необходимости в сложном оборудовании для прокачки. Если трос порвался в глухом лесу, его можно заменить стандартным инструментом. Однако эффективность механики ниже гидравлики из-за трения троса в рубашке и необходимости регулярной подтяжки.</p>
+
+<p>В механических тормозах часто встречается регулировка положения колодки вручную с помощью винта. Это позволяет компенсировать износ колодок без использования специальных инструментов. Тем не менее, на современных велосипедах механические дисковые тормоза постепенно вытесняются гидравликой даже в начальных сегментах.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по проверке механических тормозов</h4><label class="check-item"><input type="checkbox"><span>Осмотрите трос на наличие ржавчины</span></label><label class="check-item"><input type="checkbox"><span>Проверьте натяжение троса</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь в отсутствии трения колодок о диск</span></label><label class="check-item"><input type="checkbox"><span>Проверьте износ колодок</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="таблица-сравнения-характеристик-тормозных-систем">Таблица сравнения характеристик тормозных систем</h2>
+
+<p>Для наглядного понимания различий между типами дисковых тормозов и их компонентами удобно использовать сравнительную таблицу. Ниже приведены ключевые параметры, влияющие на выбор и эксплуатацию системы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Гидравлические тормоза</th>
+<th>Механические тормоза</th>
+<th>Ободные тормоза (V-Brake)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Эффективность торможения</td>
+<td>Высокая</td>
+<td>Средняя</td>
+<td>Низкая (на мокром асфальте)</td>
+</tr>
+<tr>
+<td>Усилие на ручке</td>
+<td>Малое (легкое натиск)</td>
+<td>Среднее</td>
+<td>Высокое</td>
+</tr>
+<tr>
+<td>Обслуживание</td>
+<td>Сложное (прокачка)</td>
+<td>Простое (замена троса)</td>
+<td>Простое</td>
+</tr>
+<tr>
+<td>Стоимость комплекта</td>
+<td>Высокая</td>
+<td>Средняя</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Работа в грязи</td>
+<td>Отличная</td>
+<td>Хорошая</td>
+<td>Плохая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор между этими системами часто диктуется бюджетом и типом катания. Для агрессивного катания по горам гидравлика незаменима, тогда для прогулочного велосипеда по городу механики может быть достаточно.</p>
+
+<blockquote>⚠️ Внимание: При замене тормозных колодок в гидравлической системе обязательно используйте поршень-разжиматель, чтобы не выдавить жидкость из манетки.</blockquote>
+
+<h2 id="колодки-и-материалы-накладки">Колодки и материалы накладки</h2>
+
+<p>Тормозные колодки — это расходный материал, который непосредственно контактирует с ротором. Они состоят из металлического основания (пята) и фрикционной накладки. Накладки делятся на три основных типа: органические (смола), спеченные (металлические) и полуметаллические.</p>
+
+<p>Органические колодки обеспечивают плавное и тихое торможение, быстро притираются, но быстрее стираются и теряют эффективность при перегреве. Спеченные колодки более долговечны и устойчивы к высоким температурам, но требуют более длительного прогрева и могут издавать скрип при холодном старте.</p>
+
+<ul>
+<li>🍃 Органические — идеальны для кросс-кантри и спокойной езды.</li>
+<li>🔥 Спеченные — лучший выбор для эндуро, даунхилла и влажного климата.</li>
+<li>⚖️ Полуметаллические — компромиссный вариант с умеренными характеристиками.</li>
+</ul>
+
+<p>Важно следить за толщиной накладки. Когда фрикционный слой стирается до металлического основания, начинается разрушение ротора. Замену колодок необходимо производить своевременно. <mark>Металлическая стружка, попадающая в колодки, может необратимо повредить поверхность ротора, требуя его полной замены.</mark></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед установкой новых колодок обязательно обезжирьте ротор спиртом или специальным очистителем, чтобы избежать загрязнения новой накладки.</p></aside>
+
+<h2 id="установка-и-центровка-суппорта">Установка и центровка суппорта</h2>
+
+<p>Правильная установка суппорта — залог тихой и эффективной работы тормозов. Даже идеально отрегулированные колодки будут скрипеть, если суппорт смещен относительно ротора. Процесс центровки начинается с ослабления крепежных болтов суппорта на пол-оборота.</p>
+
+<p>Затем нужно максимально сильно и резко нажать на ручку тормоза, удерживая её в нажатом состоянии. В этот момент суппорт самостоятельно встанет по центру ротора. Не отпуская ручку, нужно аккуратно затянуть болты крепления, чередуя их для равномерного прижима.</p>
+
+<p>Иногда требуется дополнительная подгонка, если ротор имеет биение. В этом случае можно использовать специальный инструмент для правки ротора или регулировочные винты на суппорте (если они предусмотрены конструкцией). Никогда не пытайтесь править ротор руками, так как это может привести к его деформации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная центровка суппорта под нажатой ручкой тормоза — это самый быстрый и точный способ устранить трение колодок о диск.</p></aside>
+
+<h2 id="диагностика-и-устранение-неисправностей">Диагностика и устранение неисправностей</h2>
+
+<p>Иногда тормоза начинают работать некорректно: теряют мощность, скрипят или полностью отказывают. Самой частой проблемой гидравлики является попадание воздуха в систему, что проявляется в «ватной» ручке тормоза. В этом случае требуется процедура прокачки (bleeding) для удаления воздушных пузырей.</p>
+
+<p>Скрип тормозов может быть вызван загрязнением колодок маслом или силиконом. В таких случаях часто помогает протирка ротора и замена колодок. Если на колодках остались следы масла, их лучше не пытаться отмыть, а заменить на новые.</p>
+
+<p>При потере мощности торможения также стоит проверить износ колодок и состояние ротора. Иногда причиной может быть перегрев системы, когда жидкость закипает и образует паровую пробку. Это происходит при длительном торможении на крутых спусках без перерывов.</p>
+
+<details class="pb-accordion"><summary>Что делать, если тормозная ручка проваливается?</summary><div class="pb-accordion-body"><p>Это признак наличия воздуха в системе или подсоса воздуха через уплотнения. Требуется немедленная прокачка системы или замена манетки/шланга.</p></div></details>
+
+<blockquote>⚠️ Внимание: Не игнорируйте посторонние звуки при торможении. Своевременное выявление проблемы может спасти вас от серьезной аварии.</blockquote>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять тормозную жидкость каждые 1-2 года. Гигроскопичность жидкости (особенно DOT) приводит к накоплению влаги, что снижает температуру кипения и вызывает коррозию внутри системы.</p>
+</details>
+
+<details>
+<summary>Можно ли ставить ротор меньшего диаметра?</summary>
+<p>Технически можно, если есть адаптеры, но это снизит тормозной момент. Увеличение диаметра ротора повышает рычаг и эффективность торможения.</p>
+</details>
+
+<details>
+<summary>Почему тормоза скрипят после дождя?</summary>
+<p>Скрип после дождя часто вызван окислением поверхности ротора. Достаточно несколько раз резко затормозить, чтобы очистить диски, и звук исчезнет.</p>
+</details>
+
+<details>
+<summary>Что такое адаптер для ротора?</summary>
+<p>Адаптер — это переходник, позволяющий установить ротор определенного диаметра на раму, рассчитанную на другой размер (например, 160 мм вместо 180 мм).</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-kolodok-na-velosipede-s-diskovymi-tormozami.html" class="pb-related-card">
+                <span class="pb-related-title">Замена колодок на дисковых тормозах велосипеда: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по замене тормозных колодок на велосипеде. Разбор механических и гидравлических систе</span>
+            </a><a href="/articles/t/to/tormoznoj-mekhanizm-dlya-velosipeda.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной механизм для велосипеда: виды, выбор и ремонт 2026</span>
+                <span class="pb-related-desc">Подробный гид по тормозным системам велосипедов: ободные, дисковые, барабанные. Как выбрать, настрои</span>
+            </a><a href="/articles/k/ka/kak-uznat-kakaya-karetka-na-velosipede.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать тип каретки велосипеда: 5 способов идентификации</span>
+                <span class="pb-related-desc">Узнайте, как определить тип каретки на велосипеде: по маркировке, размерам, стандарту крепления и ша</span>
+            </a><a href="/articles/k/ka/kak-prokachat-tormoza-na-velosipede-s-gidravlicheskimi-tormozami-v-domashnikh-usloviyakh.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать гидравлические тормоза на велосипеде: инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по прокачке гидравлики велосипеда дома. Выбор жидкостей, удаление воздуха, наст</span>
+            </a><a href="/articles/u/us/ustanovka-zadnego-diskovogo-tormoza-na-velosiped.html" class="pb-related-card">
+                <span class="pb-related-title">Установка заднего дискового тормоза на велосипед: инструкция и нюансы</span>
+                <span class="pb-related-desc">Пошаговое руководство по переделке ободного тормоза на дисковый. Выбор адаптеров, монтаж калипера, н</span>
+            </a><a href="/articles/c/ch/chem-smazyvat-vilku-velosipeda.html" class="pb-related-card">
+                <span class="pb-related-title">Чем смазывать вилку велосипеда: выбор масел и гелей</span>
+                <span class="pb-related-desc">Полный гид по выбору смазки для велосипедной вилки. Разбор масел, гелей, консистентных смазок и инст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

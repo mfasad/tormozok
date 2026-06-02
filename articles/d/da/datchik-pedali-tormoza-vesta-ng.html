@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Датчик педали тормоза Lada Vesta NG: неисправности, замена и калибровка — ТормозОК</title>
+    <meta name="description" content="Полный гайд по датчику стоп-сигналов на Lada Vesta NG. Причины поломки, самостоятельная замена, процедура калибровки ESC и нюансы работы с ABS.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/d/da/datchik-pedali-tormoza-vesta-ng.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Датчик педали тормоза Lada Vesta NG: неисправности, замена и калибровка">
+    <meta property="og:description" content="Полный гайд по датчику стоп-сигналов на Lada Vesta NG. Причины поломки, самостоятельная замена, процедура калибровки ESC и нюансы работы с ABS.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Датчик педали тормоза Lada Vesta NG: неисправности, замена и калибровка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#конструктивные-особенности-и-принцип-работы-на-vesta-ng">Конструктивные особенности и принцип работы на Vesta NG</a></li><li><a href="#основные-причины-поломки-и-признаки-неисправности">Основные причины поломки и признаки неисправности</a></li><li><a href="#диагностика-и-проверка-работоспособности-своими-руками">Диагностика и проверка работоспособности своими руками</a></li><li><a href="#алгоритм-самостоятельной-замены-датчика">Алгоритм самостоятельной замены датчика</a></li><li><a href="#калибровка-и-адаптация-системы-после-замены">Калибровка и адаптация системы после замены</a></li><li><a href="#нюансы-работы-с-системой-abs-и-esc">Нюансы работы с системой ABS и ESC</a></li><li><a href="#выбор-замены-оригинал-или-аналог">Выбор замены: оригинал или аналог</a></li><li><a href="#заключительные-рекомендации-по-эксплуатации">Заключительные рекомендации по эксплуатации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pravilno-prokachat-tormoza-s-abs-na-grante.html">Прокачка тормозов с ABS на Lada Granta: пошаговая инструкция</a></li><li><a href="/articles/p/pr/privod-v-sbore-granta-s-abs.html">Привод в сборе Lada Granta с ABS: выбор, замена и нюансы</a></li><li><a href="/articles/k/ka/kak-rabotaet-abs-na-veste.html">Как работает ABS на Lada Vesta: принцип действия, неисправности и ремонт</a></li><li><a href="/articles/z/za/zamena-datchika-abs-granta.html">Замена датчика ABS на Lada Granta: пошаговая инструкция и цены</a></li><li><a href="/articles/d/da/datchik-tormoza-kalina-1-gde-nakhoditsya.html">Датчик тормоза Лада Калина 1: где находится и как проверить</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Датчик педали тормоза Lada Vesta NG: диагностика и ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#конструктивные-особенности-и-принцип-работы-на-vesta-ng">Конструктивные особенности и принцип работы на Vesta NG</a></li><li><a href="#основные-причины-поломки-и-признаки-неисправности">Основные причины поломки и признаки неисправности</a></li><li><a href="#диагностика-и-проверка-работоспособности-своими-руками">Диагностика и проверка работоспособности своими руками</a></li><li><a href="#алгоритм-самостоятельной-замены-датчика">Алгоритм самостоятельной замены датчика</a></li><li><a href="#калибровка-и-адаптация-системы-после-замены">Калибровка и адаптация системы после замены</a></li><li><a href="#нюансы-работы-с-системой-abs-и-esc">Нюансы работы с системой ABS и ESC</a></li><li><a href="#выбор-замены-оригинал-или-аналог">Выбор замены: оригинал или аналог</a></li><li><a href="#заключительные-рекомендации-по-эксплуатации">Заключительные рекомендации по эксплуатации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система торможения на современном автомобиле <em>Lada Vesta NG</em> является критически важным узлом, где безопасность пассажиров напрямую зависит от надежности электронных компонентов. Среди множества датчиков, контролирующих работу автомобиля, особое место занимает <strong>датчик положения педали тормоза</strong>, который выполняет двойную функцию: включает стоп-сигналы и передает данные в электронный блок управления о нажатии педали.</p>
+
+<p>Неисправность этого элемента может привести к опасным ситуациям: от отсутствия сигнала остановки для водителей сзади до блокировки работы противобуксовочной системы и автопилота в режиме Start-Stop. На платформе <em>Vesta NG</em> требования к точности срабатывания строгие, так как данные с датчика используются не только для светотехники, но и для управления сложными алгоритмами безопасности, включая <strong>ABS и ESP</strong>.</p>
+
+<p>Владельцы часто сталкиваются с проблемами, когда стоп-сигналы горят постоянно или не загораются вовсе. В таких случаях важно понимать, что на новой платформе процесс диагностики отличается от старых версий <em>автомобилей Lada</em>, требуя внимательного отношения к процедуре сброса ошибок и калибровки.</p>
+
+<h2 id="конструктивные-особенности-и-принцип-работы-на-vesta-ng">Конструктивные особенности и принцип работы на Vesta NG</h2>
+
+<p>На автомобиле <em>Lada Vesta NG</em> используется усовершенствованный механизм крепления и считывания сигнала. В отличие от предшественников, здесь применяется датчик с более точным <strong>потенциометрическим сенсором</strong>, который фиксирует не просто факт нажатия, а угол поворота педали. Это позволяет системе управления двигателем точнее дозировать подачу топлива при сбросе газа.</p>
+
+<p>Элемент устанавливается непосредственно на кронштейн педали и взаимодействует с пластиковой тягой. При нажатии на педаль рычаг воздействует на шток датчика, замыкая или размыкая внутренние контакты в зависимости от запрограммированной логики. Для корректной работы системы <strong>Start-Stop</strong> блок управления должен видеть четкий сигнал о том, что водитель полностью выжал тормоз.</p>
+
+<p>Особенностью платформы NG является интеграция датчика в единую шину данных CAN. Это значит, что любые скачки напряжения или некорректные показания мгновенно фиксируются ЭБУ. Если сигнал отходит от нормы, система может принудительно отключить двигатель или заблокировать переключение передач в автоматическом режиме.</p>
+
+<h2 id="основные-причины-поломки-и-признаки-неисправности">Основные причины поломки и признаки неисправности</h2>
+
+<p>Симптомы неисправности датчика педали тормоза на <em>Vesta</em> могут проявляться по-разному, но чаще всего они касаются работы светотехники и поведения трансмиссии. Самая частая проблема — стоп-сигналы загораются при легком касании педали или остаются включенными после ее отпускания.</p>
+
+<p>Другой распространенный сценарий — отказ системы <strong>Start-Stop</strong> работать корректно. Машина не глушится на светофорах, выдает ошибку на приборной панели или, наоборот, глохнет без предупреждения. В некоторых случаях наблюдается "плавающий" холостой ход, так как ЭБУ получает противоречивые данные о состоянии тормозной системы.</p>
+
+<p>Причинами таких сбоев чаще всего становятся:</p>
+<ul>
+<li>Механический износ пластикового штокa или рычага внутри корпуса датчика.</li>
+<li>Засорение контактов пылью и влагой, проникающей в салон через пол.</li>
+<li>Обрыв внутренней проводки или окисление разъема электропитания.</li>
+<li>Нарушение заводской регулировки положения педали.</li>
+</ul>
+
+<p>Важно отметить, что на <em>Vesta NG</em> электроника может интерпретировать даже незначительный люфт как критическую ошибку. Если вы чувствуете, что педаль тормоза стала более мягкой или изменился ее ход, это может быть косвенным признаком проблем с датчиком или его креплением.</p>
+
+<p>Своевременная диагностика позволяет избежать дорогостоящего ремонта электронных блоков. Периодическая проверка контактов и состояния механизма крепления — залог стабильной работы.</p>
+
+<blockquote>⚠️ Внимание: Если на приборной панели загорелась лампа "Check Engine" или индикатор ABS, не пытайтесь игнорировать ошибку. На платформе NG это может привести к отключению системы стабилизации в экстренной ситуации.</blockquote>
+
+<div class="pb-poll" id="poll-40e5634e"><div class="pb-poll-question">📊 Горят ли у вас стоп-сигналы постоянно?</div><div class="pb-poll-option" data-poll="40e5634e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, всегда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40e5634e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, не загораются</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40e5634e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Горят иногда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40e5634e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-и-проверка-работоспособности-своими-руками">Диагностика и проверка работоспособности своими руками</h2>
+
+<p>Прежде чем менять дорогостоящий узел, стоит провести базовую диагностику. В первую очередь необходимо проверить состояние разъема, подключенного к датчику. Часто проблема кроется в плохом контакте или окислении ножек, особенно если автомобиль эксплуатируется в условиях повышенной влажности.</p>
+
+<p>Для проверки можно использовать мультиметр. Отсоедините разъем и замерьте сопротивление контактов при нажатой и отпущенной педали. Показания должны меняться скачкообразно, но плавно, без резких обрывов. Если мультиметр показывает бесконечное сопротивление или ноль в обоих положениях, датчик неисправен.</p>
+
+<p>Также стоит обратить внимание на механическую часть. Проверьте, не застрял ли рычаг педали в верхнем или нижнем положении. Иногда проблема решается простой чисткой и смазкой механизма, но использовать нужно только специальную <strong>силиконовую смазку</strong>, совместимую с пластиком.</p>
+
+<p>Если визуальный осмотр не дал результатов, потребуется диагностический сканер. Подключив устройство к разъему <code>OBD-II</code>, можно считать коды ошибок, которые укажут на конкретный параметр, выходящий за допустимые пределы. Это самый точный способ убедиться в необходимости замены.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом любых работ с электрикой обязательно отключите минусовую клемму аккумулятора, чтобы избежать короткого замыкания в цепи стоп-сигналов.</p></aside>
+
+<h2 id="алгоритм-самостоятельной-замены-датчика">Алгоритм самостоятельной замены датчика</h2>
+
+<p>Замена датчика педали тормоза на <em>Lada Vesta NG</em> — процедура, доступная для выполнения в гаражных условиях, но требующая аккуратности. Вам понадобится набор отверток, ключи и новый оригинальный или качественный аналог датчика.</p>
+
+<p>Сначала нужно демонтировать пластиковую декоративную панель под рулем, чтобы получить доступ к узлу педали. Открутите крепления и аккуратно снимите кожух. Будьте внимательны с проводами, чтобы не повредить их при демонтаже.</p>
+
+<p>Далее отсоедините электрический разъем от старого датчика. Датчик фиксируется на кронштейне специальными усиками, поэтому его нужно повернуть в определенном направлении и аккуратно вытянуть. Не прикладывайте чрезмерных усилий, чтобы не сломать крепления педали.</p>
+
+<p>Установите новый элемент в обратной последовательности. Убедитесь, что он плотно защелкнулся. После установки обязательно проверьте механический ход педали — она должна двигаться свободно, без зацепов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к замене</h4><label class="check-item"><input type="checkbox"><span>Отключить аккумулятор</span></label><label class="check-item"><input type="checkbox"><span>Снять декоративный кожух</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить разъем</span></label><label class="check-item"><input type="checkbox"><span>Выкрутить старый датчик</span></label><label class="check-item"><input type="checkbox"><span>Установить новый датчик</span></label><label class="check-item"><input type="checkbox"><span>Подключить разъем</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<p>Особое внимание уделите моменту установки. На платформе NG датчик часто имеет фиксированное положение, и неправильный монтаж может привести к тому, что педаль будет зажата или, наоборот, не будет нажиматься до конца.</p>
+
+<h2 id="калибровка-и-адаптация-системы-после-замены">Калибровка и адаптация системы после замены</h2>
+
+<p>Самым критическим этапом после замены является калибровка. На <em>Vesta NG</em> система не всегда определяет новый датчик автоматически. Если вы просто установите деталь без настройки, ошибка на панели может сохраниться, а функции <strong>Start-Stop</strong> будут работать некорректно.</p>
+
+<p>Для процедуры калибровки необходим диагностический сканер с поддержкой протоколов Lada. Процесс заключается в обучении электронного блока "нулевому" и "максимальному" положению педали. Без этого шага система не сможет корректно определять момент начала торможения.</p>
+
+<p>Процедура выглядит следующим образом: подключите сканер, перейдите в меню блока управления двигателем или ABS, выберите функцию "Адаптация педали тормоза". Следуйте инструкциям на экране: отпустите педаль, нажмите до упора, удерживайте несколько секунд.</p>
+
+<p>После завершения процедуры сбросьте все ошибки и перезапустите двигатель. Убедитесь, что индикаторы на панели погасли, а стоп-сигналы работают адекватно нажатиям. Это обязательный шаг для безопасной эксплуатации.</p>
+
+<blockquote>⚠️ Внимание: Пытайтесь проводить калибровку только на прогретом двигателе и при выключенных потребителях энергии (фары, печка). Нестабильное напряжение может прервать процесс обучения.</blockquote>
+
+<h2 id="нюансы-работы-с-системой-abs-и-esc">Нюансы работы с системой ABS и ESC</h2>
+
+<p>Датчик педали тормоза тесно связан с системой антиблокировочной тормозной системы (ABS) и системой курсовой устойчивости (ESC). Эти системы используют данные о нажатии педали для определения намерений водителя.</p>
+
+<p>Если датчик передает неверные сигналы, например, показывает, что тормоз нажат, когда педаль отпущена, система ESP может вмешаться в работу двигателя без необходимости, создавая рывки при движении. Это особенно опасно на скользкой дороге.</p>
+
+<p>В таблице ниже приведены основные параметры, которые мониторит система при работе датчика:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Нормальное значение</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Положение педали (отпущена)</td>
+<td>0-5%</td>
+<td>Значение выше 10%</td>
+</tr>
+<tr>
+<td>Положение педали (нажата)</td>
+<td>95-100%</td>
+<td>Значение ниже 80%</td>
+</tr>
+<tr>
+<td>Время срабатывания</td>
+<td>&lt; 0.1 сек</td>
+<td>Задержка реакции</td>
+</tr>
+<tr>
+<td>Стабильность сигнала</td>
+<td>Постоянная</td>
+<td>Дрожание показаний</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Отказ датчика может привести к полному отключению системы стабилизации. В этом случае на панели загорится соответствующая лампа, и автомобиль будет вести себя как обычная машина без электронных помощников.</p>
+
+<details class="pb-accordion"><summary>Что делать, если ошибка ABS не сбрасывается?</summary><div class="pb-accordion-body"><p>Попробуйте сбросить аккумулятор на 15 минут. Если не помогло, проверьте предохранители и проверьте работу датчика вращения колес, так как ошибка может быть комплексной.</p></div></details>
+
+<p>Иногда проблема кроется не в самом датчике, а в проводке, ведущей к блоку ABS. Проверьте целостность жгута проводов, особенно в местах перегиба у педали.</p>
+
+<h2 id="выбор-замены-оригинал-или-аналог">Выбор замены: оригинал или аналог</h2>
+
+<p>При выборе нового датчика для <em>Lada Vesta NG</em> важно учитывать производителя. Оригинальные детали, как правило, имеют лучшую эргономику и долговечность, но стоимость их может быть выше.</p>
+
+<p>Аналоги от проверенных брендов могут предложить хорошее соотношение цены и качества. Однако, дешевые китайские копии часто имеют неточную калибровку и быстро выходят из строя из-за низкого качества пластика.</p>
+
+<p>Обращайте внимание на маркировку на корпусе. Избегайте подделок, проверяя упаковку и наличие голограмм. Правильный выбор запчасти сэкономит вам время и нервы в будущем.</p>
+
+<ul>
+<li>Оригинальные датчики имеют более точную геометрию штока.</li>
+<li>Качественные аналоги часто используют те же материалы, что и оригинал.</li>
+<li>Дешевые копии могут иметь люфты, приводящие к ложным срабатываниям.</li>
+</ul>
+
+<p>Не экономьте на безопасности. Неисправный датчик тормоза — это риск для вас и окружающих участников движения. Выбирайте проверенные бренды и требуйте гарантию на покупку.</p>
+
+<blockquote>⚠️ Внимание: Убедитесь, что выбранный аналог имеет сертификацию и подходит именно для платформы Vesta NG, а не для предыдущих версий автомобиля. Различия в разъемах и креплении могут быть незаметны на первый взгляд.</blockquote>
+
+<h2 id="заключительные-рекомендации-по-эксплуатации">Заключительные рекомендации по эксплуатации</h2>
+
+<p>Чтобы датчик педали тормоза служил долго, избегайте резких ударов по педали и чрезмерных нагрузок. Периодически осматривайте механизм на предмет износа.</p>
+
+<p>Если вы заметили, что педаль стала "ватной" или изменился звук нажатия, не откладывайте диагностику. Раннее выявление проблемы сэкономит средства и предотвратит поломку в пути.</p>
+
+<p>Регулярное техническое обслуживание включает проверку работы всех электронных систем безопасности. Не пренебрегайте рекомендациями производителя по срокам проверки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная калибровка после замены датчика — это 50% успеха в восстановлении работы системы Start-Stop и ABS. Без нее даже новый датчик может работать некорректно.</p></aside>
+
+<details>
+<summary>Зачем нужна калибровка датчика педали тормоза?</summary>
+<p>Калибровка необходима для того, чтобы электронный блок управления (ЭБУ) запомнил точные значения "полностью отпущенной" и "полностью нажатой" педали. Без этой процедуры система может путать намерения водителя, что приведет к ошибкам в работе Start-Stop, ABS и тормозной системы.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить без датчика педали тормоза?</summary>
+<p>Ездить технически можно, но крайне опасно и незаконно. Стоп-сигналы могут не гореть, что создаст аварийную ситуацию. Кроме того, на Vesta NG это приведет к отключению систем безопасности и появлению постоянных ошибок на панели приборов.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает замена датчика?</summary>
+<p>Сам процесс замены занимает около 15-20 минут. Однако, если требуется калибровка с использованием диагностического оборудования, общее время работ может увеличиться до 40-50 минут.</p>
+</details>
+
+<details>
+<summary>Что делать, если ошибка не сбрасывается после замены?</summary>
+<p>Если ошибка сохраняется, проверьте правильность установки датчика, целостность проводки и качество разъема. Возможно, потребуется более глубокая диагностика блока ABS или сброс адаптаций через профессиональный сканер.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-pravilno-prokachat-tormoza-s-abs-na-grante.html" class="pb-related-card">
+                <span class="pb-related-title">Прокачка тормозов с ABS на Lada Granta: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по прокачке тормозной системы с ABS на Lada Granta. Этапы работы, инструменты,</span>
+            </a><a href="/articles/p/pr/privod-v-sbore-granta-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Привод в сборе Lada Granta с ABS: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гид по замене переднего привода Lada Granta с системой ABS. Ошибки датчиков, выбор ремня, цен</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-abs-na-veste.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает ABS на Lada Vesta: принцип действия, неисправности и ремонт</span>
+                <span class="pb-related-desc">Подробный разбор работы антиблокировочной системы на Lada Vesta. Устройство датчиков, алгоритмы сраб</span>
+            </a><a href="/articles/z/za/zamena-datchika-abs-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Замена датчика ABS на Lada Granta: пошаговая инструкция и цены</span>
+                <span class="pb-related-desc">Подробный гайд по замене датчика ABS на Лада Гранта. Симптомы поломки, выбор запчасти, пошаговая инс</span>
+            </a><a href="/articles/d/da/datchik-tormoza-kalina-1-gde-nakhoditsya.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик тормоза Лада Калина 1: где находится и как проверить</span>
+                <span class="pb-related-desc">Подробное руководство по поиску датчика тормоза на Лада Калина 1 (2004-2013): расположение, признаки</span>
+            </a><a href="/articles/e/el/elektricheskie-tormoza-na-pritsep.html" class="pb-related-card">
+                <span class="pb-related-title">Электрические тормоза на прицеп: выбор, установка и настройка</span>
+                <span class="pb-related-desc">Полный гид по электрическим тормозам для прицепов: принцип работы, отличие от гидравлики, пошаговая </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

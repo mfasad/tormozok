@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Ламинарный профиль крыла: принцип работы и эффективность — ТормозОК</title>
+    <meta name="description" content="Что такое ламинарный профиль крыла? Разбор физики обтекания, преимущества снижения сопротивления и особенности применения в авиации.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/l/la/laminarnyj-profil-kryla-chto-eto.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ламинарный профиль крыла: принцип работы и эффективность">
+    <meta property="og:description" content="Что такое ламинарный профиль крыла? Разбор физики обтекания, преимущества снижения сопротивления и особенности применения в авиации.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ламинарный профиль крыла: принцип работы и эффективность</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-и-отличие-от-турбулентного-режима">Физика процесса и отличие от турбулентного режима</a></li><li><a href="#конструктивные-особенности-геометрии">Конструктивные особенности геометрии</a></li><li><a href="#преимущества-и-недостатки-применения">Преимущества и недостатки применения</a></li><li><a href="#особенности-эксплуатации-и-обслуживания">Особенности эксплуатации и обслуживания</a></li><li><a href="#сравнение-с-классическими-профилями">Сравнение с классическими профилями</a></li><li><a href="#применение-в-современной-авиации-и-бпла">Применение в современной авиации и БПЛА</a></li><li><a href="#будущее-технологии-и-перспективы">Будущее технологии и перспективы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/my/myshka-logitech-besprovodnaya-ne-rabotaet.html">Мышка Logitech беспроводная не работает: причины и полное решение</a></li><li><a href="/articles/s/st/styk-fartuka-i-stoleshnitsy-na-kukhne-bez-plintusa.html">Стык фартука и столешницы без плинтуса: монтаж, материалы и ошибки</a></li><li><a href="/articles/r/re/retarder-chto-eto-takoe.html">Ретардер в автомобиле: принцип работы, виды и отличия от тормозов</a></li><li><a href="/articles/p/po/podelki-iz-tormoznykh-diskov.html">Поделки из тормозных дисков: идеи, инструменты и мастер-классы</a></li><li><a href="/articles/k/ka/kak-tormozit-samolet-pri-posadke.html">Как тормозит самолет при посадке: системы, методы и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ламинарный профиль крыла: физика, преимущества и особенности эксплуатации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-и-отличие-от-турбулентного-режима">Физика процесса и отличие от турбулентного режима</a></li><li><a href="#конструктивные-особенности-геометрии">Конструктивные особенности геометрии</a></li><li><a href="#преимущества-и-недостатки-применения">Преимущества и недостатки применения</a></li><li><a href="#особенности-эксплуатации-и-обслуживания">Особенности эксплуатации и обслуживания</a></li><li><a href="#сравнение-с-классическими-профилями">Сравнение с классическими профилями</a></li><li><a href="#применение-в-современной-авиации-и-бпла">Применение в современной авиации и БПЛА</a></li><li><a href="#будущее-технологии-и-перспективы">Будущее технологии и перспективы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>В мире аэродинамики существует фундаментальное различие между типами обтекания поверхности воздушного судна. Большинство современных самолетов используют стандартные профили, где турбулентность возникает почти сразу за передней кромкой, что создает значительное сопротивление. Однако существует <strong>ламинарный профиль крыла</strong>, который специально спроектирован для того, чтобы удерживать плавный, слоистый поток воздуха на максимально возможной длине хорды.</p>
+
+<p>Главная цель использования такой геометрии — радикальное снижение <strong>лобового сопротивления</strong> и повышение аэродинамического качества. Это позволяет летательным аппаратам развивать большие скорости при той же мощности двигателя или экономить топливо на дальних дистанциях. Понимание того, как работает <strong>ламинарный слой</strong>, критически важно для инженеров и пилотов, стремящихся к максимальной эффективности полета.</p>
+
+<h2 id="физика-процесса-и-отличие-от-турбулентного-режима">Физика процесса и отличие от турбулентного режима</h2>
+
+<p>Чтобы понять суть явления, необходимо представить, как воздух движется вокруг крыла. В обычном режиме поток быстро становится хаотичным, образуя вихри, которые "тормозят" самолет. Ламинарный профиль отличается особым распределением давления, которое заставляет поток оставаться спокойным и упорядоченным гораздо дольше.</p>
+
+<p>Ключевым фактором здесь является точка перехода. В стандартных профилях она находится близко к передней кромке. В ламинарных же конструкциях точка перехода сдвигается назад, иногда занимая до 50-60% длины хорды. Это достигается за счет того, что максимальная толщина крыла смещена не к трети, а к середине или даже к задней части профиля.</p>
+
+<p>Важно отметить, что <strong>вязкость воздуха</strong> играет решающую роль в удержании ламинарности. Если поверхность крыла будет иметь малейшие неровности или загрязнения, ламинарный слой разрушится мгновенно, превратившись в турбулентный. Поэтому требования к качеству изготовления и чистоте поверхности здесь на порядок выше, чем для обычных профилей.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Любое загрязнение поверхности (насекомые, лед, масло) на передней кромке крыла с ламинарным профилем вызывает преждевременный срыв потока и резкую потерю подъемной силы.</p>
+</blockquote>
+
+<h2 id="конструктивные-особенности-геометрии">Конструктивные особенности геометрии</h2>
+
+<p>Геометрия ламинарного крыла выглядит иначе, чем привычное нам трапециевидное или скругленное крыло. Задняя кромка часто имеет характерный изгиб, а толщина профиля распределена неравномерно. Максимальная толщина у таких крыльев может составлять 40-50% длины хорды, в то время как у классических профилей этот показатель редко превышает 30%.</p>
+
+<p>Такая форма позволяет создать зону отрицательного градиента давления, которая "прижимает" поток к поверхности. Воздух ускоряется плавно, не создавая резких скачков давления, которые провоцируют турбулентность. Это свойство особенно ценно для <em>самолетов-истребителей</em> и <em>далекобойных пассажирских лайнеров</em>, где каждый процент сопротивления влияет на дальность.</p>
+
+<p>Однако создание такой формы накладывает ограничения на конструкцию. <strong>Консоли крыла</strong> становятся сложнее в изготовлении, а внутренние объемы для размещения топлива или шасси могут быть меньше из-за смещения толстой части профиля к задней кромке. Инженерам приходится искать компромисс между аэродинамикой и конструктивной прочностью.</p>
+
+<div class="pb-poll" id="poll-35535bb3"><div class="pb-poll-question">📊 Какой тип профиля, по вашему мнению, эффективнее для сверхзвуковых скоростей?</div><div class="pb-poll-option" data-poll="35535bb3" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Классический симметричный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="35535bb3" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Ламинарный профиль</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="35535bb3" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Двойная кривизна</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="35535bb3" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Треугольное крыло</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="преимущества-и-недостатки-применения">Преимущества и недостатки применения</h2>
+
+<p>Использование <strong>ламинарного профиля</strong> дает очевидные плюсы, но они не всегда перевешивают минусы в реальных условиях эксплуатации. Основное преимущество — это снижение сопротивления трения, что напрямую влияет на расход топлива. На крейсерских скоростях экономия может достигать значительных величин, делая полет более рентабельным.</p>
+
+<p>Кроме того, ламинарное обтекание снижает уровень шума, создаваемого воздушным потоком. Для гражданских перевозчиков это важный фактор, так как аэродинамический шум часто становится причиной жалоб жителей приаэродромных зон. Пилоты также отмечают более плавное поведение самолета на малых скоростях при определенных настройках.</p>
+
+<ul>
+<li>📉 Значительное снижение аэродинамического сопротивления на крейсерском режиме.</li>
+<li>🔇 Уменьшение уровня шума от обтекания крыла и фюзеляжа.</li>
+<li>🚀 Повышение максимальной скорости при той же тяге двигателя.</li>
+<li>💰 Снижение эксплуатационных расходов на топливо на дальних маршрутах.</li>
+</ul>
+
+<p>Но есть и серьезные недостатки. Главная проблема — чувствительность к состоянию поверхности. Песчинка, капля дождя или насекомое на передней кромке могут разрушить ламинарный слой, превратив его в турбулентный и уничтожив все преимущества. Это требует идеальной чистоты крыльев перед вылетом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: На взлетно-посадочных полосах с плохим покрытием или в условиях сильного загрязнения атмосферы эффективность ламинарного профиля может падать на 40-50% из-за преждевременного срыва потока.</p>
+</blockquote>
+
+<h2 id="особенности-эксплуатации-и-обслуживания">Особенности эксплуатации и обслуживания</h2>
+
+<p>Эксплуатация техники с ламинарными профилями требует особого подхода к техническому обслуживанию. Стандартные процедуры мойки могут быть недостаточными, если они не направлены на удаление микроскопических частиц, способных нарушить пограничный слой. В некоторых случаях применяются специальные покрытия, уменьшающие трение.</p>
+
+<p>Пилоты должны учитывать, что характеристики <strong>срыва потока</strong> на таких крыльях отличаются от классических. Срыв может происходить внезапно и без характерных предупреждающих вибраций, характерных для обычных профилей. Это требует высокой квалификации летного экипажа и использования надежных систем автоматического предупреждения о срыве.</p>
+
+<p>В условиях обледенения ламинарные крылья также ведут себя специфически. Лед, нарастая на передней кромке, мгновенно разрушает ламинарность. Поэтому системы противообледенения должны быть более эффективными и включаться заранее, еще до начала образования льда, в отличие от систем на обычных крыльях.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед вылетом для ламинарного профиля</h4><label class="check-item"><input type="checkbox"><span>Осмотреть переднюю кромку на наличие насекомых</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии следов масла</span></label><label class="check-item"><input type="checkbox"><span>Проверить состояние антиобледенительной системы</span></label><label class="check-item"><input type="checkbox"><span>Очистить поверхность специальными растворами</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="сравнение-с-классическими-профилями">Сравнение с классическими профилями</h2>
+
+<p>Для наглядности сравним основные характеристики ламинарных и классических (турбулентных) профилей. Это поможет понять, почему выбор в пользу той или иной геометрии зависит от задач, стоящих перед самолетом. В таблице ниже приведены сравнительные данные по ключевым параметрам.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Классический профиль</th>
+<th>Ламинарный профиль</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Положение макс. толщины</td>
+<td>25-30% хорды</td>
+<td>40-60% хорды</td>
+</tr>
+<tr>
+<td>Длина ламинарного слоя</td>
+<td>5-15% хорды</td>
+<td>40-60% хорды</td>
+</tr>
+<tr>
+<td>Чувствительность к загрязнению</td>
+<td>Низкая</td>
+<td>Очень высокая</td>
+</tr>
+<tr>
+<td>Характер срыва потока</td>
+<td>Плавный, с вибрацией</td>
+<td>Резкий, внезапный</td>
+</tr>
+<tr>
+<td>Сопротивление трения</td>
+<td>Высокое</td>
+<td>Низкое</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из данных, ламинарный профиль выигрывает в эффективности, но проигрывает в надежности и простоте обслуживания. Это накладывает отпечаток на выбор конструкции для конкретных классов летательных аппаратов. Легкие спортивные самолеты часто используют компромиссные решения, сочетающие черты обоих типов.</p>
+
+<details class="pb-accordion"><summary>Историческая справка о ламинарных крыльях</summary><div class="pb-accordion-body"><p>Первые успешные опыты с ламинарными профилями проводились в Германии в 1930-х годах. Самолет Messerschmitt Bf 109 использовал модифицированный профиль, но настоящий прорыв произошел с появлением P-51 Mustang, который благодаря ламинарному крылу стал одним из лучших истребителей Второй мировой войны по дальности полета.</p></div></details>
+
+<h2 id="применение-в-современной-авиации-и-бпла">Применение в современной авиации и БПЛА</h2>
+
+<p>В современной авиации чистые ламинарные профили встречаются редко, чаще всего используются смешанные профили, где ламинарность сохраняется лишь на части поверхности. Однако для <em>беспилотных летательных аппаратов</em> (БПЛА) и планеров это решение остается востребованным. Длительный полет на малой мощности требует максимальной аэродинамической эффективности.</p>
+
+<p>Пилоты планеров активно используют ламинарные крылья для набора высоты на термике и длительного планирования. В этой нише требования к чистоте крыла выполняются легко, так как планеры часто хранятся в ангарах и готовятся к полету в идеальных условиях. Это позволяет реализовать весь потенциал профиля.</p>
+
+<p>Для реактивных истребителей и гражданских лайнеров актуальны технологии активного управления пограничным слоем. Это позволяет поддерживать ламинарность даже при наличии небольших загрязнений или в условиях турбулентной атмосферы, отводя воздух через микроперфорацию поверхности крыла.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для сохранения эффективности ламинарного профиля перед вылетом обязательно используйте мягкие салфетки и специальные очистители, избегая абразивных материалов, которые могут оставить микроцарапины на поверхности.</p></aside>
+
+<h2 id="будущее-технологии-и-перспективы">Будущее технологии и перспективы</h2>
+
+<p>Развитие материаловедения открывает новые горизонты для применения ламинарных профилей. Использование композитных материалов позволяет создавать идеально гладкие поверхности, устойчивые к коррозии и деформациям. Это снижает риски преждевременного перехода потока в турбулентный режим.</p>
+
+<p>Перспективным направлением является создание адаптивных крыльев, которые могут менять свою геометрию в полете. В одном режиме крыло может иметь ламинарный профиль для экономии топлива, а в другом — трансформироваться для маневрирования или взлета. Это позволит объединить преимущества разных типов профилей.</p>
+
+<p>Несмотря на сложности, инвестиции в исследования ламинарного обтекания продолжаются. Снижение выбросов CO2 и шума делает поиск способов уменьшения сопротивления одним из приоритетов мировой авиационной промышленности. <mark>Технология активного отсасывания пограничного слоя</mark> уже тестируется на прототипах и может стать стандартом в ближайшие десятилетия.</p>
+
+<details>
+<summary>Что такое точка перехода в ламинарном профиле?</summary>
+<p>Точка перехода — это место на поверхности крыла, где ламинарный (плавный) поток воздуха превращается в турбулентный (хаотичный). В ламинарных профилях инженеры стараются сместить эту точку как можно дальше к задней кромке.</p>
+</details>
+<details>
+<summary>Почему ламинарные профили так чувствительны к насекомым?</summary>
+<p>Даже мелкие насекомые, прилипшие к передней кромке, создают микровихри, которые разрушают тонкий ламинарный слой. Это вызывает мгновенный переход потока в турбулентный режим и потерю аэродинамических преимуществ.</p>
+</details>
+<details>
+<summary>Какие самолеты используют ламинарные профили?</summary>
+<p>Классическим примером является истребитель P-51 Mustang, а также многие современные планеры и беспилотники. В гражданской авиации используются смешанные профили с участками ламинарного обтекания.</p>
+</details>
+<details>
+<summary>Можно ли самостоятельно установить ламинарный профиль на самолет?</summary>
+<p>Нет, замена профиля крыла требует полной пересертификации летательного аппарата и изменения конструкции планера. Это сложная инженерная задача, недоступная для кустарной модификации.</p>
+</details>
+<details>
+<summary>Влияет ли скорость полета на ламинарность?</summary>
+<p>Да, с ростом скорости (числа Рейнольдса) ламинарный слой становится тоньше и менее стабильным. Существует оптимальный диапазон скоростей, в котором ламинарный профиль работает наиболее эффективно.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/my/myshka-logitech-besprovodnaya-ne-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Мышка Logitech беспроводная не работает: причины и полное решение</span>
+                <span class="pb-related-desc">Почему беспроводная мышь Logitech перестала работать? Полный гайд по диагностике: от замены батареек</span>
+            </a><a href="/articles/s/st/styk-fartuka-i-stoleshnitsy-na-kukhne-bez-plintusa.html" class="pb-related-card">
+                <span class="pb-related-title">Стык фартука и столешницы без плинтуса: монтаж, материалы и ошибки</span>
+                <span class="pb-related-desc">Как сделать герметичный стык фартука и столешницы без плинтуса. Сравнение материалов, пошаговая инст</span>
+            </a><a href="/articles/r/re/retarder-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер в автомобиле: принцип работы, виды и отличия от тормозов</span>
+                <span class="pb-related-desc">Что такое ретардер? Подробный разбор гидравлических и электромагнитных замедлителей, их роль в безоп</span>
+            </a><a href="/articles/p/po/podelki-iz-tormoznykh-diskov.html" class="pb-related-card">
+                <span class="pb-related-title">Поделки из тормозных дисков: идеи, инструменты и мастер-классы</span>
+                <span class="pb-related-desc">Узнайте, как создать уникальные изделия из старых тормозных дисков. Обзор инструментов, тех безопасн</span>
+            </a><a href="/articles/k/ka/kak-tormozit-samolet-pri-posadke.html" class="pb-related-card">
+                <span class="pb-related-title">Как тормозит самолет при посадке: системы, методы и безопасность</span>
+                <span class="pb-related-desc">Подробный разбор механизмов торможения самолета: реверс тяги, интерцепторы и колесные тормоза. Узнай</span>
+            </a><a href="/articles/n/ni/nizkaya-skorost-zapisi-na-disk.html" class="pb-related-card">
+                <span class="pb-related-title">Низкая скорость записи на диск: причины, диагностика и решения</span>
+                <span class="pb-related-desc">Почему горит диск медленно? Разбор причин низкой скорости записи на оптические носители: от состояни</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

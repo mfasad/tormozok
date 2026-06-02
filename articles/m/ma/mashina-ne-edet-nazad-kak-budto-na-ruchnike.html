@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Машина не едет назад: причины заедания ручника и быстрая диагностика — ТормозОК</title>
+    <meta name="description" content="Почему автомобиль не движется задним ходом как будто на ручнике? Разбор причин блокировки задних колес, диагностика ручного тормоза и алгоритм устранения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/m/ma/mashina-ne-edet-nazad-kak-budto-na-ruchnike.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Машина не едет назад: причины заедания ручника и быстрая диагностика">
+    <meta property="og:description" content="Почему автомобиль не движется задним ходом как будто на ручнике? Разбор причин блокировки задних колес, диагностика ручного тормоза и алгоритм устранения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Машина не едет назад: причины заедания ручника и быстрая диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механические-причины-заклинивания-ручного-тормоза">Механические причины заклинивания ручного тормоза</a></li><li><a href="#проблемы-с-суппортами-и-тормозными-механизмами">Проблемы с суппортами и тормозными механизмами</a></li><li><a href="#электронный-ручник-epb-нюансы-диагностики">Электронный ручник (EPB): нюансы диагностики</a></li><li><a href="#алгоритм-самостоятельной-диагностики-неисправности">Алгоритм самостоятельной диагностики неисправности</a></li><li><a href="#таблица-симптомов-и-вероятных-причин">Таблица симптомов и вероятных причин</a></li><li><a href="#профилактика-и-продление-срока-службы">Профилактика и продление срока службы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/t/tr/tros-ruchnika-kalina-2-khetchbek.html">Замена троса ручника Lada Kalina 2 Хэтчбек: Выбор и инструкция</a></li><li><a href="/articles/z/za/zamena-trosov-ruchnika-akkord-7.html">Замена тросов ручника Honda Accord 7: Инструкция, цены, нюансы</a></li><li><a href="/articles/t/tr/tros-ruchnogo-tormoza-21214.html">Трос ручного тормоза 21214: замена, регулировка и выбор запчасти</a></li><li><a href="/articles/r/re/regulirovka-stoyanochnogo-tormoza-granta.html">Регулировка ручного тормоза Lada Granta: пошаговая инструкция и нюансы</a></li><li><a href="/articles/t/tr/tros-ruchnika-largus-16-klapanov.html">Замена троса ручника на Лада Ларгус 16 клапанов: цены, подбор и инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Машина не едет назад: диагностика заклинивания ручного тормоза и привода</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механические-причины-заклинивания-ручного-тормоза">Механические причины заклинивания ручного тормоза</a></li><li><a href="#проблемы-с-суппортами-и-тормозными-механизмами">Проблемы с суппортами и тормозными механизмами</a></li><li><a href="#электронный-ручник-epb-нюансы-диагностики">Электронный ручник (EPB): нюансы диагностики</a></li><li><a href="#алгоритм-самостоятельной-диагностики-неисправности">Алгоритм самостоятельной диагностики неисправности</a></li><li><a href="#таблица-симптомов-и-вероятных-причин">Таблица симптомов и вероятных причин</a></li><li><a href="#профилактика-и-продление-срока-службы">Профилактика и продление срока службы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Чувство, будто <strong>поднят ручной тормоз</strong> при попытке задним ходом, возникает из-за заклинивания механизма, который не разжимается автоматически после отпускания педали. Вы включаете передачу, но автомобиль стоит на месте или едва сдвигается с характерным operaciónным запахом и скрежетом, что указывает на блокировку колодок, а не на поломку коробки передач. Игнорирование такого симптома неминуемо ведет к перегреву тормозных дисков и разрушению фрикционных накладок, поэтому проверку состояния тросов и суппортов нужно проводить немедленно.</p>
+
+<p>Игнорирование такой неисправности опасно не только возможной поломкой узлов трансмиссии, но и серьезным перегревом <strong>тормозных колодок</strong> или дисков. Если вы заметили, что <code>автомобиль не едет назад</code>, необходимо немедленно прекратить движение и провести визуальный осмотр. Часто проблема кроется в механическом заедании тросов или коррозии суппортов, что требует немедленного вмешательства.</p>
+
+<h2 id="механические-причины-заклинивания-ручного-тормоза">Механические причины заклинивания ручного тормоза</h2>
+
+<p>Наиболее частой причиной, по которой <strong>тормозная система</strong> не отпускает колеса, является механическое повреждение или коррозия элементов привода. Тросы <strong>ручного тормоза</strong> со временем теряют смазку, в их изоляции образуются трещины, куда попадает влага и грязь. В результате трос "ржавеет" внутри оболочки и перестает возвращаться в исходное положение после того, как вы опустили рычаг стояночного тормоза.</p>
+
+<p>Ситуация усугубляется в зимний период, когда попадаетяя вода замерзает, буквально приковывая трос к оболочке. В таком случае <em>тормозные колодки</em> остаются прижатыми к барабану или диску с полной силой. Даже если рычаг поднят вверх, тормоз не отпускает, и машина не может сдвинуться с места без пробуксовки. Это особенно характерно для автомобилей с задними барабанными тормозами.</p>
+
+<ul>
+<li>✅ <strong>Тросы</strong> заклинили от коррозии внутри изоляции и не имеют свободного хода.</li>
+<li>❌ Механизм натяжения рычага <strong>ручного тормоза</strong> не возвращается в нейтральное положение.</li>
+<li>⚡️ Ледяная пробка в оболочке троса блокирует движение троса обратно.</li>
+</ul>
+
+<p>Важно проверить состояние регулировочной гайки, расположенной под полом багажника или под автомобилем. Если она была перетянута при прошлой регулировке, даже минимальное расширение троса от нагрева или коррозии может создавать постоянное натяжение.</p>
+
+<h2 id="проблемы-с-суппортами-и-тормозными-механизмами">Проблемы с суппортами и тормозными механизмами</h2>
+
+<p>Если у вашего автомобиля установлены <strong>дисковые тормоза</strong> с отдельным механизмом ручника внутри суппорта, проблема может быть скрыта в самом узле. Поршень суппорта может заклинить из-за износа направляющих или разрушения защитных пыльников. В этом случае тормозные колодки не отходят от диска, создавая эффект постоянного торможения.</p>
+
+<p>Особенно часто это случается на <em>автомобилях с пробегом</em>, где направляющие суппорта покрыты слоем старой, загустевшей смазки. При включении задней передачи нагрузка на такие механизмы возрастает, и если суппорт не отпустил диск, возникает сильное сопротивление. В некоторых случаях это сопровождается характерным скрежетом или запахом горячего металла.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если вы чувствуете сильный запах горелых тормозов или видите дым из-под колеса, немедленно прекратите попытки тронуться. Эксплуатация машины в таком режиме может привести к разрушению <strong>тормозного диска</strong> и перегреву ступичного подшипника.</p>
+</blockquote>
+
+<p>Для диагностики необходимо снять колесо и визуально оценить состояние суппорта. Если палец направляющей не двигается пальцами или с большим усилием, требуется чистка и замена смазки. В крайних случаях поршень может потребовать замены или капитального ремонта.</p>
+
+<div class="pb-poll" id="poll-e20a86d0"><div class="pb-poll-question">📊 Какой тип тормозов стоит на вашей машине?</div><div class="pb-poll-option" data-poll="e20a86d0" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Барабанный (задние) и Дисковый (передние)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e20a86d0" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью дисковые</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e20a86d0" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинированные (Механика + Гидравлика)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e20a86d0" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не смотрел</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="электронный-ручник-epb-нюансы-диагностики">Электронный ручник (EPB): нюансы диагностики</h2>
+
+<p>Современные автомобили оснащаются электронной системой стояночного тормоза (<strong>EPB</strong>), которая работает без тросов. Здесь за разжимание колодок отвечают электромоторы, встроенные в суппорта. Если машина не едет назад, проблема может быть связана с программным сбоем, низким зарядом аккумулятора или выходом из строя мотора-привода.</p>
+
+<p>В отличие от механики, где вы видите натянутый трос, в электронике проблема часто скрыта в блоке управления. Иногда система не получает сигнал о разблокировке после запуска двигателя, особенно если аккумулятор был разряжен. В таких случаях колесо остается заблокированным, и создается иллюзия заклинившего ручника.</p>
+
+<ul>
+<li>🔋 <strong>Аккумулятор</strong> имеет низкий заряд, которого не хватает для работы моторов EPB.</li>
+<li>💻 Сбой в программном обеспечении <strong>блока управления</strong> тормозной системой.</li>
+<li>🔧 Неисправность электродвигателя на одном из задних суппортов.</li>
+</ul>
+
+<p>Часто помогает процедура сброса системы через диагностический сканер или специальная последовательность действий с педалями и кнопкой ручника. Однако, если мотор сгорел, потребуется замена суппорта в сборе или его ремонт.</p>
+
+<details class="pb-accordion"><summary>Как проверить электронный ручник без сканера?</summary><div class="pb-accordion-body"><p>Попробуйте запустить двигатель и подождать 2-3 минуты. Иногда система выполняет самопроверку и разблокирует колеса автоматически. Если это не помогло, попробуйте снять минусовую клемму аккумулятора на 10-15 минут, затем подключить обратно и снова запустить мотор.</p></div></details>
+
+<h2 id="алгоритм-самостоятельной-диагностики-неисправности">Алгоритм самостоятельной диагностики неисправности</h2>
+
+<p>Чтобы понять, где именно кроется проблема, необходимо провести последовательную проверку. Начните с простого: убедитесь, что рычаг ручного тормоза полностью опущен. Иногда это банальная ошибка, когда водитель забывает отпустить "ручник" или он стоит в промежуточном положении.</p>
+
+<p>Далее необходимо проверить состояние тросов. Если у вас механическая система, попробуйте покачать тросы рукой под автомобилем или снять колпаки на барабанах. Если трос не имеет свободного хода даже при опущенном рычаге, проблема в приводе. Если трос двигается свободно, значит, заклинило сам механизм на колесе.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Шаги первичной диагностики</h4><label class="check-item"><input type="checkbox"><span>Убедиться в полном опускании рычага ручника</span></label><label class="check-item"><input type="checkbox"><span>Проверить свободный ход тросов под днищем</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть задние колеса на предмет перегрева</span></label><label class="check-item"><input type="checkbox"><span>Попробовать раскачать машину вперед-назад</span></label><label class="check-item"><input type="checkbox"><span>Снять колесо для визуального осмотра суппорта</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p> Но в 90% случаев проблема локализуется именно в задней подвеске. Если вы обнаружите, что одно колесо горячее других после короткой попытки движения, это верный признак заклинивания.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь сдвинуть заблокированный автомобиль с помощниками, если у вас нет домкрата. Сильная нагрузка на трансмиссию при пробуксовке заблокированного колеса может повредить дифференциал или полуоси.</p>
+</blockquote>
+
+<h2 id="таблица-симптомов-и-вероятных-причин">Таблица симптомов и вероятных причин</h2>
+
+<p>Ниже приведена сводная таблица, помогающая быстро определить характер неисправности на основе внешних признаков. Это позволит вам сэкономить время и правильно выбрать метод ремонта.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Сложность ремонта</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Машина не едет, ручник опущен</td>
+<td>Заклинивший трос</td>
+<td>Средняя</td>
+<td>Замена тросов или смазка</td>
+</tr>
+<tr>
+<td>Одно колесо горячее другого</td>
+<td>Клинящий суппорт</td>
+<td>Сложная</td>
+<td>Ремонт или замена суппорта</td>
+</tr>
+<tr>
+<td>Скрежет при движении назад</td>
+<td>Стертые колодки/Барабан</td>
+<td>Средняя</td>
+<td>Замена тормозных накладок</td>
+</tr>
+<tr>
+<td>Ошибка на приборной панели (EPB)</td>
+<td>Блок управления/Мотор</td>
+<td>Высокая</td>
+<td>Диагностика сканером</td>
+</tr>
+<tr>
+<td>Запах гари из-под всех колес</td>
+<td>Ручник полностью затянут</td>
+<td>Низкая</td>
+<td>Полная разборка механизма</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Иногда проблема может быть не в самом тормозе, а в приводе троса, который проходит через рычаги на заднем мосту. Коррозия этих рычагов также может блокировать движение колодок. В этом случае требуется смазка шарниров или их замена.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед поездкой зимой обязательно проверяйте работу ручного тормоза на ровной площадке. Если он держит слишком сильно или не отпускает, проблема может усугубиться после стоянки в мороз.</p></aside>
+
+<h2 id="профилактика-и-продление-срока-службы">Профилактика и продление срока службы</h2>
+
+<p>Чтобы избежать ситуации, когда <strong>автомобиль не едет назад</strong>, необходимо регулярно обслуживать систему ручного тормоза. Раз в год рекомендуется проверять состояние тросов и при необходимости смазывать их специальной смазкой для тросов. Это предотвратит коррозию и заедание.</p>
+
+<p>Для дисковых тормозов важно следить за состоянием направляющих суппортов. Используйте только специальную высокотемпературную смазку, предназначенную для тормозных систем. Обычная смазка может загустеть и привести к блокировке поршня.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная смазка тросов и проверка свободного хода механизмов — залог того, что ваш ручной тормоз будет работать корректно и не заблокирует колеса при движении.</p></aside>
+
+<p>Если вы эксплуатируете автомобиль в условиях частых дождей или езды по бездорожью, чистку и смазку следует проводить чаще. Грязь и вода — главные враги механических узлов тормозной системы. Владельцам автомобилей с <em>электронным ручником</em> стоит лишь следить за уровнем заряда батареи и вовремя проходить компьютерную диагностику.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Избегайте использования ручного тормоза в качестве аварийного тормоза на высокой скорости. Это может привести к мгновенному заклиниванию задних колес и поломке тросов или суппортов.</p>
+</blockquote>
+
+<details>
+<summary>Почему машина не едет назад, но вперед едет нормально?</summary>
+<p>Это классический признак заклинивания заднего тормоза, так как при движении вперед тормоза работают гидравлически (нажатие педали), а при движении назад (если ручник не отпущен) механический привод удерживает колодки. В некоторых конструкциях барабанных тормозов самоподжимание колонков при движении вперед может маскировать проблему, но при движении назад блокировка становится явной.</p>
+</details>
+
+<details>
+<summary>Можно ли доехать до сервиса, если ручник не отпускает?</summary>
+<p>Категорически не рекомендуется. Езда с заблокированным колесом приведет к перегреву тормозного диска (или барабана), разрушению колодок и возможному возгоранию. Также это создаст огромную нагрузку на трансмиссию и ступичный подшипник, что может стоить вам гораздо дороже ремонта тормозов.</p>
+</details>
+
+<details>
+<summary>Как временно отпустить заклинивший трос?</summary>
+<p>Иногда помогает смазка троса через оболочку или легкое постукивание по механизму подвески. В крайних случаях, если трос заклинил в оболочке, можно временно отсоединить его от рычага под автомобилем, чтобы освободить колесо, но это лишь временная мера до замены тросов.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип коробки передач на заклинивание?</summary>
+<p>Нет, тип коробки передач (механика или автомат) не влияет на работу ручного тормоза. Проблема исключительно в тормозной системе задних колес. Однако, если у вас автомат, попытка тронуться с заблокированными колесами может привести к перегреву гидротрансформатора.</p>
+</details>
+
+<mark>Единственный надежный способ избежать заклинивания ручника зимой — это не использовать его при стоянке на ровной поверхности и ставить машину на передачу, а если ручник необходим — менять тросы перед началом отопительного сезона.</mark></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/t/tr/tros-ruchnika-kalina-2-khetchbek.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника Lada Kalina 2 Хэтчбек: Выбор и инструкция</span>
+                <span class="pb-related-desc">Полный гид по замене троса ручного тормоза на Лада Калина 2 Хэтчбек. Диагностика износа, выбор запча</span>
+            </a><a href="/articles/z/za/zamena-trosov-ruchnika-akkord-7.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросов ручника Honda Accord 7: Инструкция, цены, нюансы</span>
+                <span class="pb-related-desc">Пошаговая замена тросов стояночного тормоза на Honda Accord 7 (2003-2008). Разбор симптомов износа, </span>
+            </a><a href="/articles/t/tr/tros-ruchnogo-tormoza-21214.html" class="pb-related-card">
+                <span class="pb-related-title">Трос ручного тормоза 21214: замена, регулировка и выбор запчасти</span>
+                <span class="pb-related-desc">Полный гайд по замене троса ручника на Ниве 21214. Инструкция, цены, подбор запчастей, таблица сравн</span>
+            </a><a href="/articles/r/re/regulirovka-stoyanochnogo-tormoza-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка ручного тормоза Lada Granta: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Как правильно отрегулировать стояночный тормоз на Lada Granta своими руками. Инструкция по натяжению</span>
+            </a><a href="/articles/t/tr/tros-ruchnika-largus-16-klapanov.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника на Лада Ларгус 16 клапанов: цены, подбор и инструкция</span>
+                <span class="pb-related-desc">Полный гайд по выбору и замене троса ручного тормоза на Lada Largus 16V. Признаки износа, схема натя</span>
+            </a><a href="/articles/p/po/podtyanut-trosik-ruchnika-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Как подтянуть тросик ручника на Lada Granta: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по регулировке троса стояночного тормоза на Lada Granta. Диагностика, инструмен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

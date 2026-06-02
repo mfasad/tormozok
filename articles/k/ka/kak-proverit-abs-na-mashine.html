@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как проверить ABS на машине: диагностика своими руками и в сервисе — ТормозОК</title>
+    <meta name="description" content="Полное руководство по проверке антиблокировочной системы тормозов. Самодиагностика, сканеры OBD2, тест-драйв и интерпретация ошибок для безопасного вождения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-proverit-abs-na-mashine.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить ABS на машине: диагностика своими руками и в сервисе">
+    <meta property="og:description" content="Полное руководство по проверке антиблокировочной системы тормозов. Самодиагностика, сканеры OBD2, тест-драйв и интерпретация ошибок для безопасного вождения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить ABS на машине: диагностика своими руками и в сервисе</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#визуальный-осмотр-и-базовая-индикация">Визуальный осмотр и базовая индикация</a></li><li><a href="#использование-диагностического-сканера-obd2">Использование диагностического сканера OBD2</a></li><li><a href="#проверка-датчиков-скорости-вращения-колес">Проверка датчиков скорости вращения колес</a></li><li><a href="#проверка-проводки-и-контактов">Проверка проводки и контактов</a></li><li><a href="#тест-драйв-и-проверка-работы-на-дороге">Тест-драйв и проверка работы на дороге</a></li><li><a href="#сброс-ошибок-и-адаптация-системы">Сброс ошибок и адаптация системы</a></li><li><a href="#типичные-причины-отказа-системы-abs">Типичные причины отказа системы ABS</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pr/proverka-magnitnogo-koltsa-abs.html">Как проверить магнитное кольцо ABS: признаки износа и диагностика</a></li><li><a href="/articles/d/da/datchik-abs-granta-fl.html">Датчик ABS Lada Granta: симптомы, диагностика и замена</a></li><li><a href="/articles/z/za/zamena-koltsa-abs-lachetti.html">Замена датчика и кольца ABS на Chevrolet Lacetti: Инструкция и нюансы</a></li><li><a href="/articles/z/za/zazor-datchika-abs-daf-105.html">Зазор датчика ABS DAF 105: норма, регулировка и диагностика</a></li><li><a href="/articles/k/ka/kak-otklyuchit-abs-lanser-9.html">Как отключить ABS на Mitsubishi Lancer 9: диагностика и отключение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полное руководство по проверке работоспособности антиблокировочной системы (ABS)</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#визуальный-осмотр-и-базовая-индикация">Визуальный осмотр и базовая индикация</a></li><li><a href="#использование-диагностического-сканера-obd2">Использование диагностического сканера OBD2</a></li><li><a href="#проверка-датчиков-скорости-вращения-колес">Проверка датчиков скорости вращения колес</a></li><li><a href="#проверка-проводки-и-контактов">Проверка проводки и контактов</a></li><li><a href="#тест-драйв-и-проверка-работы-на-дороге">Тест-драйв и проверка работы на дороге</a></li><li><a href="#сброс-ошибок-и-адаптация-системы">Сброс ошибок и адаптация системы</a></li><li><a href="#типичные-причины-отказа-системы-abs">Типичные причины отказа системы ABS</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современный автомобиль представляет собой сложный комплекс механических узлов и электронных блоков управления, где система <strong>антиблокировочного торможения</strong> играет критическую роль в обеспечении безопасности. В экстренной ситуации именно она позволяет сохранить управляемость транспортного средства, предотвращая юз колес на скользком покрытии. Однако, как и любой сложный механизм, <em>система ABS</em> подвержена износу и сбоям, поэтому регулярная проверка её работоспособности является обязательной процедурой для каждого ответственного водителя.</p>
+
+<p>Многие автовладельцы игнорируют состояние этой системы до тех пор, пока аварийная лампа не загорится на приборной панели, что часто происходит уже на стадии критической поломки. Важно понимать, что неисправность одного датчика или обрыв цепи может полностью деактивировать весь блок управления, возвращая тормозную систему к стандартному режиму работы без предотвращения блокировки колес. <strong>Диагностика ABS</strong> должна проводиться не только при появлении ошибок, но и в рамках планового технического обслуживания, особенно после интенсивной эксплуатации в зимний период или по бездорожью.</p>
+
+<h2 id="визуальный-осмотр-и-базовая-индикация">Визуальный осмотр и базовая индикация</h2>
+
+<p>Первым и самым простым этапом проверки является визуальный осмотр и анализ поведения контрольных ламп при запуске двигателя. При повороте ключа в замке зажигания или нажатии кнопки старта система проводит самодиагностику всех узлов, включая <strong>гидроагрегат ABS</strong> и датчики скорости вращения колес. В этот момент на приборной панели должен загореться значок с надписью <em>ABS</em> или изображением колеса со скобами, который должен погаснуть через 2-4 секунды после запуска мотора.</p>
+
+<p>Если индикатор не гаснет, мигает в ходе движения или загорается совместно с лампой <strong>ESP</strong> (системы курсовой устойчивости), это верный признак наличия неисправности. В некоторых случаях, при серьезных сбоях, на дисплее бортового компьютера может высвечиваться текстовое сообщение о выходе из строя тормозной системы. В такой ситуации необходимо немедленно обратиться к специалистам, так как автомобиль теряет одну из ключевых функций активной безопасности.</p>
+
+<p>Важно обратить внимание на состояние проводов, идущих от колес к основному блоку управления. Часто проблема кроется не в сложной электронике, а в банальном перетирании проводки в местах изгиба подвески или повреждении изоляции грызунами. <strong>Соединительные разъемы</strong> датчиков скорости должны быть плотно зафиксированы и не иметь следов окисления или попадания влаги, что особенно актуально для автомобилей с большим пробегом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если лампа ABS мигает только на холодном двигателе и гаснет после прогрева, это может указывать на конденсат внутри датчика или блока управления. Однако игнорировать такое поведение не стоит — при попадании влаги в электронику зимой последствия могут быть фатальными для блока.</p>
+</blockquote>
+
+<h2 id="использование-диагностического-сканера-obd2">Использование диагностического сканера OBD2</h2>
+
+<p>Самым эффективным способом выявить скрытые проблемы является подключение внешнего диагностического оборудования к разъему OBD2. Современные сканеры позволяют считать не только текущие ошибки, но и историю их появления, а также просматривать данные в реальном времени. Для чтения кодов неисправностей системы <strong>антиблокировки тормозов</strong> вам понадобится адаптер, поддерживающий протоколы CAN-шины, и специализированное приложение на смартфоне или ноутбуке.</p>
+
+<p>После подключения устройства необходимо включить зажигание и запустить программу сканирования. В меню выбора систем следует найти раздел <code>Chassis</code> (Шасси) или <code>ABS</code>, так как ошибки тормозной системы часто не считываются через стандартный раздел двигателя. Если система исправна, сканер покажет сообщение "No faults found" или аналогичное, указывающее на отсутствие ошибок в памяти контроллера.</p>
+
+<p>При обнаружении ошибок код будет представлен в формате P0xxxx или C0xxxx, где буква "C" обычно обозначает проблемы в шасси. Расшифровка кода даст точное понимание проблемы: это может быть обрыв провода датчика левого переднего колеса, закоротка на массу, неисправность насоса гидроблока или сбой в блоке управления. <strong>Коды неисправностей</strong> — это первый шаг к точному ремонту, позволяющий не менять детали методом тыка.</p>
+
+<div class="pb-poll" id="poll-3fa2fdb0"><div class="pb-poll-question">📊 Какой метод диагностики вы используете чаще всего?</div><div class="pb-poll-option" data-poll="3fa2fdb0" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Самостоятельно со сканером</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3fa2fdb0" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Обращаюсь в автосервис</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3fa2fdb0" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только по лампе на панели</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3fa2fdb0" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не проверяю никогда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="проверка-датчиков-скорости-вращения-колес">Проверка датчиков скорости вращения колес</h2>
+
+<p>Датчики скорости являются наиболее уязвимым элементом системы ABS, так как они работают в агрессивной среде: грязи, воде, реагентах и постоянных вибрациях. Принцип их работы основан на считывании импульсов с <strong>импульсного диска</strong> (зубчатого венца), расположенного на ступице или ШРУСе. Любое загрязнение диска или нарушение зазора между датчиком и венцом приводит к искажению сигнала и отключению системы.</p>
+
+<p>Для проверки датчиков мультиметром необходимо демонтировать их из посадочных мест и замерить сопротивление обмотки. Нормальные значения обычно варьируются в диапазоне от 800 до 2500 Ом, однако точные цифры зависят от модели автомобиля и производителя датчика. Если прибор показывает бесконечное сопротивление, значит, обмотка оборвана, а если значение близко к нулю — произошло короткое замыкание.</p>
+
+<p>Кроме электрических параметров, критически важно проверить физическое состояние магнитного наконечника. На нем не должно быть металлических стружек, которые притягиваются магнитом датчика и создают "шум" в сигнале. Также стоит визуально осмотреть сам <em>импульсный диск</em> на предмет сколов или выпадения зубьев, что часто случается при ударах колес о бордюры или глубоких ямы.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к проверке датчиков</h4><label class="check-item"><input type="checkbox"><span>Поднять автомобиль на подъемнике</span></label><label class="check-item"><input type="checkbox"><span>Очистить датчики от грязи</span></label><label class="check-item"><input type="checkbox"><span>Снять разъемы с колес</span></label><label class="check-item"><input type="checkbox"><span>Замерить сопротивление мультиметром</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть зубчатый венец на ступице</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="проверка-проводки-и-контактов">Проверка проводки и контактов</h2>
+
+<p>Частой причиной ложных срабатываний системы является нарушение целостности проводки. Провода, идущие от датчиков к блоку управления, проходят вдоль кузова и подвержены постоянным растяжениям и изгибам при работе подвески. Необходимо тщательно осмотреть жгуты проводов на предмет перетирания изоляции, особенно в зонах крепления к кузову и вблизи движущихся элементов подвески.</p>
+
+<p>Особое внимание следует уделить разъемам. Окисление контактов внутри фишек часто приводит к увеличению переходного сопротивления, что компьютер интерпретирует как неисправность датчика. Для проверки можно использовать метод "прозвонки", подав питание на один конец провода и замерив напряжение на другом. Также полезно проверить наличие "массы" на корпусе датчика при включенном зажигании.</p>
+
+<p>В некоторых автомобилях, например, в моделях <em>BMW</em> или <em>Mercedes</em>, система может отключаться даже из-за слабого натяжения разъема, не обеспечивающего надежный контакт. В таких случаях помогает простая очистка контактов контактным спреем и повторная фиксация разъемов с последующим сбросом ошибок.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При проверке проводки никогда не тяните за сам провод, чтобы отсоединить разъем. Используйте специальные фиксаторы на корпусе фишки, иначе вы рискуете оборвать жилы внутри изоляции, что сделает диагностику значительно сложнее.</p>
+</blockquote>
+
+<h2 id="тест-драйв-и-проверка-работы-на-дороге">Тест-драйв и проверка работы на дороге</h2>
+
+<p>Электронная диагностика не всегда может выявить механические проблемы, поэтому финальным этапом проверки является тест-драйв на безопасном участке дороги. Для этого выберите ровный участок асфальта с низким коэффициентом сцепления или пустую парковку. Вам необходимо разогнаться до скорости 30-40 км/ч и выполнить резкое торможение до полной остановки.</p>
+
+<p>В исправной системе ABS вы должны почувствовать характерную пульсацию педали тормоза, которая возникает из-за работы гидронасоса и клапанов. Педаль будет "бить" в ногу, имитируя прерывистое торможение. Если педаль просто проваливается или останавливается жестко без вибрации, система либо не активна, либо неисправен сам <strong>гидроагрегат</strong>.</p>
+
+<p>При наличии системы <em>ESP</em> можно проверить её работу, резко повернув руль в сторону при торможении на скользком участке. Автомобиль должен сохранять траекторию, а система не даст уйти в занос. Если машина срывается в непредсказуемый занос, а педаль тормоза не пульсирует, значит, электроника не вмешивается в процесс торможения, и автомобиль тормозит только механически.</p>
+
+<details class="pb-accordion"><summary>Что делать, если педаль не пульсирует?</summary><div class="pb-accordion-body"><p>Если при резком торможении педаль не вибрирует, а индикатор ABS не горит, возможно, система заблокирована программно из-за старой ошибки. Попробуйте сбросить ошибки сканером и повторить тест. Если проблема сохраняется — неисправен гидроблок или насос.</p></div></details>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр проверки</th>
+<th>Норма</th>
+<th>Признак неисправности</th>
+<th>Вероятная причина</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Сопротивление датчика</td>
+<td>800–2500 Ом</td>
+<td>Бесконечность или 0 Ом</td>
+<td>Обрыв или КЗ обмотки</td>
+</tr>
+<tr>
+<td>Пульсация педали</td>
+<td>Четкая вибрация</td>
+<td>Отсутствие вибрации</td>
+<td>Не работает гидронасос/клапаны</td>
+</tr>
+<tr>
+<td>Индикатор ABS</td>
+<td>Гаснет через 3 сек</td>
+<td>Горит постоянно</td>
+<td>Активная ошибка в системе</td>
+</tr>
+<tr>
+<td>Сигнал с датчика</td>
+<td>Переменное напряжение</td>
+<td>Постоянное или 0 В</td>
+<td>Неисправность датчика или диска</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="сброс-ошибок-и-адаптация-системы">Сброс ошибок и адаптация системы</h2>
+
+<p>После устранения неисправности (замены датчика, ремонта проводки или очистки контактов) необходимо сбросить ошибки из памяти блока управления. Простого выключения зажигания часто недостаточно, так как система хранит информацию о сбое в энергонезависимой памяти. Для сброса используйте диагностический сканер с функцией <code>Clear Codes</code> или специализированный сервис для вашего автомобиля.</p>
+
+<p>В некоторых случаях, особенно после замены блока ABS или датчиков, требуется процедура адаптации. Например, на многих автомобилях необходимо проехать несколько циклов разгона и торможения, чтобы система заново обучилась базовым параметрам работы. Если адаптация не прошла успешно, лампа может загореться снова через несколько километров пробега.</p>
+
+<p> В таком случае повторная диагностика обязательна. <strong>Системный подход</strong> к устранению ошибок гарантирует, что вы не уедете с дороги с неработающей системой безопасности.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный сброс ошибок и последующая адаптация системы — это финальный штрих ремонта, без которого даже исправные детали не будут работать в штатном режиме.</p></aside>
+
+<h2 id="типичные-причины-отказа-системы-abs">Типичные причины отказа системы ABS</h2>
+
+<p>Анализ статистики поломок показывает, что наиболее частой причиной отказа системы является выход из строя датчиков скорости вращения колес. Это связано с их уязвимостью к внешним факторам: грязь, вода, удары камнями и коррозия. Датчик может показывать неверные данные, если на него налипла грязь или если магнитный зазор увеличился из-за износа сальника ступицы.</p>
+
+<p>Вторая по популярности причина — проблемы с проводкой и разъемами. Вибрация, перепады температур и химическое воздействие реагентов разрушают изоляцию, приводя к коротким замыканиям или обрывам. Особенно часто страдают провода, идущие к передним колесам, так как они испытывают наибольшую механическую нагрузку.</p>
+
+<p>Также стоит упомянуть механические повреждения зубчатых венцов ( роторов). Если диск имеет сколы или деформирован, датчик не сможет считывать корректный сигнал, даже если сам датчик исправен. В таких случаях требуется замена ступицы или самого венца, что является более трудоемким ремонтом.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь "обмануть" систему, отключая неисправные датчики. Это может привести к непредсказуемому поведению автомобиля при экстренном торможении и спровоцировать аварию.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярно очищайте датчики ABS от грязи и металлических опилок. Это продлит их срок службы и предотвратит ложные срабатывания системы.</p></aside>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+
+<details>
+<summary>Почему лампа ABS горит только на холодную?</summary>
+<p>Это может указывать на проблемы с контактами или конденсат внутри датчика. При прогреве металл расширяется, и контакт восстанавливается. Однако такую проблему нужно решать, так как зимой она может привести к полному отказу системы.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить с горящей лампой ABS?</summary>
+<p>Да, автомобиль будет тормозить как обычный, без антиблокировочной системы. Однако при экстренном торможении колеса могут заблокироваться, что приведет к потере управляемости и увеличению тормозного пути.</p>
+</details>
+
+<details>
+<summary>Сколько стоит проверка ABS в сервисе?</summary>
+<p>Стоимость варьируется в зависимости от региона и уровня сервиса. Обычно диагностика систем шасси стоит дороже, чем двигателя, так как требует доступа к подвеске и специализированного оборудования.</p>
+</details>
+
+<details>
+<summary>Можно ли проверить ABS без сканера?</summary>
+<p>Только визуально и на слух (пульсация педали). Точную причину неисправности без сканера определить крайне сложно, так как система хранит множество кодов ошибок, невидимых для водителя.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять работу ABS?</summary>
+<p>Рекомендуется проводить визуальный осмотр при каждом ТО (раз в 10-15 тыс. км), а полную диагностику с подключением сканера — раз в 2-3 года или при появлении любых подозрительных симптомов.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pr/proverka-magnitnogo-koltsa-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить магнитное кольцо ABS: признаки износа и диагностика</span>
+                <span class="pb-related-desc">Полное руководство по диагностике зубчатого кольца датчика ABS. Узнайте признаки неисправности, мето</span>
+            </a><a href="/articles/d/da/datchik-abs-granta-fl.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик ABS Lada Granta: симптомы, диагностика и замена</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и замене датчика АБС на Лада Гранта. Признаки неисправности, прове</span>
+            </a><a href="/articles/z/za/zamena-koltsa-abs-lachetti.html" class="pb-related-card">
+                <span class="pb-related-title">Замена датчика и кольца ABS на Chevrolet Lacetti: Инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по замене датчика и импульсного кольца ABS на Chevrolet Lacetti. Диагностика, нюа</span>
+            </a><a href="/articles/z/za/zazor-datchika-abs-daf-105.html" class="pb-related-card">
+                <span class="pb-related-title">Зазор датчика ABS DAF 105: норма, регулировка и диагностика</span>
+                <span class="pb-related-desc">Полное руководство по зазору датчика ABS на грузовике DAF XF 105. Технические нормы, способы проверк</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-abs-lanser-9.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить ABS на Mitsubishi Lancer 9: диагностика и отключение</span>
+                <span class="pb-related-desc">Подробная инструкция по отключению системы ABS на Mitsubishi Lancer 9. Причины, способы блокировки д</span>
+            </a><a href="/articles/o/ot/otlichie-pla-ot-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Отличие PLA от ABS: сравнение филаментов для 3D печати</span>
+                <span class="pb-related-desc">Подробный разбор различий между PLA и ABS пластиком для 3D печати. Сравнение температур, усадки, про</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

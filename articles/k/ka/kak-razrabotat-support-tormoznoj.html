@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Разработка суппорта тормозной: материалы, расчеты и этапы проектирования — ТормозОК</title>
+    <meta name="description" content="Полное руководство по разработке суппорта тормозной системы. Расчет нагрузок, выбор материалов, технологии литья и фрезеровки. Инженерный подход к созданию тормозов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-razrabotat-support-tormoznoj.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Разработка суппорта тормозной: материалы, расчеты и этапы проектирования">
+    <meta property="og:description" content="Полное руководство по разработке суппорта тормозной системы. Расчет нагрузок, выбор материалов, технологии литья и фрезеровки. Инженерный подход к созданию тормозов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/supporty-i-porshni/">Суппорты и поршни</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Разработка суппорта тормозной: материалы, расчеты и этапы проектирования</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проектирование-тормозных-механизмов">Введение в проектирование тормозных механизмов</a></li><li><a href="#анализ-нагрузок-и-выбор-геометрии">Анализ нагрузок и выбор геометрии</a></li><li><a href="#материалы-и-технологии-производства">Материалы и технологии производства</a></li><li><a href="#тепловой-режим-и-отвод-тепла">Тепловой режим и отвод тепла</a></li><li><a href="#конструкция-уплотнений-и-поршней">Конструкция уплотнений и поршней</a></li><li><a href="#коррозия-и-защита-поверхностей">Коррозия и защита поверхностей</a></li><li><a href="#испытания-и-валидация">Испытания и валидация</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chem-smazat-tormoznoj-tsilindr.html">Чем смазать тормозной цилиндр: выбор смазки и инструкция</a></li><li><a href="/articles/r/re/remkomplekt-perednego-supporta-aktsent.html">Замена ремкомплекта переднего суппорта Hyundai Accent: инструкция и выбор</a></li><li><a href="/articles/r/re/remkomplekt-supportov-prado-150-dizel.html">Ремкомплект суппортов Прадо 150 дизель: выбор и замена</a></li><li><a href="/articles/r/re/remkomplekt-perednego-supporta-megan-2.html">Ремкомплект переднего суппорта Меган 2: выбор, замена и нюансы</a></li><li><a href="/articles/r/re/remkomplekt-supporta-golf-4-zadnij.html">Ремкомплект суппорта Гольф 4 задний: выбор, замена и нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как разработать суппорт тормозной с нуля: Инженерный гайд</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проектирование-тормозных-механизмов">Введение в проектирование тормозных механизмов</a></li><li><a href="#анализ-нагрузок-и-выбор-геометрии">Анализ нагрузок и выбор геометрии</a></li><li><a href="#материалы-и-технологии-производства">Материалы и технологии производства</a></li><li><a href="#тепловой-режим-и-отвод-тепла">Тепловой режим и отвод тепла</a></li><li><a href="#конструкция-уплотнений-и-поршней">Конструкция уплотнений и поршней</a></li><li><a href="#коррозия-и-защита-поверхностей">Коррозия и защита поверхностей</a></li><li><a href="#испытания-и-валидация">Испытания и валидация</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проектирование-тормозных-механизмов">Введение в проектирование тормозных механизмов</h2>
+
+<p>Проектирование <strong>тормозного суппорта</strong> — это сложный инженерный процесс, требующий глубокого понимания физики трения, динамики автомобиля и свойств материалов. Это не просто металлическая скоба, а ключевой элемент, удерживающий <strong>поршни</strong> и направляющие, которые прижимают тормозные колодки к диску. Ошибка в расчетах может привести к деформации корпуса, перегреву и отказу всей <strong>тормозной системы</strong>.</p>
+
+<p>Вам нужно начать с определения целевых параметров: какой вес автомобиля, какие тормозные диски будут использоваться и в каких режимах эксплуатации будет работать механизм. Для спортивного болида требования к жесткости и отводу тепла будут кардинально отличаться от требований к суппорту для городского седана. Необходимо учитывать не только статические нагрузки, но и динамические удары при экстренном торможении.</p>
+
+<p>Современная разработка опирается на использование <strong>CAD-систем</strong> и методов конечных элементов (FEA) для моделирования напряжений. Вы не сможете создать надежный узел, просто нарисовав эскиз от руки. Только компьютерное моделирование позволяет увидеть зоны концентрации напряжений и оптимизировать геометрию до момента создания физического прототипа.</p>
+
+<h2 id="анализ-нагрузок-и-выбор-геометрии">Анализ нагрузок и выбор геометрии</h2>
+
+<p>Первым этапом разработки является детальный расчет сил, действующих на суппорт. <strong>Тормозной момент</strong>, который должен быть обеспечен, напрямую влияет на усилие, с которым колодки прижимаются к диску. Это усилие передается на корпус суппорта, создавая огромные изгибающие моменты. Если геометрия выбрана неверно, скоба суппорта может прогнуться, что приведет к неравномерному износу колодок и снизит эффективность торможения.</p>
+
+<p>Существует два основных типа конструкций: плавающие суппорты и неподвижные (многопоршневые). Для плавающих суппортов критически важна точность направляющих, так как корпус должен свободно перемещаться. В многопоршневых суппортах, таких как <em>Brembo</em> или <em>Akebono</em>, жесткость корпуса является приоритетом, так как он должен выдерживать разнонаправленные усилия от нескольких поршней одновременно.</p>
+
+<p>Вам необходимо определить точки крепления суппорта к поворотному кулаку или ступице. Эти узлы испытывают колоссальные нагрузки при резком торможении. Неправильно рассчитанные отверстия под болты могут привести к их срезанию. Обязательно используйте коэффициенты запаса прочности, особенно если речь идет о серийном производстве, где допуски могут быть менее строгими.</p>
+
+<blockquote>⚠️ Внимание: При расчете нагрузок всегда учитывайте динамический коэффициент, который может превышать статические значения в 2-3 раза при экстренном торможении на скорости. Игнорирование этого фактора приведет к хрупкому разрушению корпуса.</blockquote>
+
+<h2 id="материалы-и-технологии-производства">Материалы и технологии производства</h2>
+
+<p>Выбор материала определяет не только прочность, но и вес конечного изделия. Традиционно суппорты изготавливают из <strong>алюминиевого сплава</strong>, такого как <em>AL6061-T6</em> или <em>AL7075</em>. Эти материалы обладают отличным соотношением прочности и массы, что критично для снижения неподрессоренных масс. Алюминий также хорошо отводит тепло, хотя это свойство вторично по сравнению с его механическими характеристиками.</p>
+
+<p>Для высоконагруженных гоночных применений все чаще используют <strong>титановые сплавы</strong>. Титан легче алюминия и обладает значительно большей прочностью на разрыв. Однако его стоимость и сложность обработки делают его непригодным для массового производства. Стальные суппорты встречаются редко, обычно в бюджетных сегментах или для специфических грузовых задач, так как их вес значительно выше.</p>
+
+<p>Технология производства также играет решающую роль. <strong>Литье под давлением</strong> позволяет создавать сложные формы с полостями охлаждения, но может иметь поры, снижающие прочность. <strong>Фрезеровка из цельного блока</strong> (CNC) обеспечивает максимальную монолитность и прочность, но приводит к большому количеству отходов материала и высокой себестоимости.</p>
+
+<div class="pb-poll" id="poll-2b74c83e"><div class="pb-poll-question">📊 Какой материал вы считаете оптимальным для спортивного суппорта?</div><div class="pb-poll-option" data-poll="2b74c83e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Алюминий</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b74c83e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Титан</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b74c83e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Сталь</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2b74c83e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Композитные материалы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="тепловой-режим-и-отвод-тепла">Тепловой режим и отвод тепла</h2>
+
+<p>Тормозная система — это устройство для преобразования кинетической энергии в тепловую. Суппорт находится в эпицентре этого процесса. Перегрев может привести к закипанию <strong>тормозной жидкости</strong>, расширению поршней и заклиниванию механизма. Поэтому при разработке корпуса необходимо предусмотреть каналы для циркуляции воздуха и охлаждения.</p>
+
+<p>Геометрия поверхности суппорта должна способствовать обдуву. Гладкие поверхности хуже отводят тепло, чем ребристые. Некоторые производители используют специальные каналы внутри корпуса, по которым воздух проходит к тормозному диску. Это сложное инженерное решение, которое требует тщательного моделирования аэродинамики в условиях ограниченного пространства колесной арки.</p>
+
+<p>Важным аспектом является изоляция тормозной жидкости от прямого контакта с раскаленными поверхностями. Поршни должны быть оснащены тепловыми экранами или иметь ребра охлаждения. В <em>AP Racing</em> и других брендах часто используются сложные системы охлаждения, интегрированные непосредственно в конструкцию суппорта.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Материал</th>
+      <th>Плотность (г/см³)</th>
+      <th>Предел прочности (МПа)</th>
+      <th>Теплопроводность (Вт/м·К)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Алюминий 6061</td>
+      <td>2.7</td>
+      <td>310</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>Алюминий 7075</td>
+      <td>2.8</td>
+      <td>570</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>Титан Ti-6Al-4V</td>
+      <td>4.43</td>
+      <td>950</td>
+      <td>6.7</td>
+    </tr>
+    <tr>
+      <td>Чугун</td>
+      <td>7.2</td>
+      <td>200</td>
+      <td>50</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="конструкция-уплотнений-и-поршней">Конструкция уплотнений и поршней</h2>
+
+<p>Герметичность тормозной системы обеспечивается сложной системой уплотнений. Резиновые манжеты на поршнях должны выдерживать давление до 100 бар и более. При торможении поршень выходит из цилиндра, а при отпускании педали он должен автоматически возвращаться в исходное положение благодаря деформации уплотнения. Это тонкая работа, требующая точной подгонки размеров.</p>
+
+<p>Вам нужно тщательно подобрать материал уплотнительных колец. Обычная резина может разрушиться от высоких температур. Часто используются <strong>фторкаучуки (FKM)</strong> или <em>EPDM</em>, которые обладают высокой термостойкостью. Также важно предусмотреть защиту от пыли и грязи — грязь может повредить зеркало цилиндра и привести к утечке жидкости.</p>
+
+<p>Качество поверхности поршней критически важно. Любая царапина на зеркале цилиндра может нарушить герметичность. В промышленных масштабах используются хромовые покрытия или керамические напыления. Для реализации этого этапа разработки необходимо строго контролировать <strong>шероховатость поверхности</strong> и геометрию поршней.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка герметичности</h4><label class="check-item"><input type="checkbox"><span>Проверить состояние манжет</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть зеркала цилиндров</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие пыльников</span></label><label class="check-item"><input type="checkbox"><span>Протестировать давление на стенде</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<details class="pb-accordion"><summary>Особенности керамических поршней</summary><div class="pb-accordion-body"><p>Керамические поршни не проводят тепло так сильно, как металлические, что снижает нагрев тормозной жидкости. Однако они хрупкие и требуют очень точной обработки, так как любые сколы могут привести к разрушению при высоком давлении.</p></div></details>
+
+<h2 id="коррозия-и-защита-поверхностей">Коррозия и защита поверхностей</h2>
+
+<p>Суппорт работает в агрессивной среде: реагенты, соль, вода и грязь постоянно атакуют его поверхность. Без должной защиты даже самый прочный алюминий быстро потеряет свои свойства. Коррозия может заклинить направляющие или разрушить корпус изнутри. Поэтому разработка должна включать не только механическую прочность, но и химическую стойкость.</p>
+
+<p>Существует несколько методов защиты. <strong>Анодирование</strong> создает защитный оксидный слой на алюминии, повышая его стойкость к коррозии и износу. Порошковая покраска используется для защиты стальных деталей, но она менее устойчива к высоким температурам. Для гоночных суппортов часто используют специальные термостойкие покрытия на основе керамики или силана.</p>
+
+<p>Вам необходимо предусмотреть защиту направляющих пальцев. Они должны свободно двигаться даже после того, как суппорт простоял под дождем неделю. Использование <strong>высококачественных смазок</strong> и специальных пыльников обязательно. Конструкция должна быть такой, чтобы грязь не могла попасть в узел трения.</p>
+
+<blockquote>⚠️ Внимание: Использование неподходящей смазки на направляющих может привести к их заклиниванию или вымыванию, что вызовет неравномерный износ колодок и перегрев тормозного диска. Всегда используйте специализированные смазки для тормозных систем.</blockquote>
+
+<h2 id="испытания-и-валидация">Испытания и валидация</h2>
+
+<p>После создания прототипа начинается этап испытаний. Визуального осмотра недостаточно. Необходимо провести лабораторные тесты на <strong>удержание давления</strong> и проверка на утечки. Суппорт должен держать давление в течение длительного времени без просадки. Это проверяется на специальных стендах, имитирующих работу поршней.</p>
+
+<p>Следующий этап — динамические испытания на автомобиле. Тормоза испытываются в различных режимах: городская езда, скоростная трасса, экстренное торможение. Температура суппорта измеряется датчиками. Если температура превышает допустимые пределы, конструкцию придется дорабатывать — менять геометрию, толщину стенок или систему охлаждения.</p>
+
+<p>Финальным этапом является <strong>ресурсное испытание</strong>. Суппорты подвергаются циклическим нагрузкам в течение сотен тысяч циклов. Это позволяет выявить усталостные разрушения металла. Только пройдя все эти тесты, конструкция может быть запущена в серийное производство. Ошибки на этом этапе могут стоить миллионов долларов и репутации бренда.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Валидация суппорта — это не просто проверка на прочность, а комплекс испытаний, включающий термодинамику, усталость металла и динамику в реальных условиях эксплуатации.</p></aside>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+
+<details>
+  <summary>Какой материал лучше для суппорта: алюминий или сталь?</summary>
+  <p>Для большинства легковых автомобилей и спорткаров лучшим выбором является алюминиевый сплав (например, 6061 или 7075), так как он обеспечивает оптимальное соотношение прочности и веса, а также хорошую теплопроводность. Сталь используется реже, в основном для коммерческого транспорта или в специфических условиях, где важна предельная прочность при минимальной стоимости, но это значительно увеличивает неподрессоренные массы.</p>
+</details>
+
+<details>
+  <summary>Можно ли разработать суппорт самостоятельно для домашнего автомобиля?</summary>
+  <p>Технически это возможно, если у вас есть доступ к CAD-программам, 3D-принтеру для прототипов и станкам для металлообработки. Однако для реального использования на дороге требуется сертификация и сложные испытания на безопасность. Самодельные суппорты без должных испытаний могут выйти из строя в критический момент, создавая угрозу жизни.</p>
+</details>
+
+<details>
+  <summary>Как часто нужно заменять тормозную жидкость в суппорте?</summary>
+  <p>Тормозная жидкость гигроскопична и впитывает влагу из воздуха, что снижает её температуру кипения. Рекомендуется заменять её каждые 2 года или 40 000 км пробега. В условиях интенсивной эксплуатации или гонок интервал замены может быть сокращен до 6 месяцев, чтобы избежать закипания жидкости при перегреве суппорта.</p>
+</details>
+
+<details>
+  <summary>Что такое плавающий суппорт и чем он отличается от неподвижного?</summary>
+  <p>Плавающий суппорт имеет одну или две колодки и перемещается на направляющих, прижимая обе колодки к диску. Неподвижный суппорт закреплен жестко и имеет поршни с обеих сторон диска, которые прижимают колодки одновременно. Неподвижные суппорты обеспечивают лучшее торможение и меньший износ, но они сложнее, дороже и тяжелее.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При разработке всегда используйте программное обеспечение для анализа методом конечных элементов (FEA), чтобы выявить критические зоны напряжения до начала дорогостоящего производства прототипов.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chem-smazat-tormoznoj-tsilindr.html" class="pb-related-card">
+                <span class="pb-related-title">Чем смазать тормозной цилиндр: выбор смазки и инструкция</span>
+                <span class="pb-related-desc">Какую смазку использовать для тормозных цилиндров (главного/рабочего)? ТОП-5 составов, ошибки при на</span>
+            </a><a href="/articles/r/re/remkomplekt-perednego-supporta-aktsent.html" class="pb-related-card">
+                <span class="pb-related-title">Замена ремкомплекта переднего суппорта Hyundai Accent: инструкция и выбор</span>
+                <span class="pb-related-desc">Полное руководство по выбору и замене ремкомплекта переднего суппорта на Hyundai Accent. Диагностика</span>
+            </a><a href="/articles/r/re/remkomplekt-supportov-prado-150-dizel.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект суппортов Прадо 150 дизель: выбор и замена</span>
+                <span class="pb-related-desc">Полный гид по замене ремкомплекта суппортов на Toyota Prado 150 с дизелем. Выбор деталей, симптомы и</span>
+            </a><a href="/articles/r/re/remkomplekt-perednego-supporta-megan-2.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект переднего суппорта Меган 2: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гайд по выбору и замене ремкомплекта переднего суппорта для Renault Megane 2. Обзор производи</span>
+            </a><a href="/articles/r/re/remkomplekt-supporta-golf-4-zadnij.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект суппорта Гольф 4 задний: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гид по выбору и замене ремкомплекта заднего суппорта на VW Golf 4. Диагностика износа, пошаго</span>
+            </a><a href="/articles/k/kr/krasnye-supporta-na-beloj-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Красные суппорта на белой машине: эстетика, безопасность и нюансы тюнинга</span>
+                <span class="pb-related-desc">Почему красные суппорты на белом автомобиле — это идеальный выбор? Обзор стилей, влияние на безопасн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

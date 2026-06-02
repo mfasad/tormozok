@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Настройки печати для ABS: Идеальные параметры, температура и советы — ТормозОК</title>
+    <meta name="description" content="Полное руководство по настройке 3D-принтера для печати ABS пластиком. Температуры, скорость, охлаждение и устранение дефектов для прочных моделей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/n/na/nastrojki-pechati-dlya-abs.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Настройки печати для ABS: Идеальные параметры, температура и советы">
+    <meta property="og:description" content="Полное руководство по настройке 3D-принтера для печати ABS пластиком. Температуры, скорость, охлаждение и устранение дефектов для прочных моделей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Настройки печати для ABS: Идеальные параметры, температура и советы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#температурный-режим-сердце-процесса-печати">Температурный режим: Сердце процесса печати</a></li><li><a href="#конструкция-камеры-и-контроль-вентиляции">Конструкция камеры и контроль вентиляции</a></li><li><a href="#скорость-печати-и-настройки-слайсера">Скорость печати и настройки слайсера</a></li><li><a href="#устранение-типичных-дефектов-и-калибровка">Устранение типичных дефектов и калибровка</a></li><li><a href="#таблица-оптимальных-параметров-для-abs">Таблица оптимальных параметров для ABS</a></li><li><a href="#постобработка-и-финальная-доводка">Постобработка и финальная доводка</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/retarder-i-intarder-v-chem-raznitsa.html">Ретардер или интардер: в чем разница, принцип работы и отличия</a></li><li><a href="/articles/t/to/tormozyat-li-zadnie-kolesa-pri-nazhatii-na-tormoz.html">Тормозят ли задние колеса: работа системы, ABS и причины проблем</a></li><li><a href="/articles/d/dl/dlya-chego-nuzhna-retarda-na-gruzovikakh.html">Ретардер на грузовиках: назначение, виды и принцип работы</a></li><li><a href="/articles/n/ne/ne-rabotaet-spidometr-i-gorit-abs-granta.html">Не работает спидометр и горит ABS на Lada Granta: причины и ремонт</a></li><li><a href="/articles/k/ko/kodirovanie-bloka-abs-passat-b5.html">Кодирование блока ABS на VW Passat B5: инструкция и нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полный гид по настройкам печати для ABS пластика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#температурный-режим-сердце-процесса-печати">Температурный режим: Сердце процесса печати</a></li><li><a href="#конструкция-камеры-и-контроль-вентиляции">Конструкция камеры и контроль вентиляции</a></li><li><a href="#скорость-печати-и-настройки-слайсера">Скорость печати и настройки слайсера</a></li><li><a href="#устранение-типичных-дефектов-и-калибровка">Устранение типичных дефектов и калибровка</a></li><li><a href="#таблица-оптимальных-параметров-для-abs">Таблица оптимальных параметров для ABS</a></li><li><a href="#постобработка-и-финальная-доводка">Постобработка и финальная доводка</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Печать на 3D-принтере пластиком ABS (акрилонитрилбутадиенстирол) — это переход на качественно новый уровень, требующий уважения к физике материалов. В отличие от простого PLA, этот термопласт обладает памятью формы и склонностью к усадке, что делает процесс создания деталей сложным, но невероятно rewarding. Если вы ищете способ получить детали с высокой механической прочностью, термостойкостью и возможностью постобработки, то освоение <strong>температурных режимов</strong> здесь становится критически важным.</p>
+
+<p>Многие новички сталкиваются с отрывом модели от стола или расслоением слоев, едва меняя пластик. Однако, зная правильные <strong>настройки экструзии</strong> и условия окружающей среды, вы сможете печатать сложные инженерные конструкции, которые не боятся нагрева. Главное правило здесь — контроль термического градиента. Неправильное охлаждение может разрушить модель еще до того, как вы заберете её с платформы.</p>
+
+<h2 id="температурный-режим-сердце-процесса-печати">Температурный режим: Сердце процесса печати</h2>
+<p>Основа качественной печати ABS — это точный подбор температур. Вам необходимо настроить сопло на диапазон <code>240–260°C</code>, что значительно выше, чем для PLA. Если температура будет слишком низкой, экструзия станет нестабильной, слои плохо схватятся, и деталь разрушится при нагрузке. Напротив, перегрев может вызвать появление нитей (стрингинга) и деградацию материала, когда пластик начнет выделять неприятный запах и дымить.</p>
+
+<p>Платформа (столик) должна быть разогрета до <code>90–110°C</code>. Это не просто рекомендация, а необходимость для предотвращения деформации углов детали. При остывании ABS сильно сжимается, и если нижние слои остынут быстрее верхних, модель просто"поднимет" углы вверх. Используйте термостойкий клей или специальный спрей, чтобы обеспечить надежное сцепление первой линии с нагретой поверхностью.</p>
+
+<p>Не забывайте про температурные ограничения самого принтера. Стандартные хотэнды с латунным соплом могут не справиться с длительной печатью при <code>260°C</code> без перегрева чувствительных элементов. Если вы используете <em>Ender 3</em> или подобные бюджетные модели, возможно, потребуется установка термобарьера или улучшение обдува хотэнда.</p>
+
+<h2 id="конструкция-камеры-и-контроль-вентиляции">Конструкция камеры и контроль вентиляции</h2>
+<p>Ключевым фактором успеха при работе с ABS является закрытая камера принтера. Открытый корпус — гарантия того, что деталь сломается в процессе печати из-за сквозняков. Вам нужно создать замкнутое пространство, где воздух прогревается до <code>40–50°C</code>. Это выравнивает температуру по всей высоте модели и предотвращает резкие перепады, вызывающие внутреннее напряжение.</p>
+
+<p>Если ваш принтер не имеет заводской камеры, можно соорудить её самостоятельно из картона, оргстекла или пластика. Достаточно минимальной вентиляции для отвода паров, при сохранении общего тепла внутри.</p>
+
+<blockquote>⚠️ Внимание: Никогда не оставляйте работающий принтер с ABS без присмотра в закрытом помещении без вытяжки. Пары стирола токсичны и могут вызвать головную боль или раздражение глаз при длительном воздействии.</blockquote>
+
+<p>Вентиляция внутри камеры также играет роль. Если вы используете активное охлаждение модели (кулер детали), убедитесь, что он настроен минимально или выключен вовсе. ABS чувствителен к потоку холодного воздуха. Даже легкий обдув может привести к быстрому охлаждению верхних слоев и их отрыву от предыдущих.</p>
+
+<div class="pb-poll" id="poll-edf2d176"><div class="pb-poll-question">📊 Какой тип камеры у вашего принтера?</div><div class="pb-poll-option" data-poll="edf2d176" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью закрытая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edf2d176" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Частично закрытая</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edf2d176" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Открытый корпус</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="edf2d176" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет камеры</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="скорость-печати-и-настройки-слайсера">Скорость печати и настройки слайсера</h2>
+<p>Скорость печати для этого материала должна быть умеренной. Слишком быстрое движение экструдера не даст пластику достаточно времени для прогрева и сцепления со слоем. Оптимальная скорость для внешних контуров составляет <code>40–50 мм/с</code>, а для внутренней заполнения можно немного увеличить до <code>60 мм/с</code>. Это гарантирует плотность и отсутствие пустот внутри модели.</p>
+
+<p>Настройки ретракции (втягивания) пластика также требуют внимания. Из-за низкой вязкости расплава ABS склонен к образованию паутины. Уменьшите длину ретракции до <code>4–6 мм</code> и увеличьте скорость втягивания до <code>40 мм/с</code>. Это поможет минимизировать подтеки, не вызывая при этом засора в хотэнде из-за избыточного давления.</p>
+
+<p>Учитывайте, что при печати ABS слои могут расслаиваться, если скорость слишком велика. Протестируйте модель-тест, чтобы найти баланс между качеством поверхности и прочностью. Иногда снижение скорости на 10% дает гораздо лучший результат, чем попытка ускорить процесс.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек перед печатью</h4><label class="check-item"><input type="checkbox"><span>Температура сопла 250°C</span></label><label class="check-item"><input type="checkbox"><span>Температура стола 100°C</span></label><label class="check-item"><input type="checkbox"><span>Камера закрыта</span></label><label class="check-item"><input type="checkbox"><span>Вентилятор модели выключен</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="устранение-типичных-дефектов-и-калибровка">Устранение типичных дефектов и калибровка</h2>
+<p>Даже при идеальных настройках могут возникать проблемы. Самый частый дефект — это <strong>warping</strong> (коробление), когда углы модели отходят от стола. Это решается использованием адгезивных средств, таких как лак для волос (сильная фиксация) или специальный клей-карандаш. Также помогает нанесение"рафта" (подложки), который берет на себя всю усадку.</p>
+
+<p>Другая проблема — прослои. Если слои не слипаются, проверьте температуру именно в момент печати, а не в настройках слайсера. Иногда фактическая температура сопла ниже заданной из-за плохой термопары. Используйте внешний термометр, чтобы сверить данные. Убедитесь, что пластик качественный и не впитал влагу, так как это тоже мешает адгезии.</p>
+
+<p>Если вы заметили, что модель"сворачивается" в трубку, значит, охлаждение слишком резкое, либо скорость печати слишком высока. Попробуйте уменьшить скорость или повысить температуру стола. Иногда помогает снижение высоты слоя до <code>0.15–0.2 мм</code>, что увеличивает площадь контакта между слоями.</p>
+
+<blockquote>⚠️ Внимание: Если ваши детали постоянно отходят от стола, проверьте уровень принтера. Даже малейший перекос может привести к тому, что первая линия не прилипнет, и весь процесс пойдет насмарку.</blockquote>
+
+<details class="pb-accordion"><summary>Как подготовить ABS к печати?</summary><div class="pb-accordion-body"><p>Перед печатью убедитесь, что пластик сухой. Поместите катушку в сушилку для пластика на 4-6 часов при 60°C. Влажный ABS будет издавать треск при печати и давать пузыри в слоях.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте ABS-сервис (раствор ABS в ацетоне) для пропитки платформы или создания подложки. Это обеспечивает лучшее сцепление и снижает риск отрыва углов модели при остывании.</p></aside>
+
+<h2 id="таблица-оптимальных-параметров-для-abs">Таблица оптимальных параметров для ABS</h2>
+<p>Чтобы упростить вам задачу, мы составили сводную таблицу с рекомендуемыми значениями. Эти параметры являются отправной точкой, но могут требовать в зависимости от конкретной марки пластика и модели принтера. Всегда начинайте с тестовых образцов.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+ <tr>
+ <th>Параметр</th>
+ <th>Рекомендуемое значение</th>
+ <th>Комментарий</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Температура сопла</td>
+ <td><code>240–260°C</code></td>
+ <td>Зависит от производителя пластика</td>
+ </tr>
+ <tr>
+ <td>Температура стола</td>
+ <td><code>90–110°C</code></td>
+ <td>Обязательно с подогревом</td>
+ </tr>
+ <tr>
+ <td>Скорость печати</td>
+ <td><code>40–60 мм/с</code></td>
+ <td>Медленнее для внешних контуров</td>
+ </tr>
+ <tr>
+ <td>Охлаждение</td>
+ <td>0–10%</td>
+ <td>Минимальное или выключено</td>
+ </tr>
+ <tr>
+ <td>Высота слоя</td>
+ <td><code>0.2–0.3 мм</code></td>
+ <td>Более плотные слои для прочности</td>
+ </tr>
+ </tbody>
+</table></div>
+
+<p>Важно понимать, что каждый бренд пластика может иметь свои нюансы. Например, <em>Prusament</em> или <em>Polymaker</em> могут требовать чуть более высоких температур, чем дешевые китайские аналоги. Всегда читайте рекомендации на упаковке катушки. Если вы не знаете, с чего начать, используйте значения из таблицы как базу для калибровки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный секрет успеха при печати ABS — это не только температура, но и стабильность окружающей среды. Закрытая камера и отсутствие сквозняков важнее, чем идеальная калибровка оси Z.</p></aside>
+
+<h2 id="постобработка-и-финальная-доводка">Постобработка и финальная доводка</h2>
+<p>Одной из главных преимуществ ABS является возможность химической постобработки. Пары ацетона могут сгладить слои, сделав поверхность идеально гладкой и глянцевой. Для этого используется метод"паровой бани": модель помещается в закрытый контейнер с ватой, пропитанной ацетоном. Длительность воздействия варьируется от нескольких минут до получаса.</p>
+<p>Однако, будьте осторожны: слишком долгое воздействие ацетона может расплавить мелкие детали или исказить геометрию. Также Используйте этот метод только для тех изделий, где важна эстетика, а не максимальная точность размеров.</p>
+<p>Если вам нужна высокая точность, лучше избегать паровой обработки и использовать механическую шлифовку. Шкурка с зернистостью от 200 до 2000 позволяет добиться отличного результата. <strong>Шлифовка</strong> и покраска дают возможность создать детали, неотличимые от литьевых.</p>
+
+<blockquote>⚠️ Внимание: Работайте с ацетоном только в хорошо проветриваемом помещении и используйте защитные перчатки. Пары ацетона легковоспламеняемы и вредны для дыхания.</blockquote>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+<details>
+ <summary>Можно ли печатать ABS на открытом принтере?</summary>
+ <p>Технически можно, но качество будет низким. Высокий риск коробления и отрыва углов. Рекомендуется использовать закрытую камеру или хотя бы накрывать принтер коробкой.</p>
+</details>
+<details>
+ <summary>Какой клей лучше всего подходит для ABS?</summary>
+ <p>Лучше всего использовать специальный клей для 3D-печати или лак для волос сильной фиксации. Также работает смесь ацетона и самого ABS-пластика (ABS-сервис).</p>
+</details>
+<details>
+ <summary>Почему моя модель ломается посередине?</summary>
+ <p>Это признак плохой адгезии слоев. Чаще всего причина в слишком низкой температуре сопла, высокой скорости печати или недостаточном нагреве стола.</p>
+</details>
+<details>
+ <summary>Нужно ли чистить сопло после печати ABS?</summary>
+ <p>Да, ABS может оставлять загрязнения. Рекомендуется выполнить очистку сопла горячим (Cold Pull) при температуре 240-250°C, чтобы удалить остатки пластика.</p>
+</details>
+<details>
+ <summary>Можно ли смешивать ABS с другими пластиками?</summary>
+ <p>Нет, смешивать ABS с PLA или PETG в одном экструдере нельзя. Это приведет к засору и порче сопла из-за разной температуры плавления и химического состава.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/retarder-i-intarder-v-chem-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер или интардер: в чем разница, принцип работы и отличия</span>
+                <span class="pb-related-desc">Подробный разбор различий между ретардером и интардером. Принцип действия, плюсы и минусы систем тор</span>
+            </a><a href="/articles/t/to/tormozyat-li-zadnie-kolesa-pri-nazhatii-na-tormoz.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозят ли задние колеса: работа системы, ABS и причины проблем</span>
+                <span class="pb-related-desc">Разбираем, как работают задние тормоза, почему они могут блокироваться или не срабатывать. Влияние A</span>
+            </a><a href="/articles/d/dl/dlya-chego-nuzhna-retarda-na-gruzovikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер на грузовиках: назначение, виды и принцип работы</span>
+                <span class="pb-related-desc">Разбираем, зачем нужен ретардер на грузовиках. Преимущества перед тормозами, типы устройств, влияние</span>
+            </a><a href="/articles/n/ne/ne-rabotaet-spidometr-i-gorit-abs-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Не работает спидометр и горит ABS на Lada Granta: причины и ремонт</span>
+                <span class="pb-related-desc">Почему на Lada Granta одновременно отказывает спидометр и загорается лампа ABS. Диагностика датчиков</span>
+            </a><a href="/articles/k/ko/kodirovanie-bloka-abs-passat-b5.html" class="pb-related-card">
+                <span class="pb-related-title">Кодирование блока ABS на VW Passat B5: инструкция и нюансы</span>
+                <span class="pb-related-desc">Пошаговая инструкция по кодированию и адаптации блока ABS на Volkswagen Passat B5. Разбор ошибок, сп</span>
+            </a><a href="/articles/r/re/remont-blokov-abs-v-spb.html" class="pb-related-card">
+                <span class="pb-related-title">Ремонт блоков ABS в СПб: диагностика, восстановление, цены</span>
+                <span class="pb-related-desc">Профессиональный ремонт блоков управления ABS в Санкт-Петербурге. Восстановление электроники тормозн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

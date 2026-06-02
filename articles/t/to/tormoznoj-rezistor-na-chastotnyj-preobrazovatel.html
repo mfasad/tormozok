@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Тормозной резистор для частотного преобразователя: выбор, расчет, монтаж — ТормозОК</title>
+    <meta name="description" content="Полное руководство по тормозным резисторам для ЧП. Расчет мощности, подключение, защита от перегрева и ошибки инвертора. Технические советы для инженеров.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/t/to/tormoznoj-rezistor-na-chastotnyj-preobrazovatel.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тормозной резистор для частотного преобразователя: выбор, расчет, монтаж">
+    <meta property="og:description" content="Полное руководство по тормозным резисторам для ЧП. Расчет мощности, подключение, защита от перегрева и ошибки инвертора. Технические советы для инженеров.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тормозной резистор для частотного преобразователя: выбор, расчет, монтаж</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-рекуперации-и-роль-резистора">Физика процесса рекуперации и роль резистора</a></li><li><a href="#критерии-выбора-мощность-сопротивление-и-duty-cycle">Критерии выбора: мощность, сопротивление и duty cycle</a></li><li><a href="#технические-характеристики-и-таблица-соответствия">Технические характеристики и таблица соответствия</a></li><li><a href="#подключение-и-схема-монтажа">Подключение и схема монтажа</a></li><li><a href="#ошибки-при-эксплуатации-и-методы-диагностики">Ошибки при эксплуатации и методы диагностики</a></li><li><a href="#специфика-промышленных-применений">Специфика промышленных применений</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-tormozit-besprovodnaya-mysh.html">Почему тормозит беспроводная мышь: причины задержек и способы решения</a></li><li><a href="/articles/k/ka/kak-kleit-abs-plastik-v-domashnikh-usloviyakh.html">Как клеить ABS пластик в домашних условиях: лучшие методы и клеи</a></li><li><a href="/articles/p/po/pochemu-yutub-dolgo-zagruzhaetsya.html">Почему YouTube долго загружается: 7 причин и способы ускорить</a></li><li><a href="/articles/k/ka/kak-pechatat-abs-plastikom-na-3d-printere.html">Технология печати ABS пластиком: настройки, температура и проблемы</a></li><li><a href="/articles/v/vr/vremeni-u-nas-net-klichko.html">Фраза Кличко о времени: миф или реальность в автоспорте?</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тормозной резистор на частотный преобразователь: полное руководство по выбору и эксплуатации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-рекуперации-и-роль-резистора">Физика процесса рекуперации и роль резистора</a></li><li><a href="#критерии-выбора-мощность-сопротивление-и-duty-cycle">Критерии выбора: мощность, сопротивление и duty cycle</a></li><li><a href="#технические-характеристики-и-таблица-соответствия">Технические характеристики и таблица соответствия</a></li><li><a href="#подключение-и-схема-монтажа">Подключение и схема монтажа</a></li><li><a href="#ошибки-при-эксплуатации-и-методы-диагностики">Ошибки при эксплуатации и методы диагностики</a></li><li><a href="#специфика-промышленных-применений">Специфика промышленных применений</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Частотные преобразователи (ЧП) стали неотъемлемой частью современной промышленной автоматизации, обеспечивая плавный пуск и точное регулирование скорости электродвигателей. Однако в процессе работы, особенно при быстром торможении или работе на низких оборотах с высокой нагрузкой, возникает проблема избыточной энергии. Именно здесь на сцену выходит <strong>тормозной резистор</strong> — критический компонент, предотвращающий выход оборудования из строя.</p>
+
+<p>Когда двигатель переходит в режим генератора, кинетическая энергия вращающейся массы преобразуется в электрический ток, который возвращается в цепь постоянного тока инвертора. Без механизма рассеивания этой энергии напряжение на шине постоянного тока (DC Link) резко возрастает, что может привести к аварийной остановке или необратимому силовых транзисторов. <em>Тормозной резистор</em> берет на себя задачу преобразования этого электрического излишка в тепло, обеспечивая безопасный и контролируемый останов механизма.</p>
+
+<p>Понимание физики процесса, принципов выбора и нюансов монтажа необходимо для любого инженера, занимающегося обслуживанием или проектированием систем приводов. Ошибки на этапе подбора мощности или сопротивления могут стоить дорого, поэтому к расчету и подключению <strong>тормозного блока</strong> следует подходить с максимальной ответственностью, учитывая реальные условия эксплуатации оборудования.</p>
+
+<h2 id="физика-процесса-рекуперации-и-роль-резистора">Физика процесса рекуперации и роль резистора</h2>
+<p>В основе работы системы лежит закон сохранения энергии. При замедлении тяжелого механизма, такого как элеватор или вентилятор большого диаметра, двигатель начинает работать как генератор. Энергия, накопленная во вращающихся частях, возвращается в <strong>частотный преобразователь</strong>. Внутренняя цепь постоянного тока набирает напряжение, и если не отвести этот заряд, конденсаторы могут взорваться.</p>
+
+<p>Современные инверторы оснащены встроенными или внешними <em>тормозными ключами</em> (Braking Chopper). Как только напряжение на шине DC превышает заданный порог, транзистор ключа открывается, подключая к цепи <strong>тормозной резистор</strong>. Ток начинает течь через сопротивление, нагревая его. Это позволяет быстро сбросить напряжение до безопасного уровня и продолжить замедление вала.</p>
+
+<p>Важно понимать, что резистор не просто гасит ток, он определяет динамику торможения. Слишком высокое сопротивление приведет к медленному сбросу энергии, а слишком низкое — к перегрузке ключа. <strong>Мощность рассеивания</strong> является ключевым параметром, определяющим, сколько энергии компонент способен преобразовать в тепло без перегорания за короткое время.</p>
+
+<blockquote>⚠️ Внимание: Перед началом любых работ по подключению <em>тормозного резистора</em> обязательно убедитесь, что на шине постоянного тока напряжение упало до нуля. Конденсаторы могут сохранять опасный заряд до 10 минут после отключения питания!</blockquote>
+
+<h2 id="критерии-выбора-мощность-сопротивление-и-duty-cycle">Критерии выбора: мощность, сопротивление и duty cycle</h2>
+<p>Выбор правильного компонента начинается с анализа параметров привода. Сопротивление <strong>тормозного резистора</strong> должно соответствовать минимальному допустимому значению, указанному в документации на частотник. Использование резистора с меньшим сопротивлением может вызвать срабатывание защиты по току или выход из строя тормозного транзистора.</p>
+
+<p>Мощность резистора — это не просто номинал, а зависимость от времени работы. Вы должны учитывать цикл работы (Duty Cycle). Если механизм тормозит редко и недолго, подойдет резистор с меньшей номинальной мощностью, но способный выдержать высокие пиковые нагрузки. Для частых и длительных торможений требуется компонент с высокой <strong>средней мощностью рассеивания</strong>.</p>
+
+<p>При выборе также обратите внимание на тип корпуса и материал намотки. <em>Алюминиевые корпусные резисторы</em> лучше отводят тепло и защищены от воздействия окружающей среды, тогда как проволочные керамические модели могут быть хрупкими. Правильный подбор <strong>выходной мощности</strong> гарантирует долговечность всей системы привода.</p>
+
+<div class="pb-poll" id="poll-1de5b610"><div class="pb-poll-question">📊 Какой тип торможения используется в вашем оборудовании?</div><div class="pb-poll-option" data-poll="1de5b610" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Частое рекуперативное</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1de5b610" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Редкое экстренное</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1de5b610" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянное (тормозная муфта)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1de5b610" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет торможения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="технические-характеристики-и-таблица-соответствия">Технические характеристики и таблица соответствия</h2>
+<p>Для наглядности рассмотрим типовые параметры выбора в зависимости от мощности частотного преобразователя. Данные в таблице ниже являются ориентировочными и должны перепроверяться по техническому паспорту конкретного устройства.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Мощность ЧП (кВт)</th>
+<th>Рекомендуемое сопротивление (Ом)</th>
+<th>Минимальная мощность резистора (Вт)</th>
+<th>Типичный цикл (Duty)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.75 - 2.2</td>
+<td>50 - 100</td>
+<td>100 - 200</td>
+<td>5% - 10%</td>
+</tr>
+<tr>
+<td>3.0 - 5.5</td>
+<td>20 - 50</td>
+<td>300 - 600</td>
+<td>10% - 15%</td>
+</tr>
+<tr>
+<td>7.5 - 15</td>
+<td>10 - 20</td>
+<td>800 - 1500</td>
+<td>15% - 25%</td>
+</tr>
+<tr>
+<td>18.5 - 30</td>
+<td>5 - 10</td>
+<td>2000 - 4000</td>
+<td>25% - 50%</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что для мощностей выше 30 кВт часто используются специальные <em>модули торможения</em> с несколькими резисторами в параллельном соединении. Это позволяет снизить индуктивность и увеличить общую мощность рассеивания. Неправильный расчет <strong>эквивалентного сопротивления</strong> в такой схеме может привести к дисбалансу токов.</p>
+
+<blockquote>⚠️ Внимание: Параллельное соединение резисторов требует использования компонентов с идентичными характеристиками. Разница в сопротивлении даже на 5% может привести к перегреву одного из элементов и последующему обрыву цепи.</blockquote>
+
+<h2 id="подключение-и-схема-монтажа">Подключение и схема монтажа</h2>
+<p>Монтаж <strong>тормозного резистора</strong> требует строгого соблюдения полярности и маркировки выводов. Основные точки подключения на частотном преобразователе обозначаются как P+ (или DC+) и PB (Braking). Никогда не подключайте резистор напрямую к фазным выводам L1, L2, L3 — это мгновенно выведет устройство из строя.</p>
+
+<p>Проводка должна быть выполнена экранированным кабелем, заземленным с обоих концов, чтобы минимизировать электромагнитные помехи. Длинный кабель может работать как антенна, создавая наводки на чувствительную электронику. Используйте <strong>кабель с двойной изоляцией</strong>, способный выдерживать повышенные температуры.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по безопасному монтажу</h4><label class="check-item"><input type="checkbox"><span>Отключить питание и разрядить конденсаторы</span></label><label class="check-item"><input type="checkbox"><span>Проверить сопротивление резистора мультиметром</span></label><label class="check-item"><input type="checkbox"><span>Подключить к клеммам P+ и PB</span></label><label class="check-item"><input type="checkbox"><span>Установить резистор на несгораемую поверхность</span></label><label class="check-item"><input type="checkbox"><span>Проверить изоляцию кабеля</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Если вы используете внешние модули торможения, ознакомьтесь с инструкцией производителя по настройке параметров <code>Brake Resistor</code> в меню инвертора. Необходимо задать максимальное и минимальное напряжение срабатывания ключа, чтобы оптимизировать процесс торможения.</p>
+
+<details class="pb-accordion"><summary>Что такое индуктивность резистора?
+<p>В рекуперативных режимах важна не только активная составляющая сопротивления, но и паразитная индуктивность. Высокая индуктивность может вызвать всплески напряжения при быстром переключении транзистора, что опасно для изоляции обмоток двигателя и самого ключа. Поэтому для мощных приводов лучше использовать бесиндукционные резисторы.--></p>
+
+<h2 id="ошибки-при-эксплуатации-и-методы-диагностики">Ошибки при эксплуатации и методы диагностики</h2>
+<p>Одной из самых частых проблем является перегрев резистора. Если корпус становится слишком горячим для прикосновения, это сигнал о том, что <strong>цикл работы</strong> превышает допустимые нормы или сопротивление выбрано неверно. В таких случаях необходимо установить радиаторное охлаждение или увеличить мощность резистора.</p>
+
+<p>Другая распространенная ошибка — отсутствие тепловой защиты. Качественные <em>тормозные резисторы</em> оснащаются встроенными термисторами, которые размыкают цепь при критическом нагреве. Если этот контакт не подключен к входу защиты ЧП, компонент может сгореть, вызвав пожар.</p>
+
+<p>Иногда пользователи сталкиваются с ошибкой"Over Voltage" даже при подключенном резисторе. Это может означать, что сопротивление слишком велико и ток не успевает сбрасываться, либо сам резистор имеет обрыв. Проверьте целостность цепи мультиметром, измерив <strong>сопротивление нагрузки</strong> на выводах.</p>
+
+<p>Особое внимание следует уделить условиям окружающей среды. Пыль, масла и химические пары могут оседать на поверхность резистора, снижая теплоотдачу и вызывая пробои изоляции. Регулярная чистка и вентиляция — залог долгой службы.</p>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>tip:Не размещайте резистор в замкнутом пространстве без естественной или принудительной вентиляции. Нагрев до 300-400 градусов — это нормально, но если тепло не отводится, изоляция начнет плавиться.</p></div></details>
+
+<h2 id="специфика-промышленных-применений">Специфика промышленных применений</h2>
+<p>В специфических отраслях, таких как металлургия или горная добыча, требования к <strong>тормозным системам</strong> максимальны. Здесь используются резисторы с высоким классом защиты IP65/IP67, способные работать в условиях повышенной влажности и запыленности. Также встречаются конструкции с принудительным обдувом, где встроенный вентилятор увеличивает мощность рассеивания.</p>
+
+<p>Для кранового оборудования и лифтов критично время отклика. Если <em>тормозной ключ</em> срабатывает с задержкой, механизм может не остановиться вовремя. В таких случаях производители предлагают резисторы с минимальной индуктивностью и специальными характеристиками импульсного тока.</p>
+
+<p> Выбор между пассивным <strong>гашением энергии</strong> и активным возвратом зависит от экономической целесообразности проекта.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>В промышленных условиях надежность тормозного резистора напрямую влияет на непрерывность производственного цикла. Экономия на подборе компонентов здесь недопустима.</p></aside>
+
+<blockquote>⚠️ Внимание: Технические нормы и стандарты безопасности могут обновляться. Всегда сверяйте требования к монтажу и защите с актуальными нормативными документами и инструкциями производителя оборудования перед началом эксплуатации.</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли использовать обычный нагревательный элемент вместо тормозного резистора?</summary>
+<p>Нет, это недопустимо. Обычные нагреватели имеют высокую индуктивность и не рассчитаны на импульсные токи торможения. Они могут сгореть при первом же срабатывании ключа или вызвать ложные срабатывания защиты преобразователя.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять состояние тормозного резистора?</summary>
+<p>Рекомендуется проводить визуальный осмотр и проверку сопротивления не реже одного раза в 6 месяцев. Если оборудование работает в тяжелых условиях (пыль, вибрация), проверку следует проводить ежеквартально.</p>
+</details>
+
+<details>
+<summary>Что делать, если резистор сильно нагревается во время работы?</summary>
+<p>Сначала проверьте, не превышает ли фактический цикл работы (Duty Cycle) номинальный. Если цикл нормальный, возможно, выбран резистор с недостаточной мощностью. Установите более мощный элемент или обеспечьте дополнительный обдув.</p>
+</details>
+
+<details>
+<summary>Можно ли подключить несколько резисторов параллельно?</summary>
+<p>Да, это распространенная практика для увеличения мощности. Однако важно, чтобы все резисторы имели одинаковое сопротивление и были подключены симметрично, чтобы ток распределялся равномерно между ними.</p>
+</details>
+
+<details>
+<summary>Влияет ли длина кабеля на работу тормозного резистора?</summary>
+<p>Да, длинный кабель увеличивает индуктивность цепи, что может вызвать всплески напряжения при отключении ключа. Рекомендуется использовать экранированный кабель и не превышать длину, указанную в инструкции производителя (обычно до 50-100 метров).</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-tormozit-besprovodnaya-mysh.html" class="pb-related-card">
+                <span class="pb-related-title">Почему тормозит беспроводная мышь: причины задержек и способы решения</span>
+                <span class="pb-related-desc">Мышь лагает или прыгает? Разбираем основные причины задержек курсора: от помех 2.4 ГГц до разряда ба</span>
+            </a><a href="/articles/k/ka/kak-kleit-abs-plastik-v-domashnikh-usloviyakh.html" class="pb-related-card">
+                <span class="pb-related-title">Как клеить ABS пластик в домашних условиях: лучшие методы и клеи</span>
+                <span class="pb-related-desc">Полное руководство по склеиванию ABS пластика дома. Обзор растворителей, двухкомпонентных клеев и эп</span>
+            </a><a href="/articles/p/po/pochemu-yutub-dolgo-zagruzhaetsya.html" class="pb-related-card">
+                <span class="pb-related-title">Почему YouTube долго загружается: 7 причин и способы ускорить</span>
+                <span class="pb-related-desc">Разбираем, почему YouTube долго загружает видео. Основные причины: интернет, кэш, настройки DNS. Эфф</span>
+            </a><a href="/articles/k/ka/kak-pechatat-abs-plastikom-na-3d-printere.html" class="pb-related-card">
+                <span class="pb-related-title">Технология печати ABS пластиком: настройки, температура и проблемы</span>
+                <span class="pb-related-desc">Полное руководство по печати ABS пластиком. Настройка температуры сопла и стола, использование камер</span>
+            </a><a href="/articles/v/vr/vremeni-u-nas-net-klichko.html" class="pb-related-card">
+                <span class="pb-related-title">Фраза Кличко о времени: миф или реальность в автоспорте?</span>
+                <span class="pb-related-desc">Анализ знаменитой фразы Виталия Кличко о нехватке времени. Разбор контекста, особенностей работы в б</span>
+            </a><a href="/articles/k/kr/kraska-po-abs-plastiku.html" class="pb-related-card">
+                <span class="pb-related-title">Покраска ABS пластика: подготовка, грунтовка и выбор краски</span>
+                <span class="pb-related-desc">Полное руководство по покраске ABS пластика. Секреты адгезии, выбор грунта и эмали, устранение дефек</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как проверить систему ABS через OBD 2: полная диагностика ошибок — ТормозОК</title>
+    <meta name="description" content="Пошаговая инструкция диагностики антиблокировочной системы тормозов через OBD-II сканер. Расшифровка кодов ошибок, выбор адаптеров и алгоритм проверки.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-proverit-abs-cherez-obd-2.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить систему ABS через OBD 2: полная диагностика ошибок">
+    <meta property="og:description" content="Пошаговая инструкция диагностики антиблокировочной системы тормозов через OBD-II сканер. Расшифровка кодов ошибок, выбор адаптеров и алгоритм проверки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить систему ABS через OBD 2: полная диагностика ошибок</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-автомобиля-и-выбор-диагностического-оборудования">Подготовка автомобиля и выбор диагностического оборудования</a></li><li><a href="#процесс-подключения-и-инициализация-связи-с-блоком">Процесс подключения и инициализация связи с блоком</a></li><li><a href="#чтение-и-интерпретация-кодов-ошибок-abs">Чтение и интерпретация кодов ошибок ABS</a></li><li><a href="#анализ-данных-в-реальном-времени-и-проверка-датчиков">Анализ данных в реальном времени и проверка датчиков</a></li><li><a href="#устранение-ошибок-и-сброс-системы">Устранение ошибок и сброс системы</a></li><li><a href="#важные-нюансы-и-ограничения-диагностики">Важные нюансы и ограничения диагностики</a></li><li><a href="#заключение">Заключение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ko/kody-oshibok-abs-wabco.html">Коды ошибок ABS Wabco: расшифровка, поиск и устранение</a></li><li><a href="/articles/k/ka/kak-otklyuchit-abs-na-larguse.html">Как отключить ABS на Lada Largus: пошаговая инструкция</a></li><li><a href="/articles/z/za/zadnee-koltso-abs-vesta.html">Заднее кольцо ABS на Lada Vesta: неисправности, замена, выбор</a></li><li><a href="/articles/d/da/datchik-abs-paz-32053.html">Датчик АБС ПАЗ 32053: признаки поломки, выбор и установка</a></li><li><a href="/articles/c/ch/chto-takoe-retarder-na-gruzovikakh-i-dlya-chego-on-prednaznachen.html">Ретардер на грузовиках: назначение, виды и принцип работы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как проверить систему ABS через OBD 2: руководство по диагностике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-автомобиля-и-выбор-диагностического-оборудования">Подготовка автомобиля и выбор диагностического оборудования</a></li><li><a href="#процесс-подключения-и-инициализация-связи-с-блоком">Процесс подключения и инициализация связи с блоком</a></li><li><a href="#чтение-и-интерпретация-кодов-ошибок-abs">Чтение и интерпретация кодов ошибок ABS</a></li><li><a href="#анализ-данных-в-реальном-времени-и-проверка-датчиков">Анализ данных в реальном времени и проверка датчиков</a></li><li><a href="#устранение-ошибок-и-сброс-системы">Устранение ошибок и сброс системы</a></li><li><a href="#важные-нюансы-и-ограничения-диагностики">Важные нюансы и ограничения диагностики</a></li><li><a href="#заключение">Заключение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система антиблокировки колес (ABS) является критически важным элементом активной безопасности современного автомобиля. В случае выхода из строя одного из датчиков или контроллера, блок управления немедленно фиксирует сбой и активирует аварийный режим работы тормозов. Для владельца это означает, что при экстренном торможении колеса могут заблокироваться, что приведет к потере управляемости на скользкой дороге.</p>
+
+<p>Выявить причину неисправности без специализированного оборудования практически невозможно, так как визуальный осмотр не дает полной картины состояния электронных узлов. Именно на помощь приходит стандартный диагностический разъем <strong>обд 2</strong>, который позволяет связаться с электронным блоком управления (ЭБУ) и получить детализированную информацию о состоянии системы.</p>
+
+<p>Понимание принципов работы <strong>диагностики ABS</strong> через <strong>OBD II</strong> позволяет автовладельцу своевременно обнаружить проблему, предотвратить дорогостоящий ремонт и обеспечить безопасность движения. В этой статье мы разберем, как правильно подключить сканер, какие ошибки могут встречаться и как интерпретировать полученные данные для точного определения неисправности.</p>
+
+<h2 id="подготовка-автомобиля-и-выбор-диагностического-оборудования">Подготовка автомобиля и выбор диагностического оборудования</h2>
+
+<p>Перед началом процедуры диагностики необходимо убедиться, что автомобиль находится в состоянии, пригодном для считывания данных. Игнорирование этого этапа может привести к получению ложных кодов ошибок или невозможности установить связь с блоком управления. Вам нужно припарковать транспортное средство на ровной поверхности и затянуть ручной тормоз.</p>
+
+<p>Двигатель автомобиля должен быть запущен, так как большинство диагностических сканеров требуют стабильного напряжения бортовой сети для корректной работы. В некоторых случаях проверка возможна и при включенном зажигании, но для активации всех систем ABS и считывания динамических параметров лучше дать мотору поработать на холостых оборотах.</p>
+
+<p>Выбор подходящего адаптера — это фундамент успешной диагностики. Для работы с системой тормозов недостаточно простого дешевого Bluetooth-адаптера, который часто не поддерживает специфические протоколы ABS. Вам потребуется устройство, поддерживающее расширенный набор команд, например, адаптеры на базе чипа <em>ELM327</em> версии 1.5 или профессиональные сканеры.</p>
+
+<ul>
+<li>🚗 Проверьте совместимость адаптера с вашим типом автомобиля (OBD2, CAN-шина, K-line)</li>
+<li>🔧 Убедитесь, что программное обеспечение на смартфоне или ноутбуке поддерживает чтение ABS</li>
+<li>💡 Осмотрите диагностический разъем на предмет окисления или повреждения контактов</li>
+</ul>
+
+<p>Важно отметить, что не все OBD-II сканеры могут читать данные из блока ABS, так как этот блок часто находится за пределами стандартного диагностического протокола, касающегося только двигателя. Вам нужно убедиться, что ваш софт имеет функцию "Read ABS Codes" или аналогичную опцию в меню.</p>
+
+<h2 id="процесс-подключения-и-инициализация-связи-с-блоком">Процесс подключения и инициализация связи с блоком</h2>
+
+<p>После выбора оборудования следующим этапом является физическое подключение. Диагностический разъем обычно расположен под рулевой колонкой, в зоне ног водителя или в центральной консоли. Вставьте адаптер в разъем <code>OBD II</code> до характерного щелчка, чтобы обеспечить надежный контакт.</p>
+
+<p>Затем необходимо запустить диагностическое приложение на вашем устройстве. Если вы используете смартфон, убедитесь, что Bluetooth или Wi-Fi модуль включен и сопряжен с адаптером. Для профессиональной диагностики используется ноутбук со специализированным ПО, которое требует установки соответствующих драйверов.</p>
+
+<p>В меню программы выберите тип транспортного средства, марку и модель, а также год выпуска. Это критически важно, так как протоколы обмена данными могут отличаться для разных поколений автомобилей, даже одной марки. Неправильный выбор модели может привести к ошибке инициализации.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подключение сканера ABS</h4><label class="check-item"><input type="checkbox"><span>Включить зажигание</span></label><label class="check-item"><input type="checkbox"><span>Вставить адаптер в разъем</span></label><label class="check-item"><input type="checkbox"><span>Запустить диагностическое приложение</span></label><label class="check-item"><input type="checkbox"><span>Выбрать марку авто в меню</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>После выбора параметров нажмите кнопку "Соединиться" или "Scan". Если связь установлена, вы увидите статус "Connected" и информацию о VIN-коде автомобиля. Это означает, что вы можете переходить к чтению ошибок.</p>
+
+<h2 id="чтение-и-интерпретация-кодов-ошибок-abs">Чтение и интерпретация кодов ошибок ABS</h2>
+
+<p>Основной целью диагностики является считывание кодов неисправностей, которые хранятся в энергонезависимой памяти контроллера. Эти коды обычно начинаются с буквенного префикса <strong>C</strong> (Chassis — шасси) или <strong>U</strong> (Network — сеть), в отличие от кодов двигателя, которые начинаются с <strong>P</strong>.</p>
+
+<p>Каждый код состоит из пяти символов и указывает на конкретную неисправность. Например, <em>C0035</em> может означать обрыв цепи левого переднего датчика скорости, а <em>C1234</em> — неисправность клапана модулятора давления. Зная точный код, вы можете локализовать проблемную зону без разбора всей тормозной системы.</p>
+
+<ul>
+<li>💻 Используйте функцию "Read Codes", чтобы получить список текущих и постоянных ошибок</li>
+<li>📱 Обращайте внимание на статус ошибки: "Pending" (первичная) или "Confirmed" (подтвержденная)</li>
+<li>⚙️ Запишите все найденные коды перед их стиранием для последующего анализа</li>
+</ul>
+
+<details class="pb-accordion"><summary>Примеры популярных кодов ошибок ABS</summary><div class="pb-accordion-body"><p>C0035 - Левый передний датчик скорости; C0040 - Правый передний датчик скорости; C0050 - Левый задний датчик скорости; C0055 - Правый задний датчик скорости; C1000 - Неисправность модулятора давления</p></div></details>
+
+<p>Интерпретация данных требует понимания того, что некоторые коды могут быть историческими и не указывать на текущую проблему. Если ошибка появилась давно и была устранена, она может оставаться в памяти, но статус будет "History". Важно отличать активные ошибки, которые горят на приборной панели, от остаточных.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Не все сканеры способны читать коды ABS на старых автомобилях (до 2000 года выпуска). В таких случаях может потребоваться чтение мигания лампы ABS через диагностический разъем или использование дилерского оборудования.</p>
+</blockquote>
+
+<h2 id="анализ-данных-в-реальном-времени-и-проверка-датчиков">Анализ данных в реальном времени и проверка датчиков</h2>
+
+<p>Помимо статических кодов ошибок, современные диагностические системы позволяют просматривать данные в реальном времени (Live Data). Это особенно полезно для проверки работы датчиков скорости вращения колес, так как они могут работать некорректно при определенных условиях, но не выдавать жесткую ошибку.</p>
+
+<p>Вам нужно перейти в раздел "Live Data" или "Data Stream" и выбрать параметры скорости каждого колеса. Пока вы медленно катите автомобиль или вращаете колеса руками, значения на экране должны плавно меняться и соответствовать скорости вращения.</p>
+
+<p>Если один из датчиков показывает "0" или застывшее значение, пока другие колеса вращаются, это указывает на поломку датчика или обрыв проводки. Также стоит обратить внимание на значение угла поворота рулевого колеса, которое должно изменяться при повороте руля.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Нормальное значение</th>
+<th>Признак неисправности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Скорость переднего левого колеса</td>
+<td>Плавное изменение от 0 до X км/ч</td>
+<td>Статичное значение 0 или обрыв</td>
+</tr>
+<tr>
+<td>Скорость переднего правого колеса</td>
+<td>Синхронно с левым колесом</td>
+<td>Разница более 2-3 км/ч</td>
+</tr>
+<tr>
+<td>Давление в гидравлическом блоке</td>
+<td>0 бар при остановке</td>
+<td>Давление есть при выключенном двигателе</td>
+</tr>
+<tr>
+<td>Статус модулятора ABS</td>
+<td>Off (Выключен)</td>
+<td>Активация без торможения</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-fd815cae"><div class="pb-poll-question">📊 Какой тип сканера вы используете для диагностики?</div><div class="pb-poll-option" data-poll="fd815cae" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Бесплатный телефонный сканер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fd815cae" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Портативный ELM327</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fd815cae" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Дилерский сканер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fd815cae" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Профессиональный мультимарочный сканер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="устранение-ошибок-и-сброс-системы">Устранение ошибок и сброс системы</h2>
+
+<p>После того как вы определили неисправный узел и произвели ремонт (замену датчика, ремонт проводки или модулятора), необходимо стереть коды ошибок из памяти контроллера. Это делается для того, чтобы система могла провести повторную самопроверку и убедиться, что проблема устранена.</p>
+
+<p>В диагностическом приложении выберите функцию <code>Clear Codes</code> или "Reset". После выполнения команды контроллер ABS перезапустится и начнет новый цикл самопроверки. Если неисправности больше нет, индикатор ABS на приборной панели погаснет через несколько секунд или после проезда первого километра.</p>
+
+<p>В некоторых случаях требуется принудительный сброс адаптации датчиков или калибровка. Это актуально после замены модулятора ABS или прошивки контроллера. Вам нужно следовать инструкциям в меню сканера, выбирая опции вроде "Reset Adaptation" или "Calibration".</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>После сброса ошибок сделайте тестовый разгон до 20-30 км/ч и слегка притормозите, чтобы система ABS активировалась и подтвердила работу всех узлов в реальных условиях.</p></aside>
+
+<blockquote>
+<p>⚠️ Внимание: Если ошибка возвращается сразу после сброса, это означает, что проблема носит физический характер (обрыв, короткое замыкание, механическая поломка) и программный сброс не поможет без ремонта.</p>
+</blockquote>
+
+<h2 id="важные-нюансы-и-ограничения-диагностики">Важные нюансы и ограничения диагностики</h2>
+
+<p>Диагностика через <strong>OBD 2</strong> имеет свои ограничения, о которых важно знать. Некоторые производители автомобилей используют проприетарные протоколы защиты или специфические разъемы, которые не всегда доступны через стандартный интерфейс. В таких случаях универсальные сканеры могут не видеть блок ABS вовсе.</p>
+
+<p>Также стоит учитывать, что программное обеспечение может устаревать быстрее, чем обновляются прошивки автомобилей. Если вы работаете с новой моделью, выпущенной совсем недавно, возможно, база данных ошибок сканера еще не обновлена.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Диагностика ABS через OBD II — это мощный инструмент, но он требует понимания принципов работы электронных систем и правильного подбора оборудования для конкретной марки автомобиля.</p></aside>
+
+<p>В критических ситуациях, когда сканер показывает множество ошибок или не может установить связь, не стоит пытаться ремонтировать систему самостоятельно. Лучше обратиться к специалистам, которые обладают доступом к заводскому оборудованию и техническим схемам.</p>
+
+<h2 id="заключение">Заключение</h2>
+
+<p>Проверка антиблокировочной системы через <strong>OBD II</strong> — это эффективный способ диагностировать проблемы с тормозами без обращения в сервис при наличии базовых навыков. Правильный выбор адаптера и понимание кодов ошибок позволяют быстро локализовать неисправность и сэкономить время и деньги.</p>
+
+<p>Не забывайте, что безопасность на дороге зависит от исправности всех систем автомобиля. Регулярная диагностика ABS, особенно перед зимним сезоном, поможет избежать неприятных ситуаций на скользкой дороге и обеспечит уверенность при управлении транспортным средством.</p>
+
+<details>
+<summary>Можно ли проверить ABS простым Bluetooth адаптером ELM327?</summary>
+<p>Многие дешевые адаптеры ELM327 поддерживают только чтение ошибок двигателя (P-коды). Для диагностики ABS необходимы адаптеры, поддерживающие расширенные протоколы (например, версии 1.5 или выше), и специализированное ПО, которое умеет запрашивать данные из блока шасси.</p>
+</details>
+
+<details>
+<summary>Что делать, если сканер показывает ошибку, но индикатор ABS на панели не горит?</summary>
+<p>Это может означать, что ошибка является исторической ("History" или "Pending") и система ее еще не подтвердила как критическую. Либо сканер имеет расширенную базу данных и находит нюансы, которые не вызывают срабатывания лампы. Рекомендуется провести тестовую поездку.</p>
+</details>
+
+<details>
+<summary>Почему ошибки ABS возвращаются сразу после сброса?</summary>
+<p>Если ошибка возвращается мгновенно, значит, неисправность носит физический характер (обрыв цепи, неисправность датчика, замыкание). Программный сброс не может исправить механические или электрические поломки, требуется ремонт или замена компонента.</p>
+</details>
+
+<details>
+<summary>Нужно ли прогревать двигатель для диагностики ABS?</summary>
+<p>Двигатель должен быть запущен для обеспечения стабильного напряжения в бортовой сети. Холодный двигатель на холостых оборотах может давать просадки напряжения, что иногда мешает корректной связи с электронными блоками, хотя для чтения статических кодов это не всегда критично.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ko/kody-oshibok-abs-wabco.html" class="pb-related-card">
+                <span class="pb-related-title">Коды ошибок ABS Wabco: расшифровка, поиск и устранение</span>
+                <span class="pb-related-desc">Полный справочник по диагностике системы ABS Wabco. Узнайте, как читать коды ошибок, сбрасывать их и</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-abs-na-larguse.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить ABS на Lada Largus: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробное руководство по деактивации антиблокировочной системы на Лада Ларгус: причины, способы, рис</span>
+            </a><a href="/articles/z/za/zadnee-koltso-abs-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Заднее кольцо ABS на Lada Vesta: неисправности, замена, выбор</span>
+                <span class="pb-related-desc">Как диагностировать и заменить заднее кольцо ABS на Lada Vesta. Причины ошибок, симптомы износа, пош</span>
+            </a><a href="/articles/d/da/datchik-abs-paz-32053.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик АБС ПАЗ 32053: признаки поломки, выбор и установка</span>
+                <span class="pb-related-desc">Полный гайд по ремонту системы ABS на автобусе ПАЗ 32053. Как диагностировать датчик скорости, выбра</span>
+            </a><a href="/articles/c/ch/chto-takoe-retarder-na-gruzovikakh-i-dlya-chego-on-prednaznachen.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер на грузовиках: назначение, виды и принцип работы</span>
+                <span class="pb-related-desc">Что такое ретардер в грузовиках? Узнайте, как работает вспомогательная тормозная система, её виды (г</span>
+            </a><a href="/articles/z/zd/zdt-na-largus-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Задний тормозной диск на Lada Largus с ABS: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гид по замене задних дисков на Largus с системой ABS. Подбор запчастей, влияние датчиков, пош</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

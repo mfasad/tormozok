@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Расчет скорости по тормозному пути: онлайн калькулятор и формула — ТормозОК</title>
+    <meta name="description" content="Узнайте, как точно рассчитать скорость автомобиля по длине следов торможения. Формулы, онлайн калькулятор, таблицы коэффициентов сцепления для ДТП.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/ra/raschet-skorosti-po-tormoznomu-puti-kalkulyator.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет скорости по тормозному пути: онлайн калькулятор и формула">
+    <meta property="og:description" content="Узнайте, как точно рассчитать скорость автомобиля по длине следов торможения. Формулы, онлайн калькулятор, таблицы коэффициентов сцепления для ДТП.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/bezopasnost-i-normy/">Безопасность и нормы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет скорости по тормозному пути: онлайн калькулятор и формула</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физические-основы-определения-скорости">Физические основы определения скорости</a></li><li><a href="#ключевые-параметры-тормозного-процесса">Ключевые параметры тормозного процесса</a></li><li><a href="#табличные-значения-коэффициентов-сцепления">Табличные значения коэффициентов сцепления</a></li><li><a href="#особенности-работы-калькулятора-расчета">Особенности работы калькулятора расчета</a></li><li><a href="#влияние-времени-реакции-и-дистанции">Влияние времени реакции и дистанции</a></li><li><a href="#анализ-погрешностей-и-исключительные-случаи">Анализ погрешностей и исключительные случаи</a></li><li><a href="#юридические-аспекты-и-экспертиза">Юридические аспекты и экспертиза</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-nauchitsya-plavno-tormozit-na-mekhanike-novichku.html">Как научиться плавно тормозить на механике: пошаговое руководство для новичков</a></li><li><a href="/articles/s/sr/sryv-potoka-s-kryla-samoleta.html">Срыв потока с крыла самолета: Причины, последствия и методы предотвращения</a></li><li><a href="/articles/k/ka/kak-tormozit-na-mekhanike-pered-svetoforom-dlya-nachinayushchikh-voditelej.html">Как тормозить на механике перед светофором: Пошаговый гид для новичков</a></li><li><a href="/articles/t/to/tormoznoj-put-pri-skorosti-90.html">Тормозной путь при скорости 90 км/ч: расчет, факторы и безопасность</a></li><li><a href="/articles/p/po/pochemu-tormoznoj-put-uvelichivaetsya-proportsionalno-kvadratu-skorosti.html">Почему тормозной путь растет в квадрате: физика и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Расчет скорости по тормозному пути: формулы, таблицы и калькулятор</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физические-основы-определения-скорости">Физические основы определения скорости</a></li><li><a href="#ключевые-параметры-тормозного-процесса">Ключевые параметры тормозного процесса</a></li><li><a href="#табличные-значения-коэффициентов-сцепления">Табличные значения коэффициентов сцепления</a></li><li><a href="#особенности-работы-калькулятора-расчета">Особенности работы калькулятора расчета</a></li><li><a href="#влияние-времени-реакции-и-дистанции">Влияние времени реакции и дистанции</a></li><li><a href="#анализ-погрешностей-и-исключительные-случаи">Анализ погрешностей и исключительные случаи</a></li><li><a href="#юридические-аспекты-и-экспертиза">Юридические аспекты и экспертиза</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Определение начальной скорости транспортного средства по длине тормозного следа является одним из ключевых этапов реконструкции дорожно-транспортных происшествий. Эта процедура позволяет экспертам восстановить картину события и установить, превышал ли водитель допустимый лимит перед столкновением или наездом. Методика базируется на физике движения и точных измерениях, проведенных на месте аварии.</p>
+
+<p>Вам потребуется не только измерить длину полос, оставленных шинами, но и учесть множество переменных факторов, влияющих на эффективность торможения. Простой линейный пересчет часто дает погрешность, поэтому в современной практике используются сложные математические модели и специализированный <strong>паводковый расчет</strong>. Понимание этих принципов полезно не только для специалистов, но и для водителей, желающих разобраться в динамике своей машины.</p>
+
+<p>Существуют случаи, когда данные дорожных камер или видеорегистраторов подтверждают показания свидетелей, но физический расчет дает совершенно иную цифру. Именно в таких ситуациях методика расчета скорости по тормозному пути становится решающим аргументом в суде. Важно подходить к каждому измерению с максимальной тщательностью.</p>
+
+<h2 id="физические-основы-определения-скорости">Физические основы определения скорости</h2>
+
+<p>В основе расчета лежит закон сохранения энергии, согласно которому кинетическая энергия движущегося автомобиля преобразуется в работу сил трения при торможении. Чем быстрее ехала машина, тем больше энергии нужно было рассеять, а значит, тем длиннее будет тормозной путь при одинаковых условиях.</p>
+
+<p>Для корректного вычисления необходимо знать значение коэффициента сцепления шин с дорогой, который обозначается буквой <strong>φ</strong> (фи). Этот параметр не является постоянной величиной и меняется в зависимости от состояния дорожного полотна, погоды и типа резины.</p>
+
+<p>Классическая формула связывает скорость, ускорение свободного падения и коэффициент трения. Если путь известен, то <strong>начальная скорость</strong> вычисляется путем извлечения квадратного корня из удвоенного произведения ускорения на длину следа и коэффициент сцепления.</p>
+
+<blockquote>⚠️ Внимание: Ошибка в определении коэффициента сцепления даже на 0,1 может изменить итоговую скорость на 5-10 км/ч, что является критическим фактором при оценке превышения.</blockquote>
+
+<h2 id="ключевые-параметры-тормозного-процесса">Ключевые параметры тормозного процесса</h2>
+
+<p>Чтобы расчет был достоверным, требуется точно зафиксировать длину тормозного следа. Она измеряется от начала видимых следов шин до момента остановки транспортного средства или точки удара. Если следы прерывистые, суммируются все участки, где шина скользила по поверхности.</p>
+
+<p>Второй критически важный параметр — это тип дорожного покрытия. Асфальт, бетон, гравий или лед имеют кардинально разные характеристики трения. Для каждого материала существуют свои диапазоны значений коэффициента сцепления, которые утверждены ГОСТ и методическими рекомендациями.</p>
+
+<p>Состояние <strong>тормозной системы</strong> автомобиля также играет роль. Если на одной оси колеса были заблокированы, а на другой нет, расчет усложняется. В таких случаях применяется поправочный коэффициент, учитывающий неравномерность торможения по осям.</p>
+
+<p>Нельзя игнорировать и уклон дороги. Если место аварии находится на подъеме или спуске, сила тяжести либо помогает торможению, либо препятствует ему. Это требует введения поправки на угол наклона <strong>тангенс угла</strong> в основную формулу.</p>
+
+<h2 id="табличные-значения-коэффициентов-сцепления">Табличные значения коэффициентов сцепления</h2>
+
+<p>Для удобства расчетов используются усредненные значения коэффициентов сцепления для различных условий. Эти цифры служат отправной точкой, но в реальных экспертизах часто проводятся дополнительные тесты торможения на месте.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип дорожного покрытия</th>
+<th>Состояние поверхности</th>
+<th>Коэффициент сцепления (φ)</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Асфальтобетон</td>
+<td>Сухой</td>
+<td>0,60 - 0,75</td>
+<td>Стандартное городское покрытие</td>
+</tr>
+<tr>
+<td>Асфальтобетон</td>
+<td>Влажный</td>
+<td>0,40 - 0,50</td>
+<td>Сразу после дождя</td>
+</tr>
+<tr>
+<td>Асфальтобетон</td>
+<td>Обледенелый</td>
+<td>0,05 - 0,15</td>
+<td>Зимний период, гололед</td>
+</tr>
+<tr>
+<td>Грунтовая дорога</td>
+<td>Укатанная</td>
+<td>0,25 - 0,35</td>
+<td>Сухое твердое покрытие</td>
+</tr>
+<tr>
+<td>Грунтовая дорога</td>
+<td>Грязь/Снег</td>
+<td>0,10 - 0,20</td>
+<td>Низкое сопротивление</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что указанные в таблице цифры являются диапазоном. В реальности коэффициент может колебаться из-за температуры воздуха, качества резины и наличия абразивных частиц на дороге.</p>
+
+<div class="pb-poll" id="poll-fa7cab8d"><div class="pb-poll-question">📊 Какой тип дороги чаще всего встречается в вашей зоне?</div><div class="pb-poll-option" data-poll="fa7cab8d" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Сухой асфальт</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fa7cab8d" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Влажный асфальт</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fa7cab8d" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Грунтовка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="fa7cab8d" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Лед/Снег</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="особенности-работы-калькулятора-расчета">Особенности работы калькулятора расчета</h2>
+
+<p>Современные онлайн-калькуляторы позволяют быстро подставить известные величины и получить результат. Однако алгоритм работы таких программ может отличаться, поэтому важно понимать, какие формулы заложены в их основу.</p>
+
+<p>При использовании цифрового инструмента вам необходимо ввести длину тормозного пути в метрах и выбрать тип покрытия из выпадающего списка. Некоторые продвинутые сервисы также позволяют вручную задать коэффициент сцепления, если вы знаете его точное значение.</p>
+
+<p>Калькулятор автоматически учитывает гравитационное ускорение (обычно <code>9.81 м/с²</code>) и выдает скорость в километрах в час. Это <strong>минимально возможная скорость</strong>, с которой двигался автомобиль, так как расчет не включает время реакции водителя.</p>
+
+<p> Если ABS работала, то следы могут отсутствовать, и расчет ведется иначе.</p>
+
+<blockquote>⚠️ Внимание: Если на автомобиле была активна система ABS, тормозные следы могут отсутствовать или быть прерывистыми, что делает классический метод расчета по длине следа неприменимым без дополнительных данных.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Калькулятор дает оценку минимальной скорости, но не учитывает время реакции водителя и технические нюансы конкретного авто.</p></aside>
+
+<h2 id="влияние-времени-реакции-и-дистанции">Влияние времени реакции и дистанции</h2>
+
+<p>Полная остановочный путь складывается из двух частей: пути, пройденного до момента нажатия на педаль, и непосредственно тормозного пути. Время реакции водителя обычно принимается равным 0,8 - 1,2 секунды, но может быть больше в ночное время или при усталости.</p>
+
+<p>За это время автомобиль продолжает двигаться с прежней скоростью, не снижая ее. Этот участок пути часто называют путем реакции. Его длина вычисляется простым умножением скорости на время реакции.</p>
+
+<p>Если вы восстанавливаете картину ДТП, необходимо суммировать оба участка. Итоговая дистанция будет значительно больше, чем просто длина видимых следов шин на асфальте.</p>
+
+<p>В некоторых случаях, например, при экстренном торможении, водитель может сократить время реакции, но это зависит от его профессиональных навыков и внешних условий освещения.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка данных перед расчетом</h4><label class="check-item"><input type="checkbox"><span>Измерена ли длина следа точно?Определен ли тип покрытия?Учитывается ли уклон дороги?Проверено ли состояние шин?</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<h2 id="анализ-погрешностей-и-исключительные-случаи">Анализ погрешностей и исключительные случаи</h2>
+
+<p>Расчет скорости по тормозному пути не является абсолютно точным инструментом из-за множества переменных. Погрешность может достигать 10-15%, что связано с нелинейностью трения и изменением характеристик дороги в процессе торможения.</p>
+
+<p>Особую сложность представляет расчет на поворотах. В этом случае сила трения расходуется не только на торможение, но и на удержание автомобиля на траектории, что требует применения более сложных формул центростремительного ускорения.</p>
+
+<p>Если тормозной след имеет криволинейную форму, его длина измеряется по серединной линии дуги. Это требует использования специального оборудования или гибкой рулетки для высокой точности измерений.</p>
+
+<blockquote>⚠️ Внимание: При расчете на поворотах часть энергии трения расходуется на боковое скольжение, поэтому прямое применение формулы для прямолинейного движения даст завышенный результат.</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если следов нет?</summary><div class="pb-accordion-body"><p>Если следов нет (работала ABS или колеса блокировались не полностью), расчет по длине следа невозможен. В таких случаях эксперты могут использовать расчет по деформации автомобиля, дистанции до препятствия или данным с бортового компьютера.</p></div></details>
+
+<p>В ситуациях, когда тормозной путь был частично скрыт (например, под снегом или грязью), расчет может быть произведен только с использованием экстраполяции и допущений, что снижает его юридическую значимость.</p>
+
+<h2 id="юридические-аспекты-и-экспертиза">Юридические аспекты и экспертиза</h2>
+
+<p>Для суда и следственных органов расчет скорости должен проводиться только лицензированными экспертами-автотехниками. Самостоятельные вычисления водителей не имеют юридической силы, но могут служить основанием для подачи ходатайства о проведении экспертизы.</p>
+
+<p>Экспертная оценка обязательно включает в себя протокол осмотра места происшествия, фотографии следов и заключение о техническом состоянии тормозной системы автомобиля. Без этих документов расчет будет считаться недопустимым доказательством.</p>
+
+<p>Важно учитывать, что стандарты и методические рекомендации могут обновляться. Методика, актуальная в прошлом году, могла быть скорректирована с учетом новых исследований в области физики шин.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед подачей иска или жалобой на решение суда обязательно получите официальную независимую экспертизу, так как расчеты "на коленке" не принимаются судьями во внимание.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли точно узнать скорость, если следы обрывистые?</summary>
+<p><p>Точный расчет по обрывистым следам затруднителен. В таких случаях суммируется общая длина всех участков скольжения, но погрешность возрастает. Эксперты могут применять поправочные коэффициенты или использовать альтернативные методы реконструкции.</p></p>
+</details>
+
+<details>
+<summary>Влияет ли вес автомобиля на расчет скорости по тормозному пути?</summary>
+<p><p>В классической формуле расчета скорости по тормозному пути масса автомобиля не участвует напрямую, так как она сокращается в уравнении движения. Однако вес влияет на глубину проваливания шин в мягкий грунт или на эффективность тормозной системы, что косвенно меняет коэффициент сцепления.</p></p>
+</details>
+
+<details>
+<summary>Что делать, если на дороге был снег или лед?</summary>
+<p><p>При наличии снега или льда необходимо использовать специальные значения коэффициента сцепления, которые значительно ниже сухого асфальта. Часто для таких условий проводятся тестовые торможения непосредственно на месте ДТП для уточнения коэффициента.</p></p>
+</details>
+
+<details>
+<summary>Как рассчитать скорость, если тормозной след короткий, но удар был сильным?</summary>
+<p><p>Короткий след при сильном ударе может указывать на то, что торможение началось уже в момент столкновения или автомобиль не успел затормозить полностью. В этом случае расчет по тормозному пути покажет лишь ту скорость, на которой ехал авто в момент начала блокировки колес, что может быть ниже фактической скорости перед опасностью.</p></p>
+</details>
+
+<details>
+<summary>Можно ли использовать этот метод для расчета скорости велосипеда?</summary>
+<p><p>Да, физический принцип тот же, но коэффициенты сцепления для велосипедных покрышек и дорожной одежды будут отличаться. Кроме того, у велосипедов нет системы торможения заднего колеса с такой же эффективностью, как у автомобилей, что может влиять на характер следов.</p></p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-nauchitsya-plavno-tormozit-na-mekhanike-novichku.html" class="pb-related-card">
+                <span class="pb-related-title">Как научиться плавно тормозить на механике: пошаговое руководство для новичков</span>
+                <span class="pb-related-desc">Учимся плавно тормозить на механике без рывков и глоуков. Секреты работы педалями, синхронизация мот</span>
+            </a><a href="/articles/s/sr/sryv-potoka-s-kryla-samoleta.html" class="pb-related-card">
+                <span class="pb-related-title">Срыв потока с крыла самолета: Причины, последствия и методы предотвращения</span>
+                <span class="pb-related-desc">Полный разбор аэродинамического срыва потока. Изучите физику критического угла атаки, признаки свали</span>
+            </a><a href="/articles/k/ka/kak-tormozit-na-mekhanike-pered-svetoforom-dlya-nachinayushchikh-voditelej.html" class="pb-related-card">
+                <span class="pb-related-title">Как тормозить на механике перед светофором: Пошаговый гид для новичков</span>
+                <span class="pb-related-desc">Правильная техника торможения на МКПП: когда выжимать сцепление, как работать педалью тормоза и пере</span>
+            </a><a href="/articles/t/to/tormoznoj-put-pri-skorosti-90.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной путь при скорости 90 км/ч: расчет, факторы и безопасность</span>
+                <span class="pb-related-desc">Как рассчитать тормозной путь на скорости 90 км/ч? Влияние дороги, шин и реакции водителя. Таблица д</span>
+            </a><a href="/articles/p/po/pochemu-tormoznoj-put-uvelichivaetsya-proportsionalno-kvadratu-skorosti.html" class="pb-related-card">
+                <span class="pb-related-title">Почему тормозной путь растет в квадрате: физика и безопасность</span>
+                <span class="pb-related-desc">Разбираем физическую зависимость тормозного пути от скорости. Узнайте, почему при удвоении скорости </span>
+            </a><a href="/articles/v/v-/v-budushchee-smotret-mogut-ne-tolko-lish-vse.html" class="pb-related-card">
+                <span class="pb-related-title">Философия и практика прогнозирования в автотормозной индустрии</span>
+                <span class="pb-related-desc">Как автоспециалисты и инженеры планируют развитие тормозных систем. Технологии, материалы и безопасн</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

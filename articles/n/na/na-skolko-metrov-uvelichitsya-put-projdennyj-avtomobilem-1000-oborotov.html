@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Расчет пути: сколько метров проедет авто за 1000 оборотов колес — ТормозОК</title>
+    <meta name="description" content="Узнайте, как рассчитать дистанцию автомобиля за 1000 оборотов колеса. Формулы, влияние размера шин, передаточные числа и примеры расчетов для разных моделей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/n/na/na-skolko-metrov-uvelichitsya-put-projdennyj-avtomobilem-1000-oborotov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет пути: сколько метров проедет авто за 1000 оборотов колес">
+    <meta property="og:description" content="Узнайте, как рассчитать дистанцию автомобиля за 1000 оборотов колеса. Формулы, влияние размера шин, передаточные числа и примеры расчетов для разных моделей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет пути: сколько метров проедет авто за 1000 оборотов колес</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-расчет-кинематики-движения">Введение в расчет кинематики движения</a></li><li><a href="#базовая-геометрия-колеса-и-длина-окружности">Базовая геометрия колеса и длина окружности</a></li><li><a href="#влияние-размера-шин-и-профиля-на-дистанцию">Влияние размера шин и профиля на дистанцию</a></li><li><a href="#роль-передаточных-чисел-трансмиссии-и-дифференциала">Роль передаточных чисел трансмиссии и дифференциала</a></li><li><a href="#факторы-искажающие-реальный-пробег">Факторы, искажающие реальный пробег</a></li><li><a href="#практическое-применение-расчетов">Практическое применение расчетов</a></li><li><a href="#частые-вопросы-и-уточнения">Частые вопросы и уточнения</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/ni/nikto-ne-mozhet-smotret-v-zavtrashnij-den-klichko.html">Бокс: Философия Владимира Кличко о будущем и карьере</a></li><li><a href="/articles/k/ka/kak-driftit-na-perednem-privode-na-mekhanike-bez-ruchnika.html">Дрифты на переднем приводе: техника без ручника на механике</a></li><li><a href="/articles/s/sk/skolko-masla-v-kpp-t-40-v-litrakh.html">Сколько масла в КПП Т-40: объем, типы и инструкция по замене</a></li><li><a href="/articles/k/kn/knyuppel-chto-eto-v-aviatsii.html">Кнюппель в авиации: назначение, принцип действия и виды рукояток</a></li><li><a href="/articles/c/ch/chem-abs-otlichaetsya-ot-pla.html">ABS против PLA: полное сравнение пластиков для 3D-печати</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Расчет пройденного пути: сколько метров пройдет автомобиль за 1000 оборотов колес</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-расчет-кинематики-движения">Введение в расчет кинематики движения</a></li><li><a href="#базовая-геометрия-колеса-и-длина-окружности">Базовая геометрия колеса и длина окружности</a></li><li><a href="#влияние-размера-шин-и-профиля-на-дистанцию">Влияние размера шин и профиля на дистанцию</a></li><li><a href="#роль-передаточных-чисел-трансмиссии-и-дифференциала">Роль передаточных чисел трансмиссии и дифференциала</a></li><li><a href="#факторы-искажающие-реальный-пробег">Факторы, искажающие реальный пробег</a></li><li><a href="#практическое-применение-расчетов">Практическое применение расчетов</a></li><li><a href="#частые-вопросы-и-уточнения">Частые вопросы и уточнения</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-расчет-кинематики-движения">Введение в расчет кинематики движения</h2>
+<p>Многие автовладельцы и инженеры сталкиваются с необходимостью точного определения расстояния, которое проходит транспортное средство при определенной частоте вращения колес. Вопрос «на сколько метров увеличится путь» простой, но на деле требует учета множества технических параметров, таких как геометрия шины и характеристики трансмиссии.</p>
+<p>Для получения точного ответа недостаточно просто умножить количество оборотов на диаметр диска. Ключевым фактором здесь становится <strong>динамический радиус</strong> колеса, который меняется в зависимости от давления в шинах и нагрузки на ось. Именно этот параметр определяет эффективную длину окружности, которую покрышка «прокатывает» по дорожному полотну за один полный виток.</p>
+<p>В этой статье мы разберем физику процесса, рассмотрим влияние различных факторов на расчетную дистанцию и приведем конкретные примеры для популярных моделей автомобилей. Вы сможете самостоятельно провести расчет для своего <em>Toyota Camry</em> или <em>BMW X5</em>, используя приведенные ниже формулы и таблицы.</p>
+
+<h2 id="базовая-геометрия-колеса-и-длина-окружности">Базовая геометрия колеса и длина окружности</h2>
+<p>Основа любого расчета — это понимание того, что линейное расстояние равно произведению длины окружности на количество оборотов. Формула длины окружности известна со школы: $L = 2 \cdot \pi \cdot R$, где $R$ — радиус колеса. Однако в автомобильной практике часто используется диаметр, поэтому формулу можно записать как $L = \pi \cdot D$.</p>
+<p>Самая большая ошибка при расчетах — использование номинального размера диска (например, R16) вместо реального внешнего диаметра колеса в сборе. Шина имеет свою высоту профиля, которая добавляется к радиусу диска с обеих сторон. Например, для колеса с маркировкой <code>205/55 R16</code> реальный диаметр будет значительно больше, чем просто 16 дюймов.</p>
+<p>Чтобы получить точную длину окружности в метрах, необходимо перевести все размеры в одну систему измерения. Дюймы умножаются на 25,4 для получения миллиметров, а затем результат делится на 1000 для перевода в метры. Полученное значение — это расстояние, которое автомобиль пройдет за один оборот колеса без пробуксовки.</p>
+<blockquote>
+<p>⚠️ Внимание: Указанный в спецификациях производителя радиус часто является конструкторским и может отличаться от реального динамического радиуса при движении под нагрузкой.</p>
+</blockquote>
+<p>Для 1000 оборотов путь составит примерно 1000 значений длины окружности. Если длина окружности составляет 2 метра, то за 1000 оборотов автомобиль проедет ровно 2 километра. Это базовый принцип, который лежит в основе работы спидометра и одометра.</p>
+
+<h2 id="влияние-размера-шин-и-профиля-на-дистанцию">Влияние размера шин и профиля на дистанцию</h2>
+<p>Размер покрышки играет решающую роль. Небольшое изменение индекса ширины или высоты профиля может существенно изменить расчетную дистанцию. Например, увеличение высоты профиля с 55 до 60 при том же диске добавит порядка 50 мм к диаметру колеса, что в пересчете на 1000 оборотов даст прирост дистанции в несколько десятков метров.</p>
+<p>Рассмотрим пример расчета для двух разных комплектаций одного автомобиля. Первая комплектация использует диск <em>R16</em> с шиной <code>195/65 R16</code>, а вторая — диск <em>R18</em> с низким профилем <code>225/40 R18</code>. Несмотря на то, что диаметр колеса в сборе может быть близким из-за компенсаций производителя, разница в деформации шины и эффективном радиусе будет заметна.</p>
+<p>Ниже приведена таблица с расчетами для распространенных размеров шин, показывающая, насколько метров увеличится путь за 1000 оборотов для каждого варианта:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Размер шины</th>
+<th>Диаметр колеса (мм)</th>
+<th>Длина окружности (м)</th>
+<th>Путь за 1000 оборотов (м)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>185/65 R15</td>
+<td>614</td>
+<td>1.93</td>
+<td>1930</td>
+</tr>
+<tr>
+<td>205/55 R16</td>
+<td>632</td>
+<td>1.98</td>
+<td>1985</td>
+</tr>
+<tr>
+<td>225/45 R17</td>
+<td>643</td>
+<td>2.02</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>235/40 R18</td>
+<td>651</td>
+<td>2.04</td>
+<td>2045</td>
+</tr>
+<tr>
+<td>255/35 R19</td>
+<td>660</td>
+<td>2.07</td>
+<td>2075</td>
+</tr>
+</tbody>
+</table></div>
+<p>Как видно из данных, разница между самым маленьким и самым большим размером составляет более 140 метров на дистанции в 1000 оборотов. Это критически важно учитывать при калибровке систем ABS и ESP, которые опираются на скорость вращения колес.</p>
+
+<div class="pb-poll" id="poll-12e259b1"><div class="pb-poll-question">📊 Какой размер шин установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="12e259b1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Малый (R14-R15)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12e259b1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Средний (R16-R17)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12e259b1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Большой (R18-R19)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="12e259b1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Супер-большие (R20+)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="роль-передаточных-чисел-трансмиссии-и-дифференциала">Роль передаточных чисел трансмиссии и дифференциала</h2>
+<p>Важно понимать разницу между оборотами колеса и оборотами двигателя (коленвала). Вопрос о пути, пройденном за 1000 оборотов, обычно подразумевает именно обороты <strong>приводного колеса</strong>. Если же речь идет об оборотах двигателя, то здесь вступают в силу передаточные числа коробки передач и главной пары.</p>
+<p>Связь между вращением двигателя и колес определяется формулой: $n_{колес} = n_{двиг} / (i_{КПП} \cdot i_{ГП})$. Это означает, что на первой передаче, где передаточное число велико, 1000 оборотов двигателя приведут к прохождению всего нескольких метров пути, тогда как на пятой передаче дистанция будет в разы больше.</p>
+<p>Для расчета пути по оборотам двигателя необходимо знать текущую передачу и передаточное число главной пары. Например, для <em>Volkswagen Golf</em> с передаточным числом главной пары 4.2 и 4-й передачей (число 1.3), 1000 оборотов двигателя соответствовать будут значительно меньшему количеству оборотов колес.</p>
+<blockquote>
+<p>⚠️ Внимание: При пробуксовке колес или работе системы стабилизации реальное пройденное расстояние может не совпадать с расчетным по оборотам, так как колесо может вращаться, не касаясь дороги.</p>
+</blockquote>
+<p>Если вы используете данные с датчика коленвала, обязательно учитывайте пробег колеса, который может быть отличным от расчетного из-за скольжения. В таких случаях точность расчета снижается, и данные лучше сверять с GPS-координатами.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка исходных данных для расчета</h4><label class="check-item"><input type="checkbox"><span>Определить реальный размер шин (диск + резина)</span></label><label class="check-item"><input type="checkbox"><span>Узнать передаточное число главной пары</span></label><label class="check-item"><input type="checkbox"><span>Выбрать текущую передачу КПП</span></label><label class="check-item"><input type="checkbox"><span>Учесть поправку на давление в шинах</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="факторы-искажающие-реальный-пробег">Факторы, искажающие реальный пробег</h2>
+<p>Даже при идеальных расчетах, реальная дистанция может отличаться от теоретической. Основным фактором является <strong>деформация шины</strong> под нагрузкой. Когда автомобиль движется, пятно контакта сплющивается, что уменьшает эффективный радиус качения.</p>
+<p>Кроме того, на точность влияет давление в шинах. Недокачанные шины имеют меньший динамический радиус, и за 1000 оборотов автомобиль пройдет меньше метров, чем при нормальном давлении. Перекачанные шины, наоборот, имеют больший радиус, увеличивая пройденный путь.</p>
+<p>Состояние дорожного покрытия также играет роль. На мягком грунте или снегу колесо может немного «зарываться», уменьшая эффективный радиус, но в некоторых случаях это компенсируется проскальзыванием, которое увеличивает путь без увеличения оборотов.</p>
+<details class="pb-accordion"><summary>Как давление влияет на радиус качения?</summary><div class="pb-accordion-body"><p>При снижении давления на 10% радиус качения может уменьшиться на 0.5-1%, что при 1000 оборотах даст разницу в 10-20 метров.</p></div></details>
+
+<h2 id="практическое-применение-расчетов">Практическое применение расчетов</h2>
+<p>Знание точного пути за 1000 оборотов колес полезно для калибровки спидометра после замены шин или дисков. Если вы установили колеса большего диаметра, спидометр будет показывать скорость меньше реальной, а одометр — пробег меньше реального.</p>
+<p>Инженеры используют эти данные для настройки систем адаптивного круиз-контроля и систем помощи при парковке. Ошибка в расчете дистанции даже в несколько процентов может привести к некорректной работе ассистентов, которые полагаются на данные о скорости движения.</p>
+<p>Для владельцев электромобилей, таких как <em>Tesla Model 3</em> или <em>Nissan Leaf</em>, этот расчет важен для оценки энергопотребления. Точное знание того, сколько энергии тратится на преодоление каждого километра, позволяет оптимизировать алгоритмы рекуперативного торможения.</p>
+<blockquote>
+<p>⚠️ Внимание: При замене шин на нештатный размер обязательно внесите коррективы в настройки бортового компьютера или используйте GPS-навигатор для контроля реального пробега.</p>
+</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы заменили колеса, измерьте реальное расстояние между двумя точками на дороге и сравните его с показаниями одометра, чтобы определить процент погрешности.</p></aside>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный подбор размера шин и учет их динамического радиуса критически важен для точности показаний спидометра и одометра, а также для работы электронных систем безопасности.</p></aside>
+
+<h2 id="частые-вопросы-и-уточнения">Частые вопросы и уточнения</h2>
+<p>Многие задаются вопросом, как меняется путь при износе протектора. Износ шины на 5-6 мм (полный износ) уменьшает диаметр колеса примерно на 10-12 мм. Это приводит к тому, что за 1000 оборотов автомобиль проедет на 30-40 метров меньше, чем на новой резине.</p>
+<p>Также важно учитывать, что в поворотах внутреннее и внешнее колеса проходят разное расстояние, хотя их обороты могут быть синхронизированы (или нет, в зависимости от дифференциала). Стандартные расчеты обычно предполагают движение по прямой.</p>
+<p>Для точных инженерных расчетов используется понятие «катящийся радиус», который определяется экспериментально для каждой модели шины и давления. Теоретические формулы дают лишь приближенное значение.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Износ протектора и изменение давления в шинах — это динамические факторы, которые постоянно меняют эффективный радиус колеса и, следовательно, пройденный путь за фиксированное число оборотов.</p></aside>
+
+<details>
+<summary>Как точно рассчитать путь для моей машины?</summary>
+<p>Для точного расчета найдите маркировку вашей шины на боковине (например, 205/55 R16). Рассчитайте полный диаметр: (2 <em> ширина </em> профиль/100) + (диаметр диска * 25.4). Умножьте диаметр на Пи (3.14159) и на 1000. Результат будет в миллиметрах, разделите на 1000 для получения метров.</p>
+</details>
+<details>
+<summary>Влияет ли тип привода (передний/задний) на расчет?</summary>
+<p>Сам по себе тип привода не влияет на геометрию колеса, но влияет на передачу крутящего момента. Если вы считаете путь по оборотам двигателя, то передаточные числа главной пары и КПП будут одинаковыми для всех колес, но распределение тяги будет разным. Если же считать по оборотам колеса — тип привода не важен.</p>
+</details>
+<details>
+<summary>Насколько сильно влияет давление в шинах?</summary>
+<p>Влияние есть, но оно не критично для грубых оценок. При изменении давления от 1.8 до 2.4 атмосферы изменение динамического радиуса составляет около 0.5-1%. Это может дать разницу в 10-20 метров на 1000 оборотов.</p>
+</details>
+<details>
+<summary>Что такое «эффективный радиус качения»?</summary>
+<p>Это радиус колеса, который учитывает деформацию шины под нагрузкой. Он всегда меньше статического радиуса (от центра до земли в покое) и больше динамического радиуса, рассчитанного по геометрии. Именно он используется в реальных расчетах пути.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/ni/nikto-ne-mozhet-smotret-v-zavtrashnij-den-klichko.html" class="pb-related-card">
+                <span class="pb-related-title">Бокс: Философия Владимира Кличко о будущем и карьере</span>
+                <span class="pb-related-desc">Разбор фразы Владимира Кличко о неспособности видеть завтрашний день. Анализ карьеры, стратегий и фи</span>
+            </a><a href="/articles/k/ka/kak-driftit-na-perednem-privode-na-mekhanike-bez-ruchnika.html" class="pb-related-card">
+                <span class="pb-related-title">Дрифты на переднем приводе: техника без ручника на механике</span>
+                <span class="pb-related-desc">Как выполнять дрифт на переднем приводе без использования ручного тормоза. Разбор техники, работы сц</span>
+            </a><a href="/articles/s/sk/skolko-masla-v-kpp-t-40-v-litrakh.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько масла в КПП Т-40: объем, типы и инструкция по замене</span>
+                <span class="pb-related-desc">Узнайте точный объем масла в коробке передач трактора Т-40, совместимые типы трансмиссионных жидкост</span>
+            </a><a href="/articles/k/kn/knyuppel-chto-eto-v-aviatsii.html" class="pb-related-card">
+                <span class="pb-related-title">Кнюппель в авиации: назначение, принцип действия и виды рукояток</span>
+                <span class="pb-related-desc">Подробный обзор термина кнюппель: что это за орган управления, отличия от сайдстика, типы конструкци</span>
+            </a><a href="/articles/c/ch/chem-abs-otlichaetsya-ot-pla.html" class="pb-related-card">
+                <span class="pb-related-title">ABS против PLA: полное сравнение пластиков для 3D-печати</span>
+                <span class="pb-related-desc">Подробный разбор различий между ABS и PLA пластиками. Сравнение прочности, температуры печати, усадк</span>
+            </a><a href="/articles/p/po/pochemu-yutub-dolgo-gruzit-video-pri-khoroshem-internete.html" class="pb-related-card">
+                <span class="pb-related-title">Ютуб тормозит при хорошем интернете: причины и решения</span>
+                <span class="pb-related-desc">Почему YouTube долго грузит видео при отличном соединении? Разбираем технические причины, DNS, кодек</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

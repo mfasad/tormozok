@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Пневматическая тормозная система: устройство, принцип работы и ремонт — ТормозОК</title>
+    <meta name="description" content="Подробный разбор тормозной системы с пневмоприводом: как работает компрессор,, схема подключения и диагностика типичных неисправностей на грузовиках.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/t/to/tormoznaya-sistema-s-pnevmoprivodom.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Пневматическая тормозная система: устройство, принцип работы и ремонт">
+    <meta property="og:description" content="Подробный разбор тормозной системы с пневмоприводом: как работает компрессор,, схема подключения и диагностика типичных неисправностей на грузовиках.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diagnostika-neispravnostej/">Диагностика неисправностей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Пневматическая тормозная система: устройство, принцип работы и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-пневматическое-торможение">Введение в пневматическое торможение</a></li><li><a href="#конструктивные-особенности-и-основные-узлы">Конструктивные особенности и основные узлы</a></li><li><a href="#принцип-работы-и-управление-потоками-воздуха">Принцип работы и управление потоками воздуха</a></li><li><a href="#стояночная-и-вспомогательная-системы">Стояночная и вспомогательная системы</a></li><li><a href="#типичные-неисправности-и-диагностика">Типичные неисправности и диагностика</a></li><li><a href="#техническое-обслуживание-и-ремонт">Техническое обслуживание и ремонт</a></li><li><a href="#современные-системы-безопасности-и-abs">Современные системы безопасности и ABS</a></li><li><a href="#безопасность-и-нормы-эксплуатации">Безопасность и нормы эксплуатации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-pedal-tormoza-myagkaya-i-tormozit-v-kontse.html">Мягкая педаль тормоза и позднее срабатывание: причины и ремонт</a></li><li><a href="/articles/p/py/pylnik-tormoznogo-diska-solyaris-zadnij.html">Замена пыльника тормозного диска заднего Hyundai Solaris: инструкция и подбор</a></li><li><a href="/articles/p/po/pochemu-provalivaetsya-pedal-tormoza-pri-tormozhenii.html">Почему проваливается педаль тормоза: 7 главных причин и как исправить</a></li><li><a href="/articles/n/ne/neispravnost-datchika-pedali-tormoza.html">Неисправность датчика педали тормоза: симптомы, диагностика и замена</a></li><li><a href="/articles/k/ka/kak-ubrat-svist-tormoznykh-kolodok.html">Как убрать свист тормозных колодок: причины, устранение, советы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тормозная система с пневмоприводом: Полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-пневматическое-торможение">Введение в пневматическое торможение</a></li><li><a href="#конструктивные-особенности-и-основные-узлы">Конструктивные особенности и основные узлы</a></li><li><a href="#принцип-работы-и-управление-потоками-воздуха">Принцип работы и управление потоками воздуха</a></li><li><a href="#стояночная-и-вспомогательная-системы">Стояночная и вспомогательная системы</a></li><li><a href="#типичные-неисправности-и-диагностика">Типичные неисправности и диагностика</a></li><li><a href="#техническое-обслуживание-и-ремонт">Техническое обслуживание и ремонт</a></li><li><a href="#современные-системы-безопасности-и-abs">Современные системы безопасности и ABS</a></li><li><a href="#безопасность-и-нормы-эксплуатации">Безопасность и нормы эксплуатации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<h2 id="введение-в-пневматическое-торможение">Введение в пневматическое торможение</h2>
+
+<p>Тормозная система с пневмоприводом является стандартом де-факто для тяжелого коммерческого транспорта, автобусов и прицепов. В отличие от гидравлических аналогов, используемых в легковых автомобилях, здесь рабочее тело — это сжатый воздух, который накапливается в резервуарах и подается к исполнительным механизмам при нажатии педали.</p>
+
+<p>Главное преимущество такой системы заключается в ее способности передавать усилие на большие расстояния без значительных потерь и обеспечивать высокую мощность торможения для массивных конструкций. Для вас, как для водителя или механика, понимание <strong>принципа работы</strong> пневматики критически важно, так как эта система напрямую влияет на безопасность перевозки грузов и пассажиров.</p>
+
+<p>Современные грузовики оснащаются сложной архитектурой, включающей не только основные тормоза, но и стояночные механизмы, а также вспомогательные системы замедления. Ошибки в обслуживании компрессора или <em>разделительного клапана</em> могут привести к полной потере управляемости. Ниже мы разберем ключевые узлы и особенности эксплуатации.</p>
+
+<h2 id="конструктивные-особенности-и-основные-узлы">Конструктивные особенности и основные узлы</h2>
+
+<p>Основой всей системы является <strong>компрессор</strong>, который нагнетает воздух в магистраль. Обычно это поршневой агрегат, приводимый в действие от коленчатого вала двигателя через ременную передачу или шестерни. Производительность компрессора должна соответствовать потребностям всей машины, включая прицепы и полуприцепы.</p>
+
+<p>Сжатый воздух, насыщенный влагой и масляным туманом, поступает в <strong>осушитель воздуха</strong>. Этот блок выполняет две функции: очищает воздух от примесей и удаляет воду, предотвращая обледенение магистралей зимой. Без эффективного осушителя конденсат накапливается в <em>воздушных ресиверах</em>, что может привести к коррозии и заклиниванию золотников.</p>
+
+<p>Важнейшим элементом является <strong>четырехконтурный защитный клапан</strong>. Он разделяет единую магистраль на несколько независимых контуров (передние колесные, задние колесные, контур прицепа, контур вспомогательных систем). Если в одном из контуров произойдет разрыв, остальные сохранят давление, позволяя вам безопасно остановиться.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Использование некондиционного воздушного фильтра или несвоевременная замена влагоотделителя может привести к замерзанию влаги в тормозных камерах при отрицательных температурах. Это самая частая причина отказа тормозов в зимний период.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-6080e884"><div class="pb-poll-question">📊 Какой тип компрессора установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="6080e884" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Поршневой двухцилиндровый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6080e884" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Поршневой трехцилиндровый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6080e884" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Шнековый (винтовой)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6080e884" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Без компрессора (вакуум)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="принцип-работы-и-управление-потоками-воздуха">Принцип работы и управление потоками воздуха</h2>
+
+<p>Когда водитель нажимает на педаль тормоза, он открывает <strong>тормозной кран</strong> (педальный клапан). Через него сжатый воздух из ресиверов поступает в тормозные камеры. Внутри камеры <em>мембрана</em> под давлением смещается, выдвигая шток, который через рычажную передачу прижимает тормозные колодки к барабану.</p>
+
+<p>Уникальность пневматики заключается в том, что усилие торможения прямо пропорционально давлению в магистрали, но не зависит от усилия ног водителя. <strong>Усилитель тормозов</strong> здесь не нужен в привычном понимании, так как источником энергии служит сам сжатый воздух. Это позволяет легко управлять многотонным грузовиком даже после длительной стоянки.</p>
+
+<p>Для контроля давления в системе используются <strong>манометры</strong> и датчики. На приборной панели вы всегда видите два основных показателя: давление в первом контуре и во втором. Если стрелка падает ниже допустимого уровня, срабатывает звуковая сигнализация, предупреждающая о критической потере давления.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом движения всегда проверяйте, успел ли компрессор набрать рабочее давление (обычно 8-10 бар). Если манометры показывают меньше 6 бар, движение запрещено — тормоза не сработают эффективно при экстренной остановке.</p></aside>
+
+<h2 id="стояночная-и-вспомогательная-системы">Стояночная и вспомогательная системы</h2>
+
+<p>Стояночный тормоз в пневматических системах работает по принципу <strong>отпуска</strong>. В обычном состоянии (когда машина стоит) пружинная камера удерживает тормоза в заторможенном состоянии. Для движения водитель должен накопить давление в спецкамере, чтобы сжать мощную пружину и отпустить колодки.</p>
+
+<p>Это решение обеспечивает безопасность при парковке: даже если двигатель остановится и давление в системе упадет, грузовик останется на месте благодаря упругости пружины. Для управления используется отдельный <em>клапан стояночного тормоза</em> (обычно желтого цвета в форме ромба).</p>
+
+<p>Помимо основных функций, пневматика питает и другие системы автомобиля: пневмоподвеску, сцепление, звуковой сигнал и систему запуска двигателя от сжатого воздуха (стартеры). <strong>Регулятор давления</strong> контролирует эти подключения, не давая вспомогательным потребителям опустошить резервуары тормозной системы.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка стояночной системы перед поездкой</h4><label class="check-item"><input type="checkbox"><span>Убедитесь, что желтая кнопка (стояночный тормоз) выжата</span></label><label class="check-item"><input type="checkbox"><span>Проверьте, что пружинные камеры не имеют следов масла</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь, что при отпускании тормоза слышен характерный звук</span></label><label class="check-item"><input type="checkbox"><span>Проверьте наличие свободного хода штока тормозной камеры</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="типичные-неисправности-и-диагностика">Типичные неисправности и диагностика</h2>
+
+<p>Самой распространенной проблемой является утечка воздуха. <strong>Подтекание воздуха</strong> часто происходит из-за износа резиновых уплотнений в клапанах, трещин в шлангах или корродированных соединительных муфт. Звук шипения при остановленном двигателе — верный признак неисправности.</p>
+
+<p>Второй по частоте дефект — это <strong>нарушение герметичности</strong> тормозных камер. Мембрана со временем пересыхает и трескается, что приводит к потере рабочего хода штока. В результате тормозные колодки не прижимаются с нужным усилием, увеличивая тормозной путь.</p>
+
+<p>Замерзание воздуха в магистралях также является серьезной проблемой. Если система осушения работает плохо, вода скапливается в <em>ресиверах</em> и трубках. При минусовых температурах лед блокирует проходы клапанов, делая тормоза неработоспособными. Особенно уязвимы соединители"фаст-коннекторы" на прицепе.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+ <tr>
+ <th>Симптом</th>
+ <th>Возможная причина</th>
+ <th>Способ устранения</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Слышен свист при работе двигателя</td>
+ <td>Неисправен регулятор давления или разгрузочный клапан</td>
+ <td>Заменить регулятор давления</td>
+ </tr>
+ <tr>
+ <td>Тормоза не отпускаются полностью</td>
+ <td>Заклинивший тормозной кран или задержка в возврате мембраны</td>
+ <td>Очистить или заменить тормозной кран</td>
+ </tr>
+ <tr>
+ <td>Компрессор работает постоянно</td>
+ <td>Сильная утечка воздуха в системе</td>
+ <td>Искать утечку с помощью мыльного раствора</td>
+ </tr>
+ <tr>
+ <td>Морозная погода, тормоза не отпускаются</td>
+ <td>Замерзание влаги в пневмомагистралях</td>
+ <td>Прокачка системы, замена осушителя, использование антифриза</td>
+ </tr>
+ </tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Как проверить герметичность тормозных камер?</summary><div class="pb-accordion-body"><p>Для проверки герметичности нужно полностью накачать систему воздухом, заглушить двигатель и оставить машину на 15-20 минут. Если давление упадет более чем на 0.5 бар при полностью отпущенных тормозах, в системе есть утечка. Используйте мыльный раствор для поиска места выхода воздуха — пузырьки укажут на дефект.</p></div></details>
+
+<h2 id="техническое-обслуживание-и-ремонт">Техническое обслуживание и ремонт</h2>
+
+<p>Регулярное ТО пневматической системы должно включать проверку уровня масла в компрессоре и своевременную замену фильтрующих элементов. <strong>Слив конденсата</strong> из воздушных ресиверов — это обязательная процедура, которую следует проводить каждые 2-3 тысячи километров пробега, особенно в сырую погоду.</p>
+
+<p>При ремонте <em>тормозных камер</em> важно соблюдать допустимый ход штока. Если ход превышает норму (обычно более 40-50 мм в зависимости от модели), это говорит о сильном износе тормозных накладок или неправильной регулировке. Неправильная регулировка приводит к перегреву колодок и барабанов.</p>
+
+<p>Для диагностики электронных компонентов (если это система <strong>ABS</strong> или ESP) необходимо использовать специальный сканер. Ошибки в работе датчиков скорости вращения колес могут привести к блокировке всего блока управления тормозами. Всегда проверяйте целостность проводки и разъемов.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При замене тормозных камер на грузовых автомобилях с двойной подвеской обязательно проверьте состояние рессор. Если рессора провисла, ход штока камеры будет недостаточным для эффективного торможения, независимо от исправности самой камеры.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярный слив конденсата из ресиверов и проверка зазоров в тормозных механизмах — это самые простые и эффективные способы продлить жизнь пневматической системе и избежать критических отказов в пути.</p></aside>
+
+<h2 id="современные-системы-безопасности-и-abs">Современные системы безопасности и ABS</h2>
+
+<p>В современных грузовиках пневматика неразрывно связана с электронными системами. <strong>ABS (антиблокировочная система)</strong> предотвращает блокировку колес при экстренном торможении, позволяя сохранять управляемость. ЭБУ (электронный блок управления) отслеживает скорость вращения каждого колеса и модулирует давление в тормозных камерах.</p>
+
+<p>Система <em>ESP</em> (система курсовой устойчивости) идет еще дальше: она может притормаживать отдельные колеса, чтобы предотвратить занос или опрокидывание полуприцепа. Для работы этих систем используются высокоточные <strong>модуляторы давления</strong>, которые быстро открывают и закрывают клапаны.</p>
+
+<p>Важно понимать, что электроника не заменяет механику. Если <strong>ротор датчика скорости</strong> загрязнен или проводка повреждена, система перейдет в аварийный режим, и обычные пневматические тормоза будут работать, но без функций протекции от блокировки. Всегда проверяйте индикатор ABS на приборной панели при запуске двигателя.</p>
+
+<details class="pb-accordion"><summary>Особенности работы ABS при буксировке</summary><div class="pb-accordion-body"><p>Если ваш грузовик буксирует автомобиль, убедитесь, что система ABS полуприцепа не конфликтует с тормозами буксируемого авто. Иногда требуется отключение ABS на буксируемом транспортном средстве, если оно не оснащено пневматическим приводом, чтобы избежать ложных срабатываний.</p></div></details>
+
+<h2 id="безопасность-и-нормы-эксплуатации">Безопасность и нормы эксплуатации</h2>
+
+<p>Эксплуатация неисправной тормозной системы с пневмоприводом запрещена законом и несет смертельную опасность. <strong>Давление в системе</strong> должно соответствовать техническим требованиям производителя. Любое отклонение в сторону понижения снижает эффективность торможения, а повышение может привести к разрыву шлангов и взрыву ресивера.</p>
+
+<p>Перед каждой поездкой водитель обязан выполнить осмотр <em>тормозных трубок</em> и соединений на предмет следов масла или подтеков. Особое внимание следует уделять местам изгибов и местам крепления к раме, где вибрация чаще всего вызывает усталостные трещины металлов.</p>
+
+<p>В зимний период критически важно использовать специальные <strong>антифризы для пневмосистем</strong>. Они снижают температуру замерзания влаги, остающейся в системе, и защищают резиновые уплотнения от пересыхания. Обычная вода или незамерзающая жидкость для стекол не подходят и могут разрушить компоненты.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Запрещается использовать самодельные или несертифицированные удлинители и переходники в пневмомагистралях. Любая негерметичность в соединении может привести к мгновенной потере давления в одном из контуров, что сделает управление автомобилем невозможным.</p>
+</blockquote>
+
+<details>
+ <summary>Как часто нужно менять воздухоосушитель?</summary>
+ <p>Рекомендуется менять картридж воздухоосушителя каждые 100 000 км пробега или раз в 2 года, в зависимости от условий эксплуатации. В регионах с высокой влажностью замену следует проводить чаще, чтобы избежать попадания воды в тормозные камеры.</p>
+</details>
+
+<details>
+ <summary>Что делать, если при движении погасли индикаторы давления?</summary>
+ <p>Если индикаторы давления погасли или стрелки не двигаются, возможно, вышел из строя датчик или манометр. Немедленно остановитесь в безопасном месте. Проверьте работу тормозов на малой скорости. Если тормоза работают, проблема в приборной панели; если нет — срочно вызывайте эвакуатор, так как вы не контролируете давление в системе.</p>
+</details>
+
+<details>
+ <summary>Можно ли смешивать масла в компрессоре?</summary>
+ <p>Нет, смешивать различные типы масел для компрессоров категорически запрещается. Это может привести к химической реакции, образованию осадка и поломке поршневой группы. Используйте только масло, рекомендованное производителем компрессора (обычно синтетическое или полусинтетическое масло с высокой термостойкостью).</p>
+</details>
+
+<details>
+ <summary>Как проверить работу регулятора давления?</summary>
+ <p>Для проверки работоспособности регулятора давления нужно запустить двигатель и наблюдать за манометрами. Давление должно расти до определенного значения (обычно 10-12 бар), после чего компрессор должен перейти в режим холостого хода (сброс воздуха через разгрузочный клапан). Если давление продолжает расти до срабатывания аварийного клапана или не набирается вовсе, регулятор неисправен.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-pedal-tormoza-myagkaya-i-tormozit-v-kontse.html" class="pb-related-card">
+                <span class="pb-related-title">Мягкая педаль тормоза и позднее срабатывание: причины и ремонт</span>
+                <span class="pb-related-desc">Почему педаль тормоза проваливается и тормозит только в конце хода? Разбираем 7 основных причин, диа</span>
+            </a><a href="/articles/p/py/pylnik-tormoznogo-diska-solyaris-zadnij.html" class="pb-related-card">
+                <span class="pb-related-title">Замена пыльника тормозного диска заднего Hyundai Solaris: инструкция и подбор</span>
+                <span class="pb-related-desc">Полный разбор работы с пыльником заднего суппорта Hyundai Solaris. Причины износа, подбор запчастей,</span>
+            </a><a href="/articles/p/po/pochemu-provalivaetsya-pedal-tormoza-pri-tormozhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Почему проваливается педаль тормоза: 7 главных причин и как исправить</span>
+                <span class="pb-related-desc">Узнайте, почему педаль тормоза уходит в пол. Разбор причин: воздух в системе, износ колодок, проблем</span>
+            </a><a href="/articles/n/ne/neispravnost-datchika-pedali-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Неисправность датчика педали тормоза: симптомы, диагностика и замена</span>
+                <span class="pb-related-desc">Как определить поломку датчика стоп-сигналов и педали тормоза. Подробная инструкция по диагностике, </span>
+            </a><a href="/articles/k/ka/kak-ubrat-svist-tormoznykh-kolodok.html" class="pb-related-card">
+                <span class="pb-related-title">Как убрать свист тормозных колодок: причины, устранение, советы</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и устранению скрипа тормозов. Причины шума, методы устранения, про</span>
+            </a><a href="/articles/k/ka/kak-ponyat-chto-tormoznaya-sistema-zavozdushena.html" class="pb-related-card">
+                <span class="pb-related-title">Как понять что тормозная система завоздушена: признаки и симптомы</span>
+                <span class="pb-related-desc">Узнайте, как выявить воздух в тормозной системе по мягкому педали, шипению и другим признакам. Инстр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

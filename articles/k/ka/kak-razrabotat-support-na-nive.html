@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как разработать суппорт на Ниве: пошаговая инструкция и нюансы — ТормозОК</title>
+    <meta name="description" content="Полный гайд по разработке заклинившего суппорта на ВАЗ-2121. Устранение заклинивания поршня, замена направляющих и проверка тормозных колодок.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-razrabotat-support-na-nive.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как разработать суппорт на Ниве: пошаговая инструкция и нюансы">
+    <meta property="og:description" content="Полный гайд по разработке заклинившего суппорта на ВАЗ-2121. Устранение заклинивания поршня, замена направляющих и проверка тормозных колодок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/supporty-i-porshni/">Суппорты и поршни</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как разработать суппорт на Ниве: пошаговая инструкция и нюансы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проблему-заклинивания-суппорта">Введение в проблему заклинивания суппорта</a></li><li><a href="#диагностика-перед-началом-работ">Диагностика перед началом работ</a></li><li><a href="#подготовка-инструментов-и-материалов">Подготовка инструментов и материалов</a></li><li><a href="#процесс-демонтажа-и-очистки-направляющих">Процесс демонтажа и очистки направляющих</a></li><li><a href="#методы-разработки-заклинившего-поршня">Методы разработки заклинившего поршня</a></li><li><a href="#сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</a></li><li><a href="#частые-ошибки-и-нюансы-эксплуатации">Частые ошибки и нюансы эксплуатации</a></li><li><a href="#faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/su/supporta-na-ladu-grantu.html">Суппорты на Ладу Гранту: выбор, замена и ремонт тормозной системы</a></li><li><a href="/articles/k/ka/kak-vytashchit-napravlyayushchuyu-iz-supporta.html">Как вытащить направляющую суппорта: пошаговая инструкция и советы</a></li><li><a href="/articles/p/pe/pereborka-supporta-lanser-9.html">Переборка суппорта Mitsubishi Lancer 9: Пошаговая инструкция и нюансы</a></li><li><a href="/articles/k/ka/kak-prokachat-tormoza-posle-zameny-supporta.html">Как прокачать тормоза после замены суппорта: полная инструкция</a></li><li><a href="/articles/p/po/pokrasit-supporta-svoimi-rukami.html">Как покрасить суппорта своими руками: пошаговая инструкция и выбор краски</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как разработать суппорт на Ниве: полный разбор процедуры</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проблему-заклинивания-суппорта">Введение в проблему заклинивания суппорта</a></li><li><a href="#диагностика-перед-началом-работ">Диагностика перед началом работ</a></li><li><a href="#подготовка-инструментов-и-материалов">Подготовка инструментов и материалов</a></li><li><a href="#процесс-демонтажа-и-очистки-направляющих">Процесс демонтажа и очистки направляющих</a></li><li><a href="#методы-разработки-заклинившего-поршня">Методы разработки заклинившего поршня</a></li><li><a href="#сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</a></li><li><a href="#частые-ошибки-и-нюансы-эксплуатации">Частые ошибки и нюансы эксплуатации</a></li><li><a href="#faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проблему-заклинивания-суппорта">Введение в проблему заклинивания суппорта</h2>
+<p>Эксплуатация внедорожника <em>ВАЗ-2121</em> и его модификаций часто сопряжена с повышенными нагрузками на ходовую часть. Одной из самых распространенных неисправностей является заклинивание суппорта, когда <strong>поршень</strong> перестает возвращаться в исходное положение после нажатия на педаль тормоза. Это приводит к постоянному трению колодок о диск, перегреву узла и быстрому износу резиновых манжет.</p>
+<p>Многие владельцы путают простое заклинивание с полной поломкой, пытаясь решить проблему грубой силой или игнорируя проблему до закипания тормозной жидкости. Правильная <strong>разработка суппорта</strong> требует понимания механики работы узла и наличия специфических инструментов. Неправильные действия могут привести к разрушению корпуса или срыву резьбы, что сделает ремонт невозможным без замены всего узла.</p>
+<p>В этой статье мы разберем, как безопасно и эффективно восстановить работоспособность тормозного механизма. Мы не будем просто давить на поршень, а пойдем от диагностики к полной <strong>очистке направляющих</strong> и проверке герметичности системы. Перед началом работ убедитесь, что у вас есть доступ к <em>Ниве</em> на подъемнике или яме, а также набор ключей и чистая ветошь.</p>
+
+<h2 id="диагностика-перед-началом-работ">Диагностика перед началом работ</h2>
+<p>Прежде чем разбирать узел, необходимо точно определить характер неисправности. Часто проблема кроется не в самом <strong>поршне суппорта</strong>, а в направляющих втулках, которые окислились и потеряли подвижность. Если скоба не ходит свободно, поршень будет подвергаться боковой нагрузке и заклинивать.</p>
+<p>Первым шагом станет визуальный осмотр и проверка подвижности. Снимите колесо и попробуйте покачать скобу тормозного механизма. При исправных направляющих она должна двигаться с небольшим усилием, но без заеданий. Если скоба "мертвая" — проблема в направляющих, а не в поршне. В этом случае <strong>разработка поршня</strong> не имеет смысла до восстановления подвижности скобы.</p>
+<p>Затем проверьте состояние тормозных колодок. Если они износились неравномерно (например, одна сторона стерта больше другой), это прямое указание на заклинивание. Также обратите внимание на цвет тормозного диска: если он имеет синий или фиолетовый оттенок, значит, узел перегревался, и <strong>сальник поршня</strong> мог потерять эластичность из-за термического воздействия.</p>
+<blockquote>⚠️ Внимание: Если при осмотре вы обнаружите подтеки тормозной жидкости на корпусе суппорта или вокруг поршня, дальнейшая эксплуатация запрещена. Разборка и разработка узла в таком состоянии невозможны без полной замены уплотнительных колец и промывки системы.</blockquote>
+
+<h2 id="подготовка-инструментов-и-материалов">Подготовка инструментов и материалов</h2>
+<p>Для качественного ремонта <em>ВАЗ-2121</em> и <em>Нива Шевроле</em> вам понадобится специфический набор инструментов. Обычного домкрата и ключей будет недостаточно для аккуратной работы с поршнем. Ключевым элементом является съемник или струбцина, позволяющая вдавить поршень без повреждения его поверхности.</p>
+<ul>
+<li>🔧 Шестигранные ключи (обычно на 6 мм) для направляющих болтов</li>
+<li>🔧 Специальная струбцина для вдавливания поршня суппорта</li>
+<li>🔧 Медная смазка или графитовая смазка для направляющих</li>
+<li>🔧 Очиститель тормозов (Carb Cleaner) в баллончике</li>
+<li>🔧 Чистая ветошь и перчатки для защиты рук</li>
+</ul>
+<p>Также критически важно иметь под рукой <strong>тормозную жидкость</strong> DOT4 для доливки в бачок, так как при вдавливании поршня уровень жидкости поднимется. Если бачок переполнится, жидкость может попасть на лакокрасочное покрытие кузова, что приведет к его порче. Заранее подготовьте емкость для слива излишков.</p>
+<p>Не забудьте о средствах защиты. Тормозная жидкость агрессивна к коже и пластику, а очиститель имеет резкий запах. Работайте в хорошо проветриваемом помещении. <strong>Направляющие втулки</strong> часто прикипают настолько, что их приходится выбивать, поэтому запаситесь молотком и выколоткой из мягкого металла.</p>
+
+<div class="pb-poll" id="poll-cb1a41d6"><div class="pb-poll-question">📊 Какая у вас модель Нивы?</div><div class="pb-poll-option" data-poll="cb1a41d6" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">ВАЗ-2121 (классика)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cb1a41d6" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">ВАЗ-2131 (5-дверная)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cb1a41d6" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Шевроле Нива</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="cb1a41d6" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нива Урбан</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="процесс-демонтажа-и-очистки-направляющих">Процесс демонтажа и очистки направляющих</h2>
+<p>Начинать разработку узла нужно с демонтажа скобы. Открутите направляющие болты, используя шестигранный ключ. Если болты не откручиваются, не применяйте чрезмерную силу сразу: используйте проникающую смазку и дайте ей время подействовать. Попытка сорвать резьбу приведет к дорогостоящему ремонту.</p>
+<p>Сняв скобу, извлеките старые направляющие втулки. Они часто заклинивают в посадочных местах из-за грязи и ржавчины. Аккуратно выбейте их, стараясь не повредить посадочные отверстия в корпусе суппорта. После извлечения втулок тщательно очистите посадочные места от ржавчины и старой смазки. Используйте <strong>очиститель тормозов</strong> и металлическую щетку.</p>
+<p>Важно проверить состояние пыльников направляющих. Если они порваны, внутрь попала влага, что и вызвало заклинивание. Замените пыльники на новые, даже если они выглядят целыми, так как микротрещины уже могли привести к коррозии. Нанесите на новые втулки специальную <strong>силиконовую смазку</strong> для суппортов, избегая попадания на тормозные диски.</p>
+<blockquote>⚠️ Внимание: Никогда не используйте литол, солидол или обычную смазку для направляющих суппортов. Эти смазки растворяются тормозной жидкостью или вспениваются при нагреве, что приведет к повторному заклиниванию уже через несколько тысяч километров пробега.</blockquote>
+<p>После очистки и смазки установите новые направляющие обратно в скобу. Убедитесь, что они входят с равномерным усилием и не заедают. Скоба должна свободно перемещаться на направляющих болтах. Это обеспечит правильное прилегание <strong>тормозных колодок</strong> к диску и предотвратит неравномерный износ.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист готовности к разработке</h4><label class="check-item"><input type="checkbox"><span>Снять колесо и скобу</span></label><label class="check-item"><input type="checkbox"><span>Очистить направляющие от ржавчины</span></label><label class="check-item"><input type="checkbox"><span>Заменить пыльники втулок</span></label><label class="check-item"><input type="checkbox"><span>Нанести специальную смазку</span></label><label class="check-item"><input type="checkbox"><span>Проверить подвижность скобы</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="методы-разработки-заклинившего-поршня">Методы разработки заклинившего поршня</h2>
+<p>Теперь приступим к самому сложному этапу — извлечению поршня. Если поршень просто заклинил от грязи или старой смазки, его можно вдавить обратно в корпус. Однако делать это нужно аккуратно, чтобы не повредить зеркало поршня и резиновый пыльник.</p>
+<p>Используйте специальную струбцину для суппортов. Подложите деревянную проставку между поршнем и струбциной для распределения усилия. Медленно вращайте винт струбцины, вдавливая поршень внутрь. Если поршень двигается с трудом, не давите резко: возможно, он зажат коррозией или манжетой. <strong>Разработка поршня</strong> требует терпения и плавных движений.</p>
+<p>Если стандартная струбцина не помогает, можно использовать старый поршень от аналогичного суппорта в качестве оправки. Вставьте его в отверстие, где находится заклинивший поршень, и надавите. Это позволит передать усилие на внутреннюю часть без риска смещения. В крайнем случае, при наличии сжатого воздуха, можно попробовать выдуть поршень, но это опасно для глаз и требует защиты.</p>
+<p>В процессе вдавливания следите за уровнем тормозной жидкости в главном цилиндре. Откройте крышку бачка и периодически доливайте жидкость, если уровень падает. Если поршень не поддается даже при значительном усилии, возможно, он деформирован или на нем образовалась коррозия, которую невозможно убрать механически. В таком случае <strong>замена суппорта</strong> может быть более экономичным решением.</p>
+<blockquote>⚠️ Внимание: Если поршень имеет глубокие царапины или ржавчину, его нельзя использовать повторно. Даже после тщательной очистки микронеровности на зеркале поршня будут разрушать новый пыльник, что приведет к быстрой потере герметичности.</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если поршень не вдавливается?</summary><div class="pb-accordion-body"><p>Попробуйте нагреть корпус суппорта строительным феном до 60-70 градусов. Тепловое расширение корпуса может освободить заклинивший поршень. Осторожно: не перегрейте резиновые уплотнители, иначе они потеряют эластичность.</p></div></details>
+
+<h2 id="сборка-и-проверка-работоспособности">Сборка и проверка работоспособности</h2>
+<p>После того как поршень вдавлен, а направляющие очищены, можно приступать к сборке. Установите новые <strong>тормозные колодки</strong> в скобу. Они должны быть чистыми и сухими. Нанесите тонкий слой специальной смазки на тыльную сторону колодок и на места контакта с направляющими скобы.</p>
+<p>Установите скобу на суппорт, совместив отверстия под направляющие. Вкрутите направляющие болты и затяните их с рекомендуемым усилием. Не перетягивайте болты, так как это может деформировать корпус скобы или сорвать резьбу в алюминиевом корпусе суппорта. Проверьте, свободно ли ходит скоба по направляющим после затяжки.</p>
+<p>Установите колесо и опустите автомобиль. Перед началом движения обязательно прокачайте тормозную систему, так как при работе с поршнем в систему мог попасть воздух. Нажмите на педаль тормоза несколько раз до упора, чтобы колодки встали на место. Проверьте работоспособность тормозов на малой скорости.</p>
+<p>В таблице ниже приведены рекомендуемые моменты затяжки для основных элементов суппорта на <em>ВАЗ-2121</em>:</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Момент затяжки (Нм)</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Направляющие болты</td>
+<td>12-15</td>
+<td>Использовать динамометрический ключ</td>
+</tr>
+<tr>
+<td>Крепление суппорта к поворотному кулаку</td>
+<td>50-60</td>
+<td>Проверять после каждой замены</td>
+</tr>
+<tr>
+<td>Крепление скобы</td>
+<td>25-30</td>
+<td>Зависит от модели</td>
+</tr>
+<tr>
+<td>Педаль тормоза</td>
+<td>Минимум 3 нажатия</td>
+<td>Перед поездкой</td>
+</tr>
+</tbody>
+</table></div>
+<p>Тщательная проверка всех узлов перед выездом — залог вашей безопасности. Если педаль тормоза стала "мягкой" или проваливается, повторите процедуру прокачки. <strong>Тормозная система</strong> не терпит ошибок и недоделки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед установкой колеса сделайте фото положения тормозных колодок и поршня. Это поможет вам в будущем быстро оценить износ без повторной разборки.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильно разработанная система требует не только вдавливания поршня, но и замены направляющих втулок и смазки контактных поверхностей специальными составами.</p></aside>
+
+<h2 id="частые-ошибки-и-нюансы-эксплуатации">Частые ошибки и нюансы эксплуатации</h2>
+<p>Многие владельцы <em>Нивы</em> совершают одну и ту же ошибку: они игнорируют периодическую чистку направляющих. Внедорожные условия эксплуатации, грязь, вода и реагенты быстро уничтожают смазку. Рекомендуется проводить профилактическую чистку <strong>суппортов</strong> каждые 20-30 тысяч километров пробега.</p>
+<p>Другая распространенная ошибка — использование неподходящих смазок. Многие используют графитовую смазку, которая отлично подходит для подшипников, но не для суппортов. Графит может забить зазоры в направляющих и вызвать заклинивание. Используйте только специализированные высокотемпературные смазки с маркировкой "для суппортов" или "для тормозных систем".</p>
+<p>Также стоит следить за состоянием пыльника поршня. Если он порван, влага и грязь попадают прямо на зеркало поршня. Это вызывает коррозию, которая делает поршень "грубым" и трудным для вдавливания. <strong>Замена пыльника</strong> — это дешевая и быстрая процедура, которая спасает поршень от замены.</p>
+<p>Если вы часто эксплуатируете автомобиль в грязных условиях, увеличьте частоту проверки тормозной системы. Грязь — главный враг тормозов. Регулярная мойка и осмотр помогут избежать серьезных поломок. <strong>Диагностика</strong> тормозов должна быть частью вашего регулярного ТО.</p>
+
+<h2 id="faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</h2>
+<details>
+<summary>Можно ли разработать поршень без снятия колеса?</summary>
+<p>Технически возможно, если есть доступ к суппорту, но это крайне неудобно и повышает риск повреждения болтов. Рекомендуется снять колесо для полного доступа и контроля процесса.</p>
+</details>
+<details>
+<summary>Что делать, если поршень вылетел из суппорта при прокачке?</summary>
+<p>Если поршень вылетел, манжета могла вывернуться. В таком случае поршень нужно аккуратно вдавить обратно, проверив положение манжеты. Если манжета повреждена, необходима полная переборка суппорта с заменой ремкомплекта.</p>
+</details>
+<details>
+<summary>Как определить, что суппорт нужно менять, а не ремонтировать?</summary>
+<p>Если на зеркале поршня есть глубокие царапины, коррозия, или если корпус суппорта деформирован (трещины, сколы), ремонт нецелесообразен. Также, если направляющие болты прокручиваются в корпусе, суппорт подлежит замене.</p>
+</details>
+<details>
+<summary>Нужно ли менять тормозные колодки при разработке суппорта?</summary>
+<p>Если колодки изношены неравномерно или имеют остаточную толщину менее 2-3 мм — да, их нужно заменить. Односторонний износ колодок часто является следствием заклинивания суппорта.</p>
+</details>
+<details>
+<summary>Сколько времени занимает разработка суппорта?</summary>
+<p>У опытного мастера на одну сторону уходит около 40-60 минут, включая демонтаж, чистку, смазку и сборку. При первой разборе без опыта это может занять 2-3 часа.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/su/supporta-na-ladu-grantu.html" class="pb-related-card">
+                <span class="pb-related-title">Суппорты на Ладу Гранту: выбор, замена и ремонт тормозной системы</span>
+                <span class="pb-related-desc">Полный гид по суппортам на Lada Granta. Обзор передних и задних механизмов, причины износа, инструкц</span>
+            </a><a href="/articles/k/ka/kak-vytashchit-napravlyayushchuyu-iz-supporta.html" class="pb-related-card">
+                <span class="pb-related-title">Как вытащить направляющую суппорта: пошаговая инструкция и советы</span>
+                <span class="pb-related-desc">Пошаговый гайд по извлечению направляющих пальцев из суппорта. Разбор типов заклинивания, необходимы</span>
+            </a><a href="/articles/p/pe/pereborka-supporta-lanser-9.html" class="pb-related-card">
+                <span class="pb-related-title">Переборка суппорта Mitsubishi Lancer 9: Пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по переборке тормозного суппорта на Lancer 9. Диагностика, замена пыльников, смаз</span>
+            </a><a href="/articles/k/ka/kak-prokachat-tormoza-posle-zameny-supporta.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать тормоза после замены суппорта: полная инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по прокачке тормозной системы после установки нового суппорта. Удаление воздуха</span>
+            </a><a href="/articles/p/po/pokrasit-supporta-svoimi-rukami.html" class="pb-related-card">
+                <span class="pb-related-title">Как покрасить суппорта своими руками: пошаговая инструкция и выбор краски</span>
+                <span class="pb-related-desc">Полное руководство по покраске тормозных суппортов. Выбор термостойкой краски, подготовка поверхност</span>
+            </a><a href="/articles/f/fr/frenkit-smazka-dlya-supportov.html" class="pb-related-card">
+                <span class="pb-related-title">Смазка для суппортов Frenkit: виды, применение и ошибки</span>
+                <span class="pb-related-desc">Полный разбор смазочных материалов Frenkit для тормозных суппортов. Сравнение составов, инструкция п</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

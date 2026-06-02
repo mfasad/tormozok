@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как проверить датчик уровня тормозной жидкости: инструкция и диагностика — ТормозОК</title>
+    <meta name="description" content="Полное руководство по проверке датчика уровня тормозной жидкости. Разбор причин ошибок, пошаговая диагностика мультиметром и способы замены.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/proverka-datchika-urovnya-tormoznoj-zhidkosti.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить датчик уровня тормозной жидкости: инструкция и диагностика">
+    <meta property="og:description" content="Полное руководство по проверке датчика уровня тормозной жидкости. Разбор причин ошибок, пошаговая диагностика мультиметром и способы замены.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-nav-active">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/tormoznaya-zhidkost/">Тормозная жидкость</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить датчик уровня тормозной жидкости: инструкция и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-типы-датчиков-уровня">Принцип работы и типы датчиков уровня</a></li><li><a href="#подготовка-инструментов-и-визуальный-осмотр">Подготовка инструментов и визуальный осмотр</a></li><li><a href="#электрическая-диагностика-мультиметром">Электрическая диагностика мультиметром</a></li><li><a href="#симптомы-неисправности-и-ошибки-на-панели">Симптомы неисправности и ошибки на панели</a></li><li><a href="#замена-датчика-и-тонкости-установки">Замена датчика и тонкости установки</a></li><li><a href="#альтернативные-причины-проблем-с-индикацией">Альтернативные причины проблем с индикацией</a></li><li><a href="#безопасность-и-заключение">Безопасность и заключение</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-prokachat-tormoza-na-jcb-3cx.html">Как прокачать тормоза на JCB 3CX: пошаговая инструкция и нюансы</a></li><li><a href="/articles/m/mo/mogut-li-tormoza-sami-prokachatsya.html">Могут ли тормоза сами прокачаться: мифы и реальность</a></li><li><a href="/articles/l/lu/lukoil-dot-4-class-6.html">Тормозная жидкость Лукойл DOT 4 Class 6: Характеристики и применение</a></li><li><a href="/articles/p/pr/prokachka-tormozov-tiguan-1.html">Прокачка тормозов VW Tiguan 1: Инструкция, ошибки и нюансы</a></li><li><a href="/articles/c/ch/chem-promyvayut-tormoznuyu-sistemu.html">Чем и как правильно промывать тормозную систему автомобиля</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Проверка датчика уровня тормозной жидкости: пошаговое руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-типы-датчиков-уровня">Принцип работы и типы датчиков уровня</a></li><li><a href="#подготовка-инструментов-и-визуальный-осмотр">Подготовка инструментов и визуальный осмотр</a></li><li><a href="#электрическая-диагностика-мультиметром">Электрическая диагностика мультиметром</a></li><li><a href="#симптомы-неисправности-и-ошибки-на-панели">Симптомы неисправности и ошибки на панели</a></li><li><a href="#замена-датчика-и-тонкости-установки">Замена датчика и тонкости установки</a></li><li><a href="#альтернативные-причины-проблем-с-индикацией">Альтернативные причины проблем с индикацией</a></li><li><a href="#безопасность-и-заключение">Безопасность и заключение</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система торможения является критически важным элементом безопасности любого автомобиля, и уровень рабочей <strong>тормозной жидкости</strong> — это первый параметр, за которым необходимо следить. Когда на приборной доске загорается соответствующая лампочка, водитель часто пытается долить жидкость, не задумываясь о том, что сам датчик может быть неисправен. Игнорирование этой проблемы может привести к ложным сигналам, которые скроют реальное падение уровня, или к постоянному мигающему предупреждению, отвлекающему от дороги.</p>
+
+<p>Неисправность <strong>датчика уровня</strong> часто маскируется под другие проблемы в гидравлической системе. В некоторых случаях проблема кроется не в самом сенсоре, а в проводке или в окислении контактов, особенно если автомобиль имеет солидный пробег. Правильная диагностика позволяет избежать ненужных затрат на замену дорогостоящих узлов тормозной системы <em>ABS</em> или <em>ESP</em>, если причина банальна и лежит на поверхности.</p>
+
+<p>Для самостоятельной проверки вам не обязательно иметь сложное диагностическое оборудование, однако знание принципа работы устройства значительно упростит задачу. В этой статье мы разберем, как проверить работоспособность сенсорного элемента, какие инструменты понадобятся и как правильно интерпретировать полученные результаты.</p>
+
+<h2 id="принцип-работы-и-типы-датчиков-уровня">Принцип работы и типы датчиков уровня</h2>
+
+<p>Большинство современных автомобилей оснащаются поплавковыми датчиками, которые работают по простому, но эффективному принципу. Внутри бачка находится поплавок, соединенный с магнитом, который перемещается вдоль геркона (герметичного контакта) или резистивного элемента. Когда уровень <strong>тормозной жидкости</strong> падает, поплавок опускается, магнит отдаляется от контакта, и цепь размыкается, подавая сигнал на блок управления.</p>
+
+<p>В более старых моделях или бюджетных сегментах могут встречаться датчики с механическим контактом, где поплавок напрямую замыкает или размыкает контакты. Важно понимать, что <strong>тормозная жидкость</strong> обладает агрессивными свойствами, поэтому разъемы и контакты часто защищены специальными колпачками. Качество сигнала напрямую зависит от чистоты контактов и плотности прилегания магнита к чувствительному элементу.</p>
+
+<p>Существует также возможность использования емкостных датчиков, которые не имеют движущихся частей внутри бачка, но встречаются они реже. Их работа основана на изменении диэлектрической проницаемости среды. Если вы владелец автомобиля <em>BMW</em> или <em>Mercedes</em> последних лет, есть высокая вероятность, что там установлен именно такой тип сенсора, требующий специфического оборудования для проверки.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Не пытайтесь разобрать сам датчик, если он залит клеем или герметиком производителя. Нарушение герметичности корпуса приведет к попаданию жидкости в электронику и полному выходу узла из строя.</blockquote>
+
+<h2 id="подготовка-инструментов-и-визуальный-осмотр">Подготовка инструментов и визуальный осмотр</h2>
+
+<p>Прежде чем приступать к электрическим измерениям, необходимо провести тщательный визуальный осмотр узла. Очистите область вокруг крышки бачка от грязи и пыли, чтобы частицы не попали внутрь при снятии. Вам понадобятся стандартный набор отверток, мультиметр и, возможно, очиститель контактов. Проверьте состояние разъемной колодки на предмет окисления или оплавления.</p>
+
+<p>Если на корпусе датчика видны следы подтекания <strong>тормозной жидкости</strong>, это верный признак того, что уплотнительное кольцо изношено. В такой ситуации замена датчика обязательна, так как даже кратковременное пребывание контактов в агрессивной среде может вызвать короткое замыкание. Обратите внимание на цвет жидкости: если она темная и мутная, это говорит о необходимости полной замены рабочей среды в системе.</p>
+
+<p>В некоторых случаях проблема решается простой чисткой. Отсоедините разъем и тщательно протрите контакты ветошью, смоченной в очистителе. Иногда оксидная пленка настолько толстая, что сигнал не проходит даже при исправном датчике. Используйте <code>очиститель контактов</code> и дайте ему высохнуть перед повторным подключением.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к диагностике</h4><label class="check-item"><input type="checkbox"><span>Снять разъем с датчика</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть контакты на окисление</span></label><label class="check-item"><input type="checkbox"><span>Очистить разъем очистителем</span></label><label class="check-item"><input type="checkbox"><span>Проверить целостность проводки</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="электрическая-диагностика-мультиметром">Электрическая диагностика мультиметром</h2>
+
+<p>Для проверки электрической части необходимо установить мультиметр в режим измерения сопротивления (Ом) или прозвонки. Подключите щупы к контактам датчика, соблюдая полярность, если она указана в технической документации. В обычном состоянии, когда уровень жидкости высок, сопротивление должно быть либо нулевым (замкнуто), либо бесконечным (разомкнуто), в зависимости от типа схемы.</p>
+
+<p>Попросите помощника медленно поднимать и опускать поплавок, имитируя изменение уровня. Наблюдайте за показаниями прибора. Если при движении поплавка показания скачут, переходят от нуля к бесконечности или меняются хаотично — датчик неисправен. Это указывает на износ резистивной дорожки или нарушение контакта в герконе.</p>
+
+<p>Особое внимание уделите проводке от датчика до ЭБУ. Обрыв провода или замыкание на массу часто имитируют неисправность самого сенсора. Проверьте целостность жилы, аккуратно покачивая провод при включенном мультиметре. Если сопротивление меняется при движении провода — ищите место перелома или плохой контакт в разъеме.</p>
+
+<div class="pb-poll" id="poll-2fa84226"><div class="pb-poll-question">📊 Какой метод диагностики вы использовали?</div><div class="pb-poll-option" data-poll="2fa84226" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Визуальный осмотр</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2fa84226" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мультиметр</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2fa84226" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Компьютерная диагностика</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="2fa84226" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="симптомы-неисправности-и-ошибки-на-панели">Симптомы неисправности и ошибки на панели</h2>
+
+<p>Самый очевидный признак проблемы — это горящая лампа низкого уровня <strong>тормозной жидкости</strong> при полном бачке. Однако симптомы могут быть и более тонкими. Например, лампа может мигать при проезде неровностей, что говорит о плохом контакте, который замыкается и размыкается от вибрации. В таких случаях проблема часто кроется в разболтавшемся разъеме.</p>
+
+<p>Иногда на приборной панели может появиться сообщение "Check Brake Fluid" или аналогичное, которое не исчезает после долива жидкости. Это бывает, если датчик "залип" в нижнем положении или если окислились контакты внутри корпуса. В автомобилях с <em>ABS</em> система может блокировать работу антиблокировочной системы, сообщая о критической ошибке в гидравлическом блоке.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Возможная причина</th>
+<th>Метод проверки</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Лампа горит при полном бачке</td>
+<td>Неисправность датчика или проводки</td>
+<td>Проверка сопротивления мультиметром</td>
+</tr>
+<tr>
+<td>Лампа не загорается при низком уровне</td>
+<td>Замыкание цепи или залипание контактов</td>
+<td>Снижение уровня жидкости (визуально)</td>
+</tr>
+<tr>
+<td>Лампа мигает на кочках</td>
+<td>Плохой контакт в разъеме</td>
+<td>Встряхивание жгута проводов</td>
+</tr>
+<tr>
+<td>Ошибка ABS + уровень</td>
+<td>Проблема с блоком управления</td>
+<td>Компьютерная диагностика</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Не игнорируйте предупреждения системы <strong>ESP</strong> или <strong>Traction Control</strong>, если они появляются вместе с сигналом о жидкости. Электроника часто видит разрыв цепи датчика как потерю контроля над давлением в системе. В этом случае требуется немедленная диагностика, так как система стабилизации может отключиться в критический момент.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если вы долили жидкость, а лампа не гаснет, не продолжайте движение на высоких скоростях. Возможно, датчик просто неисправен, но реальная утечка в системе могла остаться незамеченной.</blockquote>
+
+<h2 id="замена-датчика-и-тонкости-установки">Замена датчика и тонкости установки</h2>
+
+<p>Процесс замены датчика <strong>уровня тормозной жидкости</strong> обычно не требует сложного оборудования. Снимите разъем, открутите фиксирующее кольцо или винт (в зависимости от конструкции) и аккуратно извлеките старый элемент. Будьте готовы к тому, что небольшое количество жидкости может вылиться при извлечении самого датчика.</p>
+
+<p>При установке нового датчика убедитесь, что уплотнительное кольцо сидит ровно и не перекручено. Это критически важно для предотвращения подтекания. Если вы используете уплотнитель от старого датчика, проверьте его на наличие трещин или деформаций. Лучше заменить его сразу, так как резина со временем теряет свои свойства.</p>
+
+<p>После установки необходимо проверить работоспособность системы. Включите зажигание и убедитесь, что лампа погасла. Если она продолжает гореть, возможно, датчик еще не до конца вставлен или контакты не соприкасаются. В некоторых автомобилях требуется сброс ошибки через диагностический сканер.</p>
+
+<details class="pb-accordion"><summary>Особенности установки на разных марках</summary><div class="pb-accordion-body"><p>На автомобилях Ford и Mazda датчик часто вмонтирован в общий блок крышки бачка и меняется только в сборе. На старых моделях Toyota датчик вкручивается отдельно, что позволяет заменить только сенсор, а не всю крышку.</p></div></details>
+
+<h2 id="альтернативные-причины-проблем-с-индикацией">Альтернативные причины проблем с индикацией</h2>
+
+<p>Иногда проблема кроется не в самом датчике, а в блоке управления тормозной системой. Если проводка в порядке, а датчик показывает нормальное сопротивление, но ошибка не исчезает, возможно, неисправен входной канал ЭБУ. Это редкий, но возможный случай, особенно после попадания воды в подкапотное пространство.</p>
+
+<p>Также стоит проверить предохранитель, отвечающий за цепь датчика. В некоторых схемах питание на датчик подается через отдельный предохранитель. Если он перегорел, система будет считать, что цепь разомкнута, и загорится лампа тревоги. Проверьте номинал предохранителя в монтажном блоке.</p>
+
+<p>Не стоит забывать и о качестве самой жидкости. Некачественная <strong>тормозная жидкость</strong> может вызвать коррозию контактов внутри датчика быстрее, чем это происходит с оригинальными расходниками. Используйте только жидкости, рекомендованные производителем, с учетом допуска DOT-3, DOT-4 или DOT-5.1.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед покупкой нового датчика обязательно сравните его внешний вид с установленным. Часто производители меняют конструкцию разъема или форму корпуса даже для одной модели авто в разных годах выпуска.</p></aside>
+
+<h2 id="безопасность-и-заключение">Безопасность и заключение</h2>
+
+<p>Работа с тормозной системой требует предельной осторожности. <strong>Тормозная жидкость</strong> является токсичным веществом и может повредить лакокрасочное покрытие автомобиля. Если вы пролили жидкость, немедленно смойте её водой. Не допускайте попадания жидкости на кожу или в глаза при замене датчика.</p>
+
+<p>Правильная проверка и замена датчика уровня — это залог того, что система оповещения будет работать корректно. Это позволит вам вовремя заметить утечку или испарение жидкости и предотвратить отказ тормозов. Регулярно проверяйте работоспособность всех датчиков в системе, особенно перед дальними поездками.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если вы не уверены в своих силах или не имеете необходимых инструментов, доверьте диагностику и замену профессионалам. Ошибки в тормозной системе могут стоить жизни вам и другим участникам движения.</blockquote>
+
+<p>Помните, что безопасность — это не только исправные тормоза, но и своевременное обнаружение проблем с ними. Регулярная диагностика датчика уровня <strong>тормозной жидкости</strong> поможет вам избежать неожиданных ситуаций на дороге и сохранить высокий уровень надежности вашего автомобиля.</p>
+
+<details>
+<summary>Как часто нужно проверять датчик уровня тормозной жидкости?</summary>
+<p>Рекомендуется проводить визуальную проверку уровня жидкости и работоспособности датчика при каждом техническом обслуживании (раз в 10-15 тысяч км) или при каждой смене масла. Если лампа загорается внезапно — диагностика требуется немедленно.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить с горящей лампой уровня тормозной жидкости?</summary>
+<p>Категорически не рекомендуется. Горящая лампа может означать реальную утечку или низкий уровень жидкости, что приведет к отказу тормозов. Если вы уверены, что проблема только в датчике, ограничьтесь короткими поездками до сервисного центра.</p>
+</details>
+
+<details>
+<summary>Сколько стоит замена датчика уровня?</summary>
+<p>Стоимость зависит от марки автомобиля. Оригинальный датчик для иномарок может стоить от 2000 до 10000 рублей, для отечественных авто — от 500 до 2000 рублей. Замена в сервисе обычно стоит 500-1500 рублей.</p>
+</details>
+
+<details>
+<summary>Что делать, если датчик исправен, но лампа горит?</summary>
+<p>Проверьте разъем и проводку на предмет окисления или обрыва. Если проводка в порядке, возможно, проблема в блоке управления тормозной системой или требуется сброс ошибки через диагностический сканер.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка датчика уровня тормозной жидкости и чистота контактов — это гарантия того, что система оповещения сработает вовремя и спасет вас от критических ситуаций на дороге.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-prokachat-tormoza-na-jcb-3cx.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать тормоза на JCB 3CX: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по прокачке гидравлической тормозной системы экскаватора-погрузчика JCB 3CX. Удал</span>
+            </a><a href="/articles/m/mo/mogut-li-tormoza-sami-prokachatsya.html" class="pb-related-card">
+                <span class="pb-related-title">Могут ли тормоза сами прокачаться: мифы и реальность</span>
+                <span class="pb-related-desc">Разбираем миф о самопрокачке тормозов. Почему воздух не исчезает сам, риски игнорирования неисправно</span>
+            </a><a href="/articles/l/lu/lukoil-dot-4-class-6.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозная жидкость Лукойл DOT 4 Class 6: Характеристики и применение</span>
+                <span class="pb-related-desc">Полный обзор тормозной жидкости Лукойл DOT 4 Class 6. Сравнение с классом 5.1, совместимость с ABS, </span>
+            </a><a href="/articles/p/pr/prokachka-tormozov-tiguan-1.html" class="pb-related-card">
+                <span class="pb-related-title">Прокачка тормозов VW Tiguan 1: Инструкция, ошибки и нюансы</span>
+                <span class="pb-related-desc">Пошаговая инструкция по прокачке тормозной системы Volkswagen Tiguan 1 поколения. Как удалить воздух</span>
+            </a><a href="/articles/c/ch/chem-promyvayut-tormoznuyu-sistemu.html" class="pb-related-card">
+                <span class="pb-related-title">Чем и как правильно промывать тормозную систему автомобиля</span>
+                <span class="pb-related-desc">Полный гид по очистке тормозной системы: чем промыть, выбор растворителя, пошаговая инструкция и таб</span>
+            </a><a href="/articles/k/ka/kak-spustit-vozdukh-s-tormoznoj-sistemy.html" class="pb-related-card">
+                <span class="pb-related-title">Как спустить воздух из тормозной системы: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно прокачать тормоза своими руками. Пошаговая инструкция по удалению воздуха, вы</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

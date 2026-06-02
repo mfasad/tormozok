@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>PLA против ABS: Сравнение пластиков для 3D-печати и выбор материала — ТормозОК</title>
+    <meta name="description" content="Подробное сравнение PLA и ABS пластика для 3D-печати: температура экструзии, усадка, прочность и требования к постобработке. Что выбрать новичку?">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/c/ch/chem-otlichaetsya-plastik-pla-ot-abs.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="PLA против ABS: Сравнение пластиков для 3D-печати и выбор материала">
+    <meta property="og:description" content="Подробное сравнение PLA и ABS пластика для 3D-печати: температура экструзии, усадка, прочность и требования к постобработке. Что выбрать новичку?">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">PLA против ABS: Сравнение пластиков для 3D-печати и выбор материала</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#химическая-природа-и-происхождение-материалов">Химическая природа и происхождение материалов</a></li><li><a href="#температурный-режим-и-требования-к-оборудованию">Температурный режим и требования к оборудованию</a></li><li><a href="#механические-свойства-и-эксплуатационная-прочность">Механические свойства и эксплуатационная прочность</a></li><li><a href="#проблема-усадки-и-коробления-warping">Проблема усадки и коробления (Warping)</a></li><li><a href="#экологическая-безопасность-и-постобработка">Экологическая безопасность и постобработка</a></li><li><a href="#сводная-таблица-характеристик">Сводная таблица характеристик</a></li><li><a href="#выводы-и-рекомендации-по-выбору">Выводы и рекомендации по выбору</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/ni/nizkaya-skorost-zapisi-ssd.html">Почему низкая скорость записи SSD: причины, тесты и решение</a></li><li><a href="/articles/p/po/podem-na-gorku-na-avtodrome-na-mekhanike.html">Подъем на горку на автодроме на механике: Пошаговая инструкция</a></li><li><a href="/articles/k/ka/kakaya-normalnaya-skorost-chteniya-ssd-diska.html">Нормальная скорость чтения SSD: показатели для SATA, NVMe и PCIe 4.0</a></li><li><a href="/articles/a/av/avs-chto-za-material.html">ABS что за материал: свойства, применение и отличия от других пластиков</a></li><li><a href="/articles/p/po/pochemu-yutub-medlenno-gruzit-video.html">Почему YouTube медленно грузит видео: причины и решения</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Сравнение характеристик PLA и ABS пластика для 3D-печати</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#химическая-природа-и-происхождение-материалов">Химическая природа и происхождение материалов</a></li><li><a href="#температурный-режим-и-требования-к-оборудованию">Температурный режим и требования к оборудованию</a></li><li><a href="#механические-свойства-и-эксплуатационная-прочность">Механические свойства и эксплуатационная прочность</a></li><li><a href="#проблема-усадки-и-коробления-warping">Проблема усадки и коробления (Warping)</a></li><li><a href="#экологическая-безопасность-и-постобработка">Экологическая безопасность и постобработка</a></li><li><a href="#сводная-таблица-характеристик">Сводная таблица характеристик</a></li><li><a href="#выводы-и-рекомендации-по-выбору">Выводы и рекомендации по выбору</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Выбор материала для 3D-печати часто становится первым и самым сложным испытанием для энтузиастов аддитивных технологий. На рынке представлено множество полимеров, но два из них доминируют в секторе hobby и полупромышленного производства: полилактид (<strong>PLA</strong>) и акрилонитрил-бутадиен-стирол (<strong>ABS</strong>). Оба материала имеют свои уникальные физические свойства, которые определяют сферу их применения, сложность печати и конечные характеристики изделия.</p>
+
+<p>Понимание фундаментальных различий между этими пластиками критически важно для предотвращения брака и достижения желаемого результата. Если <em>PLA</em> ценится за простоту использования и отсутствие запаха, то <em>ABS</strong> зарекомендовал себя как материал для создания прочных, термостойких деталей, способных выдерживать агрессивные условия эксплуатации. Ошибка в выборе может привести к деформации модели, засору сопла или получению хрупкого изделия.</p>
+
+<h2 id="химическая-природа-и-происхождение-материалов">Химическая природа и происхождение материалов</h2>
+
+<p>Коренное отличие между этими двумя типами пластика кроется в их происхождении и химической структуре. <strong>PLA</em> (Polylactic Acid) является биоразлагаемым полимером, получаемым из возобновляемых ресурсов, таких как кукурузный крахмал или сахарный тростник. Это делает его экологически более привлекательным вариантом по сравнению с традиционными пластиками, так как процесс его разложения менее вреден для окружающей среды при правильных условиях.</p>
+
+<p>В свою очередь, <strong>ABS</em> (Acrylonitrile Butadiene Styrene) — это полностью синтетический термопласт, производимый из нефти. Его химическая формула представляет собой сополимер, объединяющий свойства трех различных компонентов: акрилонитрила, бутадиена и стирола. Именно такая комбинация придает материалу его знаменитую ударопрочность и способность сохранять форму при нагревании, что недостижимо для биоразлагаемых аналогов.</p>
+
+<p>С точки зрения переработки и утилизации, <em>PLA</em> требует специальных промышленных компостеров для быстрого разложения, в то время как в обычной среде он может сохраняться десятилетиями. <em>ABS</strong> же не разлагается биологическим путем, но отлично поддается механической переработке и повторному использованию в качестве сырья для новой печати, если соблюдать температурный режим.</p>
+
+<h2 id="температурный-режим-и-требования-к-оборудованию">Температурный режим и требования к оборудованию</h2>
+
+<p>Одним из самых заметных различий является температура экструзии, необходимая для плавления материала. Для работы с <strong>PLA</strong> достаточно температуры сопла в диапазоне от 190 до 220 градусов Цельсия. Это позволяет использовать практически любой 3D-принтер, даже бюджетные модели с латунными или стальными соплами, не опасаясь их перегрева или деформации.</p>
+
+<p>Для печати <strong>ABS</em> требования значительно строже. Материал требует нагрева экструдера до 230–260 градусов Цельсия, а также наличия подогреваемого стола с температурой 90–110 градусов. Без подогрева стола адгезия первого слоя будет недостаточной, что почти гарантированно приведет к отрыву модели от платформы в процессе печати. Кроме того, многие дешевые принтеры не оборудованы термостойкими вентиляторами и соплами, способными долго работать на таких температурах.</p>
+
+<p>Важным фактором является и температурный режим рабочей камеры. При печати <em>ABS</em> критически важно наличие закрытой камеры для поддержания стабильной температуры воздуха внутри принтера. Перепады температур могут вызвать расслоение слоев или коробление углов модели. <em>PLA</em> же, напротив, любит активное охлаждение, поэтому открытая конструкция принтера для него является скорее преимуществом, чем недостатком.</p>
+
+<div class="pb-poll" id="poll-a2780aff"><div class="pb-poll-question">📊 Какой пластик вы используете чаще?</div><div class="pb-poll-option" data-poll="a2780aff" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">PLA</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a2780aff" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">ABS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a2780aff" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Смешиваю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a2780aff" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не пробовал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="механические-свойства-и-эксплуатационная-прочность">Механические свойства и эксплуатационная прочность</h2>
+
+<p>Если рассматривать готовое изделие, то разница в механических свойствах становится очевидной. <strong>PLA</strong> обладает высокой жесткостью и прочностью на разрыв, но при этом он довольно хрупок. При сильном ударе деталь из этого материала скорее треснет или сломается, чем согнется. Это делает его идеальным для декоративных моделей, фигурок или интерьерных предметов, которые не будут подвергаться механическим нагрузкам.</p>
+
+<p><strong>ABS</strong> демонстрирует совершенно иную картину: он обладает высокой ударной вязкостью и способностью к деформации без разрушения. Детали из этого материала могут гнуться, выдерживать вибрации и удары, что делает их незаменимыми для функциональных механизмов, шестеренок, корпусов электроники и автомобильных комплектующих. Именно ABS используется в производстве конструкторов LEGO, что подтверждает его долговечность.</p>
+
+<p>Термостойкость — еще одна сфера, где <em>ABS</em> безоговорочно выигрывает. Изделия из <strong>PLA</strong> начинают размягчаться уже при температуре около 50–60 градусов Цельсия, что делает их непригодными для использования в горячих помещениях или внутри автомобилей летом. <em>ABS</em> сохраняет свои формы и свойства при температурах до 90–100 градусов, позволяя применять детали в более жестких условиях эксплуатации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Для повышения термостойкости изделий из PLA можно использовать специальные добавки или выбирать гибридные материалы, такие как PETG, который занимает промежуточное положение между этими двумя пластиками.</p></aside>
+
+<h2 id="проблема-усадки-и-коробления-warping">Проблема усадки и коробления (Warping)</h2>
+
+<p>Наиболее сложной операцией при работе с <strong>ABS</em> является контроль усадки. При остывании этот пластик имеет высокий коэффициент теплового расширения, что приводит к значительному уменьшению объема. В результате внутренние напряжения часто вызывают отрыв углов детали от стола, так называемое <em>коробление (warping)</strong>. Для борьбы с этим явлением необходимо использовать специальные адгезивы, такие как клей-карандаш или лак для волос, а также поддерживать равномерный прогрев камеры.</p>
+
+<p><strong>PLA</em> характеризуется минимальной усадкой, что делает его практически нечувствительным к проблемам коробления. Модель, напечатанная из этого материала, сохраняет свои геометрические размеры и форма первого слоя остается стабильной даже на холодном столе. Это свойство позволяет новичкам получать успешные результаты с первого раза, не тратя часы на настройку температурных профилей и адгезии.</p>
+
+<p>Однако низкая усадка <em>PLA</em> имеет и обратную сторону: слои могут неплотно прилегать друг к другу, если температура сопла слишком низкая или охлаждение слишком агрессивное. Это может привести к снижению прочности изделия в вертикальной плоскости. Для <em>ABS</em> же, несмотря на риски коробления, хорошее соединение слоев достигается за счет медленного остывания, что в итоге дает монолитную структуру.</p>
+
+<p>Следует учитывать, что при печати больших моделей из ABS риск деформации возрастает экспоненциально. В таких случаях часто требуется использование рафтов (растровых подложек) и специальных программных настроек, таких как "брам" (brim) или "фалки" (skirt), для увеличения площади контакта с платформой.</p>
+
+<h2 id="экологическая-безопасность-и-постобработка">Экологическая безопасность и постобработка</h2>
+
+<p>При работе с материалами важно учитывать не только свойства готового изделия, но и условия труда оператора. Печать <strong>PLA</strong> практически не имеет запаха или имеет легкий сладковатый аромат, напоминающий карамель. Выделение вредных веществ при этом минимально, что позволяет использовать принтеры в жилых помещениях без дополнительных систем вентиляции.</p>
+
+<p>В отличие от него, процесс плавления <strong>ABS</strong> сопровождается выделением стирола и других летучих органических соединений, которые имеют резкий неприятный запах и могут быть токсичными при вдыхании в больших концентрациях. <em>Внимание</em>: работа с ABS без вытяжки или фильтрации воздуха может вызвать головную боль и раздражение дыхательных путей. Настоятельно рекомендуется использовать принтер в хорошо проветриваемом помещении или оборудовать его системой фильтрации HEPA и угольными фильтрами.</p>
+
+<p>В сфере постобработки <em>ABS</em> также обладает уникальным преимуществом. Поверхность изделий из этого пластика можно легко шлифовать, сверлить и обрабатывать на станках без риска образования трещин. Более того, <em>ABS</em> поддается химической полировке с использованием ацетона. Пары ацетона или обработка поверхности в паровой камере позволяют сгладить слои ("сварить" их), получая глянцевую, однородную поверхность, недостижимую для PLA без сложной механической шлифовки.</p>
+
+<p><strong>PLA</strong> не реагирует на ацетон, поэтому химическая полировка для него невозможна. Единственный способ улучшить внешний вид — это механическая шлифовка наждачной бумагой, которая трудоемка и может оставить царапины, если не соблюдать аккуратность. Однако PLA легче окрашивается акриловыми красками, так как его поверхность более пористая и лучше впитывает пигменты по сравнению с химически сглаженным ABS.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ План действий при печати ABS</h4><label class="check-item"><input type="checkbox"><span>Установить стол на 100°C</span></label><label class="check-item"><input type="checkbox"><span>Проверить закрытие камеры</span></label><label class="check-item"><input type="checkbox"><span>Использовать клей или лак</span></label><label class="check-item"><input type="checkbox"><span>Включить вентиляцию</span></label><label class="check-item"><input type="checkbox"><span>Настроить скорость печати на минимум</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="сводная-таблица-характеристик">Сводная таблица характеристик</h2>
+
+<p>Для наглядного сравнения ключевых параметров материалов ниже приведена итоговая таблица. Она поможет быстро определить, какой пластик подходит под ваши конкретные задачи, не вдаваясь в долгие текстовые описания.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>PLA</th>
+<th>ABS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Температура экструдера</td>
+<td>190–220°C</td>
+<td>230–260°C</td>
+</tr>
+<tr>
+<td>Температура стола</td>
+<td>50–60°C (необязательно)</td>
+<td>90–110°C (обязательно)</td>
+</tr>
+<tr>
+<td>Усадка</td>
+<td>Низкая</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Термостойкость</td>
+<td>Низкая (~60°C)</td>
+<td>Высокая (~100°C)</td>
+</tr>
+<tr>
+<td>Запах при печати</td>
+<td>Сладкий/Отсутствует</td>
+<td>Резкий/Токсичный</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что такое Warping и как его избежать?</summary><div class="pb-accordion-body"><p>Warpping (коробление) — это процесс отрыва углов модели от стола из-за неравномерного остывания. Для предотвращения используйте клей, нагревайте стол, закрывайте камеру и используйте рафт.</p></div></details>
+
+<h2 id="выводы-и-рекомендации-по-выбору">Выводы и рекомендации по выбору</h2>
+
+<p>Окончательный выбор между <strong>PLA</strong> и <strong>ABS</strong> зависит исключительно от цели создания объекта. Если вам нужно напечатать декоративную фигурку, макет здания, косплей-реквизит или прототип, который не будет нагреваться, то <em>PLA</em> является лучшим выбором. Он прост в работе, безопасен и дает отличный визуальный результат с минимальными усилиями.</p>
+
+<p>Если же ваша задача — создать функциональную деталь для механизма, корпус устройства, который будет находиться на солнце, или любой объект, требующий термостойкости и ударопрочности, то <em>ABS</em> не имеет альтернативы среди бюджетных материалов. Несмотря на сложность печати и необходимость вентиляции, именно он обеспечит долгий срок службы изделия.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>PLA — это выбор для простоты и декоративности, ABS — это выбор для прочности и функциональности в жестких условиях.</p></aside>
+
+<blockquote>
+<p>⚠️ Внимание: Свойства пластика могут варьироваться в зависимости от производителя и партии. Всегда проверяйте рекомендации на упаковке конкретной катушки перед началом печати.</p>
+</blockquote>
+
+<p>В современном мире аддитивных технологий также появляются гибридные материалы, такие как PETG или ASA, которые пытаются объединить лучшие качества обоих конкурентов. Однако фундаментальное понимание различий между классическими PLA и ABS остается базой, необходимой для успешной работы с любым другим полимером.</p>
+
+<details>
+<summary>Какой пластик лучше для печати шестеренок?</summary>
+<p>Для шестеренок лучше всего подходит ABS или PETG. PLA слишком хрупок и может сломаться под нагрузкой, а также быстро нагревается от трения, теряя форму.</p>
+</details>
+
+<details>
+<summary>Можно ли печатать ABS в квартире?</summary>
+<p>Технически можно, но крайне не рекомендуется без мощной вентиляции и фильтрации воздуха из-за выделения стирола. Для квартиры безопаснее использовать PLA или PETG.</p>
+</details>
+
+<details>
+<summary>Что делать, если углы модели ABS отклеиваются?</summary>
+<p>Увеличьте температуру стола, используйте клей-карандаш или лак, убедитесь, что камера закрыта, и включите режим "Brim" (поля) в слайсере для увеличения площади контакта.</p>
+</details>
+
+<details>
+<summary>Можно ли шлифовать и красить PLA?</summary>
+<p>Да, PLA можно шлифовать наждачной бумагой, но он не поддается химической полировке ацетоном. Краска ложится хорошо, но поверхность нужно тщательно обезжиривать перед покраской.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/ni/nizkaya-skorost-zapisi-ssd.html" class="pb-related-card">
+                <span class="pb-related-title">Почему низкая скорость записи SSD: причины, тесты и решение</span>
+                <span class="pb-related-desc">Низкая скорость записи SSD? Разбираем причины замедления, влияние заполнения памяти, перегрев и SLC-</span>
+            </a><a href="/articles/p/po/podem-na-gorku-na-avtodrome-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Подъем на горку на автодроме на механике: Пошаговая инструкция</span>
+                <span class="pb-related-desc">Учимся стартовать на механике в горку без отката и глохновения. Разбор работы сцепления и ручника, т</span>
+            </a><a href="/articles/k/ka/kakaya-normalnaya-skorost-chteniya-ssd-diska.html" class="pb-related-card">
+                <span class="pb-related-title">Нормальная скорость чтения SSD: показатели для SATA, NVMe и PCIe 4.0</span>
+                <span class="pb-related-desc">Какая реальная скорость чтения SSD дисков считается нормальной? Сравнение стандартов SATA и NVMe, вл</span>
+            </a><a href="/articles/a/av/avs-chto-za-material.html" class="pb-related-card">
+                <span class="pb-related-title">ABS что за материал: свойства, применение и отличия от других пластиков</span>
+                <span class="pb-related-desc">Подробный обзор ABS-пластика. Характеристики, сферы использования, плюсы и минусы материала. Сравнен</span>
+            </a><a href="/articles/p/po/pochemu-yutub-medlenno-gruzit-video.html" class="pb-related-card">
+                <span class="pb-related-title">Почему YouTube медленно грузит видео: причины и решения</span>
+                <span class="pb-related-desc">Разбираем технические причины медленной загрузки видео на YouTube. Эффективные способы ускорения стр</span>
+            </a><a href="/articles/k/ka/kak-zapayat-abs-plastik.html" class="pb-related-card">
+                <span class="pb-related-title">Как запаять ABS пластик: методы, сварка и ремонт трещин</span>
+                <span class="pb-related-desc">Полное руководство по сварке ABS пластика. Обзор инструментов, выбор присадок и пошаговая инструкция</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

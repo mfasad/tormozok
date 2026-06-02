@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>SSD стал медленно работать: причины и способы ускорения диска — ТормозОК</title>
+    <meta name="description" content="Почему SSD потерял скорость? Полное руководство по диагностике, очистке и восстановлению производительности накопителя. Проверьте здоровье диска прямо сейчас.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/s/ss/ssd-stal-medlenno-rabotat.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="SSD стал медленно работать: причины и способы ускорения диска">
+    <meta property="og:description" content="Почему SSD потерял скорость? Полное руководство по диагностике, очистке и восстановлению производительности накопителя. Проверьте здоровье диска прямо сейчас.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">SSD стал медленно работать: причины и способы ускорения диска</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#причины-деградации-скорости-работы-накопителя">Причины деградации скорости работы накопителя</a></li><li><a href="#проверка-состояния-здоровья-и-фактора-износа">Проверка состояния здоровья и фактора износа</a></li><li><a href="#эффективные-методы-оптимизации-и-настройки-системы">Эффективные методы оптимизации и настройки системы</a></li><li><a href="#инструменты-для-диагностики-и-восстановления">Инструменты для диагностики и восстановления</a></li><li><a href="#роль-прошивки-и-драйверов-в-производительности">Роль прошивки и драйверов в производительности</a></li><li><a href="#физические-факторы-и-условия-эксплуатации">Физические факторы и условия эксплуатации</a></li><li><a href="#когда-стоит-задуматься-о-замене-накопителя">Когда стоит задуматься о замене накопителя</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/b/be/besprovodnaya-mysh-tormozit-pri-dvizhenii.html">Беспроводная мышь тормозит: причины, диагностика и методы устранения</a></li><li><a href="/articles/k/ka/kakuyu-temperaturu-vyderzhivaet-kraska.html">Температура выдержки термостойких красок: виды, составы и пределы</a></li><li><a href="/articles/m/me/medlennaya-skorost-zhestkogo-diska.html">Почему медленный жесткий диск: причины, диагностика и ускорение HDD</a></li><li><a href="/articles/c/ch/chto-takoe-parashyut-na-fure.html">Парашют на фуре: что это такое, принцип работы и требования</a></li><li><a href="/articles/v/vr/vremeni-u-nas-net-klichko.html">Фраза Кличко о времени: миф или реальность в автоспорте?</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему SSD стал работать медленно: Диагностика и восстановление скорости</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#причины-деградации-скорости-работы-накопителя">Причины деградации скорости работы накопителя</a></li><li><a href="#проверка-состояния-здоровья-и-фактора-износа">Проверка состояния здоровья и фактора износа</a></li><li><a href="#эффективные-методы-оптимизации-и-настройки-системы">Эффективные методы оптимизации и настройки системы</a></li><li><a href="#инструменты-для-диагностики-и-восстановления">Инструменты для диагностики и восстановления</a></li><li><a href="#роль-прошивки-и-драйверов-в-производительности">Роль прошивки и драйверов в производительности</a></li><li><a href="#физические-факторы-и-условия-эксплуатации">Физические факторы и условия эксплуатации</a></li><li><a href="#когда-стоит-задуматься-о-замене-накопителя">Когда стоит задуматься о замене накопителя</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Вы столкнулись с тем, что компьютер начал подвисать, а запуск программ занимает не секунды, как раньше, а минуты? Скорее всего, ваш <em>твердотельный накопитель</em> утратил свои первоначальные характеристики. Это распространенная проблема, с которой сталкиваются пользователи как бюджетных, так и премиальных моделей. В отличие от классических жестких дисков, <strong>SSD</strong> имеют сложный механизм управления ячейками памяти, который требует правильной настройки и регулярного обслуживания.</p>
+
+<p>Медленная работа может быть вызвана множеством факторов: от переполнения памяти до программных сбоев контроллера. Иногда достаточно простой оптимизации, чтобы вернуть устройству былую скорость, в других случаях потребуется замена прошивки или даже самого накопителя. <mark>Игнорирование падения скорости может привести к полной остановке работы диска и потере всех данных</mark>.</p>
+
+<p>В этой статье мы разберем основные причины деградации производительности и предоставим четкие алгоритмы действий. Вы узнаете, как отличить программный сбой от физической поломки и какие инструменты помогут диагностировать проблему.</p>
+
+<h2 id="причины-деградации-скорости-работы-накопителя">Причины деградации скорости работы накопителя</h2>
+
+<p>Основная причина замедления современных <strong>NAND-памяти</strong> заключается в особенностях их архитектуры. Когда вы удаляете файлы, контроллер не стирает их мгновенно, а помечает как доступные для перезаписи. В процессе работы накопитель накапливает множество таких «мусорных» блоков.</p>
+
+<p>Если функция <strong>TRIM</strong> отключена или работает некорректно, контроллер тратит все больше времени на перемещение данных при записи новых файлов. Это явление известно как «эффект заполнения». Новые данные приходится записывать поверх старых, что требует предварительного стирания блоков, что значительно снижает скорость.</p>
+
+<p>Еще одним фактором является отсутствие <em>выравнивания разделов</em> при установке операционной системы. Если секторы не совпадают с физическими блоками памяти, каждый запрос к диску требует нескольких операций чтения и записи. Это создает лишнюю нагрузку на контроллер и ускоряет износ.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Не используйте обычную дефрагментацию для SSD! Это не ускорит работу, а лишь сократит ресурс ячеек памяти, так как механизм SSD работает совершенно иначе, чем у HDD.</blockquote>
+
+<h2 id="проверка-состояния-здоровья-и-фактора-износа">Проверка состояния здоровья и фактора износа</h2>
+
+<p>Прежде чем пытаться ускорить диск, необходимо понять его текущее состояние. Для этого используются специальные утилиты, которые считывают <strong>S.M.A.R.T.</strong> атрибуты. Эти данные показывают реальное количество записанных данных, температуру и процент износа.</p>
+
+<p>Особое внимание стоит уделить значению «Available Reserve» или «Wear Leveling Count». Если эти показатели находятся в красной зоне, диск может работать нестабильно не только из-за программных ошибок, но и из-за физического износа кристаллов памяти.</p>
+
+<p>Часто пользователи не замечают, что их диск работает в режиме <em>эмуляции кэша</em> после заполнения. Производители указывают скорость для небольшого объема данных в кэше, но при работе с большими массивами скорость падает до уровня дешевых карт памяти.</p>
+
+<p>Для детальной проверки используйте утилиты от производителя вашего накопителя, такие как <em>Samsung Magician</em>, <em>Crucial Storage Executive</em> или универсальный <strong>CrystalDiskInfo</strong>. Они покажут точный процент здоровья и остаточный ресурс.</p>
+
+<div class="pb-poll" id="poll-6dfee779"><div class="pb-poll-question">📊 Какой показатель здоровья вашего SSD?</div><div class="pb-poll-option" data-poll="6dfee779" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 90%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6dfee779" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">70-90%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6dfee779" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">50-70%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="6dfee779" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее 50%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="эффективные-методы-оптимизации-и-настройки-системы">Эффективные методы оптимизации и настройки системы</h2>
+
+<p>Если диагностика не выявила критических ошибок, стоит перейти к программной оптимизации. Первым шагом должна стать проверка настроек электропитания. В режиме энергосбережения контроллер может снижать тактовую частоту, что приводит к заметным задержкам при чтении данных.</p>
+
+<p>Необходимо убедиться, что в BIOS включена поддержка режима <code>AHCI</code> или <code>NVMe</code>. Работа в устаревшем режиме <code>IDE</code> или неправильная настройка шины PCIe могут ограничивать пропускную способность накопителя в разы.</p>
+
+<p>Также стоит проверить, не переполнен ли системный раздел. SSD теряет скорость, когда свободное место становится меньше 10-15% от общего объема. Контроллеру требуется свободная память для операций сборки мусора и кэширования.</p>
+
+<h2 id="инструменты-для-диагностики-и-восстановления">Инструменты для диагностики и восстановления</h2>
+
+<p>Существует набор проверенных инструментов, которые помогут выявить и исправить проблемы. Ниже приведена таблица с основными утилитами и их назначением:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Инструмент</th>
+<th>Назначение</th>
+<th>Тип доступа</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CrystalDiskInfo</td>
+<td>Чтение S.M.A.R.T. атрибутов и температуры</td>
+<td>Бесплатно</td>
+</tr>
+<tr>
+<td>AS SSD Benchmark</td>
+<td>Тестирование скорости последовательного и случайного доступа</td>
+<td>Бесплатно</td>
+</tr>
+<tr>
+<td>CrystalDiskMark</td>
+<td>Замер пиковой скорости чтения/записи</td>
+<td>Бесплатно</td>
+</tr>
+<tr>
+<td>Официальная утилита бренда</td>
+<td>Обновление прошивки и функция Secure Erase</td>
+<td>Бесплатно</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Одной из самых действенных процедур восстановления является <strong>Secure Erase</strong>. Эта команда сбрасывает все ячейки памяти в исходное заводское состояние, мгновенно возвращая максимальную скорость работы. Однако она полностью удаляет все данные на диске, поэтому делать это нужно только после резервного копирования.</p>
+
+<p>Важно понимать, что некоторые функции, например, автоматическое обновление прошивки, могут быть недоступны в стандартных настройках Windows. Их необходимо запускать из-под специализированного ПО производителя.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед оптимизацией</h4><label class="check-item"><input type="checkbox"><span>Скопировать важные данные</span></label><label class="check-item"><input type="checkbox"><span>Проверить свободное место</span></label><label class="check-item"><input type="checkbox"><span>Включить режим AHCI</span></label><label class="check-item"><input type="checkbox"><span>Отключить гибернацию</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Перед выполнением команды Secure Erase обязательно создайте полную резервную копию всех данных, так как процесс стереть всё безвозвратно.</blockquote>
+
+<h2 id="роль-прошивки-и-драйверов-в-производительности">Роль прошивки и драйверов в производительности</h2>
+
+<p>Частой причиной медленной работы является устаревшая прошивка контроллера. Производители регулярно выпускают обновления, которые исправляют ошибки в алгоритмах сборки мусора и управления питанием. Установленная годами назад версия ПО может некорректно работать с новыми версиями операционных систем.</p>
+
+<p>Для проверки обновлений зайдите на официальный сайт производителя вашего накопителя. В разделе «Поддержка» или «Драйверы» найдите модель вашего устройства. Если есть выходная версия, скачайте её и запустите процесс обновления.</p>
+
+<p>Также стоит обратить внимание на драйверы контроллера. В диспетчере устройств убедитесь, что для вашего <em>NVMe SSD</em> или SATA контроллера стоят драйверы, установленные не «по умолчанию» Windows, а фирменные, если они доступны.</p>
+
+<p>Иногда проблема кроется в конфликте с антивирусным ПО. Реальное время сканирования может блокировать обращение к диску при каждом чтении файла. Попробуйте добавить папки с установленными программами в исключения антивируса.</p>
+
+<details class="pb-accordion"><summary>Что делать, если прошивка не обновляется?</summary><div class="pb-accordion-body"><p>Если стандартный способ обновления не сработал, попробуйте создать загрузочную флешку с утилитой производителя. В BIOS смените загрузочное устройство на флешку. Это позволит обновить прошивку до загрузки операционной системы, что часто решает проблемы с «зависанием» контроллера.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы используете RAID-массив, обновление прошивки требует особой осторожности. Скоординируйте действия с синхронизацией массива, чтобы избежать потери данных при сбое во время процесса.</p></aside>
+
+<h2 id="физические-факторы-и-условия-эксплуатации">Физические факторы и условия эксплуатации</h2>
+
+<p>Температурный режим играет критическую роль в работе SSD. При перегреве контроллер автоматически снижает частоту работы, чтобы предотвратить повреждение ячеек. Это явление называется <strong>троттлинг</strong>. Если ваш компьютер работает в пыльном корпусе или не имеет активного охлаждения, это может быть главной причиной медленной работы.</p>
+
+<p>Проверьте температуру диска с помощью утилит мониторинга. Для NVMe дисков температура выше 70°C уже считается критической. Если вы видите, что скорость падает именно после длительного сеанса работы, скорее всего, диск перегревается и уходит в защиту.</p>
+
+<p>Также стоит проверить качество подключения. Ослабленный кабель SATA или неплотно вставленный модуль M.2 могут вызывать ошибки передачи данных. Контроллер будет постоянно перезапрашивать пакеты информации, что резко снизит реальную скорость работы.</p>
+
+<p>Если диск установлен в старый порт SATA 2.0, он физически не сможет работать быстрее его пределов, даже если сам накопитель поддерживает стандарт SATA 3.0. Убедитесь, что подключаете устройство в порт с правильным интерфейсом.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перегрев — самая частая причина внезапного падения скорости NVMe дисков. Установите радиатор или улучшите продуваемость корпуса.</p></aside>
+
+<h2 id="когда-стоит-задуматься-о-замене-накопителя">Когда стоит задуматься о замене накопителя</h2>
+
+<p>Иногда оптимизация не помогает, и диск продолжает работать медленно. Это может сигнализировать о начале физической деградации чипов памяти. Если в S.M.A.R.T. появляются ошибки «Reallocated Sector Count» или «Uncorrectable Error Count», диск находится на грани полного отказа.</p>
+
+<p>Особенно это актуально для бюджетных моделей без DRAM-кэша. Со временем такие накопители теряют способность эффективно управлять буфером, и скорость записи падает до минимальных значений, делая работу с системой практически невозможной.</p>
+
+<p>Если диск ведет себя нестабильно: исчезает из системы, файлы corruptятся, а скорость чтения падает до 50-100 МБ/с, отложите все попытки ремонта. В этом случае единственным решением является замена накопителя на новый.</p>
+
+<p>Не откладывайте решение проблемы, так как отказ SSD часто происходит внезапно и без предупреждений. Регулярное создание резервных копий на внешний носитель или в облако — единственная гарантия сохранности ваших данных в такой ситуации.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если диск издает странные звуки или сильно нагревается, немедленно прекратите работу с ним и обратитесь к специалисту для извлечения данных.</blockquote>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему SSD работает медленно сразу после покупки?</summary>
+<p>Это может быть связано с нестабильной прошивкой, отсутствием сформированного кэша или неправильным подключением к порту SATA 2.0. Проверьте версию прошивки и подключите диск напрямую к материнской плате.</p>
+</details>
+
+<details>
+<summary>Может ли антивирус замедлить работу SSD?</summary>
+<p>Да, постоянная проверка всех файлов в реальном времени создает высокую нагрузку на контроллер диска. Попробуйте временно отключить антивирус или добавить игнорируемые папки в исключения.</p>
+</details>
+
+<details>
+<summary>Сколько времени занимает процедура Secure Erase?</summary>
+<p>Процесс очистки обычно занимает от 2 до 10 минут в зависимости от объема накопителя. Важно не прерывать питание устройства во время этой операции.</p>
+</details>
+
+<details>
+<summary>Нужно ли дефрагментировать SSD?</summary>
+<p>Нет, дефрагментация не требуется и даже вредна. Операционная система Windows автоматически отправляет команду TRIM, которая выполняет необходимую очистку блоков без физического перемещения данных.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/b/be/besprovodnaya-mysh-tormozit-pri-dvizhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Беспроводная мышь тормозит: причины, диагностика и методы устранения</span>
+                <span class="pb-related-desc">Мышь с задержкой движения? Узнайте, как найти причину лагов: от разряда батареи до радиопомех. Пошаг</span>
+            </a><a href="/articles/k/ka/kakuyu-temperaturu-vyderzhivaet-kraska.html" class="pb-related-card">
+                <span class="pb-related-title">Температура выдержки термостойких красок: виды, составы и пределы</span>
+                <span class="pb-related-desc">Узнайте, какую температуру выдерживает краска для печей, авто и мангалов. Сравнение температурных ре</span>
+            </a><a href="/articles/m/me/medlennaya-skorost-zhestkogo-diska.html" class="pb-related-card">
+                <span class="pb-related-title">Почему медленный жесткий диск: причины, диагностика и ускорение HDD</span>
+                <span class="pb-related-desc">Жесткий диск тормозит? Разбираем реальные причины низкой скорости HDD, методы диагностики и 7 эффект</span>
+            </a><a href="/articles/c/ch/chto-takoe-parashyut-na-fure.html" class="pb-related-card">
+                <span class="pb-related-title">Парашют на фуре: что это такое, принцип работы и требования</span>
+                <span class="pb-related-desc">Разбираем, что такое парашют на фуре. Принцип работы аэродинамических тормозов, когда их используют </span>
+            </a><a href="/articles/v/vr/vremeni-u-nas-net-klichko.html" class="pb-related-card">
+                <span class="pb-related-title">Фраза Кличко о времени: миф или реальность в автоспорте?</span>
+                <span class="pb-related-desc">Анализ знаменитой фразы Виталия Кличко о нехватке времени. Разбор контекста, особенностей работы в б</span>
+            </a><a href="/articles/f/fr/fraza-klichko-pro-zavtrashnij.html" class="pb-related-card">
+                <span class="pb-related-title">Цитата Кличко про завтрашний день: смысл, контекст и мотивация</span>
+                <span class="pb-related-desc">Разбираем знаменитую фразу Владимира Кличко о завтрашнем дне. Узнайте истинный смысл высказывания, е</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

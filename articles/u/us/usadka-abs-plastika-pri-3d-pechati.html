@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Усадка ABS пластика при 3D печати: причины, решения и советы — ТормозОК</title>
+    <meta name="description" content="Полный гид по борьбе с усадкой ABS пластика. Узнайте про температурные режимы, закрытые камеры и добавки для снижения деформации моделей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/u/us/usadka-abs-plastika-pri-3d-pechati.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Усадка ABS пластика при 3D печати: причины, решения и советы">
+    <meta property="og:description" content="Полный гид по борьбе с усадкой ABS пластика. Узнайте про температурные режимы, закрытые камеры и добавки для снижения деформации моделей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Усадка ABS пластика при 3D печати: причины, решения и советы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проблему-деформации-акрилонитрилбутадиенстирола">Введение в проблему деформации акрилонитрилбутадиенстирола</a></li><li><a href="#физика-процесса-и-температурные-режимы">Физика процесса и температурные режимы</a></li><li><a href="#роль-закрытой-камеры-и-контролируемой-среды">Роль закрытой камеры и контролируемой среды</a></li><li><a href="#техники-адгезии-и-подготовка-рабочего-стола">Техники адгезии и подготовка рабочего стола</a></li><li><a href="#стратегии-слайсеринга-и-настройки-геометрии">Стратегии слайсеринга и настройки геометрии</a></li><li><a href="#таблица-сравнения-методов-снижения-усадки">Таблица сравнения методов снижения усадки</a></li><li><a href="#альтернативные-материалы-и-компромиссы">Альтернативные материалы и компромиссы</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pl/plokho-rabotaet-besprovodnaya-mysh-na-noutbuke-chto-delat.html">Почему плохо работает беспроводная мышь на ноутбуке: 7 шагов решения</a></li><li><a href="/articles/s/sr/srednij-probeg-tormoznykh-kolodok.html">Средний пробег тормозных колодок: таблица, сроки и износ</a></li><li><a href="/articles/r/re/reaktsionnyj-klej-dlya-plastika.html">Реакционный клей для пластика: виды, свойства и применение</a></li><li><a href="/articles/s/se/sem-plastik-dlya-3d-pechati.html">SLA/DLP пластик для 3D печати: виды, свойства и выбор смолы</a></li><li><a href="/articles/k/ka/kak-pravilno-ezdit-na-skejtborde.html">Как правильно ездить на скейтборде: основы, стойка и безопасность</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Усадка ABS пластика при 3D печати: как избежать деформации и расслоения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проблему-деформации-акрилонитрилбутадиенстирола">Введение в проблему деформации акрилонитрилбутадиенстирола</a></li><li><a href="#физика-процесса-и-температурные-режимы">Физика процесса и температурные режимы</a></li><li><a href="#роль-закрытой-камеры-и-контролируемой-среды">Роль закрытой камеры и контролируемой среды</a></li><li><a href="#техники-адгезии-и-подготовка-рабочего-стола">Техники адгезии и подготовка рабочего стола</a></li><li><a href="#стратегии-слайсеринга-и-настройки-геометрии">Стратегии слайсеринга и настройки геометрии</a></li><li><a href="#таблица-сравнения-методов-снижения-усадки">Таблица сравнения методов снижения усадки</a></li><li><a href="#альтернативные-материалы-и-компромиссы">Альтернативные материалы и компромиссы</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проблему-деформации-акрилонитрилбутадиенстирола">Введение в проблему деформации акрилонитрилбутадиенстирола</h2>
+
+<p>Начинающие и опытные пользователи 3D-принтеров часто сталкиваются с тем, что напечатанная деталь <strong>отклеивается</strong> от стола в процессе печати. Эта проблема носит название усадки, и она является главным врагом при работе с <em>ABS-пластиком</em>. Материал обладает высокой степенью теплового расширения, что приводит к внутренним напряжениям при остывании.</p>
+
+<p>Когда экструдер выдавливает горячий поток, он мгновенно начинает остывать, контактируя с холодным воздухом или платформой. Разница температур вызывает неравномерное сжатие слоев. Если адгезия к столу недостаточна, углы модели поднимаются вверх, образуя характерный эффект"акульего плавника" или полного отрыва краев.</p>
+
+<p>Понимание физики процесса — это первый шаг к успешной печати. Вам нужно не просто изменить настройки, а создать <strong>правильную среду</strong> вокруг печатающего механизма. Игнорирование этих нюансов приведет к браку даже при использовании самого дорогого оборудования и качественного filament.</p>
+
+<h2 id="физика-процесса-и-температурные-режимы">Физика процесса и температурные режимы</h2>
+
+<p>Суть усадки кроется в коэффициенте теплового расширения материала. При нагревании до температуры печати, которая для <em>ABS</em> составляет около 230–250°C, полимерные цепи расширяются. Охлаждение до комнатной температуры вызывает их сжатие, и если деталь зафиксирована на столе, это сжатие создает колоссальное напряжение.</p>
+
+<p>Критическим моментом является скорость охлаждения. Если горячий слой остывает слишком быстро, он"стягивает" предыдущий, который уже успел затвердеть. Это приводит к расслоению стенок или деформации геометрии. <strong>Температура сопла</strong> должна быть точно калибрована: слишком высокая температура увеличивает объем усадки, а слишком низкая — ухудшает сцепление между слоями.</p>
+
+<p>Часто пользователи пытаются решить проблему, снижая температуру стола, но это лишь усугубляет ситуацию. Для ABS критически важно поддерживать <strong>высокую температуру</strong> рабочего стола в диапазоне 100–110°C. Это позволяет нижним слоям оставаться эластичными дольше и снижает градиент температур между слоем и платформой.</p>
+
+<blockquote>⚠️ Внимание: Не пытайтесь компенсировать усадку только изменением температуры сопла без обеспечения соответствующей температуры стола и закрытой камеры, так как это не решит проблему внутренних напряжений в объеме детали.</blockquote>
+
+<p>Важно понимать, что каждый производитель пластика стабилизирует материал по-разному. Кривая охлаждения может отличаться у брендов <em>PolyMaker</em>, <em>Prusament</em> или <em>Fillamentum</em>. Всегда сверяйтесь с рекомендациями на упаковке и проводите тестовые напечатки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная причина усадки — резкий перепад температур между только что напечатанным слоем и окружающим воздухом или предыдущим слоем.</p></aside>
+
+<h2 id="роль-закрытой-камеры-и-контролируемой-среды">Роль закрытой камеры и контролируемой среды</h2>
+
+<p>Для печати ABS наличие <strong>закрытой камеры</strong> является не просто рекомендацией, а обязательным условием. Открытый принтер подвержен сквознякам и быстрому отводу тепла, что провоцирует мгновенную усадку. Камера служит термосом, накапливая тепло от нагретой платформы и экструдера.</p>
+
+<p>В замкнутом пространстве температура воздуха поднимается до 45–60°C. Это создает"тепловую ванну", где деталь остывает медленно и равномерно. Скорость усадки в таких условиях снижается в разы, позволяя внутренним напряжениям"релаксировать" без разрушения структуры модели.</p>
+
+<p>Если ваш принтер не имеет заводской камеры, многие энтузиасты изготавливают самодельные кожухи из <code>акрила</code> или <code>фанеры</code>. Главное — обеспечить герметичность, но оставить небольшие вентиляционные отверстия для отвода паров стирогола, так как они токсичны.</p>
+
+<p>Использование <em>вентиляторов охлаждения</em> сопла при печати ABS часто категорически запрещено. Включенный обдув мгновенно охлаждает верхний слой, вызывая его быструю усадку и отрыв. В некоторых случаях можно использовать обдув на минимальных оборотах только для самых верхних слоев периметра, но риск деформации остается высоким.</p>
+
+<details class="pb-accordion"><summary>Как сделать простую камеру для открытого принтера</summary><div class="pb-accordion-body"><p> Используйте листы прозрачного оргстекла или плотного картона, скрепив их скотчем по периметру принтера. Убедитесь, что конструкция не касается движущихся частей (каретки и экструдера) и имеет доступ к кнопкам управления.</p></div></details>
+
+<h2 id="техники-адгезии-и-подготовка-рабочего-стола">Техники адгезии и подготовка рабочего стола</h2>
+
+<p>Даже в идеальной камере модель может отклеиться, если поверхность стола не подготовлена должным образом. Адгезия — это сила сцепления первого слоя с платформой. Для ABS недостаточно просто нагреть стол; нужно создать химическую или механикую связь. Лучшим решением является использование <strong>специальных клеев</strong> или растворов.</p>
+
+<p>Классический метод — нанесение <em>лака для волос</em> сильной фиксации. Клейкая основа лака при нагревании создает липкий слой, который удерживает пластик. Также широко используется раствор ABS в ацетоне (ABS-сок), который наносится кисточкой на холодный стол перед печатью.</p>
+
+<ul>
+<li>✅ Используйте строительный клей-карандаш <em>Loctite</em> или аналоги для создания шероховатой поверхности.</li>
+<li>✅ Наносите <code>ABS-сок</code> на стеклянную платформу для улучшения адгезии и сглаживания нижнего слоя.</li>
+<li>✅ Применяйте специализированные спреи <em>3DLAC</em>, разработанные специально для 3D-печати.</li>
+</ul>
+
+<p>Текстура поверхности также играет роль. Гладкое стекло работает хуже, чем <strong>текстурированная PEI-пластина</strong> или <em>оригинальный стол BuildTak</em>. Шероховатости увеличивают площадь контакта, делая отрыв более сложным физическим процессом.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка адгезии перед печатью</h4><label class="check-item"><input type="checkbox"><span>Настроить температуру стола на 100-110°C</span></label><label class="check-item"><input type="checkbox"><span>Очистить поверхность спиртом</span></label><label class="check-item"><input type="checkbox"><span>Нанести тонкий слой клея или лака</span></label><label class="check-item"><input type="checkbox"><span>Дать поверхности слегка остыть перед началом печати</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p> Экспериментальный подбор толщины покрытия — это часть процесса настройки.</p>
+
+<h2 id="стратегии-слайсеринга-и-настройки-геометрии">Стратегии слайсеринга и настройки геометрии</h2>
+
+<p>Правильная настройка слайсера позволяет компенсировать физические ограничения материала. Первая и самая эффективная техника — использование <strong>брайма (brim)</strong>. Это широкая плоская"юбка", которая печатается вокруг основания модели, увеличивая площадь контакта со столом в несколько раз.</p>
+
+<p>Браим работает как якорь: даже если углы модели начнут подниматься, широкая полоса удержит их на месте. После завершения печати браим легко удаляется, не повреждая саму деталь. Для сложных моделей можно использовать <em>рафт (raft)</em>, создавая целую платформу под моделью, но это увеличивает расход материала.</p>
+
+<p>Еще одним важным параметром является <strong>направление печати</strong>. При печати длинных прямоугольных деталей стоит ориентировать их так, чтобы углы находились в центре платформы, где температура наиболее стабильна. Избегайте размещения больших плоскостей параллельно потоку воздуха в камере.</p>
+
+<p>Также стоит обратить внимание на параметр <code>Initial Layer Line Width</code>. Увеличение ширины линий первого слоя до 150% позволяет лучше"вдавить" пластик в поверхность стола, улучшая сцепление. Не забывайте про <strong>параметр Flow</strong> для первого слоя — небольшое увеличение подачи (105-110%) гарантирует полную плотность заполнения.</p>
+
+<div class="pb-poll" id="poll-e0054724"><div class="pb-poll-question">📊 Какой метод адгезии вы используете чаще всего?</div><div class="pb-poll-option" data-poll="e0054724" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">ABS-сок (раствор в ацетоне)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e0054724" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Лак для волос</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e0054724" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Специальный клей-спрей</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e0054724" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Текстурированная PEI-пластина без клея</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Настройка скорости печати также влияет на усадку. Слишком быстрая печать первого слоя не дает пластику достаточно времени"прилипнуть" к поверхности. Рекомендуется снижать скорость до <code>20-30 мм/с</code> для первых двух слоев.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Использование брайма (brim) — самый эффективный программный способ борьбы с отрывом углов при печати крупногабаритных моделей из ABS.</p></aside>
+
+<h2 id="таблица-сравнения-методов-снижения-усадки">Таблица сравнения методов снижения усадки</h2>
+
+<p>Ниже приведена сводная таблица основных методов борьбы с усадкой и их эффективности для различных сценариев печати.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод</th>
+<th>Эффективность</th>
+<th>Сложность внедрения</th>
+<th>Влияние на время печати</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Закрытая камера</td>
+<td>Очень высокая</td>
+<td>Средняя</td>
+<td>Не влияет</td>
+</tr>
+<tr>
+<td>ABS-сок (клей)</td>
+<td>Высокая</td>
+<td>Низкая</td>
+<td>Не влияет</td>
+</tr>
+<tr>
+<td>Браим (Brim)</td>
+<td>Высокая</td>
+<td>Низкая</td>
+<td>Увеличивает на 5-10%</td>
+</tr>
+<tr>
+<td>Химическая постобработка</td>
+<td>Средняя (сглаживает)</td>
+<td>Высокая</td>
+<td>Значительно увеличивает</td>
+</tr>
+<tr>
+<td>Повышение температуры стола</td>
+<td>Средняя</td>
+<td>Низкая</td>
+<td>Не влияет</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор метода зависит от бюджета и конструкции вашего принтера. Например, для открытых принтеров лучшим решением будет комбинация браима и специального клея, тогда как для закрытых систем достаточно температуры и правильной настройки слайсера.</p>
+
+<p>Важно отметить, что химическая постобработка ацетоном, хоть и позволяет выровнять поверхность, не всегда устраняет внутренние напряжения, возникшие при печати. Иногда деталь может треснуть уже после обработки, если напряжения были слишком велики.</p>
+
+<h2 id="альтернативные-материалы-и-компромиссы">Альтернативные материалы и компромиссы</h2>
+
+<p>Если проблема усадки становится непреодолимой, стоит рассмотреть использование модифицированных материалов. Существуют пластики на основе ABS, но с добавками, снижающими усадку. К ним относятся <em>ABS-Plus</em> или композиты с добавлением волокон.</p>
+
+<p>Также популярны материалы <strong>ASA</strong> (акрилонитрилстиролакрилат), который обладает схожими механическими свойствами с ABS, но значительно лучше противостоит ультрафиолету и имеет меньшую усадку. Это делает его идеальным выбором для наружных деталей.</p>
+
+<ul>
+<li>✅ <em>ABS-CF</em> (с углеродным волокном) — жестче и прочнее, но требует твердосплавного сопла.</li>
+<li>✅ <strong>ASA</strong> — отличная альтернатива для уличных применений и менее склонна к деформации.</li>
+<li>✅ <em>Polymaker PolyMax</em> — запатентованная формула для снижения хрупкости и усадки.</li>
+</ul>
+
+<p>Переход на эти материалы часто требует пересмотра температурных настроек. Например, <code>ASA</code> обычно печатается при температуре на 5-10 градусов ниже, чем классический ABS, что немного меняет физический процесс остывания.</p>
+
+<blockquote>⚠️ Внимание: При работе с композитными пластиками (с волокнами) обязательно используйте сопла из закаленной стали или Ruby, так как абразивные добавки быстро разрушают латунные сопла.</blockquote>
+
+<p>Иногда проще изменить дизайн детали, разбивая большую модель на несколько частей, которые склеиваются после печати. Это полностью устраняет проблему усадки крупных плоскостей.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы используете ABS-сок, наносите его тонким слоем и дайте ацетону полностью испариться перед началом печати, иначе первый слой может прилипнуть слишком сильно и оторвать деталь при снятии.</p></aside>
+
+<details class="pb-accordion"><summary>Почему нельзя использовать ацетон для очистки во время работы</summary><div class="pb-accordion-body"><p> Пары ацетона могут повредить электронику принтера, разъесть пластик корпуса и вызвать коррозию контактов, поэтому очистку проводите только при выключенном устройстве.</p></div></details>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему углы моей модели поднимаются, даже если я использую закрытую камеру?</summary>
+<p>Это может быть связано с недостаточной температурой стола или плохой адгезией. Проверьте, не слишком ли быстро охлаждается камера при открытии дверцы. Также убедитесь, что поверхность стола чистая и обезжиренная.</p>
+</details>
+
+<details>
+<summary>Можно ли печатать ABS без закрытой камеры?</summary>
+<p>Технически возможно, но крайне сложно. Вам потребуется использовать очень сильный браим, ABS-сок и, возможно, утеплить принтер подручными средствами. Для крупных моделей это практически невозможно без деформации.</p>
+</details>
+
+<details>
+<summary>Какое сопло лучше использовать для ABS?</strong>?</summary>
+<p>Для стандартного ABS подойдет латунное сопло диаметром 0.4 мм. Если вы печатаете композиты (ABS-CF), обязательно используйте твердосплавное (hardened steel) или рубиновое сопло, чтобы избежать износа.</p>
+</details>
+
+<details>
+<summary>Можно ли смешивать ABS с другими пластиками для уменьшения усадки?</summary>
+<p>Смешивание пластика в экструдере недопустимо, так как они имеют разные температуры плавления и химический состав. Это приведет к засору сопла и браку. Используйте готовые смеси от производителей.</p>
+</details>
+
+<details>
+<summary>Что делать, если модель отклеилась в середине печати?</summary>
+<p>Если отрыв произошел на ранних этапах, печать можно продолжить, предварительно очистив место и нанеся клей. Если отрыв значительный, лучше удалить модель и начать заново, так как геометрия будет нарушена.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pl/plokho-rabotaet-besprovodnaya-mysh-na-noutbuke-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Почему плохо работает беспроводная мышь на ноутбуке: 7 шагов решения</span>
+                <span class="pb-related-desc">Мышь зависает или пропал курсор? Полное руководство по диагностике: от замены батарейки до настройки</span>
+            </a><a href="/articles/s/sr/srednij-probeg-tormoznykh-kolodok.html" class="pb-related-card">
+                <span class="pb-related-title">Средний пробег тормозных колодок: таблица, сроки и износ</span>
+                <span class="pb-related-desc">Сколько ходят передние и задние колодки? Факторы ресурса, признаки износа и таблица пробегов для поп</span>
+            </a><a href="/articles/r/re/reaktsionnyj-klej-dlya-plastika.html" class="pb-related-card">
+                <span class="pb-related-title">Реакционный клей для пластика: виды, свойства и применение</span>
+                <span class="pb-related-desc">Полный гид по реакционным клеям для пластика: эпоксидные, полиуретановые и цианакрилаты. Техника нан</span>
+            </a><a href="/articles/s/se/sem-plastik-dlya-3d-pechati.html" class="pb-related-card">
+                <span class="pb-related-title">SLA/DLP пластик для 3D печати: виды, свойства и выбор смолы</span>
+                <span class="pb-related-desc">Полный гид по жидким смолам для стереолитографии. Сравнение стандартных, гибких и инженерных материа</span>
+            </a><a href="/articles/k/ka/kak-pravilno-ezdit-na-skejtborde.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно ездить на скейтборде: основы, стойка и безопасность</span>
+                <span class="pb-related-desc">Полное руководство по катанию на скейтборде. Изучите правильную стойку, технику торможения, уход за </span>
+            </a><a href="/articles/k/ka/kak-pravilno-ostanavlivatsya-na-svetofore-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно останавливаться на светофоре на механике: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как тормозить и останавливаться на механической КПП без рывков. Советы по использованию сце</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

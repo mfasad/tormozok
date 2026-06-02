@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Ретардер в Euro Truck Simulator 2: Полное руководство по настройке — ТормозОК</title>
+    <meta name="description" content="Разбираем, что такое ретардер в ETS2, как он работает, чем отличается от моторного тормоза и как правильно настроить для экономии тормозных колодок.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/c/ch/chto-takoe-retarder-v-evro-trak-simulyator-2.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ретардер в Euro Truck Simulator 2: Полное руководство по настройке">
+    <meta property="og:description" content="Разбираем, что такое ретардер в ETS2, как он работает, чем отличается от моторного тормоза и как правильно настроить для экономии тормозных колодок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-nav-active">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/tormoznaya-zhidkost/">Тормозная жидкость</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ретардер в Euro Truck Simulator 2: Полное руководство по настройке</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#суть-работы-гидродинамического-замедлителя">Суть работы гидродинамического замедлителя</a></li><li><a href="#различия-между-моторным-тормозом-и-ретардером">Различия между моторным тормозом и ретардером</a></li><li><a href="#управление-и-настройки-в-интерфейсе-игры">Управление и настройки в интерфейсе игры</a></li><li><a href="#технические-нюансы-и-ограничения">Технические нюансы и ограничения</a></li><li><a href="#сравнение-эффективности-тормозных-систем">Сравнение эффективности тормозных систем</a></li><li><a href="#практические-советы-по-вождению-с-ретардером">Практические советы по вождению с ретардером</a></li><li><a href="#частые-проблемы-и-их-решение">Частые проблемы и их решение</a></li><li><a href="#faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-zamenit-tormoznuyu-zhidkost-na-velosipede-s-gidravlicheskimi-tormozami.html">Замена тормозной жидкости: полная инструкция по прокачке гидравлики</a></li><li><a href="/articles/k/ka/kak-prokachat-tormoza-na-nive-21213.html">Как прокачать тормоза на Ниве 21213: пошаговая инструкция и нюансы</a></li><li><a href="/articles/t/to/tormoznaya-zhidkost-dlya-nivy-21214.html">Тормозная жидкость для Нивы 21214: выбор, замена и регламент</a></li><li><a href="/articles/r/re/reglament-zameny-tormoznoj-zhidkosti.html">Регламент замены тормозной жидкости: сроки, нормы и инструкция</a></li><li><a href="/articles/p/pr/prokachka-tormozov-oktaviya-tur.html">Прокачка тормозов Skoda Octavia Tour: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Что такое ретардер в Euro Truck Simulator 2: Гид по эксплуатации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#суть-работы-гидродинамического-замедлителя">Суть работы гидродинамического замедлителя</a></li><li><a href="#различия-между-моторным-тормозом-и-ретардером">Различия между моторным тормозом и ретардером</a></li><li><a href="#управление-и-настройки-в-интерфейсе-игры">Управление и настройки в интерфейсе игры</a></li><li><a href="#технические-нюансы-и-ограничения">Технические нюансы и ограничения</a></li><li><a href="#сравнение-эффективности-тормозных-систем">Сравнение эффективности тормозных систем</a></li><li><a href="#практические-советы-по-вождению-с-ретардером">Практические советы по вождению с ретардером</a></li><li><a href="#частые-проблемы-и-их-решение">Частые проблемы и их решение</a></li><li><a href="#faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие новички, впервые садясь за руль виртуального тягача в <em>Euro Truck Simulator 2</em>, сталкиваются с проблемой перегрева тормозных механизмов при спуске с гор. Индикатор красных колесных дисков сигнализирует о критической ситуации, когда обычные <strong>фрикционные тормоза</strong> уже не справляются с нагрузкой. В этот момент на помощь приходит специальное устройство — <strong>гидродинамический замедлитель</strong>, или, как его привыкли называть в сообществе, ретардер.</p>
+
+<p>Это не просто декоративная деталь интерфейса, а полноценный симулятор реального инженерного решения, применяемого на тяжелых грузовиках для снижения износа базовой тормозной системы. Понимание принципов работы <em>ретардера</em> позволяет вам проходить сложные горные перевалы без риска задымления и остановки на остывание.</p>
+
+<h2 id="суть-работы-гидродинамического-замедлителя">Суть работы гидродинамического замедлителя</h2>
+
+<p>В отличие от традиционных тормозов, которые преобразуют кинетическую энергию в тепло за счет трения колодок о диски, <strong>ретардер</strong> использует сопротивление жидкости. Внутри устройства находится ротор, вращающийся в камере, заполненной специальной жидкостью, обычно гидравлическим маслом. Когда вы активируете замедлитель, <strong>лопасти ротора</strong> начинают перемешивать жидкость, создавая колоссальное сопротивление вращению.</p>
+
+<p>Это сопротивление передается на <strong>карданный вал</strong> и далее на трансмиссию, эффективно замедляя движение автомобиля. Обратите внимание: в отличие от тормозов, здесь нет физического контакта между трущимися поверхностями, что исключает износ деталей. Греется в процессе работы именно сама <em>рабочая жидкость</em>, а не тормозные диски.</p>
+
+<p>Ключевое преимущество системы заключается в том, что она разгружает основные тормоза, позволяя им оставаться холодными для экстренных ситуаций. В игре это особенно важно при управлении тяжелыми полуприцепами на длинных спусках, где обычное торможение привело бы к <strong>закипанию тормозной жидкости</strong> и потере эффективности.</p>
+
+<h2 id="различия-между-моторным-тормозом-и-ретардером">Различия между моторным тормозом и ретардером</h2>
+
+<p>Часто игроки путают <em>моторный тормоз</em> (Engine Brake) и <strong>ретардер</strong>, считая их взаимозаменяемыми. Моторный тормоз работает за счет изменения фаз газораспределения или перекрытия выпускного тракта, создавая сопротивление при ходе поршней вверх. Его эффективность ограничена оборотами двигателя и максимально применима на низких скоростях.</p>
+
+<p>Ретардер же подключается к трансмиссии и работает независимо от оборотов двигателя, предоставляя гораздо более мощную силу торможения на высоких скоростях. Если <strong>турбо-компрессор</strong> на двигателе не обеспечивает достаточного замедления, именно гидродинамический замедлитель берет на себя основную нагрузку. Комбинация обоих устройств дает наилучший результат при спуске.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Ошибка новичков заключается в полном отказе от использования моторного тормоза в пользу ретардера. Моторный тормоз эффективен на низких скоростях и в городе, тогда как ретардер раскрывает свой потенциал на трассе и крутых спусках.</p>
+</blockquote>
+
+<p>Использование <strong>комплексного торможения</strong> позволяет вам не только быстрее снизить скорость, но и значительно сэкономить ресурс колодок. В симуляторе это отражается в статистике износа деталей: грамотное использование обоих систем продлевает жизнь <em>тормозным дискам</em> в разы.</p>
+
+<h2 id="управление-и-настройки-в-интерфейсе-игры">Управление и настройки в интерфейсе игры</h2>
+
+<p>По умолчанию в <em>Euro Truck Simulator 2</em> управление ретардером осуществляется через клавиши <code>F</code> и <code>G</code> (или <code>Left Ctrl</code> и <code>Right Ctrl</code> в зависимости от настроек). Нажатие на одну из клавиш включает ступень замедления, а нажатие на другую — выключает его или переключает на следующую ступень. Интерфейс показывает текущую ступень в виде шкалы или цифр.</p>
+
+<p>В меню настроек управления вы можете назначить отдельные клавиши для каждой ступени, что дает возможность тонкой регулировки. Например, можно настроить плавное увеличение усилия: <code>1-я ступень</code> для легкого замедления, <code>3-я ступень</code> для активного торможения. Это делает вождение более реалистичным и комфортным.</p>
+
+<ul>
+<li>🔼 Нажмите клавишу повышения для увеличения ступени замедления.</li>
+<li>🔽 Нажмите клавишу понижения для снижения ступени или полного отключения.</li>
+<li>🔧 Проверьте настройки в разделе <code>Input settings</code> для удобного распределения клавиш.</li>
+</ul>
+
+<p>Не стоит бояться резкого включения максимальной ступени на высокой скорости, если вы едете по прямой дороге. Однако на поворотах <strong>внезапное торможение</strong> может привести к потере сцепления задних колес и заносу, поэтому действуйте плавно.</p>
+
+<div class="pb-poll" id="poll-53f15f9c"><div class="pb-poll-question">📊 Какой способ торможения вы используете чаще всего?</div><div class="pb-poll-option" data-poll="53f15f9c" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только педаль тормоза</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53f15f9c" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Моторный тормоз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53f15f9c" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ретардер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="53f15f9c" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинация всех методов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="технические-нюансы-и-ограничения">Технические нюансы и ограничения</h2>
+
+<p>Важно понимать, что ретардер не работает, когда трансмиссия находится в нейтральном положении или вы выжали сцепление. Поскольку устройство подключено к карданному валу, для создания тягового усилия необходимо, чтобы двигатель был связан с колесами. Если вы нажмете <code>Clutch</code>, замедление мгновенно прекратится.</p>
+
+<p>Также существует физическое ограничение по перегреву. В более поздних версиях игры и модификациях реализована система охлаждения <em>ретардера</em>, но при экстремальных нагрузках эффективность может падать. Если индикатор перегрева загорается, следует снизить нагрузку или использовать альтернативные методы торможения.</p>
+
+<p>Мощность замедления зависит от типа коробки передач и модели тягача. Например, на <em>Volvo FH16</em> с гидротрансформатором <strong>инерционные потери</strong> могут быть выше, чем на механической КПП, что влияет на поведение машины при экстренном торможении.</p>
+
+<details class="pb-accordion"><summary>Как работает система охлаждения ретардера?</summary><div class="pb-accordion-body"><p>В реальной жизни и в продвинутых модах ретардер имеет отдельный радиатор. В базовой игре ETS2 система упрощена, но при длительном торможении эффективность снижается, имитируя перегрев рабочей жидкости.</p></div></details>
+
+<h2 id="сравнение-эффективности-тормозных-систем">Сравнение эффективности тормозных систем</h2>
+
+<p>Чтобы наглядно понять разницу в эффективности различных методов торможения, ниже приведена таблица, сравнивающая основные характеристики систем, доступных в игре. Это поможет вам выбрать оптимальную стратегию для разных дорожных условий.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип системы</th>
+<th>Эффективность на скорости</th>
+<th>Износ деталей</th>
+<th>Риск перегрева</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Тормозные колодки</td>
+<td>Высокая (до полной остановки)</td>
+<td>Высокий</td>
+<td>Критический</td>
+</tr>
+<tr>
+<td>Моторный тормоз</td>
+<td>Низкая (зависит от оборотов)</td>
+<td>Отсутствует</td>
+<td>Низкий</td>
+</tr>
+<tr>
+<td>Ретардер (ETS2)</td>
+<td>Очень высокая (до 100+ км/ч)</td>
+<td>Отсутствует</td>
+<td>Средний (в модах)</td>
+</tr>
+<tr>
+<td>Комбинация систем</td>
+<td>Максимальная</td>
+<td>Минимальный</td>
+<td>Контролируемый</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Анализируя данные, становится очевидно, что для длительных спусков использование только <strong>педального тормоза</strong> — это путь к быстрому износу и задымлению. Ретардер занимает уникальную нишу, позволяя удерживать скорость в безопасных пределах без физической нагрузки на диск.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка эффективности торможения</h4><label class="check-item"><input type="checkbox"><span>Убедитесь, что ретардер включен</span></label><label class="check-item"><input type="checkbox"><span>Проверьте температуру тормозов</span></label><label class="check-item"><input type="checkbox"><span>Оцените скорость спуска</span></label><label class="check-item"><input type="checkbox"><span>Спланируйте остановку на отдых</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="практические-советы-по-вождению-с-ретардером">Практические советы по вождению с ретардером</h2>
+
+<p>При входе в горный серпантин заранее включите <em>ретардер</em> на среднюю ступень, чтобы не допустить набора критической скорости. Это позволит вам держать машину строго на траектории, не прибегая к резким нажатиям педали <strong>рабочего тормоза</strong>. Плавность — залог успеха в симуляторе грузовиков.</p>
+
+<p>Если вы чувствуете, что скорость все равно растет, не паникуйте и не выключайте замедлитель. Просто повысьте ступень до максимума. Помните, что в игре, как и в жизни, <strong>потеря контроля</strong> на скорости может привести к аварии. Всегда держите дистанцию до впередиидущего транспорта, учитывая необходимость тормозного пути.</p>
+
+<p>В городском цикле использование ретардера не всегда уместно из-за шума и рывков, которые могут напугать пешеходов (если бы они были в игре) или создать дискомфорт. Здесь лучше ограничиться <em>моторным тормозом</em> и легким касанием педали.</p>
+
+<blockquote>
+<p>⚠️ Внимание: На некоторых модах и в (версии) игры поведение ретардера может отличаться от стандартного. Всегда проверяйте, как реагирует ваш грузовик на включение замедлителя на пустой дороге перед началом сложного маршрута.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Ретардер — это ваш главный помощник на длинных спусках, позволяющий сохранить ресурс тормозных колодок и избежать перегрева колесных дисков.</p></aside>
+
+<h2 id="частые-проблемы-и-их-решение">Частые проблемы и их решение</h2>
+
+<p>Иногда игроки жалуются, что ретардер не срабатывает или работает нестабильно. В большинстве случаев причина кроется в неправильных настройках управления или в том, что трансмиссия переведена в нейтраль. Убедитесь, что вы нажали <code>Clutch</code> обратно в сцепление перед активацией.</p>
+
+<p>Другая возможная проблема — отсутствие звука или визуальных эффектов. Это может быть связано с настройками графики или звука в <em>Euro Truck Simulator 2</em>. Проверьте, включены ли эффекты <strong>сцепления</strong> и <strong>торможения</strong> в разделе настроек звука.</p>
+
+<ul>
+<li>🔍 Перепроверьте привязку клавиш в меню управления.</li>
+<li>⚙️ Убедитесь, что коробка передач не в нейтрали.</li>
+<li>🎧 Проверьте настройки звуковых эффектов в игре.</li>
+</ul>
+
+<p>Если проблема сохраняется, попробуйте обновить игру или проверить целостность файлов через Steam. Иногда баги в определенных версиях игры могут влиять на работу <em>систем управления</em> грузовиком.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом сложного спуска всегда проверяйте, что ретардер включен на нужной ступени, и убедитесь, что у вас достаточно тормозных колодок для экстренной остановки, если ретардер выйдет из строя.</p></aside>
+
+<h2 id="faq-ответы-на-популярные-вопросы">FAQ: Ответы на популярные вопросы</h2>
+
+<details>
+<summary>Можно ли использовать ретардер в сочетании с ABS?</summary>
+<p>Да, ABS (антиблокировочная система) и ретардер работают независимо. Ретардер замедляет трансмиссию, а ABS предотвращает блокировку колес при нажатии на педаль тормоза. В ETS2 их совместное использование обеспечивает максимальную безопасность.</p>
+</details>
+
+<details>
+<summary>Почему колеса не краснеют при использовании ретардера?</summary>
+<p>Потому что ретардер не использует трение колодок о диски. Он преобразует энергию в тепло внутри корпуса замедлителя, поэтому тормозные диски остаются холодными и не меняют цвет на красный.</p>
+</details>
+
+<details>
+<summary>Какую клавишу лучше всего назначить для ретардера?</summary>
+<p>Рекомендуется назначить удобные клавиши, например, <code>F</code> и <code>G</code>, или использовать колесо мыши. Главное, чтобы доступ к ним был быстрым, но случайное нажатие исключено.</p>
+</details>
+
+<details>
+<summary>Влияет ли ретардер на расход топлива?</summary>
+<p>Не напрямую. Ретардер потребляет энергию двигателя только при включении, но так как он предотвращает использование тормозов, вы экономите топливо на редукторах и не тратите время на остывание тормозов.</p>
+</details>
+
+<details>
+<summary>Есть ли ограничения по скорости для ретардера?</summary>
+<p>В отличие от некоторых реальных систем, в игре ретардер можно включать на любой скорости, но эффективность замедления может варьироваться в зависимости от модели грузовика и настроек игры.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-zamenit-tormoznuyu-zhidkost-na-velosipede-s-gidravlicheskimi-tormozami.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тормозной жидкости: полная инструкция по прокачке гидравлики</span>
+                <span class="pb-related-desc">Пошаговая замена тормозной жидкости в велосипедных дисковых тормозах своими руками. Советы по выбору</span>
+            </a><a href="/articles/k/ka/kak-prokachat-tormoza-na-nive-21213.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать тормоза на Ниве 21213: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по прокачке тормозной системы на ВАЗ-21213. Учимся правильно удалять воздух, выби</span>
+            </a><a href="/articles/t/to/tormoznaya-zhidkost-dlya-nivy-21214.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозная жидкость для Нивы 21214: выбор, замена и регламент</span>
+                <span class="pb-related-desc">Полный гайд по подбору и замене тормозной жидкости на ВАЗ 21214. Сравнение DOT-3, DOT-4, DOT-5.1. По</span>
+            </a><a href="/articles/r/re/reglament-zameny-tormoznoj-zhidkosti.html" class="pb-related-card">
+                <span class="pb-related-title">Регламент замены тормозной жидкости: сроки, нормы и инструкция</span>
+                <span class="pb-related-desc">Полный регламент замены тормозной жидкости. Интервалы замены, классификация DOT, пошаговая инструкци</span>
+            </a><a href="/articles/p/pr/prokachka-tormozov-oktaviya-tur.html" class="pb-related-card">
+                <span class="pb-related-title">Прокачка тормозов Skoda Octavia Tour: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как самостоятельно прокачать тормоза на Шкода Октавия Тур. Пошаговая инструкция, особенности системы</span>
+            </a><a href="/articles/t/to/tormoznaya-zhidkost-cherepashka-dot-4.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозная жидкость Turtle Wax DOT 4: свойства, выбор и замена</span>
+                <span class="pb-related-desc">Полный обзор тормозной жидкости Turtle Wax DOT 4. Характеристики, совместимость с автомобилями, инст</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

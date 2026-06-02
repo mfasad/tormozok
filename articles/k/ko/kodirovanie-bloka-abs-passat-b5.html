@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Кодирование блока ABS на VW Passat B5: инструкция и нюансы — ТормозОК</title>
+    <meta name="description" content="Пошаговая инструкция по кодированию и адаптации блока ABS на Volkswagen Passat B5. Разбор ошибок, список каналов для VAG-COM и особенности диагностики.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ko/kodirovanie-bloka-abs-passat-b5.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Кодирование блока ABS на VW Passat B5: инструкция и нюансы">
+    <meta property="og:description" content="Пошаговая инструкция по кодированию и адаптации блока ABS на Volkswagen Passat B5. Разбор ошибок, список каналов для VAG-COM и особенности диагностики.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Кодирование блока ABS на VW Passat B5: инструкция и нюансы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-оборудования-и-выбор-диагностического-интерфейса">Подготовка оборудования и выбор диагностического интерфейса</a></li><li><a href="#диагностика-текущего-состояния-и-чтение-ошибок">Диагностика текущего состояния и чтение ошибок</a></li><li><a href="#пошаговая-инструкция-по-кодированию-блока-abs">Пошаговая инструкция по кодированию блока ABS</a></li><li><a href="#особенности-работы-с-разными-версиями-блоков-abs">Особенности работы с разными версиями блоков ABS</a></li><li><a href="#таблица-основных-параметров-для-кодирования">Таблица основных параметров для кодирования</a></li><li><a href="#адаптация-датчиков-и-калибровка-системы">Адаптация датчиков и калибровка системы</a></li><li><a href="#решение-распространенных-проблем-и-ошибок">Решение распространенных проблем и ошибок</a></li><li><a href="#заключение-и-рекомендации-по-обслуживанию">Заключение и рекомендации по обслуживанию</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/e/es/esun-abs-nastrojki-pechati.html">Настройки печати для ABS eSUN: температура, сопло и стол</a></li><li><a href="/articles/c/ch/chto-takoe-antiblokirovochnaya-tormoznaya-sistema-v-avtomobile-prostymi-slovami.html">ABS: что такое антиблокировочная система простыми словами</a></li><li><a href="/articles/s/sr/srabatyvaet-abs-pri-tormozhenii-na-sukhom-asfalte-prichina.html">Почему срабатывает ABS на сухом асфальте: причины и решения</a></li><li><a href="/articles/k/ko/kody-oshibok-abs-vabko.html">Коды ошибок ABS Wabco: расшифровка, диагностика и устранение</a></li><li><a href="/articles/a/ab/abs-zagorelas-v-mashine-chto-eto-znachit.html">Загорелась лампа ABS: причины, диагностика и что делать</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Кодирование блока ABS на Volkswagen Passat B5: полное руководство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-оборудования-и-выбор-диагностического-интерфейса">Подготовка оборудования и выбор диагностического интерфейса</a></li><li><a href="#диагностика-текущего-состояния-и-чтение-ошибок">Диагностика текущего состояния и чтение ошибок</a></li><li><a href="#пошаговая-инструкция-по-кодированию-блока-abs">Пошаговая инструкция по кодированию блока ABS</a></li><li><a href="#особенности-работы-с-разными-версиями-блоков-abs">Особенности работы с разными версиями блоков ABS</a></li><li><a href="#таблица-основных-параметров-для-кодирования">Таблица основных параметров для кодирования</a></li><li><a href="#адаптация-датчиков-и-калибровка-системы">Адаптация датчиков и калибровка системы</a></li><li><a href="#решение-распространенных-проблем-и-ошибок">Решение распространенных проблем и ошибок</a></li><li><a href="#заключение-и-рекомендации-по-обслуживанию">Заключение и рекомендации по обслуживанию</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Владельцы автомобилей <em>Volkswagen Passat B5</em> часто сталкиваются с необходимостью перепрограммирования контроллера антиблокировочной системы при замене неисправных узлов или замене тормозных дисков на старые версии прошивки. <strong>Кодирование блока ABS</strong> — это критически важный процесс, который сообщает электронному управляющему модулю параметры конкретного автомобиля, такие как диаметр колес, тип тормозных механизмов и модификация двигателя. Без этой процедуры система может выдавать ошибку «No Signal» или работать некорректно, игнорируя аварийные ситуации на дороге.</p>
+
+<p>Процедура требует использования специализированного диагностического оборудования, чаще всего интерфейса VAG-COM (VCDS), который подключается к разъему <code>OBD-II</code> под панелью приборов. <strong>Блок ABS</strong> в Passat B5 является сложным гидравлическим и электронным узлом, где ошибки в параметрах могут привести к полному отключению системы стабилизации или работе тормозов в аварийном режиме. Важно понимать разницу между простой адаптацией и полным кодированием, так как неправильные действия могут заблокировать электронный блок управления.</p>
+
+<h2 id="подготовка-оборудования-и-выбор-диагностического-интерфейса">Подготовка оборудования и выбор диагностического интерфейса</h2>
+
+<p>Перед началом любых манипуляций необходимо убедиться, что у вас есть исправный диагностический кабель и актуальная версия программного обеспечения. Для работы с <em>Volkswagen Passat B5</em> идеально подходит интерфейс VAG-COM версии 505.3 или новее, который обеспечивает полную совместимость с протоколами CAN-шины, используемыми в этих автомобилях. Недорогие китайские клоны USB-адаптеров могут работать нестабильно, вызывая разрывы связи и риск сбоев в памяти контроллера.</p>
+
+<p>Убедитесь, что аккумулятор автомобиля заряжен минимум на 80%, так как процесс кодирования требует стабильного напряжения в бортовой сети. Если напряжение упадет ниже критического уровня во время записи данных, блок ABS может выйти из строя без возможности восстановления. Подключите ноутбук к диагностическому разъему и запустите программу, перейдя в раздел выбора адресного адреса.</p>
+
+<ul>
+<li>💻 Подключите адаптер к разъему <code>OBD-II</code> и включите зажигание в положение <code>ON</code></li>
+<li>🔋 Проверьте напряжение аккумулятора мультиметром (должно быть >12.5В)</li>
+<li>🖥️ Запустите диагностическое ПО и выберите версию прошивки интерфейса</li>
+</ul>
+
+<h2 id="диагностика-текущего-состояния-и-чтение-ошибок">Диагностика текущего состояния и чтение ошибок</h2>
+
+<p>Прежде чем вносить изменения в конфигурацию, необходимо провести полную диагностику системы. Выберите в меню программы адрес <code>03 — ABS Brakes</code> и нажмите кнопку «Read Measured Value Block» или «Fault Codes». На экране появятся текущие ошибки, которые могут указывать на механические неисправности, такие как дефект колесного датчика или низкий уровень тормозной жидкости. <strong>Кодирование</strong> не исправит механические поломки, поэтому их устранение должно предшествовать программным настройкам.</p>
+
+<p>Особое внимание уделите кодам ошибок, связанным с «Uncoded» или «Implausible Signal». Такие сообщения часто появляются после установки б/у блока ABS с другого автомобиля, где параметры отличались от параметров вашего <em>Passat B5</em>. В этом случае стандартное считывание ошибок может не показать полной картины, и потребуется углубленное тестирование каналов.</p>
+
+<blockquote>⚠️ Внимание: Если в системе обнаружены ошибки, связанные с гидравлическим насосом или соленоидами, кодирование не устранит проблему, а может даже усугубить ситуацию, сделав систему полностью неактивной.</blockquote>
+
+<div class="pb-poll" id="poll-93717a42"><div class="pb-poll-question">📊 Какой интерфейс вы используете для диагностики?</div><div class="pb-poll-option" data-poll="93717a42" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">VAG-COM (VCDS)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93717a42" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Launch X431</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93717a42" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Delphi</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="93717a42" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой сканер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="пошаговая-инструкция-по-кодированию-блока-abs">Пошаговая инструкция по кодированию блока ABS</h2>
+
+<p>Процесс ввода параметров в память контроллера осуществляется через вкладку «Coding» в меню адресного блока <code>03</code>. Вам потребуется ввести пятизначный код, который зависит от комплектации вашего автомобиля, типа двигателя и наличия дополнительных систем, таких как ESP или ASR. Этот код формирует битовую маску, определяющую набор активных функций. Неправильно введенный код может привести к конфликту данных, поэтому его часто лучше брать из заводской спецификации или считать с рабочего аналогичного автомобиля.</p>
+
+<p>Для входа в режим изменения кода нажмите кнопку «Coding» и введите новое значение в поле ввода. После подтверждения система запросит подтверждение действий, и вы увидите сообщение о успешной записи. <strong>Блок ABS</strong> перезагрузится, и система начнет инициализацию. В этот момент на приборной панели могут мигать индикаторы ABS и EPC, что является нормой. Подождите несколько секунд, пока индикаторы не погаснут.</p>
+
+<p>Если кодирование прошло успешно, необходимо сбросить адаптации и выполнить базовую установку. Перейдите в раздел «Basic Settings» и выберите группу <code>060</code> или <code>000</code> (в зависимости от версии прошивки). Это позволит системе заново определить нулевые положения датчиков и проверить герметичность гидравлического блока. Не пытайтесь ездить на автомобиле сразу после кодирования без проведения этой процедуры.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по безопасному кодированию</h4><label class="check-item"><input type="checkbox"><span>Считать текущий код ABS (записать на бумагу)</span></label><label class="check-item"><input type="checkbox"><span>Проверить напряжение аккумулятора (мин 12.5В)</span></label><label class="check-item"><input type="checkbox"><span>Ввести новый код в поле Coding</span></label><label class="check-item"><input type="checkbox"><span>Сбросить ошибки и проверить индикаторы на панели</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="особенности-работы-с-разными-версиями-блоков-abs">Особенности работы с разными версиями блоков ABS</h2>
+
+<p>На рынке существует множество версий блоков ABS для <em>Passat B5</em>, которые могут отличаться производителями (Bosch, Teves) и прошивками. Например, блоки <code>Bosch 5.3</code> и <code>Bosch 8.1</code> имеют разные алгоритмы работы и требуют различных кодов. При замене блока на аналог от другой модификации Volkswagen (например, от <em>Polo</em> или <em>Golf</em>) кодирование может не сработать, если аппаратная часть несовместима с электроникой кузова.</p>
+
+<p>Часто встречается ситуация, когда при установке нового блока система выдает ошибку «No Component Protection» или «Immobilizer Mismatch». В таких случаях простое кодирование не поможет, и потребуется синхронизация с иммобилайзером через специализированное оборудование или онлайн-сервисы производителя. <strong>Каналы кодирования</strong> должны точно соответствовать VIN-коду автомобиля, чтобы избежать конфликтов в шине данных.</p>
+
+<details class="pb-accordion"><summary>Чем отличаются блоки Bosch и Teves?</summary><div class="pb-accordion-body"><p>Блоки Bosch 5.3 часто встречаются на ранние модели Passat B5 с 4-цилиндровыми моторами, в то время как Teves используются на более мощных версиях и моделях с полным приводом 4Motion. Электроника Teves более чувствительна к перепадам напряжения и требует строгой последовательности адаптации.</p></div></details>
+
+<h2 id="таблица-основных-параметров-для-кодирования">Таблица основных параметров для кодирования</h2>
+
+<p>Для упрощения процесса работы с блоком ABS составлена таблица наиболее часто встречающихся параметров. Эти данные помогут вам быстро подобрать нужный код, если вы знаете комплектацию автомобиля. Обратите внимание, что последнее число в коде часто определяет диаметр колес и наличие ESP.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Комплектация</th>
+<th>Двигатель</th>
+<th>Тип тормозов</th>
+<th>Модификация ABS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Base</td>
+<td>1.6 MPI</td>
+<td>Без ESP</td>
+<td>00001</td>
+</tr>
+<tr>
+<td>Comfort</td>
+<td>1.8T</td>
+<td>С ABS</td>
+<td>00011</td>
+</tr>
+<tr>
+<td>Highline</td>
+<td>2.8 V6</td>
+<td>С ESP</td>
+<td>00111</td>
+</tr>
+<tr>
+<td>4Motion</td>
+<td>All</td>
+<td>С ESP (4WD)</td>
+<td>00211</td>
+</tr>
+</tbody>
+</table></div>
+
+<p> <mark>Код 00111 является наиболее распространенным для версий Passat B5 с системой ESP и двигателями мощностью более 130 л.с.</mark> Ошибка в выборе последнего разряда может привести к неработоспособности системы стабилизации курсовой устойчивости, даже если все остальные параметры верны.</p>
+
+<blockquote>⚠️ Внимание: При использовании блока от автомобиля с полным приводом (4Motion) на переднеприводную версию, система будет выдавать постоянные ошибки по датчикам угла поворота руля и скорости задних колес.</blockquote>
+
+<h2 id="адаптация-датчиков-и-калибровка-системы">Адаптация датчиков и калибровка системы</h2>
+
+<p>После успешного ввода кода необходимо выполнить процедуру адаптации. Это включает в себя сброс показаний датчиков угла поворота рулевого колеса (G85) и калибровку датчиков давления. Перейдите в раздел <code>04 — Basic Settings</code> и выберите группу <code>060</code>. В поле измерения вы увидите значение угла руля, которое должно быть близко к нулю при прямолинейном положении руля.</p>
+
+<p>Если значение отличается, необходимо выполнить процедуру сброса нуля. Для этого поверните руль до упора влево, затем до упора вправо и верните в центр. Система должна зафиксировать новые пределы и сбросить ошибку. Также проверьте работу датчиков давления тормозной системы, убедившись, что значение «Pressure» соответствует реальному давлению в магистрали при нажатии на педаль.</p>
+
+<ul>
+<li>🔧 Поверните руль влево и вправо на 90 градусов для калибровки G85</li>
+<li>🚗 Прокатитесь на автомобиле со скоростью более 20 км/ч для активации датчиков</li>
+<li>📉 Проверьте отсутствие ошибок в памяти системы после теста</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом калибровки датчиков убедитесь, что автомобиль стоит на ровной поверхности, иначе датчик угла поворота будет считать неверные данные, что приведет к ошибке системы ESP при движении.</p></aside>
+
+<h2 id="решение-распространенных-проблем-и-ошибок">Решение распространенных проблем и ошибок</h2>
+
+<p>Даже при соблюдении всех инструкций могут возникнуть проблемы, такие как невозможность записи кода или постоянная ошибка «No Signal». В большинстве случаев это связано с плохим контактом в диагностическом разъеме или устаревшей версией ПО на блоке управления. Попробуйте обновить прошивку самого блока через функцию «Firmware Update», если ваш диагностический интерфейс это поддерживает.</p>
+
+<p>Если система выдает ошибку «Component Protection» (Защита компонентов), это означает, что блок был заблокирован производителем и требует разблокировки через онлайн-портал производителя. В этом случае самостоятельное кодирование невозможно, и потребуется обращение к официальному дилеру или в специализированный сервис, имеющий доступ к серверам VAG.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка целостности жгутов проводов и контактов в разъеме ABS является лучшей профилактикой ошибок связи и сбоев в работе системы.</p></aside>
+
+<blockquote>⚠️ Внимание: Если после кодирования загорелась лампа «Check Engine» или «ESP OFF», не игнорируйте это. Система может блокировать работу тормозов, что создает прямую угрозу безопасности при экстренном торможении.</blockquote>
+
+<h2 id="заключение-и-рекомендации-по-обслуживанию">Заключение и рекомендации по обслуживанию</h2>
+
+<p>Кодирование блока ABS на <em>Volkswagen Passat B5</em> — это сложная, но выполнимая процедура, требующая точности и внимательности. Правильно настроенная система не только обеспечивает безопасность, но и продлевает срок службы тормозных механизмов, предотвращая их преждевременный износ из-за некорректной работы гидравлики. Регулярная диагностика и своевременное обновление прошивки помогут избежать проблем в будущем.</p>
+
+<p>Не забывайте, что любые вмешательство в электрическую систему автомобиля должно проводиться с соблюдением всех мер предосторожности. Используйте только качественное оборудование и актуальные программные обеспечения. Если вы не уверены в своих силах, лучше доверить эту работу профессионалам, чтобы избежать дорогостоящего ремонта электронного блока управления.</p>
+
+<details>
+<summary>Как узнать текущий код ABS перед заменой?</summary>
+<p>Чтобы узнать текущий код, подключитесь к автомобилю через диагностический интерфейс VAG-COM, выберите адрес <code>03 ABS Brakes</code> и нажмите кнопку «Coding». Текущее значение будет отображено в поле «Coding: XXXXX». Обязательно запишите его перед любыми изменениями.</p>
+</details>
+
+<details>
+<summary>Можно ли кодировать блок ABS без ноутбука?</summary>
+<p>Да, существуют специализированные диагностические сканеры (например, Launch или Autel), которые имеют встроенные функции для кодирования блоков ABS. Однако они также требуют наличия программного обеспечения и подключения к разъему OBD-II, а также часто имеют платные подписки на обновление баз данных.</p>
+</details>
+
+<details>
+<summary>Что делать, если кодирование не проходит?</summary>
+<p>Если кодирование не проходит, проверьте напряжение аккумулятора, убедитесь в целостности жгута проводов до блока ABS и попробуйте обновить прошивку самого блока. Также проверьте, не заблокирован ли блок функцией «Component Protection».</p>
+</details>
+
+<details>
+<summary>Влияет ли кодирование на гарантию автомобиля?</summary>
+<p>Если автомобиль находится на гарантии, любое вмешательство в программное обеспечение блоков управления может стать основанием для отказа в гарантийном ремонте. Рекомендуется проконсультироваться с дилером перед началом работ.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/e/es/esun-abs-nastrojki-pechati.html" class="pb-related-card">
+                <span class="pb-related-title">Настройки печати для ABS eSUN: температура, сопло и стол</span>
+                <span class="pb-related-desc">Полное руководство по настройкам печати ABS eSUN. Температурные режимы, подогрев стола, охлаждение и</span>
+            </a><a href="/articles/c/ch/chto-takoe-antiblokirovochnaya-tormoznaya-sistema-v-avtomobile-prostymi-slovami.html" class="pb-related-card">
+                <span class="pb-related-title">ABS: что такое антиблокировочная система простыми словами</span>
+                <span class="pb-related-desc">Разбираем принцип работы ABS, как система спасает при торможении и почему колеса не должны блокирова</span>
+            </a><a href="/articles/s/sr/srabatyvaet-abs-pri-tormozhenii-na-sukhom-asfalte-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Почему срабатывает ABS на сухом асфальте: причины и решения</span>
+                <span class="pb-related-desc">Разбираемся, почему антиблокировочная система тормозов (ABS) активируется при торможении на сухой до</span>
+            </a><a href="/articles/k/ko/kody-oshibok-abs-vabko.html" class="pb-related-card">
+                <span class="pb-related-title">Коды ошибок ABS Wabco: расшифровка, диагностика и устранение</span>
+                <span class="pb-related-desc">Полный справочник кодов ошибок ABS Wabco для грузовиков и автобусов. Инструкция по диагностике, табл</span>
+            </a><a href="/articles/a/ab/abs-zagorelas-v-mashine-chto-eto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">Загорелась лампа ABS: причины, диагностика и что делать</span>
+                <span class="pb-related-desc">Почему загорелась лампа ABS в машине? Разбираем частые причины, способы самостоятельной проверки и э</span>
+            </a><a href="/articles/c/ch/chto-oznachaet-znachok-abs-na-paneli-mashiny.html" class="pb-related-card">
+                <span class="pb-related-title">Что означает значок ABS на панели: расшифровка и действия</span>
+                <span class="pb-related-desc">Почему горит желтая лампа ABS? Разбираем причины, симптомы неисправности и порядок диагностики. Узна</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

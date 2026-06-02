@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как устроена тормозная система автомобиля: устройство и принцип работы — ТормозОК</title>
+    <meta name="description" content="Подробный обзор принципов работы тормозной системы. Устройство дисковых и барабанных узлов, роль ABS, выбор жидкости и диагностика неисправностей для водителей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-ustroena-tormoznaya-sistema-avtomobilya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как устроена тормозная система автомобиля: устройство и принцип работы">
+    <meta property="og:description" content="Подробный обзор принципов работы тормозной системы. Устройство дисковых и барабанных узлов, роль ABS, выбор жидкости и диагностика неисправностей для водителей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/bezopasnost-i-normy/">Безопасность и нормы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как устроена тормозная система автомобиля: устройство и принцип работы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#гидравлический-контур-и-принцип-передачи-усилия">Гидравлический контур и принцип передачи усилия</a></li><li><a href="#рабочие-узлы-дисковые-и-барабанные-механизмы">Рабочие узлы: дисковые и барабанные механизмы</a></li><li><a href="#вакуумный-усилитель-и-его-роль-в-работе-педали">Вакуумный усилитель и его роль в работе педали</a></li><li><a href="#электронные-системы-управления-и-распределения">Электронные системы управления и распределения</a></li><li><a href="#типы-тормозных-жидкостей-и-требования-к-ним">Типы тормозных жидкостей и требования к ним</a></li><li><a href="#диагностика-неисправностей-и-обслуживание">Диагностика неисправностей и обслуживание</a></li><li><a href="#особенности-обслуживания-и-меры-предосторожности">Особенности обслуживания и меры предосторожности</a></li><li><a href="#частые-вопросы-водителей">Частые вопросы водителей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/s-/s-kakoj-storony-nakhoditsya-tormoz.html">Где находится тормоз? Расположение педали в автомобилях и на велосипедах</a></li><li><a href="/articles/t/to/tormoza-dlya-legkovogo-pritsepa.html">Тормоза для легкового прицепа: виды, устройство и выбор системы</a></li><li><a href="/articles/k/ka/kak-ustanovit-tormoz-na-motobuksirovshchik.html">Как установить тормоз на мотобуксировщик: пошаговая инструкция</a></li><li><a href="/articles/s/s-/s-kakimi-nomerami-ne-ostanavlivayut-gaishniki.html">Какие номера не останавливает ГИБДД: мифы, законы и реальные риски</a></li><li><a href="/articles/v/vo/vo-skolko-raz-uvelichitsya-tormoznoj-put-na-ledyanom-pokrytii-na-letnej-rezine.html">Во сколько раз увеличивается тормозной путь на льду в летней резине</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как устроена тормозная система автомобиля: полный гид по устройству</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#гидравлический-контур-и-принцип-передачи-усилия">Гидравлический контур и принцип передачи усилия</a></li><li><a href="#рабочие-узлы-дисковые-и-барабанные-механизмы">Рабочие узлы: дисковые и барабанные механизмы</a></li><li><a href="#вакуумный-усилитель-и-его-роль-в-работе-педали">Вакуумный усилитель и его роль в работе педали</a></li><li><a href="#электронные-системы-управления-и-распределения">Электронные системы управления и распределения</a></li><li><a href="#типы-тормозных-жидкостей-и-требования-к-ним">Типы тормозных жидкостей и требования к ним</a></li><li><a href="#диагностика-неисправностей-и-обслуживание">Диагностика неисправностей и обслуживание</a></li><li><a href="#особенности-обслуживания-и-меры-предосторожности">Особенности обслуживания и меры предосторожности</a></li><li><a href="#частые-вопросы-водителей">Частые вопросы водителей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Тормозная система — это фундамент безопасности любого транспортного средства, без которого движение по современным дорогам было бы невозможным. Именно от её исправности зависит, остановится ли ваш <em>Volkswagen Jetta</em> или <em>Toyota Camry</em> вовремя перед препятствием, избежав столкновения. Понимание того, как работают механизмы, помогающие вам замедляться, позволяет быстрее реагировать на признаки неисправности.</p>
+
+<p>В основе любого автомобиля лежит гидравлический принцип, передающий усилие от вашей ноги до колесных механизмов. Однако современная эра автоматизации добавила сюда сложные электронные блоки управления, которые могут самостоятельно распределять тормозное усилие. Вы когда-нибудь задумывались, почему педаль может стать «ватной» или почему колеса блокируются при резком нажатии?</p>
+
+<h2 id="гидравлический-контур-и-принцип-передачи-усилия">Гидравлический контур и принцип передачи усилия</h2>
+
+<p>Сердцем системы является жидкость, заполняющая замкнутый контур, работающая по закону Паскаля. Когда вы давите на педаль, <strong>главный тормозной цилиндр</strong> создает давление, которое мгновенно передается по трубкам к каждому колесу. Жидкость не сжимается, поэтому сила нажатия педали передается на поршни суппортов практически без потерь.</p>
+
+<p>Важно понимать, что система делится на два независимых контура для повышения безопасности. Если один из них выйдет из строя из-за разрыва шланга или утечки, второй позволит вам все еще контролировать остановку машины. В большинстве современных легковых автомобилей используется диагональное разделение контуров.</p>
+
+<p>На старых моделях или в грузовиках часто применяли разделение по осям: передние колеса на одном контуре, задние — на другом. Такое решение проще в обслуживании, но менее безопасно при отказе передних тормозов, так как машина может уйти в неконтролируемый занос. <strong>Тормозная жидкость</strong> в этом случае играет роль не просто передатчика, но и смазки для подвижных элементов.</p>
+
+<blockquote>⚠️ Внимание: Тормозная жидкость гигроскопична и со временем впитывает влагу из воздуха. Это снижает температуру кипения и может привести к закипанию системы при интенсивном торможении, когда педаль провалится в пол.</blockquote>
+
+<div class="pb-poll" id="poll-05c542b4"><div class="pb-poll-question">📊 Какой тип тормозной системы установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="05c542b4" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Передние дисковые/задние барабанные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05c542b4" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью дисковые</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05c542b4" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Передние дисковые/задние барабанные с ABS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="05c542b4" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю точно</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="рабочие-узлы-дисковые-и-барабанные-механизмы">Рабочие узлы: дисковые и барабанные механизмы</h2>
+
+<p>Наиболее распространенным решением для передних осей являются <strong>дисковые тормоза</strong>. Они состоят из тормозного диска, вращающегося вместе с колесом, и суппорта, который прижимает тормозные колодки к поверхности диска. При нажатии на педаль поршни суппорта выдвигаются, заставляя колодки зажать диск, преобразуя кинетическую энергию в тепловую.</p>
+
+<p>Барабанные механизмы, хотя и считаются устаревшими для передней оси, до сих пор встречаются на задней оси бюджетных седанов и в грузовом транспорте. Внутри вращающегося барабана находятся тормозные колодки, которые расклиниваются разжимным механизмом наружу. Они более герметичны и защищены от грязи, но хуже отводят тепло и сложнее в обслуживании.</p>
+
+<p>Ключевым отличием является эффективность отвода тепла. <strong>Вентилируемый диск</strong> имеет пустоты между рабочей поверхностью, позволяющие воздуху охлаждать узел при вращении. Это критически важно для спортивных автомобилей или машин, часто эксплуатируемых в горах. Сплошные диски дешевле в производстве, но склонны к перегреву и деформации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При выборе тормозных колодок обращайте внимание на температурный диапазон их работы. Обычные дорожные колодки могут потерять эффективность при экстремальных нагрузках, в то время как спортивные требуют прогрева для работы.</p></aside>
+
+<h2 id="вакуумный-усилитель-и-его-роль-в-работе-педали">Вакуумный усилитель и его роль в работе педали</h2>
+
+<p>Человеческой ноги недостаточно для того, чтобы создать высокое давление в системе, необходимое для экстренного торможения тяжелого автомобиля. Здесь на помощь приходит <strong>вакуумный усилитель</strong>, использующий разряжение во впускном коллекторе двигателя. Он умножает ваше усилие в несколько раз, делая управление легким и отзывчивым.</p>
+
+<p>Если усилитель выйдет из строя, педаль станет жесткой и потребует огромного усилия для нажатия. Машина остановится, но вам придется приложить значительные физические усилия, что может стать фатальным в аварийной ситуации. Проверка усилителя проста: запустите двигатель и нажмите на педаль — она должна стать мягче.</p>
+
+<p>В современных электрокарах с рекуперацией энергии вакуумный усилитель часто заменяется электрическим насосом, так как у электродвигателя нет впускного коллектора. <em>Tesla Model 3</em> использует электрический вакуумный насос или гибридную систему, которая создает необходимое давление для работы гидравлики. Это позволяет сохранить привычное ощущение от педали даже без работы ДВС.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка вакуумного усилителя</h4><label class="check-item"><input type="checkbox"><span>Заглушите двигатель на 5-10 минут</span></label><label class="check-item"><input type="checkbox"><span>Нажмите педаль несколько раз до отказа</span></label><label class="check-item"><input type="checkbox"><span>Запустите двигатель, не отпуская педаль</span></label><label class="check-item"><input type="checkbox"><span>Оцените падение педали при запуске</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="электронные-системы-управления-и-распределения">Электронные системы управления и распределения</h2>
+
+<p>Современные автомобили невозможно представить без системы <strong>ABS</strong> (Anti-lock Braking System). Она предотвращает блокировку колес при экстренном торможении, позволяя водителю сохранять управляемость. Электронный блок управления (ЭБУ) считывает скорость вращения каждого колеса и, обнаружив блокировку, сбрасывает давление в суппорте до момента начала вращения.</p>
+
+<p>Система <strong>EBD</strong> (Electronic Brakeforce Distribution) автоматически распределяет тормозное усилие между осями в зависимости от загрузки автомобиля. Если багажник полон, машина «приседает» сзади, и EBD увеличивает усилие на задних колесах, предотвращая занос передней оси. Без этой системы задние колеса могли бы заблокироваться раньше передних, что привело бы к неконтролируемому вращению автомобиля.</p>
+
+<p>Более продвинутые технологии включают ESP (систему курсовой устойчивости) и BAS (систему помощи при экстренном торможении). ESP может подтормаживать отдельные колеса для выравнивания траектории в повороте, а BAS распознает резкое нажатие и мгновенно создает максимальное давление, даже если вы нажали педаль недостаточно сильно.</p>
+
+<details class="pb-accordion"><summary>Как работает ABS на льду?</summary><div class="pb-accordion-body"><p>На льду колесо блокируется мгновенно. ABS начинает быстро «качать» тормоза (до 15-20 раз в секунду), позволяя колесу едва заметно прокручиваться, что обеспечивает лучшее сцепление, чем полная блокировка.</p></div></details>
+
+<blockquote>⚠️ Внимание: Водители часто ошибочно полагают, что с ABS тормозной путь всегда короче. На рыхлом снегу или гравии заблокированное колесо может «закопать» себе перед собой вал, остановившись быстрее, чем колесо, колеблющееся под управлением ABS.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Электронные системы не отменяют законов физики и не заменяют аккуратного вождения, но они дают водителю дополнительный шанс сохранить контроль в критической ситуации.</p></aside>
+
+<h2 id="типы-тормозных-жидкостей-и-требования-к-ним">Типы тормозных жидкостей и требования к ним</h2>
+
+<p>Тормозная жидкость — это не просто масло, а сложная химическая смесь с особыми свойствами. Она должна быть не сжимаемой, иметь высокую температуру кипения и не разрушать резиновые уплотнения. Самым популярным стандартом является <strong>DOT 3</strong>, <strong>DOT 4</strong> и <strong>DOT 5.1</strong>, где цифра указывает на температуру кипения (сухую и влажную).</p>
+
+<p>Существует и силиконовая жидкость <em>DOT 5</em>, которая не впитывает воду, но она несовместима с остальными типами и используется редко, в основном в классических автомобилях или военной технике. Смешивание разных типов жидкостей, например, DOT 4 и DOT 5, может привести к выпадению осадка и отказу системы.</p>
+
+<p>Критически важно следить за состоянием жидкости, так как она со временем впитывает влагу из атмосферы через резиновые шланги и вентиляцию бачка. Вода снижает температуру кипения, и при интенсивном торможении жидкость может закипеть, превратившись в пар. Пар сжимается, и педаль провалится в пол безрезультатно.</p>
+
+<p>Ниже приведена таблица основных характеристик распространенных типов жидкостей:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип жидкости</th>
+<th>Температура кипения (сухая), °C</th>
+<th>Температура кипения (влажная), °C</th>
+<th>Совместимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOT 3</td>
+<td>205</td>
+<td>140</td>
+<td>Совместима с DOT 4, DOT 5.1</td>
+</tr>
+<tr>
+<td>DOT 4</td>
+<td>230</td>
+<td>155</td>
+<td>Совместима с DOT 3, DOT 5.1</td>
+</tr>
+<tr>
+<td>DOT 5.1</td>
+<td>270</td>
+<td>180</td>
+<td>Совместима с DOT 3, DOT 4</td>
+</tr>
+<tr>
+<td>DOT 5</td>
+<td>260</td>
+<td>180</td>
+<td>Не совместима с другими!</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>⚠️ Внимание: Даже несмотря на совместимость типов DOT 3, 4 и 5.1, производители настоятельно рекомендуют использовать только ту жидкость, которая указана в инструкции к автомобилю, чтобы гарантировать работу всех уплотнений.</blockquote>
+
+<h2 id="диагностика-неисправностей-и-обслуживание">Диагностика неисправностей и обслуживание</h2>
+
+<p>Первым признаком проблем часто становится изменение характера работы педали. Если педаль стала мягкой и проваливается, возможно, в системе образовались воздушные пробки или износились уплотнительные кольца. Скрип или металлический скрежет при торможении сигнализирует о том, что износился <strong>тормозной диск</strong> или колодки стерлись до металла.</p>
+
+<p>Вибрация руля при торможении обычно указывает на биение тормозных дисков. Это происходит из-за перегрева и последующей деформации металла или из-за неравномерного износа. В таких случаях диски необходимо либо шлифовать, либо менять на новые, иначе эффективность работы тормозов снизится.</p>
+
+<p>Регулярное обслуживание включает проверку уровня жидкости, осмотр шлангов на предмет трещин и подтеканий, а также замер толщины фрикционных накладок колодок. Не забывайте, что <strong>тормозной суппорт</strong> имеет направляющие, которые должны свободно двигаться и быть смазанными специальной высокотемпературной смазкой.</p>
+
+<details class="pb-accordion"><summary>Почему педаль вибрирует?</summary><div class="pb-accordion-body"><p>Частая причина вибрации — неравномерный износ тормозного диска (конусность) или его локальный перегрев, приведший к зонам с разной твердостью металла (hot spots).</p></div></details>
+
+<p>Для тяжелых условий эксплуатации рекомендуется проводить диагностику чаще. Если вы часто буксируете прицеп или ездите в горах, интервал замены тормозных колодок может сократиться вдвое. Интуитивное понимание того, как работает тормоз, поможет вам не допустить критического износа.</p>
+
+<h2 id="особенности-обслуживания-и-меры-предосторожности">Особенности обслуживания и меры предосторожности</h2>
+
+<p>При самостоятельной замене тормозных компонентов необходимо соблюдать строгую последовательность операций. Сначала откручиваются суппорты, затем извлекаются старые колодки и очищаются направляющие. </p>
+
+<p>Никогда не используйте оброненные или загрязненные детали. Масло, бензин или пыль на тормозных колодках приведут к их неравномерному износу и снижению эффективности. Если вы уронили новый комплект колодок на землю, лучше выбросить их и взять новые, так как микроскопические частицы асфальта могут повредить фрикционный слой.</p>
+
+<p>После сборки обязательно проведите «обкатку» тормозов. Сделайте серию плавных торможений, чтобы колодки и диски приработались друг к другу. <em>Brembo</em> и другие производители часто указывают, что максимальная эффективность достигается только после пробега в 300-500 километров. Пренебрежение этим этапом может привести к перегреву и деформации дисков в первые же километры.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Безопасность тормозной системы зависит не только от качества запчастей, но и от правильной последовательности сборки и использования специализированных смазок и инструментов.</p></aside>
+
+<h2 id="частые-вопросы-водителей">Частые вопросы водителей</h2>
+
+<details>
+<summary>Почему педаль тормоза вибрирует при нажатии?</summary>
+<p>Чаще всего это вызвано биением тормозных дисков из-за их деформации от перегрева или неравномерного износа. Также причина может крыться в неисправности ступичных подшипников.</p>
+</details>
+
+<details>
+<summary>Можно ли смешивать тормозные жидкости разных брендов?</summary>
+<p>Можно смешивать жидкости одинакового стандарта (например, DOT 4 от разных производителей), но не рекомендуется смешивать жидкости разных классов (DOT 3 и DOT 4), если это не указано в инструкции. Лучший вариант — полная замена.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять тормозную жидкость каждые 2 года или каждые 40 000 км пробега, так как она со временем впитывает влагу и снижает свои свойства.</p>
+</details>
+
+<details>
+<summary>Почему слышен свист при торможении?</summary>
+<p>Свист может быть вызван износом колодок (сработал индикатор износа), попаданием грязи между колодкой и диском, либо конструктивной особенностью определенных фрикционных материалов, требующих приработки.</p>
+</details>
+
+<details>
+<summary>Что делать, если педаль проваливается?</summary>
+<p>Это критическая неисправность, указывающая на потерю герметичности или наличие воздуха в системе. Немедленно остановитесь в безопасном месте и вызовите эвакуатор. Эксплуатация автомобиля запрещена.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/s-/s-kakoj-storony-nakhoditsya-tormoz.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится тормоз? Расположение педали в автомобилях и на велосипедах</span>
+                <span class="pb-related-desc">Подробный гид: с какой стороны находится тормоз в автомобиле, на мотоцикле и велосипеде. Особенности</span>
+            </a><a href="/articles/t/to/tormoza-dlya-legkovogo-pritsepa.html" class="pb-related-card">
+                <span class="pb-related-title">Тормоза для легкового прицепа: виды, устройство и выбор системы</span>
+                <span class="pb-related-desc">Полный гид по тормозным системам прицепов: инерционные, электрические, диски и барабаны. Как выбрать</span>
+            </a><a href="/articles/k/ka/kak-ustanovit-tormoz-na-motobuksirovshchik.html" class="pb-related-card">
+                <span class="pb-related-title">Как установить тормоз на мотобуксировщик: пошаговая инструкция</span>
+                <span class="pb-related-desc">Полное руководство по установке тормозной системы на мотобуксировщик. Выбор типа тормоза, необходимы</span>
+            </a><a href="/articles/s/s-/s-kakimi-nomerami-ne-ostanavlivayut-gaishniki.html" class="pb-related-card">
+                <span class="pb-related-title">Какие номера не останавливает ГИБДД: мифы, законы и реальные риски</span>
+                <span class="pb-related-desc">Узнайте, существуют ли номера, освобожденные от проверок ДПС. Разбор спецсигналов, дипломатических з</span>
+            </a><a href="/articles/v/vo/vo-skolko-raz-uvelichitsya-tormoznoj-put-na-ledyanom-pokrytii-na-letnej-rezine.html" class="pb-related-card">
+                <span class="pb-related-title">Во сколько раз увеличивается тормозной путь на льду в летней резине</span>
+                <span class="pb-related-desc">Анализ роста тормозного пути на льду при использовании летней резины. Факты, таблицы, риски и почему</span>
+            </a><a href="/articles/m/mo/mozhno-li-pritormazhivat-bez-stsepleniya-na-mekhanike-na-povorotakh.html" class="pb-related-card">
+                <span class="pb-related-title">Торможение на повороте без сцепления: правила, риски и техника безопасности</span>
+                <span class="pb-related-desc">Разбираем, можно ли тормозить без выжима сцепления в повороте. Влияние на трансмиссию, риски заноса </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

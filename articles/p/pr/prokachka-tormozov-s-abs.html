@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Прокачка тормозов с ABS: пошаговая инструкция и ошибки — ТормозОК</title>
+    <meta name="description" content="Полное руководство по прокачке тормозной системы с ABS. Разбор ошибок, выбор оборудования, пошаговый алгоритм и важные нюансы для безопасности.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/prokachka-tormozov-s-abs.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Прокачка тормозов с ABS: пошаговая инструкция и ошибки">
+    <meta property="og:description" content="Полное руководство по прокачке тормозной системы с ABS. Разбор ошибок, выбор оборудования, пошаговый алгоритм и важные нюансы для безопасности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Прокачка тормозов с ABS: пошаговая инструкция и ошибки</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-рабочего-места-и-необходимого-оборудования">Подготовка рабочего места и необходимого оборудования</a></li><li><a href="#алгоритм-механической-прокачки-без-сканера">Алгоритм механической прокачки без сканера</a></li><li><a href="#использование-сканера-для-активации-цикла-прокачки">Использование сканера для активации цикла прокачки</a></li><li><a href="#типичные-ошибки-при-обслуживании-системы-abs">Типичные ошибки при обслуживании системы ABS</a></li><li><a href="#работа-с-электронным-стояночным-тормозом-esp">Работа с электронным стояночным тормозом (ESP)</a></li><li><a href="#диагностика-после-завершения-работ">Диагностика после завершения работ</a></li><li><a href="#важные-нюансы-для-старых-и-новых-моделей">Важные нюансы для старых и новых моделей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-prokachat-tormoza-cherez-abs.html">Как прокачать тормоза через ABS: пошаговая инструкция и нюансы</a></li><li><a href="/articles/v/vu/vut-granta-s-abs.html">Как проверить и купить Лада Гранта с ABS: гид по системе тормозов</a></li><li><a href="/articles/v/va/vabko-abs-e-raspinovka.html">Распиновка WABCO ABS: Схемы подключения и диагностика модуля</a></li><li><a href="/articles/d/da/datchik-abs-granta-perednij-levyj.html">Датчик ABS передний левый Lada Granta: замена, проверка и подбор</a></li><li><a href="/articles/k/ka/kak-proverit-rabotu-abs.html">Как проверить работу ABS: пошаговая диагностика и симптомы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Прокачка тормозной системы с ABS: полная инструкция</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-рабочего-места-и-необходимого-оборудования">Подготовка рабочего места и необходимого оборудования</a></li><li><a href="#алгоритм-механической-прокачки-без-сканера">Алгоритм механической прокачки без сканера</a></li><li><a href="#использование-сканера-для-активации-цикла-прокачки">Использование сканера для активации цикла прокачки</a></li><li><a href="#типичные-ошибки-при-обслуживании-системы-abs">Типичные ошибки при обслуживании системы ABS</a></li><li><a href="#работа-с-электронным-стояночным-тормозом-esp">Работа с электронным стояночным тормозом (ESP)</a></li><li><a href="#диагностика-после-завершения-работ">Диагностика после завершения работ</a></li><li><a href="#важные-нюансы-для-старых-и-новых-моделей">Важные нюансы для старых и новых моделей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система антиблокировочной тормозной абсорбции (ABS) коренным образом изменила подход к обслуживанию автомобилей, превратив простую замену тормозной жидкости в технически сложную процедуру. Обычная прокачка, известная многим автовладельцам, здесь не сработает, так как воздушные карманы могут застрять внутри гидроблока модулятора, что сделает систему неработоспособной.</p>
+
+<p>Вам предстоит столкнуться с необходимостью управления электромагнитными клапанами и насосом высокого давления, которые не активируются при стандартном нажатии педали. Игнорирование этих особенностей приведет к тому, что даже при визуально заполненных магистралях автомобиль будет иметь критически плохую эффективность торможения и риск полной потери управляемости на льду.</p>
+
+<p>Понимание того, как работает <strong>гидравлический блок ABS</strong> и его электроника, является залогом успешного ремонта. Мы рассмотрим не только механическую часть процесса, но и нюансы работы с диагностическими сканерами, которые часто становятся единственным инструментом для полного удаления воздуха из сложных узлах.</p>
+
+<h2 id="подготовка-рабочего-места-и-необходимого-оборудования">Подготовка рабочего места и необходимого оборудования</h2>
+
+<p>Прежде чем приступать к манипуляциям с тормозными магистралями автомобиля <em>BMW</em> или <em>Ford</em>, необходимо убедиться в наличии специализированного оборудования. Для систем с ABS использование обычного "сосущего" метода с помощью бутылки часто недостаточно, так как оно не создает необходимого давления для вытеснения воздуха из клапанов.</p>
+
+<p>Вам потребуется качественный <strong>прокачной инструмент</strong>, способный работать под давлением или создавать стабильный вакуум, а также полноценный диагностический сканер OBD-II. Без последнего вы не сможете активировать режим обслуживания гидроблока, необходимый для открытия соленоидов модулятора.</p>
+
+<p>Не забудьте подготовить запасной комплект <strong>тормозной жидкости</strong> стандарта DOT 4 или DOT 5.1, в зависимости от требований производителя. Обратите внимание, что жидкость должна быть свежей и герметично закрытой, так как она гигроскопична и быстро впитывает влагу из воздуха, что снижает её температуру кипения.</p>
+
+<ul>
+<li>🔧 Диагностический сканер с функцией активации ABS (например, Autel, Launch или дилерский инструмент).</li>
+<li>🔧 Прозрачная трубка и емкость для слива старой жидкости (или вакуумный насос).</li>
+<li>🔧 Набор ключей и головок под штуцеры прокачки (обычно 8мм или 10мм).</li>
+<li>🔧 Домкрат и страховочные подставки для надежной фиксации автомобиля.</li>
+</ul>
+
+<blockquote>⚠️ Внимание: Убедитесь, что аккумулятор вашего автомобиля полностью заряжен перед началом работ. Процесс прокачки с ABS требует значительных энергозатрат для работы насоса модулятора, и падение напряжения может прервать цикл или повредить электронику.</blockquote>
+
+<h2 id="алгоритм-механической-прокачки-без-сканера">Алгоритм механической прокачки без сканера</h2>
+
+<p>Если у вас нет доступа к профессиональному сканеру, можно попытаться удалить основной объем воздуха механическим путем, хотя этот метод не гарантирует 100% результата. Суть процесса заключается в последовательном удалении жидкости из контуров, начиная с самого удаленного от главного тормозного цилиндра колеса.</p>
+
+<p>Сначала необходимо отключить предохранитель насоса ABS, чтобы предотвратить его случайное включение при нажатии на педаль. Далее, следуя стандартной схеме, начинайте с заднего правого колеса, затем переходите к заднему левому, переднему правому и, наконец, переднему левому.</p>
+
+<p>Этот метод эффективен только для удаления воздуха из <strong>тормозных трубок</strong> и <strong>суппортов</strong>, но не из самого модулятора. Если после такой процедуры педаль остается "ватной" или уходит в пол, значит, воздух остался внутри гидроблока, и потребуется более сложное вмешательство.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к механической прокачке</h4><label class="check-item"><input type="checkbox"><span>Отключить предохранитель ABS</span></label><label class="check-item"><input type="checkbox"><span>Снять колеса для доступа к штуцерам</span></label><label class="check-item"><input type="checkbox"><span>Заполнить бачок свежей жидкостью</span></label><label class="check-item"><input type="checkbox"><span>Начать с дальнего колеса</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание: Никогда не прокачивайте систему при включенном зажигании без подключения сканера, так как это может привести к запуску насоса модулятора на сухую, что моментально выведет его из строя.</blockquote>
+
+<h2 id="использование-сканера-для-активации-цикла-прокачки">Использование сканера для активации цикла прокачки</h2>
+
+<p>Современные автомобили требуют обязательного включения специального режима через диагностический разъем. Сканер позволяет управлять электромагнитными клапанами внутри <strong>гидроагрегата</strong>, открывая их по очереди и заставляя насос гонять жидкость через все внутренние каналы.</p>
+
+<p>Вам нужно подключиться к разъему OBD-II, запустить программу диагностики и найти раздел "Специальные функции" или "Сервисное обслуживание". Выберите пункт "Прокачка ABS" или "Bleed ABS". Автомобиль издаст характерный шум работы насоса, что сигнализирует о начале процесса.</p>
+
+<p>В этот момент ассистент должен медленно нажимать на педаль тормоза, чтобы вытеснять воздух, покидающий систему через штуцеры. Процесс повторяется для каждого колеса отдельно, пока выходящая жидкость не станет чистой и без пузырьков.</p>
+
+<p>Важно контролировать уровень жидкости в расширительном бачке каждые 2-3 минуты. Если уровень упадет слишком низко, насос может засосать новый воздух, и процедуру придется начинать заново с самого начала, что отнимет много времени и сил.</p>
+
+<div class="pb-poll" id="poll-54ed1e55"><div class="pb-poll-question">📊 Какой метод прокачки вы используете чаще?</div><div class="pb-poll-option" data-poll="54ed1e55" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только механический (без сканера)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="54ed1e55" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">С использованием сканера</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="54ed1e55" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Доверяю только дилеру</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="54ed1e55" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не сталкивался</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="типичные-ошибки-при-обслуживании-системы-abs">Типичные ошибки при обслуживании системы ABS</h2>
+
+<p>Самой распространенной ошибкой является использование некачественной или смешанной тормозной жидкости. Разные типы жидкостей имеют различный химический состав, и их смешивание может привести к образованию осадка, который забивает тонкие каналы модулятора.</p>
+
+<p>Другая частая проблема — игнорирование порядка прокачки. Некоторые владельцы полагают, что порядок не важен, но для систем с разделением на контуры (диагональное или передне-заднее) это критично. Неправильная последовательность может создать воздушные пробки, которые невозможно удалить стандартным способом.</p>
+
+<p>Также часто забывают о необходимости предварительного удаления воздуха из главного тормозного цилиндра, если он заменялся или снимался. <strong>ГТЦ</strong> является первым звеном в цепи, и если в нем есть воздух, он будет постоянно поступать в систему, делая все дальнейшие работы бессмысленными.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Этап работы</th>
+<th>Типичная ошибка</th>
+<th>Последствия</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Подготовка</td>
+<td>Низкий уровень в бачке</td>
+<td>Засасывание воздуха насосом ABS</td>
+</tr>
+<tr>
+<td>Процесс</td>
+<td>Игнорирование сканера</td>
+<td>Воздух остается внутри блока</td>
+</tr>
+<tr>
+<td>Завершение</td>
+<td>Резкое нажатие на педаль</td>
+<td>Повреждение манжет ГТЦ</td>
+</tr>
+<tr>
+<td>Итог</td>
+<td>Недолив жидкости</td>
+<td>Вспенивание при нагреве</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что делать, если ошибка не сбрасывается?</summary><div class="pb-accordion-body"><p>Если после прокачки горит лампа ABS, попробуйте сбросить ошибки через сканер. Иногда требуется циклическое включение и выключение зажигания, чтобы система прошла самопроверку. Если ошибка остается, возможно, датчик колеса неисправен или датчик скорости имеет плохой контакт.</p></div></details>
+
+<h2 id="работа-с-электронным-стояночным-тормозом-esp">Работа с электронным стояночным тормозом (ESP)</h2>
+
+<p>На автомобилях с интегрированной системой стабилизации (ESP) процедура усложняется еще больше. В таких системах часто используется электронный стояночный тормоз, который автоматически затягивает задние суппорты при выключенном двигателе.</p>
+
+<p>Перед началом работ необходимо перевести колодки задних суппортов в сервисный режим. Это делается через меню бортового компьютера или с помощью сканера. Если попытаться открутить штуцер прокачки при затянутых колодках, вы можете повредить поршень или не сможет вытеснить воздух из системы.</p>
+
+<p>Иногда требуется отключить аккумулятор на короткое время, чтобы сбросить память адаптации тормозов, но делать это нужно осторожно, чтобы не стереть другие настройки автомобиля. После завершения работ обязательно верните колодки в рабочий режим.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом работ с электронным тормозом обязательно ознакомьтесь со спецификой вашей модели в руководстве пользователя. У некоторых марок (VAG, BMW) процедура входа в сервисный режим отличается, и ошибка может привести к заклиниванию суппорта.</p></aside>
+
+<h2 id="диагностика-после-завершения-работ">Диагностика после завершения работ</h2>
+
+<p>После завершения процесса прокачки не стоит сразу выезжать на дорогу с высокой скоростью. Первым делом проверьте герметичность всех соединений и отсутствие подтеканий в районе штуцеров. Убедитесь, что бачок заполнен до уровня MAX.</p>
+
+<p>Затем включите зажигание и прислушайтесь к работе насоса ABS. Он должен запуститься на несколько секунд для самодиагностики и выключиться. Если насос работает постоянно или издает странные звуки, возможно, в системе остался воздух или есть электрическая неисправность.</p>
+
+<p>Проведите тестовую поездку на безопасном участке дороги. Попробуйте плавно нажать на тормоз, чтобы проверить мягкость педали, а затем выполните резкое торможение. Лампа ABS должна загореться при нажатии и погаснуть после запуска двигателя. Если система сработала, вы почувствуете характерную вибрацию на педали.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Успешная прокачка ABS требует не только физического удаления воздуха, но и правильной работы с электроникой модулятора, что невозможно без диагностического оборудования в большинстве современных автомобилей.</p></aside>
+
+<h2 id="важные-нюансы-для-старых-и-новых-моделей">Важные нюансы для старых и новых моделей</h2>
+
+<p>Подход к прокачке сильно зависит от года выпуска автомобиля. В старых моделях, таких как <em>Volkswagen Golf IV</em> или <em>Honda Civic</em> 90-х годов, гидроблоки были проще, и иногда удавалось обойтись без сканера, используя метод "насоса" вручную.</p>
+
+<p>В современных автомобилях с системами <strong>Brake Assist</strong> и <em>ESP</em> электроника блокирует открытие клапанов без команды от диагностического прибора. Попытка выкрутить штуцер без активации режима может привести к тому, что жидкость просто вытечет, а воздух останется внутри.</p>
+
+<p>Особое внимание стоит уделить автомобилям с гибридными силовыми установками. В них тормозная система часто объединена с рекуперативным торможением, что создает дополнительные сложности с давлением и алгоритмами работы. Здесь вмешательство без специализированного оборудования дилерского уровня практически невозможно.</p>
+
+<blockquote>⚠️ Внимание: Технические регламенты и алгоритмы работы систем безопасности могут меняться в зависимости от обновлений прошивки автомобиля. Всегда сверяйтесь с актуальной технической документацией производителя перед началом сложных операций.</blockquote>
+
+<details>
+<summary>Нужен ли сканер для прокачки ABS на старых машинах?</summary>
+<p>Для многих старых моделей (до 2005-2008 годов) сканер не является строго обязательным, так как конструкция модуля проще. Однако использование сканера значительно упрощает процесс и гарантирует удаление воздуха из всех внутренних каналов.</p>
+</details>
+
+<details>
+<summary>Можно ли смешивать тормозную жидкость разных брендов?</summary>
+<p>Категорически не рекомендуется смешивать жидкости разных производителей, даже если они имеют один стандарт (например, DOT 4). Химический состав присадок может отличаться, что приведет к коррозии уплотнителей или снижению температуры кипения.</p>
+</details>
+
+<details>
+<summary>Что делать, если педаль остается мягкой после прокачки?</summary>
+<p>Если педаль мягкая, скорее всего, в системе остался воздух, возможно, в главном цилиндре или внутри модулятора ABS. Попробуйте повторить процедуру с использованием сканера для активации цикла прокачки гидроблока.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять тормозную жидкость каждые 2 года или 40-60 тысяч километров пробега. Жидкость гигроскопична и со временем накапливает влагу, что снижает её эффективность и может привести к коррозии системы.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-prokachat-tormoza-cherez-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать тормоза через ABS: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по прокачке тормозной системы с активацией ABS. Ошибки, инструменты, порядок дейс</span>
+            </a><a href="/articles/v/vu/vut-granta-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить и купить Лада Гранта с ABS: гид по системе тормозов</span>
+                <span class="pb-related-desc">Подробный разбор системы ABS на Lada Granta. Инструкция по диагностике, поиск рабочих моделей на вто</span>
+            </a><a href="/articles/v/va/vabko-abs-e-raspinovka.html" class="pb-related-card">
+                <span class="pb-related-title">Распиновка WABCO ABS: Схемы подключения и диагностика модуля</span>
+                <span class="pb-related-desc">Подробная распиновка блока ABS WABCO для грузовиков и автобусов. Схемы разъемов, цвета проводов, диа</span>
+            </a><a href="/articles/d/da/datchik-abs-granta-perednij-levyj.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик ABS передний левый Lada Granta: замена, проверка и подбор</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и замене переднего левого датчика ABS на Lada Granta. Признаки неи</span>
+            </a><a href="/articles/k/ka/kak-proverit-rabotu-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить работу ABS: пошаговая диагностика и симптомы</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно проверить датчики и модуль ABS. Симптомы неисправностей, расшифровка оши</span>
+            </a><a href="/articles/p/po/polo-sedan-gorit-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Почему горит лампа ABS на Volkswagen Polo: причины и ремонт</span>
+                <span class="pb-related-desc">Лампочка ABS загорелась на Поло седан? Разбор частых причин сбоя: датчики, предохранители, проводка.</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

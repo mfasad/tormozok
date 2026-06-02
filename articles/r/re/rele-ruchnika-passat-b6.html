@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Реле ручника Passat B6: поиск, замена и ремонт неисправностей — ТормозОК</title>
+    <meta name="description" content="Полное руководство по диагностике и замене реле ручного тормоза на VW Passat B6. Причины отказа, схема подключения, нюансы ремонта электронного стояночного тормоза EPB.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/re/rele-ruchnika-passat-b6.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Реле ручника Passat B6: поиск, замена и ремонт неисправностей">
+    <meta property="og:description" content="Полное руководство по диагностике и замене реле ручного тормоза на VW Passat B6. Причины отказа, схема подключения, нюансы ремонта электронного стояночного тормоза EPB.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Реле ручника Passat B6: поиск, замена и ремонт неисправностей</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#конструкция-и-принцип-работы-системы-epb-в-passat-b6">Конструкция и принцип работы системы EPB в Passat B6</a></li><li><a href="#основные-причины-выхода-из-строя-реле-и-электроники">Основные причины выхода из строя реле и электроники</a></li><li><a href="#симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</a></li><li><a href="#варианты-ремонта-от-замены-блока-до-пайки">Варианты ремонта: от замены блока до пайки</a></li><li><a href="#процесс-замены-и-адаптации-нового-блока">Процесс замены и адаптации нового блока</a></li><li><a href="#профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</a></li><li><a href="#faq-частые-вопросы-владельцев-passat-b6">FAQ: Частые вопросы владельцев Passat B6</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/ru/ruchnik-na-bukhanke-v-kakom-polozhenii-vyklyuchen.html">Ручник на УАЗ Буханка: в каком положении выключен и как проверить</a></li><li><a href="/articles/k/ka/kak-podtyanut-ruchnik-korolla-120.html">Как отрегулировать ручной тормоз на Toyota Corolla E120: пошаговая инструкция</a></li><li><a href="/articles/b/ba/bar-s-ruchnikom-jzx90.html">Ручник на JZX90: как настроить и починить бар с ручным тормозом</a></li><li><a href="/articles/n/ne/ne-gorit-indikator-ruchnika-granta.html">Не горит индикатор ручника Гранта: причины и ремонт своими руками</a></li><li><a href="/articles/z/za/zamena-trosa-ruchnika-vesta.html">Замена троса ручника Lada Vesta: пошаговая инструкция и нюансы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Реле ручника Passat B6: Диагностика, замена и ремонт</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#конструкция-и-принцип-работы-системы-epb-в-passat-b6">Конструкция и принцип работы системы EPB в Passat B6</a></li><li><a href="#основные-причины-выхода-из-строя-реле-и-электроники">Основные причины выхода из строя реле и электроники</a></li><li><a href="#симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</a></li><li><a href="#варианты-ремонта-от-замены-блока-до-пайки">Варианты ремонта: от замены блока до пайки</a></li><li><a href="#процесс-замены-и-адаптации-нового-блока">Процесс замены и адаптации нового блока</a></li><li><a href="#профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</a></li><li><a href="#faq-частые-вопросы-владельцев-passat-b6">FAQ: Частые вопросы владельцев Passat B6</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Электронный стояночный тормоз (EPB) на <em>Volkswagen Passat B6</em> стал настоящим вызовом для многих автовладельцев, привыкших к классическому механическому приводу. В отличие от старых моделей, здесь нет троса, который можно просто подтянуть или заменить. Вся система управляется сложным блоком управления, где ключевым элементом надежности выступает силовое <strong>реле ручника</strong>. Именно этот компонент отвечает за подачу высокого тока на электродвигатели задних суппортов.</p>
+
+<p>Симптомы неисправности часто сбивают с толку: кнопка на панели приборов не реагирует, на дисплее появляется сообщение о неисправности тормоза или, что еще хуже, тормозные колодки заклиниваются в закрытом положении. В таких случаях владельцы часто ищут <em>реле ручника</em>, полагая, что это отдельная деталь, которую можно легко вытащить и заменить, как стеклоподъемник. Однако реальность в мире современных автомобилей VAG несколько сложнее и требует глубокого понимания электроники.</p>
+
+<p>В этой статье мы разберем, что именно скрывается под термином «реле» в контексте <strong>VW Passat B6</strong>, как диагностировать его отказ и стоит ли пытаться провести ремонт самостоятельно. Понимание принципов работы системы EPB позволит вам избежать дорогостоящих ошибок при замене узлов и сэкономить время на поиске запчастей. Мы рассмотрим как штатную схему, так и популярные методы модернизации, известные в профессиональной среде.</p>
+
+<h2 id="конструкция-и-принцип-работы-системы-epb-в-passat-b6">Конструкция и принцип работы системы EPB в Passat B6</h2>
+
+<p>Система электронного ручного тормоза на <em>Passat B6</em> объединяет в себе механику, гидравлику и сложную электронику. В задней части автомобиля установлены специальные суппорты со встроенными электромоторами, которые прижимают колодки к диску. Управляет этими моторами блок управления, расположенный обычно под полом багажника или под сиденьем, в зависимости от года выпуска и комплектации.</p>
+
+<p>Ключевым элементом, обеспечивающим коммутацию токов, является <strong>силовой блок реле</strong>. В старых автомобилях это были отдельные детали, которые легко доставались из монтажного блока. На <em>Passat B6</em> ситуация иная: реле интегрированы непосредственно в блок управления J540 (или J104, в зависимости от версии системы). Это сделано для компактности и защиты от влаги, но усложняет ремонт. При выходе из строя одного из силовых ключей, часто приходится менять весь блок целиком.</p>
+
+<p>Механизм работы основан на принципе винтовой передачи. Когда вы нажимаете кнопку включения, блок управления подает сигнал на <strong>электродвигатель суппорта</em>. Тот вращает винт, который выдвигает поршень и прижимает тормозные колодки. При отпускании происходит обратный процесс. Важно понимать, что ток, необходимый для этого движения, достигает значительных значений, что создает высокую нагрузку на <em>контакты реле</strong> внутри блока.</p>
+
+<blockquote>⚠️ Внимание: Неправильная диагностика может привести к замене исправного блока управления. Прежде чем покупать новый узел, убедитесь в целостности проводки и отсутствии короткого замыкания в самом суппорте.</blockquote>
+
+<h2 id="основные-причины-выхода-из-строя-реле-и-электроники">Основные причины выхода из строя реле и электроники</h2>
+
+<p>Почему же перестает работать <strong>реле ручника</em> на <em>Volkswagen Passat B6</em>? Основной враг здесь — влага и вибрация. Блок управления, несмотря на герметичность, со временем может пропускать влагу, особенно если уплотнители в багажнике повреждены. Влага вызывает окисление контактов внутри платы, что приводит к увеличению переходного сопротивления и перегреву.</p>
+
+<p>Вторая распространенная причина — износ самих силовых ключей. При каждом использовании ручного тормоза через реле проходит пиковый ток. Со временем металл контактов деформируется, появляется нагар, что ведет к залипанию или полному отсутствию контакта. Если вы часто пользуетесь <em>электронным тормозом</em> при движении накатом или в пробках, нагрузка на систему возрастает многократно.</p>
+
+<p>Также стоит учитывать влияние напряжения в бортовой сети. Скачки напряжения, вызванные неисправным генератором или некачественным запуском двигателя, могут вывести из строя <strong>электронные компоненты</strong> блока управления. В таких случаях часто сгорает не только реле, но и микросхемы управления, что делает ремонт блока практически невозможным без дорогого оборудования.</p>
+
+<ul>
+<li>⚡ Окисление контактов внутри блока управления из-за попадания влаги.</li>
+<li>🔥 Перегрев и выгорание силовых ключей при частом срабатывании.</li>
+<li>🔋 Скачки напряжения в бортовой сети автомобиля, превышающие номинал.</li>
+<li>🔧 Механическое заклинивание суппорта, создающее пиковую нагрузку на реле.</li>
+</ul>
+
+<h2 id="симптомы-неисправности-и-методы-диагностики">Симптомы неисправности и методы диагностики</h2>
+
+<p>Как понять, что проблема именно в <strong>реле ручника</strong>? Самый очевидный признак — отсутствие реакции кнопки на панели приборов. При нажатии вы не слышите привычного жужжания моторов, а на приборной панели загорается желтый значок тормоза с надписью «BRAKE» или «Parking Brake Malfunction».</p>
+
+<p>Другой симптом — частичная работа системы. Например, тормоз включается только с одной стороны или происходит самопроизвольное отпускание колодок. В этом случае может быть неисправно одно из реле, отвечающих за конкретный суппорт. Диагностика требует подключения сканера к диагностическому разъему <code>OBD-II</code> и считывания кодов ошибок.</p>
+
+<p>Используйте диагностическое оборудование, такое как <code>VCDS (VAG-COM)</code> или <code>OBDeleven</code>, чтобы заглянуть в блоки данных. В блоке управления тормозами (обычно адрес 53 или 09) вы увидите коды ошибок, указывающие на обрыв цепи, короткое замыкание или выход за пределы допустимого диапазона напряжения. Без сканера определить точную неисправность крайне сложно, так как внешние симптомы часто одинаковы.</p>
+
+<p><strong>Важно:</strong> Если вы слышите щелчки, но моторы не крутятся, это может указывать на то, что реле срабатывает, но не подает напряжение на нагрузку. Это классический признак «выгоревшего» контакта внутри модуля.</p>
+
+<div class="pb-poll" id="poll-0b0c2598"><div class="pb-poll-question">📊 Что чаще всего вызывает отказ ручника на Passat B6?</div><div class="pb-poll-option" data-poll="0b0c2598" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Попадание влаги</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0b0c2598" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Износ щеток мотора</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0b0c2598" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Сгорел блок управления</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0b0c2598" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Проблемы с проводкой</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="варианты-ремонта-от-замены-блока-до-пайки">Варианты ремонта: от замены блока до пайки</h2>
+
+<p>Если диагностика подтвердила неисправность <strong>блоки управления ручным тормозом</strong>, у вас есть два основных пути решения проблемы. Первый — замена блока на новый или б/у. Это самый надежный, но и самый дорогой вариант. Новый блок требует кодирования и адаптации, что может стоить недешево.</p>
+
+<p>Второй вариант — ремонт существующего блока. Опытные автоэлектрики часто предлагают перепаять сгоревшие реле. Внутри блока находятся стандартные автомобильные реле, которые можно заменить на аналогичные с более высоким током. Однако это требует навыков работы с паяльником и знания схемы расположения элементов на плате.</p>
+
+<p>Существует также метод «костыля» — подключение внешнего реле. Некоторые мастера подключают внешние силовые реле параллельно штатным, чтобы разгрузить внутреннюю схему блока. Это может продлить жизнь блоку на некоторое время, но не решает проблему полностью и может вызвать ошибки в системе, если не настроено правильно.</p>
+
+<p>При выборе ремонта помните, что именно <mark>качественная пайка и использование реле с запасом по току (минимум 40-50 Ампер) являются залогом долгой службы восстановленного блока</mark>. Дешевые аналоги могут сгореть уже через месяц эксплуатации.</p>
+
+<blockquote>⚠️ Внимание: Ремонт блока управления своими руками без опыта работы с SMD-компонентами может привести к полной его гибели. Ошибка в полярности или перегрев соседних элементов не оставит шансов на восстановление.</blockquote>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип неисправности</th>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Рекомендуемое решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Не включается</td>
+<td>Кнопка не реагирует, ошибки в блоке</td>
+<td>Сгорело реле подачи питания</td>
+<td>Замена реле внутри блока или замена блока</td>
+</tr>
+<tr>
+<td>Частичное срабатывание</td>
+<td>Тормоз работает только с одной стороны</td>
+<td>Неисправность одного из каналов</td>
+<td>Диагностика конкретного канала, замена реле</td>
+</tr>
+<tr>
+<td>Самопроизвольное отпускание</td>
+<td>Тормоз отпускается без нажатия</td>
+<td>Зависание реле или утечка тока</td>
+<td>Замена блока управления</td>
+</tr>
+<tr>
+<td>Звон в салоне</td>
+<td>Слышен щелчок при выключении</td>
+<td>Механический износ контактов</td>
+<td>Чистка контактов или замена реле</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="процесс-замены-и-адаптации-нового-блока">Процесс замены и адаптации нового блока</h2>
+
+<p>Если вы решились на замену блока управления <em>электронным ручником</em>, важно помнить о процедуре адаптации. Просто установить новый блок и закрутить болты недостаточно. Система должна «увидеть» новые суппорты и запомнить их характеристики.</p>
+
+<p>Процесс адаптации выполняется через диагностический сканер. В меню <code>Блок 53 (Parking Brake)</code> необходимо выбрать функцию «Базовые настройки» или «Адаптация». Система сама выполнит цикл включения и выключения тормоза для определения крайних положений поршней.</p>
+
+<p>Если вы установили б/у блок, может потребоваться полное кодирование. Блок должен совпадать по VIN-коду и программной версии. В противном случае система может работать некорректно или выдавать постоянные ошибки. Используйте <code>VCDS</code> для проверки совместимости и ввода необходимых параметров.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к замене блока</h4><label class="check-item"><input type="checkbox"><span>Скачать сканер VCDS</span></label><label class="check-item"><input type="checkbox"><span>Отключить аккумулятор</span></label><label class="check-item"><input type="checkbox"><span>Снять обшивку багажника</span></label><label class="check-item"><input type="checkbox"><span>Снять старый блок и подключить новый</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Не забудьте проверить состояние суппортов перед установкой нового блока. Если моторы суппортов закисли, новый блок снова может сгореть в первые часы работы из-за перегрузки. <strong>Проверка сопротивления обмоток моторов</strong> — обязательный этап перед монтажом.</p>
+
+<details class="pb-accordion"><summary>Что делать если адаптация не проходит?</summary><div class="pb-accordion-body"><p>Если адаптация проходит с ошибкой, проверьте напряжение аккумулятора. Оно должно быть стабильным выше 12.5В. Также убедитесь, что колеса стоят на месте и не заблокированы.</p></div></details>
+
+<h2 id="профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</h2>
+
+<p>Чтобы избежать проблем с <strong>реле ручника</strong> в будущем, соблюдайте простые правила эксплуатации. Не оставляйте автомобиль на уклоне с включенным электронным тормозом в течение длительного времени, если не планируется поездка. Это создает постоянную нагрузку на механизм.</p>
+
+<p>Регулярно очищайте контакты в багажнике и проверяйте состояние уплотнителей. Влага — главный враг электроники. Если вы заметили следы воды в багажнике, немедленно устраните причину протечки и просушите блок управления.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Периодически (раз в год) выполняйте цикл включения и выключения ручного тормоза с помощью диагностического сканера, чтобы проверить работоспособность механизма и предотвратить заклинивание поршней.</tip</p></aside>
+
+<p>Избегайте использования ручного тормоза как средства остановки автомобиля в движении. Это приводит к перегреву суппортов и ускоренному износу компонентов. Используйте его только для фиксации автомобиля на стоянке.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная диагностика и чистка контактов — это самый простой способ продлить жизнь блоку управления электронным тормозом на Passat B6.</keypoint</p></aside>
+
+<h2 id="faq-частые-вопросы-владельцев-passat-b6">FAQ: Частые вопросы владельцев Passat B6</h2>
+
+<p>В конце статьи мы собрали ответы на самые частые вопросы, которые возникают у владельцев <em>Volkswagen Passat B6</em> при столкновении с проблемами ручного тормоза.</p>
+
+<details>
+<summary>Можно ли заменить блок управления ручником на блок от другой модели VAG?</summary>
+<p>Нет, это не рекомендуется. Блоки управления имеют уникальную калибровку и кодировку, привязанную к конкретному автомобилю. Установка блока от другой модели, даже от Passat B7, скорее всего, приведет к ошибкам и неработоспособности системы без сложной перепрошивки.</p>
+</details>
+
+<details>
+<summary>Как сбросить ошибку ручного тормоза без сканера?</summary>
+<p>Без специализированного диагностического оборудования сброс ошибок системы EPB практически невозможен. Обычные методы вроде отключения аккумулятора не помогают, так как ошибка хранится в энергонезависимой памяти блока. Требуется подключение к <code>OBD-II</code> через <code>VCDS</code> или аналог.</p>
+</details>
+
+<details>
+<summary>Почему ручник включается только с одной стороны?</summary>
+<p>Это может указывать на неисправность одного из электродвигателей суппорта, обрыв провода к нему или сбой в одном из каналов блока управления. Необходимо провести диагностику сопротивления моторов и проверить целостность проводки.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить с неисправным ручником на Passat B6?</summary>
+<p>Технически автомобиль может двигаться, так как основной тормозной контур работает исправно. Однако эксплуатация без стояночного тормоза опасна, особенно на уклоне. Кроме того, система может постоянно выдавать предупреждения, отвлекая водителя.</p>
+</details>
+
+<details>
+<summary>Сколько стоит ремонт блока управления ручником?</summary>
+<p>Стоимость ремонта зависит от сложности работ и региона. Замена реле внутри блока обойдется дешевле покупки нового блока, но цена услуги автоэлектрика может быть высокой. В среднем ремонт стоит от 3000 до 8000 рублей, а замена нового блока — от 15000 рублей и выше.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/ru/ruchnik-na-bukhanke-v-kakom-polozhenii-vyklyuchen.html" class="pb-related-card">
+                <span class="pb-related-title">Ручник на УАЗ Буханка: в каком положении выключен и как проверить</span>
+                <span class="pb-related-desc">Подробная инструкция: положение рычага ручного тормоза на УАЗ Буханка, диагностика неисправностей, р</span>
+            </a><a href="/articles/k/ka/kak-podtyanut-ruchnik-korolla-120.html" class="pb-related-card">
+                <span class="pb-related-title">Как отрегулировать ручной тормоз на Toyota Corolla E120: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по подтяжке ручника Toyota Corolla 120. Инструменты, нюансы передних и задних т</span>
+            </a><a href="/articles/b/ba/bar-s-ruchnikom-jzx90.html" class="pb-related-card">
+                <span class="pb-related-title">Ручник на JZX90: как настроить и починить бар с ручным тормозом</span>
+                <span class="pb-related-desc">Подробное руководство по диагностике, ремонту и тюнингу ручного тормоза Toyota Chaser/Tourer JZX90. </span>
+            </a><a href="/articles/n/ne/ne-gorit-indikator-ruchnika-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Не горит индикатор ручника Гранта: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Почему не работает лампочка ручного тормоза на Lada Granta? Диагностика, схемы, пошаговые инструкции</span>
+            </a><a href="/articles/z/za/zamena-trosa-ruchnika-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника Lada Vesta: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по замене троса стояночного тормоза на Lada Vesta. Ошибки, стоимость запчастей, п</span>
+            </a><a href="/articles/t/tr/tros-ruchnika-sollers-atlant.html" class="pb-related-card">
+                <span class="pb-related-title">Трос ручника Соллерс Атлант: замена, симптомы износа и выбор запчасти</span>
+                <span class="pb-related-desc">Полный гайд по тросу стояночного тормоза для УАЗ Патриот (Соллерс). Признаки износа, пошаговая замен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

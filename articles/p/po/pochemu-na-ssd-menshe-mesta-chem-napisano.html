@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему на SSD меньше места: объяснение математики и скрытых файлов — ТормозОК</title>
+    <meta name="description" content="Узнайте, почему объем SSD диска меньше заявленного производителем. Разбор разницы между десятичной и двоичной системой, скрытые разделы и резервные зоны.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/po/pochemu-na-ssd-menshe-mesta-chem-napisano.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему на SSD меньше места: объяснение математики и скрытых файлов">
+    <meta property="og:description" content="Узнайте, почему объем SSD диска меньше заявленного производителем. Разбор разницы между десятичной и двоичной системой, скрытые разделы и резервные зоны.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему на SSD меньше места: объяснение математики и скрытых файлов</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#разница-в-системах-счисления-десятичная-против-двоичной">Разница в системах счисления: Десятичная против Двоичной</a></li><li><a href="#резервная-область-и-технология-over-provisioning">Резервная область и технология Over-provisioning</a></li><li><a href="#скрытые-разделы-и-файловая-система">Скрытые разделы и файловая система</a></li><li><a href="#износ-накопителя-и-переназначение-секторов">Износ накопителя и переназначение секторов</a></li><li><a href="#как-проверить-реальное-состояние-диска">Как проверить реальное состояние диска</a></li><li><a href="#распространенные-мифы-и-заблуждения">Распространенные мифы и заблуждения</a></li><li><a href="#влияние-типа-памяти-на-доступное-пространство">Влияние типа памяти на доступное пространство</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-pedalej-v-tramvae.html">Сколько педалей в трамвае: устройство управления и тормозная система</a></li><li><a href="/articles/o/os/osushitel-vozdukha-dlya-kompressora-printsip-raboty.html">Осушитель воздуха для компрессора: принцип работы, виды и настройка</a></li><li><a href="/articles/k/ka/kak-uskorit-ssd-disk.html">Как ускорить работу SSD: 7 проверенных способов оптимизации</a></li><li><a href="/articles/s/sk/skolko-u-tramvaya-koles.html">Сколько колес у трамвая: устройство ходовой части и типы тележек</a></li><li><a href="/articles/s/sb/sborka-mekhanizma-zadnego-kolesa-velosipeda.html">Сборка механизма заднего колеса велосипеда: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему на SSD меньше места, чем написано на упаковке?</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#разница-в-системах-счисления-десятичная-против-двоичной">Разница в системах счисления: Десятичная против Двоичной</a></li><li><a href="#резервная-область-и-технология-over-provisioning">Резервная область и технология Over-provisioning</a></li><li><a href="#скрытые-разделы-и-файловая-система">Скрытые разделы и файловая система</a></li><li><a href="#износ-накопителя-и-переназначение-секторов">Износ накопителя и переназначение секторов</a></li><li><a href="#как-проверить-реальное-состояние-диска">Как проверить реальное состояние диска</a></li><li><a href="#распространенные-мифы-и-заблуждения">Распространенные мифы и заблуждения</a></li><li><a href="#влияние-типа-памяти-на-доступное-пространство">Влияние типа памяти на доступное пространство</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вы только что распаковали новый <em>Kingston A400</em> или <em>Samsung 980 Pro</em>, подключили его к компьютеру и с удивлением заметили, что доступное пространство заметно меньше, чем указано на коробке. Производитель обещал 500 гигабайт, а система показывает чуть более 465. Это не поломка, не дефект и не обман со стороны магазина. Это фундаментальная особенность вычислительной математики и архитектуры современных накопителей.</p>
+
+<p>Разница между заявленным и реальным объемом вызывает раздражение у многих пользователей, однако причина кроется в разных подходах к подсчету данных. Вам нужно понимать, что компьютер и производитель используют разные системы счисления для определения одного и того же понятия «байт». Кроме того, часть физического пространства на кристалле памяти зарезервирована для обеспечения стабильной работы контроллера и долговечности устройства.</p>
+
+<h2 id="разница-в-системах-счисления-десятичная-против-двоичной">Разница в системах счисления: Десятичная против Двоичной</h2>
+
+<p>Основная причина потери видимого объема заключается в том, как производители и операционные системы интерпретируют приставки «кило», «мега» и «гига». Для фабрик, производящих память, проще использовать десятичную систему счисления, где приставка «гига» означает ровно $10^9$ (1 000 000 000) байт. Именно так вычисляется объем на заводе при тестировании чипов.</p>
+
+<p>Операционная система Windows, в свою очередь, оперирует двоичной системой. Для неё 1 килобайт — это $2^{10}$ (1024) байт, 1 мегабайт — $2^{20}$, а 1 гигабайт — $2^{30}$ (1 073 741 824) байт. Когда вы видите в «Мой компьютер» значение меньше номинального, система просто честно переводит физические байты в те единицы, которые понимает двоичная логика процессора.</p>
+
+<p>Эта математическая нестыковка приводит к тому, что каждый следующий шаг в иерархии единиц измерения «съедает» примерно 7% полезного объема. Чем больше емкость накопителя, тем ощутимее становится эта разница для конечного пользователя. Ниже приведена таблица, наглядно демонстрирующая расхождение между десятичными значениями (маркетинг) и двоичными (Windows).</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Заявленный объем (ГБ, 10⁹)</th>
+<th>Реальный объем в Windows (Гиб, 2³⁰)</th>
+<th>Потеря в процентах</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>120 ГБ</td>
+<td>111.76 ГиБ</td>
+<td>6.8%</td>
+</tr>
+<tr>
+<td>250 ГБ</td>
+<td>232.83 ГиБ</td>
+<td>6.9%</td>
+</tr>
+<tr>
+<td>500 ГБ</td>
+<td>465.66 ГиБ</td>
+<td>6.9%</td>
+</tr>
+<tr>
+<td>1000 ГБ (1 ТБ)</td>
+<td>931.32 ГиБ</td>
+<td>6.9%</td>
+</tr>
+<tr>
+<td>2000 ГБ (2 ТБ)</td>
+<td>1862.65 ГиБ</td>
+<td>6.9%</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Покупая диск на 1 ТБ, вы получаете ровно 1 000 000 000 000 байт. Но Windows делит это число на 1 073 741 824, получая в результате 931.32. Это не ошибка системы, а стандартный способ отображения информации. <strong>Точный расчет</strong> всегда показывает, что реальный объем всегда меньше маркетингового на величину коэффициента 1,073741824.</p>
+
+<blockquote>⚠️ Внимание: Разница в объеме между заявленным и отображаемым в Windows является абсолютной нормой и не является гарантийным случаем. Если у вас диск на 500 ГБ и он показывает 465 ГБ — это правильно.</blockquote>
+
+<div class="pb-poll" id="poll-e1f460b5"><div class="pb-poll-question">📊 Какой объем SSD вы сейчас используете?</div><div class="pb-poll-option" data-poll="e1f460b5" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Меньше 250 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e1f460b5" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">250-500 ГБ</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e1f460b5" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">1 ТБ и более</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="e1f460b5" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Пока не знаю объема</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="резервная-область-и-технология-over-provisioning">Резервная область и технология Over-provisioning</h2>
+
+<p>Даже если вы приведете математику к общему знаменателю и поймете, что 1000 ГБ — это на самом деле 931 ГиБ, вы все равно заметите, что доступное пространство еще меньше. Часть физического объема <strong>скрыта от пользователя</strong> и используется для внутренних нужд контроллера накопителя. Эта зона называется Over-provisioning (OP).</p>
+
+<p>Производители SSD-накопителей намеренно оставляют часть ячеек памяти незадействованными для хранения данных пользователя. Эти резервные слоты нужны для выравнивания износа (Wear Leveling). Когда вы удаляете файл, контроллер не очищает ячейки мгновенно, а помечает их как «свободные», но физически данные там остаются до момента перезаписи. Резервная зона позволяет перенаправлять записи на новые ячейки, продлевая жизнь диску.</p>
+
+<p>Кроме того, в резервной области хранятся служебные таблицы (FTL — Flash Translation Layer), которые mappaют логические адреса, видимые ОС, на физические адреса ячеек памяти. Без этой скрытой зоны скорость работы диска резко падала бы после заполнения онлайна свободными блоками. <em>Crucial MX500</em> и другие модели среднего сегмента имеют заводскую настройку OP, которая может составлять от 5% до 10% от общего объема.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Резервная зона (Over-provisioning) критически важна для долгой службы SSD и поддержания высокой скорости записи, даже если это уменьшает доступное пользователю пространство.</p></aside>
+
+<h2 id="скрытые-разделы-и-файловая-система">Скрытые разделы и файловая система</h2>
+
+<p>После того как диск отформатирован, система создает файловую систему (обычно <code>NTFS</code> или <code>exFAT</code>), которая также занимает место. Структура файловой системы включает в себя главную загрузочную запись (MBR) или таблицу разделов GUID (GPT), таблицу файловой системы (MFT в NTFS) и другие служебные записи. Эти данные физически хранятся на диске и не отображаются как файлы, но занимают физические сектора.</p>
+
+<p>Особенно сильно это заметно на дисках небольшого объема. Например, на 120 ГБ диске разница из-за файловой системы может быть ощутимее в абсолютных цифрах, чем на 2 ТБ диске, где процент потерь на структуру меньше. Кроме того, если вы устанавливаете диск в ноутбук или ПК с предустановленной системой, производитель мог создать скрытые разделы для восстановления (Recovery Partition) или EFI. Эти разделы исчезают из общего объема под буквой диска, но занимают место на физическом носителе.</p>
+
+<p>Иногда пользователи путают доступное пространство под буквой диска с полным объемом физического накопителя. В инструментальной панели управления Windows можно увидеть, что диск разделен на несколько логических единиц. <strong>Служебные разделы</strong> часто не видны в обычном проводнике, но занимают гигабайты полезного пространства.</p>
+
+<p>Чтобы увидеть полную картину, необходимо открыть «Управление дисками». Там вы увидите всю структуру: раздел восстановления, системный раздел, основной раздел с файлами и нераспределенное пространство. Если у вас диск на 500 ГБ, а в «Проводнике» доступно 450 ГБ, то в управлении дисками вы увидите сумму всех этих частей, которая будет равна теоретическому максимуму (около 465 ГБ).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Используйте утилиту Disk Management (Управление дисками) или сторонние программы вроде MiniTool Partition Wizard, чтобы увидеть реальное распределение физического пространства на накопителе.</p></aside>
+
+<h2 id="износ-накопителя-и-переназначение-секторов">Износ накопителя и переназначение секторов</h2>
+
+<p>Еще один фактор, влияющий на доступный объем со временем — это деградация ячеек памяти NAND Flash. Со временем некоторые ячейки перестают надежно хранить заряд и становятся неисправными. Контроллер SSD обнаруживает их и заменяет на ячейки из резервной области (Over-provisioning).</p>
+
+<p>Этот процесс называется переназначением блоков (Remapping). Если резервная зона заполнится полностью и выйдут из строя новые ячейки, контроллер больше не сможет заменить их. В этом случае диск станет работать нестабильно, а его доступный объем может уменьшиться еще сильнее, так как контроллер будет помечать поврежденные участки как недоступные для записи.</p>
+
+<p>Важно регулярно проверять состояние здоровья накопителя через утилиты S.M.A.R.T. Если вы видите высокий счетчик переназначенных секторов (Reallocated Sectors Count), это сигнал о том, что физический объем диска деградирует. Для моделей <em>WD Blue</em> или <em>SanDisk</em> это критический параметр, требующий замены устройства.</p>
+
+<blockquote>⚠️ Внимание: Если программа мониторинга показывает, что резервная зона (Over-provisioning) исчерпана, а количество переназначенных секторов растет — это признак скорой физической смерти накопителя.</blockquote>
+
+<details class="pb-accordion"><summary>Что такое S.M.A.R.T.?</summary><div class="pb-accordion-body"><p>S.M.A.R.T. (Self-Monitoring, Analysis and Reporting Technology) — это система самодиагностики, встроенная в накопитель, которая отслеживает различные параметры надежности, включая температуру, количество циклов записи и состояние ячеек памяти.</p></div></details>
+
+<h2 id="как-проверить-реальное-состояние-диска">Как проверить реальное состояние диска</h2>
+
+<p>Если вы хотите убедиться, что с вашим SSD все в порядке и он не обманут, вам необходимо использовать специализированный софт. Обычный «Проводник» показывает только логический объем, доступный для файлов. Для глубокого анализа используйте такие утилиты, как <code>CrystalDiskInfo</code> или <code>HDDScan</code>.</p>
+
+<p>В этих программах вы увидите не только текущий объем, но и статус здоровья, общее количество записанных данных и состояние резервной области. Обратите внимание на параметр «Available Reserved Space» (Доступное зарезервированное пространство). Если он близок к 0%, диск находится в критическом состоянии.</p>
+
+<p>Также можно использовать встроенные инструменты Windows, такие как <code>chkdsk</code> или PowerShell, для проверки целостности файловой системы и сектора. Команда <code>Get-PhysicalDisk</code> в PowerShell покажет вам реальный размер в байтах, который можно самостоятельно конвертировать, чтобы проверить соответствие номиналу.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка состояния SSD</h4><label class="check-item"><input type="checkbox"><span>Установить CrystalDiskInfo</span></label><label class="check-item"><input type="checkbox"><span>Проверить статус "Хорошо"</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть счетчик "Reallocated Sectors"</span></label><label class="check-item"><input type="checkbox"><span>Посмотреть доступное зарезервированное пространство</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="распространенные-мифы-и-заблуждения">Распространенные мифы и заблуждения</h2>
+
+<p>Вокруг темы объема SSD существует множество мифов. Один из самых популярных — «производитель обманул». Как мы выяснили, отклонение в размере является следствием математических стандартов и технической необходимости. Другой миф гласит, что можно «вернуть» потерянные гигабайты, удалив скрытые разделы. Делать этого не стоит, так как системные разделы могут быть нужны для загрузки или восстановления ОС.</p>
+
+<p>Также некоторые пользователи верят, что форматирование в FAT32 вместо NTFS вернет им место. На самом деле, файловая система лишь немного меняет структуру заголовков, но не влияет на физический объем резервной зоны или математику перевода байт. Удаление скрытых разделов восстановления может лишить вас возможности вернуть заводские настройки устройства в случае сбоя.</p>
+
+<p>Важно понимать, что <strong>физический объем</strong> кристаллов памяти фиксирован. Никакие настройки ПО не могут заставить диск хранить больше данных, чем позволяют физические ячейки. Единственный способ увеличить объем — заменить накопитель на модель большей емкости или добавить второй диск.</p>
+
+<h2 id="влияние-типа-памяти-на-доступное-пространство">Влияние типа памяти на доступное пространство</h2>
+
+<p>Тип используемой памяти (SLC, MLC, TLC, QLC) также косвенно влияет на то, как формируется итоговый объем. В старых моделях с памятью SLC или MLC контроллеры были проще, и резервная зона могла быть меньше. Современные бюджетные накопители на QLC-памяти часто имеют более агрессивную политику Over-provisioning для компенсации невысокой скорости записи и низкой долговечности ячеек.</p>
+
+<p>Это означает, что два диска с одинаковой заявленной емкостью от разных брендов могут иметь разное реальное доступное пространство. Один может иметь 5% резерва, а другой — 15% для повышения надежности. Производитель не обязан указывать этот процент в характеристиках, поэтому при покупке стоит ориентироваться на отзывы и тесты конкретных моделей.</p>
+
+<p>Если вы видите на рынке диск с аномально большим объемом за низкую цену (например, «1 ТБ» за цену 250 ГБ), скорее всего, это подделка. Такие устройства часто содержат фейковую прошивку, которая сообщает системе ложный объем. При заполнении диска реальными данными он начнет перезаписывать старые файлы, и вы потеряете информацию. <em>SanDisk Ultra</em> или <em>Kingston</em> не производят поддельные устройства, но рынок изобилует клонами.</p>
+
+<blockquote>⚠️ Внимание: Если диск показывает объем 1 ТБ, но при копировании файла на 100 ГБ он выдает ошибку или перезаписывает старые данные — это подделка. Немедленно прекратите использование.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Никогда не доверяйте только информации о емкости в диспетчере задач для дешевых дисков неизвестных брендов. Используйте утилиты проверки, такие как h2testw, для верификации реального объема.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли вернуть «потерянные» гигабайты?</summary>
+<p>Нет, это невозможно. Часть объема физически отведена под резервную зону и скрыта от пользователя, а часть теряется из-за разницы в системах счисления. Это фундаментальные ограничения технологии.</p>
+</details>
+
+<details>
+<summary>Почему на флешке объем тоже меньше, чем написано?</summary>
+<p>Причина та же: производители флеш-памяти (USB, SSD) используют десятичную систему (1 ГБ = 1000 МБ), а операционная система — двоичную (1 ГиБ = 1024 МБ). Разница составляет около 7%.</p>
+</details>
+
+<details>
+<summary>Влияет ли форматирование на доступный объем?</summary>
+<p>Форматирование в разных файловых системах (NTFS, FAT32, exFAT) может незначительно менять размер служебных структур диска, но не влияет на физический объем резервной зоны или математическое расхождение единиц измерения.</p>
+</details>
+
+<details>
+<summary>Как узнать, сколько места реально занято на диске?</summary>
+<p>Используйте утилиту «Анализатор дисков» (TreeSize Free, WinDirStat) или встроенный инструмент «Хранилище» в параметрах Windows, чтобы увидеть, какие файлы занимают наибольшее количество места, а также проверьте состояние через CrystalDiskInfo.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skolko-pedalej-v-tramvae.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько педалей в трамвае: устройство управления и тормозная система</span>
+                <span class="pb-related-desc">Подробный разбор устройства кабины трамвайного водителя. Сколько педалей в трамвае, как работает тор</span>
+            </a><a href="/articles/o/os/osushitel-vozdukha-dlya-kompressora-printsip-raboty.html" class="pb-related-card">
+                <span class="pb-related-title">Осушитель воздуха для компрессора: принцип работы, виды и настройка</span>
+                <span class="pb-related-desc">Подробный разбор принципа работы осушителя воздуха для компрессора. Виды моделей, схемы охлаждения, </span>
+            </a><a href="/articles/k/ka/kak-uskorit-ssd-disk.html" class="pb-related-card">
+                <span class="pb-related-title">Как ускорить работу SSD: 7 проверенных способов оптимизации</span>
+                <span class="pb-related-desc">Узнайте, как реально ускорить SSD диск без потери данных. Настройки TRIM, отключение индексации, про</span>
+            </a><a href="/articles/s/sk/skolko-u-tramvaya-koles.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько колес у трамвая: устройство ходовой части и типы тележек</span>
+                <span class="pb-related-desc">Подробный разбор конструкции трамвайных колесных пар. Узнайте, сколько колес у разных моделей трамва</span>
+            </a><a href="/articles/s/sb/sborka-mekhanizma-zadnego-kolesa-velosipeda.html" class="pb-related-card">
+                <span class="pb-related-title">Сборка механизма заднего колеса велосипеда: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по сборке заднего колеса: установка спиц, втулки, трещотки и звезды. Советы по </span>
+            </a><a href="/articles/n/ni/nizkaya-skorost-ssd-m2-nvme.html" class="pb-related-card">
+                <span class="pb-related-title">Почему медленный M.2 NVMe SSD: причины и способы ускорения</span>
+                <span class="pb-related-desc">Низкая скорость SSD M.2 NVMe? Узнайте реальные причины: перегрев, настройки BIOS, режимы PCIe и мето</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

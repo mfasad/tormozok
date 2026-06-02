@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Электронный ручник: как работает, плюсы и минусы EPB — ТормозОК</title>
+    <meta name="description" content="Подробный разбор работы электронного ручного тормоза. Принцип действия, преимущества перед механикой, нюансы эксплуатации и ремонта системы EPB.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-rabotaet-elektronnyj-ruchnik-avtomobilya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Электронный ручник: как работает, плюсы и минусы EPB">
+    <meta property="og:description" content="Подробный разбор работы электронного ручного тормоза. Принцип действия, преимущества перед механикой, нюансы эксплуатации и ремонта системы EPB.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Электронный ручник: как работает, плюсы и минусы EPB</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механизм-действия-и-интеграция-в-тормозную-систему">Механизм действия и интеграция в тормозную систему</a></li><li><a href="#автоматизация-процессов-функция-auto-hold-и-авто-выключение">Автоматизация процессов: функция Auto Hold и авто-выключение</a></li><li><a href="#технические-особенности-и-надежность-компонентов">Технические особенности и надежность компонентов</a></li><li><a href="#принципиальные-отличия-от-механического-аналога">Принципиальные отличия от механического аналога</a></li><li><a href="#экстренное-торможение-с-использованием-epb">Экстренное торможение с использованием EPB</a></li><li><a href="#нюансы-эксплуатации-и-обслуживания-системы">Нюансы эксплуатации и обслуживания системы</a></li><li><a href="#ремонт-и-диагностика-неисправностей">Ремонт и диагностика неисправностей</a></li><li><a href="#будущее-системы-стояночного-тормоза">Будущее системы стояночного тормоза</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/t/tr/tros-ruchnika-golf-6.html">Замена троса ручника Golf 6: инструкция, подбор и нюансы</a></li><li><a href="/articles/p/po/pochemu-gorit-znak-ruchnika-esli-on-opushchen.html">Горит знак ручника при опущенном рычаге: 7 причин и как устранить</a></li><li><a href="/articles/k/ka/kak-oslabit-ruchnik-na-kaline-1-bez-yamy.html">Как ослабить ручник на Калине 1 без ямы: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-ukorotit-tros-ruchnika.html">Как укоротить трос ручника: пошаговая инструкция и нюансы</a></li><li><a href="/articles/t/tr/trosik-ruchnika-na-grantu.html">Замена тросика ручника на Лада Гранта: Инструкция и подбор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы электронного ручного тормоза автомобиля</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механизм-действия-и-интеграция-в-тормозную-систему">Механизм действия и интеграция в тормозную систему</a></li><li><a href="#автоматизация-процессов-функция-auto-hold-и-авто-выключение">Автоматизация процессов: функция Auto Hold и авто-выключение</a></li><li><a href="#технические-особенности-и-надежность-компонентов">Технические особенности и надежность компонентов</a></li><li><a href="#принципиальные-отличия-от-механического-аналога">Принципиальные отличия от механического аналога</a></li><li><a href="#экстренное-торможение-с-использованием-epb">Экстренное торможение с использованием EPB</a></li><li><a href="#нюансы-эксплуатации-и-обслуживания-системы">Нюансы эксплуатации и обслуживания системы</a></li><li><a href="#ремонт-и-диагностика-неисправностей">Ремонт и диагностика неисправностей</a></li><li><a href="#будущее-системы-стояночного-тормоза">Будущее системы стояночного тормоза</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Современный автомобильный прогресс неустанно меняет привычные нам интерьеры и алгоритмы управления машиной. Водители все чаще сталкиваются с отсутствием классического рычага «ручника» между сиденьями, уступив место компактной кнопке с пиктограммой буквы «P». Эта трансформация не просто косметическая — она коренным образом меняет физику и логику работы тормозной системы.</p>
+
+<p>Электронный стояночный тормоз, известный в профессиональной среде как <strong>EPB</strong> (Electronic Parking Brake), берет на себя функции традиционного механического привода, но реализует их с помощью электромеханических приводов, интегрированных непосредственно в механизм тормозных суппортов. Это решение позволяет освободить пространство в салоне, снизить вес конструкции и интегрировать систему в комплекс активной безопасности.</p>
+
+<h2 id="механизм-действия-и-интеграция-в-тормозную-систему">Механизм действия и интеграция в тормозную систему</h2>
+
+<p>В основе системы лежит принцип преобразования электрической энергии в механическое усилие, которое прижимает тормозные колодки к диску. Вместо тросов, приводящих в действие рычаги на задних колесах, здесь используются компактные электродвигатели. Эти двигатели могут быть установлены двумя способами: либо непосредственно на корпусе суппорта, либо интегрированы в механизм развода колодок.</p>
+
+<p>Управление осуществляется через электронный блок управления (ЭБУ), который получает сигнал от кнопки в салоне. При нажатии на кнопку <code>EPB</code> блок анализирует текущее состояние автомобиля: скорость движения, нажатие педали тормоза и положение дроссельной заслонки. Если машина стоит на месте, активируется режим стояночного торможения с усилием, превышающим возможности человека.</p>
+
+<p>Важно понимать, что система не просто блокирует колеса, а создает определенное усилие сжатия. Это усилие рассчитывается алгоритмом и зависит от массы автомобиля и угла наклона дороги. В отличие от механики, где водитель сам чувствует усилие на рычаге, здесь все происходит незаметно для оператора, но с высокой точностью.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Электронный привод EPB заменяет тросовый механизм, используя моторы в суппортах для прижатия колодок по команде ЭБУ.</p></aside>
+
+<h2 id="автоматизация-процессов-функция-auto-hold-и-авто-выключение">Автоматизация процессов: функция Auto Hold и авто-выключение</h2>
+
+<p>Самым значимым преимуществом электроники является появление дополнительных функций, недоступных механическим системам. Одной из таких функций является <strong>Auto Hold</strong> (автоматическое удержание). Эта технология позволяет автомобилю оставаться на месте на светофорах или в пробках без необходимости держать ногу на педали тормоза или включать ручной тормоз.</p>
+
+<p>Когда вы останавливаетесь и нажимаете на педаль тормоза до упора, система активирует EPB. Как только вы убираете ногу с педали тормоза и нажимаете на газ, электроника автоматически отпускает колодки, позволяя машине плавно трогаться. Это особенно полезно при движении в плотном городском трафике или на крутых подъемах.</p>
+
+<p>Еще одной интересной особенностью является автоматическое включение стояночного тормоза при глушении двигателя. Как только вы выключаете зажигание, блок управления <em>EPB</em> считывает, что двигатель остановлен, и при необходимости активирует тормоза, даже если вы забыли нажать кнопку. Это исключает риск отката машины при парковке.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Функция Auto Hold не предназначена для длительного стояния на крутом склоне без участия водителя — система может перегреться при длительном удержании в режиме «холдинга», поэтому для парковки лучше использовать режим ручного тормоза.</p>
+</blockquote>
+
+<h2 id="технические-особенности-и-надежность-компонентов">Технические особенности и надежность компонентов</h2>
+
+<p>Надежность системы во многом зависит от качества используемых компонентов и условий эксплуатации. Электродвигатели, установленные в суппортах, защищены от влаги и грязи герметичным корпусом, однако они требуют периодической диагностики. Технический ресурс механизма EPB сопоставим с ресурсом самого тормозного суппорта.</p>
+
+<p>Главной проблемой при обслуживании таких систем является замена тормозных колодок. В отличие от механики, где можно просто отжать поршень, здесь требуется специальная процедура отвода поршня обратно через компьютерную диагностику. Попытка механически вдавить поршень без отключения мотора может привести к поломке привода.</p>
+
+<p>Коррозия является врагом №1 для электромеханических узлов. Если автомобиль стоит на улице во влажном климате, мокрые тормозные диски могут примерзнуть к колодкам, создавая дополнительную нагрузку на мотор. Производители закладывают запас прочности, но регулярная профилактика необходима.</p>
+
+<details class="pb-accordion"><summary>Особенности замены колодок на EPB</summary><div class="pb-accordion-body"><p> Почему нельзя просто вдавить поршень?:При попытке вдавить поршень без использования диагностического сканера зубчатая передача внутри электромотора может сломаться, так как мотор сопротивляется вращению. Это приведет к дорогостоящему ремонту.</p></div></details>
+
+<h2 id="принципиальные-отличия-от-механического-аналога">Принципиальные отличия от механического аналога</h2>
+
+<p>Чтобы лучше понять специфику работы, стоит сравнить электронную систему с привычной механикой. Ниже приведена таблица, демонстрирующая ключевые различия в конструкции и эксплуатации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Механический ручник</th>
+<th>Электронный ручник (EPB)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Привод</td>
+<td>Стальной трос</td>
+<td>Электродвигатель в суппорте</td>
+</tr>
+<tr>
+<td>Управление</td>
+<td>Рычаг или педаль</td>
+<td>Кнопка на панели</td>
+</tr>
+<tr>
+<td>Усилие</td>
+<td>Зависит от силы рук водителя</td>
+<td>Рассчитывается ЭБУ автоматически</td>
+</tr>
+<tr>
+<td>Обслуживание</td>
+<td>Регулировка троса, замена колодок</td>
+<td>Диагностика через сканер, замена колодок</td>
+</tr>
+<tr>
+<td>Вес конструкции</td>
+<td>Выше</td>
+<td>Ниже</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Одной из главных проблем для владельцев является стоимость ремонта. Если в механической системе замена троса — это процедура, доступная любому гаражу, то восстановление электронного привода часто требует замены всего суппорта или сложного ремонта с переборкой мотора.</p>
+
+<p>Тем не менее, экономия веса играет роль в динамике автомобиля. Уменьшение неподрессоренных масс на колесах положительно сказывается на работе подвески и управляемости, что особенно заметно в спортивных моделях <em>BMW</em> или <em>Audi</em>.</p>
+
+<div class="pb-poll" id="poll-5c9ea3c1"><div class="pb-poll-question">📊 Какой тип ручного тормоза вы предпочитаете?</div><div class="pb-poll-option" data-poll="5c9ea3c1" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Классический рычаг</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5c9ea3c1" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Электронный кнопочный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5c9ea3c1" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Не имеет значения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5c9ea3c1" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нравится педальный вариант</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="экстренное-торможение-с-использованием-epb">Экстренное торможение с использованием EPB</h2>
+
+<p>Многие водители не знают, что электронная кнопка может служить резервным средством экстренного торможения. Если педаль тормоза отказала или провалилась до пола, удерживание кнопки EPB в нажатом состоянии активирует динамическое торможение.</p>
+
+<p>В этом режиме система не просто блокирует колеса, а начинает их замедлять с учетом скорости автомобиля. ЭБУ <strong>EPB</strong> управляет гидравликой ABS, чтобы предотвратить полную блокировку колес и потерю управляемости. Это позволяет остановить машину в аварийной ситуации с минимальным риском заноса.</p>
+
+<p>Однако следует помнить, что это не замена педали тормоза. Тормозной путь может быть больше, а эффект от замедления наступает с небольшой задержкой, необходимой для обработки сигнала блоком управления. Использовать этот метод нужно только в крайнем случае.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При экстренном торможении кнопкой EPB машину может занести, если на асфальте лед или снег, так как электроника может не успеть скорректировать усилие на скользкой поверхности так же быстро, как ABS при работе с педалью.</p>
+</blockquote>
+
+<h2 id="нюансы-эксплуатации-и-обслуживания-системы">Нюансы эксплуатации и обслуживания системы</h2>
+
+<p>Обслуживание системы EPB требует соблюдения строгой последовательности действий. При замене задних тормозных колодок необходимо обязательно перевести суппорты в «транспортное положение» с помощью диагностического оборудования. Это отводит поршень назад, освобождая место для новых, более толстых колодок.</p>
+
+<p>Если вы покупаете подержанный автомобиль, обязательно проверьте состояние колодок и дисков. Электронные датчики износа часто выходят из строя раньше самих колодок, а владелец может не знать о критическом состоянии тормозов до появления скрежета.</p>
+
+<p>Также стоит обратить внимание на режим «калибровки» системы после замены элементов. Блок управления должен заново выучить положение поршня и усилие, необходимое для надежной фиксации. Пропуск этого шага может привести к тому, что ручник не будет держаться на подъеме.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка системы EPB перед зимой</h4><label class="check-item"><input type="checkbox"><span>Осмотреть состояние клемм на задних суппортах</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу кнопки в салоне</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии люфта тросов (если есть)</span></label><label class="check-item"><input type="checkbox"><span>Протестировать Auto Hold на подъеме</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="ремонт-и-диагностика-неисправностей">Ремонт и диагностика неисправностей</h2>
+
+<p>Самые частые поломки связаны с загрязнением контактов или выходом из строя электромотора. Если на приборной панели загорелась красная лампа с надписью <code>PARK BRAKE</code> или восклицательный знак в круге, это сигнал о необходимости диагностики. Проблемы могут быть как программными, так и аппаратными.</p>
+
+<p>Иногда система блокируется из-за перегрева или низкого напряжения в бортовой сети. В таких случаях достаточно перезагрузить систему, отключив аккумулятор на несколько минут, но это лишь временное решение. Если проблема повторяется, требуется сканирование ошибок через <code>OBD-II</code> разъем.</p>
+
+<p>В редких случаях может потребоваться замена всего суппорта в сборе, если мотор внутри заклинило коррозией. Это дорогостоящая процедура, но она часто единственно возможная для восстановления работоспособности.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Не пытайтесь разбирать электромотор суппорта самостоятельно без специальных знаний и инструментов, так как нарушение герметичности корпуса приведет к попаданию влаги и быстрому выходу узла из строя.</p>
+</blockquote>
+
+<p>В современных моделях, таких как <em>Volkswagen</em> или <em>Mercedes-Benz</em>, процедура сброса ошибок и калибровки часто доступна только у официального дилера или в сервисах с профессиональным сканером. Это создает зависимость владельца от специализированных центров.</p>
+
+<h2 id="будущее-системы-стояночного-тормоза">Будущее системы стояночного тормоза</h2>
+
+<p>Эволюция тормозных систем движется в сторону полной интеграции с системами автономного вождения. В будущем функции EPB могут быть расширены за счет использования алгоритмов искусственного интеллекта, которые будут предсказывать необходимость удержания еще до остановки автомобиля.</p>
+
+<p>Возможно появление систем, которые будут автоматически парковать автомобиль на выбранном месте без участия водителя, используя электроприводы колес для точного позиционирования. Это потребует еще более высокой надежности и отказоустойчивости электронных компонентов.</p>
+
+<p>Тем не менее, в обозримом будущем механический резерв останется необходимостью. Даже самые продвинутые системы должны иметь возможность физического отключения или аварийного срабатывания в случае полного отказа электроники.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене аккумулятора на автомобиле с EPB обязательно найдите в инструкции процедуру «транспортировочного режима» или временного отключения системы, чтобы не сломать блоки управления скачками напряжения.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Можно ли ездить с включенным электронным ручником?</summary>
+<p>Кратковременное движение с включенным ручником возможно, но система имеет защиту от перегрева. При длительной езде с заблокированными колесами может сгореть электродвигатель или заклинить тормозные суппорты, что приведет к потере управляемости.</p>
+</details>
+
+<details>
+<summary>Почему загорелась лампа EPB при холодном пуске?</summary>
+<p>Это может означать, что система не может проверить состояние тормозов или блокировка не отпустилась до конца из-за примерзания колодок. Если лампа мигает, нужно проверить уровень жидкости или обратиться в сервис для диагностики.</p>
+</details>
+
+<details>
+<summary>Как заменить колодки на машине с EPB без сканера?</summary>
+<p>Без диагностического оборудования сделать это крайне сложно. Некоторые водители обходят мотор, извлекая предохранитель или отсоединяя фишку, но это рискованно. Лучше использовать специальные инструменты для вдавливания поршня или обратиться к специалистам.</p>
+</details>
+
+<details>
+<summary>Что делать, если ручник не отпускается?</summary>
+<p>Попробуйте нажать на педаль тормоза и снова нажать кнопку EPB. Если не помогает, проверьте аккумулятор. В крайнем случае можно снять клемму с аккумулятора на 10-15 минут, чтобы сбросить ошибки, но это не гарантирует решение проблемы.</p>
+</details>
+
+<details>
+<summary>Влияет ли EPB на расход топлива?</summary>
+<p>Сам по себе EPB не влияет на расход, так как не работает при движении. Однако наличие функции Auto Hold может немного увеличить расход в городе, так как двигатель работает на холостых оборотах дольше, удерживая машину, но это минимальная разница.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/t/tr/tros-ruchnika-golf-6.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника Golf 6: инструкция, подбор и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и замене троса ручного тормоза на VW Golf 6. Советы по регулировке</span>
+            </a><a href="/articles/p/po/pochemu-gorit-znak-ruchnika-esli-on-opushchen.html" class="pb-related-card">
+                <span class="pb-related-title">Горит знак ручника при опущенном рычаге: 7 причин и как устранить</span>
+                <span class="pb-related-desc">Разбираемся, почему загорается индикатор стояночного тормоза на панели приборов, даже если ручник оп</span>
+            </a><a href="/articles/k/ka/kak-oslabit-ruchnik-na-kaline-1-bez-yamy.html" class="pb-related-card">
+                <span class="pb-related-title">Как ослабить ручник на Калине 1 без ямы: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как отрегулировать и ослабить трос ручной тормозной системы на Lada Kalina 1 без использова</span>
+            </a><a href="/articles/k/ka/kak-ukorotit-tros-ruchnika.html" class="pb-related-card">
+                <span class="pb-related-title">Как укоротить трос ручника: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Подробный гид по укорачиванию троса стояночного тормоза. Разбор причин перетяжки, инструменты, нюанс</span>
+            </a><a href="/articles/t/tr/trosik-ruchnika-na-grantu.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросика ручника на Лада Гранта: Инструкция и подбор</span>
+                <span class="pb-related-desc">Полная замена троса ручного тормоза на Lada Granta. Причины неисправности, подбор аналогов, пошагова</span>
+            </a><a href="/articles/n/ne/ne-derzhit-ruchnik-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Ручник не держит на Лада Гранта: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему не держит ручник на Лада Гранта? Полный разбор неисправностей, регулировка тросов, замена кол</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

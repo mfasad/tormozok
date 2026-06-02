@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Переборка вакуумного усилителя: диагностика, ремонт и замена — ТормозОК</title>
+    <meta name="description" content="Полная инструкция по переборке вакуумного усилителя тормозов. Диагностика неисправностей, замена манжет, проверка обратного клапана и нюансы сборки.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pe/pereborka-vakuumnogo-usilitelya-tormozov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Переборка вакуумного усилителя: диагностика, ремонт и замена">
+    <meta property="og:description" content="Полная инструкция по переборке вакуумного усилителя тормозов. Диагностика неисправностей, замена манжет, проверка обратного клапана и нюансы сборки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-nav-active">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/vakuumnyj-usilitel/">Вакуумный усилитель</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Переборка вакуумного усилителя: диагностика, ремонт и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#симптомы-неисправности-и-первичная-диагностика">Симптомы неисправности и первичная диагностика</a></li><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#процесс-демонтажа-и-разборки-узла">Процесс демонтажа и разборки узла</a></li><li><a href="#замена-уплотнений-и-чистка-внутренних-полостей">Замена уплотнений и чистка внутренних полостей</a></li><li><a href="#сборка-и-регулировка-зазора">Сборка и регулировка зазора</a></li><li><a href="#тестирование-и-проверка-работоспособности">Тестирование и проверка работоспособности</a></li><li><a href="#частые-вопросы-о-ремонте-вакуумного-усилителя">Частые вопросы о ремонте вакуумного усилителя</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skripit-pedal-tormoza-pri-nazhatii.html">Скрипит педаль тормоза при нажатии: причины, диагностика и ремонт</a></li><li><a href="/articles/v/va/vakuumnyj-nasos-12-volt-avtomobilnyj.html">Вакуумный насос 12 вольт: выбор, установка и настройка для авто</a></li><li><a href="/articles/p/po/pochemu-pri-nazhatii-na-tormoz-povyshayutsya-oboroty.html">Почему при нажатии на тормоз повышаются обороты двигателя?</a></li><li><a href="/articles/u/up/uplotnitel-vakuumnogo-usilitelya-2108.html">Уплотнитель вакуумного усилителя ВАЗ 2108: замена и диагностика</a></li><li><a href="/articles/p/pr/printsip-raboty-vakuumnogo-usilitelya-tormozov.html">Принцип работы вакуумного усилителя тормозов: устройство и диагностика</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Переборка вакуумного усилителя тормозов: полный гайд по восстановлению</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#симптомы-неисправности-и-первичная-диагностика">Симптомы неисправности и первичная диагностика</a></li><li><a href="#необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</a></li><li><a href="#процесс-демонтажа-и-разборки-узла">Процесс демонтажа и разборки узла</a></li><li><a href="#замена-уплотнений-и-чистка-внутренних-полостей">Замена уплотнений и чистка внутренних полостей</a></li><li><a href="#сборка-и-регулировка-зазора">Сборка и регулировка зазора</a></li><li><a href="#тестирование-и-проверка-работоспособности">Тестирование и проверка работоспособности</a></li><li><a href="#частые-вопросы-о-ремонте-вакуумного-усилителя">Частые вопросы о ремонте вакуумного усилителя</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Эффективность тормозной системы автомобиля критически зависит от исправности <strong>вакуумного усилителя</strong> (ВУТ). Этот узел создает необходимое усилие, позволяя водителю останавливать машину нажатием одной ноги. Со временем резиновые уплотнения в <em>усилителе тормозов</em> дубеют, пружины теряют эластичность, а внутри корпуса накапливается нагар, что приводит к потере мощности торможения или возникновению посторонних звуков при нажатии на педаль.</p>
+
+<p>Многие владельцы при появлении симптомов неисправности сразу меняют узел целиком, что часто становится неоправданными расходами. В большинстве случаев <strong>переборка вакуумного усилителя тормозов</strong> позволяет восстановить заводские характеристики за небольшую сумму. Однако процедура требует предельной точности, так как ошибки в сборке могут привести к заклиниванию педали или потере вакуума в самый ответственный момент.</p>
+
+<h2 id="симптомы-неисправности-и-первичная-диагностика">Симптомы неисправности и первичная диагностика</h2>
+
+<p>Понимание признаков поломки — первый шаг к успешному ремонту. Если при нажатии на педаль тормоза вы слышите шипение, это часто указывает на разгерметизацию корпуса или износ <strong>уплотнительных колец</strong> толкателя. Тугая педаль, требующая больших усилий для остановки, свидетельствует о проблемах с <em>обратным клапаном</em> или подсосе воздуха в систему.</p>
+
+<p>Иногда проблема кроется не в самом корпусе усилителя, а в его взаимодействии с главным тормозным цилиндром (ГТЦ). Неправильно отрегулированный зазор может имитировать поломку ВУТ. Перед тем как снимать узел, проверьте герметичность шланга, идущего от впускного коллектора, и состояние самого <strong>обратного клапана</strong>. Если клапан пропускает воздух в обратном направлении, вакуум не будет удерживаться, и эффективность торможения резко упадет.</p>
+
+<blockquote>⚠️ Внимание! Никогда не продолжайте эксплуатацию автомобиля, если педаль тормоза проваливается до пола или сопровождается сильным шипением. Это прямой сигнал о критической потере вакуума, способной привести к аварии.</blockquote>
+
+<p>Визуальный осмотр часто выявляет масляные подтеки на корпусе, что говорит о прорыве масла из двигателя в вакуумную систему. В таких случаях <strong>переборка</strong> обязательна, так как масло разъедает резину диафрагмы и клапанов. Также обратите внимание на люфт педали, который не устраняется регулировкой.</p>
+
+<details class="pb-accordion"><summary>Чек-лист симптомов</summary><div class="pb-accordion-body"><p>Проверка шипения при нажатии|Оценка усилия на педали|Визуальный осмотр шлангов|Запуск двигателя и тест вакуума</p></div></details>
+
+<h2 id="необходимые-инструменты-и-подготовка-рабочего-места">Необходимые инструменты и подготовка рабочего места</h2>
+
+<p>Для качественного ремонта вам понадобится набор специализированных инструментов. Стандартный набор ключей и отверток часто не подходит для аккуратного разъединения корпуса <em>вакуумного усилителя</em>. Вам потребуются: набор головок и трещотка, специальный съемник для стопорных колец, динамометрический ключ для точного затягивания болтов крепления, а также тиски с мягкими губками.</p>
+
+<p>Не забудьте подготовить расходные материалы: ремкомплект <strong>уплотнителей</strong> для вашей модели, очиститель карбюратора, ветошь и смазку на силиконовой основе (никогда не используйте литол или графитовую смазку!). Рабочая поверхность должна быть чистой и свободной от пыли, так как попадание грязи внутрь корпуса усилителя сделает ремонт бессмысленным.</p>
+
+<p>Особое внимание уделите подготовке нового ремкомплекта. Часто в дешевых наборах качество резины оставляет желать лучшего. Если возможно, выбирайте оригинальные запчасти или проверенные бренды, чтобы избежать повторной разборки через пару тысяч километров.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к демонтажу</h4><label class="check-item"><input type="checkbox"><span>Отсоединить аккумулятор</span></label><label class="check-item"><input type="checkbox"><span>Снять шланг вакуума</span></label><label class="check-item"><input type="checkbox"><span>Открутить гайки крепления</span></label><label class="check-item"><input type="checkbox"><span>Снять усилитель с авто</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="процесс-демонтажа-и-разборки-узла">Процесс демонтажа и разборки узла</h2>
+
+<p>Снятие усилителя начинается с отключения аккумулятора. Далее необходимо отсоединить вакуумный шланг и ослабить гайки крепления к педальному узлу в салоне. В подкапотном пространстве откручиваются крепления к кронштейну ГТЦ. Будьте осторожны: не отсоединяйте главный тормозной цилиндр от усилителя, чтобы не допустить попадания воздуха в гидравлическую систему.</p>
+
+<p>После демонтажа узел зажимается в тиски. Для разборки корпуса вам потребуется снять стопорные кольца, удерживающие половинки корпуса. Используйте специальный инструмент, чтобы не повредить посадочные места. Разделение корпуса требует осторожности, так как внутри находится диафрагма под натяжением.</p>
+
+<p>При извлечении внутренних компонентов внимательно осматривайте <strong>поршень</strong> и <em>толкатель</em> на предмет царапин. Даже мелкие борозды на поверхности могут привести к подсосу воздуха и нарушению работы клапанов. Если поверхность повреждена, восстановление невозможно — потребуется замена всего узла.</p>
+
+<blockquote>⚠️ Внимание! При разборке корпуса диафрагма может резко раскрыться. Убедитесь, что ваши пальцы и инструменты находятся вне зоны риска, чтобы избежать травм.</blockquote>
+
+<p>Особое внимание уделите <strong>воздушному фильтру</strong>, который часто встроен в корпус. Если он забит грязью, поток воздуха будет нарушен, что вызовет шумы и потерю мощности. Промойте его и просушите перед сборкой.</p>
+
+<div class="pb-poll" id="poll-3eb7632c"><div class="pb-poll-question">📊 Насколько часто вы обслуживаете тормозную систему?</div><div class="pb-poll-option" data-poll="3eb7632c" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3eb7632c" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в 2-3 года</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3eb7632c" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при поломке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3eb7632c" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не обслуживал</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="замена-уплотнений-и-чистка-внутренних-полостей">Замена уплотнений и чистка внутренних полостей</h2>
+
+<p>Сердце переборки — это замена всех резиновых элементов. Старые манжеты теряют эластичность и перестают герметизировать зазоры. Установите новые уплотнительные кольца, предварительно смазав их силиконовой смазкой. Это обеспечит легкость сборки и правильную работу подвижных частей.</p>
+
+<p>Тщательно очистите внутреннюю полость корпуса от нагара и старой смазки. Используйте безворсовую ветошь и очиститель. Любые остатки грязи могут заклинить поршень. Особое внимание уделите каналам для воздуха — они должны быть полностью свободны.</p>
+
+<p>Проверьте состояние возвратных пружин. Если они растянуты или имеют следы коррозии, их необходимо заменить. Ослабленная пружина не сможет вернуть поршень в исходное положение, что приведет к самопроизвольному торможению.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Признак износа</th>
+<th>Действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Диафрагма</td>
+<td>Трещины, порывы, твердость</td>
+<td>Обязательная замена</td>
+</tr>
+<tr>
+<td>Обратный клапан</td>
+<td>Пропуск воздуха, заедание</td>
+<td>Замена или чистка</td>
+</tr>
+<tr>
+<td>Толкатель</td>
+<td>Царапины, коррозия</td>
+<td>Шлифовка или замена</td>
+</tr>
+<tr>
+<td>Пружина возврата</td>
+<td>Растяжение, деформация</td>
+<td>Замена</td>
+</tr>
+<tr>
+<td>Фильтр воздуха</td>
+<td>Забит грязью/маслом</td>
+<td>Очистка или замена</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="сборка-и-регулировка-зазора">Сборка и регулировка зазора</h2>
+
+<p>Сборка производится в обратном порядке. Установите диафрагму, убедившись, что она ровно легла в пазы. Соберите корпус и зажмите стопорные кольца. Убедитесь, что они полностью вошли в свои пазы и не имеют перекосов.</p>
+
+<p>Критически важным этапом является регулировка зазора между толкателем усилителя и поршнем главного тормозного цилиндра. Этот <strong>зазор</strong> определяет, насколько эффективно передается усилие. Если зазор слишком большой, педаль будет иметь свободный ход. Если слишком маленький — тормоза будут "залипать".</p>
+
+<p>Используйте специальный шаблон или штангенциркуль для точной настройки. Вращайте регулировочный болт на толкателе до достижения нужного значения, указанного в сервисной книге вашего автомобиля. После настройки заблокируйте контргайку.</p>
+
+<blockquote>⚠️ Внимание! Неправильная регулировка зазора может привести к перегреву тормозных колодок и полному отказу тормозной системы при длительном движении.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная регулировка зазора между толкателем и ГТЦ — залог безопасного и эффективного торможения после переборки.</p></aside>
+
+<p>После сборки установите усилитель на автомобиль, подключите вакуумный шланг и проверьте герметичность соединений. Запустите двигатель и убедитесь, что педаль становится мягкой и упругой.</p>
+
+<h2 id="тестирование-и-проверка-работоспособности">Тестирование и проверка работоспособности</h2>
+
+<p>Первый запуск двигателя после переборки должен сопровождаться внимательным прослушиванием. Любое шипение сразу укажет на негерметичность сборки. Проверьте работу усилителя на холостом ходу: педаль должна быть мягкой, а при нажатии — не должно быть посторонних звуков.</p>
+
+<p>Проведите тест на движение. Разгонитесь до небольшой скорости и попробуйте затормозить. Оцените эффективность торможения и отсутствие биений педали. Если педаль вибрирует или "дергается", возможно, диафрагма установлена неправильно или есть перекос.</p>
+
+<p>Важно проверить работу <em>обратного клапана</em> под нагрузкой. При резком торможении вакуум должен удерживаться, обеспечивая достаточное усилие. Если педаль становится "ватной" при повторных нажатиях, система не восстанавливает вакуум.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед первой поездкой после ремонта обязательно проведите тестовое торможение на безопасном участке дороги в присутствии пассажира, готового к экстренной ситуации.</p></aside>
+
+<p>Если все проверки пройдены успешно, можно считать переборку завершенной. Регулярная диагностика и своевременная замена расходников продлят жизнь вашему усилителю еще на много лет.</p>
+
+<h2 id="частые-вопросы-о-ремонте-вакуумного-усилителя">Частые вопросы о ремонте вакуумного усилителя</h2>
+
+<details>
+<summary>Можно ли ездить, если усилитель не работает?</summary>
+<p>Технически можно, но тормозной путь увеличится в разы. Вам потребуется прилагать колоссальное усилие к педали, что в экстренной ситуации может быть невозможно. Езда без работающего усилителя опасна.</p>
+</details>
+
+<details>
+<summary>Сколько стоит переборка по сравнению с покупкой нового узла?</summary>
+<p>Переборка обычно обходится в 3-5 раз дешевле покупки нового оригинального узла. Основные затраты идут на ремкомплект и работу мастера, если вы не делаете это сами.</p>
+</details>
+
+<details>
+<summary>Какие смазки нельзя использовать при сборке?</summary>
+<p>Категорически запрещено использовать минеральные масла, литол или графитовые смазки. Они разрушают резину диафрагмы и уплотнителей. Используйте только специальную силиконовую смазку.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять вакуумный усилитель?</summary>
+<p>Рекомендуется проверять герметичность и работу усилителя при каждом прохождении технического обслуживания, особенно если вы заметили изменение характера педали тормоза.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять главный тормозной цилиндр при переборке?</summary>
+<p>Нет, если он исправен. Но если в процессе разборки вы заметили, что масло из ГТЦ попало в усилитель, возможно, потребуется замена манжет самого цилиндра или его чистка.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная диагностика и использование качественных ремкомплектов — ключ к долговечности восстановленного вакуумного усилителя.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skripit-pedal-tormoza-pri-nazhatii.html" class="pb-related-card">
+                <span class="pb-related-title">Скрипит педаль тормоза при нажатии: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему скрипит педаль тормоза при нажатии? Разбираем главные причины: вакуумный усилитель, педальный</span>
+            </a><a href="/articles/v/va/vakuumnyj-nasos-12-volt-avtomobilnyj.html" class="pb-related-card">
+                <span class="pb-related-title">Вакуумный насос 12 вольт: выбор, установка и настройка для авто</span>
+                <span class="pb-related-desc">Полный гид по автономному вакуумному насосу 12 вольт для автомобиля. Как выбрать, подключить к борто</span>
+            </a><a href="/articles/p/po/pochemu-pri-nazhatii-na-tormoz-povyshayutsya-oboroty.html" class="pb-related-card">
+                <span class="pb-related-title">Почему при нажатии на тормоз повышаются обороты двигателя?</span>
+                <span class="pb-related-desc">Разбираем причины роста оборотов при торможении: неисправности вакуумного усилителя, подсос воздуха,</span>
+            </a><a href="/articles/u/up/uplotnitel-vakuumnogo-usilitelya-2108.html" class="pb-related-card">
+                <span class="pb-related-title">Уплотнитель вакуумного усилителя ВАЗ 2108: замена и диагностика</span>
+                <span class="pb-related-desc">Полный гайд по уплотнителю вакуумного усилителя тормозов на ВАЗ 2108. Симптомы износа, пошаговая инс</span>
+            </a><a href="/articles/p/pr/printsip-raboty-vakuumnogo-usilitelya-tormozov.html" class="pb-related-card">
+                <span class="pb-related-title">Принцип работы вакуумного усилителя тормозов: устройство и диагностика</span>
+                <span class="pb-related-desc">Подробный разбор устройства вакуумного усилителя тормозов (ВУТ). Как работает принцип разрежения, пр</span>
+            </a><a href="/articles/p/po/pochemu-pishchit-vakuumnyj-usilitel-tormozov.html" class="pb-related-card">
+                <span class="pb-related-title">Почему пищит вакуумный усилитель тормозов: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Услышали свист при торможении? Разбираем основные причины шума вакуумного усилителя, методы диагност</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

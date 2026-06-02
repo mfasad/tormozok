@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Шкив из тормозного барабана: самодельный привод для станков и ЛЭМ — ТормозОК</title>
+    <meta name="description" content="Как сделать шкив из старого тормозного барабана своими руками. Технология токарной обработки, расчет баланса и преимущества использования чугуна.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/s/sh/shkiv-iz-tormoznogo-barabana.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Шкив из тормозного барабана: самодельный привод для станков и ЛЭМ">
+    <meta property="og:description" content="Как сделать шкив из старого тормозного барабана своими руками. Технология токарной обработки, расчет баланса и преимущества использования чугуна.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-nav-active">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Шкив из тормозного барабана: самодельный привод для станков и ЛЭМ</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#почему-именно-тормозной-барабан-подходит-для-переделки">Почему именно тормозной барабан подходит для переделки</a></li><li><a href="#подготовка-заготовки-и-первичный-осмотр">Подготовка заготовки и первичный осмотр</a></li><li><a href="#технология-токарной-обработки-и-создание-канавок">Технология токарной обработки и создание канавок</a></li><li><a href="#балансировка-и-окончательная-доводка">Балансировка и окончательная доводка</a></li><li><a href="#крепление-шкива-и-выбор-способа-фиксации">Крепление шкива и выбор способа фиксации</a></li><li><a href="#таблица-соответствия-размеров-и-типов-ремней">Таблица соответствия размеров и типов ремней</a></li><li><a href="#безопасность-и-эксплуатация-самодельных-шкивов">Безопасность и эксплуатация самодельных шкивов</a></li><li><a href="#частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-zadnikh-tormozov-granta.html">Замена задних тормозов Lada Granta: Инструкция по ремонту</a></li><li><a href="/articles/k/ka/kak-snyat-zadnij-baraban-na-nive-21214-tormoznoj.html">Как снять задний тормозной барабан на Ниве 21214: пошаговая инструкция</a></li><li><a href="/articles/s/sh/shchit-zadnego-tormoza-khover-n5.html">Щит заднего тормоза Hover H5: выбор, замена и диагностика износа</a></li><li><a href="/articles/t/to/tormoznaya-sistema-zaz-968m.html">Тормозная система ЗАЗ 968М: устройство, ремонт и обслуживание барабанов</a></li><li><a href="/articles/k/ka/kak-podtyanut-tormoza-na-mtz-82.html">Как подтянуть тормоза на МТЗ-82: пошаговая инструкция и нюансы настройки</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Превращаем тормозной барабан в качественный шкив: инструкция и нюансы</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#почему-именно-тормозной-барабан-подходит-для-переделки">Почему именно тормозной барабан подходит для переделки</a></li><li><a href="#подготовка-заготовки-и-первичный-осмотр">Подготовка заготовки и первичный осмотр</a></li><li><a href="#технология-токарной-обработки-и-создание-канавок">Технология токарной обработки и создание канавок</a></li><li><a href="#балансировка-и-окончательная-доводка">Балансировка и окончательная доводка</a></li><li><a href="#крепление-шкива-и-выбор-способа-фиксации">Крепление шкива и выбор способа фиксации</a></li><li><a href="#таблица-соответствия-размеров-и-типов-ремней">Таблица соответствия размеров и типов ремней</a></li><li><a href="#безопасность-и-эксплуатация-самодельных-шкивов">Безопасность и эксплуатация самодельных шкивов</a></li><li><a href="#частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие домашние мастера и владельцы небольших производств сталкиваются с проблемой поиска или покупки качественных деталей для самодельных станков. Часто возникает необходимость в массивном, сбалансированном маховике или шкиве, который бы обеспечивал плавность хода привода. В таких случаях на помощь приходит утилизация старых автомобильных узлов, в частности, <strong>тормозных барабанов</strong>. Этот элемент тормозной системы, отработавший свой срок, обладает идеальными свойствами для переделки.</p>
+
+<p>Главное преимущество использования именно <em>тормозного барабана</em> заключается в материале его изготовления — высокопрочном сером чугуне. Этот сплав обладает отличными демпфирующими способностями, что критически важно для вращающихся механизмов, работающих на высоких скоростях. В отличие от стальных заготовок, чугунная деталь из барабана гасит вибрации, снижая шум и износ подшипников вашего будущего станка.</p>
+
+<h2 id="почему-именно-тормозной-барабан-подходит-для-переделки">Почему именно тормозной барабан подходит для переделки</h2>
+<p>Автомобильные тормозные барабаны производятся с учетом высоких нагрузок и термического расширения. Это делает их геометрию изначально близкой к идеальной окружности, что значительно сокращает время обработки на токарном станке. Вам не придется долго выравнивать поверхность, так как заводское литье уже обеспечивает высокую точность диаметра. <strong>Чугунная отливка</strong> обладает стабильной структурой, которая не деформируется со временем под нагрузкой, в отличие от некоторых видов сварных конструкций.</p>
+
+<p>Кроме того, толщина стенок барабана позволяет безопасно вытачивать рабочий канавку под ремень без риска нарушения целостности детали. Если вы используете барабан от грузового автомобиля, вы получаете шкив значительной ширины, способный передавать огромные крутящие моменты. Даже от легковых машин, таких как <em>ВАЗ</em> или <em>ГАЗ</em>, можно получить отличные заготовки для приводов циркулярных пил или точильных станков.</p>
+
+<blockquote>⚠️ Внимание: Перед началом работ обязательно проверьте барабан на наличие скрытых трещин. Чугун подвержен хрупкому разрушению, и микротрещины, возникшие от перегрева при торможении, могут привести к разрыву шкива в процессе работы на высоких оборотах.</blockquote>
+
+<h2 id="подготовка-заготовки-и-первичный-осмотр">Подготовка заготовки и первичный осмотр</h2>
+<p>Перед тем как приступить к токарным работам, необходимо тщательно очистить деталь от грязи, ржавчины и остатков тормозной пыли. Используйте металлическую щетку, наждачную бумагу и, при необходимости, химические растворители для удаления масел. Особое внимание уделите посадочному отверстию под ступицу — оно должно быть круглым и не иметь следов продольных царапин от ступичного подшипника.</p>
+
+<p>Если вы планируете использовать барабан как маховик для двигателя внутреннего сгорания, проверьте его балансировку. Часто на заводе-изготовителе на барабанах есть специальные отверстия для балансировки, которые могут быть забиты грязью или металлом. </p>
+
+<p><strong>Очистка поверхности</strong> — это не просто косметическая процедура, а мера безопасности. Оставшаяся ржавчина может привести к неравномерному износу режущего инструмента или к появлению вибраций в уже готовом изделии. Убедитесь, что посадочное место под вал имеет допуск, позволяющий установить его без люфтов, или подготовьтесь к расточке под новый подшипник.</p>
+
+<h2 id="технология-токарной-обработки-и-создание-канавок">Технология токарной обработки и создание канавок</h2>
+<p>Процесс превращения барабана в шкив начинается с закрепления заготовки в токарном патроне. Важно обеспечить жесткую фиксацию, чтобы избежать смещения при снятии стружки. <strong>Точность центровки</strong> здесь играет решающую роль: если заготовка будет установлена с перекосом, готовый шкив будет сильно биение, что приведет к быстрому выходу из строя двигателя и ремня.</p>
+
+<p>Основная задача — вытащить наружную поверхность до идеального состояния и проточить канавку для клинового или плоского ремня. Для клиновых ремней необходимо соблюдать углы наклона стенок канавки (обычно 34 или 38 градусов), чтобы ремень плотно прилегал к боковым поверхностям. Глубина канавки рассчитывается исходя из типа ремня, который вы планируете использовать в своем приводе.</p>
+
+<p>При обработке чугуна рекомендуется использовать острые резцы из твердого сплава. Скорость резания должна быть средней, а подача — плавной, чтобы избежать сколов. <em>Серый чугун</em> при обработке дает мелкую стружку, которая может быть абразивной, поэтому обязательно используйте защитные очки и системы пылеудаления. После проточки канавки рекомендуется снять фаски с краев, чтобы ремень не изнашивался об острые кромки.</p>
+
+<p> Однако чаще всего внешняя часть используется для ремня, а внутренняя — для крепления.</p>
+
+<div class="pb-poll" id="poll-eaad9935"><div class="pb-poll-question">📊 Какой тип ремня вы планируете использовать?</div><div class="pb-poll-option" data-poll="eaad9935" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Клиновой (V-образный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eaad9935" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Зубчатый (синхронный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eaad9935" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Плоский</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="eaad9935" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Круглый (в виде троса)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="балансировка-и-окончательная-доводка">Балансировка и окончательная доводка</h2>
+<p>После механической обработки шкив необходимо отбалансировать. Даже малейшая разница в весе по окружности на высоких оборотах создает центробежную силу, способную разрушить подшипники или порвать ремень. <strong>Динамическая балансировка</strong> может быть выполнена как на специальном станке, так и «народным» методом с использованием простейшего приспособления.</p>
+
+<p>Для ручной балансировки установите шкив на две горизонтальные направляющие (например, ровные стальные бруски) и дайте ему раскрутиться. Тяжелая часть всегда будет останавливаться внизу. На противоположной стороне (вверху) нужно просверлить отверстия для облегчения или приварить (припаять) грузы до тех пор, пока деталь не станет останавливаться в любом положении.</p>
+
+<p>Финальный этап — это шлифовка и полировка рабочей поверхности. Гладкий шкив продлевает жизнь ремня и обеспечивает стабильное передаточное число. <strong>Полирование поверхности</strong> также снижает трение и нагрев в процессе работы. Если вы делаете шкив для высокоскоростного станка, не пренебрегайте этим шагом, так как шероховатость может вызывать проскальзывание ремня.</p>
+
+<blockquote>⚠️ Внимание: Никогда не используйте шкив из барабана без проверки на биение после установки на вал. Длительная работа с перекосом может привести к серьезным травмам при разрыве ремня или деформации вала.</blockquote>
+
+<h2 id="крепление-шкива-и-выбор-способа-фиксации">Крепление шкива и выбор способа фиксации</h2>
+<p>Надежность привода напрямую зависит от того, как шкив закреплен на валу. Существует несколько способов фиксации: через шпоночный паз, конусное крепление или использование стяжных болтов (зажимное кольцо). Для самодельных станков чаще всего используется <strong>шпоночное соединение</strong>, так как оно просто в изготовлении и обеспечивает надежный крутящий момент.</p>
+
+<p>Если вы используете штатное отверстие барабана, оно может не подходить под диаметр вашего вала. В этом случае необходимо расточить отверстие под втулку или сделать переходную втулку на токарном станке. Втулка должна плотно сидеть на валу и внутри барабана. </p>
+
+<p>Для фиксации втулки или самого шкива можно использовать штифты или стопорные винты, но они должны быть надежно застопорены от откручивания. Используйте <em>контргайки</em> или клей для резьбы, чтобы предотвратить самоотвинчивание при вибрациях. Если вы делаете съемный шкив, предусмотрите возможность быстрой замены через резьбовое соединение.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности шкива</h4><label class="check-item"><input type="checkbox"><span>Отсутствие видимых трещин</span></label><label class="check-item"><input type="checkbox"><span>Качественная обработка канавки</span></label><label class="check-item"><input type="checkbox"><span>Проверка на биение</span></label><label class="check-item"><input type="checkbox"><span>Надежное крепление на валу</span></label><label class="check-item"><input type="checkbox"><span>Балансировка выполнена</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<h2 id="таблица-соответствия-размеров-и-типов-ремней">Таблица соответствия размеров и типов ремней</h2>
+<p>При проектировании привода важно правильно подобрать профиль ремня под размеры канавки шкива. Ниже приведена таблица для наиболее распространенных типов клиновых ремней, которые часто используются в самодельных станках на основе барабанов.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип профиля ремня</th>
+<th>Угол канавки (градусы)</th>
+<th>Минимальный диаметр шкива (мм)</th>
+<th>Рекомендуемая ширина канавки (мм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>З (профиль Z)</td>
+<td>34°</td>
+<td>50</td>
+<td>10-12</td>
+</tr>
+<tr>
+<td>А (профиль A)</td>
+<td>34°</td>
+<td>100</td>
+<td>13-15</td>
+</tr>
+<tr>
+<td>Б (профиль B)</td>
+<td>38°</td>
+<td>140</td>
+<td>17-20</td>
+</tr>
+<tr>
+<td>В (профиль C)</td>
+<td>38°</td>
+<td>200</td>
+<td>22-25</td>
+</tr>
+<tr>
+<td>Д (профиль D)</td>
+<td>40°</td>
+<td>280</td>
+<td>30-35</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="безопасность-и-эксплуатация-самодельных-шкивов">Безопасность и эксплуатация самодельных шкивов</h2>
+<p>Использование переработанных деталей требует повышенного внимания к мерам безопасности. Чугун — хрупкий материал, и при превышении допустимых оборотов он может разрушиться с большой энергией разлетающихся осколков. <strong>Расчет предельных оборотов</strong> должен производиться исходя от толщины стенок и диаметра шкива. Не превышайте скорость вращения, рекомендованную для данного профиля ремня и конструкции.</p>
+
+<p>Обязательно установите защитный кожух вокруг вращающегося шкива. Это не только защитит оператора от случайного касания, но и удержит ремень или детали в случае их разрыва. <em>Защитный кожух</em> должен быть надежно закреплен и не иметь подвижных частей, которые могут зацепиться за привод.</p>
+
+<p>Регулярно осматривайте шкив на предмет появления трещин, особенно в местах крепления и у дна канавки. Если вы заметили даже малейший дефект, немедленно замените деталь. Экономия на безопасности при работе с вращающимися массами недопустима.</p>
+
+<details class="pb-accordion"><summary>Что делать, если шкив начал вибрировать?</summary><div class="pb-accordion-body"><p>При появлении вибрации немедленно остановите станок. Проверьте балансировку, состояние подшипников и правильность установки ремня. Если вибрация не исчезает, снимите шкив и проверьте его на наличие скрытых трещин методом окрашивания или ультразвука.</p></div></details>
+
+<p>Использование тормозного барабана в качестве шкива — это не только экономия средств, но и возможность получить высококачественную деталь с отличными физическими свойствами. Главное — соблюдать технологию обработки и уделять внимание балансировке. При правильном подходе ваш самодельный станок будет работать годами без сбоев.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Чугунный тормозной барабан — идеальный материал для шкива благодаря демпфирующим свойствам, но требует обязательной балансировки и проверки на трещины перед эксплуатацией.</p></aside>
+
+<p>Важно учитывать, что условия эксплуатации и требования к безопасности могут меняться в зависимости от типа оборудования и местных нормативов. Всегда сверяйтесь с актуальными стандартами и инструкциями производителей электродвигателей и ремней перед началом работ.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При проточке канавки используйте угольник для контроля угла наклона стенок — это обеспечит плотный контакт ремня и предотвратит его проскальзывание под нагрузкой.</p></aside>
+
+<h2 id="частые-вопросы-и-ответы-faq">Частые вопросы и ответы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать барабан от барабанной камеры (барабанной сушки)?</summary>
+<p>Нет, барабаны сушильных камер обычно изготавливаются из тонкостенной стали или имеют другую конструкцию, не подходящую для создания прочного шкива. Используйте только классические автомобильные тормозные барабаны из чугуна.</p>
+</details>
+
+<details>
+<summary>Какой максимальный диаметр шкива можно получить из барабана?</summary>
+<p>Максимальный диаметр ограничивается внешним диаметром самого барабана. Обычно это от 200 до 340 мм для легковых автомобилей и до 450 мм для грузовиков. Внутренний диаметр также можно использовать, но он будет меньше.</p>
+</details>
+
+<details>
+<summary>Как определить, что барабан имеет скрытые трещины?</summary>
+<p>Для выявления скрытых трещин можно использовать метод окрашивания (капиллярный контроль) или внимательно осмотреть поверхность под ярким светом, простукивая деталь молотком. Звонкий звук указывает на целостность, глухой — на возможные дефекты.</p>
+</details>
+
+<details>
+<summary>Нужно ли балансировать шкив, если он работает на низких оборотах?</summary>
+<p>Да, балансировка желательна даже при низких оборотах, чтобы избежать вибрации, которая может привести к преждевременному износу подшипников и ослаблению креплений станка.</p>
+</details>
+
+<details>
+<summary>Можно ли приваривать грузы для балансировки к чугунному шкиву?</summary>
+<p>Приваривание к чугуну — сложная процедура, требующая предварительного нагрева и специального электрода. Лучше использовать болтовые соединения или вклеивание грузов эпоксидной смолой, чтобы не нарушить структуру металла.</p>
+</details>
+
+<blockquote>⚠️ Внимание: Технические характеристики и допустимые нагрузки могут различаться в зависимости от модели автомобиля и года выпуска барабана. Всегда проверяйте состояние конкретной детали перед началом работ.</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-zadnikh-tormozov-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Замена задних тормозов Lada Granta: Инструкция по ремонту</span>
+                <span class="pb-related-desc">Пошаговое руководство по замене тормозных колодок и барабанов на Lada Granta. Советы механиков, спис</span>
+            </a><a href="/articles/k/ka/kak-snyat-zadnij-baraban-na-nive-21214-tormoznoj.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять задний тормозной барабан на Ниве 21214: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гид по демонтажу задних барабанов на ВАЗ 21214. Разбор типичных проблем, выбор инструменто</span>
+            </a><a href="/articles/s/sh/shchit-zadnego-tormoza-khover-n5.html" class="pb-related-card">
+                <span class="pb-related-title">Щит заднего тормоза Hover H5: выбор, замена и диагностика износа</span>
+                <span class="pb-related-desc">Полный гид по щиту заднего тормоза для Hover H5. Как проверить износ, выбрать оригинал или аналог, з</span>
+            </a><a href="/articles/t/to/tormoznaya-sistema-zaz-968m.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозная система ЗАЗ 968М: устройство, ремонт и обслуживание барабанов</span>
+                <span class="pb-related-desc">Полное руководство по тормозной системе ЗАЗ 968М. Обзор барабанных механизмов, замена колодок, регул</span>
+            </a><a href="/articles/k/ka/kak-podtyanut-tormoza-na-mtz-82.html" class="pb-related-card">
+                <span class="pb-related-title">Как подтянуть тормоза на МТЗ-82: пошаговая инструкция и нюансы настройки</span>
+                <span class="pb-related-desc">Полное руководство по регулировке тормозной системы трактора МТЗ-82. Проверка люфта, настройка свобо</span>
+            </a><a href="/articles/k/ka/kak-snyat-zadnij-baraban-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять задний тормозной барабан на Lada Vesta: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговый гайд по демонтажу заднего барабана Lada Vesta. Инструкция по снятию, замене колодок и устр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

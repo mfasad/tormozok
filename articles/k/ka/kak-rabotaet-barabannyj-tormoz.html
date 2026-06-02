@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип работы барабанного тормоза: устройство, плюсы и минусы — ТормозОК</title>
+    <meta name="description" content="Подробный разбор схемы работы барабанного тормоза. Узнайте о гидравлике, самоусилении и нюансах ремонта тормозных механизмов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-rabotaet-barabannyj-tormoz.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы барабанного тормоза: устройство, плюсы и минусы">
+    <meta property="og:description" content="Подробный разбор схемы работы барабанного тормоза. Узнайте о гидравлике, самоусилении и нюансах ремонта тормозных механизмов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-nav-active">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы барабанного тормоза: устройство, плюсы и минусы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-устройство-тормозной-системыбарабанный-механизм">Введение в устройство тормозной системыБарабанный механизм</a></li><li><a href="#ключевые-компоненты-механизма">Ключевые компоненты механизма</a></li><li><a href="#принцип-действия-и-гидравлика">Принцип действия и гидравлика</a></li><li><a href="#эффект-самоусиления-плюсы-и-минусы">Эффект самоусиления: плюсы и минусы</a></li><li><a href="#регулировка-зазора-и-износ">Регулировка зазора и износ</a></li><li><a href="#проблемы-перегрева-и-затухания">Проблемы перегрева и затухания</a></li><li><a href="#сравнение-с-дисковыми-системами">Сравнение с дисковыми системами</a></li><li><a href="#диагностика-и-частые-неисправности">Диагностика и частые неисправности</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zadnie-tormoza-matiz-ustrojstvo.html">Задние тормоза Матиз: устройство, ремонт и замена барабанов</a></li><li><a href="/articles/c/ch/chem-smazat-barabannye-tormoza.html">Чем смазать барабанные тормоза: выбор смазки и пошаговая инструкция</a></li><li><a href="/articles/t/to/tormoznye-barabany-ats-otzyvy.html">Тормозные барабаны ATS: честные отзывы, выбор и нюансы эксплуатации</a></li><li><a href="/articles/r/re/remkomplekt-zadnikh-tormozov-logan-1.html">Замена ремкомплекта задних тормозов Logan 1: Выбор и инструкция</a></li><li><a href="/articles/k/ka/kak-rabotayut-barabannye-tormoza.html">Как работают барабанные тормоза: принцип, устройство и обслуживание</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как работает барабанный тормоз: принцип действия и устройство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-устройство-тормозной-системыбарабанный-механизм">Введение в устройство тормозной системыБарабанный механизм</a></li><li><a href="#ключевые-компоненты-механизма">Ключевые компоненты механизма</a></li><li><a href="#принцип-действия-и-гидравлика">Принцип действия и гидравлика</a></li><li><a href="#эффект-самоусиления-плюсы-и-минусы">Эффект самоусиления: плюсы и минусы</a></li><li><a href="#регулировка-зазора-и-износ">Регулировка зазора и износ</a></li><li><a href="#проблемы-перегрева-и-затухания">Проблемы перегрева и затухания</a></li><li><a href="#сравнение-с-дисковыми-системами">Сравнение с дисковыми системами</a></li><li><a href="#диагностика-и-частые-неисправности">Диагностика и частые неисправности</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-устройство-тормозной-системыбарабанный-механизм">Введение в устройство тормозной системы</br>Барабанный механизм</h2>
+
+<p>Барабанный тормоз остается одним из самых надежных и проверенных временем решений в автомобильной промышленности, особенно для задней оси легковых автомобилей и грузовой техники. Несмотря на активное внедрение дисковых систем, этот механизм сохраняет популярность благодаря своей способности выдерживать высокие нагрузки и долгому сроку службы при правильном обслуживании.</p>
+
+<p>Ваш автомобиль может иметь <strong>комбинированную систему</strong>, где передние колеса оснащены дисками, а задние — барабанами. Это не признак экономии, а инженерный компромисс, обеспечивающий оптимальное распределение тормозных усилий и экономию средств на обслуживание.</p>
+
+<p>Понимание того, как именно происходит остановка транспортного средства, позволит вам быстрее диагностировать неполадки и избегать дорогостоящего ремонта. Основным элементом здесь выступает <strong>фрикционная пара</strong>, работающая по принципу трения о замкнутую поверхность.</p>
+
+<h2 id="ключевые-компоненты-механизма">Ключевые компоненты механизма</h2>
+
+<p>В основе конструкции лежит <strong>тормозной барабан</strong>, который вращается вместе с колесом автомобиля. Внутри этого полусферического элемента расположены неподвижные <strong>тормозные колодки</strong>, покрытые фрикционным материалом, который обеспечивает необходимое сцепление при замедлении.</p>
+
+<p>Привод осуществляется через <strong>колесный цилиндр</strong>, который преобразует гидравлическое давление в механическое усилие. Когда вы нажимаете на педаль тормоза, жидкость поступает в цилиндр, раздвигая поршни и прижимая колодки к внутренней поверхности <em>барабана</em>.</p>
+
+<p>Для фиксации и возврата элементов в исходное положение используются специальные пружины и <strong>регулирующий механизм</strong>. Эти детали работают в паре, обеспечивая стабильное расстояние между колодками и барабаном, даже когда фрикционный слой стирается со временем.</p>
+
+<p>Особое внимание стоит уделить <strong>упорной планке</strong>, которая служит точкой опоры для разжимных рычагов. Без надежной фиксации этой детали эффективность торможения резко снижается, а механизм может заклинить.</p>
+
+<h2 id="принцип-действия-и-гидравлика">Принцип действия и гидравлика</h2>
+
+<p>Процесс торможения начинается в тот момент, когда водитель воздействует на педаль, создавая давление в <strong>главном цилиндре</strong>. Это давление передается по магистралям к колесным цилиндрам, расположенным непосредственно в механизме барабанного тормоза.</p>
+
+<p>Под воздействием жидкости поршни цилиндров расходятся в разные стороны, толкая <strong>тормозные колодки</strong> к стенкам вращающегося барабана. В этот момент возникает сила трения, которая противодействует вращению колеса и замедляет автомобиль.</p>
+
+<p>Интересно отметить, что в отличие от дисковых систем, здесь задействован эффект <strong>самоусиления</strong>. Вращение барабана буквально «затягивает» одну из колодок в контакт с поверхностью, увеличивая силу нажатия без дополнительных усилий водителя.</p>
+
+<p>Это явление делает барабанные тормоза крайне эффективными при длительном спуске или экстренном торможении, но также создает риск перегрева. Вам нужно учитывать эту особенность при управлении тяжелым грузом.</p>
+
+<div class="pb-poll" id="poll-52620daa"><div class="pb-poll-question">📊 Как часто вы проверяете состояние задних тормозов?</div><div class="pb-poll-option" data-poll="52620daa" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="52620daa" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при появлении шума</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="52620daa" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Каждое ТО</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="52620daa" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверяю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="эффект-самоусиления-плюсы-и-минусы">Эффект самоусиления: плюсы и минусы</h2>
+
+<p>Уникальной особенностью барабанного механизма является <strong>самоусиливающийся эффект</strong>, который возникает за счет направления вращения барабана. Ведущая колодка прижимается к барабану с большей силой, чем прилагается в колесном цилиндре, что значительно повышает КПД системы.</p>
+
+<p>Однако этот же эффект может привести к дисбалансу. Если одна из колодок изнашивается неравномерно, сила торможения на разных колесах одной оси может отличаться, что провоцирует <strong>снос задней оси</strong> при резком торможении.</p>
+
+<p>Кроме того, самоусиление затрудняет контроль усилия. Водителю может показаться, что машина тормозит слишком резко, и легко перейти грань блокировки колес, если не чувствовать педаль. Именно поэтому в современных системах устанавливается <strong>ABS</strong>.</p>
+
+<p>Несмотря на сложность настройки, инженеры ценят этот механизм за его <strong>высокую мощность</strong> при компактных размерах, что позволяет сэкономить место в колесной арке или подвеске.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене колодок обязательно проверяйте состояние пружин возврата, так как их усталость может нарушить работу механизма самоусиления и привести к «прилипанию» тормозов.</p></aside>
+
+<h2 id="регулировка-зазора-и-износ">Регулировка зазора и износ</h2>
+
+<p>По мере эксплуатации фрикционный материал колодок стирается, увеличивая зазор между ними и барабаном. В старых автомобилях это требовало ручной регулировки, а в современных моделях процесс происходит <strong>автоматически</strong> при каждом торможении.</p>
+
+<p>Механизм регулировки использует <strong>винтовой упор</strong> или эксцентрик, который перемещается при срабатывании тормозов, если зазор превышает допустимый предел. Это обеспечивает постоянный ход педали и мгновенную реакцию системы.</p>
+
+<p>Однако автоматика не всегда идеальна. При сильном износе или попадании грязи в механизм регулировка может заклинить, что приведет к постоянному подтормаживанию колеса и перегреву <em>барабана</em>.</p>
+
+<p>Если вы заметили, что педаль тормоза стала «мягче», а пробег увеличился, проверьте состояние <strong>тормозных колодок</strong> и работоспособность <strong>автоматического регулятора</strong>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка барабанного тормоза</h4><label class="check-item"><input type="checkbox"><span>Визуальный осмотр колодок</span></label><label class="check-item"><input type="checkbox"><span>Проверка хода педали</span></label><label class="check-item"><input type="checkbox"><span>Осмотр пружин</span></label><label class="check-item"><input type="checkbox"><span>Тест на равномерность торможения</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="проблемы-перегрева-и-затухания">Проблемы перегрева и затухания</h2>
+
+<p>Главным недостатком барабанных тормозов является плохая теплоотдача. Закрытая конструкция <strong>тормозного барабана</strong> не позволяет теплу эффективно рассеиваться в атмосферу, что приводит к быстрому накоплению энергии.</p>
+
+<p>При интенсивном торможении, например, на горной дороге, температура внутри механизма может превысить допустимые нормы, вызывая <strong>затухание тормозов</strong>. В этом состоянии фрикционный материал теряет свои свойства, и эффективность торможения падает критически.</p>
+
+<p>Нагрев также приводит к расширению металла, что еще больше ухудшает теплоотвод и может вызвать деформацию <em>барабана</em>. Это проявляется в биении руля или пульсации педали при остановке.</p>
+
+<p>В таких условиях вам необходимо использовать пониженные передачи двигателем, чтобы снизить нагрузку на <strong>механическую часть</strong> тормозной системы.</p>
+
+<details class="pb-accordion"><summary>Почему задние тормоза часто гречатся?</summary><div class="pb-accordion-body"><p>При длительном торможении тепло от барабана передается на подшипник ступицы, что может привести к разрушению смазки и заклиниванию колеса.</p></div></details>
+
+<h2 id="сравнение-с-дисковыми-системами">Сравнение с дисковыми системами</h2>
+
+<p>Для наглядности сравним основные характеристики двух типов тормозов в таблице ниже. Это поможет понять, почему производители выбирают именно ту или иную конфигурацию.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр</th>
+<th>Барабанный тормоз</th>
+<th>Дисковый тормоз</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Эффективность охлаждения</td>
+<td>Низкая</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Сложность конструкции</td>
+<td>Высокая (много деталей)</td>
+<td>Низкая (простая сборка)</td>
+</tr>
+<tr>
+<td>Стоимость обслуживания</td>
+<td>Выше (трудоемкий демонтаж)</td>
+<td>Ниже (простая замена)</td>
+</tr>
+<tr>
+<td>Защита от грязи</td>
+<td>Отличная (закрытый корпус)</td>
+<td>Средняя (открытая система)</td>
+</tr>
+<tr>
+<td>Эффект самоусиления</td>
+<td>Есть</td>
+<td>Отсутствует</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Как видно из данных, барабанные системы выигрывают в защите от внешних воздействий и стоимости самих компонентов, но уступают в теплостойкости.</p>
+
+<p>Выбор зависит от назначения автомобиля: для городской легковушки с малыми нагрузками барабан идеален, а для спорткара или внедорожника необходимы <strong>вентилируемые диски</strong>.</p>
+
+<blockquote>⚠️ Внимание: Если вы планируете использовать автомобиль для буксировки прицепа или частых спусков с гор, обязательно проверьте, не перегреваются ли барабаны. В таких случаях их замена на дисковые системы может быть оправдана.</blockquote>
+
+<h2 id="диагностика-и-частые-неисправности">Диагностика и частые неисправности</h2>
+
+<p>Симптомы неисправности барабанного механизма часто проявляются в виде звуков или странного поведения педали. Скрежет, визг или стук могут указывать на износ <strong>фрикционных накладок</strong> или ослабление возвратных пружин.</p>
+
+<p>Если машина уводит в сторону при торможении, проблема может быть в заклинившем <strong>колесном цилиндре</strong> или неравномерном износе колодок на одной оси. Это опасно тем, что автомобиль может потерять управление на скользкой дороге.</p>
+
+<p>Еще одним признаком проблем является заедание тормозов после отпускания педали. Это означает, что колодки не возвращаются в исходное положение из-за ржавчины или поломки <strong>регулировочного механизма</strong>.</p>
+
+<p>Регулярная диагностика позволяет избежать серьезных поломок. Вам нужно уделять внимание состоянию <em>тормозной жидкости</em> и герметичности цилиндров.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка зазора и состояния пружин — залог безопасной работы барабанного тормоза, так как эти детали подвержены быстрому износу и коррозии.</p></aside>
+
+<p>Понимание принципов работы и своевременное обслуживание помогут продлить жизнь тормозной системы и обеспечить вашу безопасность на дороге. Не игнорируйте даже мелкие посторонние звуки, так как они часто становятся предвестниками серьезных поломок.</p>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему барабанные тормоза все еще используются на современных автомобилях?</summary>
+<p>Они дешевле в производстве и обслуживании, обладают встроенным стояночным тормозом и лучше защищены от грязи и воды, чем открытые дисковые системы.</p>
+</details>
+
+<details>
+<summary>Можно ли заменить барабанные тормоза на дисковые самостоятельно?</summary>
+<p>Это сложный процесс, требующий замены ступиц, суппортов и переподключения магистралей. Часто требуется также перепрограммирование ABS и изменение настройки парковочного тормоза.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять колодки в барабанном механизме?</summary>
+<p>Срок службы зависит от стиля вождения и условий эксплуатации. Обычно они служат в 1,5–2 раза дольше дисковых, но требуют проверки при каждом техническом обслуживании.</p>
+</details>
+
+<details>
+<summary>Что делать, если после замены колодок педаль тормоза стала слишком мягкой?</summary>
+<p>Скорее всего, в системе остался воздух. Необходимо выполнить процедуру прокачки тормозной системы до удаления всех воздушных пробок.</p>
+</details>
+
+<details>
+<summary>Влияет ли износ барабана на эффективность торможения?</summary>
+<p>Да. Если на внутренней поверхности барабана появились борозды или он деформирован, колодки не будут прилегать плотно, что снизит эффективность торможения и увеличит путь остановки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zadnie-tormoza-matiz-ustrojstvo.html" class="pb-related-card">
+                <span class="pb-related-title">Задние тормоза Матиз: устройство, ремонт и замена барабанов</span>
+                <span class="pb-related-desc">Подробный обзор устройства задних тормозов Daewoo Matiz. Инструкция по ремонту барабанных механизмов</span>
+            </a><a href="/articles/c/ch/chem-smazat-barabannye-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Чем смазать барабанные тормоза: выбор смазки и пошаговая инструкция</span>
+                <span class="pb-related-desc">Полное руководство по выбору смазки для барабанных тормозов. Разбор составов, запрет на литол, инстр</span>
+            </a><a href="/articles/t/to/tormoznye-barabany-ats-otzyvy.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозные барабаны ATS: честные отзывы, выбор и нюансы эксплуатации</span>
+                <span class="pb-related-desc">Реальные отзывы владельцев о тормозных барабанах ATS. Сравнение качества, советы по установке, выявл</span>
+            </a><a href="/articles/r/re/remkomplekt-zadnikh-tormozov-logan-1.html" class="pb-related-card">
+                <span class="pb-related-title">Замена ремкомплекта задних тормозов Logan 1: Выбор и инструкция</span>
+                <span class="pb-related-desc">Полный гайд по ремонту задних барабанных тормозов Рено Логан 1. Как выбрать ремкомплект, пошаговая з</span>
+            </a><a href="/articles/k/ka/kak-rabotayut-barabannye-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Как работают барабанные тормоза: принцип, устройство и обслуживание</span>
+                <span class="pb-related-desc">Подробный разбор конструкции барабанных тормозов, принцип их действия, плюсы и минусы, а также инстр</span>
+            </a><a href="/articles/z/za/zadnie-tormoza-310-vag.html" class="pb-related-card">
+                <span class="pb-related-title">Задние тормоза VAG 310: Замена, выбор и ремонт барабанов</span>
+                <span class="pb-related-desc">Полный гид по задним тормозам VAG 310: диагностика, замена колодок и барабанов, выбор производителей</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Ремонт суппорта MAN TGA: диагностика, замена и переборка своими руками — ТормозОК</title>
+    <meta name="description" content="Полное руководство по ремонту тормозных суппортов MAN TGA. Диагностика заклинивания, замена поршней и манжет, выбор ремкомплектов и нюансы обслуживания.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/re/remont-supporta-man-tga.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт суппорта MAN TGA: диагностика, замена и переборка своими руками">
+    <meta property="og:description" content="Полное руководство по ремонту тормозных суппортов MAN TGA. Диагностика заклинивания, замена поршней и манжет, выбор ремкомплектов и нюансы обслуживания.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/supporty-i-porshni/">Суппорты и поршни</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт суппорта MAN TGA: диагностика, замена и переборка своими руками</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проблему-тормозной-системы-тягача">Введение в проблему тормозной системы тягача</a></li><li><a href="#признаки-неисправности-и-диагностика-узла">Признаки неисправности и диагностика узла</a></li><li><a href="#конструктивные-особенности-суппортов-man-tga">Конструктивные особенности суппортов MAN TGA</a></li><li><a href="#необходимый-инструмент-и-подготовка">Необходимый инструмент и подготовка</a></li><li><a href="#пошаговая-инструкция-по-разборке-и-переборке">Пошаговая инструкция по разборке и переборке</a></li><li><a href="#сравнение-оригинальных-запчастей-и-аналогов">Сравнение оригинальных запчастей и аналогов</a></li><li><a href="#сборка-и-финальная-проверка-работоспособности">Сборка и финальная проверка работоспособности</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/remkomplekt-supporta-prado-150.html">Ремкомплект суппорта Toyota Prado 150: выбор, замена и нюансы</a></li><li><a href="/articles/k/ka/kak-snyat-zadnij-tormoznoj-support.html">Как снять задний тормозной суппорт: пошаговая инструкция 2026</a></li><li><a href="/articles/s/sm/smazka-dlya-supportov-trw-pfg-110.html">TRW PFG110: инструкция по применению и свойства смазки</a></li><li><a href="/articles/s/su/support-golf-4-perednij.html">Передний суппорт Golf 4: устройство, ремонт и подбор запчастей</a></li><li><a href="/articles/r/re/remkomplekt-zadnego-supporta-sang-eng-kajron-dizel-20.html">Ремкомплект заднего суппорта SsangYong Kyron: выбор, замена и нюансы дизеля 2.0</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полный гид по ремонту суппортов MAN TGA: от диагностики до переборки</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проблему-тормозной-системы-тягача">Введение в проблему тормозной системы тягача</a></li><li><a href="#признаки-неисправности-и-диагностика-узла">Признаки неисправности и диагностика узла</a></li><li><a href="#конструктивные-особенности-суппортов-man-tga">Конструктивные особенности суппортов MAN TGA</a></li><li><a href="#необходимый-инструмент-и-подготовка">Необходимый инструмент и подготовка</a></li><li><a href="#пошаговая-инструкция-по-разборке-и-переборке">Пошаговая инструкция по разборке и переборке</a></li><li><a href="#сравнение-оригинальных-запчастей-и-аналогов">Сравнение оригинальных запчастей и аналогов</a></li><li><a href="#сборка-и-финальная-проверка-работоспособности">Сборка и финальная проверка работоспособности</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проблему-тормозной-системы-тягача">Введение в проблему тормозной системы тягача</h2>
+<p>Тормозная система грузовика <em>MAN TGA</em> подвергается колоссальным нагрузкам, особенно при работе в тяжелых условиях транспортировки. Любой сбой в работе <strong>механизма торможения</strong> может привести к печальным последствиям, поэтому состояние компонентов должно контролироваться ежедневно.</p>
+<p>Особое внимание следует уделять <strong>тормозным суппортам</strong>, которые являются одними из самых нагруженных узлов. Их отказ часто происходит внезапно, но предпосылки можно заметить заранее, если знать характерные признаки неисправности и регулярно проводить визуальный осмотр.</p>
+<p>Игнорирование мелких подтеков или скрипов часто приводит к тому, что ремонт превращается в полную замену узла, что значительно дороже. Качественный <strong>ремонт суппорта MAN TGA</strong> возможен своими руками при наличии правильного инструмента и понимания конструкции <em>дисковых тормозов</em>.</p>
+
+<h2 id="признаки-неисправности-и-диагностика-узла">Признаки неисправности и диагностика узла</h2>
+<p>Первым сигналом о проблемах с <strong>тормозным суппортом</strong> становится неравномерный износ <em>фрикционных накладок</em>. Если одна сторона колодки стерта значительно сильнее другой, это указывает на то, что направляющие заклинили или поршень не возвращается в исходное положение.</p>
+<p>Кроме того, обращайте внимание на появление сильного запаха гари после поездки или ощущение, что грузовик <strong>тянет в сторону</strong> при торможении. Эти симптомы часто говорят о том, что один из <strong>поршней суппорта</strong> работает неправильно и создает избыточное усилие на тормозной диск.</p>
+<p><blockquote>⚠️ Внимание: Эксплуатация грузовика с неравномерно изношенными тормозными колодками может привести к полному заклиниванию колеса и перегреву <strong>тормозного диска</strong>, что чревато его деформацией и появлением трещин.</blockquote></p>
+<p>При диагностике необходимо также проверить состояние <em>пыльников</em> и <strong>направляющих пальцев</strong>. Отсутствие смазки или наличие грязи на них является частой причиной заклинивания механизма, особенно в условиях бездорожья или зимней эксплуатации.</p>
+
+<div class="pb-poll" id="poll-1abb1ae0"><div class="pb-poll-question">📊 Какой симптом неисправности суппорта вы заметили первым?</div><div class="pb-poll-option" data-poll="1abb1ae0" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Неравномерный износ колодок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1abb1ae0" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Тянет в сторону при торможении</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1abb1ae0" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Скрип и визг тормозов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1abb1ae0" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Подтекание тормозной жидкости</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="конструктивные-особенности-суппортов-man-tga">Конструктивные особенности суппортов MAN TGA</h2>
+<p>На грузовиках <em>MAN TGA</em> чаще всего устанавливаются <strong>плавающие суппорты</strong> с одним или двумя поршнями, работающие в паре с вентилируемыми тормозными дисками. Конструкция предусматривает возможность смещения корпуса суппорта относительно скобы для обеспечения равномерного прижатия колодок.</p>
+<p>Ключевым элементом надежности здесь является система <strong>направляющих пальцев</strong>, которая должна двигаться свободно, но без люфтов. Производители используют специфические смазочные материалы, которые выдерживают высокие температуры и не вымываются при контакте с водой или реагентами.</p>
+<p>Поршни в таких механизмах часто имеют алюминиевое покрытие или специальные уплотнения, предотвращающие коррозию. </p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная особенность суппортов MAN TGA — использование плавающей конструкции с направляющими, требующими регулярной чистки и смазки специализированными составами.</p></aside>
+
+<h2 id="необходимый-инструмент-и-подготовка">Необходимый инструмент и подготовка</h2>
+<p>Для качественного ремонта вам потребуется набор специализированного инструмента, включая <strong>съемник поршней</strong> и динамометрический ключ. Обычные плоскогубцы или молотки категорически не подходят для работы с <em>тормозной системой</em> грузовика, так как могут повредить хрупкие детали.</p>
+<p>Обязательно подготовьте <strong>ремкомплект суппорта</strong>, включающий новые манжеты, пыльники и направляющие. Использование старых уплотнений после разборки допустимо только в редких случаях, когда визуальный осмотр не выявил дефектов, но лучше перестраховаться.</p>
+<p>Также потребуется <strong>тормозная жидкость</strong> стандарта DOT 4 или DOT 5.1, в зависимости от рекомендаций производителя. Не смешивайте жидкости разных марок и цветов, так как это может привести к химической реакции и разрушению резиновых элементов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к ремонту суппорта</h4><label class="check-item"><input type="checkbox"><span>Поднять грузовик на подъемнике</span></label><label class="check-item"><input type="checkbox"><span>Снять колесо и тормозной диск</span></label><label class="check-item"><input type="checkbox"><span>Очистить суппорт от грязи</span></label><label class="check-item"><input type="checkbox"><span>Подготовить новый ремкомплект</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="пошаговая-инструкция-по-разборке-и-переборке">Пошаговая инструкция по разборке и переборке</h2>
+<p>Перед началом работ <strong>отключите систему торможения</strong> или снимите давление в пневмосистеме, чтобы избежать случайного срабатывания механизмов. Снимите колесо и тщательно очистите область вокруг <em>суппорта</em> от грязи и дорожных реагентов.</p>
+<p>Открутите скобу суппорта, но не отсоединяйте её от шланга полностью, чтобы не слить всю тормозную жидкость. Аккуратно извлеките <strong>тормозные колодки</strong> и осмотрите их на предмет неравномерного износа, что подтвердит диагноз.</p>
+<p>Далее необходимо выкрутить направляющие и снять корпус суппорта. Используйте <strong>специальный инструмент</strong> для вдавливания поршня, предварительно открыв штуцер сброса давления, чтобы облегчить процесс и избежать повреждения манжеты.</p>
+<p><blockquote>⚠️ Внимание: При извлечении поршня будьте предельно осторожны, так как он может вылететь с большой силой. Используйте деревянные клинья или специальные зажимы для фиксации хода поршня.</blockquote></p>
+<p>Очистите все детали от старой смазки и нагара. Проверьте посадочные места под <strong>направляющие пальцы</strong> на наличие задиров. Если поверхность направляющей повреждена, замена пальца без замены самого корпуса суппорта может не дать результата.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя использовать WD-40 для смазки направляющих?</summary><div class="pb-accordion-body"><p>Смазка WD-40 является универсальным растворителем и не предназначена для работы в условиях высоких температур тормозов. Она быстро вымывается, приводит к набуханию резиновых пыльников и заклиниванию механизма. Используйте только специальные силиконовые смазки для тормозных систем.</p></div></details>
+
+<h2 id="сравнение-оригинальных-запчастей-и-аналогов">Сравнение оригинальных запчастей и аналогов</h2>
+<p>При выборе запчастей для <strong>ремонта суппорта MAN TGA</strong> стоит оценить плюсы и минусы использования оригинальных комплектующих по сравнению с аналогами. Оригинал обеспечивает максимальную совместимость и долговечность, но стоимость его может быть значительно выше.</p>
+<p>Аналоги от известных брендов часто предлагают отличное соотношение цены и качества, однако требуют внимательного подбора. Дешевые китайские копии редко выдерживают реальные нагрузки грузовика и могут выйти из строя через несколько тысяч километров.</p>
+<p>В таблице ниже приведено сравнение основных параметров популярных вариантов комплектующих для вашего грузовика.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип запчасти</th>
+<th>Оригинал (MAN)</th>
+<th>Бренд-аналог (TRW/Brembo)</th>
+<th>Бюджетные аналоги</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Срок службы</td>
+<td>До 200 000 км</td>
+<td>120 000 – 150 000 км</td>
+<td>40 000 – 60 000 км</td>
+</tr>
+<tr>
+<td>Цена (примерно)</td>
+<td>Высокая</td>
+<td>Средняя</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Качество резины</td>
+<td>Отличное</td>
+<td>Хорошее</td>
+<td>Среднее/Плохое</td>
+</tr>
+<tr>
+<td>Наличие в наличии</td>
+<td>Часто под заказ</td>
+<td>Широко доступно</td>
+<td>Всегда есть</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед покупкой ремкомплекта сверьте VIN-код вашего грузовика с каталожным номером запчасти, так как на разных модификациях MAN TGA могут стоять суппорты разных производителей.</p></aside>
+
+<h2 id="сборка-и-финальная-проверка-работоспособности">Сборка и финальная проверка работоспособности</h2>
+<p>После очистки и замены изношенных элементов приступайте к сборке. Нанесите специальную смазку на <strong>направляющие пальцы</strong> и поршни, избегая попадания состава на фрикционные поверхности. Установите новые манжеты, аккуратно вдавливая их в посадочные места.</p>
+<p>Закрепите корпус суппорта на скобе, затянув болты с рекомендованным усилием. Не перетягивайте болты, так как это может деформировать корпус и нарушить работу механизма. Установите <strong>тормозные колодки</strong> и проверьте их свободный ход.</p>
+<p>Прокачайте тормозную систему, удалив воздух из контура. Это критически важный этап, так как наличие воздуха делает торможение мягким и непредсказуемым. Проверьте герметичность всех соединений перед выездом на дорогу.</p>
+<p><blockquote>⚠️ Внимание: Даже при использовании качественного ремкомплекта, после сборки необходимо протестировать тормоза на безопасном участке дороги. Убедитесь, что грузовик останавливается прямо и не уходит в занос.</blockquote></p>
+<p>Обратите внимание, что регламент замены деталей может незначительно отличаться в зависимости от года выпуска и модификации вашего грузовика. Всегда сверяйтесь с технической документацией завода-изготовителя для получения актуальной информации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Финальная прокачка тормозной системы и тестовая поездка обязательны после любого вмешательства в работу суппортов для обеспечения безопасности.</p></aside>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+<details>
+<summary>Можно ли ремонтировать суппорт MAN TGA без снятия с автомобиля?</summary>
+<p>Теоретически возможно заменить колодки и смазать направляющие без полного снятия, но для полноценного ремонта поршня и замены манжет необходимо полностью демонтировать суппорт.</p>
+</details>
+<details>
+<summary>Как часто нужно менять смазку на направляющих?</summary>
+<p>Рекомендуется проверять состояние смазки при каждой замене тормозных колодок, то есть раз в 40-60 тысяч километров пробега, или чаще при эксплуатации в тяжелых условиях.</p>
+</details>
+<details>
+<summary>Почему суппорт заклинивает сразу после ремонта?</summary>
+<p>Частые причины: использование неподходящей смазки, повреждение пыльника при установке, загрязнение посадочного места или некачественный ремкомплект.</p>
+</details>
+<details>
+<summary>Нужно ли менять тормозной диск при ремонте суппорта?</summary>
+<p>Если на диске есть глубокие борозды, трещины или он имеет значительный износ по толщине, его необходимо заменить. Иначе новая колодка будет быстро изнашиваться, а эффективность торможения останется низкой.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/remkomplekt-supporta-prado-150.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект суппорта Toyota Prado 150: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гид по ремонту суппортов Prado 150. Как выбрать ремкомплект, признаки износа, пошаговая инстр</span>
+            </a><a href="/articles/k/ka/kak-snyat-zadnij-tormoznoj-support.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять задний тормозной суппорт: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Детальное руководство по демонтажу заднего суппорта: инструменты, порядок работ, типичные ошибки и с</span>
+            </a><a href="/articles/s/sm/smazka-dlya-supportov-trw-pfg-110.html" class="pb-related-card">
+                <span class="pb-related-title">TRW PFG110: инструкция по применению и свойства смазки</span>
+                <span class="pb-related-desc">Полный разбор смазки TRW PFG 110 для суппортов. Характеристики, совместимость, инструкция по нанесен</span>
+            </a><a href="/articles/s/su/support-golf-4-perednij.html" class="pb-related-card">
+                <span class="pb-related-title">Передний суппорт Golf 4: устройство, ремонт и подбор запчастей</span>
+                <span class="pb-related-desc">Полное руководство по передним суппортам Volkswagen Golf 4: конструкция, типичные неисправности, зам</span>
+            </a><a href="/articles/r/re/remkomplekt-zadnego-supporta-sang-eng-kajron-dizel-20.html" class="pb-related-card">
+                <span class="pb-related-title">Ремкомплект заднего суппорта SsangYong Kyron: выбор, замена и нюансы дизеля 2.0</span>
+                <span class="pb-related-desc">Полный гайд по ремонту задних суппортов SsangYong Kyron 2.0 Diesel. Выбор ремкомплекта, инструкция п</span>
+            </a><a href="/articles/k/kl/klinit-support-perednego-kolesa-granta-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Заклинило суппорт на Гранте: причины и ремонт своими руками</span>
+                <span class="pb-related-desc">Что делать, если клинит передний суппорт на Lada Granta? Диагностика, ремонт и профилактика неисправ</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Низкая скорость записи на диск: причины, диагностика и решения — ТормозОК</title>
+    <meta name="description" content="Почему горит диск медленно? Разбор причин низкой скорости записи на оптические носители: от состояния лазера до выбора формата и качества болванки.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/n/ni/nizkaya-skorost-zapisi-na-disk.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Низкая скорость записи на диск: причины, диагностика и решения">
+    <meta property="og:description" content="Почему горит диск медленно? Разбор причин низкой скорости записи на оптические носители: от состояния лазера до выбора формата и качества болванки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Низкая скорость записи на диск: причины, диагностика и решения</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физические-ограничения-и-состояние-оптического-привода">Физические ограничения и состояние оптического привода</a></li><li><a href="#влияние-качества-носителя-и-типа-болванки">Влияние качества носителя и типа болванки</a></li><li><a href="#программные-настройки-и-драйверы">Программные настройки и драйверы</a></li><li><a href="#особенности-программного-обеспечения-для-записи">Особенности программного обеспечения для записи</a></li><li><a href="#влияние-системы-и-драйверов-чипсета">Влияние системы и драйверов чипсета</a></li><li><a href="#алгоритм-диагностики-и-оптимизации">Алгоритм диагностики и оптимизации</a></li><li><a href="#частые-вопросы-пользователей">Частые вопросы пользователей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/l/ly/lyuft-mekhanizma-skladyvaniya-kolyaski.html">Люфт механизма складывания коляски: причины, диагностика и ремонт</a></li><li><a href="/articles/e/el/element-kryla-samoleta-8.html">Крыло самолета 8: Конструктивные особенности и роль в авиации</a></li><li><a href="/articles/k/ka/kak-obsluzhivat-vozdushnuyu-vilku.html">Как обслуживать воздушную вилку: инструкция по смазке и регулировке</a></li><li><a href="/articles/g/gd/gde-vzyat-abs-plastik-v-bytu.html">Где взять АБС пластик в быту: поиск и разборка старых электробытовых приборов</a></li><li><a href="/articles/k/ka/kak-vzletayut-i-sadyatsya-samolety.html">Как взлетают и садятся самолеты: физика полета и пилотирование</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Низкая скорость записи на диск: полное руководство по диагностике и ускорению</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физические-ограничения-и-состояние-оптического-привода">Физические ограничения и состояние оптического привода</a></li><li><a href="#влияние-качества-носителя-и-типа-болванки">Влияние качества носителя и типа болванки</a></li><li><a href="#программные-настройки-и-драйверы">Программные настройки и драйверы</a></li><li><a href="#особенности-программного-обеспечения-для-записи">Особенности программного обеспечения для записи</a></li><li><a href="#влияние-системы-и-драйверов-чипсета">Влияние системы и драйверов чипсета</a></li><li><a href="#алгоритм-диагностики-и-оптимизации">Алгоритм диагностики и оптимизации</a></li><li><a href="#частые-вопросы-пользователей">Частые вопросы пользователей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Проблема медленной записи оптических дисков часто встречается как у новичков, так и у опытных пользователей, сталкивающихся с необходимостью создания архивов или бэкапов. Ситуация, когда процесс, который должен занимать 5 минут, растягивается на 20-30, вызывает раздражение и опасения за сохранность данных. Обычно вина возлагается на аппаратную часть привода, но истина часто кроется вSoftware или качестве самого носителя.</p>
+
+<p>Существует множество факторов, влияющих на <strong>пропускную способность</strong> канала данных при записи. Это может быть устаревший <em>драйвер</em> контроллера, перегрев механики, поврежденные сектора на поверхности болванки или некорректно выбранные параметры буферизации. Игнорирование этих нюансов приводит к тому, что даже новый привод не может выдать заявленные производителем показатели <strong>скорости вращения</strong> и потока данных.</p>
+
+<p>В этой статье мы разберем основные причины падения производительности и предложим конкретные алгоритмы действий для восстановления нормальной скорости записи. Вы узнаете, как отличить аппаратную неисправность от программных сбоев и какие настройки стоит изменить в системе для получения стабильного результата.</p>
+
+<h2 id="физические-ограничения-и-состояние-оптического-привода">Физические ограничения и состояние оптического привода</h2>
+
+<p>Самой очевидной причиной низкой скорости является износ механических узлов вашего устройства. <strong>Лазерная головка</strong> со временем теряет мощность излучения, что вынуждает систему записи снижать обороты шпинделя, чтобы обеспечить корректную запись пикселей на поверхность. Если вы заметили, что старые диски записываются нормально, а новые — крайне медленно, проблема может быть именно в фокусировке луча.</p>
+
+<p>Также стоит обратить внимание на <em>кнопку сброса</em> или джамперы на корпусе привода, если это внешнее устройство с поддержкой специфических режимов. В случае с внутренними приводами SATA часто виноват не сам привод, а <strong>кабель передачи данных</strong>. Поврежденный или некачественный шлейф может не поддерживать режимы высокой скорости, вынуждая контроллер переходить в режим пониженной пропускной способности для стабильности.</p>
+
+<p>Перегрев является частым фактором, который сбивает с толку. При длительной работе привод нагревается, и встроенные датчики автоматически снижают <strong>частоту вращения</strong> диска, чтобы избежать физического повреждения механики или деградации электронных компонентов. Это защитный механизм, который часто воспринимается пользователем как неисправность.</p>
+
+<blockquote>⚠️ Внимание: Если привод издает посторонние шумы (скрежет, щелчки) в момент попытки записи на высокой скорости, немедленно прекратите процесс. Это может указывать на критическую out-of-focus ситуацию или механический износ шестеренок, требующий ремонта.</blockquote>
+
+<div class="pb-poll" id="poll-766df588"><div class="pb-poll-question">📊 Как часто вы используете оптические диски?</div><div class="pb-poll-option" data-poll="766df588" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Регулярно, для бэкапов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="766df588" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только для установки ПО</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="766df588" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="766df588" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не использую</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-качества-носителя-и-типа-болванки">Влияние качества носителя и типа болванки</h2>
+
+<p>Низкая скорость записи часто зависит не от привода, а от самого носителя. Дешевые болванки от неизвестных производителей часто имеют нестабильный слой фоточувствительного материала. <strong>Записывающий слой</strong> на таких дисках может не успевать реагировать на поток данных, что заставляет программу записи динамически снижать скорость до минимально возможной, чтобы избежать ошибок.</p>
+
+<p>Тип носителя также играет решающую роль. Диски формата <em>CD-RW</em> или <em>DVD-RW</em> (перезаписываемые) исторически записываются медленнее, чем их однократные аналоги <em>CD-R</em> или <em>DVD-R</em>. Это связано с физическими свойствами фазового перехода материала, который требует более точного температурного режима и времени экспонирования луча.</p>
+
+<p>Размер емкости диска также влияет на скорость. При попытке записать 4.7 ГБ на диск с номиналом 4.7 ГБ, привод может работать на пределе возможностей, снижая скорость в конце процесса. <strong>Буферизация</strong> данных может заполняться быстрее, чем они успевают записываться на поверхность, вызывая задержки.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип носителя</th>
+<th>Стандартная скорость записи</th>
+<th>Фактическая скорость на дешевых болванках</th>
+<th>Вероятность ошибок</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High-Grade DVD-R</td>
+<td>16x - 24x</td>
+<td>12x - 16x</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>Budget DVD-R</td>
+<td>16x</td>
+<td>4x - 8x</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>DVD-RW (перезапись)</td>
+<td>4x - 6x</td>
+<td>2x - 4x</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>CD-RW (перезапись)</td>
+<td>10x - 24x</td>
+<td>4x - 8x</td>
+<td>Средняя</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда выбирайте диски от проверенных брендов (Verbatim, Taiyo Yuden), даже если они дороже. Это сэкономит время на переписывание и нервы от потерь данных.</p></aside>
+
+<h2 id="программные-настройки-и-драйверы">Программные настройки и драйверы</h2>
+
+<p>Системные настройки могут быть главным препятствием для высокой скорости. В операционных системах Windows по умолчанию иногда включен режим <strong>быстрого извлечения</strong> для оптических приводов, который отключает кэширование записи на стороне контроллера. Это значительно снижает производительность, так как данные записываются напрямую, минуя буфер.</p>
+
+<p>Необходимо проверить настройки <em>диспетчера устройств</em>. Перейдите в свойства вашего привода и убедитесь, что галочка «Включить кэширование записи» активна. Также стоит обновить <strong>драйверы</strong> до последних версий от производителя чипсета материнской платы, а не использовать стандартные драйверы Windows Update.</p>
+
+<p>Иногда проблема кроется в фоновых процессах. Антивирусное ПО или службы индексации могут активно сканировать каждый пакет данных перед его отправкой на носитель. Это создает искусственные задержки, которые система интерпретирует как необходимость замедлить поток. <strong>Исключение</strong> оптического привода из сканирования может мгновенно решить проблему.</p>
+
+<details class="pb-accordion"><summary>Как отключить индексирование для привода?</summary><div class="pb-accordion-body"><p>Зайдите в свойства папки диска в «Этот компьютер», снимите галочку «Разрешить индексирование содержимого файлов на этом диске» и нажмите ОК.</p></div></details>
+
+<h2 id="особенности-программного-обеспечения-для-записи">Особенности программного обеспечения для записи</h2>
+
+<p>Выбор программы для записи играет огромную роль. Встроенные средства Windows или простые утилиты часто используют консервативные алгоритмы, которые не всегда эффективно управляют буфером. <strong>Профессиональный софт</strong> вроде Nero Burning ROM, Ashampoo Burning Studio или ImgBurn позволяет тонко настроить режимы записи и размер буфера.</p>
+
+<p>В настройках таких программ часто можно выбрать режим <em>Disc-At-Once</em> (DAO) или <em>Track-At-Once</em> (TAO). DAO обычно обеспечивает более высокую стабильность потока, но требует, чтобы все данные были готовы в буфере заранее. Если объем данных велик, а оперативная память мала, это может привести к падению скорости.</p>
+
+<p>Также стоит обратить внимание на функцию <strong>Verification</strong> (проверка). Если она включена, программа сразу же после записи считывает данные с диска для сверки с оригиналом. Это удваивает время процесса, но не влияет на саму скорость записи, однако пользователь может ошибочно принять это за медленную работу.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек софта</h4><label class="check-item"><input type="checkbox"><span>Отключить автоматическую проверку после записи</span></label><label class="check-item"><input type="checkbox"><span>Увеличить размер буфера до максимума</span></label><label class="check-item"><input type="checkbox"><span>Выбрать режим DAO</span></label><label class="check-item"><input type="checkbox"><span>Отключить блокировку экрана во время записи</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="влияние-системы-и-драйверов-чипсета">Влияние системы и драйверов чипсета</h2>
+
+<p>Состояние накопителя, на который записывается образ перед записью на диск, критически важно. Если вы копироваете данные с жесткого диска <em>SSD</em> или <em>HDD</em>, который сильно фрагментирован или заполнен под завязку, скорость поступления данных в буфер привода будет падать. Это приведет к буферному переполнению или недополнению и, как следствие, к снижению скорости записи.</p>
+
+<p>Конфликт IRQ или прерываний также может быть причиной. В старых системах или при неправильной установке драйверов чипсета привод может работать в режиме <strong>PIO</strong> вместо <em>DMA</em>. В режиме PIO процессор обрабатывает каждый бит данных, что катастрофически снижает скорость и нагружает систему.</p>
+
+<p>Рекомендуется проверить режим работы интерфейса. В настройках BIOS или в диспетчере устройств убедитесь, что привод работает в режиме <code>ATA/133</code> или <code>ATA/100</code>, а не в устаревшем режиме совместимости. Это гарантирует максимальную пропускную способность шины.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Режим DMA обязателен для высокой скорости. Если привод работает в PIO, никакие настройки софта не помогут ускорить процесс.</p></aside>
+
+<h2 id="алгоритм-диагностики-и-оптимизации">Алгоритм диагностики и оптимизации</h2>
+
+<p>Для устранения проблемы необходимо действовать системно. Начните с проверки физического состояния диска и привода. Почистите линзу лазерной головки специальным чистящим диском или ватной палочкой с изопропиловым спиртом. Убедитесь, что диск установлен ровно и не имеет механических повреждений.</p>
+
+<p>Затем перейдите к программной части. Проверьте, не перегревается ли компьютер. Очистите вентиляционные отверстия корпуса. Обновите драйверы контроллера SATA/IDE. Отключите лишние фоновые службы, особенно те, что связаны с анализом данных.</p>
+
+<p>Если проблема сохраняется, попробуйте записать тот же объем данных на другой тип носителя или с помощью другой программы. Это поможет изолировать причину: если на другом диске скорость в норме, значит, проблема в первом диске. Если с другой программой скорость выросла — проблема в настройках софта.</p>
+
+<blockquote>⚠️ Внимание: Не пытайтесь форсировать скорость записи сверх рекомендуемых значений для конкретного диска. Это может привести к получению бракованного носителя, который невозможно прочитать даже на том же приводе.</blockquote>
+
+<p>В случае, если вы используете внешние приводы через USB, убедитесь, что они подключены к порту USB 3.0 (синего цвета), а не к USB 2.0. Ограничение пропускной способности порта USB 2.0 (до 480 Мбит/с) может стать узким местом при записи на высокоскоростные Blu-ray диски, хотя для DVD это менее критично.</p>
+
+<h2 id="частые-вопросы-пользователей">Частые вопросы пользователей</h2>
+
+<details>
+<summary>Почему скорость записи падает в конце процесса?</summary>
+<p>Это нормальное явление для многих приводов. При приближении к краю диска <strong>линейная скорость</strong> вращения должна увеличиваться для сохранения постоянства скорости потока (CAV/CLV режимы), но механика не всегда успевает, поэтому привод автоматически снижает скорость для предотвращения ошибок.</p>
+</details>
+
+<details>
+<summary>Можно ли записывать диск на максимальной скорости?</summary>
+<p>Технически можно, но не рекомендуется. Максимальная скорость часто достигается с компромиссами в качестве записи. Лучше выбирать скорость на 2-4 ступени ниже максимальной для обеспечения <strong>долговечности</strong> данных.</p>
+</details>
+
+<details>
+<summary>Влияет ли температура в комнате на скорость записи?</summary>
+<p>Да, экстремально низкие или высокие температуры могут влиять на работу механики и электроники привода. Оптимальная температура для работы составляет 18-25 градусов Цельсия.</p>
+</details>
+
+<details>
+<summary>Что делать, если программа пишет "Buffer Underrun"?</summary>
+<p>Это значит, что поток данных прервался. Попробуйте снизить скорость записи в настройках программы, закрыть все лишние приложения и убедиться, что источник данных (жесткий диск) не перегружен.</p>
+</details>
+
+<details>
+<summary>Зависит ли скорость от формата файла (ISO, BIN)?</summary>
+<p>Нет, скорость зависит от физического потока данных. Однако формат ISO может обрабатываться системой чуть быстрее из-за отсутствия дополнительных заголовков, характерных для других форматов, но разница минимальна.</p>
+</details>
+
+<blockquote>⚠️ Внимание: Технические характеристики приводов могут меняться в зависимости от ревизии Firmware. Всегда сверяйте информацию о поддерживаемых скоростях в официальной документации производителя вашего устройства.</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/l/ly/lyuft-mekhanizma-skladyvaniya-kolyaski.html" class="pb-related-card">
+                <span class="pb-related-title">Люфт механизма складывания коляски: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему люфтит механизм складывания коляски? Устранение неисправностей, замена фиксаторов, смазка шар</span>
+            </a><a href="/articles/e/el/element-kryla-samoleta-8.html" class="pb-related-card">
+                <span class="pb-related-title">Крыло самолета 8: Конструктивные особенности и роль в авиации</span>
+                <span class="pb-related-desc">Подробный разбор элемента крыла самолета 8. Изучение аэродинамики, материалов и влияния на управляем</span>
+            </a><a href="/articles/k/ka/kak-obsluzhivat-vozdushnuyu-vilku.html" class="pb-related-card">
+                <span class="pb-related-title">Как обслуживать воздушную вилку: инструкция по смазке и регулировке</span>
+                <span class="pb-related-desc">Пошаговое руководство по обслуживанию воздушной вилки велосипеда. Разборка, смазка картриджа, замена</span>
+            </a><a href="/articles/g/gd/gde-vzyat-abs-plastik-v-bytu.html" class="pb-related-card">
+                <span class="pb-related-title">Где взять АБС пластик в быту: поиск и разборка старых электробытовых приборов</span>
+                <span class="pb-related-desc">Ищете, где найти АБС пластик дома? Узнайте, как распознать маркировку, какие бытовые приборы содержа</span>
+            </a><a href="/articles/k/ka/kak-vzletayut-i-sadyatsya-samolety.html" class="pb-related-card">
+                <span class="pb-related-title">Как взлетают и садятся самолеты: физика полета и пилотирование</span>
+                <span class="pb-related-desc">Подробный разбор этапов взлета и посадки авиалайнеров. Физика подъема, система торможения, фазы поле</span>
+            </a><a href="/articles/y/yu/yutub-zavisaet-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Ютуб зависает: почему видео тормозит и как исправить ошибку</span>
+                <span class="pb-related-desc">Ютуб зависает на телевизоре или смартфоне? Узнайте основные причины лагов: от перегрева до ошибок пр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

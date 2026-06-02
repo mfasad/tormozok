@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему скорость SSD падает до 0 при копировании: диагностика и ремонт — ТормозОК</title>
+    <meta name="description" content="Разбираем причины зависания скорости копирования на SSD. От переполнения кэша до перегрева. Инструкция по восстановлению работоспособности накопителя.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/pri-kopirovanii-na-ssd-padaet-skorost-do-0.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему скорость SSD падает до 0 при копировании: диагностика и ремонт">
+    <meta property="og:description" content="Разбираем причины зависания скорости копирования на SSD. От переполнения кэша до перегрева. Инструкция по восстановлению работоспособности накопителя.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему скорость SSD падает до 0 при копировании: диагностика и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механизм-работы-slc-кэша-и-его-влияние-на-производительность">Механизм работы SLC-кэша и его влияние на производительность</a></li><li><a href="#термический-контроль-и-перегрев-контроллера">Термический контроль и перегрев контроллера</a></li><li><a href="#программные-факторы-и-настройки-операционной-системы">Программные факторы и настройки операционной системы</a></li><li><a href="#проблемы-с-интерфейсом-подключения-и-кабелями">Проблемы с интерфейсом подключения и кабелями</a></li><li><a href="#физическая-деградация-памяти-и-износ-ячеек">Физическая деградация памяти и износ ячеек</a></li><li><a href="#алгоритмы-восстановления-работоспособности">Алгоритмы восстановления работоспособности</a></li><li><a href="#технические-нюансы-и-специфические-сценарии">Технические нюансы и специфические сценарии</a></li><li><a href="#faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/my/myshka-logitech-besprovodnaya-ne-rabotaet.html">Мышка Logitech беспроводная не работает: причины и полное решение</a></li><li><a href="/articles/m/mo/mobilnyj-internet-megafon-plokho-rabotaet.html">Мобильный интернет МегаФон плохо работает: причины и решения</a></li><li><a href="/articles/p/po/pojmut-ne-tolko-lish-vse.html">Загадка фразы «поймут не только лишь все»: происхождение и смысл</a></li><li><a href="/articles/s/sa/samolet-s-zagnutymi-krylyami.html">Законсервированные крылья: зачем самолетам нужны загнутые оконечности</a></li><li><a href="/articles/k/ka/kak-vypryamit-stenovuyu-panel.html">Как выпрямить стеновую панель: методы реставрации и нюансы монтажа</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>При копировании на SSD скорость падает до нуля: причины и решения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механизм-работы-slc-кэша-и-его-влияние-на-производительность">Механизм работы SLC-кэша и его влияние на производительность</a></li><li><a href="#термический-контроль-и-перегрев-контроллера">Термический контроль и перегрев контроллера</a></li><li><a href="#программные-факторы-и-настройки-операционной-системы">Программные факторы и настройки операционной системы</a></li><li><a href="#проблемы-с-интерфейсом-подключения-и-кабелями">Проблемы с интерфейсом подключения и кабелями</a></li><li><a href="#физическая-деградация-памяти-и-износ-ячеек">Физическая деградация памяти и износ ячеек</a></li><li><a href="#алгоритмы-восстановления-работоспособности">Алгоритмы восстановления работоспособности</a></li><li><a href="#технические-нюансы-и-специфические-сценарии">Технические нюансы и специфические сценарии</a></li><li><a href="#faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ситуация, когда при переносе больших файлов скорость записи на твердотельный накопитель внезапно падает до <strong>нуля</strong>, является одним из самых тревожных сигналов для пользователя. Вы наблюдаете, как прогресс-бар замирает, а диспетчер задач показывает отсутствие активности, хотя процесс списания данных не завершен. Это явление часто называют «троттлингом» или «падением в ноль», и оно может свидетельствовать как о временной перегрузке контроллера, так и о критической неисправности аппаратной части.</p>
+
+<p>В отличие от традиционных жестких дисков, которые замедляются плавно по мере заполнения, <em>SSD</em> работают по принципу буферизации: они используют быстрый <strong>SLC-кэш</strong> для обработки входящего потока данных. Когда этот резервный объем исчерпан, накопитель вынужден переключаться на медленный режим прямой записи в ячейки памяти, что при определенных условиях приводит к полной остановке процесса. Понимание механизмов этой работы — ключ к устранению проблемы.</p>
+
+<p>Игнорирование таких симптомов может привести к потере данных или окончательному выходу устройства из строя. В данной статье мы подробно разберем технические аспекты работы контроллера, влияние температурных режимов и алгоритмы, которые пользователи могут применить для восстановления стабильной скорости записи.</p>
+
+<h2 id="механизм-работы-slc-кэша-и-его-влияние-на-производительность">Механизм работы SLC-кэша и его влияние на производительность</h2>
+
+<p>Основная причина резкого падения скорости кроется в архитектуре памяти <em>NAND Flash</em>. Современные накопители, особенно использующие технологию <strong>TLC</strong> или <strong>QLC</strong>, имитируют режим записи SLC (одна ячейка хранения одного бита) для повышения быстродействия. Этот выделенный участок памяти работает чрезвычайно быстро, но его объем ограничен. Как только вы начинаете копировать файл, превышающий размер этого кэша, контроллер должен успеть освободить место, переместив данные из буфера в основную память.</p>
+
+<p>Если объем передаваемого файла значительно превышает размер <strong>SLC-кэша</strong>, а скорость записи во внутреннюю память ниже скорости поступления данных, возникает «затор». Контроллер переполняется задачами, и система принудительно останавливает поток данных, чтобы избежать потери информации. В этот момент скорость в диспетчере задач может показывать 0 КБ/с, создавая иллюзию зависания.</p>
+
+<p>Важно учитывать, что алгоритмы управления кэшем различаются у разных производителей. Устройства <em>Samsung</em> используют технологию TurboWrite, а <em>Crucial</em> — Dynamic SLC Cache. В некоторых случаях, при низкой степени заполнения диска, кэш может быть динамическим и сокращаться по мере заполнения накопителя свободным местом, что также влияет на стабильность скорости.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если скорость падает до нуля сразу после начала копирования маленького файла (менее 1 ГБ), это может указывать на некорректную работу драйверов или физическую деградацию ячеек памяти, а не на исчерпание кэша.</p>
+</blockquote>
+
+<h2 id="термический-контроль-и-перегрев-контроллера">Термический контроль и перегрев контроллера</h2>
+
+<p>Твердотельные накопители крайне чувствительны к температурным колебаниям. При интенсивной нагрузке, такой как копирование гигабайтов данных, <strong>контроллер</strong> и чипы памяти выделяют значительное количество тепла. Если система охлаждения ноутбука или корпуса ПК не справляется с отводом тепла, срабатывает механизм защиты — <em>Thermal Throttling</em>. Накопитель принудительно снижает тактовую частоту, чтобы предотвратить перегрев, что мгновенно обрушивает скорость записи.</p>
+
+<p>В особенно критичных случаях, когда температура превышает критический порог (обычно около <code>70-75°C</code>), контроллер может полностью остановить запись, сбросив скорость до минимума или нуля, пока температура не снизится до безопасных значений. Это часто происходит в компактных ноутбуках или в корпусах без активного продува.</p>
+
+<p>Для диагностики стоит установить утилиту для мониторинга температуры, например, <em>CrystalDiskInfo</em> или <em>HWMonitor</em>. Обратите внимание не только на текущую температуру, но и на её динамику в момент начала копирования. Если вы видите резкий скачок градусов перед остановкой скорости, проблема явно носит тепловой характер.</p>
+
+<div class="pb-poll" id="poll-5d10cbd9"><div class="pb-poll-question">📊 Какой тип охлаждения у вашего SSD?</div><div class="pb-poll-option" data-poll="5d10cbd9" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только пассивный радиатор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5d10cbd9" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Активное охлаждение (кулер)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5d10cbd9" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет охлаждения (просто плата)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="5d10cbd9" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="программные-факторы-и-настройки-операционной-системы">Программные факторы и настройки операционной системы</h2>
+
+<p>Не только «железо» виновато в торможениях. Операционная система Windows может создавать искусственные задержки из-за неверных настроек <strong>очереди команд</strong> или конфликтов драйверов. По умолчанию система может пытаться оптимизировать работу дисков, но иногда эти настройки вступают в противоречие с архитектурой конкретного <em>NVMe</em> или <em>SATA</em> накопителя.</p>
+
+<p>Одной из частых причин является включенная функция <code>Быстрый запуск</code> или конфликт индексирования файлов. Когда вы копируете множество мелких файлов, система тратит ресурсы на создание индексов, что может парализовать работу диска. Также стоит проверить, не стоит ли на диске галочка «Разрешить индексирование содержимого файлов», что может существенно замедлить запись.</p>
+
+<p>Проверьте режим работы в диспетчере устройств. Найдите свой накопитель в разделе «Контроллеры IDE ATA/ATAPI» или «Дисковые устройства», откройте свойства и перейдите во вкладку <code>Политика</code>. Убедитесь, что выбран режим «Оптимизировать для быстрого выполнения» и включена <strong>кэш-память записи</strong>. Если кэш записи отключен, скорость будет падать до физического предела интерфейса.</p>
+
+<details class="pb-accordion"><summary>Как проверить очередь команд (NCQ)</summary><div class="pb-accordion-body"><p>Для проверки активности NCQ можно использовать утилиту CrystalDiskMark или AIDA64. В разделе SMART для SATA-дисков ищите параметр «Current Pending Sector» или «Reallocated Sectors Count». В NVMe накопителях проверьте параметр «Temperature» и «Controller Busy Time». Если температура высокая, а «Controller Busy Time» растет без движения данных — это признак перегрузки контроллера.</p></div></details>
+
+<h2 id="проблемы-с-интерфейсом-подключения-и-кабелями">Проблемы с интерфейсом подключения и кабелями</h2>
+
+<p>Иногда причина кроется не в самом накопителе, а в канале передачи данных. Если вы используете внешний SSD или подключаете устройство через <strong>переходник</strong>, проблема может быть в качестве кабеля или версии USB-порта. Попробуйте подключить устройство к другому порту, желательно расположенному непосредственно на материнской плате, а не через USB-хаб.</p>
+
+<p>Для SATA-накопителей критическое значение имеет состояние кабеля и разъема. Плохой контакт может приводить к тому, что контроллер диска постоянно теряет связь с системой, пытаясь восстановить соединение. В этот момент скорость записи падает до нуля. Попробуйте заменить SATA-кабель на заведомо исправный и проверить разъемы на наличие окисления.</p>
+
+<p>Также стоит убедиться, что ваш накопитель работает в правильном режиме. В некоторых старых материнских платах слот M.2 может работать в режиме SATA вместо NVMe, что снижает пропускную способность. Зайдите в <code>BIOS/UEFI</code> и проверьте настройки контроллера дисков, убедившись, что режим установлен корректно (<em>RAID</em>, <em>AHCI</em> или <em>NVMe</em>).</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип интерфейса</th>
+<th>Макс. теор. скорость (MB/s)</th>
+<th>Частая причина падения до 0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SATA III</td>
+<td>550-600</td>
+<td>Износ кабеля, перегрев чипов</td>
+</tr>
+<tr>
+<td>NVMe PCIe 3.0</td>
+<td>3000-3500</td>
+<td>Перегрев контроллера, исчерпание кэша</td>
+</tr>
+<tr>
+<td>NVMe PCIe 4.0</td>
+<td>7000-7500</td>
+<td>Троттлинг без радиатора, блокировка питания</td>
+</tr>
+<tr>
+<td>USB 3.0 (внешний)</td>
+<td>400-500</td>
+<td>Некачественный кабель, нехватка питания</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="физическая-деградация-памяти-и-износ-ячеек">Физическая деградация памяти и износ ячеек</h2>
+
+<p>Если накопитель имеет солидный возраст или пробег (TBW), возможно, вы столкнулись с физическим износом ячеек памяти. Каждая ячейка <em>NAND Flash</em> имеет ограниченное количество циклов записи. Когда ячейки начинают «отказывать», контроллер тратит все больше времени на перенаправление данных в исправные сектора, что приводит к задержкам.</p>
+
+<p>В критических случаях, когда количество битовых ошибок превышает возможности коррекции кода (ECC), контроллер может переходить в режим «только чтение» или полностью блокировать запись для предотвращения потери данных. Это часто сопровождается исчезновением диска из системы или его появлением с нулевой емкостью.</p>
+
+<p>Используйте утилиту проверки SMART, чтобы оценить состояние здоровья диска. Обратите внимание на показатели <strong>Media and Data Integrity Errors</strong> и <em>Available Reserved Space</em>. Если доступное резервное пространство (Over-Provisioning) исчерпано, а количество ошибок растет, накопитель требует немедленной замены.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если SMART показывает критический статус (Warning или Bad), немедленно прекратите запись данных и скопируйте важную информацию на другой носитель. Дальнейшая эксплуатация может привести к полной потере накопителя.</p>
+</blockquote>
+
+<h2 id="алгоритмы-восстановления-работоспособности">Алгоритмы восстановления работоспособности</h2>
+
+<p>Для начала попробуйте выполнить простейшие действия, которые часто решают проблему программно. Отключите <strong>гибернацию</strong> и быстрый запуск в настройках электропитания. Это освободит ресурсы системы и предотвратит конфликты с драйверами при инициализации дисков. Также попробуйте отформатировать диск в файловую систему <code>NTFS</code> с размером кластера по умолчанию, если ранее использовались специфические настройки.</p>
+
+<p>Если проблема сохраняется, выполните полное обновление прошивки (firmware) накопителя. Производители часто выпускают патчи, исправляющие алгоритмы работы контроллера и оптимизирующие управление кэшем. Используйте официальные утилиты от производителя: <em>Samsung Magician</em>, <em>WD Dashboard</em>, <em>Intel Memory and Storage Tool</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по диагностике</h4><label class="check-item"><input type="checkbox"><span>Подключить к другому порту</span></label><label class="check-item"><input type="checkbox"><span>Проверить температуру в CrystalDiskInfo</span></label><label class="check-item"><input type="checkbox"><span>Обновить драйверы контроллера</span></label><label class="check-item"><input type="checkbox"><span>Обновить прошивку диска</span></label><label class="check-item"><input type="checkbox"><span>Запустить проверку на битые сектора</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>В крайнем случае, если программные методы не помогают, может потребоваться низкоуровневое форматирование или сброс настроек до заводских (Secure Erase). Эта процедура полностью очищает все ячейки памяти и сбрасывает счетчики износа, что иногда возвращает накопителю первоначальную производительность. <mark>Внимание: процедура Secure Erase полностью удаляет все данные без возможности восстановления!</mark></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед выполнением любой операции по сбросу или форматированию обязательно создайте резервную копию важных данных на внешнем носителе, так как риск потери информации при манипуляциях с поврежденным SSD возрастает в разы.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Самой частой причиной падения скорости до нуля является сочетание переполнения SLC-кэша и перегрева контроллера, который не успевает сбрасывать буфер в основную память.</p></aside>
+
+<h2 id="технические-нюансы-и-специфические-сценарии">Технические нюансы и специфические сценарии</h2>
+
+<p>Существуют специфические сценарии, когда падение скорости связано с особенностями файловой системы или типа копируемых файлов. Например, копирование миллионов мелких файлов (логирование, кэш браузеров) всегда вызывает падение скорости из-за накладных расходов на метаданные. В таких случаях скорость может колебаться, но редко падает в абсолютный ноль, если диск исправен.</p>
+
+<p>Также стоит учитывать, что некоторые накопители имеют встроенную защиту от несанкционированного доступа или шифрование. Если процесс шифрования данных (BitLocker или аппаратное шифрование) перегружает процессор или контроллер, это может вызывать задержки. Попробуйте отключить шифрование на время тестирования скорости.</p>
+
+<p>Если вы используете RAID-массив, проблема может быть в рассинхронизации дисков или деградации одного из элементов массива. Контроллер RAID будет ждать ответ от «медленного» диска, что приведет к остановке всей системы записи. Проверьте статус массива в утилите управления RAID-контроллером.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если вы используете дешевые контроллеры без DRAM-буфера, падение скорости до нуля при больших объемах данных является нормальным поведением при полном заполнении кэша. В этом случае единственным решением является покупка SSD с отдельным буфером оперативной памяти.</p>
+</blockquote>
+
+<h2 id="faq-частые-вопросы-пользователей">FAQ: Частые вопросы пользователей</h2>
+
+<details>
+<summary>Почему SSD тормозит только при копировании больших файлов?</summary>
+<p>Это связано с исчерпанием быстрого SLC-кэша. После его заполнения скорость падает до реальной скорости записи в память, которая у дешевых моделей может быть очень низкой.</p>
+</details>
+
+<details>
+<summary>Может ли проблема быть в кабеле USB?</summary>
+<p>Да, особенно для внешних накопителей. Плохой контакт или поврежденная экранировка кабеля могут вызывать постоянные разрывы связи, заставляя контроллер перезагружать соединение, что выглядит как остановка скорости.</p>
+</details>
+
+<details>
+<summary>Как узнать, что SSD умирает?</summary>
+<p>Обратите внимание на частые зависания системы, ошибки чтения/записи в Event Viewer и критические предупреждения в утилитах мониторинга SMART. Также характерным признаком является невозможность записать файл, даже если есть свободное место.</p>
+</details>
+
+<details>
+<summary>Поможет ли форматирование диска?</summary>
+<p>Обычное форматирование может помочь, если проблема в файловой системе. Но если причина в физическом износе или контроллере, форматирование не даст долгосрочного эффекта. В некоторых случаях помогает только Secure Erase.</p>
+</details>
+
+<details>
+<summary>Влияет ли заполненность диска на скорость?</summary>
+<p>Да, критически. При заполнении диска более чем на 80-90% у контроллера не остается свободного места для перемещения данных (GC — Garbage Collection), что приводит к резкому падению скорости и задержкам.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/my/myshka-logitech-besprovodnaya-ne-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Мышка Logitech беспроводная не работает: причины и полное решение</span>
+                <span class="pb-related-desc">Почему беспроводная мышь Logitech перестала работать? Полный гайд по диагностике: от замены батареек</span>
+            </a><a href="/articles/m/mo/mobilnyj-internet-megafon-plokho-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Мобильный интернет МегаФон плохо работает: причины и решения</span>
+                <span class="pb-related-desc">Почему медленно работает интернет у МегаФона? Разбор причин: от настроек телефона до покрытия сети. </span>
+            </a><a href="/articles/p/po/pojmut-ne-tolko-lish-vse.html" class="pb-related-card">
+                <span class="pb-related-title">Загадка фразы «поймут не только лишь все»: происхождение и смысл</span>
+                <span class="pb-related-desc">Разбираем феномен крылатой фразы «поймут не только лишь все». История появления, лингвистический ана</span>
+            </a><a href="/articles/s/sa/samolet-s-zagnutymi-krylyami.html" class="pb-related-card">
+                <span class="pb-related-title">Законсервированные крылья: зачем самолетам нужны загнутые оконечности</span>
+                <span class="pb-related-desc">Разбираем аэродинамику винглетов и рашионов: как загнутые крылья самолета экономят топливо, снижают </span>
+            </a><a href="/articles/k/ka/kak-vypryamit-stenovuyu-panel.html" class="pb-related-card">
+                <span class="pb-related-title">Как выпрямить стеновую панель: методы реставрации и нюансы монтажа</span>
+                <span class="pb-related-desc">Полное руководство по исправлению деформации стеновых панелей. Узнайте, как вернуть плоскость панеля</span>
+            </a><a href="/articles/r/ru/rud-v-samolete-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">РУД (RUUD) в самолете: расшифровка, допустимые нормы и риски</span>
+                <span class="pb-related-desc">Что такое РУД в авиации? Разбор аббревиатуры, допустимые отклонения и влияние на тягу двигателей. Те</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

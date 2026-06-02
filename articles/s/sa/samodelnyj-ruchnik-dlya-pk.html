@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Самодельный ручник для ПК: Как превратить геймпад в авто-управление — ТормозОК</title>
+    <meta name="description" content="Узнайте, как создать самодельный ручник для ПК из подручных средств. Обзор Arduino, механических решений и настройки софта для симуляторов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/s/sa/samodelnyj-ruchnik-dlya-pk.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Самодельный ручник для ПК: Как превратить геймпад в авто-управление">
+    <meta property="og:description" content="Узнайте, как создать самодельный ручник для ПК из подручных средств. Обзор Arduino, механических решений и настройки софта для симуляторов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Самодельный ручник для ПК: Как превратить геймпад в авто-управление</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#выбор-концепции-и-механической-основы">Выбор концепции и механической основы</a></li><li><a href="#электроника-и-микроконтроллеры">Электроника и микроконтроллеры</a></li><li><a href="#программная-настройка-и-калибровка">Программная настройка и калибровка</a></li><li><a href="#механическая-доработка-и-эргономика">Механическая доработка и эргономика</a></li><li><a href="#техническое-сравнение-решений">Техническое сравнение решений</a></li><li><a href="#безопасность-и-эксплуатация">Безопасность и эксплуатация</a></li><li><a href="#заключение-и-перспективы-развития">Заключение и перспективы развития</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kn/knopka-stoyanochnogo-tormoza-tiguan-2.html">Кнопка стояночного тормоза Volkswagen Tiguan 2: устройство и ремонт</a></li><li><a href="/articles/p/po/pochemu-mozhet-ne-rabotat-ruchnik.html">Почему не работает ручник: 7 главных причин и способы ремонта</a></li><li><a href="/articles/z/za/zamena-trosa-ruchnika-lifan-solano.html">Замена троса ручника Lifan Solano: Инструкция, цены и нюансы</a></li><li><a href="/articles/k/ka/kak-podtyanut-ruchnik-prado-95.html">Как подтянуть ручник на Toyota Prado 95: Инструкция по регулировке</a></li><li><a href="/articles/k/ka/kak-ustroen-ruchnoj-tormoz.html">Ручной тормоз: устройство, принцип работы и диагностика</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как сделать самодельный ручник для ПК своими руками</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#выбор-концепции-и-механической-основы">Выбор концепции и механической основы</a></li><li><a href="#электроника-и-микроконтроллеры">Электроника и микроконтроллеры</a></li><li><a href="#программная-настройка-и-калибровка">Программная настройка и калибровка</a></li><li><a href="#механическая-доработка-и-эргономика">Механическая доработка и эргономика</a></li><li><a href="#техническое-сравнение-решений">Техническое сравнение решений</a></li><li><a href="#безопасность-и-эксплуатация">Безопасность и эксплуатация</a></li><li><a href="#заключение-и-перспективы-развития">Заключение и перспективы развития</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Многие автосимуляторы страдают от отсутствия тактильной обратной связи и реализма управления, особенно когда речь заходит о экстренных ситуациях на треке или в ралли. Стандартный джойстик или клавиатура не могут передать тот самый щелчок и сопротивление, которые дает настоящий <strong>ручной тормоз</strong> в автомобиле. Именно поэтому энтузиасты создают <em>самодельный ручник для ПК</em>, который интегрируется в игру и добавляет недостающий уровень погружения.</p>
+
+<p>Сборка такого устройства требует минимальных навыков пайки и работы с микроконтроллерами, но результат превращает обычную игру в профессиональный тренажер. Вы сможете не просто нажимать кнопку, а физически тянуть рычаг, управляя заносом с хирургической точностью. В этой статье мы разберем механические и электронные аспекты создания собственного устройства, чтобы вы могли получить уникальный опыт вождения.</p>
+
+<h2 id="выбор-концепции-и-механической-основы">Выбор концепции и механической основы</h2>
+
+<p>Прежде чем приступать к электронике, необходимо определить, как именно будет функционировать ваш будущий <strong>ручной тормоз</strong>. Существуют два основных подхода: механический рычаг с потенциометром или компактная кнопка с пружинным возвратом. Первый вариант имитирует поведение рычага в настоящих автомобилях, обеспечивая плавное регулирование торможения, тогда как второй больше подходит для раллийных дисциплин, где требуется мгновенное блокирование колес.</p>
+
+<p>Для реализации рычажной конструкции вам понадобится надежная основа, которую можно закрепить на столе или рулевой стойке. Отличным решением станет использование алюминиевого профиля или даже старого рычага от сломанного джойстика. Важно обеспечить достаточное <em>сопротивление</em> движению, чтобы рука не уставала при длительных сессиях, но и рычаг не проваливался под собственным весом.</p>
+
+<p>Если вы выбираете вариант с кнопкой, то внимание следует уделить выбору самого <strong>микропереключателя</strong>. Обычные компьютерные кнопки могут быстро развалиться, поэтому лучше использовать промышленные аналогичные элементы или взятые из старых клавиатур. Пружина возврата должна быть достаточно жесткой, чтобы рычаг мгновенно занимал исходное положение после отпускания, имитируя работу <em>тормозного механизма</em>.</p>
+
+<blockquote>⚠️ Внимание: При выборе механической основы убедитесь, что она выдержит интенсивные рывки. Слабый крепеж может привести к тому, что <strong>самодельный ручник</strong> просто оторвется от стола в самый ответственный момент заезда.</blockquote>
+
+<h2 id="электроника-и-микроконтроллеры">Электроника и микроконтроллеры</h2>
+
+<p>Сердцем вашего устройства станет микроконтроллер, который будет считывать положение рычага или нажатие кнопки и передавать эти данные компьютеру. Самым популярным и доступным вариантом является плата <em>Arduino Pro Micro</em>, которая эмулирует клавиатуру или джойстик (HID-устройство). Благодаря этому компьютер распознает ваше устройство как стандартный геймпад, и не потребуется установка сложных драйверов.</p>
+
+<p>Для аналогового управления необходимо использовать <strong>потенциометр</strong>, который будет изменять сопротивление в зависимости от угла поворота рычага. Подключите его к аналоговым пинам микроконтроллера, а также добавьте конденсаторы для сглаживания сигнала, чтобы исключить дребезг и случайные срабатывания. Цифровая версия устройства потребует лишь подключения проводов к кнопке и контактам заземления.</p>
+
+<p>Не забудьте о <em>LED-индикаторах</em>, которые могут сигнализировать о состоянии системы или режиме работы. Например, красный светодиод может загораться при активации тормоза, а зеленый — при его полном возврате. Это добавит не только функциональности, но и эстетики вашему самодельному <strong>ручному тормозу</strong>.</p>
+
+<div class="pb-poll" id="poll-17553edb"><div class="pb-poll-question">📊 Какой тип управления вы хотите реализовать?</div><div class="pb-poll-option" data-poll="17553edb" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Аналоговый рычаг</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="17553edb" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Мгновенная кнопка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="17553edb" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинированный вариант</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="17553edb" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Подключение к шасси</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="программная-настройка-и-калибровка">Программная настройка и калибровка</h2>
+
+<p>После сборки аппаратной части наступает этап программного обеспечения, где происходит магия взаимодействия с играми. Вам нужно загрузить на микроконтроллер скетч, который преобразует аналоговое значение потенциометра или нажатие кнопки в сигнал HID. Для Arduino это делается через стандартную библиотеку, эмулирующую джойстик, что позволяет избежать использования сторонних эмуляторов.</p>
+
+<p>В настройках игры, будь то <em>iRacing</em>, <em>Assetto Corsa</em> или <em>BeamNG.drive</em>, необходимо назначить новое устройство на функцию ручного тормоза. Если вы используете аналоговый рычаг, убедитесь, что игра поддерживает плавное управление тормозом, иначе он будет работать как выключатель. Калибровка чувствительности позволяет настроить угол срабатывания так, чтобы <strong>ручной тормоз</strong> включался только при полном или частичном нажатии.</p>
+
+<p>Для продвинутых пользователей существует возможность настройки обратной связи через софт вроде <em>LEO Bodnar</em> или специализированных библиотек для Arduino. Это позволит реализовать вибрацию или сопротивление при срабатывании, что значительно повысит реализм. Однако учтите, что не все игры поддерживают такую сложную интеграцию без использования дополнительных шейдеров или модов.</p>
+
+<blockquote>⚠️ Внимание: Некоторые современные игры используют античит-системы, которые могут заблокировать доступ, если обнаружат нештатное HID-устройство. Всегда проверяйте <em>правила платформы</em> перед подключением самоделок в онлайн-режим.</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед тестом</h4><label class="check-item"><input type="checkbox"><span>Проверить надежность пайки</span></label><label class="check-item"><input type="checkbox"><span>Настроить калибровку в Windows</span></label><label class="check-item"><input type="checkbox"><span>Назначить кнопку в игре</span></label><label class="check-item"><input type="checkbox"><span>Проверить возврат пружины</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="механическая-доработка-и-эргономика">Механическая доработка и эргономика</h2>
+
+<p>Эргономика играет ключевую роль в том, насколько комфортным будет использование <strong>самодельного ручника</strong> во время длительных гонок. Рычаг должен находиться в естественной зоне досягаемости правой руки, не заставляя вас отрывать руку от руля слишком далеко. Оптимальная высота установки — чуть выше уровня рулевой колонки или на уровне бедра, в зависимости от типа сидения.</p>
+
+<p>Поверхность хвата рычага должна быть прорезинена или обмотана изолентой, чтобы рука не скользила при потении. Можно использовать готовые рукоятки от старых рулей или даже детали от инструментов. Важно также предусмотреть ограничители хода, чтобы рычаг не улетал в бесконечность при резком рывке, что могло бы повредить <em>конструкцию</em>.</p>
+
+<p>Крепление устройства к столу или панели должно быть жестким. Используйте струбцины, болтовые соединения или мощное двустороннее скотч-ленту. Любая люфт в основании сведет на нет все усилия по созданию реалистичного <strong>тормозного механизма</strong>. Проверьте устойчивость конструкции, приложив усилие, с которым вы обычно тянете ручник.</p>
+
+<details class="pb-accordion"><summary>Как усилить возвратную пружину?</summary><div class="pb-accordion-body"><p>Используйте пружину от двери гаража или велосипедного тормоза, нарезав её на более мелкие части для увеличения жесткости.</p></div></details>
+
+<h2 id="техническое-сравнение-решений">Техническое сравнение решений</h2>
+
+<p>Для наглядности сравним основные типы самодельных решений, которые вы можете реализовать. Выбор зависит от ваших целей, бюджета и доступных материалов. Ниже приведена таблица с характеристиками различных подходов к созданию устройства.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип устройства</th>
+<th>Сложность сборки</th>
+<th>Реализм управления</th>
+<th>Затраты на материалы</th>
+<th>Подходит для</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Аналоговый рычаг</td>
+<td>Средняя</td>
+<td>Высокий</td>
+<td>Низкие</td>
+<td>Ралли, дрифтинг</td>
+</tr>
+<tr>
+<td>Цифровая кнопка</td>
+<td>Низкая</td>
+<td>Средний</td>
+<td>Очень низкие</td>
+<td>Автоспорт, треки</td>
+</tr>
+<tr>
+<td>Пьезо-кнопка</td>
+<td>Высокая</td>
+<td>Максимальный</td>
+<td>Средние</td>
+<td>Профессиональные симуляторы</td>
+</tr>
+<tr>
+<td>Клавиатурный макрос</td>
+<td>Минимальная</td>
+<td>Низкий</td>
+<td>Нулевые</td>
+<td>Казуальная игра</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбирая между простотой и функциональностью, руководствуйтесь тем, какую именно дисциплину вы предпочитаете. Для ралли, где важно модулировать торможение в поворотах, <em>аналоговый рычаг</em> незаменим. В то же время, для кольцевых гонок часто достаточно быстрой и надежной кнопки с четким срабатыванием.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы используете пружину от двери, предварительно смажьте её силиконом, чтобы избежать неприятного скрипа во время гонок.</p></aside>
+
+<h2 id="безопасность-и-эксплуатация">Безопасность и эксплуатация</h2>
+
+<p>При эксплуатации самодельного устройства важно помнить о безопасности как вашей техники, так и программного обеспечения. Электропроводка внутри конструкции должна быть тщательно изолирована, чтобы исключить короткое замыкание, которое может повредить <em>материнскую плату</em> вашего ПК. Используйте термоусадочные трубки или изоленту для всех открытых контактов.</p>
+
+<p>Регулярно проверяйте состояние механических узлов, так как вибрация и постоянные нагрузки могут привести к ослаблению креплений. Если вы чувствуете люфт или странное поведение устройства, немедленно прекратите использование и проведите ревизию. <strong>Надежность конструкции</strong> — залог того, что вы не потеряете контроль над автомобилем в критический момент.</p>
+
+<p>Также стоит обратить внимание на программные обновления игр. Разработчики часто меняют протоколы ввода, что может потребовать корректировки скетча на микроконтроллере. Следите за форумами сообщества энтузиастов, где публикуются актуальные решения для новых версий популярных симуляторов.</p>
+
+<blockquote>⚠️ Внимание: Не ставьте устройство на краю стола или в зоне, где оно может упасть на пол. Удар об пол может разрушить <em>электронные компоненты</em> и привести к выходу из строя всего устройства.</blockquote>
+
+<h2 id="заключение-и-перспективы-развития">Заключение и перспективы развития</h2>
+
+<p>Создание <strong>самодельного ручника для ПК</strong> — это увлекательный проект, который не только улучшает игровой опыт, но и дает бесценный опыт работы с электроникой и механикой. Вы получаете уникальное устройство, которое идеально подогнано под ваши нужды и стиль игры, чего не добиться покупными аналогами. <mark>Правильно настроенный рычаг может снизить время прохождения круга на 0.5-1 секунду за счет более точного входа в повороты.</mark></p>
+
+<p>В будущем вы можете расширить функционал вашего устройства, добавив подсветку, датчики усилия или даже интеграцию с другими периферийными устройствами. Мир автосимуляторов постоянно развивается, и ваша самоделка может стать частью экосистемы профессионального гоночного симулятора. Главное — не останавливаться на достигнутом и экспериментировать.</p>
+
+<p>Надеемся, что эта статья вдохновила вас на создание собственного устройства. Не бойтесь пробовать новые решения и делиться своими результатами с сообществом. Ведь именно энтузиасты двигают прогресс в мире симуляторов вперед, делая его все более реалистичным и доступным.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главная цель самодельного ручника — не просто имитация, а получение тактильного ощущения контроля над автомобилем, что критично для профессионального уровня игры.</p></aside>
+
+<details>
+<summary>Какой микроконтроллер лучше выбрать для новичка?</summary>
+<p>Для начала идеально подойдет Arduino Pro Micro, так как она поддерживает эмуляцию HID (джойстика) из коробки и имеет огромный комьюнити поддержки.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать самодельный ручник в онлайн-гонках?</summary>
+<p>Да, в большинстве случаев игры воспринимают его как стандартный геймпад. Однако всегда проверяйте правила конкретной лиги, так как некоторые античиты могут реагировать на нестандартные HID-устройства.</p>
+</details>
+
+<details>
+<summary>Как сделать возврат рычага более плавным?</summary>
+<p>Используйте комбинацию пружин разной жесткости или добавьте демпфер (например, кусочек резины), который будет гасить резкость движения при возврате в исходное положение.</p>
+</details>
+
+<details>
+<summary>Нужна ли специальная программа для настройки?</summary>
+<p>Если вы используете Arduino с библиотекой Joystick, то дополнительные программы не нужны. Настройка чувствительности происходит внутри самой игры в разделе управления.</p>
+</details>
+
+<details>
+<summary>Что делать, если рычаг дребезжит?</summary>
+<p>Дребезг обычно лечится программно (в коде прошивки) через добавление задержки или аппаратно — установкой конденсатора параллельно сигнальному проводу.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kn/knopka-stoyanochnogo-tormoza-tiguan-2.html" class="pb-related-card">
+                <span class="pb-related-title">Кнопка стояночного тормоза Volkswagen Tiguan 2: устройство и ремонт</span>
+                <span class="pb-related-desc">Как работает электронная кнопка ручника на Tiguan 2 (2016-2023)? Признаки неисправности, сброс ошибо</span>
+            </a><a href="/articles/p/po/pochemu-mozhet-ne-rabotat-ruchnik.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не работает ручник: 7 главных причин и способы ремонта</span>
+                <span class="pb-related-desc">Ручной тормоз не держит? Узнайте основные причины неисправности: от растяжения тросов до износа коло</span>
+            </a><a href="/articles/z/za/zamena-trosa-ruchnika-lifan-solano.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника Lifan Solano: Инструкция, цены и нюансы</span>
+                <span class="pb-related-desc">Полная инструкция по замене троса стояночного тормоза на Lifan Solano. Разбор симптомов износа, подб</span>
+            </a><a href="/articles/k/ka/kak-podtyanut-ruchnik-prado-95.html" class="pb-related-card">
+                <span class="pb-related-title">Как подтянуть ручник на Toyota Prado 95: Инструкция по регулировке</span>
+                <span class="pb-related-desc">Пошаговая регулировка ручного тормоза на Toyota Land Cruiser Prado 95. Замена колодок, настройка тро</span>
+            </a><a href="/articles/k/ka/kak-ustroen-ruchnoj-tormoz.html" class="pb-related-card">
+                <span class="pb-related-title">Ручной тормоз: устройство, принцип работы и диагностика</span>
+                <span class="pb-related-desc">Подробный разбор конструкции ручника, как он работает в автомобиле, типичные неисправности и способы</span>
+            </a><a href="/articles/z/za/zamena-trosa-ruchnika-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника Lada Vesta: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по замене троса стояночного тормоза на Lada Vesta. Ошибки, стоимость запчастей, п</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

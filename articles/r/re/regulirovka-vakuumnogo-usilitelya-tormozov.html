@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Регулировка вакуумного усилителя тормозов: диагностика и настройка — ТормозОК</title>
+    <meta name="description" content="Полная инструкция по регулировке и проверке вакуумного усилителя тормозов. Узнайте, как настроить высоту педали, проверить шток и устранить заедание.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/re/regulirovka-vakuumnogo-usilitelya-tormozov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Регулировка вакуумного усилителя тормозов: диагностика и настройка">
+    <meta property="og:description" content="Полная инструкция по регулировке и проверке вакуумного усилителя тормозов. Узнайте, как настроить высоту педали, проверить шток и устранить заедание.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-nav-active">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/vakuumnyj-usilitel/">Вакуумный усилитель</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Регулировка вакуумного усилителя тормозов: диагностика и настройка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-и-назначение-регулировки">Физика процесса и назначение регулировки</a></li><li><a href="#диагностика-неисправностей-и-признаки-сбоя">Диагностика неисправностей и признаки сбоя</a></li><li><a href="#необходимые-инструменты-и-подготовка">Необходимые инструменты и подготовка</a></li><li><a href="#пошаговая-инструкция-по-регулировке">Пошаговая инструкция по регулировке</a></li><li><a href="#технические-параметры-и-допуски-разных-марок">Технические параметры и допуски разных марок</a></li><li><a href="#влияние-на-безопасность-и-управление">Влияние на безопасность и управление</a></li><li><a href="#дополнительные-нюансы-и-ошибки">Дополнительные нюансы и ошибки</a></li><li><a href="#faq-частые-вопросы-и-ответы">FAQ: Частые вопросы и ответы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-vakuumnogo-usilitelya-tormozov-passat-b3.html">Замена вакуумного усилителя тормозов на VW Passat B3: инструкция</a></li><li><a href="/articles/r/re/rezinka-vakuumnogo-usilitelya-2108.html">Резинка вакуумного усилителя тормозов ВАЗ 2108: выбор, замена и диагностика</a></li><li><a href="/articles/r/re/regulirovka-shtoka-vakuumnogo-usilitelya-tormozov-granta.html">Регулировка штока вакуумного усилителя тормозов Гранта: пошаговая инструкция</a></li><li><a href="/articles/v/va/vakuum-granta-s-abs.html">Вакуумный усилитель тормозов с ABS: диагностика, замена и ремонт на авто с ABS</a></li><li><a href="/articles/d/dl/dlya-chego-nuzhen-vakuumnik.html">Для чего нужен вакуумник: функции, устройство и влияние на торможение</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Регулировка вакуумного усилителя тормозов: диагностика и настройка</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-и-назначение-регулировки">Физика процесса и назначение регулировки</a></li><li><a href="#диагностика-неисправностей-и-признаки-сбоя">Диагностика неисправностей и признаки сбоя</a></li><li><a href="#необходимые-инструменты-и-подготовка">Необходимые инструменты и подготовка</a></li><li><a href="#пошаговая-инструкция-по-регулировке">Пошаговая инструкция по регулировке</a></li><li><a href="#технические-параметры-и-допуски-разных-марок">Технические параметры и допуски разных марок</a></li><li><a href="#влияние-на-безопасность-и-управление">Влияние на безопасность и управление</a></li><li><a href="#дополнительные-нюансы-и-ошибки">Дополнительные нюансы и ошибки</a></li><li><a href="#faq-частые-вопросы-и-ответы">FAQ: Частые вопросы и ответы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Эффективность торможения автомобиля зависит не только от состояния колодок и дисков, но и от исправности <strong>вакуумного усилителя</strong> (ВУТ). Этот узел создает необходимое усилие для быстрого срабатывания рабочей системы, позволяя водителю прикладывать минимальные усилия к педали. К сожалению, со временем геометрия взаимодействия между педалью и штоком усилителя нарушается, что приводит к снижению эффективности или появлению посторонних звуков.</p>
+
+<p>Многие владельцы <em>ВАЗ</em> и иномарок сталкиваются с ситуацией, когда педаль кажется «ватной» или, наоборот, слишком жесткой. Часто проблема кроется не в поломке самого механизма, а в неправильном <strong>зазоре штока</strong>. Неправильная настройка может привести к неполному растормаживанию колес или, что еще опаснее, к внезапному отказу тормозов при экстренной остановке.</p>
+
+<h2 id="физика-процесса-и-назначение-регулировки">Физика процесса и назначение регулировки</h2>
+<p>Основная задача вакуумного усилителя — преобразовать усилие от ноги водителя в давление в гидравлической системе. Внутри корпуса находится мембрана, которая при нажатии на педаль открывает клапан, позволяя атмосферному воздуху воздействовать на одну сторону мембраны. Для корректной работы критически важен <strong>начальный зазор</strong> между концом штока и толкателем главного цилиндра.</p>
+
+<p>Если этот зазор отсутствует или слишком мал, главный цилиндр остается в постоянно прижатом состоянии. В результате поршень перекрывает компенсирующий канал, и тормозная жидкость не может свободно возвращаться в бачок. Это приводит к <strong>самоторможению</strong> колес, перегреву тормозных дисков и быстрому износу колодок. Водитель при этом ощущает, что машина тянет в сторону даже после отпускания педали.</p>
+
+<p>Обратная ситуация возникает при слишком большом зазоре. В этом случае рабочий ход педали увеличивается, а эффективное усилие на главный цилиндр создается слишком поздно. Система становится <strong>вялой</strong>, и для остановки автомобиля требуется значительно больше времени и усилий. Именно поэтому периодическая проверка и регулировка являются обязательными процедурами при обслуживании тормозной системы.</p>
+
+<h2 id="диагностика-неисправностей-и-признаки-сбоя">Диагностика неисправностей и признаки сбоя</h2>
+<p>Прежде чем приступать к регулировке, необходимо убедиться, что проблема именно в настройке зазора, а не в механической поломке или утечке вакуума. Первым признаком неисправности часто становится характерное шипение при нажатии на педаль. Это указывает на разгерметизацию корпуса или разрушение <strong>мембраны</strong>.</p>
+
+<p>Вторым важным симптомом является изменение характера педали. Если педаль становится твердой и не поддается нажатию, возможно, вакуумный насос (на дизельных двигателях) не создает необходимое разрежение или засорен обратный клапан. При этом регулировка штока не поможет, так как физическое усилие невозможно передать без вакуума.</p>
+
+<blockquote>⚠️ Внимание: Если при работающем двигателе педаль становится жесткой как камень, немедленно остановитесь. Это признак полной потери вакуумного усиления. Дальнейшее движение возможно только на низких скоростях с огромным усилием на педали.</blockquote>
+
+<p>Иногда проблема проявляется в виде рывков при торможении. Это может свидетельствовать о том, что шток упирается в поршень главного цилиндра раньше времени, вызывая эффективное торможение, а затем отпускает его, создавая эффект «пинка». В таких случаях необходимо измерить величину <strong>выступа штока</strong> с помощью специального шаблона.</p>
+
+<h2 id="необходимые-инструменты-и-подготовка">Необходимые инструменты и подготовка</h2>
+<p>Для выполнения работ по регулировке вам понадобится минимальный набор инструментов, который есть в арсенале любого автолюбителя. Основным инструментом является <strong>регулировочный ключ</strong> или гаечный ключ подходящего размера для контргайки на штоке. В некоторых моделях автомобилей, например, на старых <em>Toyota</em> или <em>Nissan</em>, требуется специальный <strong>калибр высоты</strong> из набора для обслуживания.</p>
+
+<p>Также необходимо подготовить чистую ветошь и жидкость для очистки тормозной системы. Перед началом работ убедитесь, что двигатель заглушен и тормозная система полностью разгерметизирована (нажмите на педаль несколько раз до упора). Это снимет остаточное давление и позволит безопасно открутить гайки.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к регулировке</h4><label class="check-item"><input type="checkbox"><span>Очистить зону вокруг ГЦТ</span></label><label class="check-item"><input type="checkbox"><span>Проверить уровень тормозной жидкости</span></label><label class="check-item"><input type="checkbox"><span>Подготовить ключи</span></label><label class="check-item"><input type="checkbox"><span>Обеспечить доступ к штоку</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Важно отметить, что на современных автомобилях с системой <strong>ABS</strong> и ESP регулировка может быть сложнее. В некоторых случаях необходимо отключать датчики или использовать диагностический сканер для сброса ошибок перед манипуляциями с педалью. Всегда сверяйтесь с сервисной книжкой вашей модели.</p>
+
+<h2 id="пошаговая-инструкция-по-регулировке">Пошаговая инструкция по регулировке</h2>
+<p>Процесс регулировки начинается с демонтажа вакуумного усилителя из моторного отсека. В большинстве случаев для этого нужно снять стопорную скобу и вынуть основной узел в салон или частично открутить крепление со стороны моторного щита. Отсоедините шланг вакуумного насоса и <strong>трос</strong> (если он есть) от педали тормоза.</p>
+
+<p>После того как вы получили доступ к заднему торцу усилителя, найдите регулировочный болт на штоке. Он обычно имеет форму гайки или винта с контргайкой. Ваша задача — добиться такого положения, при котором шток выступает на определенную величину. Эта величина строго регламентирована производителем для каждой модели двигателя и коробки передач.</p>
+
+<p>Используйте специальный шаблон или штангенциркуль для измерения. Открутите контргайку и вращайте регулировочный болт. Если нужно уменьшить зазор — закручивайте болт внутрь, если увеличить — выкручивайте. После достижения нужного размера затяните контргайку, удерживая сам болт от проворота.</p>
+
+<details class="pb-accordion"><summary>Особенности регулировки на автомобилях с автоматической коробкой</summary><div class="pb-accordion-body"><p>На автомобилях с АКПП часто требуется дополнительная проверка выключателя стоп-сигнала, так как неправильно настроенный шток может постоянно держать свет включенным или блокировать переключение передач из парковки.</p></div></details>
+
+<p>Соберите узел в обратной последовательности. Важно не перетянуть крепежные болты главного цилиндра, чтобы не повредить его корпус. После сборки обязательно проверьте работу педали: она должна нажиматься плавно, без заеданий и скрежета.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед окончательной затяжкой гайки главного тормозного цилиндра убедитесь, что его фланец ровно прилегает к усилителю. Перекос может привести к течи тормозной жидкости через прокладку.</p></aside>
+
+<h2 id="технические-параметры-и-допуски-разных-марок">Технические параметры и допуски разных марок</h2>
+<p>Для корректной регулировки необходимо знать точные допуски для вашего автомобиля. Ниже приведена таблица с типовыми значениями высоты выступа штока для распространенных моделей. Эти данные носят справочный характер и могут меняться в зависимости от года выпуска.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Марка автомобиля</th>
+      <th>Модель двигателя</th>
+      <th>Значение выступа (мм)</th>
+      <th>Особенности настройки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ВАЗ 2107</td>
+      <td>1.6 i</td>
+      <td>1.25 ± 0.2</td>
+      <td>Требует тщательной проверки зазора между педалью и штоком</td>
+    </tr>
+    <tr>
+      <td>Toyota Corolla</td>
+      <td>1.4 VVT-i</td>
+      <td>0.8 - 1.0</td>
+      <td>Используйте специализированный шаблон T-123</td>
+    </tr>
+    <tr>
+      <td>Volkswagen Golf 4</td>
+      <td>1.9 TDI</td>
+      <td>1.0 - 1.5</td>
+      <td>Регулировка через болт на педали, доступ из салона</td>
+    </tr>
+    <tr>
+      <td>Ford Focus 2</td>
+      <td>1.6</td>
+      <td>0.5 - 0.8</td>
+      <td>Особое внимание прокладке и уплотнителю</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Обратите внимание, что на дизельных двигателях, где вакуум создается насосом высокого давления, параметры могут отличаться из-за другого характера работы вакуумного насоса. Также важно учитывать износ штока, который со временем может стать причиной невозможности точной настройки.</p>
+
+<blockquote>⚠️ Внимание: Никогда не пытайтесь «подогнать» шток «на глаз» без измерительного инструмента. Погрешность даже в 1-2 мм может привести к перегреву тормозов или их полному отказу.</blockquote>
+
+<p>Если после регулировки педаль все равно ведет себя нестабильно, возможно, проблема не в зазоре, а в самом главном тормозном цилиндре или в системе <strong>ABS</strong>. В этом случае рекомендуется обратиться к специалистам для компьютерной диагностики.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная регулировка обеспечивает баланс между мягкостью педали и мгновенным откликом тормозной системы, предотвращая перегрев дисков и износ колодок.</p></aside>
+
+<h2 id="влияние-на-безопасность-и-управление">Влияние на безопасность и управление</h2>
+<p>Правильно настроенный вакуумный усилитель — это залог вашей безопасности. При экстренном торможении каждая доля секунды имеет значение. Если зазор неправильный, реакция автомобиля на ваши действия будет замедленной, что может привести к ДТП.</p>
+
+<p>Кроме того, неправильная настройка влияет на работу систем активной безопасности, таких как <strong>ESP</strong> и <strong>система распределения тормозных усилий</strong>. Эти электронные блоки опираются на данные датчиков хода педали и давления в системе. Если механическая часть работает некорректно, электроника может выдавать ложные ошибки или не срабатывать в нужный момент.</p>
+
+<p>Владельцы автомобилей, которые часто эксплуатируются в сложных условиях (грязь, вода, бездорожье), должны проверять состояние ВУТ чаще. Пыль и влага могут попасть в механизм и вызвать заклинивание штока. Регулярная очистка и смазка контактных поверхностей продлят жизнь узлу.</p>
+
+<div class="pb-poll" id="poll-bf623198"><div class="pb-poll-question">📊 Как часто вы проверяете тормозную систему?</div><div class="pb-poll-option" data-poll="bf623198" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf623198" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">При каждом ТО</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf623198" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при неисправности</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="bf623198" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<blockquote>⚠️ Внимание: Если вы чувствуете вибрацию педали тормоза, которая не связана с ABS, это может быть признаком того, что шток усилителя не соответствует требованиям и вызывает резонанс в гидросистеме.</blockquote>
+
+<h2 id="дополнительные-нюансы-и-ошибки">Дополнительные нюансы и ошибки</h2>
+<p>Одной из частых ошибок при регулировке является игнорирование зазора между педалью и кузовом. Даже если вы идеально настроили шток усилителя, но сама педаль прижата к полу или, наоборот, висит слишком высоко, система работать не будет. Необходимо проверить и отрегулировать <strong>упор педали</strong>.</p>
+
+<p>Еще одна ошибка — недостаточная затяжка гайки штока после регулировки. При интенсивном торможении вибрация может раскрутить гайку, что приведет к смещению штока и полной потере тормозного усилия. Всегда используйте фиксатор резьбы или контргайку надежного типа.</p>
+
+<p>На некоторых современных моделях с электроусилителем тормозов (электромеханические ВУТ) регулировка может быть невозможна без перепрошивки блока управления. В таких случаях механическая настройка заменяется программной калибровкой через диагностический сканер.</p>
+
+<h2 id="faq-частые-вопросы-и-ответы">FAQ: Частые вопросы и ответы</h2>
+
+<details>
+  <summary>Можно ли регулировать вакуумный усилитель на ходу?</summary>
+  <p>Нет, категорически запрещено выполнять какие-либо манипуляции с тормозной системой, пока автомобиль находится в движении. Все работы проводятся только на заглушенном двигателе и на ровной поверхности.</p>
+</details>
+
+<details>
+  <summary>Как понять, что шток слишком длинный?</summary>
+  <p>Если шток слишком длинный, педаль тормоза будет ощущаться очень жесткой, а при отпускании педали колеса могут продолжать тормозить (машина тянет, диски греются).</p>
+</details>
+
+<details>
+  <summary>Нужно ли менять прокладку при снятии усилителя?</summary>
+  <p>Да, рекомендуется всегда менять уплотнительную прокладку между усилителем и главным цилиндром, так как старая может потерять герметичность и пропускать воздух.</p>
+</details>
+
+<details>
+  <summary>Что будет, если не отрегулировать зазор?</summary>
+  <p>Это приведет к быстрому износу тормозных колодок, перегреву дисков, повышенному расходу топлива и снижению эффективности торможения в критических ситуациях.</p>
+</details>
+
+<details>
+  <summary>Можно ли регулировать шток без снятия узла?</summary>
+  <p>В некоторых автомобилях конструкция позволяет регулировать зазор без снятия всего усилителя, просто открутив гайку в моторном отсеке или салоне, но доступ часто бывает ограничен.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-vakuumnogo-usilitelya-tormozov-passat-b3.html" class="pb-related-card">
+                <span class="pb-related-title">Замена вакуумного усилителя тормозов на VW Passat B3: инструкция</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и замене вакуумного усилителя тормозов (ВУТ) на Volkswagen Passat </span>
+            </a><a href="/articles/r/re/rezinka-vakuumnogo-usilitelya-2108.html" class="pb-related-card">
+                <span class="pb-related-title">Резинка вакуумного усилителя тормозов ВАЗ 2108: выбор, замена и диагностика</span>
+                <span class="pb-related-desc">Полный гайд по замене манжеты (резинки) штока ВУТ на ВАЗ 2108. Симптомы износа, пошаговая инструкция</span>
+            </a><a href="/articles/r/re/regulirovka-shtoka-vakuumnogo-usilitelya-tormozov-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка штока вакуумного усилителя тормозов Гранта: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как отрегулировать шток ВУТ на Лада Гранта самостоятельно: признаки неисправности, инструменты, наст</span>
+            </a><a href="/articles/v/va/vakuum-granta-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Вакуумный усилитель тормозов с ABS: диагностика, замена и ремонт на авто с ABS</span>
+                <span class="pb-related-desc">Подробный разбор конструкции вакуумного усилителя тормозов на автомобилях с системой ABS. Признаки н</span>
+            </a><a href="/articles/d/dl/dlya-chego-nuzhen-vakuumnik.html" class="pb-related-card">
+                <span class="pb-related-title">Для чего нужен вакуумник: функции, устройство и влияние на торможение</span>
+                <span class="pb-related-desc">Разбираем назначение вакуумного усилителя тормозов. Узнайте, как он работает, признаки поломки и поч</span>
+            </a><a href="/articles/k/ka/kak-proverit-vakuumnik-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить вакуумник на машине: признаки неисправности и диагностика</span>
+                <span class="pb-related-desc">Подробная инструкция по диагностике вакуумного усилителя тормозов. Узнайте, как выявить утечки, пров</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

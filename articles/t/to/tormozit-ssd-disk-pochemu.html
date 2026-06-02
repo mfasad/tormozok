@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему тормозит SSD диск: причины, диагностика и ускорение — ТормозОК</title>
+    <meta name="description" content="Узнайте почему SSD диск может тормозить. Основные причины замедления, методы диагностики, таблица частотных ошибок и пошаговые инструкции по восстановлению скорости.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/t/to/tormozit-ssd-disk-pochemu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему тормозит SSD диск: причины, диагностика и ускорение">
+    <meta property="og:description" content="Узнайте почему SSD диск может тормозить. Основные причины замедления, методы диагностики, таблица частотных ошибок и пошаговые инструкции по восстановлению скорости.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему тормозит SSD диск: причины, диагностика и ускорение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#переполнение-емкости-накопителя">Переполнение емкости накопителя</a></li><li><a href="#отсутствие-поддержки-trim-и-режима-ahci">Отсутствие поддержки TRIM и режима AHCI</a></li><li><a href="#тепловой-дросселинг-и-перегрев">Тепловой дросселинг и перегрев</a></li><li><a href="#истощение-ресурса-записи-tbw-и-износ-ячеек">Истощение ресурса записи (TBW) и износ ячеек</a></li><li><a href="#устаревшие-драйверы-и-прошивка">Устаревшие драйверы и прошивка</a></li><li><a href="#сбои-в-работе-системы-и-вирусы">Сбои в работе системы и вирусы</a></li><li><a href="#физические-повреждения-и-некачественный-кабель">Физические повреждения и некачественный кабель</a></li><li><a href="#как-диагностировать-проблему-самостоятельно">Как диагностировать проблему самостоятельно</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/re/rejting-termostojkikh-krasok-po-metallu.html">Рейтинг термостойких красок по металлу 2026: Топ-7 лучших составов</a></li><li><a href="/articles/s/sk/skhema-pereklyucheniya-peredach-btr-80.html">Схема переключения передач БТР-80: устройство КПП и управление</a></li><li><a href="/articles/s/ss/ssd-stal-ochen-medlenno-rabotat.html">SSD стал очень медленно работать: 7 причин и способы ускорить диск</a></li><li><a href="/articles/k/ka/kakaya-po-kharakteru-nagruzka-sozdaet-tormozyashchij-moment-generatora.html">Какая нагрузка создает тормозящий момент генератора: виды и влияние</a></li><li><a href="/articles/k/ka/kak-rabotat-s-abs-plastikom.html">Как работать с ABS пластиком: 3D-печать и обработка</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему тормозит SSD диск: основные причины и способы решения</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#переполнение-емкости-накопителя">Переполнение емкости накопителя</a></li><li><a href="#отсутствие-поддержки-trim-и-режима-ahci">Отсутствие поддержки TRIM и режима AHCI</a></li><li><a href="#тепловой-дросселинг-и-перегрев">Тепловой дросселинг и перегрев</a></li><li><a href="#истощение-ресурса-записи-tbw-и-износ-ячеек">Истощение ресурса записи (TBW) и износ ячеек</a></li><li><a href="#устаревшие-драйверы-и-прошивка">Устаревшие драйверы и прошивка</a></li><li><a href="#сбои-в-работе-системы-и-вирусы">Сбои в работе системы и вирусы</a></li><li><a href="#физические-повреждения-и-некачественный-кабель">Физические повреждения и некачественный кабель</a></li><li><a href="#как-диагностировать-проблему-самостоятельно">Как диагностировать проблему самостоятельно</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие пользователи сталкиваются с ситуацией, когда компьютер или ноутбук начинает работать медленно, несмотря на установленный современный накопитель. Часто виновником становится <strong>SSD диск</strong>, который должен обеспечивать мгновенный отклик системы. Однако со временем скорость чтения и записи может упасть до значений, характерных для старых жестких дисков.</p>
+
+<p>Причины этого явления разнообразны: от программных сбоев и переполнения памяти до аппаратных дефектов. Игнорирование проблемы может привести к полной потере данных или необходимости замены устройства. В этой статье мы разберем основные факторы, влияющие на производительность, и предложим конкретные методы устранения.</p>
+
+<h2 id="переполнение-емкости-накопителя">Переполнение емкости накопителя</h2>
+
+<p>Одной из самых распространенных причин замедления является отсутствие свободного места на диске. В отличие от механических <strong>жестких дисков (HDD)</strong>, твердотельные накопители используют память NAND-flash, которая требует наличия свободных ячеек для правильной работы алгоритмов сборки мусора (Garbage Collection).</p>
+
+<p>Когда <code>SSD</code> заполнен более чем на 80-90%, контроллер вынужден сначала стирать старые данные перед записью новых. Этот процесс значительно увеличивает время отклика и снижает пропускную способность. <mark>При заполнении более 95% скорость записи может упасть до 10-20 МБ/с, что сопоставимо с работой устаревших флешек.</mark></p>
+
+<p>Вам необходимо регулярно проверять уровень заполнения. Если на системном разделе осталось менее 10-15% свободного пространства, система начнет испытывать серьезные трудности при выполнении фоновых задач и обновлении кэша.</p>
+
+<h2 id="отсутствие-поддержки-trim-и-режима-ahci">Отсутствие поддержки TRIM и режима AHCI</h2>
+
+<p>Технология <strong>TRIM</strong> играет критическую роль в поддержании высокой скорости SSD. Она позволяет операционной системе сообщать контроллеру диска, какие блоки данных больше не используются и могут быть очищены. Без этой команды накопитель работает в режиме постоянной перезаписи, что ведет к деградации производительности.</p>
+
+<p>Кроме того, важно проверить режим работы SATA-портов в настройках BIOS. Диск должен работать в режиме <code>AHCI</code> (Advanced Host Controller Interface). Если он подключен в режиме <code>IDE</code> или <code>RAID</code> (без специфической конфигурации), это может вызывать задержки при передаче данных.</p>
+
+<p>Проверить состояние TRIM можно через командную строку. Введите команду <code>fsutil behavior query DisableDeleteNotify</code>. Если результат равен 0, функция активна. Если 1 — ее необходимо включить командой <code>fsutil behavior set DisableDeleteNotify 0</code>.</p>
+
+<blockquote>⚠️ Внимание: Включение режима AHCI на уже установленной системе Windows может привести к ошибке загрузки (синий экран). Перед сменой режима в BIOS необходимо подготовить систему через реестр.</blockquote>
+
+<div class="pb-poll" id="poll-63bd10e4"><div class="pb-poll-question">📊 Какой процент свободного места осталось на вашем SSD?</div><div class="pb-poll-option" data-poll="63bd10e4" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее 10%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63bd10e4" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">10-20%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63bd10e4" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">20-30%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63bd10e4" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 30%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="тепловой-дросселинг-и-перегрев">Тепловой дросселинг и перегрев</h2>
+
+<p>Современные <em>Samsung 980 Pro</em> или <em>WD Black SN850X</em> способны генерировать значительное количество тепла при интенсивной нагрузке. Если накопитель установлен в компактном корпусе ноутбука или в слот M.2 без радиатора, температура может достигать 70-80°C.</p>
+
+<p>При достижении критического порога контроллер принудительно снижает тактовую частоту процессора диска, чтобы избежать повреждения чипов памяти. Это явление называется <strong>тепловым дросселированием</strong>. В результате система начинает «подвисать», а программы открываются с задержкой.</p>
+
+<p>Используйте утилиты типа <code>CrystalDiskInfo</code> или <code>HWMonitor</code> для отслеживания температур. Если значения стабильно превышают 65°C под нагрузкой, необходимо обеспечить дополнительный отвод тепла.</p>
+
+<details class="pb-accordion"><summary>Как установить радиатор на M.2 SSD?</summary><div class="pb-accordion-body"><p>Открутите винт крепления накопителя, снимите его, очистите термопасту (если была), приклейте новый радиатор на термопрокладку и верните диск на место, закрепив винтом. Убедитесь, что радиатор не мешает установке видеокарты.</p></div></details>
+
+<h2 id="истощение-ресурса-записи-tbw-и-износ-ячеек">Истощение ресурса записи (TBW) и износ ячеек</h2>
+
+<p>Каждый блок памяти имеет ограниченный срок службы, измеряемый в циклах записи (P/E cycles). По мере накопления ошибок контроллер начинает перенаправлять данные на резервные блоки. Когда запас резервных ячеек исчерпан, скорость работы может резко упасть.</p>
+
+<p>Этот процесс необратим. Если показатель <strong>износа (Wear Leveling)</strong> близок к 100%, диск вероятно перейдет в режим «только чтение» или продолжит работать крайне медленно. Важно мониторить этот параметр заранее, чтобы не потерять данные в самый ответственный момент.</p>
+
+<p>В таблице ниже приведены типичные показатели износа для разных типов памяти:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип памяти</th>
+<th>Срок службы (TBW на 1 ТБ)</th>
+<th>Вероятность замедления</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLC</td>
+<td>100 000+</td>
+<td>Минимальная</td>
+</tr>
+<tr>
+<td>MLC</td>
+<td>10 000 - 30 000</td>
+<td>Низкая</td>
+</tr>
+<tr>
+<td>TLC</td>
+<td>500 - 1 500</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>QLC</td>
+<td>150 - 300</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка состояния диска</h4><label class="check-item"><input type="checkbox"><span>Установить CrystalDiskInfo</span></label><label class="check-item"><input type="checkbox"><span>Проверить статус «Здоровье»</span></label><label class="check-item"><input type="checkbox"><span>Посмотреть общее количество записанных ТБ</span></label><label class="check-item"><input type="checkbox"><span>Оценить температуру в простое</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="устаревшие-драйверы-и-прошивка">Устаревшие драйверы и прошивка</h2>
+
+<p>Производители регулярно выпускают обновления <strong>прошивки (firmware)</strong> для своих накопителей, исправляя ошибки контроллера и улучшая алгоритмы управления памятью. Игнорирование обновлений может стать причиной нестабильной работы и заниженной скорости.</p>
+
+<p>Также драйверы SATA или NVMe, установленные по умолчанию в Windows, не всегда оптимизированы для конкретных моделей. Рекомендуется использовать фирменные утилиты, такие как <em>Intel Memory and Storage Tool</em> или <em>Samsung Magician</em>, для обновления ПО.</p>
+
+<p>Обновление прошивки — процедура рискованная. Прерывание питания во время процесса может сделать диск неработоспособным. Убедитесь, что ноутбук подключен к сети, а аккумулятор заряжен.</p>
+
+<blockquote>⚠️ Внимание: Не все производители предоставляют публичные утилиты для обновления прошивки. Если диск от малоизвестного бренда, возможно, обновлений не существует вовсе.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед обновлением прошивки обязательно создайте полную резервную копию важных данных на внешний носитель.</p></aside>
+
+<h2 id="сбои-в-работе-системы-и-вирусы">Сбои в работе системы и вирусы</h2>
+
+<p>Иногда проблема кроется не в самом накопителе, а в программном обеспечении. Фоновые процессы, такие как индексация файлов Windows Search или автоматическое обновление, могут создавать высокую нагрузку на диск, имитируя его медленную работу.</p>
+
+<p>Также существует риск заражения майнерами или ботнетами, которые используют ресурсы диска для скрытых операций. Проверьте диспетчер задач, обращая внимание на вкладку «Производительность» и столбец «Диск».</p>
+
+<p>Если при простое нагрузка на диск составляет 100%, а системные процессы не нагружают его, попробуйте отключить службу <code>SysMain</code> (ранее Superfetch) или выполните полную проверку на вирусы антивирусным ПО.</p>
+
+<h2 id="физические-повреждения-и-некачественный-кабель">Физические повреждения и некачественный кабель</h2>
+
+<p>Для SATA-версий SSD критически важно состояние кабеля. Дешевые или поврежденные кабели могут вызывать ошибки обмена данными, заставляя контроллер перезапрашивать пакеты информации многократно. Это создает эффект «тормозов» даже при исправном диске.</p>
+
+<p>Попробуйте заменить кабель SATA на новый и переподключить его к другому порту на материнской плате. Убедитесь, что разъемы плотно прилегают и не имеют окислений.</p>
+
+<p>В случае с M.2 накопителями проблема может быть в слоте материнской платы или плохом контакте самого модуля. Аккуратно извлеките диск, очистите контакты ластиком и установите обратно до щелчка.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная очистка диска от мусора и обновление прошивки — залог долгой и быстрой работы любого SSD накопителя.</p></aside>
+
+<h2 id="как-диагностировать-проблему-самостоятельно">Как диагностировать проблему самостоятельно</h2>
+
+<p>Для начала необходимо узнать реальные характеристики диска. Используйте утилиту <code>CrystalDiskMark</code> для тестирования скорости последовательного и случайного чтения/записи. Сравните полученные результаты с заявленными характеристиками модели.</p>
+
+<p>Если скорость чтения ниже 500 МБ/с для SATA или ниже 1500 МБ/с для NVMe (в зависимости от поколения), значит, проблема является существенной. Также проверьте журнал событий Windows на наличие ошибок с кодом <code>disk</code> или <code>NVMe</code>.</p>
+
+<p>Часто достаточно выполнить дефрагментацию (оптимизацию) диска через стандартные средства Windows, чтобы сбросить алгоритмы работы с памятью. Система автоматически определит тип накопителя и запустит команду TRIM.</p>
+
+<details class="pb-accordion"><summary>Что делать, если диск не определяется в BIOS?</summary><div class="pb-accordion-body"><p>Проверьте физическое подключение, попробуйте другой порт или кабель, обновите BIOS материнской платы до последней версии, сбросьте настройки BIOS на дефолтные.</p></div></details>
+
+<details>
+<summary>Почему SSD тормозит после обновления Windows?</summary>
+<p>После крупных обновлений система может запускать процессы индексации, проверки целостности файлов и установки драйверов в фоновом режиме. Это временно нагружает диск. Дайте системе несколько часов на завершение фоновых задач.</p>
+</details>
+
+<details>
+<summary>Можно ли ускорить старый SSD программно?</summary>
+<p>Да, можно отключить файл подкачки, индексацию поиска и гибернацию, если вам не нужны эти функции. Однако если диск физически изношен, программные методы дадут лишь временный эффект.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип файловой системы на скорость?</summary>
+<p>Для SSD оптимален формат NTFS (в Windows) или APFS (в macOS). exFAT или FAT32 не поддерживают журналирование и могут работать медленнее, а также не поддерживают TRIM в некоторых ОС.</p>
+</details>
+
+<details>
+<summary>Что делать, если диск стал очень горячим?</summary>
+<p>Установите радиатор, обеспечьте хороший обдув корпусным вентилятором или ограничьте скорость записи в настройках BIOS/ПО, если это возможно. Перегрев — главный враг долговечности SSD.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/re/rejting-termostojkikh-krasok-po-metallu.html" class="pb-related-card">
+                <span class="pb-related-title">Рейтинг термостойких красок по металлу 2026: Топ-7 лучших составов</span>
+                <span class="pb-related-desc">Сравнительный обзор лучших термостойких эмалей для металла. Рейтинг производителей, критерии выбора,</span>
+            </a><a href="/articles/s/sk/skhema-pereklyucheniya-peredach-btr-80.html" class="pb-related-card">
+                <span class="pb-related-title">Схема переключения передач БТР-80: устройство КПП и управление</span>
+                <span class="pb-related-desc">Полный обзор схемы переключения передач на бронетранспортере БТР-80. Описание коробки передач, разда</span>
+            </a><a href="/articles/s/ss/ssd-stal-ochen-medlenno-rabotat.html" class="pb-related-card">
+                <span class="pb-related-title">SSD стал очень медленно работать: 7 причин и способы ускорить диск</span>
+                <span class="pb-related-desc">Если SSD стал работать медленно, не спешите менять диск. Узнайте основные причины замедления, как пр</span>
+            </a><a href="/articles/k/ka/kakaya-po-kharakteru-nagruzka-sozdaet-tormozyashchij-moment-generatora.html" class="pb-related-card">
+                <span class="pb-related-title">Какая нагрузка создает тормозящий момент генератора: виды и влияние</span>
+                <span class="pb-related-desc">Разбор типов нагрузок, создающих тормозящий момент. Влияние активных, реактивных и емкостных нагрузо</span>
+            </a><a href="/articles/k/ka/kak-rabotat-s-abs-plastikom.html" class="pb-related-card">
+                <span class="pb-related-title">Как работать с ABS пластиком: 3D-печать и обработка</span>
+                <span class="pb-related-desc">Полное руководство по печати ABS пластиком: настройки экструдера, борьба с короблением, постобработк</span>
+            </a><a href="/articles/p/po/pochemu-ne-progruzhayutsya-video-v-yutube.html" class="pb-related-card">
+                <span class="pb-related-title">Почему не грузятся видео на YouTube: причины и способы решения</span>
+                <span class="pb-related-desc">Видео на YouTube не загружается? Узнайте основные причины: от проблем с интернетом до настроек плеер</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

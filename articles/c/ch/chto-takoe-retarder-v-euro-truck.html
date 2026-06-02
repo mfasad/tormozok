@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Ретардер в Euro Truck Simulator: как работает и как настроить — ТормозОК</title>
+    <meta name="description" content="Полный гид по ретардеру в ETS2: типы систем, принцип работы, настройка мощности и влияние на износ тормозов. Советы для дальнобойщиков.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/c/ch/chto-takoe-retarder-v-euro-truck.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ретардер в Euro Truck Simulator: как работает и как настроить">
+    <meta property="og:description" content="Полный гид по ретардеру в ETS2: типы систем, принцип работы, настройка мощности и влияние на износ тормозов. Советы для дальнобойщиков.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ретардер в Euro Truck Simulator: как работает и как настроить</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-ретардер-и-зачем-он-нужен">Что такое ретардер и зачем он нужен</a></li><li><a href="#типы-систем-торможения-в-ets2">Типы систем торможения в ETS2</a></li><li><a href="#управление-и-настройка-мощности">Управление и настройка мощности</a></li><li><a href="#влияние-на-износ-и-экономику">Влияние на износ и экономику</a></li><li><a href="#особенности-работы-в-сложных-условиях">Особенности работы в сложных условиях</a></li><li><a href="#сравнение-с-другими-системами">Сравнение с другими системами</a></li><li><a href="#частые-ошибки-и-как-их-избежать">Частые ошибки и как их избежать</a></li><li><a href="#итоговые-рекомендации">Итоговые рекомендации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-otklyuchit-abs-lanser-9.html">Как отключить ABS на Mitsubishi Lancer 9: диагностика и отключение</a></li><li><a href="/articles/e/es/esli-gorit-abs-na-paneli-priborov.html">Загорелась лампа ABS: причины, диагностика и способы устранения</a></li><li><a href="/articles/p/po/pochemu-zagorelas-abs-v-mashine.html">Почему загорелась лампочка ABS: причины, диагностика и решение</a></li><li><a href="/articles/r/re/regulyator-tormoznykh-sil-maz-5440-s-pnevmopodveskoj.html">Регулятор тормозных сил МАЗ 5440 с пневмоподвеской: устройство и ремонт</a></li><li><a href="/articles/g/gt/gtts-s-abs-i-bez-v-chem-raznitsa.html">ГТЦ с АБС и без: главные отличия, совместимость и выбор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ретардер в Euro Truck Simulator 2: принцип работы, настройка и преимущества</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-ретардер-и-зачем-он-нужен">Что такое ретардер и зачем он нужен</a></li><li><a href="#типы-систем-торможения-в-ets2">Типы систем торможения в ETS2</a></li><li><a href="#управление-и-настройка-мощности">Управление и настройка мощности</a></li><li><a href="#влияние-на-износ-и-экономику">Влияние на износ и экономику</a></li><li><a href="#особенности-работы-в-сложных-условиях">Особенности работы в сложных условиях</a></li><li><a href="#сравнение-с-другими-системами">Сравнение с другими системами</a></li><li><a href="#частые-ошибки-и-как-их-избежать">Частые ошибки и как их избежать</a></li><li><a href="#итоговые-рекомендации">Итоговые рекомендации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие начинающие водители в <em>Euro Truck Simulator 2</em> сталкиваются с критической проблемой на затяжных спусках: перегрев и отказ рабочих тормозов. В реальной жизни это чревато аварией, а в игре — разрушением колес и остановкой движения. Решением этой проблемы служит система <strong>инерционного торможения</strong>, известная как ретардер. Это устройство позволяет замедлять транспортное средство без использования фрикционных накладок, используя энергию вращения трансмиссии или магнитное поле.</p>
+
+<p>В контексте симулятора <em>ETS2</em> ретардер является обязательным элементом эффективного управления длинномером. Он не просто экономит ресурсы автомобиля, но и существенно повышает безопасность движения в горах. Без правильной настройки и понимания принципа работы вы рискуете столкнуться с постоянным перегревом дисков даже на средних уклонах. Давайте разберем, как эта система интегрирована в игровой процесс и как она влияет на физику грузовика.</p>
+
+<h2 id="что-такое-ретардер-и-зачем-он-нужен">Что такое ретардер и зачем он нужен</h2>
+
+<p><strong>Ретардер</strong> — это вспомогательная тормозная система, устанавливаемая на тяжелые коммерческие автомобили. В отличие от стандартных колодок, которые создают трение, ретардер создает сопротивление вращению трансмиссии или колес. В игре <em>Euro Truck Simulator 2</em> этот механизм имитирует реальную физику, где энергия движения не рассеивается в виде тепла в тормозных барабанах, а преобразуется в электричество или гасится гидравлическим сопротивлением.</p>
+
+<p>Главная задача устройства — снять нагрузку с <strong>основных тормозов</strong> при длительном замедлении. Если вы съезжаете с альпийского перевала, нажимая только на педаль тормоза, температура дисков поднимется до критической отметки, и система ABS может заблокировать колеса из-за потери эффективности. Использование <em>инерционного тормоза</em> позволяет поддерживать скорость спуска безопасной, не нагревая основные узлы.</p>
+
+<p>Важно понимать, что ретардер не предназначен для полной остановки автомобиля. Он эффективен только при движении на скорости выше нуля. Как только скорость падает до минимума, его воздействие резко снижается, и вам придется использовать <strong>рабочие тормоза</strong> для финальной остановки на светофоре или перекрестке.</p>
+
+<h2 id="типы-систем-торможения-в-ets2">Типы систем торможения в ETS2</h2>
+
+<p>В симуляторе реализованы два основных типа ретардеров, которые встречаются на реальных грузовиках Scania, Volvo, MAN и DAF. Первый тип — это <strong>гидравлический ретардер</strong>. Он интегрирован в коробку передач и работает за счет перемешивания масла. Второй тип — <strong>электрический (электродинамический)</strong>, который часто называютником-тормозом. Он использует генератор для создания электрического тока, который затем рассеивается в резисторах.</p>
+
+<p>Гидравлическая система более распространена в игре для грузовиков с автоматическими коробками передач. Она обеспечивает плавное и линейное замедление. Электродинамический же тип, характерный для <em>Volvo FH</em> или <em>Mack</em>, может создавать более сильное тормозное усилие, но иногда ощущается как более"рывковое" при резком переключении ступеней.</p>
+
+<p>Независимо от типа, принцип действия сводится к одному: двигатель не получает топливо, а вращается от колес, создавая сопротивление. Это сопротивление передается через трансмиссию обратно на колеса, заставляя их замедляться. В игровом интерфейсе это отображается как шкала мощности <strong>инерционного тормоза</strong>, которую можно регулировать.</p>
+
+<h2 id="управление-и-настройка-мощности">Управление и настройка мощности</h2>
+
+<p>Управление ретардером в <em>Euro Truck Simulator 2</strong> осуществляется с помощью клавиатуры или джойстика. По умолчанию клавиша переключения ступеней находится на <code>K</code> (или <code>L</code>, в зависимости от настроек). Нажатие увеличивает мощность торможения, а повторное нажатие снижает её. Вы можете выбрать уровень от 0 (выключено) до 10 (максимальное усилие).</p>
+
+<p>Правильная настройка зависит от уклона дороги и веса вашего груза. Для легких грузов на пологом спуске достаточно 1-2 ступени. Для тяжелого прицепа на крутом серпантине может потребоваться 5-7 ступеней. Никогда не выставляйте максимум сразу, если не знаете точного угла наклона — это может привести к блокировке колес и потере управления.</p>
+
+<p>Обратите внимание на индикаторы в панели приборов. Когда ретардер активен, загорается соответствующий значок. Если вы чувствуете, что скорость не падает, несмотря на высокую мощность, значит, гравитация преодолевает тормозное усилие. В таком случае нужно понизить передачу в коробке передач, чтобы увеличить сопротивление двигателя и усилить эффект <strong>торможения двигателем</strong>.</p>
+
+<p>Для удобной настройки рекомендуется открыть меню управления и проверить привязку клавиш. Иногда игроки используют отдельные кнопки для каждого уровня мощности, но это неудобно в движении. Лучше использовать инкрементальное переключение.</p>
+
+<div class="pb-poll" id="poll-d2fe3147"><div class="pb-poll-question">📊 Какую систему торможения вы предпочитаете в игре?</div><div class="pb-poll-option" data-poll="d2fe3147" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только педаль тормоза</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d2fe3147" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Ретардер + педаль</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d2fe3147" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только ретардер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="d2fe3147" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Колонный тормоз (Jake Brake)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-на-износ-и-экономику">Влияние на износ и экономику</h2>
+
+<p>Одной из главных причин использования ретардера является экономия расходов на обслуживание. <strong>Тормозные колодки</strong> и диски в симуляторе имеют ограниченный ресурс. При активном использовании педали тормоза износ наступает быстро, требуя дорогостоящего ремонта на СТО. Ретардер же не имеет фрикционных элементов, поэтому его использование практически не влияет на износ колодок.</p>
+
+<p>Если вы планируете долгую игру на одном грузовике, игнорирование этой системы приведет к частым остановкам на ремонт. В экономическом плане разница может быть существенной: замена тормозной системы стоит дорого, а"ремонт" ретардера в игре не требуется. Это делает его незаменимым инструментом для профессиональных дальнобойщиков.</p>
+
+<p>Кроме того, использование ретардера повышает безопасность при экстренном торможении. Если вы потеряли контроль над скоростью, система поможет стабилизировать транспортное средство, предотвращая занос, который часто возникает при блокировке колес на мокрой дороге. Это особенно актуально в режимах с <strong>симуляцией износа</em> и физикой.</p>
+
+<p>В таблице ниже показано сравнение эффективности различных методов торможения при спуске с горы с грузом 30 тонн:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Метод торможения</th>
+<th>Износ колодок</th>
+<th>Риск перегрева</th>
+<th>Влияние на скорость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Только педаль тормоза</td>
+<td>Очень высокий</td>
+<td>Критический</td>
+<td>Быстрое снижение</td>
+</tr>
+<tr>
+<td>Торможение двигателем</td>
+<td>Отсутствует</td>
+<td>Низкий</td>
+<td>Медленное снижение</td>
+</tr>
+<tr>
+<td>Ретардер (средняя ступень)</td>
+<td>Минимальный</td>
+<td>Отсутствует</td>
+<td>Стабильное удержание</td>
+</tr>
+<tr>
+<td>Комбинация (Ретардер + Двигатель)</td>
+<td>Минимальный</td>
+<td>Отсутствует</td>
+<td>Идеальный контроль</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>
+<p>⚠️ Внимание: В некоторых версиях игры или с модами модификации физики, влияние ретардера может быть изменено. Всегда проверяйте эффективность торможения на тестовом участке перед долгим спуском.</p>
+</blockquote>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед спуском</h4><label class="check-item"><input type="checkbox"><span>Осмотреть состояние тормозов</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в работе ретардера</span></label><label class="check-item"><input type="checkbox"><span>Выбрать правильную передачу</span></label><label class="check-item"><input type="checkbox"><span>Проверить давление в шинах</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="особенности-работы-в-сложных-условиях">Особенности работы в сложных условиях</h2>
+
+<p>В зимних условиях или на заснеженных дорогах использование <strong>ретардера</em> требует особой осторожности. Резкое торможение может привести к заносу задней оси, так как колеса теряют сцепление с дорогой быстрее, чем при плавном нажатии педали. В таких ситуациях лучше использовать низкую ступень торможения или комбинировать её с торможением двигателем.</p>
+
+<p>На сухом асфальте система работает максимально эффективно, позволяя поддерживать постоянную скорость без перегрева. Однако, если вы едете по бездорожью или грунтовой дороге, ретардер может быть менее предсказуемым из-за проскальзывания колес. В таких случаях полагаться только на него не стоит.</p>
+
+<p>Также стоит учитывать, что ретардер создает дополнительную нагрузку на трансмиссию. Хотя в игре это редко приводит к поломкам коробки передач, в реальной жизни чрезмерное использование на низких скоростях может вызвать перегрев масла в КПП. В <em>ETS2</strong> это проявляется в редких случаях, но лучше соблюдать умеренность.</p>
+
+<details class="pb-accordion"><summary>Как работает ретардер в реальности?</summary><div class="pb-accordion-body"><p>В реальном грузовике гидравлический ретардер работает за счет перемешивания масла в корпусе. Масло нагревается, поэтому в системе есть радиатор. Электрический ретардер использует генератор, который создает ток и рассеивает его в резисторах, нагревая их докрасна. Оба типа не имеют контакта с тормозными дисками.</p></div></details>
+
+<h2 id="сравнение-с-другими-системами">Сравнение с другими системами</h2>
+
+<p>Помимо ретардера, существует еще одна популярная система — <strong>тормоз двигателя (Jake Brake)</em>. Она работает за счет изменения фаз газораспределения, выпуская сжатый воздух из цилиндров. В игре <em>Euro Truck Simulator 2</em> эта функция часто объединена с ретардером или доступна как отдельная опция для некоторых грузовиков.</p>
+
+<p>Тормоз двигателя эффективен на низких скоростях и при больших нагрузках, но его шумность в реальной жизни запрещена во многих городах. В игре же он работает бесшумно и отлично дополняет ретардер. Комбинация этих двух систем позволяет достичь максимальной эффективности торможения без использования педали.</p>
+
+<p>Некоторые игроки предпочитают использовать только тормоз двигателя, чтобы сохранить ресурс ретардера, но это не совсем верно. Ретардер работает плавнее и эффективнее на высоких скоростях. Идеальный сценарий — использовать <em>тормоз двигателя</em> для базового замедления и подключать ретардер, когда скорость начинает расти.</p>
+
+<blockquote>
+<p>⚠️ Внимание: На крутых спусках с грузом более 20 тонн одной системы может быть недостаточно. Используйте комбинацию всех доступных средств торможения для безопасного спуска.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы чувствуете, что ретардер не справляется, попробуйте переключиться на более низкую передачу вручную. Это увеличит сопротивление двигателя и усилит эффект торможения.</p></aside>
+
+<h2 id="частые-ошибки-и-как-их-избежать">Частые ошибки и как их избежать</h2>
+
+<p>Одной из самых распространенных ошибок является включение ретардера на максимальную мощность при малой скорости. Это приводит к резкой остановке колес, блокировке и возможному заносу. Всегда увеличивайте мощность постепенно, наблюдая за поведением грузовика и показателями скорости.</p>
+
+<p>Другая ошибка — полное игнорирование системы. Многие новички полагаются только на педаль тормоза, что приводит к частым ремонтам и остановкам. Запомните, что <strong>ретардер</strong> — это ваш главный союзник на длинных спусках. Его использование должно стать автоматическим навыком.</p>
+
+<p>Также не стоит забывать о том, что ретардер не работает, если двигатель заглушен. Если вы остановились на светофоре, а потом тронулись, убедитесь, что система готова к работе. Иногда требуется время на прогрев или инициализацию, особенно в модах с реалистичной физикой.</p>
+
+<details class="pb-accordion"><summary>Можно ли сломать ретардер в игре?</summary><div class="pb-accordion-body"><p>В ванильной версии игры сломать ретардер практически невозможно. Однако в модах с расширенной физикой и износом, экстремальное использование на низких скоростях может привести к перегреву трансмиссии и поломке. Будьте осторожны.</p></div></details>
+
+<h2 id="итоговые-рекомендации">Итоговые рекомендации</h2>
+
+<p>Использование ретардера в <em>Euro Truck Simulator 2</em> — это не просто опция, а необходимость для комфортной и безопасной игры. Он экономит ресурсы, повышает безопасность и позволяет наслаждаться процессом вождения без постоянных остановок на ремонт. Научившись правильно управлять этой системой, вы станете настоящим профессионалом дороги.</p>
+
+<p>Запомните главное правило: ретардер — это для управления скоростью на спуске, а не для экстренной остановки. Используйте его в сочетании с торможением двигателем и педалью тормоза для достижения наилучшего результата. И не забывайте проверять свои настройки управления перед началом длительных рейсов.</p>
+
+<p>Вне зависимости от того, играете ли вы в vanilla версию или используете сложные моды, понимание работы ретардера остается ключевым навыком. <mark>Правильное использование ретардера снижает износ тормозных колодок на 80-90% при длительных спусках.</mark> Это делает его самым экономически выгодным элементом системы торможения в вашем арсенале.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Параметры работы ретардера могут отличаться в зависимости от установленной модификации грузовика. Внимательно читайте описание мода перед покупкой или установкой нового грузовика.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Ретардер — это ваша страховка от перегрева тормозов. Используйте его на каждом спуске, чтобы сохранить ресурс автомобиля и избежать аварийных ситуаций.</p></aside>
+
+<details>
+<summary>Как активировать ретардер в ETS2?</summary>
+<p>По умолчанию ретардер активируется клавишей <code>K</code> (или <code>L</code>). Вы можете изменить эту настройку в меню <code>Настройки → Управление → Транспортное средство</code>. Найдите пункт"Ретардер" и назначьте удобную клавишу.</p>
+</details>
+
+<details>
+<summary>Можно ли управлять ретардером с помощью джойстика?</summary>
+<p>Да, большинство джойстиков поддерживают настройку оси для ретардера. В меню управления вы можете назначить ось джойстика на"Ретардер", что позволит плавно регулировать мощность торможения, а не переключать ступени.</p>
+</details>
+
+<details>
+<summary>Почему ретардер не работает на некоторых грузовиках?</summary>
+<p>Не все грузовики в игре оснащены ретардером по умолчанию. Некоторые модели требуют установки дополнительного оборудования в гараже. Проверьте список доступных опций для вашего грузовика в меню"Тюнинг" или"Оборудование".</p>
+</details>
+
+<details>
+<summary>Влияет ли ретардер на расход топлива?</summary>
+<p>Ретардер не потребляет топливо, так как работает на инерции. Напротив, он может снизить расход, позволяя двигателю работать в экономичном режиме на спусках, так как не нужно использовать тормоза для поддержания скорости.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-otklyuchit-abs-lanser-9.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить ABS на Mitsubishi Lancer 9: диагностика и отключение</span>
+                <span class="pb-related-desc">Подробная инструкция по отключению системы ABS на Mitsubishi Lancer 9. Причины, способы блокировки д</span>
+            </a><a href="/articles/e/es/esli-gorit-abs-na-paneli-priborov.html" class="pb-related-card">
+                <span class="pb-related-title">Загорелась лампа ABS: причины, диагностика и способы устранения</span>
+                <span class="pb-related-desc">Почему горит индикатор антиблокировочной системы? Разбор частых неисправностей, стоимость ремонта и </span>
+            </a><a href="/articles/p/po/pochemu-zagorelas-abs-v-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Почему загорелась лампочка ABS: причины, диагностика и решение</span>
+                <span class="pb-related-desc">Зажегся индикатор ABS? Узнайте основные причины неисправности, как проверить датчики и сбойные коды.</span>
+            </a><a href="/articles/r/re/regulyator-tormoznykh-sil-maz-5440-s-pnevmopodveskoj.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор тормозных сил МАЗ 5440 с пневмоподвеской: устройство и ремонт</span>
+                <span class="pb-related-desc">Полный обзор регулятора тормозных сил для МАЗ 5440 с пневмоподвеской. Принципы работы, диагностика н</span>
+            </a><a href="/articles/g/gt/gtts-s-abs-i-bez-v-chem-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">ГТЦ с АБС и без: главные отличия, совместимость и выбор</span>
+                <span class="pb-related-desc">Чем отличается главный тормозной цилиндр с АБС от обычного? Разбор конструктивных нюансов, проверка </span>
+            </a><a href="/articles/g/go/gorit-lampochka-abs-chto-delat.html" class="pb-related-card">
+                <span class="pb-related-title">Горит лампочка ABS: что делать, причины и способы ремонта</span>
+                <span class="pb-related-desc">Загорелся индикатор ABS? Узнайте основные причины неисправности, как выполнить диагностику самостоят</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

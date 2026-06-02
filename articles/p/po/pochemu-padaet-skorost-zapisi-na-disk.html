@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему падает скорость записи на диск: причины и решение — ТормозОК</title>
+    <meta name="description" content="Разбор причин снижения скорости записи на HDD и SSD. Влияние фрагментации, перегрева, устаревания интерфейсов и износ ячеек памяти.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/po/pochemu-padaet-skorost-zapisi-na-disk.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему падает скорость записи на диск: причины и решение">
+    <meta property="og:description" content="Разбор причин снижения скорости записи на HDD и SSD. Влияние фрагментации, перегрева, устаревания интерфейсов и износ ячеек памяти.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diagnostika-neispravnostej/">Диагностика неисправностей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему падает скорость записи на диск: причины и решение</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#переполнение-кэш-памяти-и-особенности-slc-кэширования">Переполнение кэш-памяти и особенности SLC-кэширования</a></li><li><a href="#проблемы-интерфейса-и-устаревание-кабельного-подключения">Проблемы интерфейса и устаревание кабельного подключения</a></li><li><a href="#фрагментация-данных-и-логическая-структура-файловой-системы">Фрагментация данных и логическая структура файловой системы</a></li><li><a href="#тепловой-дроссинг-и-перегрев-накопителя">Тепловой дроссинг и перегрев накопителя</a></li><li><a href="#износ-ячеек-памяти-и-ресурс-tbw">Износ ячеек памяти и ресурс TBW</a></li><li><a href="#влияние-фоновых-процессов-и-вирусного-по">Влияние фоновых процессов и вирусного ПО</a></li><li><a href="#нюансы-работы-с-виртуальной-памятью-и-факторами-производительности">Нюансы работы с виртуальной памятью и факторами производительности</a></li><li><a href="#чек-лист-по-диагностике-и-восстановлению-скорости">Чек-лист по диагностике и восстановлению скорости</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/s/sk/skhema-tormozov-kalina-1-bez-abs.html">Схема тормозов Лада Калина 1 без ABS: устройство, ремонт и замена</a></li><li><a href="/articles/k/ka/kak-proverit-iznos-kolodok-ne-snimaya-kolesa.html">Как проверить износ тормозных колодок без снятия колес</a></li><li><a href="/articles/v/vi/vibratsiya-na-d-pri-nazhatom-tormoze-prichiny.html">Вибрация на D при нажатом тормозе: причины, диагностика, ремонт</a></li><li><a href="/articles/n/ne/neispravnost-tormoznoj-sistemy-znachok-na-paneli-priborov.html">Значок неисправности тормозов на панели: причины и что делать</a></li><li><a href="/articles/s/sk/skrip-pri-nazhatii-na-pedal-tormoza.html">Скрип при нажатии на педаль тормоза: причины, диагностика и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему реальная скорость записи на диск падает со временем</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#переполнение-кэш-памяти-и-особенности-slc-кэширования">Переполнение кэш-памяти и особенности SLC-кэширования</a></li><li><a href="#проблемы-интерфейса-и-устаревание-кабельного-подключения">Проблемы интерфейса и устаревание кабельного подключения</a></li><li><a href="#фрагментация-данных-и-логическая-структура-файловой-системы">Фрагментация данных и логическая структура файловой системы</a></li><li><a href="#тепловой-дроссинг-и-перегрев-накопителя">Тепловой дроссинг и перегрев накопителя</a></li><li><a href="#износ-ячеек-памяти-и-ресурс-tbw">Износ ячеек памяти и ресурс TBW</a></li><li><a href="#влияние-фоновых-процессов-и-вирусного-по">Влияние фоновых процессов и вирусного ПО</a></li><li><a href="#нюансы-работы-с-виртуальной-памятью-и-факторами-производительности">Нюансы работы с виртуальной памятью и факторами производительности</a></li><li><a href="#чек-лист-по-диагностике-и-восстановлению-скорости">Чек-лист по диагностике и восстановлению скорости</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Вы когда-нибудь замечали, что копирование файла, которое раньше занимало секунды, теперь растягивается на минуты? Это классический симптом деградации производительности накопителя. Ситуация, когда <strong>скорость записи на диск</strong> необоснованно падает, может быть вызвана как программными сбоями, так и физическим износом компонентов.</p>
+
+<p>Иногда проблема кроется в банальной перегрузке контроллера или переполнении <strong>SLC-кэша</strong> на современных SSD-накопителях. В других случаях дело доходит до критического <strong>перегрева</strong> жесткого диска, который принудительно снижает тактовую частоту для самосохранения. Понимание механизма работы <code>DRAM-буфера</code> и файловой системы — ключ к диагностике.</p>
+
+<h2 id="переполнение-кэш-памяти-и-особенности-slc-кэширования">Переполнение кэш-памяти и особенности SLC-кэширования</h2>
+<p>Современные твердотельные накопители используют хитрую схему ускорения записи, называемую SLC-кэшированием. Это позволяет достигать пиковых скоростей в начале операции, но как только выделенная область <strong>быстрой памяти</strong> заполняется, производительность резко обрушивается до базового уровня ячейки TLC или QLC.</p>
+<p>Если вы пытаетесь записать огромный файл без перерывов, диск просто исчерпывает запас <strong>SLC-кэша</strong> и вынужден работать в медленном режиме прямой записи. Именно поэтому скорость может упасть с 500 МБ/с до 50 МБ/с в середине процесса копирования.</p>
+<p>Для обычных пользователей это выглядит как внезапная "поломка", но на самом деле это штатный режим работы бюджетных и среднебюджетных SSD. Важно понимать, что после завершения операции и начала работы <strong>фоновой консолидации</strong> скорость может восстановиться.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>SLC-кэш работает как буфер ускорения: пока он не заполнен, скорость максимальна; после исчерпания буфера скорость падает до значений прямой записи ячеек памяти.</p></aside>
+
+<h2 id="проблемы-интерфейса-и-устаревание-кабельного-подключения">Проблемы интерфейса и устаревание кабельного подключения</h2>
+<p>Иногда причина снижения скорости кроется не в самом накопителе, а в "трубопроводе", по которому передаются данные. Использование кабеля SATA II вместо SATA III или повреждение шлейфа может ограничить пропускную способность. Проверьте, видит ли система интерфейс <strong>SATA 3.0</strong> (6 Гбит/с) или переключился ли он на SATA 2.0 (3 Гбит/с).</p>
+<p>Также стоит обратить внимание на порт подключения. Если вы используете внешний USB-диск, переход на порт USB 2.0 вместо 3.0 или использование адаптеров-переходников может стать узким горлышком. В таких случаях реальная <strong>скорость записи</strong> ограничена пропускной способностью интерфейса, а не возможностями самого устройства.</p>
+<p>Для диагностики подключите диск напрямую к материнской плате, минуя хабы и удлинители. Если проблема исчезла, виноват внешний блок питания или качество кабеля. Иногда даже простое переключение порта с переднего на задний разъём решает проблему нестабильного соединения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При использовании внешних дисков всегда подключайте их напрямую к USB-порту на задней панели системного блока, так как передние порты часто имеют более длинный путь проводки и меньшее напряжение.</p></aside>
+
+<h2 id="фрагментация-данных-и-логическая-структура-файловой-системы">Фрагментация данных и логическая структура файловой системы</h2>
+<p>На механических жестких дисках (HDD) главной причиной падения скорости является <strong>фрагментация</strong>. Когда файлы разбросаны по разным секторам диска, считывающая головка тратит массу времени на перемещение, вместо того чтобы просто читать данные. Это особенно заметно при работе с множеством мелких файлов.</p>
+<p>Хотя для SSD фрагментация не так критична из-за отсутствия движущихся частей, переполнение файловой системы всё равно влияет на производительность. Когда диск заполнен более чем на 80-90%, контроллеру становится сложнее находить свободные <strong>свободные блоки</strong> для записи, и операции начинают выполняться дольше.</p>
+<p>Регулярная проверка файловой системы на ошибки через командную строку может выявить логические сбои. Команда <pre><code>chkdsk /f /r</code></pre> помогает исправить поврежденные сектора и восстановить структуру файловой системы, что часто возвращает приемлемую скорость работы диска.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка целостности файловой системы</h4><label class="check-item"><input type="checkbox"><span>Запустить команду chkdsk</span></label><label class="check-item"><input type="checkbox"><span>Проверить свободное место</span></label><label class="check-item"><input type="checkbox"><span>Очистить корзину</span></label><label class="check-item"><input type="checkbox"><span>Удалить временные файлы</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="тепловой-дроссинг-и-перегрев-накопителя">Тепловой дроссинг и перегрев накопителя</h2>
+<p>Одной из самых частых, но игнорируемых причин падения скорости является перегрев. Современные накопители оснащены датчиками температуры, которые при достижении критических значений (обычно выше 70°C) принудительно снижают производительность. Этот механизм называется <strong>термическим троттлингом</strong>.</p>
+<p>Если диск установлен в закрытый корпус без airflow или в небольшом ноутбуке без активного охлаждения, температура может расти даже при неактивной работе. В результате контроллер снижает тактовую частоту, чтобы избежать физического повреждения кристалла памяти или магнитных головок.</p>
+<p>Для диагностики используйте утилиты мониторинга, такие как <em>CrystalDiskInfo</em> или <em>AIDA64</em>. Если вы видите, что температура растет параллельно с падением скорости записи, необходимо обеспечить приток холодного воздуха или установить радиатор на накопитель.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если температура диска постоянно превышает 65°C во время активной записи, это прямой сигнал к снижению нагрузки или улучшению охлаждения. Пренебрежение этим может привести к необратимому выходу из строя электроники.</blockquote>
+
+<div class="pb-poll" id="poll-1299c187"><div class="pb-poll-question">📊 Какой тип диска у вас установлен?</div><div class="pb-poll-option" data-poll="1299c187" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">SSD (SATA)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1299c187" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">SSD (M.2 NVMe)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1299c187" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">HDD (Механический)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1299c187" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Внешний USB-диск</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="износ-ячеек-памяти-и-ресурс-tbw">Износ ячеек памяти и ресурс TBW</h2>
+<p>Для SSD-накопителей критически важным параметром является ресурс записи (TBW — Terabytes Written). По мере того как ячейки памяти изнашиваются от циклов перезаписи, контроллеру требуется всё больше времени на коррекцию ошибок (ECC). Это естественный процесс старения, который напрямую влияет на <strong>скорость записи</strong>.</p>
+<p>Когда уровень износа достигает критической отметки, накопитель может начать работать в режиме "только чтение", чтобы сохранить данные, или резко замедлиться. Это не всегда означает смерть диска, но говорит о том, что его ресурс подходит к концу и требуется плановая замена.</p>
+<p>Стоит учитывать, что дешевые модели с памятью QLC изнашиваются быстрее при интенсивной записи. Если вы используете диск для сервера или видеомонтажа, необходимо выбирать модели с высоким показателем <strong>надежности</strong> и большим резервом памяти.</p>
+
+<p>В таблице ниже приведены примерные значения снижения скорости в зависимости от типа износа и условий эксплуатации.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип накопителя</th>
+<th>Состояние</th>
+<th>Скорость записи (примерно)</th>
+<th>Причина снижения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SSD NVMe</td>
+<td>Новый, SLC-кэш свободен</td>
+<td>2000–3500 МБ/с</td>
+<td>Высокая производительность</td>
+</tr>
+<tr>
+<td>SSD NVMe</td>
+<td>Заполнен кэш, активная запись</td>
+<td>400–800 МБ/с</td>
+<td>Переход на прямую запись TLC/QLC</td>
+</tr>
+<tr>
+<td>HDD SATA</td>
+<td>Низкая фрагментация</td>
+<td>120–160 МБ/с</td>
+<td>Стабильная механическая скорость</td>
+</tr>
+<tr>
+<td>HDD SATA</td>
+<td>Высокая фрагментация</td>
+<td>20–50 МБ/с</td>
+<td>Поиск секторов, перемещение головок</td>
+</tr>
+<tr>
+<td>SSD</td>
+<td>Критический износ (80%+)</td>
+<td>10–50 МБ/с</td>
+<td>Коррекция ошибок, троттлинг</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="влияние-фоновых-процессов-и-вирусного-по">Влияние фоновых процессов и вирусного ПО</h2>
+<p>Иногда проблема не в железе, а в программном обеспечении. Фоновые процессы, такие как индексация Windows Search, обновление антивируса или синхронизация облачных хранилищ, могут полностью загружать <strong>очередь команд</strong> диска. В диспетчере задач это выглядит как 100% загрузка диска при низкой скорости копирования.</p>
+<p>Майнеры криптовалют или вредоносные программы часто используют ресурсы диска для скрытых операций записи. Это приводит к тому, что легитимные операции пользователя выполняются в режиме ожидания, создавая иллюзию падения скорости всего накопителя.</p>
+<p>Проверьте список активных процессов в <code>Диспетчере задач</code> (вкладка "Производительность" -> "Диск"). Если вы видите неизвестный процесс, занимающий много ресурсов, необходимо провести сканирование системы антивирусом или удалить подозрительное ПО.</p>
+
+<blockquote>⚠️ <strong>Внимание:</strong> Если диск загружен на 100% в простое, но не записывает данные, это может указывать на неисправность кабеля SATA или деградацию самого накопителя, а не на программные процессы.</blockquote>
+
+<details class="pb-accordion"><summary>Как проверить здоровье диска через AIDA64</summary><div class="pb-accordion-body"><p>Запустите тест стабильности системы, выберите опцию "Тест дисков" и запустите запись. Следите за графиками скорости и температурой в реальном времени. Если скорость падает скачкообразно, а температура растет — проблема в охлаждении.</p></div></details>
+
+<h2 id="нюансы-работы-с-виртуальной-памятью-и-факторами-производительности">Нюансы работы с виртуальной памятью и факторами производительности</h2>
+<p>Ещё один часто игнорируемый фактор — это файл подкачки (<strong>pagefile.sys</strong>). Если физическая оперативная память (RAM) переполнена, система начинает активно использовать диск как временную память. Это создает огромную нагрузку на запись и чтение мелких файлов, из-за чего общий отклик системы и скорость записи пользовательских данных падают.</p>
+<p>Настройка размера файла подкачки имеет значение. Если он установлен как "по выбору системы" и диск переполнен, система может не успевать выделять непрерывные блоки. Рекомендуется вручную задать фиксированный размер файла подкачки или перенести его на второй диск, если таковой имеется.</p>
+<p>Также стоит проверить режим работы контроллера в BIOS. Убедитесь, что для SATA-портов включен режим <code>AHCI</code> или <code>NVMe</code>. В старых системах или при неправильной настройке он может работать в устаревшем режиме IDE, что ограничивает скорость и отключает важные функции очереди команд (NCQ).</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Оптимизация файла подкачки и режим работы контроллера (AHCI) критически важны для поддержания стабильной скорости записи, особенно при нехватке оперативной памяти.</p></aside>
+
+<blockquote>⚠️ <strong>Внимание:</strong> При изменении настроек контроллера в BIOS (например, переключение с IDE на AHCI) существует риск ошибки загрузки Windows. Обязательно создайте точку восстановления системы перед внесением изменений.</blockquote>
+
+<h2 id="чек-лист-по-диагностике-и-восстановлению-скорости">Чек-лист по диагностике и восстановлению скорости</h2>
+<p>Если вы столкнулись с проблемой, следуйте этому алгоритму действий для локализации неисправности. Начните с программных проверок, прежде чем подозревать физическую поломку. Часто достаточно простых действий, чтобы вернуть системе былую производительность.</p>
+<p>В первую очередь проверьте физическое подключение и температурный режим. Затем проанализируйте загрузку системы и наличие фоновых задач. Только после исключения этих факторов стоит говорить о износе оборудования.</p>
+<p>Помните, что <strong>скорость записи</strong> — это интегральный показатель здоровья всей системы хранения данных. Её падение — это сигнал, требующий внимания, а не повод для паники. Своевременная диагностика позволит избежать потери данных.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Экспресс-диагностика диска</h4><label class="check-item"><input type="checkbox"><span>Проверить температуру (не > 60°C)</span></label><label class="check-item"><input type="checkbox"><span>Освободить место на диске (>20% свободных)</span></label><label class="check-item"><input type="checkbox"><span>Проверить кабель SATA</span></label><label class="check-item"><input type="checkbox"><span>Отключить фоновые процессы</span></label><label class="check-item"><input type="checkbox"><span>Запустить chkdsk</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Иногда проблема решается банальным обновлением прошивки контроллера диска. Производители часто выпускают патчи, исправляющие баги управления кэшем и алгоритмы коррекции ошибок. Зайдите на официальный сайт производителя вашего накопителя и проверьте наличие обновлений.</p>
+<p>Если диск находится на гарантии и скорость упала критически (до единиц МБ/с), не пытайтесь ремонтировать его самостоятельно. Обратитесь в сервисный центр. <mark>Любое физическое вмешательство в гермоблок HDD или вскрытие корпуса SSD мгновенно аннулирует гарантию и может привести к полной потере данных.</mark></p>
+
+<h3>Часто задаваемые вопросы</h3>
+
+<details>
+<summary>Почему скорость записи на SSD падает после заполнения диска?</summary>
+<p>При заполнении диска свободными блоками становится меньше, что усложняет работу контроллера по сборке мусора (Garbage Collection). Кроме того, иссякает запас SLC-кэша, и диск вынужден писать данные напрямую в медленные ячейки памяти.</p>
+</details>
+
+<details>
+<summary>Влияет ли формат файловой системы на скорость записи?</summary>
+<p>Да, файловые системы типа NTFS и exFAT могут работать с разной эффективностью в зависимости от размера кластера. Для больших файлов лучше подходит NTFS, а для съемных накопителей — exFAT. Разница может составлять десятки процентов при работе с мелкими файлами.</p>
+</details>
+
+<details>
+<summary>Можно ли восстановить скорость записи на изношенном HDD?</summary>
+<p>Физически износ магнитных поверхностей необратим. Однако использование команды <code>chkdsk /r</code> может помочь перенести данные с поврежденных секторов в резервные, что временно улучшит ситуацию, но не вернет исходную скорость механики.</p>
+</details>
+
+<details>
+<summary>Нормально ли, что скорость записи падает в конце копирования большого файла?</summary>
+<p>Да, это нормально для SSD из-за исчерпания SLC-кэша. Для HDD это может быть связано с переходом к записям на внешние, более медленные дорожки диска, где плотность записи ниже.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/s/sk/skhema-tormozov-kalina-1-bez-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Схема тормозов Лада Калина 1 без ABS: устройство, ремонт и замена</span>
+                <span class="pb-related-desc">Подробная схема тормозной системы Lada Kalina без ABS. Устройство передних дисковых и задних барабан</span>
+            </a><a href="/articles/k/ka/kak-proverit-iznos-kolodok-ne-snimaya-kolesa.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить износ тормозных колодок без снятия колес</span>
+                <span class="pb-related-desc">Экспертная инструкция: 5 проверенных способов оценить остаточную толщину колодок без разборки колеса</span>
+            </a><a href="/articles/v/vi/vibratsiya-na-d-pri-nazhatom-tormoze-prichiny.html" class="pb-related-card">
+                <span class="pb-related-title">Вибрация на D при нажатом тормозе: причины, диагностика, ремонт</span>
+                <span class="pb-related-desc">Почему машину трясет на передаче D, когда вы держите педаль тормоза? Разбор причин: подушки двигател</span>
+            </a><a href="/articles/n/ne/neispravnost-tormoznoj-sistemy-znachok-na-paneli-priborov.html" class="pb-related-card">
+                <span class="pb-related-title">Значок неисправности тормозов на панели: причины и что делать</span>
+                <span class="pb-related-desc">Что означает красный или желтый значок тормоза на приборной панели? Разбор причин: уровень жидкости,</span>
+            </a><a href="/articles/s/sk/skrip-pri-nazhatii-na-pedal-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Скрип при нажатии на педаль тормоза: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему скрипит педаль тормоза? Разбор основных причин: от колодок до вакуумного усилителя. Пошаговая</span>
+            </a><a href="/articles/p/pr/printsip-raboty-lyagushki-stop-signala.html" class="pb-related-card">
+                <span class="pb-related-title">Лягушка стоп-сигнала: устройство, принцип работы и ремонт</span>
+                <span class="pb-related-desc">Как работает лягушка стоп-сигнала в автомобиле: схема подключения, типичные неисправности и инструкц</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

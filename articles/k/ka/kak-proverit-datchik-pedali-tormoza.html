@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как проверить датчик педали тормоза: признаки поломки и диагностика мультиметром — ТормозОК</title>
+    <meta name="description" content="Узнайте, как самостоятельно проверить датчик педали тормоза. Подробная инструкция по диагностике мультиметром, расшифровка ошибок и замена своими руками.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-proverit-datchik-pedali-tormoza.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как проверить датчик педали тормоза: признаки поломки и диагностика мультиметром">
+    <meta property="og:description" content="Узнайте, как самостоятельно проверить датчик педали тормоза. Подробная инструкция по диагностике мультиметром, расшифровка ошибок и замена своими руками.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как проверить датчик педали тормоза: признаки поломки и диагностика мультиметром</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-работу-тормозного-сенсора">Введение в работу тормозного сенсора</a></li><li><a href="#типичные-симптомы-неисправного-датчика">Типичные симптомы неисправного датчика</a></li><li><a href="#подготовка-инструментов-и-места-для-диагностики">Подготовка инструментов и места для диагностики</a></li><li><a href="#визуальный-осмотр-и-проверка-механической-части">Визуальный осмотр и проверка механической части</a></li><li><a href="#диагностика-мультиметром-пошаговая-инструкция">Диагностика мультиметром: пошаговая инструкция</a></li><li><a href="#расшифровка-показаний-и-таблица-нормативов">Расшифровка показаний и таблица нормативов</a></li><li><a href="#регулировка-положения-и-замена-узла">Регулировка положения и замена узла</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-uznat-est-li-abs-na-grante-8-klapannoj.html">Как проверить наличие ABS на Ладе Гранте 8-клапанной: 5 рабочих способов</a></li><li><a href="/articles/p/pr/printsip-raboty-lyagushki-tormoza.html">Принцип работы лягушки тормоза: устройство, неисправности и замена</a></li><li><a href="/articles/z/za/zamena-lyagushki-pedali-tormoza.html">Замена датчика тормоза (лягушки): пошаговая инструкция и цены</a></li><li><a href="/articles/p/pr/prokachka-tormozov-kalina-2-s-abs.html">Прокачка тормозов Lada Kalina 2 с ABS: инструкция и нюансы</a></li><li><a href="/articles/e/es/esli-otklyuchit-abs-chto-budet-na-mashine.html">Что будет, если отключить ABS: последствия для безопасности и ремонта</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полный гайд: как проверить датчик педали тормоза и избежать аварийной ситуации</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-работу-тормозного-сенсора">Введение в работу тормозного сенсора</a></li><li><a href="#типичные-симптомы-неисправного-датчика">Типичные симптомы неисправного датчика</a></li><li><a href="#подготовка-инструментов-и-места-для-диагностики">Подготовка инструментов и места для диагностики</a></li><li><a href="#визуальный-осмотр-и-проверка-механической-части">Визуальный осмотр и проверка механической части</a></li><li><a href="#диагностика-мультиметром-пошаговая-инструкция">Диагностика мультиметром: пошаговая инструкция</a></li><li><a href="#расшифровка-показаний-и-таблица-нормативов">Расшифровка показаний и таблица нормативов</a></li><li><a href="#регулировка-положения-и-замена-узла">Регулировка положения и замена узла</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-работу-тормозного-сенсора">Введение в работу тормозного сенсора</br></h2>
+<p>
+<p>Современный автомобиль — это сложный организм, где механика тесно переплетена с электроникой. Одним из ключевых узлов безопасности является <strong>датчик положения педали тормоза</strong>. Именно этот компонент сообщает блоку управления, когда водитель нажимает на педаль, чтобы включить стоп-сигналы, разблокировать селектор АКПП или активировать систему <em>ABS</em>.</p>
+</p>
+<p>
+<p>Многие автовладельцы сталкиваются с ситуацией, когда стоп-сигналы горят постоянно или, наоборот, не загораются при торможении. В таких случаях проблема часто кроется не в самих лампочках, а в неисправности <strong>контактной группы</strong> или самого <em>сенсора</em>. Игнорирование этих симптомов может привести к критическим сбоям в работе электронных систем стабилизации и парковки.</p>
+</p>
+<p>
+<p>Выявить неисправность можно на ранней стадии, если знать характерные признаки. Это позволит избежать дорогостоящего ремонта и обеспечит вашу безопасность на дороге. Ниже мы разберем, как провести диагностику своими руками, используя минимальный набор инструментов.</p>
+</p>
+
+<h2 id="типичные-симптомы-неисправного-датчика">Типичные симптомы неисправного датчика</h2>
+<p>
+<p>Первым признаком того, что <strong>датчик педали тормоза</strong> требует внимания, является некорректная работа стоп-сигналов. Лампы могут гореть постоянно, даже когда педаль отпущена, или мигать в такт работе двигателя при нажатии. Такие ошибки часто фиксируются диагностическим сканером как «Stuck Brake Signal» или аналогичные коды.</p>
+</p>
+<p>
+<p>Еще одним тревожным сигналом становится невозможность переключения селектора передач из положения <code>Park</code> в <code>Drive</code>. На автомобилях с автоматической коробкой передач блокировка рычага работает только при нажатии тормоза. Если электроника не получает верный сигнал, механизм блокировки остается заблокированным.</p>
+</p>
+<p>
+<p>Также стоит обратить внимание на работу круиз-контроля. Если система неожиданно отключается или не активируется при удержании скорости, проблема может быть в ложных данных от тормозного узла. <strong>Электронный блок управления (ЭБУ)</strong> получает сигнал о том, что водитель нажал на тормоз, и принудительно отключает систему поддержания скорости.</p>
+</p>
+<ul>
+<li>🚗 Стоп-сигналы горят постоянно или не загораются при торможении.</li>
+<li>🚗 Невозможно снять рычаг автоматической коробки с парковки без нажатия на педаль.</li>
+<li>🚗 Круиз-контроль не работает или самопроизвольно отключается.</li>
+<li>🚗 Загорается индикатор Check Engine или ошибка ABS на приборной панели.</li>
+</ul>
+<blockquote>⚠️ Внимание: Если горит ошибка ABS, система может отключить антиблокировку колес при экстренном торможении, что значительно увеличит тормозной путь!</blockquote>
+
+<h2 id="подготовка-инструментов-и-места-для-диагностики">Подготовка инструментов и места для диагностики</h2>
+<p>
+<p>Для проведения качественной проверки вам не понадобится сложное оборудование. Достаточно базового набора инструментов, который есть у большинства водителей. Основным прибором для диагностики станет <strong>мультиметр</strong> (тестер), способный измерять напряжение и сопротивление.</p>
+</p>
+<p>
+<p>Перед началом работ необходимо обеспечить безопасный доступ к узлу. Часто датчик расположен в подкапотном пространстве или за пластиковой накладкой под рулевой колонкой. Вам могут понадобиться отвертки для снятия заглушек и фонарик для лучшего освещения рабочей зоны.</p>
+</p>
+<p>
+<p> Убедитесь, что двигатель заглушен, но зажигание включено (для проверки напряжения), либо полностью обесточьте систему, если планируете измерять сопротивление.</p>
+</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Необходимый набор инструментов</h4><label class="check-item"><input type="checkbox"><span>Мультиметр (тестер)</span></label><label class="check-item"><input type="checkbox"><span>Отвертка (крестовая и плоская)</span></label><label class="check-item"><input type="checkbox"><span>Фонарик</span></label><label class="check-item"><input type="checkbox"><span>Провода-перемычки (при необходимости)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="визуальный-осмотр-и-проверка-механической-части">Визуальный осмотр и проверка механической части</h2>
+<p>
+<p>Перед тем как подключать приборы, стоит провести тщательный <strong>визуальный осмотр</strong> устройства. Датчик педали тормоза — это механический узел, который часто подвержен износу из-за вибраций и постоянного движения педали. Осмотрите провода на предмет переломов, следов оплавления или окисления контактов.</p>
+</p>
+<p>
+<p>Обратите внимание на положение <em>фиксатора</em> датчика. На многих моделях, таких как <em>Volkswagen</em>, <em>Toyota</em> или <em>Ford</em>, датчик имеет пластиковый фиксатор, который должен быть защелкнут в пазе рычага педали. Если фиксатор сломан или датчик висит на проводах, он не будет передавать сигнал корректно.</p>
+</p>
+<p>
+<p>Проверьте, как нажимается педаль. Если она ходит слишком свободно или, наоборот, туго, это может влиять на работу сенсора. В некоторых случаях помогает простая регулировка положения датчика на кронштейне.</p>
+</p>
+<blockquote>⚠️ Внимание: Неправильно отрегулированный датчик может не отпускать стоп-сигналы после того, как вы убрали ногу с педали, что дезориентирует водителей сзади.</blockquote>
+<details class="pb-accordion"><summary>Почему датчик вышел из строя?Наиболее частые причины поломки</summary><div class="pb-accordion-body"><p>1. Механический износ контактов внутри корпуса.2. Попадание влаги или грязи в разъем.3. Разрыв проводов в месте изгиба (рядом с педалью).4. Заводской брак катушки или пружины.</p></div></details>
+
+<h2 id="диагностика-мультиметром-пошаговая-инструкция">Диагностика мультиметром: пошаговая инструкция</h2>
+<p>
+<p>Самый надежный способ проверить работоспособность — это замер электрических параметров. Для этого вам понадобится <strong>мультиметр</strong>, переведенный в режим измерения постоянного напряжения (DCV 20V) или сопротивления (Ohm). Найдите электрический разъем датчика и аккуратно отсоедините его.</p>
+</p>
+<p>
+<p>В зависимости от типа датчика (реостатный или герконовый), схема проверки может отличаться. В большинстве современных автомобилей используется датчик с двумя или четырьмя контактами. Вам нужно найти контакты питания (обычно 12В) и сигнальный провод.</p>
+</p>
+<p>
+<p>Если вы меряете напряжение:</p>
+<br>
+<p>1. Подключите мультиметр к контактам питания разъема (один щуп на массу, второй на силовой контакт). При включенном зажигании должно быть около <code>12 В</code>.</p>
+<br>
+<p>2. Соедините сигнальный контакт с массой через мультиметр. При нажатии на педаль напряжение должно измениться (скачок с 0 до 5В или наоборот, в зависимости от логики).</p>
+</p>
+<div class="pb-poll" id="poll-630f7939"><div class="pb-poll-question">📊 Какой инструмент вы используете для диагностики?</div><div class="pb-poll-option" data-poll="630f7939" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Мультиметр</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="630f7939" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Диагностический сканер</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="630f7939" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Визуальный осмотр</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="630f7939" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никак не проверяю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="расшифровка-показаний-и-таблица-нормативов">Расшифровка показаний и таблица нормативов</h2>
+<p>
+<p>Понимание того, что показывают цифры на дисплее, критически важно для правильной оценки состояния. Ниже приведена примерная таблица значений для типовых датчиков, но всегда сверяйтесь с технической документацией на вашу модель <em>автомобиля</em>.</p>
+</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим работы</th>
+<th>Тип датчика</th>
+<th>Ожидаемое значение (В)</th>
+<th>Ожидаемое значение (Ом)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Педаль отпущена</td>
+<td>Нормально разомкнутый</td>
+<td>0 — 0.5 В</td>
+<td>∞ (Бесконечность)</td>
+</tr>
+<tr>
+<td>Педаль нажата</td>
+<td>Нормально разомкнутый</td>
+<td>10 — 12 В</td>
+<td>0 — 5 Ом</td>
+</tr>
+<tr>
+<td>Педаль отпущена</td>
+<td>Нормально замкнутый</td>
+<td>12 В</td>
+<td>0 — 10 Ом</td>
+</tr>
+<tr>
+<td>Педаль нажата</td>
+<td>Нормально замкнутый</td>
+<td>0 — 0.5 В</td>
+<td>∞ (Бесконечность)</td>
+</tr>
+</tbody>
+</table></div>
+<p>
+<p>Если показатели выходят за указанные пределы или не меняются при нажатии на педаль, значит, <strong>датчик неисправен</strong>. В случае с реостатным датчиком (переменная резистор) сопротивление должно плавно меняться от минимума до максимума при движении штока. Рывки или обрывы укажут на износ токопроводящих дорожек внутри.</p>
+</p>
+<blockquote>⚠️ Внимание: Если значения на мультиметре «прыгают» без нажатия педали, это верный признак окисления контактов или разрушения дорожек внутри корпуса!</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Главный критерий исправности — плавное и предсказуемое изменение напряжения или сопротивления при движении штока датчика.</p></aside>
+
+<h2 id="регулировка-положения-и-замена-узла">Регулировка положения и замена узла</h2>
+<p>
+<p>Иногда проблема решается без замены детали. Если датчик просто сместился, его можно <strong>отрегулировать</strong>. На многих моделях корпус датчика вращается или фиксируется винтом. Ослабьте крепеж, нажмите педаль тормоза и зафиксируйте датчик в положении, когда контакты срабатывают точно в момент касания или отпускания.</p>
+</p>
+<p>
+<p>Если регулировка не помогает или внутри корпуса обнаружен физический износ, потребуется замена. Процесс замены почти идентичен для большинства марок: откручиваются два болта крепления, отключается электрический разъем, и старый датчик извлекается.</p>
+</p>
+<p>
+<p>Установка нового элемента требует точности. Наденьте новый <em>датчик</em> на тягу педали и фиксируйте его, пока он не защелкнется или не будет затянут крепежом. После замены обязательно очистите разъем от окислов и смажьте его специальным контактным спреем.</p>
+</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед покупкой нового датчика обязательно сделайте фото старого разъема и контактов, чтобы не ошибиться с маркировкой при заказе запчасти.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли заменить датчик педали тормоза самому?</summary>
+<p>Да, замена датчика педали тормоза — одна из самых простых процедур в ремонте электроники автомобиля. Обычно требуется всего несколько минут и отвертка, если нет необходимости снимать сложные панели салона.</p>
+</details>
+<details>
+<summary>Почему горит Check Engine после замены датчика?</summary>
+<p>Если ошибка сохраняется после замены, возможно, проблема в проводке (обрыв или замыкание на массу) или в самом блоке управления, который сохранил ошибку в памяти. Требуется сброс ошибок через диагностический сканер или отключение аккумулятора на 10-15 минут.</p>
+</details>
+<details>
+<summary>Сколько стоит новый датчик педали тормоза?</summary>
+<p>Стоимость варьируется от 500 до 3000 рублей в зависимости от производителя и марки автомобиля. Оригинал обычно стоит дороже, но гарантирует долговечность, в то время как аналоги могут служить меньше.</p>
+</details>
+<details>
+<summary>Можно ли ездить с нерабочим датчиком?</summary>
+<p>Ездить можно, но это опасно. Вы не увидите, горят ли ваши стоп-сигналы, что повышает риск наезда сзади. Кроме того, на многих авто не будет работать круиз-контроль, парктроник или возможно затруднено переключение передач.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-uznat-est-li-abs-na-grante-8-klapannoj.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить наличие ABS на Ладе Гранте 8-клапанной: 5 рабочих способов</span>
+                <span class="pb-related-desc">Узнайте, есть ли антиблокировочная система на вашей 8-клапанной Гранте. Методы проверки по VIN, приб</span>
+            </a><a href="/articles/p/pr/printsip-raboty-lyagushki-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Принцип работы лягушки тормоза: устройство, неисправности и замена</span>
+                <span class="pb-related-desc">Подробный разбор устройства и принципа работы датчика тормозной педали (лягушки). Признаки поломки, </span>
+            </a><a href="/articles/z/za/zamena-lyagushki-pedali-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Замена датчика тормоза (лягушки): пошаговая инструкция и цены</span>
+                <span class="pb-related-desc">Как самостоятельно заменить датчик стоп-сигналов на педали тормоза. Причины неисправности, инструмен</span>
+            </a><a href="/articles/p/pr/prokachka-tormozov-kalina-2-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Прокачка тормозов Lada Kalina 2 с ABS: инструкция и нюансы</span>
+                <span class="pb-related-desc">Пошаговая инструкция по прокачке тормозной системы Лада Калина 2 с ABS. Устранение воздуха, работа с</span>
+            </a><a href="/articles/e/es/esli-otklyuchit-abs-chto-budet-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Что будет, если отключить ABS: последствия для безопасности и ремонта</span>
+                <span class="pb-related-desc">Разбор последствий отключения системы ABS: как изменится тормозной путь, поведение на льду и влияние</span>
+            </a><a href="/articles/n/ne/neispravnosti-abs-i-sposoby-ikh-ustraneniya.html" class="pb-related-card">
+                <span class="pb-related-title">Неисправности ABS: признаки, причины и способы устранения</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и ремонту системы ABS. Узнайте, как устранить ошибки датчиков, нас</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

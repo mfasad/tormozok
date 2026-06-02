@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tormozok.vercel.app/sitemap.xml

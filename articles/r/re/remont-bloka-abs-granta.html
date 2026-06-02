@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Ремонт блока ABS на Lada Granta: диагностика, прошивка и замена — ТормозОК</title>
+    <meta name="description" content="Полное руководство по ремонту и диагностике блока ABS (ESP) Lada Granta. Причины ошибок, замена датчиков, перепрошивка контроллера и подбор аналогов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/re/remont-bloka-abs-granta.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Ремонт блока ABS на Lada Granta: диагностика, прошивка и замена">
+    <meta property="og:description" content="Полное руководство по ремонту и диагностике блока ABS (ESP) Lada Granta. Причины ошибок, замена датчиков, перепрошивка контроллера и подбор аналогов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Ремонт блока ABS на Lada Granta: диагностика, прошивка и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-проблемы-антиблокировочной-системы">Введение в проблемы антиблокировочной системы</a></li><li><a href="#типичные-причины-неисправностей-на-лада-гранта">Типичные причины неисправностей на Лада Гранта</a></li><li><a href="#диагностика-и-чтение-кодов-ошибок">Диагностика и чтение кодов ошибок</a></li><li><a href="#замена-датчиков-скорости-вращения-колес">Замена датчиков скорости вращения колес</a></li><li><a href="#ремонт-и-прошивка-электронного-блока-abs">Ремонт и прошивка электронного блока ABS</a></li><li><a href="#сравнительная-таблица-блоков-abs-для-гранты">Сравнительная таблица блоков ABS для Гранты</a></li><li><a href="#процедура-проверки-тормозной-жидкости">Процедура проверки тормозной жидкости</a></li><li><a href="#итоги-и-профилактика-поломок">Итоги и профилактика поломок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-otklyuchit-abs-na-nive-21214.html">Как отключить ABS на Ниве 21214: полная инструкция по отключению системы</a></li><li><a href="/articles/b/bl/blok-abs-laguna-2.html">Блок ABS для Renault Laguna 2: признаки поломки, диагностика и замена</a></li><li><a href="/articles/4/47/479703074r-koltso-abs-kolichestvo-metok.html">Кольцо ABS 479703074R: расшифровка меток и маркировка</a></li><li><a href="/articles/z/za/zagorelsya-znachok-abs-granta.html">Загорелся значок ABS: причины, диагностика и способы ремонта</a></li><li><a href="/articles/i/in/intarder-chto-eto-takoe.html">Интардер что это такое: назначение и принцип работы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Ремонт блока ABS Lada Granta: от диагностики до восстановления</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-проблемы-антиблокировочной-системы">Введение в проблемы антиблокировочной системы</a></li><li><a href="#типичные-причины-неисправностей-на-лада-гранта">Типичные причины неисправностей на Лада Гранта</a></li><li><a href="#диагностика-и-чтение-кодов-ошибок">Диагностика и чтение кодов ошибок</a></li><li><a href="#замена-датчиков-скорости-вращения-колес">Замена датчиков скорости вращения колес</a></li><li><a href="#ремонт-и-прошивка-электронного-блока-abs">Ремонт и прошивка электронного блока ABS</a></li><li><a href="#сравнительная-таблица-блоков-abs-для-гранты">Сравнительная таблица блоков ABS для Гранты</a></li><li><a href="#процедура-проверки-тормозной-жидкости">Процедура проверки тормозной жидкости</a></li><li><a href="#итоги-и-профилактика-поломок">Итоги и профилактика поломок</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-проблемы-антиблокировочной-системы">Введение в проблемы антиблокировочной системы</h2>
+<p>Система антиблокировки колес на автомобилях <em>Lada Granta</em> является критическим элементом пассивной безопасности, которая предотвращает юз колес при экстренном торможении. Когда на приборной панели загорается желтая лампа с надписью <code>ABS</code>, это сигнализирует о неисправности в цепи управления или датчиках, что требует немедленного внимания водителя.</p>
+<p>Игнорирование сигналов системы может привести к тому, что при резком торможении колеса заблокируются, и автомобиль уйдет в неконтролируемый занос, особенно на скользкой дороге. Владельцы часто сталкиваются с ложными ошибками, вызванными окислением контактов, или реальными сбоями в электронном блоке управления (ЭБУ).</p>
+<h2 id="типичные-причины-неисправностей-на-лада-гранта">Типичные причины неисправностей на Лада Гранта</h2>
+<p>Самой распространенной проблемой, вызывающей срабатывание лампы, является выход из строя датчиков скорости вращения колес. Эти устройства расположены в ступицах и могут повреждаться из-за попадания грязи, воды или механических ударов при езде по плохим дорогам.</p>
+<p>Часто виновником становится обрыв проводки, ведущей к датчикам. Вибрация автомобиля и постоянные перепады температур приводят к переламыванию проводов внутри изоляции, что делает диагностику визуально невозможной без специального оборудования.</p>
+<p>Другой причиной может быть сбой в работе самого модуля ABS. Внутри блока находятся насос и клапаны, которые со временем могут заклинить или выйти из строя из-за попадания влаги через поврежденные разъемы.</p>
+<p><blockquote>⚠️ Внимание: Если лампа ABS горит постоянно, система просто отключается, и машина тормозит как автомобиль без ABS. Это не означает, что тормоза не работают, но эффективность экстренной остановки сильно снижается.</blockquote></p>
+<h2 id="диагностика-и-чтение-кодов-ошибок">Диагностика и чтение кодов ошибок</h2>
+<p>Для точного определения проблемы необходимо использовать диагностический сканер, подключенный к разъему OBD-II. В случае с <em>Lada Granta</em> часто используются адаптеры <code>ELM327</code> в паре с мобильными приложениями, такими как <code>OpenDiag</code> или <code>Car Scanner</code>.</p>
+<p>При подключении к системе вы получите список кодов ошибок. Например, код <code>C1001</code> может указывать на неисправность датчика скорости переднего левого колеса, а <code>C1020</code> — на проблему с давлением в гидравлическом блоке.</p>
+<p>Важно различать ошибки датчиков и ошибки гидравлического модуля. Если ошибка касается конкретного колеса, проблему чаще всего можно решить заменой датчика или чисткой его контактной группы. Если же ошибка общая, проблема, вероятно, кроется в самом блоке управления.</p>
+<p><blockquote>⚠️ Внимание: Не пытайтесь сбросить ошибку путем отключения аккумулятора. В большинстве случаев после перезагрузки системы ошибка вернется, так как физическая причина неисправности не устранена.</blockquote></p>
+<div class="pb-poll" id="poll-77206633"><div class="pb-poll-question">📊 Какой симптом у вашего автомобиля?</div><div class="pb-poll-option" data-poll="77206633" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Горит только лампа ABS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="77206633" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Абсолютно не работает тормоз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="77206633" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Самоблокирующиеся колеса</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="77206633" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет симптомов, просто ошибка на приборке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<details class="pb-accordion"><summary>Почему ошибка может быть ложной?</summary><div class="pb-accordion-body"><p>Иногда ошибка возникает из-за низкого напряжения в бортовой сети. Если аккумулятор разряжен, ЭБУ ABS может не получить достаточного питания для корректной работы и выдать ошибку, которая пропадет после запуска двигателя и зарядки АКБ.</p></div></details>
+
+<h2 id="замена-датчиков-скорости-вращения-колес">Замена датчиков скорости вращения колес</h2>
+<p>Процесс замены датчиков на <em>Lada Granta</em> не представляет особой сложности, но требует аккуратности. Датчики крепятся болтами к поворотному кулаку и имеют длинный провод, идущий к разъему.</p>
+<p>Сначала нужно снять колесо и найти датчик. Очистите место его установки от грязи и ржавчины зубной щеткой или металлической щеткой, так как посторонние частицы могут мешать корректному считыванию сигнала.</p>
+<p>Отсоедините разъем и открутите крепежный болт. Новый датчик должен быть установлен точно так же, как старый, без перекосов. Убедитесь, что зазор между датчиком и зубчатым кольцом ступицы минимален, но не допускает трения.</p>
+<ul>
+<li>Перед покупкой нового датчика обязательно проверьте его сопротивление мультиметром (если есть возможность) или визуально осмотрите провод на предмет порезов.</li>
+<li>Используйте только оригинальные запчасти или проверенные аналоги, так как дешевые китайские датчики часто имеют неверную длину провода или несовместимый разъем.</li>
+<li>После установки обязательно очистите разъемы и смажьте их специальной силиконовой смазкой для защиты от влаги.</li>
+</ul>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Замена датчика ABS</h4><label class="check-item"><input type="checkbox"><span>Снять колесо</span></label><label class="check-item"><input type="checkbox"><span>Очистить посадочное место</span></label><label class="check-item"><input type="checkbox"><span>Отключить старый датчик</span></label><label class="check-item"><input type="checkbox"><span>Установить новый датчик</span></label><label class="check-item"><input type="checkbox"><span>Проверить зазор</span></label><label class="check-item"><input type="checkbox"><span>Собрать колесо</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<h2 id="ремонт-и-прошивка-электронного-блока-abs">Ремонт и прошивка электронного блока ABS</h2>
+<p>Если замена датчиков и проверка проводки не помогли, проблема, скорее всего, находится внутри самого блока управления ABS. На <em>Lada Granta</em> используются блоки производства Bosch или Delfi, которые часто выходят из строя из-за перегорания внутренних дорожек или выхода из строя микросхем.</p>
+<p>В некоторых случаях блок можно восстановить без полной замены. Для этого необходимо снять блок, разобрать его корпус и проверить пайку контактов. Часто достаточно просто перепаять разъемы или заменить сгоревшие предохранители внутри корпуса.</p>
+<p>Частой проблемой является программный сбой. В таком случае требуется перепрошивка блока ABS специальным оборудованием. Это должно делать только квалифицированный специалист, так как неправильная прошивка может «убить» блок окончательно.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы планируете ремонт блока у сторонних мастеров, требуйте гарантию на работы. Ремонт электроники — это всегда лотерея, и гарантия защитит вас от повторных затрат.</p></aside>
+
+<h2 id="сравнительная-таблица-блоков-abs-для-гранты">Сравнительная таблица блоков ABS для Гранты</h2>
+<p>Выбор подходящего блока управления зависит от комплектации автомобиля и года выпуска. Ниже приведена таблица с основными характеристиками распространенных модулей.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Производитель</th>
+<th>Модель блока</th>
+<th>Годы установки</th>
+<th>Особенности</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bosch</td>
+<td>Bosch 8.1</td>
+<td>2013–2018</td>
+<td>Надежный, но дорогой в ремонте</td>
+</tr>
+<tr>
+<td>Delfi</td>
+<td>Delfi ABS 9.1</td>
+<td>2018–2020</td>
+<td>Более компактный, часто встречается на рестайлинге</td>
+</tr>
+<tr>
+<td>Continental</td>
+<td>Mark 60</td>
+<td>2020–наст. время</td>
+<td>Интегрированная система стабилизации ESP</td>
+</tr>
+<tr>
+<td>Аналог</td>
+<td>Generic ABS</td>
+<td>Все годы</td>
+<td>Дешевле, но требует индивидуальной настройки</td>
+</tr>
+</tbody>
+</table></div>
+<p><blockquote>⚠️ Внимание: При замене блока ABS на аналогичный от другой комплектации (например, с ABS на без ABS) могут возникнуть проблемы с совместимостью датчиков и проводки. Всегда сверяйте VIN-код перед покупкой.</blockquote></p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Ремонт блока ABS часто дешевле замены, но требует высокой квалификации электромеханика и наличия специального диагностического оборудования.</p></aside>
+
+<h2 id="процедура-проверки-тормозной-жидкости">Процедура проверки тормозной жидкости</h2>
+<p>Работа системы ABS напрямую зависит от качества и уровня тормозной жидкости. Если жидкость загрязнена или ее уровень ниже минимальной отметки, система может отключиться и выдать ошибку.</p>
+<p>Проверяйте уровень жидкости в расширительном бачке под капотом. Крышка бачка обычно имеет маркировку <code>DOT-4</code>. Не смешивайте разные типы жидкостей, это может привести к образованию осадка и заклиниванию клапанов.</p>
+<p>Если жидкость темная или содержит примеси, произведите полную замену. Воздух в системе также может стать причиной некорректной работы насоса ABS, поэтому после любых манипуляций с тормозной системой необходимо провести прокачку.</p>
+<p><em>Lada Granta</em> оснащена системой, которая автоматически прокачивает воздух при первом запуске после сброса ошибок, но ручная прокачка часто требуется для полного исключения воздушных пробок.</p>
+<h2 id="итоги-и-профилактика-поломок">Итоги и профилактика поломок</h2>
+<p>Регулярная диагностика и уход за тормозной системой помогут избежать дорогостоящего ремонта блока ABS. Не забывайте проверять состояние проводки датчиков и уровень тормозной жидкости при каждом техническом обслуживании.</p>
+<p>Если вы заметили, что педаль тормоза стала «ватной» или слышен странный гул при торможении, немедленно обратитесь в сервис. Игнорирование малейших признаков неисправности может привести к серьезным последствиям на дороге.</p>
+<p>Помните, что система ABS — это сложная электронно-механическая система, и попытки самостоятельного ремонта без должных знаний и инструментов могут усугубить ситуацию.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Профилактика — лучший способ сохранить работоспособность ABS. Регулярная проверка проводки и уровня жидкости экономит деньги и нервы.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему лампа ABS загорелась после мойки автомобиля?</summary>
+<p>Чаще всего вода попадает в разъемы датчиков скорости или в сам блок ABS, вызывая короткое замыкание или окисление контактов. После высыхания проблема может исчезнуть, но лучше проверить разъемы.</p>
+</details>
+<details>
+<summary>Можно ли ездить с горящей лампой ABS?</summary>
+<p>Да, можно, так как основная тормозная система продолжает работать. Однако система антиблокировки будет отключена, и при экстренном торможении колеса могут заблокироваться.</p>
+</details>
+<details>
+<summary>Сколько стоит ремонт блока ABS на Гранту?</summary>
+<p>Стоимость зависит от типа неисправности. Замена датчика стоит недорого, ремонт электроники блока может обойтись от 3000 до 10000 рублей, а покупка нового блока — от 15000 рублей и выше.</p>
+</details>
+<details>
+<summary>Нужно ли делать сход-развал после замены датчиков ABS?</summary>
+<p>Нет, замена датчиков скорости колес не влияет на углы установки колес, поэтому сход-развал делать не обязательно. Однако если вы меняли ступицу или рычаги, то процедура необходима.</p>
+</details>
+<details>
+<summary>Как сбросить ошибку ABS самостоятельно?</summary>
+<p>Без диагностического сканера сбросить ошибку нельзя. Она сохраняется в памяти ЭБУ до тех пор, пока неисправность не будет устранена и код не будет стерт специальным прибором.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-otklyuchit-abs-na-nive-21214.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить ABS на Ниве 21214: полная инструкция по отключению системы</span>
+                <span class="pb-related-desc">Подробное руководство: как отключить ABS на ВАЗ 21214 (Нива 4x4). Механические и электрические спосо</span>
+            </a><a href="/articles/b/bl/blok-abs-laguna-2.html" class="pb-related-card">
+                <span class="pb-related-title">Блок ABS для Renault Laguna 2: признаки поломки, диагностика и замена</span>
+                <span class="pb-related-desc">Полный гид по модулю ABS на Лагуне 2. Симптомы неисправности, проверка датчиков, ремонт гидроблока и</span>
+            </a><a href="/articles/4/47/479703074r-koltso-abs-kolichestvo-metok.html" class="pb-related-card">
+                <span class="pb-related-title">Кольцо ABS 479703074R: расшифровка меток и маркировка</span>
+                <span class="pb-related-desc">Полный разбор артикула 479703074R. Сколько меток на кольце ABS, как отличить оригинал, нюансы подбор</span>
+            </a><a href="/articles/z/za/zagorelsya-znachok-abs-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Загорелся значок ABS: причины, диагностика и способы ремонта</span>
+                <span class="pb-related-desc">Увидели значок ABS на панели? Узнайте основные причины ошибки, как проверить датчики и модулятор. По</span>
+            </a><a href="/articles/i/in/intarder-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Интардер что это такое: назначение и принцип работы</span>
+                <span class="pb-related-desc">Разбираем, что такое интардер в тормозных системах. Принцип работы, отличия от тормозов, виды и влия</span>
+            </a><a href="/articles/a/an/antiblokirovochnaya-tormoznaya-sistema-eto-prostymi-slovami.html" class="pb-related-card">
+                <span class="pb-related-title">ABS в машине: что это такое простыми словами</span>
+                <span class="pb-related-desc">Антиблокировочная система ABS: как работает, зачем нужна, плюсы и минусы. Объяснение без сложных тер</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Расчет остановочного пути: формула, факторы и безопасность — ТормозОК</title>
+    <meta name="description" content="Узнайте, как рассчитать безопасный остановочный путь по формуле. Разберем влияние скорости, реакции и покрытия на безопасность вождения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-rasschitat-ostanovochnyj-put.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет остановочного пути: формула, факторы и безопасность">
+    <meta property="og:description" content="Узнайте, как рассчитать безопасный остановочный путь по формуле. Разберем влияние скорости, реакции и покрытия на безопасность вождения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/bezopasnost-i-normy/">Безопасность и нормы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Расчет остановочного пути: формула, факторы и безопасность</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-из-чего-складывается-остановочный-путь">Физика процесса: из чего складывается остановочный путь</a></li><li><a href="#время-реакции-человека-и-его-влияние-на-дистанцию">Время реакции человека и его влияние на дистанцию</a></li><li><a href="#тормозной-путь-зависимость-от-скорости-и-покрытия">Тормозной путь: зависимость от скорости и покрытия</a></li><li><a href="#практические-методы-расчета-для-водителя">Практические методы расчета для водителя</a></li><li><a href="#влияние-системы-abs-и-типа-тормозов">Влияние системы ABS и типа тормозов</a></li><li><a href="#обучение-и-тренировка-мышечной-памяти">Обучение и тренировка мышечной памяти</a></li><li><a href="#особенности-оценки-в-темное-время-суток">Особенности оценки в темное время суток</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/n/nu/nuzhno-li-pereklyuchat-peredachi-pri-tormozhenii-na-mekhanike.html">Переключение передач при торможении на механике: Нужно ли это и как делать?</a></li><li><a href="/articles/c/ch/chto-delat-esli-otkazali-tormoza-na-avtomate-vo-vremya-dvizheniya.html">Отказ тормозов на автомате: пошаговая инструкция спасения</a></li><li><a href="/articles/t/to/tormoznoj-put-na-skorosti-100-km-ch.html">Тормозной путь на скорости 100 км/ч: расчет, факторы и безопасность</a></li><li><a href="/articles/t/to/tormoznoj-put-pri-60-km.html">Тормозной путь при 60 км/ч: расчёт, факторы и реальная безопасность</a></li><li><a href="/articles/s/sk/skolko-tormoznykh-sistem-v-avtomobile.html">Сколько тормозных систем в современном автомобиле: полный обзор</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как рассчитать остановочный пути: формула, факторы и реальные примеры</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-из-чего-складывается-остановочный-путь">Физика процесса: из чего складывается остановочный путь</a></li><li><a href="#время-реакции-человека-и-его-влияние-на-дистанцию">Время реакции человека и его влияние на дистанцию</a></li><li><a href="#тормозной-путь-зависимость-от-скорости-и-покрытия">Тормозной путь: зависимость от скорости и покрытия</a></li><li><a href="#практические-методы-расчета-для-водителя">Практические методы расчета для водителя</a></li><li><a href="#влияние-системы-abs-и-типа-тормозов">Влияние системы ABS и типа тормозов</a></li><li><a href="#обучение-и-тренировка-мышечной-памяти">Обучение и тренировка мышечной памяти</a></li><li><a href="#особенности-оценки-в-темное-время-суток">Особенности оценки в темное время суток</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Остановочный путь — это критически важный параметр, определяющий способность водителя избежать столкновения в экстренной ситуации. Многие новички ошибочно полагают, что машина останавливается мгновенно после нажатия на педаль тормоза, но реальность такова, что транспортное средство продолжает движение на значительное расстояние.</p>
+
+<p>Понимание физики процесса и умение приблизительно оценить этот параметр на ходу — навык, который отличает опытного водителя от неосторожного. Неправильная оценка дистанции становится причиной большинства аварийных ситуаций на дорогах с высокой проходимостью.</p>
+
+<p>В этой статье мы разберем не только сухие формулы из учебников физики, но и реальные условия эксплуатации автомобиля. Вы узнаете, почему <strong>скорость</strong> влияет на торможение экспоненциально, а не линейно, и как состояние дорожного покрытия меняет картину в разы.</p>
+
+<h2 id="физика-процесса-из-чего-складывается-остановочный-путь">Физика процесса: из чего складывается остановочный путь</h2>
+<p>Остановочный путь определяется суммой двух ключевых величин: пути, пройденного за время реакции водителя, и непосредственно тормозного пути. Эти понятия часто путают, но для безопасности их необходимо четко разграничивать и рассчитывать отдельно.</p>
+
+<p>Первая часть — это расстояние, которое автомобиль проезжает с момента, когда водитель увидел опасность, до момента, когда его нога физически переносится с педали газа на педаль тормоза. В этот момент <strong>время реакции</strong> играет решающую роль.</p>
+
+<p>Вторая часть — это путь, пройденный машиной с момента начала торможения до полной остановки. Здесь в игру вступает физика трения, эффективность тормозной системы и состояние шин. Важно понимать, что <strong>тормозной путь</strong> не зависит от времени реакции, но напрямую зависит от интенсивности нажатия на педаль.</p>
+
+<p>Итоговая формула выглядит просто: $\text{S}_{\text{ост}} = \text{S}_{\text{реакции}} + \text{S}_{\text{торм}}$. Однако на практике каждый из этих параметров подвержен влиянию множества переменных, которые водителю нужно учитывать в уме.</p>
+
+<blockquote>⚠️ Внимание: Большинство аварий происходит именно из-за недооценки времени реакции, а не из-за неисправности тормозов. Запасное расстояние — ваш главный союзник.</blockquote>
+
+<h2 id="время-реакции-человека-и-его-влияние-на-дистанцию">Время реакции человека и его влияние на дистанцию</h2>
+<p>Человеческий фактор является самой непредсказуемой переменной в уравнении безопасности. Среднее время реакции водителя составляет от 0,7 до 1,5 секунды, но в реальной жизни этот показатель может сильно варьироваться.</p>
+
+<p>На скорость восприятия сигнала и принятия решения влияют усталость, стресс, прием медикаментов или алкогольных напитков. В состоянии опьянения время реакции может увеличиться в два и более раз, что при скорости 60 км/ч превращает дополнительные полсекунды в катастрофические десятки метров.</p>
+
+<p>Даже без внешних факторов, время отклика зависит от сложности ситуации. Если водитель ожидает опасность, он реагирует быстрее. Но если внезапный пешеход выбегает из-за припаркованного автомобиля, срабатывает защитная реакция организма, и драгоценные доли секунды тратятся на осознание происходящего.</p>
+
+<ul>
+<li>✅ <strong>Спокойное состояние</strong>: 0,7–1,0 секунды — водитель сфокусирован на дороге.</li>
+<li>⚠️ <strong>Отвлекающие факторы</strong>: 1,5–2,5 секунды — разговор, телефон, навигатор.</li>
+<li>❌ <strong>Нарушенное состояние</strong>: 3,0+ секунды — алкоголь, лекарства, сильная усталость.</li>
+</ul>
+
+<p>Расчет показывает, что даже за одну секунду при скорости 100 км/ч автомобиль пролетает почти 28 метров, что равно длине трех легковых машин. Именно поэтому <strong>боковой интервал</strong> и дистанция до впереди идущего транспорта должны быть увеличены при утомлении.</p>
+
+<h2 id="тормозной-путь-зависимость-от-скорости-и-покрытия">Тормозной путь: зависимость от скорости и покрытия</h2>
+<p>Если путь реакции линейно зависит от скорости, то тормозной путь зависит от неё квадратично. Это означает, что при удвоении скорости тормозной путь увеличивается не в два, а в четыре раза. Физика здесь неумолима.</p>
+
+<p>Увеличение скорости с 50 км/ч до 100 км/ч требует не просто вдвое большего расстояния для остановки, а вчетверо большего. Это фундаментальный закон кинетической энергии: энергия движения растет пропорционально квадрату скорости.</p>
+
+<p>Второй критический параметр — коэффициент сцепления шин с дорогой, который определяется типом дорожного покрытия. Асфальт, гравий, лед или укатанный снежный накат имеют совершенно разные значения трения.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип покрытия</th>
+<th>Коэффициент сцепления ($\mu$)</th>
+<th>Условие движения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Сухой асфальт</td>
+<td>0,7 – 0,8</td>
+<td>Оптимальные условия, лето</td>
+</tr>
+<tr>
+<td>Мокрый асфальт</td>
+<td>0,4 – 0,5</td>
+<td>Дождь, влага на дороге</td>
+</tr>
+<tr>
+<td>Укатанный снег</td>
+<td>0,2 – 0,3</td>
+<td>Зима, очищенная трасса</td>
+</tr>
+<tr>
+<td>Лед</td>
+<td>0,1 – 0,15</td>
+<td>Гололед, мороз</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание на таблицу: на льду коэффициент сцепления падает в 5-7 раз по сравнению с сухим асфальтом. Это значит, что <strong>тормозной путь</strong> на льду будет в 5-7 раз длиннее при той же скорости.</p>
+
+<p>Также важно учитывать состояние <em>шины</em> и <em>тормозных колодок</em>. Изношенная резина с лысым протектором не сможет обеспечить заявленный коэффициент сцепления даже на сухом асфальте, особенно в дождь, когда возникает эффект аквапланирования.</p>
+
+<blockquote>⚠️ Внимание: При движении по гололеду тормозной путь может превысить 100 метров даже на скорости 40 км/ч. Остановка требует огромного пространства.</blockquote>
+
+<div class="pb-poll" id="poll-0f22dbbe"><div class="pb-poll-question">📊 Где вы чаще всего замечаете ухудшение сцепления?</div><div class="pb-poll-option" data-poll="0f22dbbe" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">На мокром асфальте в городе</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0f22dbbe" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">На снегу за городом</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0f22dbbe" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">На льду в тоннеле</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0f22dbbe" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">На гравийной дороге</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="практические-методы-расчета-для-водителя">Практические методы расчета для водителя</h2>
+<p>Знать точную формулу физики в голове сложно, поэтому водители используют упрощенные правила, позволяющие быстро оценить дистанцию в реальных условиях. Одно из самых популярных — «правило трех секунд» для дистанции и упрощенная формула для торможения.</p>
+
+<p>Для расчета тормозного пути в метрах при экстренном торможении на сухом асфальте можно использовать деление скорости на десять и возведение результата в квадрат. Например, при скорости 60 км/ч: $(60/10)^2 = 36$ метров.</p>
+
+<p>Эта формула дает хорошую оценку для <strong>экстренного торможения</strong>. Если же используется обычное, спокойное нажатие на педаль, тормозной путь может быть в полтора-два раза больше. Всегда закладывайте запас.</p>
+
+<p>Для расчета пути реакции на сухом асфальте просто разделите скорость на 10 и умножьте на 3. Полученное число покажет примерное расстояние в метрах. При скорости 90 км/ч: $9 \times 3 = 27$ метров пути реакции.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист безопасности перед поездкой</h4><label class="check-item"><input type="checkbox"><span>Проверить давление в шинах</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть протектор на износ</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в исправности тормозов</span></label><label class="check-item"><input type="checkbox"><span>Очистить стекла от конденсата</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Суммируя эти два значения, вы получите общий <strong>остановочный путь</strong>. При 90 км/ч это будет $27 + 81 = 108$ метров. Это расстояние, которое вам нужно, чтобы безопасно остановиться перед препятствием.</p>
+
+<details class="pb-accordion"><summary>Откуда берется формула квадрата скорости?|Кинетическая энергия тела равна $E_k = \frac{mv^2}{2}$. Работа силы трения, необходимая для остановки, равна $A = F_{тр} \cdot S$. Приравнивая работу к кинетической энергии, мы получаем, что путь $S$ пропорционален квадрату скорости $v^2$.-->
+
+<h2 id="влияние-системы-abs-и-типа-тормозов">Влияние системы ABS и типа тормозов</h2>
+<p>Современные автомобили оснащены антиблокировочной системой тормозов (ABS), которая предотвращает блокировку колес при экстренном торможении. Это позволяет сохранить управляемость, но не всегда гарантирует минимальный остановочный путь.</p>
+
+<p>На сухом асфальте опытный водитель, использующий метод «насоса» или юза колес, может иногда сократить путь остановки по сравнению с ABS. Однако для обычного водителя ABS является единственным способом эффективно затормозить, не потеряв контроль над машиной.</p>
+
+<p>На рыхлых поверхностях (гравий, глубокий снег, песок) блокировка колес может быть выгоднее. Когда колеса буксуют, перед ними образуется «гребень» из материала, который работает как якорь, сокращая путь. ABS в таких условиях может его увеличить.</p>
+
+<p>Различия между дисковыми и барабанными механизмами также играют роль. <em>Дисковые тормоза</em> быстрее охлаждаются и эффективнее работают в дождь, тогда как барабанные могут страдать от перегрева и «ватной» педали при длительном торможении.</p>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>tip:Если на дороге гравий или снег, и у вас нет ABS, попробуйте нажать тормоз до блокировки колес и отпустить, чтобы создать «снежную горку» перед шинами. Это может сократить путь, но требует тренировки.</p></div></details>
+
+<h2 id="обучение-и-тренировка-мышечной-памяти">Обучение и тренировка мышечной памяти</h2>
+<p>Теоретические знания должны подкрепляться практическими навыками. Водитель должен уметь интуитивно чувствовать дистанцию, которую потребуется проехать до полной остановки. Это достигается только опытом и регулярной тренировкой внимания.</p>
+
+<p>На специальных площадках проводятся упражнения по торможению с разных скоростей. Это позволяет прочувствовать, как меняется поведение машины при экстренном нажатии на педаль и как срабатывает ABS.</p>
+
+<p> В состоянии стресса или паники человек может совершать хаотичные движения, вместо того чтобы нажимать на тормоз. Поэтому спокойствие — ключ к безопасности.</p>
+
+<ul>
+<li>🚗 Практикуйте экстренное торможение на пустой площадке, чтобы понять поведение <strong>машины</strong>.</li>
+<li>🧠 Тренируйте рефлексы, играя в наблюдательные игры во время вождения.</li>
+<li>⏱️ Следите за временем реакции, стараясь не отвлекаться на второстепенные раздражители.</li>
+</ul>
+
+<p>Регулярное напоминание себе о рисках и постоянный контроль за дистанцией помогают сформировать правильную привычку. Водитель, который всегда держит запас, спасает себя и других.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правило 3-х секунд — простейший способ держать безопасную дистанцию в любых условиях, при этом увеличивая её на плохой дороге.</p></aside>
+
+<h2 id="особенности-оценки-в-темное-время-суток">Особенности оценки в темное время суток</h2>
+<p>Ночью или в сумерках способность водителя оценивать обстановку снижается. Свет фар ограничивает видимость, и часто препятствие обнаруживается слишком поздно, когда время реакции уже не может компенсировать недостаточную дистанцию.</p>
+
+<p>Дальность видимости при ближнем свете составляет около 30-40 метров, при дальнем — до 100-150 метров. Если вы едете со скоростью 90 км/ч (25 м/с), то за время реакции в 1 секунду вы преодолеете 25 метров, а тормозной путь составит еще 80 метров. Итого 105 метров.</p>
+
+<p>Это означает, что при ближнем свете фар вы физически не сможете остановиться, если пешеход выйдет на дорогу на расстоянии 50 метров от вас. Скорость движения ночью должна быть строго ограничена дальностью видимости.</p>
+
+<p>Используйте <code>дальний свет</code> там, где это разрешено правилами, чтобы увеличить обзор. Но будьте готовы быстро переключиться на ближний при появлении встречного транспорта, чтобы не ослепить его водителя.</p>
+
+<blockquote>⚠️ Внимание: При плохой освещенности снижайте скорость до той, при которой остановочный путь не превысит дальность видимости ваших фар.</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Как рассчитать остановочный путь в дождь?</summary>
+<p>В дождь коэффициент сцепления падает в 1,5–2 раза. Используйте стандартную формулу для сухого асфальта и умножьте полученный результат на 1,5 или 2. Также увеличьте расстояние до впереди идущей машины.</p>
+</details>
+
+<details>
+<summary>Что делать, если тормоза стали мягкими?</summary>
+<p>Мягкая педаль тормоза говорит о попадании воздуха в систему или проблемах с тормозной жидкостью. Немедленно прекратите эксплуатацию автомобиля и обратитесь в сервис. Рассчитывать на штатное торможение в такой ситуации нельзя.</p>
+</details>
+
+<details>
+<summary>Влияет ли вес автомобиля на остановочный путь?</summary>
+<p>Да, более тяжелый автомобиль имеет большую кинетическую энергию. Однако современные тормозные системы рассчитываются с запасом. Основное влияние оказывает не вес, а состояние шин и асфальта, но груженый грузовик всегда останавливается дольше легковой машины.</p>
+</details>
+
+<details>
+<summary>Можно ли останавливаться быстрее, не нажимая на сцепление?</summary>
+<p>При экстренном торможении на скорости сцепление нажимать не нужно. Двигатель не мешает остановке, а двигательный тормоз даже помогает. Сцепление нажимается только перед полной остановкой, чтобы мотор не заглох.</p>
+</details>
+
+<details>
+<summary>Как энтузиасты снижают тормозной путь?</summary>
+<p>Спортивные водители используют высокопроизводительные шины, улучшенные колодки, тормозную жидкость с высокой температурой кипения и вентилируемые диски. Это позволяет выдерживать высокие нагрузки и сохранять эффективность торможения.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/n/nu/nuzhno-li-pereklyuchat-peredachi-pri-tormozhenii-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Переключение передач при торможении на механике: Нужно ли это и как делать?</span>
+                <span class="pb-related-desc">Разбираем, нужно ли переключать передачи при торможении на механике. Техника торможения двигателем, </span>
+            </a><a href="/articles/c/ch/chto-delat-esli-otkazali-tormoza-na-avtomate-vo-vremya-dvizheniya.html" class="pb-related-card">
+                <span class="pb-related-title">Отказ тормозов на автомате: пошаговая инструкция спасения</span>
+                <span class="pb-related-desc">Полный алгоритм действий при отказе тормозов на машине с АКПП. Как использовать пониженные передачи,</span>
+            </a><a href="/articles/t/to/tormoznoj-put-na-skorosti-100-km-ch.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной путь на скорости 100 км/ч: расчет, факторы и безопасность</span>
+                <span class="pb-related-desc">Точный тормозной путь на скорости 100 км/ч зависит от многих факторов. Разбираем физику, влияние рез</span>
+            </a><a href="/articles/t/to/tormoznoj-put-pri-60-km.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной путь при 60 км/ч: расчёт, факторы и реальная безопасность</span>
+                <span class="pb-related-desc">Сколько метров машина едет после нажатия педали на скорости 60 км/ч? Разбор физики, влияния шин, дор</span>
+            </a><a href="/articles/s/sk/skolko-tormoznykh-sistem-v-avtomobile.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько тормозных систем в современном автомобиле: полный обзор</span>
+                <span class="pb-related-desc">Разбираем типы тормозных систем: рабочая, запасная и стояночная. Узнайте, как они работают и почему </span>
+            </a><a href="/articles/m/ma/mashina-plokho-tormozit-posle-dozhdya.html" class="pb-related-card">
+                <span class="pb-related-title">Почему машина плохо тормозит после дождя: причины и решение</span>
+                <span class="pb-related-desc">Вода в тормозной системе: почему эффект пропадает при намокании дисков, как восстановить эффективнос</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

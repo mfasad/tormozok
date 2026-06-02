@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Что такое Opera Flags и как использовать Angle Engine: настройка рендеринга — ТормозОК</title>
+    <meta name="description" content="Подробный гайд по параметру opera flags use angle. Узнайте, как включить аппаратное ускорение графики в браузере Opera и что делать, если углы искажаются.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/o/op/opera-flags-use-angle.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Что такое Opera Flags и как использовать Angle Engine: настройка рендеринга">
+    <meta property="og:description" content="Подробный гайд по параметру opera flags use angle. Узнайте, как включить аппаратное ускорение графики в браузере Opera и что делать, если углы искажаются.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Что такое Opera Flags и как использовать Angle Engine: настройка рендеринга</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#что-такое-параметр-angle-в-браузере-opera">Что такое параметр Angle в браузере Opera</a></li><li><a href="#как-найти-и-активировать-экспериментальные-функции">Как найти и активировать экспериментальные функции</a></li><li><a href="#типичные-проблемы-с-отображением-углов-и-геометрии">Типичные проблемы с отображением углов и геометрии</a></li><li><a href="#таблица-совместимости-режимов-рендеринга">Таблица совместимости режимов рендеринга</a></li><li><a href="#специфика-использования-на-различных-операционных-системах">Специфика использования на различных операционных системах</a></li><li><a href="#влияние-на-производительность-и-безопасность">Влияние на производительность и безопасность</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/r/ru/rul-vysoty-v-samolete.html">Руль высоты самолета: устройство, принцип работы и управление</a></li><li><a href="/articles/s/sk/skolko-pedalej-v-tramvae.html">Сколько педалей в трамвае: устройство управления и тормозная система</a></li><li><a href="/articles/k/ka/kak-ne-glokhnut-na-gorke.html">Как не заглохнуть на горке: советы для новичков и профи</a></li><li><a href="/articles/p/po/pochemu-tormozit-video-na-planshete.html">Почему тормозит видео на планшете: причины и способы ускорить</a></li><li><a href="/articles/k/ka/kak-pravilno-ostanovitsya-na-mekhanike-dlya-novichka-poshagovo.html">Как правильно остановить механику для новичка: пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Руководство по использованию параметра Opera Flags: Angle и рендеринг</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#что-такое-параметр-angle-в-браузере-opera">Что такое параметр Angle в браузере Opera</a></li><li><a href="#как-найти-и-активировать-экспериментальные-функции">Как найти и активировать экспериментальные функции</a></li><li><a href="#типичные-проблемы-с-отображением-углов-и-геометрии">Типичные проблемы с отображением углов и геометрии</a></li><li><a href="#таблица-совместимости-режимов-рендеринга">Таблица совместимости режимов рендеринга</a></li><li><a href="#специфика-использования-на-различных-операционных-системах">Специфика использования на различных операционных системах</a></li><li><a href="#влияние-на-производительность-и-безопасность">Влияние на производительность и безопасность</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Раздел <strong>Opera Flags</strong> представляет собой скрытый лабораторный раздел браузера, где пользователи могут активировать экспериментальные функции, еще не дошедшие до стабильной версии. Одним из таких параметров является связка <code>opera flags use angle</code>, которая влияет на то, как браузер взаимодействует с видеокартой при отрисовке веб-страниц. Для обычного пользователя это может показаться сложным техническим термином, но на практике это инструмент, способный как ускорить загрузку контента, так и вызвать визуальные артефакты.</p>
+
+<p>Ключевым элементом здесь выступает технология <em>ANGLE</em> (Almost Native Graphics Layer Engine), которая выступает посредником между браузером и драйверами видеопроцессора. Когда вы видите запрос о том, как использовать <strong>angle</strong> в Opera, речь идет о переключении режима рендеринга графики. Это критически важно для владельцев старых видеокарт или пользователей, столкнувшихся с некорректным отображением 3D-графики и видео.</p>
+
+<h2 id="что-такое-параметр-angle-в-браузере-opera">Что такое параметр Angle в браузере Opera</h2>
+
+<p>Технология <em>ANGLE</em> была разработана для того, чтобы веб-приложения могли использовать возможности аппаратного ускорения графикой независимо от операционной системы. В контексте браузера Opera этот компонент отвечает за трансляцию вызовов WebGL в команды, понятные вашей видеокарте. Без использования <strong>ANGLE</strong> браузеру пришлось бы эмулировать графические вызовы программно, что приводило бы к колоссальной нагрузке на процессор и тормозам при просмотре видео.</p>
+
+<p>Параметр <code>enable-angle-features</code> или аналогичные флаги в разделе <strong>Opera Flags</strong> позволяют принудительно менять способ, которым этот слой взаимодействует с драйверами. Это может быть полезно, если стандартный режим отрисовки вызывает мерцание, черные экраны или некорректное отображение теней на страницах. Однако изменение настроек требует осторожности, так как несовместимость драйверов может привести к нестабильной работе всего браузера.</p>
+
+<p>Важно понимать, что включение определенных опций <strong>use angle</strong> не является универсальным решением. В некоторых случаях отключение аппаратного ускорения через эти флаги, наоборот, улучшает производительность на специфическом "железе". Поэтому перед внесением изменений необходимо точно знать, какую проблему вы пытаетесь решить.</p>
+
+<h2 id="как-найти-и-активировать-экспериментальные-функции">Как найти и активировать экспериментальные функции</h2>
+
+<p>Чтобы добраться до заветных настроек, вам нужно открыть адресную строку браузера и ввести специальный путь. Введите <code>opera://flags</code> и нажмите Enter. Перед вами откроется страница с поисковой строкой и списком всех доступных экспериментальных функций. Введите в поиск слово <strong>angle</strong>, чтобы отфильтровать список и найти релевантные параметры.</p>
+
+<p>Обычно вы увидите несколько связанных опций, таких как <em>Choose ANGLE graphics backend</em> или <strong>Override software rendering list</strong>. По умолчанию большинство из них стоят в положении <code>Default</code>. Изменение этого значения на <code>Enabled</code> или конкретный тип драйвера (D3D11, OpenGL) вступает в силу только после перезапуска браузера. Система сама предложит кнопку <code>Relaunch</code> внизу экрана.</p>
+
+<p>Иногда поиск по слову <code>angle</code> не дает результатов, если функция переименована в новой версии браузера. В таком случае стоит искать по запросу <strong>gpu</strong> или <strong>hardware</strong>. Помните, что список доступных флагов меняется с каждым обновлением ПО, поэтому то, что работало месяц назад, может исчезнуть или сменить название сегодня.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Изменение настроек в разделе <code>opera://flags</code> может привести к краху браузера или отображению некорректного контента. Если после перезапуска интерфейс стал нечитаемым, сбросьте все настройки флагов, снова зайдя в раздел и нажав кнопку "Reset all".</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-1539f715"><div class="pb-poll-question">📊 Какой тип видеокарты у вас установлен?</div><div class="pb-poll-option" data-poll="1539f715" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">NVIDIA</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1539f715" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">AMD</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1539f715" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Intel</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1539f715" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Другой/Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="типичные-проблемы-с-отображением-углов-и-геометрии">Типичные проблемы с отображением углов и геометрии</h2>
+
+<p>Иногда пользователи сталкиваются с ситуацией, когда при активации определенных <strong>flags</strong> графики на экране появляются искаженные геометрические формы или "углы" объектов становятся неестественными. Это часто связано с тем, что выбранный бэкенд <em>ANGLE</em> (например, OpenGL вместо D3D11) некорректно интерпретирует матрицы преобразования координат. В результате элементы интерфейса могут "дрожать" или смещаться.</p>
+
+<p>Такая проблема часто возникает на ноутбуках с гибридной графикой, где система пытается задействовать встроенное видеоядро вместо дискретного. Параметр <code>gpu rasterization</code> может влиять на то, как браузер рисует контуры текста и линий. Если вы видите артефакты, попробуйте изменить настройку <strong>Choose ANGLE graphics backend</strong> на <code>OpenGL</code> или <code>WebGL 2.0</code>.</p>
+
+<p>Также стоит проверить, не отключено ли аппаратное ускорение в основных настройках. Зайдите в <code>Настройки → Дополнительно → Система</code> и убедитесь, что переключатель <strong>Использовать аппаратное ускорение</strong> включен. Если он выключен, браузер будет использовать процессор для рисования, что часто приводит к разрывам изображения и проблемам с углами поворота элементов.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если проблема с искажением углов сохраняется после изменения флагов, возможно, у вас устарели драйверы видеоконтроллера. Обновите их с официального сайта производителя, а не через диспетчер устройств Windows.</p>
+</blockquote>
+
+<h2 id="таблица-совместимости-режимов-рендеринга">Таблица совместимости режимов рендеринга</h2>
+
+<p>Ниже приведена таблица, демонстрирующая основные режимы работы <em>ANGLE</em> и их влияние на производительность и стабильность. Понимание различий поможет вам выбрать оптимальный вариант для вашего оборудования.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Режим (Backend)</th>
+<th>Описание</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Default</td>
+<td>Браузер сам выбирает оптимальный режим</td>
+<td>Для большинства пользователей</td>
+</tr>
+<tr>
+<td>D3D11</td>
+<td>Прямой доступ к DirectX 11</td>
+<td>Лучше для Windows 10/11 с NVIDIA/AMD</td>
+</tr>
+<tr>
+<td>OpenGL</td>
+<td>Использует стандартный графический интерфейс</td>
+<td>Если D3D11 вызывает сбои</td>
+</tr>
+<tr>
+<td>WebGL 2.0</td>
+<td>Новейший стандарт графического API</td>
+<td>Для современных видеокарт</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор правильного режима может кардинально изменить производительность. Например, переключение с <strong>Default</strong> на <code>D3D11</code> часто убирает микро-фризы при прокрутке страниц с тяжелым контентом. Однако на старых системах этот же шаг может привести к вылету браузера. Экспериментируйте аккуратно.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка стабильности графики</h4><label class="check-item"><input type="checkbox"><span>Открыть opera://flags</span></label><label class="check-item"><input type="checkbox"><span>Найти параметр ANGLE backend</span></label><label class="check-item"><input type="checkbox"><span>Сменить режим на D3D11</span></label><label class="check-item"><input type="checkbox"><span>Перезапустить браузер</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="специфика-использования-на-различных-операционных-системах">Специфика использования на различных операционных системах</h2>
+
+<p>Поведение параметров <strong>use angle</strong> может отличаться в зависимости от операционной системы. В Windows драйверы Direct3D интегрированы в систему глубоко, поэтому режим <code>D3D11</code> обычно работает наиболее стабильно. В macOS ситуация иная, так как Apple давно отказалась от использования OpenGL в пользу собственного Metal API, что делает некоторые флаги <em>ANGLE</em> менее эффективными или недоступными.</p>
+
+<p>На Linux выбор режима <strong>ANGLE</strong> часто критичен для работы браузеров на базе Chromium, так как поддержка драйверов может быть фрагментированной. Пользователи Ubuntu или Arch Linux часто вынуждены вручную настраивать <code>gpu process</code>, чтобы избежать визуальных артефактов. В этом случае параметр <code>angle</code> становится не просто опцией, а необходимостью для корректной работы.</p>
+
+<p>Стоит учитывать, что мобильная версия Opera для Android или iOS не предоставляет доступа к разделу <code>opera://flags</code> в том виде, в котором он доступен на десктопе. Эксперименты на смартфонах ограничены настройками внутри приложения, и принудительное включение определенных графических модулей невозможно без модификации самого приложения.</p>
+
+<details class="pb-accordion"><summary>Что делать, если браузер не запускается после смены флагов?</summary><div class="pb-accordion-body"><p>Если браузер вылетает сразу после запуска, попробуйте запустить его в безопасном режиме или удалить папку с профилем браузера, чтобы сбросить все настройки. На Windows это обычно находится в %LocalAppData%\\Opera Software\\Opera Stable.</p></div></details>
+
+<h2 id="влияние-на-производительность-и-безопасность">Влияние на производительность и безопасность</h2>
+
+<p>Использование <strong>GPU</strong> для рендеринга через <em>ANGLE</em> существенно разгружает центральный процессор. Это позволяет компьютеру выполнять другие задачи параллельно с просмотром видео или сложной анимации. Однако включение экспериментальных функций, особенно связанных с низкоуровневым доступом к видеопроцессору, может нести риски безопасности.</p>
+
+<p>Драйверы видеоконтроллеров — это сложное программное обеспечение, и уязвимости в них могут быть использованы злоумышленниками для запуска вредоносного кода. Когда вы активируете <code>enable-angle-features</code>, вы фактически расширяете поверхность атаки браузера. <strong>Официальные релизы</strong> проходят тщательную проверку, в то время как экспериментальные флаги могут содержать недокументированные ошибки.</p>
+
+<p>Поэтому, если вы не испытываете серьезных проблем с производительностью, лучше оставить настройки в положении <code>Default</code>. Если же вы энтузиаст и хотите выжать максимум из своего <em>железа</em>, убедитесь, что ваши драйверы обновлены до последних стабильных версий перед применением любых изменений.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед изменением настроек в opera://flags сделайте скриншот текущих значений или запишите их в блокнот, чтобы легко вернуть все как было в случае проблем.</p></aside>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Экспериментальные функции могут быть удалены или изменены в следующем обновлении браузера без предварительного уведомления. Не полагайтесь на их наличие в долгосрочной перспективе.</p>
+</blockquote>
+
+<h2 id="заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</h2>
+
+<p>Настройка <strong>Opera flags use angle</strong> — это мощный инструмент для тонкой настройки браузера под конкретное оборудование. Понимание того, как работает <em>ANGLE</em>, позволяет решать проблемы с производительностью и визуальными искажениями, которые невозможно исправить стандартными средствами. Однако эта мощь требует ответственности и понимания технических деталей.</p>
+
+<p>Если вы столкнулись с тем, что углы объектов отображаются криво или браузер работает медленно, попробуйте последовательно менять режимы бэкенда в разделе флагов. Начните с <code>D3D11</code>, затем попробуйте <code>OpenGL</code> и <code>WebGL 2.0</code>. Запоминайте результат каждого изменения. Это поможет вам подобрать идеальную конфигурацию.</p>
+
+<p> Если эксперименты приносят больше вреда, чем пользы, всегда есть возможность сбросить все настройки к заводским. Используйте <strong>Opera Flags</strong> с умом, и ваш браузер станет работать быстрее и стабильнее.</p>
+
+<details>
+<summary>Как сбросить все настройки флагов в Opera?</summary>
+<p>Чтобы вернуть все настройки к значениям по умолчанию, откройте страницу <code>opera://flags</code> и нажмите кнопку "Reset all" (Сбросить все) в правом верхнем углу страницы. После этого перезапустите браузер.</p>
+</details>
+
+<details>
+<summary>Где найти список всех доступных флагов?</summary>
+<p>Введите в адресной строке <code>chrome://flags</code> или <code>opera://flags</code>. Введите ключевые слова в поиске, чтобы найти конкретные функции. Полный список отображается в виде карточек с описанием и выпадающим списком вариантов.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать эти флаги на мобильном телефоне?</summary>
+<p>Нет, стандартный браузер Opera для Android и iOS не имеет доступа к странице <code>opera://flags</code>. Эти настройки доступны только в десктопных версиях браузера для Windows, macOS и Linux.</p>
+</details>
+
+<details>
+<summary>Что делать, если браузер вылетает после включения флага?</summary>
+<p>Если браузер не запускается, попробуйте запустить его с флагом сброса или вручную удалить папку профиля. Для Windows путь обычно: <code>C:\Users\ИмяПользователя\AppData\Local\Opera Software\Opera Stable</code>. Удалите содержимое папки (сделав резервную копию), чтобы сбросить настройки.</p>
+</details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный выбор режима ANGLE может увеличить производительность рендеринга на 20-30%, но требует стабильных драйверов видеокарты.</p></aside></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/r/ru/rul-vysoty-v-samolete.html" class="pb-related-card">
+                <span class="pb-related-title">Руль высоты самолета: устройство, принцип работы и управление</span>
+                <span class="pb-related-desc">Подробный разбор устройства руля высоты, влияния на тангаж, отличий от стабилизатора и методов управ</span>
+            </a><a href="/articles/s/sk/skolko-pedalej-v-tramvae.html" class="pb-related-card">
+                <span class="pb-related-title">Сколько педалей в трамвае: устройство управления и тормозная система</span>
+                <span class="pb-related-desc">Подробный разбор устройства кабины трамвайного водителя. Сколько педалей в трамвае, как работает тор</span>
+            </a><a href="/articles/k/ka/kak-ne-glokhnut-na-gorke.html" class="pb-related-card">
+                <span class="pb-related-title">Как не заглохнуть на горке: советы для новичков и профи</span>
+                <span class="pb-related-desc">Узнайте, как избежать остановки двигателя на подъеме. Методика работы сцеплением, газом и ручником. </span>
+            </a><a href="/articles/p/po/pochemu-tormozit-video-na-planshete.html" class="pb-related-card">
+                <span class="pb-related-title">Почему тормозит видео на планшете: причины и способы ускорить</span>
+                <span class="pb-related-desc">Разбираем основные причины зависания видео на плантах: от перегрева до битых кодеков. Узнайте, как о</span>
+            </a><a href="/articles/k/ka/kak-pravilno-ostanovitsya-na-mekhanike-dlya-novichka-poshagovo.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно остановить механику для новичка: пошаговая инструкция</span>
+                <span class="pb-related-desc">Пошаговое руководство по безопасной остановке механической трансмиссии. Разбор сцепления, переключен</span>
+            </a><a href="/articles/p/po/pochemu-klichko-tak-stranno-razgovarivaet.html" class="pb-related-card">
+                <span class="pb-related-title">Почему Кличко говорит странно: речевая травма и сленг боксера</span>
+                <span class="pb-related-desc">Разбираем причины странной речи Владимира Кличко: последствия боксерских травм, сленг и психологичес</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

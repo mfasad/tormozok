@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как отключить ручной тормоз на Москвич 3: электроника и аварийный сброс — ТормозОК</title>
+    <meta name="description" content="Инструкция по отключению электронного ручника на Москвич 3. Пошаговые методы, нюансы работы кнопки, аварийный сброс и диагностика неисправностей системы EPB.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-otklyuchit-ruchnik-na-moskvich-3.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как отключить ручной тормоз на Москвич 3: электроника и аварийный сброс">
+    <meta property="og:description" content="Инструкция по отключению электронного ручника на Москвич 3. Пошаговые методы, нюансы работы кнопки, аварийный сброс и диагностика неисправностей системы EPB.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как отключить ручной тормоз на Москвич 3: электроника и аварийный сброс</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-систему-удержания-автомобиля">Введение в систему удержания автомобиля</a></li><li><a href="#штатные-алгоритмы-управления-парковочным-тормозом">Штатные алгоритмы управления парковочным тормозом</a></li><li><a href="#аварийное-отключение-при-разряде-аккумулятора">Аварийное отключение при разряде аккумулятора</a></li><li><a href="#использование-диагностического-оборудования">Использование диагностического оборудования</a></li><li><a href="#критические-нюансы-обслуживания-системы">Критические нюансы обслуживания системы</a></li><li><a href="#последствия-неправильного-вмешательства">Последствия неправильного вмешательства</a></li><li><a href="#профилактика-и-режимы-работы">Профилактика и режимы работы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-trosa-ruchnika-lanos.html">Замена троса ручника на Ланосе: пошаговая инструкция с фото</a></li><li><a href="/articles/z/za/zamena-trosa-ruchnika-dzhetta-6.html">Замена троса ручника на VW Jetta 6: пошаговая инструкция и нюансы</a></li><li><a href="/articles/k/ka/kak-razvesti-ruchnik-na-sobole.html">Как развести ручник на Газель Соболь: полная инструкция по регулировке</a></li><li><a href="/articles/z/za/zamena-trosikov-ruchnika-granta.html">Замена тросиков ручника на Lada Granta: инструкция и цены</a></li><li><a href="/articles/r/ru/ruchnik-v-mashine-mekhanika.html">Ручник на механике: неисправности, регулировка и замена троса</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полное руководство: как отключить ручной тормоз на Москвич 3</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-систему-удержания-автомобиля">Введение в систему удержания автомобиля</a></li><li><a href="#штатные-алгоритмы-управления-парковочным-тормозом">Штатные алгоритмы управления парковочным тормозом</a></li><li><a href="#аварийное-отключение-при-разряде-аккумулятора">Аварийное отключение при разряде аккумулятора</a></li><li><a href="#использование-диагностического-оборудования">Использование диагностического оборудования</a></li><li><a href="#критические-нюансы-обслуживания-системы">Критические нюансы обслуживания системы</a></li><li><a href="#последствия-неправильного-вмешательства">Последствия неправильного вмешательства</a></li><li><a href="#профилактика-и-режимы-работы">Профилактика и режимы работы</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-систему-удержания-автомобиля">Введение в систему удержания автомобиля</h2>
+<p>Электронный парковочный тормоз (EPB) на <em>Москвич 3</em> — это не просто механический рычаг, а сложная электронная система, интегрированная в общую архитектуру автомобиля. В отличие от классических тросовых механизмов, здесь управление осуществляется через блок управления, который анализирует данные от датчиков ABS и акселерометра. Понимание принципа работы <strong>электронного привода</strong> критично для любого водителя, столкнувшегося с необходимостью ручного вмешательства в работу системы.</p>
+<p>Иногда возникает ситуация, когда стандартное выключение через кнопку невозможно из-за сбоя электроники, разряженного аккумулятора или программной ошибки. В таких случаях важно знать, как корректно принудительно <strong>разблокировать колодки</strong>, не повредив дорогостоящие суппорты. Игнорирование специфических алгоритмов сброса может привести к заклиниванию механизма или выходу из строя сервомоторов.</p>
+<p>Многие владельцы ошибочно полагают, что электроника работает независимо от механики, однако физическое усилие на <strong>тормозные колодки</strong> остается прежним. Любое вмешательство требует четкого понимания последовательности действий и наличия базового набора инструментов для диагностики. Ниже мы разберем штатные методы отключения и экстренные способы обхода системы.</p>
+
+<h2 id="штатные-алгоритмы-управления-парковочным-тормозом">Штатные алгоритмы управления парковочным тормозом</h2>
+<p>В нормальных условиях управление <strong>системой EPB</strong> на <em>Москвич 3</em> реализуется через специальную кнопку с изображением буквы «P» в круге. Для разблокировки необходимо нажать на педаль тормоза и кратковременно нажать на этот переключатель. Если автомобиль находится на стоянке на уклоне, электроника может автоматически удерживать машину даже после снятия с ручника, пока вы не нажмете на газ.</p>
+<p>Важно отметить, что система оснащена функцией <strong>автоматического отпускания</strong>, которая срабатывает при начале движения. Если вы нажали кнопку старта или нажали на педаль газа при пристегнутом ремне безопасности, колодки разойдутся без участия водителя. Это снижает износ компонентов и исключает вероятность движения с включенным ручником.</p>
+<p>Однако, если индикатор на панели приборов продолжает гореть красным цветом, а кнопка не реагирует, это может сигнализировать о неисправности датчика положения <strong>тормозной педали</strong>. В таком случае необходимо проверить подключение разъема и целостность предохранителей, отвечающих за питание блока управления парковочным тормозом.</p>
+<blockquote>
+<p>⚠️ Внимание: Не пытайтесь принудительно разблокировать суппорты, если горит ошибка «Неисправность тормозной системы» без предварительной диагностики сканером. Это может привести к необратимому повреждению электродвигателя механизма.</p>
+</blockquote>
+
+<h2 id="аварийное-отключение-при-разряде-аккумулятора">Аварийное отключение при разряде аккумулятора</h2>
+<p>Самая частая проблема, с которой сталкиваются владельцы <em>Москвич 3</em> — невозможность отпустить <strong>ручной тормоз</strong> при полностью разряженном аккумуляторе. Электронные сервомоторы не имеют механического привода для внешнего воздействия, поэтому без напряжения они остаются в зажатом состоянии. В этой ситуации необходимо восстановить питание бортовой сети автомобиля.</p>
+<p>Для начала попробуйте «прикурить» автомобиль от внешнего источника или использовать пусковое устройство. Как только напряжение в сети восстановится и станет достаточным для работы электроники, система EPB сможет выполнить процедуру <strong>калибровки</strong>. После запуска двигателя необходимо нажать кнопку ручника, удерживая педаль тормоза, чтобы сбросить аварийный режим.</p>
+<p>Если стандартный метод не срабатывает, некоторые мастера рекомендуют кратковременно подключить 12-вольтовый источник питания напрямую к клеммам суппортов (только если вы точно знаете распиновку), но это крайне рискованно для неопытных пользователей. Лучше доверить эту процедуру профессионалам на станции техобслуживания, где есть специальное оборудование.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к аварийному сбросу</h4><label class="check-item"><input type="checkbox"><span>Проверить уровень заряда аккумулятора</span></label><label class="check-item"><input type="checkbox"><span>Подготовить пусковое устройство</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в целостности предохранителей</span></label><label class="check-item"><input type="checkbox"><span>Подготовить диагностический сканер</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="использование-диагностического-оборудования">Использование диагностического оборудования</h2>
+<p>Если электроника «зависла» и не реагирует на нажатия кнопки, единственным надежным способом отключения станет использование профессионального <strong>диагностического сканера</strong>. Современные мультимарочные сканеры позволяют зайти в блок управления тормозной системой и выбрать функцию «Смещение суппортов» или «Аварийный сброс».</p>
+<p>Процедура выглядит следующим образом: подключается адаптер к разъему OBD-II, запускается соответствующее программное обеспечение, и выбирается пункт меню «Снятие с парковки». После этого блок управления подает команду на моторы суппортов, и они плавно отходят от диска. Этот метод исключает механическое повреждение компонентов.</p>
+<p>Стоит учитывать, что после аварийного отключения система может потребовать процедуры <strong>обучения</strong> или адаптации. В режиме самообучения суппорты несколько раз полностью сжимаются и разжимаются, чтобы заново определить крайние положения и компенсировать износ колодок. Это стандартная процедура, которую нельзя прерывать.</p>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом диагностики отключите все лишние потребители энергии (фары, музыку, кондиционер), чтобы максимально сосредоточить напряжение батареи на работе электроники тормозов.</p></aside>
+
+<h2 id="критические-нюансы-обслуживания-системы">Критические нюансы обслуживания системы</h2>
+<p>При эксплуатации <em>Москвич 3</em> Механизмы, расположенные внутри суппортов, подвержены коррозии и загрязнению, особенно в зимний период. Если вы ездите по дорогам с реагентами, <strong>тормозные колодки</strong> могут примерзнуть к дискам или закиснуть направляющие.</p>
+<p>Периодически необходимо проверять работоспособность кнопки и отсутствие ошибок в памяти блока управления. Грязь на контактах кнопки или повреждение изоляции проводов может привести к ложным срабатываниям или полному отказу системы. Очистка контактов и визуальный осмотр проводки должны стать частью регулярного ТО.</p>
+<p>Также следует обращать внимание на тип используемой <strong>тормозной жидкости</strong>, так как она влияет на работу всего гидравлического контура, включая систему ABS, с которой взаимодействует EPB. Несоответствие жидкости стандартам может вызвать кавитацию и нарушение работы датчиков давления.</p>
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Симптом</th>
+<th>Возможная причина</th>
+<th>Рекомендуемое действие</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Кнопка не нажимается</td>
+<td>Механическое заедание клавиши</td>
+<td>Заменить блок управления кнопками</td>
+</tr>
+<tr>
+<td>Горит ошибка EPB</td>
+<td>Сбой калибровки суппорта</td>
+<td>Провести адаптацию через сканер</td>
+</tr>
+<tr>
+<td>Машина не едет, ручник включен</td>
+<td>Неисправность мотора суппорта</td>
+<td>Замена электродвигателя суппорта</td>
+</tr>
+<tr>
+<td>Скрип при отпускании</td>
+<td>Износ направляющих</td>
+<td>Смазка и обслуживание суппорта</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-poll" id="poll-0957bb1a"><div class="pb-poll-question">📊 Вы сталкивались с проблемой ручника на Москвич 3?</div><div class="pb-poll-option" data-poll="0957bb1a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, часто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0957bb1a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Да, один раз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0957bb1a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет, проблем не было</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0957bb1a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не владею этим авто</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="последствия-неправильного-вмешательства">Последствия неправильного вмешательства</h2>
+<p>Попытка физически разобрать суппорт для отключения колодок без разрядки электроники может привести к серьезным последствиям. Электродвигатель внутри суппорта имеет планетарную передачу, которая при наличии тока в цепи может заклинить или сгореть при внешнем механическом воздействии. <strong>Ремонтные работы</strong> в этом случае будут дорогостоящими.</p>
+<p>Еще одна опасность — нарушение герметичности системы. Вскрытие суппорта без специальных инструментов часто приводит к потере тормозной жидкости и попаданию воздуха в контур. Это грозит потерей эффективности торможения при движении, что создает прямую угрозу безопасности.</p>
+<p>Не стоит также забывать, что некорректное отключение системы может привести к тому, что <strong>блок управления</strong> перейдет в защитный режим. В этом режиме автомобиль может вообще не запускаться или не давать тронуться с места, пока не будет устранена ошибка и не проведена полная перенастройка системы.</p>
+<blockquote>
+<p>⚠️ Внимание: Если вы не обладаете навыками работы с автомобильной электроникой, не пытайтесь «перепрыгнуть» сигналы через скрепки или изоляционную ленту. Это гарантированно выведет из строя управляющий модуль на плате суппорта.</p>
+</blockquote>
+<details class="pb-accordion"><summary>Что делать, если после сброса ошибка осталась?</summary><div class="pb-accordion-body"><p>Если после процедуры сброса ошибка продолжает гореть, попробуйте провести циклическую калибровку: зажмите ручник, отпустите, снова зажмите и отпустите. Если это не помогает — требуется замена датчика износа колодок или самого суппорта.</p></div></details>
+
+<h2 id="профилактика-и-режимы-работы">Профилактика и режимы работы</h2>
+<p>Чтобы избежать ситуации, когда необходимо экстренно отключать ручной тормоз, важно следить за состоянием (аккумулятора) и вовремя заряжать его. Система EPB потребляет энергию даже в выключенном состоянии для поддержания функций, поэтому <strong>разрядка батареи</strong> — основная причина проблем. Используйте умные зарядные устройства, которые поддерживают режим хранения.</p>
+<p>Зимой старайтесь парковать автомобиль на ровных участках, чтобы избежать примерзания колодок. Если вы оставили <em>Москвич 3</em> на уклоне и заморозили колодки, не пытайтесь тронуться с места на ручнике — это сломает механизм. Лучше сначала прогреть автомобиль и попробовать аккуратно отогреть тормоза.</p>
+<p>Регулярное прохождение диагностики тормозной системы на СТО позволит выявить скрытые ошибки до того, как они приведут к полному отказу. Современные сканеры могут считывать параметры износа колодок и состояние моторов, предупреждая о грядущих проблемах.</p>
+<blockquote>
+<p>⚠️ Внимание: Обновление программного обеспечения блока управления тормозами может изменить алгоритмы работы системы. Всегда уточняйте особенности работы EPB после обновления прошивки у официального дилера.</p>
+</blockquote>
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная диагностика и контроль заряда аккумулятора — главные факторы надежной работы электронного ручника на Москвич 3.</p></aside>
+
+<p>Итоговый вывод прост: <strong>электронный парковочный тормоз</strong> — это надежная система, но она требует грамотного подхода при сбоях. В большинстве случаев достаточно восстановления питания или использования диагностического сканера. Физическое вмешательство должно быть крайним Measure, применяемым только в специализированных мастерских.</p>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+<details>
+<summary>Можно ли отключить ручной тормоз на Москвич 3 без ключа?</summary>
+<p>Без ключа и доступа к системе управления отключить тормоз невозможно в штатном режиме. В экстренных случаях (при отсутствии ключа и разряде) требуется доступ к электрической схеме для подачи напряжения, но это требует специальных знаний и инструментов.</p>
+</details>
+<details>
+<summary>Что будет, если просто снять клеммы аккумулятора, чтобы сбросить ошибку?</summary>
+<p>Снятие клемм может временно сбросить ошибку, но при повторном запуске система EPB снова проведет самодиагностику. Если механическая причина неисправности (например, закисший суппорт) не устранена, ошибка вернется немедленно.</p>
+</details>
+<details>
+<summary>Можно ли ехать с горящей лампой ручника?</summary>
+<p>Движение с включенным индикатором <strong>ручного тормоза</strong> категорически не рекомендуется, так как это означает, что колодки прижаты к дискам. Это приведет к перегреву, разрушению тормозных дисков и пожароопасной ситуации.</p>
+</details>
+<details>
+<summary>Как часто нужно обслуживать механизм EPB?</summary>
+<p>Рекомендуется проводить проверку и смазку направляющих суппортов с механизмом EPB каждые 20-30 тысяч километров пробега или раз в год, особенно в условиях сурового климата и использования реагентов.</p>
+</details>
+<details>
+<summary>Есть ли механическая кнопка аварийного отключения?</summary>
+<p>В салоне <em>Москвич 3</em> нет отдельной физической кнопки для аварийного механического отключения. В случае отказа электроники необходимо восстанавливать питание или использовать диагностическое оборудование для программного сброса.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-trosa-ruchnika-lanos.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника на Ланосе: пошаговая инструкция с фото</span>
+                <span class="pb-related-desc">Как самостоятельно поменять трос ручного тормоза на Daewoo Lanos: выбор запчастей, инструменты, регу</span>
+            </a><a href="/articles/z/za/zamena-trosa-ruchnika-dzhetta-6.html" class="pb-related-card">
+                <span class="pb-related-title">Замена троса ручника на VW Jetta 6: пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Полная инструкция по замене троса стояночного тормоза на Volkswagen Jetta 6. Диагностика, выбор запч</span>
+            </a><a href="/articles/k/ka/kak-razvesti-ruchnik-na-sobole.html" class="pb-related-card">
+                <span class="pb-related-title">Как развести ручник на Газель Соболь: полная инструкция по регулировке</span>
+                <span class="pb-related-desc">Пошаговая инструкция, как развести и отрегулировать ручной тормоз на Газель Соболь. Причины заклинив</span>
+            </a><a href="/articles/z/za/zamena-trosikov-ruchnika-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросиков ручника на Lada Granta: инструкция и цены</span>
+                <span class="pb-related-desc">Пошаговая замена тросов стояночного тормоза на Lada Granta своими руками. Диагностика износа, подбор</span>
+            </a><a href="/articles/r/ru/ruchnik-v-mashine-mekhanika.html" class="pb-related-card">
+                <span class="pb-related-title">Ручник на механике: неисправности, регулировка и замена троса</span>
+                <span class="pb-related-desc">Полный гид по ручному тормозу на механической КПП. Причины отказа, пошаговая регулировка натяжения т</span>
+            </a><a href="/articles/z/za/zamena-trosika-ruchnika-lanser-10.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросика ручника на Mitsubishi Lancer 10: пошаговая инструкция</span>
+                <span class="pb-related-desc">Подробный гайд по замене тросов стояночного тормоза на Лансер 10. Диагностика, выбор запчастей, нюан</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

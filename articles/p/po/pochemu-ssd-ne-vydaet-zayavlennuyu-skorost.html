@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему SSD не выдает заявленную скорость: реальные причины и решения — ТормозОК</title>
+    <meta name="description" content="Узнайте, почему ваш SSD работает медленнее обещанного. Разбираем интерфейсы, заполненность, кэш и настройки BIOS для достижения максимума.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/po/pochemu-ssd-ne-vydaet-zayavlennuyu-skorost.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему SSD не выдает заявленную скорость: реальные причины и решения">
+    <meta property="og:description" content="Узнайте, почему ваш SSD работает медленнее обещанного. Разбираем интерфейсы, заполненность, кэш и настройки BIOS для достижения максимума.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему SSD не выдает заявленную скорость: реальные причины и решения</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#ограничения-интерфейса-и-слота-подключения">Ограничения интерфейса и слота подключения</a></li><li><a href="#влияние-заполнения-и-алгоритмов-кэширования">Влияние заполнения и алгоритмов кэширования</a></li><li><a href="#проблемы-охлаждения-и-троттлинг">Проблемы охлаждения и троттлинг</a></li><li><a href="#настройки-bios-и-режим-работы-контроллера">Настройки BIOS и режим работы контроллера</a></li><li><a href="#различия-в-типах-памяти-и-контроллерах">Различия в типах памяти и контроллерах</a></li><li><a href="#сравнение-заявленных-и-реальных-показателей">Сравнение заявленных и реальных показателей</a></li><li><a href="#инструменты-для-проверки-производительности">Инструменты для проверки производительности</a></li><li><a href="#когда-стоит-беспокоиться-и-менять-диск">Когда стоит беспокоиться и менять диск</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/c/ch/chto-delat-esli-devushka-khochet-rasstatsya-no-lyubit.html">Девушка хочет расстаться, но любит: причины и шаги к спасению</a></li><li><a href="/articles/c/ch/chto-mozhno-sdelat-iz-tormoznogo-diska.html">Творчество из металлолома: что сделать из старого тормозного диска</a></li><li><a href="/articles/d/dl/dlya-chego-nuzhny-predkrylki-na-samolete.html">Для чего нужны предкрылки: аэродинамика, безопасность и принцип работы</a></li><li><a href="/articles/k/ka/kak-podnyatsya-v-gorku-na-mekhanike.html">Как тронуться в горку на механике: Пошаговая инструкция для новичков</a></li><li><a href="/articles/k/ka/kak-snyat-zakisshij-tormoznoj-disk-perednij.html">Как снять закисший передний тормозной диск: пошаговая инструкция и методы</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему SSD не выдает заявленную скорость: разбор реальностей</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#ограничения-интерфейса-и-слота-подключения">Ограничения интерфейса и слота подключения</a></li><li><a href="#влияние-заполнения-и-алгоритмов-кэширования">Влияние заполнения и алгоритмов кэширования</a></li><li><a href="#проблемы-охлаждения-и-троттлинг">Проблемы охлаждения и троттлинг</a></li><li><a href="#настройки-bios-и-режим-работы-контроллера">Настройки BIOS и режим работы контроллера</a></li><li><a href="#различия-в-типах-памяти-и-контроллерах">Различия в типах памяти и контроллерах</a></li><li><a href="#сравнение-заявленных-и-реальных-показателей">Сравнение заявленных и реальных показателей</a></li><li><a href="#инструменты-для-проверки-производительности">Инструменты для проверки производительности</a></li><li><a href="#когда-стоит-беспокоиться-и-менять-диск">Когда стоит беспокоиться и менять диск</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Вы только что установили новый накопитель, гордо указывающий на скорость чтения до 7000 МБ/с, но в реальных тестах он выдает в два раза меньше? Эта ситуация встречается крайне часто и вызывает justified разочарование у пользователей, ожидающих мгновенной загрузки системы и игр. В большинстве случаев проблема кроется не в бракованном устройстве, а в нюансах подключения и настройки, которые часто игнорируются при сборке или апгрейде ПК.</p>
+<p>Производители маркируют свои накопители <em>Samsung 990 Pro</em> или <em>WD Black SN850X</em> исходя из идеальных лабораторных условий, где используется передовое оборудование и пустой диск. В реальной жизни на скорость влияет множество факторов: от устаревшего драйвера контроллера до перегрева чипов памяти в узком корпусе ноутбука. Понимание этих механизмов позволит вам самостоятельно диагностировать узкие места и расправить потенциал вашего хранилища.</p>
+
+<h2 id="ограничения-интерфейса-и-слота-подключения">Ограничения интерфейса и слота подключения</h2>
+<p>Самая частая причина низкой производительности — физическое ограничение канала передачи данных. Если вы установили современный накопитель стандарта <strong>PCIe 4.0</strong> в разъем <strong>PCIe 3.0</strong>, скорость автоматически упрется в «потолок» предыдущего поколения, потеряв около 50% производительности. Даже если материнская плата поддерживает быстрый стандарт, вы могли случайно вставить накопитель в нижний слот, который часто подключен к чипсету и работает на урезанной скорости.</p>
+<p>Особое внимание стоит уделить разъемам SATA. Если вы приобрели быстрый M.2 NVMe диск, но подключили его через переходник в слот SATA, вы получите максимум 600 МБ/с вместо нескольких тысяч. Проверьте документацию к вашей материнской плате или ноутбуку, чтобы убедиться, что выбранный слот M.2 поддерживает нужный протокол и поколение интерфейса.</p>
+<p>Иногда проблема скрывается в кабеле. Использование старых SATA-кабелей или кабелей USB 2.0 для внешних дисков может drastически снизить скорость передачи. Убедитесь, что вы используете качественные провода с поддержкой USB 3.2 или выше, если тестируете внешнее хранилище.</p>
+<blockquote>⚠️ Внимание: Некоторые производители ноутбуков намеренно ограничивают скорость слотов M.2 в бюджетных моделях, даже если разъем физически поддерживает более высокие стандарты. Сверьте спецификации вашей конкретной модели в официальном источнике.</blockquote>
+
+<h2 id="влияние-заполнения-и-алгоритмов-кэширования">Влияние заполнения и алгоритмов кэширования</h2>
+<p>Современные SSD используют технологию <strong>SLC-кэширования</strong>, чтобы достигать пиковых скоростей в маркетинговых замерах. В начале записи диск работает очень быстро, так как использует часть памяти в режиме одноуровневой ячейки. Однако, как только кэш заполняется, скорость резко падает до уровня прямой записи в <strong>TLC</strong> или <strong>QLC</strong> память. Это нормально, но часто становится сюрпризом для пользователей, заполняющих диск большими файлами.</p>
+<p>Заполненность накопителя играет критическую роль. Когда свободное пространство заканчивается, контроллеру становится сложнее управлять блоками памяти и выполнять операции сборки мусора. Оптимальным считается уровень заполнения не более 70-80% от общего объема. Если диск забит «под завязку», он неизбежно начнет тормозить.</p>
+<p>Важно отметить, что скорость чтения обычно страдает меньше от заполнения, чем скорость последовательной записи. Однако случайное чтение мелких файлов может значительно замедлиться, если на диске осталось мало свободного места для эффективной работы алгоритмов контроллера.</p>
+<div class="pb-poll" id="poll-8bb7d5ce"><div class="pb-poll-question">📊 Насколько заполнен ваш SSD?</div><div class="pb-poll-option" data-poll="8bb7d5ce" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее 20%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8bb7d5ce" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">20-50%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8bb7d5ce" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">50-80%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="8bb7d5ce" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 80%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="проблемы-охлаждения-и-троттлинг">Проблемы охлаждения и троттлинг</h2>
+<p>Быстрые NVMe-накопители выделяют значительное количество тепла. Если не предусмотрена система охлаждения, они быстро достигают критической температуры (обычно около 70°C) и включают функцию <strong>троттлинга</strong>. В этом режиме контроллер искусственно снижает частоту своей работы, чтобы охладиться, что мгновенно обрушивает скорость чтения и записи в несколько раз.</p>
+<p>В компактных корпусах или ноутбуках без вентиляторов проблема перегрева стоит особенно остро. Диск может работать на пиковой скорости всего пару минут, после чего его производительность падает до уровня обычных SATA-накопителей. Проверьте температуру с помощью утилит вроде <code>CrystalDiskInfo</code> или <code>HWMonitor</code> во время интенсивной нагрузки.</p>
+<p>Решением может стать установка специального радиатора на накопитель или улучшение продуваемости корпуса. В ноутбуках иногда помогает использование термопрокладки между диском и металлической крышкой корпуса, если конструкция позволяет.</p>
+
+
+<h2 id="настройки-bios-и-режим-работы-контроллера">Настройки BIOS и режим работы контроллера</h2>
+<p>Часто пользователи забывают изменить настройки в <strong>BIOS</strong> или <code>UEFI</code>, оставляя контроллер в режиме совместимости. Необходимо убедиться, что в настройках SATA Mode выбран режим <strong>AHCI</strong>, а не <code>IDE</code> или <code>RAID</code> (если вы не строите массив). Режим IDE полностью отключает современные функции SSD, делая их медленнее в десятки раз.</p>
+<p>Также стоит проверить, включена ли поддержка протокола NVMe в настройках загрузки. В некоторых старых материнских платах этот параметр может быть отключен по умолчанию, заставляя систему работать в медленном режиме эмуляции. Зайдите в раздел <code>Advanced -> System Agent Configuration</code> и проверьте статус NVMe controller.</p>
+<p>Не забудьте обновить <strong>прошивку</strong> самого накопителя. Производители часто выпускают обновления, исправляющие ошибки контроллера и оптимизирующие алгоритмы управления памятью. Утилита от производителя (например, <em>Samsung Magician</em> или <em>WD Dashboard</em>) покажет доступные обновления.</p>
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка настроек BIOS</h4><label class="check-item"><input type="checkbox"><span>Включить AHCI</span></label><label class="check-item"><input type="checkbox"><span>Отключить IDE</span></label><label class="check-item"><input type="checkbox"><span>Включить NVMe</span></label><label class="check-item"><input type="checkbox"><span>Обновить BIOS материнской платы</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="различия-в-типах-памяти-и-контроллерах">Различия в типах памяти и контроллерах</h2>
+<p>Не все SSD создаются равными. Различия в типе используемой памяти (<strong>TLC</strong>, <strong>QLC</strong>, <strong>PLC</strong>) и наличии кэш-памяти DRAM оказывают колоссальное влияние на итоговую скорость. Дешевые модели без DRAM-буфера значительно проигрывают в работе с мелкими файлами и при длительной записи больших объемов данных.</p>
+<p>Контроллер — это «мозг» накопителя, который управляет потоками данных. Даже при использовании одинаковой памяти, разные контроллеры могут выдавать разную скорость. Топовые решения от <em>Phison</em> или <em>Marvell</em> обеспечивают лучшую стабильность по сравнению с бюджетными чипами.</p>
+<p>Кроме того, интерфейсы подключения к системе могут различаться. Например, внешний SSD на интерфейсе USB 3.2 Gen 1 (5 Гбит/с) будет ограничен скоростью около 450-500 МБ/с, даже если внутри стоит быстрый NVMe диск. Для максимальной скорости необходим кабель и порт USB 3.2 Gen 2x2 (20 Гбит/с) или Thunderbolt 3/4.</p>
+<blockquote>⚠️ Внимание: В бюджетных моделях часто используется память QLC, которая имеет существенно меньший ресурс записи и более низкую скорость работы после заполнения кэша по сравнению с TLC.</blockquote>
+
+<h2 id="сравнение-заявленных-и-реальных-показателей">Сравнение заявленных и реальных показателей</h2>
+<p>Производители указывают максимальную теоретическую скорость, которую диск может достичь в идеальных условиях с последовательной записью огромного файла. В реальной жизни мы работаем с тысячами мелких файлов, что требует операций IOPS (Input/Output Operations Per Second). Именно этот параметр часто оказывается ниже заявленного в спецификациях для массовых моделей.</p>
+<p>Ниже приведена таблица сравнения типичных показателей для разных поколений интерфейсов в реальных условиях:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Интерфейс / Тип</th>
+<th>Макс. скорость (теория)</th>
+<th>Реальная скорость (послед.)</th>
+<th>Реальная скорость (случай.)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>SATA III</strong></td>
+<td>600 МБ/с</td>
+<td>550 МБ/с</td>
+<td>15-20 тыс. IOPS</td>
+</tr>
+<tr>
+<td><strong>PCIe 3.0 x4</strong></td>
+<td>3500 МБ/с</td>
+<td>3200 МБ/с</td>
+<td>40-50 тыс. IOPS</td>
+</tr>
+<tr>
+<td><strong>PCIe 4.0 x4</strong></td>
+<td>7000 МБ/с</td>
+<td>6500 МБ/с</td>
+<td>60-75 тыс. IOPS</td>
+</tr>
+<tr>
+<td><strong>PCIe 5.0 x4</strong></td>
+<td>12000+ МБ/с</td>
+<td>10000+ МБ/с</td>
+<td>100+ тыс. IOPS</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание, что разрыв между теорией и практикой для случайного чтения/записи может быть еще существеннее. Это связано с накладными расходами операционной системы и драйверов, которые обрабатывают каждый запрос на чтение или запись.</p>
+<details class="pb-accordion"><summary>Почему разрыв между теорией и практикой велик?|Теоретические значения рассчитываются для идеального последовательного потока данных без задержек. В реальности ОС постоянно прерывает поток для обработки системных задач, что снижает эффективную пропускную способность.-->
+
+<h2 id="инструменты-для-проверки-производительности">Инструменты для проверки производительности</h2>
+<p>Чтобы точно определить причину низкой скорости, необходимо использовать специализированный софт. Стандартные свойства диска в Windows часто показывают недостоверные данные. Лучшим инструментом является <strong>CPU-Z</strong> или <code>CrystalDiskMark</code>, которые позволяют провести серию тестов с разной длиной очереди и размером блока.</p>
+<p>При запуске теста убедитесь, что на диске нет запущенных фоновых процессов (антивирус, загрузка обновлений Windows). Эти фоновые операции могут искусственно занижать результаты тестов. Лучше всего запускать проверку сразу после включения компьютера, пока система еще не загрузила лишние службы.</p>
+<p>Существуют и встроенные средства диагностики, такие как <code>Performance Monitor</code> в Windows, которые могут отслеживать реальную загрузку диска в режиме реального времени. Это поможет понять, является ли проблема в самом диске или в высокой нагрузке со стороны других программ.</p>
+<!--WIDGET</summary><div class="pb-accordion-body"><p>keypoint:Регулярная проверка температуры и использование актуальных драйверов — залог стабильной работы SSD на заявленных скоростях без троттлинга.</p></div></details>
+
+<h2 id="когда-стоит-беспокоиться-и-менять-диск">Когда стоит беспокоиться и менять диск</h2>
+<p>Если после всех проверок интерфейса, настроек BIOS и обновления драйверов скорость все еще значительно ниже минимально допустимых значений для вашего уровня (например, <em>WD Blue</em> выдает 100 МБ/с вместо 500), возможно, диск неисправен. Ошибки чтения записываются в S.M.A.R.T. атрибуты, которые можно просмотреть через утилиту диагностики.</p>
+<p>Обратите внимание на атрибуты <code>Reallocated Sectors Count</code> и <code>Current Pending Sector</code>. Если они имеют ненулевые значения, это признак физического износа чипов памяти. В таком случае скорость будет падать постоянно, а надежность хранения данных окажется под угрозой.</p>
+<p>В редких случаях проблема может быть в несовместимости диска с конкретной материнской платой, даже если они соответствуют техническим стандартам. Поищите информацию на форумах о вашей модели платы и конкретном SSD — иногда производители выпускают микрокоды, исправляющие такие конфликты.</p>
+
+<details>
+<summary>Почему скорость записи падает после заполнения кэша?</summary>
+<p>SLC-кэш — это область памяти, работающая в быстром режиме. Когда она заполняется, контроллер вынужден переносить данные в основную память (TLC/QLC), которая работает медленнее. Это физическое ограничение технологии памяти, а не поломка.</p>
+</details>
+
+<details>
+<summary>Влияет ли формат файловой системы на скорость SSD?</summary>
+<p>Да, файловая система <strong>NTFS</strong> в Windows оптимизирована под современные SSD, в отличие от старых форматов. Использование <code>exFAT</code> или <code>FAT32</code> может снижать производительность и ресурс диска при работе с множеством мелких файлов.</p>
+</details>
+
+<details>
+<summary>Нужно ли дефрагментировать SSD?</summary>
+<p>Категорически нет. Дефрагментация бесполезна для SSD и лишь сокращает их ресурс. Вместо этого система использует команду <code>TRIM</code>, которая очищает неиспользуемые блоки. Убедитесь, что она включена в настройках оптимизации дисков.</p>
+</details>
+
+<details>
+<summary>Как узнать, работает ли SSD в режиме NVMe или SATA?</summary>
+<p>Используйте утилиту <code>HWiNFO</code> или <code>CrystalDiskInfo</code>. В строке интерфейса или протокола будет указано <strong>NVMe</strong> или <strong>ATA/SATA</strong>. Если вы видите SATA на M.2 диске, возможно, вы вставили его в несовместимый слот.</p>
+</details>
+
+<details>
+<summary>Можно ли восстановить скорость после падения?</summary>
+<p>В большинстве случаев да, если причина в перегреве или заполнении кэша. Охлаждение, очистка диска или форматирование (с включенной командой TRIM) вернут показатели к норме. Если физический износ — замена неизбежна.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/c/ch/chto-delat-esli-devushka-khochet-rasstatsya-no-lyubit.html" class="pb-related-card">
+                <span class="pb-related-title">Девушка хочет расстаться, но любит: причины и шаги к спасению</span>
+                <span class="pb-related-desc">Почему девушка говорит о расставании, несмотря на чувства? Разбор психологических причин, ошибок и п</span>
+            </a><a href="/articles/c/ch/chto-mozhno-sdelat-iz-tormoznogo-diska.html" class="pb-related-card">
+                <span class="pb-related-title">Творчество из металлолома: что сделать из старого тормозного диска</span>
+                <span class="pb-related-desc">Вдохновляющие идеи и пошаговые инструкции по созданию уникальных предметов интерьера и декора из отр</span>
+            </a><a href="/articles/d/dl/dlya-chego-nuzhny-predkrylki-na-samolete.html" class="pb-related-card">
+                <span class="pb-related-title">Для чего нужны предкрылки: аэродинамика, безопасность и принцип работы</span>
+                <span class="pb-related-desc">Узнайте, для чего нужны предкрылки на самолете. Подробный разбор их функций, влияния на подъемную си</span>
+            </a><a href="/articles/k/ka/kak-podnyatsya-v-gorku-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Как тронуться в горку на механике: Пошаговая инструкция для новичков</span>
+                <span class="pb-related-desc">Узнайте, как правильно стартовать на механической коробке передач в подъем. Методы с ручником и сцеп</span>
+            </a><a href="/articles/k/ka/kak-snyat-zakisshij-tormoznoj-disk-perednij.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять закисший передний тормозной диск: пошаговая инструкция и методы</span>
+                <span class="pb-related-desc">Полный гайд по снятию прикипевшего переднего тормозного диска. Механические, химические и термически</span>
+            </a><a href="/articles/t/to/to-velosipeda-chto-vklyuchaet.html" class="pb-related-card">
+                <span class="pb-related-title">Что входит в комплект велосипеда: полный список для новичка</span>
+                <span class="pb-related-desc">Узнайте, что включает в себя покупка велосипеда: от базовых инструментов до аксессуаров. Полный чек-</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

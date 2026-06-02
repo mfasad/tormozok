@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему медленный жесткий диск: причины, диагностика и ускорение HDD — ТормозОК</title>
+    <meta name="description" content="Жесткий диск тормозит? Разбираем реальные причины низкой скорости HDD, методы диагностики и 7 эффективных способов ускорения работы файловой системы.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/m/me/medlennaya-skorost-zhestkogo-diska.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему медленный жесткий диск: причины, диагностика и ускорение HDD">
+    <meta property="og:description" content="Жесткий диск тормозит? Разбираем реальные причины низкой скорости HDD, методы диагностики и 7 эффективных способов ускорения работы файловой системы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему медленный жесткий диск: причины, диагностика и ускорение HDD</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#механические-причины-замедления-работы-накопителя">Механические причины замедления работы накопителя</a></li><li><a href="#программные-факторы-и-ошибки-файловой-системы">Программные факторы и ошибки файловой системы</a></li><li><a href="#диагностика-состояния-здоровья-диска">Диагностика состояния здоровья диска</a></li><li><a href="#эффективные-способы-ускорения-работы-hdd">Эффективные способы ускорения работы HDD</a></li><li><a href="#аппаратные-ограничения-и-переход-на-ssd">Аппаратные ограничения и переход на SSD</a></li><li><a href="#настройка-файловой-системы-и-реестра">Настройка файловой системы и реестра</a></li><li><a href="#когда-ремонт-невозможен-признаки-критического-износа">Когда ремонт невозможен: признаки критического износа</a></li><li><a href="#частые-вопросы-о-производительности-накопителей">Частые вопросы о производительности накопителей</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pomenyat-lampochku-tormoza-na-kaline.html">Замена стоп-сигнала на Lada Kalina: пошаговая инструкция</a></li><li><a href="/articles/s/sk/skhema-pereklyucheniya-peredach-btr-80.html">Схема переключения передач БТР-80: устройство КПП и управление</a></li><li><a href="/articles/y/yu/yutub-podvisaet-pri-prosmotre-video.html">Ютуб подвисает: причины, методы устранения и настройка стабильности</a></li><li><a href="/articles/r/ru/rul-vysoty-v-samolete.html">Руль высоты самолета: устройство, принцип работы и управление</a></li><li><a href="/articles/n/ne/ne-kazhdyj-segodnya-mozhet-smotret-v-zavtrashnij-den.html">Психология будущего: планирование безопасности в условиях неопределенности</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Почему жесткий диск работает медленно: полный гайд по диагностике и ускорению</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#механические-причины-замедления-работы-накопителя">Механические причины замедления работы накопителя</a></li><li><a href="#программные-факторы-и-ошибки-файловой-системы">Программные факторы и ошибки файловой системы</a></li><li><a href="#диагностика-состояния-здоровья-диска">Диагностика состояния здоровья диска</a></li><li><a href="#эффективные-способы-ускорения-работы-hdd">Эффективные способы ускорения работы HDD</a></li><li><a href="#аппаратные-ограничения-и-переход-на-ssd">Аппаратные ограничения и переход на SSD</a></li><li><a href="#настройка-файловой-системы-и-реестра">Настройка файловой системы и реестра</a></li><li><a href="#когда-ремонт-невозможен-признаки-критического-износа">Когда ремонт невозможен: признаки критического износа</a></li><li><a href="#частые-вопросы-о-производительности-накопителей">Частые вопросы о производительности накопителей</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Ваш компьютер внезапно превратился в медлительного великана, где открытие даже простых папок занимает целые секунды? Причин для такого поведения может быть множество, начиная от логических ошибок файловой системы и заканчивая физическим износом механики. Медленная скорость жесткого диска <strong>HDD</strong> — это не просто неудобство, а сигнал о том, что система работает в аварийном режиме или требует срочного обслуживания.</p>
+<p>Игнорирование симптомов деградации производительности может привести к полной потере данных или выходу накопителя из строя в самый неподходящий момент. Важно понимать, что современные операционные системы предъявляют высокие требования к скорости чтения и записи, и старые накопители часто не справляются с текущими задачами.</p>
+<p>В этой статье мы разберем основные причины замедления работы накопителя, научимся отличать программные сбои от аппаратных проблем и предоставим пошаговые инструкции по восстановлению нормальной скорости чтения и записи.</p>
+
+<h2 id="механические-причины-замедления-работы-накопителя">Механические причины замедления работы накопителя</h2>
+<p>Жесткий диск — это сложное механическое устройство, где скорость вращения шпинделя и точность позиционирования головок напрямую влияют на производительность. Если вы слышите щелчки, скрежет или периодические замирания системы, проблема кроется в физике, а не в программном коде.</p>
+<p>Самая частая механическая проблема — увеличение времени поиска данных из-за износа подшипников шпинделя или ослабления магнитных головок. В таких случаях операционная система пытается прочитать битый сектор многократно, что создает эффект «зависания» диска на долгие минуты.</p>
+<p>Также стоит обратить внимание на перегрев устройства. <strong>Перегрев</strong> HDD приводит к расширению компонентов и изменению зазоров, что вынуждает контроллер снижать скорость вращения для предотвращения катастрофических повреждений пластин.</p>
+<p>Недостаточное питание также может стать причиной нестабильной работы. Если кабель питания поврежден или блок питания выдает нестабильное напряжение, диск может работать в аварийном режиме с пониженной скоростью вращения.</p>
+
+<blockquote>⚠️ Внимание! При появлении посторонних звуков из системного блока: немедленно прекратите интенсивную работу с данными, сделайте резервную копию и подготовьтесь к замене устройства.</blockquote>
+
+<h2 id="программные-факторы-и-ошибки-файловой-системы">Программные факторы и ошибки файловой системы</h2>
+<p>Иногда железо исправно, но система не может эффективно управлять им. Логические ошибки файловой системы, битые сектора реестра и фрагментация данных — главные враги скорости чтения. <strong>Фрагментация</strong> приводит к тому, что головки диска вынуждены хаотично перемещаться по поверхности, чтобы собрать файл из разных мест.</p>
+<p>Другой серьезный фактор — переполнение системного раздела. Когда место на диске <code>C:</code> исчерпано более чем на 90%, система не может эффективно использовать файл подкачки и временные файлы, что драматически снижает общую скорость работы ПК.</p>
+<p>Вирусы и майнеры в фоновом режиме могут создавать огромную нагрузку на диск, заставляя его постоянно читать и записывать данные. Это часто выглядит как 100% загрузка диска в диспетчере задач Windows, даже при отсутствии активных действий пользователя.</p>
+<p>Устаревшие драйверы контроллера SATA или AHCI также могут стать причиной низкой производительности. Если система работает в режиме IDE вместо <strong>AHCI</strong>, скорость передачи данных может быть ограничена в разы.</p>
+
+<div class="pb-poll" id="poll-f1e6a0fd"><div class="pb-poll-question">📊 Какой симптом замедления диска вы наблюдаете?</div><div class="pb-poll-option" data-poll="f1e6a0fd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянная 100% загрузка в диспетчере задач</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f1e6a0fd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Система зависает при открытии папок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f1e6a0fd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Длительная загрузка Windows</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f1e6a0fd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Посторонние звуки из корпуса</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-состояния-здоровья-диска">Диагностика состояния здоровья диска</h2>
+<p>Прежде чем приступать к ускорению, необходимо точно оценить состояние накопителя. Для этого используются специализированные утилиты, способные считать данные из <strong>S.M.A.R.T.</strong> (Self-Monitoring, Analysis and Reporting Technology).</p>
+<p>Эти технологии позволяют заранее узнать о проблемах: от количества переназначенных секторов до ошибок чтения. Игнорирование этих показателей часто приводит к внезапной смерти диска без возможности восстановления данных.</p>
+<p>Для проверки можно использовать встроенный инструмент Windows или сторонние программы. В командной строке введите <code>wmic diskdrive get status</code>, чтобы получить общий статус исправности всех подключенных накопителей.</p>
+<p>Более детальный анализ проводят утилиты вроде <em>CrystalDiskInfo</em> или <em>HDDScan</em>. Они покажут температуру, время наработки и количество ошибок записи. Если статус"Тревога" или"Плохо", дальнейшее использование диска опасно.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика диска</h4><label class="check-item"><input type="checkbox"><span>Проверить статус S.M.A.R.T.</span></label><label class="check-item"><input type="checkbox"><span>Просканировать на битые сектора</span></label><label class="check-item"><input type="checkbox"><span>Оценить заполненность разделов</span></label><label class="check-item"><input type="checkbox"><span>Обновить драйверы контроллера</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание! Если утилита показывает статус"Тревога" или"Плохо", не пытайтесь дефрагментировать диск — это может ускорить его физический отказ. Сначала сохраните данные!</blockquote>
+
+<h2 id="эффективные-способы-ускорения-работы-hdd">Эффективные способы ускорения работы HDD</h2>
+<p>Если механика цела, можно попробовать программно ускорить работу диска. Начните с дефрагментации, которая собирает разрозненные фрагменты файлов в единые блоки. В Windows это делается через инструмент <code>Оптимизация дисков</code>.</p>
+<p>Отключение индексирования поиска также может дать прирост скорости для старых систем. Это снизит фоновую нагрузку на диск, так как системе не придется постоянно сканировать файлы для построения поискового индекса.</p>
+<p>Очистка автозагрузки от ненужных программ освободит ресурсы диска при старте системы. Многие приложения запускаются автоматически и сразу начинают сканирование или обновление, нагружая накопитель.</p>
+<p>Также важно проверить настройки электропитания. В режиме"Экономия энергии" диск может переходить в спящий режим слишком часто, что вызывает задержки при первом обращении к нему после пробуждения.</p>
+
+<details class="pb-accordion"><summary>Нужно ли дефрагментировать SSD?</summary><div class="pb-accordion-body"><p>Нет! Дефрагментация SSD не только бесполезна, но и вредна, так как сокращает ресурс ячеек памяти. Для SSD используется команда TRIM, которая выполняется автоматически.</p></div></details>
+
+<h2 id="аппаратные-ограничения-и-переход-на-ssd">Аппаратные ограничения и переход на SSD</h2>
+<p>Никакая оптимизация не сравнится с физической заменой устаревшего жесткого диска на твердотельный накопитель (<strong>SSD</strong>). Разница в скорости доступа к данным между HDD и SSD измеряется порядками: миллисекунды против микросекунд.</p>
+<p>Механические диски имеют физический предел скорости, обусловленный вращением пластин (обычно 5400 или 7200 об/мин). Даже самый дешевый SSD в 3-5 раз быстрее в случайном чтении, что критично для работы операционной системы.</p>
+<p>Если замена невозможна, убедитесь, что вы используете интерфейс SATA III (6 Гбит/с) вместо старого SATA II (3 Гбит/с). Это обеспечит максимальную пропускную способность для вашего механического диска.</p>
+<p>В таблице ниже приведены сравнительные характеристики типов накопителей, чтобы вы могли оценить масштаб разницы.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип накопителя</th>
+<th>Скорость чтения (MB/s)</th>
+<th>Время доступа (ms)</th>
+<th>Риск механического износа</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mechanical HDD (5400 RPM)</td>
+<td>80 - 120</td>
+<td>12 - 15</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>Mechanical HDD (7200 RPM)</td>
+<td>140 - 180</td>
+<td>8 - 10</td>
+<td>Высокий</td>
+</tr>
+<tr>
+<td>SATA SSD</td>
+<td>450 - 550</td>
+<td>0.1</td>
+<td>Минимальный</td>
+</tr>
+<tr>
+<td>NVMe M.2 SSD</td>
+<td>3000 - 7000+</td>
+<td>0.05</td>
+<td>Минимальный</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед заменой диска на новый используйте утилиту Clonezilla или фирменное ПО производителя (Samsung Data Migration) для полного переноса системы без переустановки Windows.</p></aside>
+
+<h2 id="настройка-файловой-системы-и-реестра">Настройка файловой системы и реестра</h2>
+<p>Иногда стандартные настройки Windows не оптимальны для конкретного типа дисков. Изменение политики кэширования записей в свойствах устройства может ускорить запись файлов, но требует надежного блока питания.</p>
+<p>В свойствах диска на вкладке"Оборудование" выберите свой диск, нажмите"Свойства", перейдите во вкладку"Политика". Включение"Оптимизировать для выполнения" (кэширование записи) часто дает заметный прирост.</p>
+<p>Также стоит проверить настройки журнала NTFS. Если вам не нужна функция восстановления после сбоя, можно отключить ведение журнала изменений, что ускорит операции с файлами, но снизит надежность файловой системы.</p>
+<p>Не забывайте про отключение гибернации, если она вам не нужна. Файл <code>hiberfil.sys</code> занимает гигабайты места и может фрагментироваться, влияя на скорость работы системы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Чистая установка Windows на новый диск часто дает больший прирост производительности, чем попытки оптимизировать старый, забитый битыми секторами и мусором накопитель.</p></aside>
+
+<h2 id="когда-ремонт-невозможен-признаки-критического-износа">Когда ремонт невозможен: признаки критического износа</h2>
+<p>Не всегда можно решить проблему программно. Если диск имеет множество переназначенных секторов, это означает, что поверхности покрываются"пятнами", на которых данные больше не могут храниться.</p>
+<p>Увеличение количества ошибок ECC (коррекция ошибок) — тревожный признак. Это значит, что контроллер вынужден тратить много времени на восстановление читаемых данных из-за их повреждения на пластине.</p>
+<p>Если вы видите ошибки в логе событий Windows с кодом <code>Event ID 7</code> или <code>9</code> от источника <code>disk</code> или <code>atapi</code>, это сигнал о физическом отказе интерфейса или самого накопителя.</p>
+<p>В таких случаях единственным правильным решением является замена устройства. Попытки"вылечить" умирающий диск низкими уровнями форматирования часто приводят к полной потере данных.</p>
+
+<blockquote>⚠️ Внимание! Никакие программы для"восстановления" диска не устраняют физический износ. Если S.M.A.R.T. показывает критические ошибки, единственное решение — немедленная замена оборудования.</blockquote>
+
+<h2 id="частые-вопросы-о-производительности-накопителей">Частые вопросы о производительности накопителей</h2>
+
+<details>
+<summary>Почему диск загружен на 100% в диспетчере задач Windows 10?</summary>
+<p>Это распространенная проблема, связанная с функциями индексирования,svchost.exe (SysMain) или драйверами. Попробуйте отключить службу SysMain и индексирование диска. Если это не помогло, проверьте диск на ошибки и обновите драйверы контроллера.</p>
+</details>
+
+<details>
+<summary>Можно ли ускорить старый HDD без замены на SSD?</summary>
+<p>Частично — да. Дефрагментация, очистка мусора, отключение визуальных эффектов и автозагрузки могут дать прирост. Но физический предел скорости вращения пластин (обычно 7200 об/мин) преодолен быть не может. Разница будет заметна, но не кардинальна.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять жесткий диск на ошибки?</summary>
+<p>Рекомендуется проводить проверку раз в 3-6 месяцев. Используйте команду <code>chkdsk C: /f /r</code> в командной строке (запуск от имени администратора). Это займет много времени, но поможет выявить и изолировать битые сектора до потери данных.</p>
+</details>
+
+<details>
+<summary>Влияет ли температура на скорость работы HDD?</summary>
+<p>Да, критически. При температурах выше 45-50°C контроллер диска может искусственно снижать скорость работы, чтобы не допустить перегрева пластин и головок. Обеспечьте хорошую вентиляцию в корпусе.</p>
+</details>
+
+<details>
+<summary>Что делать, если диск визжит при работе?</summary>
+<p>Это признак"головокружения" (head crash) или проблем с приводом головок. Немедленно прекратите работу, отключите диск и обратитесь в сервис для восстановления данных или замены. Продолжение работы гарантированно приведет к потере данных.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-pomenyat-lampochku-tormoza-na-kaline.html" class="pb-related-card">
+                <span class="pb-related-title">Замена стоп-сигнала на Lada Kalina: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно заменить перегоревшую лампочку стоп-сигнала на Лада Калина. Подробная ин</span>
+            </a><a href="/articles/s/sk/skhema-pereklyucheniya-peredach-btr-80.html" class="pb-related-card">
+                <span class="pb-related-title">Схема переключения передач БТР-80: устройство КПП и управление</span>
+                <span class="pb-related-desc">Полный обзор схемы переключения передач на бронетранспортере БТР-80. Описание коробки передач, разда</span>
+            </a><a href="/articles/y/yu/yutub-podvisaet-pri-prosmotre-video.html" class="pb-related-card">
+                <span class="pb-related-title">Ютуб подвисает: причины, методы устранения и настройка стабильности</span>
+                <span class="pb-related-desc">Ютуб подвисает при просмотре видео? Узнайте основные причины сбоев и пошаговые инструкции по устране</span>
+            </a><a href="/articles/r/ru/rul-vysoty-v-samolete.html" class="pb-related-card">
+                <span class="pb-related-title">Руль высоты самолета: устройство, принцип работы и управление</span>
+                <span class="pb-related-desc">Подробный разбор устройства руля высоты, влияния на тангаж, отличий от стабилизатора и методов управ</span>
+            </a><a href="/articles/n/ne/ne-kazhdyj-segodnya-mozhet-smotret-v-zavtrashnij-den.html" class="pb-related-card">
+                <span class="pb-related-title">Психология будущего: планирование безопасности в условиях неопределенности</span>
+                <span class="pb-related-desc">Почему не каждый может смотреть в завтрашний день? Как планировать обслуживание тормозов и финансову</span>
+            </a><a href="/articles/k/ka/kak-pravilno-trogatsya-v-gorku-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Как трогаться в горку на механике: пошаговая инструкция для новичков</span>
+                <span class="pb-related-desc">Учимся правильно стартовать на подъёме без отката: техника работы сцеплением, газом и ручником. Схем</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

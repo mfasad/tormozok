@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Винтовой регулятор тормозных усилий: устройство, настройка и ремонт — ТормозОК</title>
+    <meta name="description" content="Полный гид по винтовым регуляторам тормозов. Разбор конструкции, причины износа, пошаговая настройка усилия торможения и устранение люфтов в механизме.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/v/vi/vintovoj-regulyator-tormoznykh-usilij.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Винтовой регулятор тормозных усилий: устройство, настройка и ремонт">
+    <meta property="og:description" content="Полный гид по винтовым регуляторам тормозов. Разбор конструкции, причины износа, пошаговая настройка усилия торможения и устранение люфтов в механизме.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-nav-active">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Винтовой регулятор тормозных усилий: устройство, настройка и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#конструктивные-особенности-и-принцип-работы">Конструктивные особенности и принцип работы</a></li><li><a href="#симптомы-неисправности-и-диагностические-признаки">Симптомы неисправности и диагностические признаки</a></li><li><a href="#пошаговая-процедура-регулировки-усилия">Пошаговая процедура регулировки усилия</a></li><li><a href="#технические-характеристики-и-параметры-настройки">Технические характеристики и параметры настройки</a></li><li><a href="#влияние-эксплуатации-на-износ-механизмов">Влияние эксплуатации на износ механизмов</a></li><li><a href="#взаимодействие-с-другими-элементами-тормозной-системы">Взаимодействие с другими элементами тормозной системы</a></li><li><a href="#профессиональный-ремонт-и-замена-узла">Профессиональный ремонт и замена узла</a></li><li><a href="#профилактика-и-долгосрочное-обслуживание">Профилактика и долгосрочное обслуживание</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-zadnikh-kolodok-largus-kross.html">Замена задних колодок Lada Largus Cross: пошаговая инструкция и советы</a></li><li><a href="/articles/i/iz/iz-chego-delayut-tormoznye-barabany.html">Из чего делают тормозные барабаны: материалы и состав сплавов</a></li><li><a href="/articles/t/to/tormoznye-barabany-mtz-82.html">Тормозные барабаны МТЗ-82: выбор, диагностика и замена</a></li><li><a href="/articles/k/kl/klapan-gornogo-tormoza-isuzu.html">Клапан горного тормоза Isuzu: устройство, неисправности и замена</a></li><li><a href="/articles/r/re/regulirovka-tormoznoj-lenty-a4af3.html">Регулировка тормозной ленты АКПП A4AF3: Пошаговая инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Винтовой регулятор тормозных усилий: принцип работы и обслуживание</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#конструктивные-особенности-и-принцип-работы">Конструктивные особенности и принцип работы</a></li><li><a href="#симптомы-неисправности-и-диагностические-признаки">Симптомы неисправности и диагностические признаки</a></li><li><a href="#пошаговая-процедура-регулировки-усилия">Пошаговая процедура регулировки усилия</a></li><li><a href="#технические-характеристики-и-параметры-настройки">Технические характеристики и параметры настройки</a></li><li><a href="#влияние-эксплуатации-на-износ-механизмов">Влияние эксплуатации на износ механизмов</a></li><li><a href="#взаимодействие-с-другими-элементами-тормозной-системы">Взаимодействие с другими элементами тормозной системы</a></li><li><a href="#профессиональный-ремонт-и-замена-узла">Профессиональный ремонт и замена узла</a></li><li><a href="#профилактика-и-долгосрочное-обслуживание">Профилактика и долгосрочное обслуживание</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Механическое управление тормозной системой часто требует точной калибровки, и именно здесь на сцену выходит <strong>винтовой регулятор тормозных усилий</strong>. Этот компонент, часто незаметный для обычного водителя, играет критическую роль в обеспечении баланса между осями автомобиля, предотвращая блокировку задних колес при резком нажатии на педаль.</p>
+
+<p>В отличие от современных электронных систем распределения тормозных усилий (EBD), классический винтовой механизм обеспечивает надежную механическую обратную связь. Он позволяет адаптировать тормозные характеристики под текущую загрузку транспортного средства без сложной электроники.</p>
+
+<h2 id="конструктивные-особенности-и-принцип-работы">Конструктивные особенности и принцип работы</h2>
+<p>Основой устройства является прецизионная <strong>винтовая пара</strong>, которая преобразует вращательное движение в линейное перемещение поршня или рычага. Когда вы нажимаете на тормоз, усилие передается через трос или гидроцилиндр, но именно винтовой механизм определяет конечное давление в рабочей части системы.</p>
+
+<p>Ключевым элементом является <em>самоустанавливающийся упор</em>, который компенсирует износ накладок. Если вы эксплуатируете автомобиль в тяжелых условиях, частая регулировка может не потребоваться благодаря этому свойству. Однако в старых моделях или специфических грузовых авто ручная настройка остается обязательной процедурой.</p>
+
+<p>Важно понимать, что <strong>рабочий ход поршня</strong> напрямую зависит от угла поворота регулировочного винта. Малейшая ошибка в расчетах может привести к тому, что колеса либо будут тормозить слишком слабо, либо заблокируются на льду.</p>
+
+<blockquote>⚠️ Внимание: Неправильная затяжка винта может привести к заклиниванию тормозных колодок даже при отпущенной педали, что чревато перегревом дисков и возгоранием тормозной жидкости.</blockquote>
+
+<h2 id="симптомы-неисправности-и-диагностические-признаки">Симптомы неисправности и диагностические признаки</h2>
+<p>Как понять, что <strong>винтовой механизм</strong> требует вмешательства? Первым сигналом служит неравномерное торможение: автомобиль может уводить в сторону при нажатии на педаль, даже если суппорты исправны. Это классический признак того, что регулятор потерял свою калибровку.</p>
+
+<p>Еще одним тревожным звоночком является повышенный ход педали или, наоборот, ее чрезмерная жесткость. Если вы чувствуете, что усилие торможения не соответствует вашему нажатию, проверьте состояние резьбовой пары. Влага и грязь часто приводят к коррозии, которая блокирует движение винта.</p>
+
+<p>Прислушайтесь к звукам при нажатии на тормоз. Скрежет или металлический стук могут указывать на то, что <em>ослаблен контргайка</em> или нарушена целостность корпуса регулятора. Игнорирование этих шумов часто приводит к полному выходу узла из строя.</p>
+
+<div class="pb-poll" id="poll-7fa09c46"><div class="pb-poll-question">📊 Как часто вы проверяете состояние тормозной системы?</div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в месяц</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в полгода</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при поломке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="пошаговая-процедура-регулировки-усилия">Пошаговая процедура регулировки усилия</h2>
+<p>Настройка винтового регулятора требует аккуратности и использования соответствующего инструмента. Вам понадобится ключ для контргайки и отвертка для фиксатора. Процесс начинается с освобождения механизма от нагрузки: поднимите автомобиль домкратом и снимите колесо.</p>
+
+<p>Очистите область вокруг регулятора от грязи и ржавчины. Нанесите небольшое количество <strong>тормозной смазки</strong> на резьбу, чтобы винт легко вращался. Если резьба "прикипела", не применяйте грубую силу, используйте проникающую смазку и дайте ей время подействовать.</p>
+
+<p>Вращайте винт по часовой стрелке для увеличения усилия торможения и против — для уменьшения. После каждого пол-оборота проверяйте вращение колеса. Оно должно вращаться свободно, но с минимальным сопротивлением со стороны колодок.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед регулировкой</h4><label class="check-item"><input type="checkbox"><span>Снять колесо</span></label><label class="check-item"><input type="checkbox"><span>Очистить резьбу</span></label><label class="check-item"><input type="checkbox"><span>Проверить люфт</span></label><label class="check-item"><input type="checkbox"><span>Поднять авто на домкрат</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="технические-характеристики-и-параметры-настройки">Технические характеристики и параметры настройки</h2>
+<p>Для точной настройки необходимо ориентироваться не только на ощущения, но и на технические данные производителя. Разные модели автомобилей имеют специфические допуски на ход штока регулятора.</p>
+
+<p>Ниже приведена таблица со стандартными параметрами для распространенных типов механизмов, однако всегда сверяйтесь с технической документацией вашего авто.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип механизма</th>
+<th>Диаметр винта (мм)</th>
+<th>Шаг резьбы (мм)</th>
+<th>Крутящий момент затяжки (Нм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Легковой передний привод</td>
+<td>8.0 - 10.0</td>
+<td>1.25</td>
+<td>15 - 25</td>
+</tr>
+<tr>
+<td>Внедорожник / Грузовой</td>
+<td>12.0 - 14.0</td>
+<td>2.00</td>
+<td>40 - 60</td>
+</tr>
+<tr>
+<td>Усиленный механизм (Спорт)</td>
+<td>10.0 - 12.0</td>
+<td>1.50</td>
+<td>30 - 45</td>
+</tr>
+<tr>
+<td>Стандартный барабанный</td>
+<td>6.0 - 8.0</td>
+<td>1.00</td>
+<td>10 - 20</td>
+</tr>
+</tbody>
+</table></div>
+
+<blockquote>⚠️ Внимание: Превышение крутящего момента затяжки контргайки может сорвать резьбу на корпусе, что потребует замены всего узла, а не только винта.</blockquote>
+
+<details class="pb-accordion"><summary>Что делать, если винт заклинило?</summary><div class="pb-accordion-body"><p>Если винт заклинило, попробуйте аккуратно постучать по головке медным молотком. Ни в коем случае не пытайтесь высверлить винт без предварительного нагрева детали, так как это может повредить корпус тормозного цилиндра.</p></div></details>
+
+<h2 id="влияние-эксплуатации-на-износ-механизмов">Влияние эксплуатации на износ механизмов</h2>
+<p>Условия эксплуатации напрямую влияют на срок службы <strong>винтового регулятора</strong>. В регионах с высокой влажностью или использованием реагентов на дорогах коррозия наступает быстрее. Грязь, попадающая в резьбу, действует как абразив, ускоряя износ.</p>
+
+<p>Вы также должны учитывать температурный режим. Регуляторы, находящиеся вблизи тормозных дисков, подвержены постоянным тепловым расширениям. Это может приводить к изменению геометрии резьбы и потере точности настройки.</p>
+
+<p>Регулярная проверка состояния пыльников и защитных чехлов обязательна. Если <em>пыльник поврежден</em>, внутрь механизма попадает вода и песок. Это мгновенно выводит из строя прецизионную пару, делая регулировку невозможной без замены.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярное обслуживание и очистка резьбовой пары от грязи увеличивают срок службы механизма в 3-4 раза по сравнению с эксплуатацией в грязном виде.</p></aside>
+
+<h2 id="взаимодействие-с-другими-элементами-тормозной-системы">Взаимодействие с другими элементами тормозной системы</h2>
+<p>Винтовой регулятор не работает изолированно. Он тесно взаимодействует с <strong>тормозными цилиндрами</strong>, тягами и рычагами. Любая деформация в смежных узлах сразу сказывается на работе регулятора.</p>
+
+<p>Например, изгиб регулировочной тяги может создать ложное натяжение, из-за чего винт будет находиться в постоянно сжатом состоянии. Это приводит к тому, что колодки не отходят от барабана, вызывая перегрев и снижение эффективности торможения.</p>
+
+<p>Также важно проверять состояние тросов стояночного тормоза. Если трос имеет слишком большое натяжение, винтовой механизм может не успеть сработать корректно при экстренном торможении. Необходимо обеспечить свободный ход всех элементов до момента начала тормозного усилия.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене тормозных колодок всегда проверяйте состояние винтового регулятора: грязь может забить резьбу, и вы не сможете отрегулировать новый зазор без предварительной чистки.</p></aside>
+
+<h2 id="профессиональный-ремонт-и-замена-узла">Профессиональный ремонт и замена узла</h2>
+<p>В некоторых случаях ремонт винтового регулятора невозможен или экономически нецелесообразен. Если резьба сорвана или корпус имеет трещины, требуется полная замена узла. Покупайте только оригинальные детали или качественные аналоги, так как дешевые заменители часто имеют неточную геометрию резьбы.</p>
+
+<p>Процесс замены требует демонтажа всех соединительных арматур. Будьте предельно внимательны: при разборке не потеряйте пружины, шайбы и стопорные кольца. Их потеря может привести к неправильной сборке и отказу тормозов.</p>
+
+<p>После установки нового регулятора обязательно проведите опрессовку системы и удаление воздуха (если система гидравлическая). Затем выполните калибровку усилия, используя динамометрический ключ и стенд для проверки тормозов, если это возможно.</p>
+
+<details class="pb-accordion"><summary>Можно ли заменить регулятор самостоятельно?</summary><div class="pb-accordion-body"><p>Замена возможна в гаражных условиях при наличии подъемника и набора инструментов, но для точной настройки усилия торможения рекомендуется обратиться в сервис со стендом проверки тормозов.</p></div></details>
+
+<h2 id="профилактика-и-долгосрочное-обслуживание">Профилактика и долгосрочное обслуживание</h2>
+<p>Чтобы избежать проблем с <strong>винтовым регулятором</strong>, включите его проверку в плановое ТО. Осматривайте узел каждые 10 000 километров пробега. Обращайте внимание на состояние защитных чехлов и наличие коррозии на корпусе.</p>
+
+<p>Раз в год проводите полную очистку механизма от старой смазки и грязи. Используйте специальные очистители для тормозов, которые не оставляют масляной пленки. После очистки нанесите новую высокотемпературную смазку на резьбовую часть.</p>
+
+<p>Не забывайте проверять затяжку крепления регулятора к кузову или подвеске. Вибрация может постепенно ослабить болты крепления, что приведет к смещению узла и нарушению работы тормозной системы.</p>
+
+<blockquote>⚠️ Внимание: При использовании агрессивных моющих средств для мойки автомобиля убедитесь, что они не смывают смазку с резьбы винтового регулятора, это может привести к коррозии и заклиниванию.</blockquote>
+
+<details>
+<summary>Как часто нужно регулировать винтовой регулятор?</summary>
+<p>Регулировка требуется при появлении признаков неравномерного торможения, увеличении хода педали или после замены тормозных колодок. В плановом порядке проверку стоит проводить раз в 20-30 тысяч километров.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать обычную смазку для резьбы?</summary>
+<p>Нет, обычная смазка может вымыться тормозной жидкостью или высохнуть при высоких температурах. Используйте только специализированные высокотемпературные смазки для тормозных систем.</p>
+</details>
+
+<details>
+<summary>Что делать, если винт не вращается?</summary>
+<p>Попробуйте обработать резьбу проникающей смазкой (WD-40 или аналог). Не применяйте чрезмерную силу, чтобы не сорвать резьбу. Если не помогло, потребуется демонтаж узла для чистки или замены.</p>
+</details>
+
+<details>
+<summary>Влияет ли нагрузка на автомобиль на настройку регулятора?</summary>
+<p>Да, при полной загрузке автомобиля усилие торможения на задней оси должно быть выше. Некоторые регуляторы имеют автоматическую коррекцию, другие требуют ручной настройки в зависимости от загрузки.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-zadnikh-kolodok-largus-kross.html" class="pb-related-card">
+                <span class="pb-related-title">Замена задних колодок Lada Largus Cross: пошаговая инструкция и советы</span>
+                <span class="pb-related-desc">Подробный гид по замене задних тормозных колодок на Lada Largus Cross. Выбор деталей, нюансы барабан</span>
+            </a><a href="/articles/i/iz/iz-chego-delayut-tormoznye-barabany.html" class="pb-related-card">
+                <span class="pb-related-title">Из чего делают тормозные барабаны: материалы и состав сплавов</span>
+                <span class="pb-related-desc">Подробный разбор материалов тормозных барабанов: серый чугун, сталь, композиты. Особенности производ</span>
+            </a><a href="/articles/t/to/tormoznye-barabany-mtz-82.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозные барабаны МТЗ-82: выбор, диагностика и замена</span>
+                <span class="pb-related-desc">Полный гид по тормозным барабанам трактора МТЗ-82. Признаки износа, нюансы ремонта, сравнение произв</span>
+            </a><a href="/articles/k/kl/klapan-gornogo-tormoza-isuzu.html" class="pb-related-card">
+                <span class="pb-related-title">Клапан горного тормоза Isuzu: устройство, неисправности и замена</span>
+                <span class="pb-related-desc">Полный обзор клапана горного тормоза для грузовиков Isuzu. Разбор принципа работы, частые поломки, п</span>
+            </a><a href="/articles/r/re/regulirovka-tormoznoj-lenty-a4af3.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка тормозной ленты АКПП A4AF3: Пошаговая инструкция</span>
+                <span class="pb-related-desc">Как правильно отрегулировать тормозную ленту на коробке A4AF3. Инструкция по настройке переднего и з</span>
+            </a><a href="/articles/k/ka/kakie-tormoznye-barabany-luchshe-na-grantu.html" class="pb-related-card">
+                <span class="pb-related-title">Какие тормозные барабаны лучше на Ладу Гранту: Рейтинг брендов и выбор</span>
+                <span class="pb-related-desc">Сравнение производителей тормозных барабанов для Lada Granta. Обзор производителей, признаки износа,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

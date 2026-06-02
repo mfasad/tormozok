@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как работает тестер тормозной жидкости: принцип, диагностика, нормы — ТормозОК</title>
+    <meta name="description" content="Подробный разбор принципа работы тестера тормозной жидкости. Узнайте, как измеряется точка кипения, почему важна вода и как избежать отказа тормозов.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/printsip-raboty-testera-tormoznoj-zhidkosti.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как работает тестер тормозной жидкости: принцип, диагностика, нормы">
+    <meta property="og:description" content="Подробный разбор принципа работы тестера тормозной жидкости. Узнайте, как измеряется точка кипения, почему важна вода и как избежать отказа тормозов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-nav-active">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/tormoznaya-zhidkost/">Тормозная жидкость</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как работает тестер тормозной жидкости: принцип, диагностика, нормы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-почему-вода-опасна-для-тормозов">Физика процесса: почему вода опасна для тормозов</a></li><li><a href="#электрический-принцип-измерения-влажности">Электрический принцип измерения влажности</a></li><li><a href="#порядок-проведения-диагностики-и-калибровка">Порядок проведения диагностики и калибровка</a></li><li><a href="#сравнение-методов-прямой-нагрев-против-электропроводности">Сравнение методов: прямой нагрев против электропроводности</a></li><li><a href="#интерпретация-результатов-и-цветовая-индикация">Интерпретация результатов и цветовая индикация</a></li><li><a href="#распространенные-ошибки-при-использовании">Распространенные ошибки при использовании</a></li><li><a href="#техническое-обслуживание-самого-прибора">Техническое обслуживание самого прибора</a></li><li><a href="#faq-частые-вопросы-о-тестерах-тормозной-жидкости">FAQ: Частые вопросы о тестерах тормозной жидкости</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-glavnogo-tormoznogo-tsilindra-bez-prokachki-tormozov.html">Замена главного тормозного цилиндра без прокачки: реальный метод</a></li><li><a href="/articles/o/os/osushitel-vozdukha-zil-4331.html">Осушитель воздуха ЗИЛ 4331: Технические характеристики и замена</a></li><li><a href="/articles/o/ot/otlichie-tormoznoj-zhidkosti-dot-3-ot-dot-4.html">DOT 3 vs DOT 4: основные отличия и правила выбора тормозной жидкости</a></li><li><a href="/articles/k/ka/kak-v-odnogo-prokachat-tormoza.html">Как прокачать тормоза одному: пошаговая инструкция и лайфхаки</a></li><li><a href="/articles/f/fm/fmvss-116-dot-4.html">FMVSS 116 DOT 4: Стандарт тормозной жидкости для авто</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы и диагностика тестерами тормозной жидкости</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-почему-вода-опасна-для-тормозов">Физика процесса: почему вода опасна для тормозов</a></li><li><a href="#электрический-принцип-измерения-влажности">Электрический принцип измерения влажности</a></li><li><a href="#порядок-проведения-диагностики-и-калибровка">Порядок проведения диагностики и калибровка</a></li><li><a href="#сравнение-методов-прямой-нагрев-против-электропроводности">Сравнение методов: прямой нагрев против электропроводности</a></li><li><a href="#интерпретация-результатов-и-цветовая-индикация">Интерпретация результатов и цветовая индикация</a></li><li><a href="#распространенные-ошибки-при-использовании">Распространенные ошибки при использовании</a></li><li><a href="#техническое-обслуживание-самого-прибора">Техническое обслуживание самого прибора</a></li><li><a href="#faq-частые-вопросы-о-тестерах-тормозной-жидкости">FAQ: Частые вопросы о тестерах тормозной жидкости</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Система торможения автомобиля — это сложный гидравлический механизм, где единственным рабочим телом выступает <strong>тормозная жидкость</strong>. Именно она передает усилие от педали к колодкам, но со временем теряет свои свойства, впитывая влагу из атмосферы. Обычный визуальный осмотр не способен выявить критическое снижение температуры кипения, что может привести к "отвариванию" системы под нагрузкой.</p>
+
+<p>Для решения этой проблемы механики и автолюбители используют специализированные приборы — <em>tester тормозной жидкости</em>. Эти устройства позволяют быстро и точно определить уровень загрязнения водой, который является главным врагом безопасности на дороге. Понимание того, как именно работает такой тестер, поможет вам правильно интерпретировать результаты и вовремя провести замену расходного материала.</p>
+
+<h2 id="физика-процесса-почему-вода-опасна-для-тормозов">Физика процесса: почему вода опасна для тормозов</h2>
+
+<p>Главная характеристика, которую измеряет любой прибор, — это <strong>температура кипения</strong> жидкости. Чистая тормозная жидкость <em>DOT 4</em> имеет сухую точку кипения около 230–260°C, а влажная (с содержанием 3,5% воды) — уже около 155°C. При интенсивном торможении, например, при спуске с горы, температура в суппорте может легко превысить 100°C.</p>
+
+<p>Если в системе присутствует вода, она начинает закипать первой. Образующийся пар не сжимается так, как жидкость, и гидравлическое давление просто исчезает — педаль проваливается в пол. Электронный <strong>тестер</strong> помогает выявить этот риск на ранней стадии, измеряя не саму воду, а изменение электрических свойств среды, вызванное её присутствием.</p>
+
+<blockquote>⚠️ Внимание: Даже небольшое количество воды в системе может снизить точку кипения жидкости на 50–80 градусов, что делает тормоза неэффективными при экстренном маневре.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед покупкой тестера проверьте, поддерживает ли он стандарты DOT 3, DOT 4 и DOT 5.1, так как некоторые дешевые модели работают только с базовыми типами жидкостей.</p></aside>
+
+<h2 id="электрический-принцип-измерения-влажности">Электрический принцип измерения влажности</h2>
+
+<p>Большинство доступных на рынке портативных устройств работают на основе изменения <strong>электропроводности</strong>. Чистая тормозная жидкость является диэлектриком и почти не проводит электрический ток. Однако вода обладает высокой ионной проводимостью. Когда влага попадает в систему, общая электропроводность смеси резко возрастает.</p>
+
+<p>Внутри корпуса прибора находятся два металлических <strong>электроды</strong>. При погружении щупа в бачок между этими контактами подается слабый электрический сигнал. Микроконтроллер <em>тестера</em> замеряет сопротивление (или проводимость) среды между электродами. Чем больше воды в жидкости, тем ниже сопротивление и выше сила тока, протекающего через цепь.</p>
+
+<p>Полученные данные преобразуются алгоритмом прибора в процентное содержание влаги или категорию состояния. На основе калибровочных таблиц, заложенных в память устройства, <strong>тестер</strong> интерпретирует электрические показания как температуру кипения. Это позволяет избежать прямого нагрева жидкости, который был бы опасен в условиях гаража.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Прибор не измеряет воду напрямую, а анализирует изменение электропроводности среды, которое прямо пропорционально количеству растворенной влаги.</p></aside>
+
+<div class="pb-poll" id="poll-1f6ef14b"><div class="pb-poll-question">📊 Как часто вы проверяете состояние тормозной жидкости?</div><div class="pb-poll-option" data-poll="1f6ef14b" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Каждые 6 месяцев</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f6ef14b" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f6ef14b" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при появлении проблем</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="1f6ef14b" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="порядок-проведения-диагностики-и-калибровка">Порядок проведения диагностики и калибровка</h2>
+
+<p>Процедура проверки выглядит просто, но требует соблюдения определенных правил для получения точного результата. Сначала необходимо очистить крышку бачка от грязи, чтобы частицы не попали внутрь. Затем нужно извлечь щуп прибора и погрузить его в жидкость на глубину, указанную в инструкции к <em>модели</em>.</p>
+
+<p>Важно не касаться щупом стенок бачка или металлической крышки, так как это может создать ложную цепь и исказить показания. После погружения нажмите кнопку запуска. Светодиоды или цифровой дисплей покажут результат через несколько секунд. Некоторые устройства требуют предварительной калибровки в воздухе перед каждым замером.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к диагностике</h4><label class="check-item"><input type="checkbox"><span>Очистить крышку бачка от пыли</span></label><label class="check-item"><input type="checkbox"><span>Снять резиновую пробку</span></label><label class="check-item"><input type="checkbox"><span>Опустить щуп в жидкость</span></label><label class="check-item"><input type="checkbox"><span>Дождаться индикации результата</span></label><label class="check-item"><input type="checkbox"><span>Извлечь щуп и протереть</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Если результат показывает красную зону или мигающий сигнал, это означает критическое содержание влаги. В таком случае <strong>замена тормозной жидкости</strong> должна быть проведена немедленно. Если же индикатор зеленый, система исправна, но стоит помнить о сроке годности самой жидкости.</p>
+
+<blockquote>⚠️ Внимание: Не используйте один и тот же датчик для проверки разных типов жидкостей (например, DOT 3 и DOT 5) без тщательной промывки, так как силиконовые основы могут искажать электропроводность.</blockquote>
+
+<h2 id="сравнение-методов-прямой-нагрев-против-электропроводности">Сравнение методов: прямой нагрев против электропроводности</h2>
+
+<p>Существует два основных подхода к измерению качества тормозной жидкости. Электронные тестеры, о которых шла речь выше, используют метод <strong>электропроводности</strong>. Они быстрые, безопасные и недорогие, но имеют свои ограничения при измерении специфических составов.</p>
+
+<p>Существуют также лабораторные приборы, которые используют метод <strong>прямого нагрева</strong> пробы жидкости. В них жидкость нагревается до кипения, и фиксируется температура начала парообразования. Хотя этот метод считается более точным для определения реальной точки кипения, он громоздок, дорог и требует времени на остывание.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Параметр сравнения</th>
+<th>Электронный тестер</th>
+<th>Прибор с нагревом</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Скорость измерения</td>
+<td>3–5 секунд</td>
+<td>3–5 минут</td>
+</tr>
+<tr>
+<td>Точность для DOT 4</td>
+<td>Высокая (±3%)</td>
+<td>Эталонная</td>
+</tr>
+<tr>
+<td>Стоимость</td>
+<td>Низкая</td>
+<td>Высокая (профессиональная)</td>
+</tr>
+<tr>
+<td>Безопасность</td>
+<td>Полная</td>
+<td>Риск ожога паром</td>
+</tr>
+</tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Почему дешевые тестеры могут врать?</summary><div class="pb-accordion-body"><p>Дешевые китайские аналоги часто не имеют точной калибровки под разные стандарты DOT. Они могут показывать "норму" для жидкости, которая уже начала разлагаться, если в ней есть примеси, влияющие на проводимость, отличные от воды.</p></div></details>
+
+<h2 id="интерпретация-результатов-и-цветовая-индикация">Интерпретация результатов и цветовая индикация</h2>
+
+<p>Большинство бытовых тестеров используют цветовую шкалу для упрощения восприятия. Зеленый свет или надпись "OK" означает, что содержание воды находится в пределах нормы (обычно менее 1–2%). Желтый или оранжевый индикатор предупреждает о том, что <strong>тормозная жидкость</strong> требует скорого внимания и замены в ближайшие месяцы.</p>
+
+<p>Красный свет или мигающий сигнал — это прямой призыв к действию. Это означает, что содержание воды превысило критический порог (обычно 3% и более). В такой ситуации тормоза могут отказать при первой же серьезной нагрузке. Не откладывайте ремонт, даже если машина "ведет себя нормально" в спокойном режиме езды.</p>
+
+<p>Иногда прибор показывает конкретное значение температуры кипения. В этом случае ориентируйтесь на рекомендации производителя. Например, для <em>DOT 4</em> температура кипения ниже 150°C считается критической. Важно понимать, что прибор показывает текущее состояние, а не потенциальный ресурс.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Красный индикатор на тестере — это не рекомендация, а сигнал об опасности отказа тормозов, требующий немедленной замены жидкости в системе.</p></aside>
+
+<h2 id="распространенные-ошибки-при-использовании">Распространенные ошибки при использовании</h2>
+
+<p>Даже самый точный прибор может выдать ошибку, если нарушен алгоритм работы. Одна из самых частых проблем — замер жидкости с высоким содержанием примесей или масла. Если вы недавно меняли жидкость, но использовали некачественную или смешали разные стандарты, <strong>электропроводность</strong> может быть аномально высокой, даже без воды.</p>
+
+<p>Вторая ошибка — использование влажного щупа. Если вы не протерли электроды перед замером, капли воды на самом датчике создадут ложный контакт, и прибор покажет красную зону. Всегда протирайте щуп безворсовой салфеткой перед каждым использованием.</p>
+
+<p>Также не стоит погружать щуп на дно бачка, где скапливаются взвеси и грязь. Это может забить электроды и привести к механическому повреждению чувствительных элементов. Измерение следует проводить в толще чистой жидкости, избегая дна и стенок.</p>
+
+<details class="pb-accordion"><summary>Что делать, если тестер показывает ошибку?</summary><div class="pb-accordion-body"><p>Если прибор выдает ошибку E01 или аналогичную, попробуйте откалибровать его на воздухе. Если ошибка сохраняется, возможно, датчик загрязнен или вышел из строя из-за коррозии электродов.</p></div></details>
+
+<h2 id="техническое-обслуживание-самого-прибора">Техническое обслуживание самого прибора</h2>
+
+<p>Датчики тестеров со временем окисляются, особенно если после работы их не протирают. Оксидный слой на электродах нарушает контакт с жидкостью, что приводит к заниженным показаниям влажности. Регулярная очистка электродов спиртом или специальной жидкостью продлит жизнь вашему <em>тестеру</em>.</p>
+
+<p>Убедитесь, что батарейки в приборе свежие. Падение напряжения может привести к нестабильной работе электроники и ложным срабатываниям. Храните устройство в сухом месте, вдали от прямых солнечных лучей и перепадов температур, чтобы электроника сохраняла точность.</p>
+
+<p>Качественный <strong>тестер тормозной жидкости</strong> — это инвестиция в вашу безопасность. Он окупается одним лишь фактом предотвращения возможной аварии. Регулярная проверка раз в полгода позволит вам держать систему торможения в идеальном состоянии и не надеяться на "авось".</p>
+
+<blockquote>⚠️ Внимание: Если вы используете силиконовую жидкость (DOT 5), большинство стандартных тестеров по электропроводности не подойдут, так как силикон не проводит ток даже с водой. Для них нужны специальные приборы.</blockquote>
+
+<h2 id="faq-частые-вопросы-о-тестерах-тормозной-жидкости">FAQ: Частые вопросы о тестерах тормозной жидкости</h2>
+
+<details>
+<summary>Можно ли использовать один тестер для разных марок автомобилей?</summary>
+<p>Да, принцип работы устройства универсален. Он измеряет физическое свойство жидкости — электропроводность, которое зависит от содержания воды, а не от марки автомобиля. Главное, чтобы жидкость соответствовала стандарту (DOT 3, 4, 5.1), который поддерживает ваш прибор.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять ее каждые 2 года или 40–50 тысяч километров пробега. Однако, если тестер показывает высокое содержание влаги раньше срока, замену следует провести немедленно, не дожидаясь регламентного обслуживания.</p>
+</details>
+
+<details>
+<summary>Почему тестер показывает красную зону, хотя я менял жидкость неделю назад?</summary>
+<p>Это может означать, что в систему попала старая жидкость из трубок и суппортов при частичной прокачке, либо была использована некачественная продукция. Также возможно, что датчик загрязнен. Проверьте прибор на заведомо чистой жидкости или почистите электроды.</p>
+</details>
+
+<details>
+<summary>Влияет ли температура воздуха на показания тестера?</summary>
+<p>Влияние незначительное для качественных приборов, так как они имеют встроенную температурную компенсацию. Однако при экстремально низких или высоких температурах окружающей среды стоит дать жидкости в бачке прийти в равновесие с температурой воздуха перед замером.</p>
+</details>
+
+<blockquote>⚠️ Внимание: Технические характеристики тестеров и стандарты жидкостей могут обновляться производителями. Всегда сверяйтесь с актуальной документацией к вашему устройству и инструкциями автопроизводителя.</blockquote></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-glavnogo-tormoznogo-tsilindra-bez-prokachki-tormozov.html" class="pb-related-card">
+                <span class="pb-related-title">Замена главного тормозного цилиндра без прокачки: реальный метод</span>
+                <span class="pb-related-desc">Пошаговая инструкция по замене ГТЦ без разгерметизации контура. Как избежать воздухозабора, сохранит</span>
+            </a><a href="/articles/o/os/osushitel-vozdukha-zil-4331.html" class="pb-related-card">
+                <span class="pb-related-title">Осушитель воздуха ЗИЛ 4331: Технические характеристики и замена</span>
+                <span class="pb-related-desc">Разбор осушителя воздуха для самосвала ЗИЛ 4331. Принцип работы, признаки неисправности, инструкция </span>
+            </a><a href="/articles/o/ot/otlichie-tormoznoj-zhidkosti-dot-3-ot-dot-4.html" class="pb-related-card">
+                <span class="pb-related-title">DOT 3 vs DOT 4: основные отличия и правила выбора тормозной жидкости</span>
+                <span class="pb-related-desc">Подробное сравнение тормозных жидкостей DOT 3 и DOT 4. Разбор температурных режимов, химического сос</span>
+            </a><a href="/articles/k/ka/kak-v-odnogo-prokachat-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Как прокачать тормоза одному: пошаговая инструкция и лайфхаки</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно прокачать тормозную систему без помощника. Эффективные методы, необходим</span>
+            </a><a href="/articles/f/fm/fmvss-116-dot-4.html" class="pb-related-card">
+                <span class="pb-related-title">FMVSS 116 DOT 4: Стандарт тормозной жидкости для авто</span>
+                <span class="pb-related-desc">Полный разбор стандарта FMVSS 116 DOT 4. Точка кипения, гигроскопичность, совместимость жидкостей и </span>
+            </a><a href="/articles/g/gi/gidravlicheskoe-maslo-dlya-tormozov-velosipeda.html" class="pb-related-card">
+                <span class="pb-related-title">Гидравлическое масло для тормозов велосипеда: выбор и замена</span>
+                <span class="pb-related-desc">Полный гид по выбору тормозной жидкости: DOT 4, DOT 5.1 и минеральное масло. Инструкция по прокачке,</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

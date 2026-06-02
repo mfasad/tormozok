@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Гидравлический ручник своими руками: схема, комплектующие и монтаж — ТормозОК</title>
+    <meta name="description" content="Пошаговая инструкция по установке самодельной гидравлической системы ручного тормоза. Обзор компонентов, нюансы подключения и безопасности.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/g/gi/gidravlicheskij-ruchnik-svoimi-rukami.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Гидравлический ручник своими руками: схема, комплектующие и монтаж">
+    <meta property="og:description" content="Пошаговая инструкция по установке самодельной гидравлической системы ручного тормоза. Обзор компонентов, нюансы подключения и безопасности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Гидравлический ручник своими руками: схема, комплектующие и монтаж</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-действия-и-выбор-базового-узла">Принцип действия и выбор базового узла</a></li><li><a href="#комплектующие-и-необходимые-инструменты">Комплектующие и необходимые инструменты</a></li><li><a href="#монтаж-главного-цилиндра-и-рычага-управления">Монтаж главного цилиндра и рычага управления</a></li><li><a href="#прокладка-магистралей-и-подключение-к-суппортам">Прокладка магистралей и подключение к суппортам</a></li><li><a href="#прокачка-системы-и-удаление-воздуха">Прокачка системы и удаление воздуха</a></li><li><a href="#тестирование-и-меры-безопасности">Тестирование и меры безопасности</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-zaekhat-na-estakadu-na-mekhanike-bez-ruchnika.html">Старт на эстакаде на механике без ручника: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-podnyat-ruchnik-na-mekhanike.html">Как поднять ручной тормоз на механике: пошаговая инструкция</a></li><li><a href="/articles/g/gd/gde-nakhoditsya-ruchnik-na-kamri-40.html">Где находится ручник на Toyota Camry 40 (XV40): виды и управление</a></li><li><a href="/articles/k/ka/kak-snyat-elektronnyj-ruchnik.html">Как снять электронный ручник: 3 проверенных способа отключения</a></li><li><a href="/articles/k/ka/kak-sdelat-ruchnik-dlya-pk.html">Как настроить ручной тормоз (ручник) в ПК-играх: Полное руководство</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Создание гидравлического ручника самостоятельно: от теории к практике</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-действия-и-выбор-базового-узла">Принцип действия и выбор базового узла</a></li><li><a href="#комплектующие-и-необходимые-инструменты">Комплектующие и необходимые инструменты</a></li><li><a href="#монтаж-главного-цилиндра-и-рычага-управления">Монтаж главного цилиндра и рычага управления</a></li><li><a href="#прокладка-магистралей-и-подключение-к-суппортам">Прокладка магистралей и подключение к суппортам</a></li><li><a href="#прокачка-системы-и-удаление-воздуха">Прокачка системы и удаление воздуха</a></li><li><a href="#тестирование-и-меры-безопасности">Тестирование и меры безопасности</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Многие автовладельцы, увлеченные дрифтом или автокроссом, сталкиваются с необходимостью доработки заводских систем безопасности. Стандартный механический рычаг часто имеет слишком большой ход и недостаточное усилие для эффективной блокировки задних колес в экстремальных ситуациях. Решением становится установка <strong>гидравлического ручника</strong>, который позволяет мгновенно и с высокой точностью управлять тормозным усилием, используя давление жидкости в системе.</p>
+
+<p>Создание такой системы своими руками — задача технически сложная, но вполне выполнимая при наличии навыков работы с инструментами и понимания принципов работы тормозов. Самодельный агрегат позволяет подобрать оптимальное соотношение диаметров цилиндров, что критически важно для баланса управляемости и эффективности торможения. Однако важно понимать, что любая модификация тормозной системы влияет на безопасность, поэтому подход к выбору компонентов должен быть предельно серьезным.</p>
+
+<h2 id="принцип-действия-и-выбор-базового-узла">Принцип действия и выбор базового узла</h2>
+<p>В основе работы гидравлического тормоза лежит закон Паскаля: давление, создаваемое поршнем в одном месте замкнутой системы, передается в другую точку без потерь. В отличие от механического привода, где трос передает усилие напрямую, здесь вы используете <em>гидравлический рычаг</em> для накачивания давления. Это позволяет блокировать колеса даже при наличии <strong>ABS</strong>, так как система работает независимо от вакуумного усилителя основного тормоза.</p>
+
+<p>Для начала необходимо определиться с источником нагнетания жидкости. В качестве главного цилиндра чаще всего используют узлы от мотоциклов или старые гидравлические рычаги от тракторов. Важно подобрать цилиндр с диаметром поршня, который обеспечит нужный ход педали или рычага. Если диаметр будет слишком большим, вам потребуется огромное физическое усилие для блокировки колес. Слишком малый диаметр приведет к чрезмерно длинному ходу рычага, что неудобно в динамичном вождении.</p>
+
+<p>Особое внимание уделите совместимости резьбовых соединений. Большинство готовых гидравлических ручников имеют стандартные штуцеры, но при сборке с нуля придется использовать переходники. Неправильно подобранный фитинг может стать причиной разгерметизации системы под высоким давлением. <strong>Гидравлические трубки</strong> должны выдерживать рабочее давление не менее 150 бар, поэтому обычные резиновые шланги для воды категорически не подходят.</p>
+
+<blockquote>⚠️ Внимание: Гидравлическая система находится под высоким давлением даже после остановки автомобиля. Любые работы по разборке или переобувке должно проводиться с полным сбросом давления в магистрали!</blockquote>
+
+<div class="pb-poll" id="poll-ef58087a"><div class="pb-poll-question">📊 Какой тип привода вы рассматриваете для установки?</div><div class="pb-poll-option" data-poll="ef58087a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Полностью самодельный (с нуля)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef58087a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Комплект готовых деталей</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef58087a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Модернизация заводского</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ef58087a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Только теоретический интерес</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="комплектующие-и-необходимые-инструменты">Комплектующие и необходимые инструменты</h2>
+<p>Перед началом работ необходимо собрать полный список материалов. Основа системы — это главный цилиндр, который будет преобразовывать механическое усилие вашего рычага в давление жидкости. Также потребуются <strong>тормозные суппорты</strong> (обычно сзади), которые примут на себя усилие, и тормозные трубки с соответствующими штуцерами. Не забудьте про <em>тормозную жидкость</em> DOT 4 или DOT 5.1, которая обладает необходимой температурной стойкостью и не сжимается под нагрузкой.</p>
+
+<p>Инструментарий должен включать набор гаечных ключей, динамометрический ключ для точной затяжки соединений и специальный инструмент для запрессовки фитингов на гидравлических шлангах. Если вы планируете использовать готовые шланги в оплетке, вам понадобятся пресс-клещи соответствующего диаметра. Для удаления воздуха из системы жизненно необходим <strong>вакуумный насос</strong> или набор для прокачки тормозов под давлением.</p>
+
+<p>Не менее важна система крепления рычага. Вам понадобится сварка или надежные болтовые соединения для фиксации корпуса главного цилиндра к кузову или раме автомобиля. Рычаг управления должен иметь надежную фиксацию в рабочем положении, чтобы не отпустить его случайно во время маневра. <em>Тормозные шланги</em> должны быть проложены так, чтобы исключить их задевание за вращающиеся детали подвески или кузова.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Список необходимых компонентов</h4><label class="check-item"><input type="checkbox"><span>Гидравлический рычаг/цилиндр</span></label><label class="check-item"><input type="checkbox"><span>Тормозные суппорты (задние)</span></label><label class="check-item"><input type="checkbox"><span>Тормозные трубки и фитинги</span></label><label class="check-item"><input type="checkbox"><span>Тормозная жидкость DOT 4/5.1</span></label><label class="check-item"><input type="checkbox"><span>Резервуар для жидкости</span></label><label class="check-item"><input type="checkbox"><span>Пресс-клещи для шлангов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<h2 id="монтаж-главного-цилиндра-и-рычага-управления">Монтаж главного цилиндра и рычага управления</h2>
+<p>Установка главного цилиндра — это первый и самый ответственный этап. Место крепления должно быть жестким, без люфтов, иначе часть усилия будет теряться на деформацию креплений. Обычно цилиндр крепят в зоне передних ног водителя или на центральной консоли. Используйте <strong>усиливающие пластины</strong> из металла, чтобы распределить нагрузку на кузов. Рычаг должен иметь удобный угол наклона и ход, соответствующий анатомии руки.</p>
+
+<p>Подключите магистральный резервуар к главному цилиндру. Это может быть отдельный бачок, установленный рядом с цилиндром, или использование штатного бачка главного тормозного цилиндра через специальный переходник. Уровень жидкости должен контролироваться визуально, поэтому резервуар должен быть прозрачным или иметь индикатор. Важно обеспечить герметичность всех соединений на этом участке, так как здесь происходит первичное нагнетание давления.</p>
+
+<p>Особое внимание уделите фиксации самого рычага. В отличие от педали, ручник должен фиксироваться в верхнем положении. Используйте надежный <em>тормозной механизм</em> блокировки или соберите простую защелку из пружины и фиксатора. Если рычаг будет самопроизвольно отпускаться, это приведет к потере контроля над автомобилем. Проверьте ход рычага на предмет заеданий или слишком тугого хода до начала подключения гидравлики.</p>
+
+<blockquote>⚠️ Внимание: Убедитесь, что игольчатый клапан или обратный клапан в системе настроены правильно. Неправильная настройка может привести к невозможности сброса давления или, наоборот, к самопроизвольному блокированию колес.</blockquote>
+
+<details class="pb-accordion"><summary>Особенности выбора диаметра поршня</summary><div class="pb-accordion-body"><p>Диаметр поршня главного цилиндра напрямую влияет на усилие рычага и ход. Для дрифта часто используют поршни диаметром 10-12 мм, что требует большего усилия, но дает более быструю блокировку. Для повседневной езды лучше подходят поршни 14-16 мм, обеспечивающие меньшее усилие на рычаге.</p></div></details>
+
+<h2 id="прокладка-магистралей-и-подключение-к-суппортам">Прокладка магистралей и подключение к суппортам</h2>
+<p>Прокладка гидравлических трубок требует тщательной подготовки. Шланги должны проходить вдали от горячих элементов выхлопной системы и острых кромок кузова. Используйте специальные хомуты и защитные гофры для изоляции магистралей. <strong>Гидравлические шланги</strong> должны иметь запас длины, чтобы не натягиваться при работе подвески, но при этом не провисать слишком сильно. Длина шлангов рассчитывается с учетом полного хода подвески.</p>
+
+<p>Подключение к задним суппортам осуществляется через штатные отверстия. Если суппорты были переделаны или установлены от другой модели, возможно, потребуется изготовление переходников для bleeding-портов. Важно, чтобы суппорты имели возможность полной блокировки колодок. Проверьте свободный ход поршней суппортов перед подключением магистралей. <em>Тормозные диски</em> должны быть в хорошем состоянии, чтобы обеспечить эффективное сцепление колодок.</p>
+
+<p>Не забудьте установить <strong>переходник</strong> в магистрали, если вы используете разные типоразмеры штуцеров. Все соединения должны быть затянуты с усилием, рекомендованным производителем фитингов. Избегайте перекосов трубок при затяжке гаек, так как это может привести к течам. Протрите все соединения от масла и грязи перед финальной проверкой.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед окончательной затяжкой всех соединений, проложите магистраль "на сухую", чтобы увидеть, где шланг может тереться о другие детали при работе подвески. Это сэкономит время на переделку.</p></aside>
+
+<h2 id="прокачка-системы-и-удаление-воздуха">Прокачка системы и удаление воздуха</h2>
+<p>Прокачка гидравлической системы — критический этап, от которого зависит эффективность торможения. Воздух в системе сжимается, что делает рычаг "мягким" и неэффективным. Процесс начинается с заливки свежей <em>тормозной жидкости</em> в резервуар. Не смешивайте жидкости разных типов, так как это может привести к разрушению резиновых уплотнений. Следите за уровнем жидкости в бачке в процессе прокачки, чтобы не завоздушить систему снова.</p>
+
+<p>Последовательность прокачки обычно начинается с самого дальнего колеса от главного цилиндра. Открутите прокачной штуцер на суппорте и, нажимая на рычаг, выпускайте жидкость с пузырьками воздуха, пока она не станет чистой и без пузырей. Используйте <strong>прокачной насос</strong> для создания давления, если вы работаете в одиночку. Повторяйте процедуру до тех пор, пока рычаг не станет жестким и четким.</p>
+
+<p>После завершения прокачки проверьте герметичность всех соединений. Оставьте автомобиль на несколько часов и осмотрите места стыков на наличие подтеков. Если жидкость капает, подтяните штуцер или замените уплотнительное кольцо. <em>Гидравлический привод</em> должен работать стабильно без просадки давления. Проверьте, не самопроизвольно ли отпускается рычаг после блокировки.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Компонент</th>
+   <th>Рекомендуемый материал</th>
+   <th>Давление (бар)</th>
+   <th>Особенности</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Главный цилиндр</td>
+   <td>Алюминиевый сплав</td>
+   <td>до 150</td>
+   <td>Степень сжатия зависит от диаметра поршня</td>
+  </tr>
+  <tr>
+   <td>Магистрали</td>
+   <td>Тормозной шланг в оплетке</td>
+   <td>до 200</td>
+   <td>Устойчивость к перегибам и истиранию</td>
+  </tr>
+  <tr>
+   <td>Суппорты</td>
+   <td>Чугун/Алюминий</td>
+   <td>до 120</td>
+   <td>Должны иметь ход поршня 15-20 мм</td>
+  </tr>
+  <tr>
+   <td>Жидкость</td>
+   <td>DOT 4 / DOT 5.1</td>
+   <td>-</td>
+   <td>Температура кипения не ниже 230°C</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<h2 id="тестирование-и-меры-безопасности">Тестирование и меры безопасности</h2>
+<p>Первые тесты системы должны проводиться на закрытой площадке, вдали от движения. Начните с медленного движения и легкого нажатия на рычаг. Оцените поведение автомобиля: не должно быть резкого заноса с одной стороны или блокировки только одного колеса. <strong>Тормозная эффективность</strong> должна быть симметричной. Если одна сторона блокируется раньше другой, возможно, проблема в давлении или качестве колодок.</p>
+
+<p>Убедитесь, что система не блокирует колеса при малом нажатии. Рычаг должен иметь четкий "свободный ход" перед началом торможения. <em>Гидравлический манометр</em> поможет откалибровать систему, если вы используете его в процессе настройки. В процессе теста обратите внимание на нагрев суппортов и шлангов. Перегрев может привести к закипанию жидкости и потере тормозов.</p>
+
+<p>Регулярно проверяйте уровень <strong>тормозной жидкости</strong> и состояние шлангов. Гидравлическая система требует тщательного обслуживания. Любые вибрации или удары могут ослабить соединения. <mark></mark> Проводите визуальный осмотр перед каждой поездкой.</p>
+
+<blockquote>⚠️ Внимание: При работе на треке или в экстремальных условиях используйте только жидкость DOT 5.1 с высокой температурой кипения. Обычная DOT 4 может закипеть при интенсивном торможении, что приведет к отказу системы.</blockquote>
+
+<details>
+ <summary>Какой рычаг лучше использовать в качестве основы?</summary>
+ <p>Для самодельных систем часто используют рычаги от мотоциклов (например, <em>Yamaha</em> или <em>Harley-Davidson</em>) или готовые комплекты от дрифт-каров. Главное — наличие надежного механизма фиксации и удобного хода.</p>
+</details>
+
+<details>
+ <summary>Можно ли использовать шланги от обычного гидроусилителя руля?</summary>
+ <p>Нет, шланги ГУР рассчитаны на другое давление и температурный режим. Используйте специализированные тормозные шланги в стальной оплетке, способные выдержать до 200 бар.</p>
+</details>
+
+<details>
+ <summary>Как часто нужно менять тормозную жидкость?</summary>
+ <p>В гидравлической системе ручника жидкость меняют ежегодно, так как она впитывает влагу из воздуха, что снижает температуру кипения. Используйте только свежую жидкость из герметичной тары.</p>
+</details>
+
+<details>
+ <summary>Что делать, если рычаг стал мягким после прокачки?</summary>
+ <p>Это признак попадания воздуха в систему или неисправности главного цилиндра. Повторите прокачку, убедившись в герметичности всех соединений и отсутствии подсоса воздуха через уплотнения поршня.</p>
+</details>
+
+<details>
+ <summary>Нужно ли отключать датчики ABS при установке гидравлики?</summary>
+ <p>Нет, система работает независимо. Однако, при экстремальной блокировке колес ABS может сработать. Для чистого дрифта многие отключают ABS программно или физически, но это влияет на безопасность на трассе.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-zaekhat-na-estakadu-na-mekhanike-bez-ruchnika.html" class="pb-related-card">
+                <span class="pb-related-title">Старт на эстакаде на механике без ручника: пошаговая инструкция</span>
+                <span class="pb-related-desc">Учимся трогаться в горку на механической КПП без ручного тормоза. Секреты работы педалью газа и сцеп</span>
+            </a><a href="/articles/k/ka/kak-podnyat-ruchnik-na-mekhanike.html" class="pb-related-card">
+                <span class="pb-related-title">Как поднять ручной тормоз на механике: пошаговая инструкция</span>
+                <span class="pb-related-desc">Полное руководство по регулировке и подъему ручника на механике. Узнайте, как проверить натяжение тр</span>
+            </a><a href="/articles/g/gd/gde-nakhoditsya-ruchnik-na-kamri-40.html" class="pb-related-card">
+                <span class="pb-related-title">Где находится ручник на Toyota Camry 40 (XV40): виды и управление</span>
+                <span class="pb-related-desc">Подробная инструкция по поиску и использованию ручного тормоза на Toyota Camry 40. Обзор механическо</span>
+            </a><a href="/articles/k/ka/kak-snyat-elektronnyj-ruchnik.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять электронный ручник: 3 проверенных способа отключения</span>
+                <span class="pb-related-desc">Подробная инструкция по переводу электронного ручника в режим обслуживания. Методы без сканера, чере</span>
+            </a><a href="/articles/k/ka/kak-sdelat-ruchnik-dlya-pk.html" class="pb-related-card">
+                <span class="pb-related-title">Как настроить ручной тормоз (ручник) в ПК-играх: Полное руководство</span>
+                <span class="pb-related-desc">Научитесь настраивать ручной тормоз на клавиатуре и геймпаде в симуляторах. Обзор горячих клавиш, на</span>
+            </a><a href="/articles/k/ka/kak-rabotaet-ruchnik-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает ручник в машине: устройство, виды и принцип действия</span>
+                <span class="pb-related-desc">Подробный разбор работы ручного тормоза: механика, электроника и гидравлика. Узнайте, как устроен тр</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

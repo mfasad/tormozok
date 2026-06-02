@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Горный тормоз Scania 5 серии: принцип работы, настройка и ремонт — ТормозОК</title>
+    <meta name="description" content="Полный разбор системы подтормаживания двигателем на грузовиках Scania 5 поколения. Инструкция по диагностике, настройке и устранению типичных неисправностей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/g/go/gornyj-tormoz-skaniya-5-seriya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Горный тормоз Scania 5 серии: принцип работы, настройка и ремонт">
+    <meta property="og:description" content="Полный разбор системы подтормаживания двигателем на грузовиках Scania 5 поколения. Инструкция по диагностике, настройке и устранению типичных неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diagnostika-neispravnostej/">Диагностика неисправностей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Горный тормоз Scania 5 серии: принцип работы, настройка и ремонт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-действия-и-устройство-системы">Принцип действия и устройство системы</a></li><li><a href="#этапы-активации-и-настройки">Этапы активации и настройки</a></li><li><a href="#типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</a></li><li><a href="#диагностика-и-ремонт-своими-руками">Диагностика и ремонт своими руками</a></li><li><a href="#технические-характеристики-и-сравнение">Технические характеристики и сравнение</a></li><li><a href="#влияние-на-ресурс-двигателя-и-безопасность">Влияние на ресурс двигателя и безопасность</a></li><li><a href="#профессиональные-советы-по-эксплуатации">Профессиональные советы по эксплуатации</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/khrust-tormozov-pri-tormozhenii-na-maloj-skorosti.html">Хруст тормозов при торможении на малой скорости: причины и устранение</a></li><li><a href="/articles/v/vi/vibratsiya-pri-vklyuchenii-d.html">Вибрация при включении D: причины, диагностика и ремонт АКПП</a></li><li><a href="/articles/u/ur/ural-4320-skhema-stop-signalov.html">Схема стоп-сигналов Урал 4320: устройство, диагностика и схема проводки</a></li><li><a href="/articles/k/ka/kak-proverit-iznos-tormoznykh-kolodok.html">Как проверить износ тормозных колодок: 5 способов и признаки замены</a></li><li><a href="/articles/p/po/pochemu-svistyat-tormoza-pri-tormozhenii-na-avto.html">Почему свистят тормоза при торможении: причины, ремонт и профилактика</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Горный тормоз Scania 5 серии: принципы работы и обслуживание</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-действия-и-устройство-системы">Принцип действия и устройство системы</a></li><li><a href="#этапы-активации-и-настройки">Этапы активации и настройки</a></li><li><a href="#типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</a></li><li><a href="#диагностика-и-ремонт-своими-руками">Диагностика и ремонт своими руками</a></li><li><a href="#технические-характеристики-и-сравнение">Технические характеристики и сравнение</a></li><li><a href="#влияние-на-ресурс-двигателя-и-безопасность">Влияние на ресурс двигателя и безопасность</a></li><li><a href="#профессиональные-советы-по-эксплуатации">Профессиональные советы по эксплуатации</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Эффективное замедление тяжеловесного транспорта на затяжных спусках — это вопрос не только экономии тормозных колодок, но и критически важный аспект безопасности. Для грузовиков <em>Scania</em> пятой серии, таких как модели R500 или P380, системой, берущей на себя основную нагрузку при спусках, является мощный <strong>горный тормоз</strong>. Он работает за счет изменения фаз газораспределения в двигателе, превращая его в воздушный компрессор, который создает значительное сопротивление вращению коленвала.</p>
+
+<p>Многие водители ошибочно полагают, что система работает автоматически и не требует внимания, однако сложная электроника и гидравлика <em>Scania</em> требуют периодической проверки. Неправильная работа <strong>тормоза Jake</strong> может привести к перегреву основных тормозных механизмов, их вскрытию и потере управляемости. В этой статье мы разберем устройство системы, особенности настройки и методы диагностики характерных сбоев.</p>
+
+<h2 id="принцип-действия-и-устройство-системы">Принцип действия и устройство системы</h2>
+
+<p>Система <strong>горного тормоза</strong> на <em>Scania</em> 5 серии базируется на использовании клапанов в головке блока цилиндров. Когда водитель активирует функцию, электронная система управления двигателем (ECM) подает сигнал на открытие выпускных клапанов в конце такта сжатия. Вместо того чтобы толкать шток, сжатый воздух выходит в атмосферу, создавая вакуум на такте впуска. Этот процесс повторяется в каждом цилиндре, создавая колоссальное тормозное усилие.</p>
+
+<p>Важно отметить, что эффективность работы напрямую зависит от качества работы <strong>выпускных клапанов</strong> и состояния гидравлики. Система интегрирована с системой <em>EMS</em> и работает в связке с турбонаддувом. Если турбина не развивает нужное давление или есть подсос воздуха во впускном коллекторе, мощность замедления может падать на 30-40%. Это часто становится главной причиной жалоб водителей на "слабый тормоз".</p>
+
+<p>Для максимальной эффективности педаль тормоза при включенном горном тормозе не должна быть нажата, если только не требуется экстренное замедление. Однако, современные алгоритмы <em>Scania Opticruise</em> позволяют использовать комбинацию систем для плавного замедления. Проверка герметичности системы — это первый шаг при диагностике. Любая утечка сжатого воздуха из исполнительных механизмов снижает эффективность <strong>подтормаживания двигателем</strong>.</p>
+
+<h2 id="этапы-активации-и-настройки">Этапы активации и настройки</h2>
+
+<p>Водитель активирует работу <strong>горного тормоза</strong> через рычаг переключения передач или специальную кнопку на рулевой колонке. На спидометре или тахометре загорается соответствующий индикатор — обычно желтый треугольник с надписью <code>Engine Brake</code>. Обратите внимание, что система срабатывает только при определенных оборотах двигателя, обычно выше 1200 об/мин, и при закрытой дроссельной заслонке.</p>
+
+<p>Настройка интенсивности работы осуществляется в меню бортового компьютера. В зависимости от загрузки автомобиля и крутизны спуска, можно выбрать один из трех режимов мощности. Режим 1 подходит для легких спусков, тогда как режим 3 задействует максимальное количество цилиндров и создает наибольшее сопротивление. Неправильно выбранный режим может привести к рывкам или недостаточному замедлению.</p>
+
+<p>Если вы замечаете, что система активируется с задержкой или не входит в полный режим, возможно, дело в настройках <strong>ECM</strong>. Иногда требуется калибровка педали сцепления или обновление прошивки блока управления. В сервисных центрах <em>Scania</em> используют диагностический сканер для проверки параметров срабатывания клапанов и гидравлического давления в магистрали.</p>
+
+<div class="pb-poll" id="poll-b519189e"><div class="pb-poll-question">📊 Какой режим горного тормоза вы используете чаще всего?</div><div class="pb-poll-option" data-poll="b519189e" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Режим 1 (Экономия)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b519189e" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Режим 2 (Средний)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b519189e" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Режим 3 (Максимальный)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b519189e" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не использую, только ножной тормоз</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="типичные-неисправности-и-их-признаки">Типичные неисправности и их признаки</h2>
+
+<p>Самой распространенной проблемой является отказ одного или нескольких цилиндров в работе <strong>горного тормоза</strong>. Это проявляется в вибрации двигателя при включении системы и характерном "перегазовывании" с пропусками такта. Водитель может слышать резкие звуки выхлопа, но замедление будет ощутимо слабее ожидаемого. Причиной часто служит заклинивший клапан или неисправный соленоид.</p>
+
+<p>Другой частой проблемой является утечка воздуха в пневматической линии управления. Если вы слышите шипение при активации системы, необходимо немедленно остановить грузовик и проверить соединения. <strong>Пневматика</strong> на <em>Scania</em> работает под высоким давлением, и даже небольшая трещина в трубке может привести к полному отказу системы. Также проблемы могут возникать из-за забитого воздушного фильтра, который ограничивает подачу воздуха для работы исполнительных механизмов.</p>
+
+<p>Иногда система отключается сама по себе из-за срабатывания датчиков безопасности. Если температура двигателя слишком высока или обороты падают ниже критического порога, <strong>блок управления</strong> принудительно блокирует работу горного тормоза. Это нормальная защита, но если она происходит на низких оборотах при нормальной работе двигателя, возможно, датчик оборотов выдает неверные данные.</p>
+
+<blockquote>⚠️ Внимание: Если при активации горного тормоза вы слышите сильный свист или писк, это может указывать на повреждение ремня привода вспомогательных агрегатов или проблемы с турбиной, которые требуют немедленной диагностики.</blockquote>
+
+<h2 id="диагностика-и-ремонт-своими-руками">Диагностика и ремонт своими руками</h2>
+
+<p>Перед тем как отправляться в сервис, можно провести самостоятельную проверку основных узлов. Начните с визуального осмотра <strong>выпускных клапанов</strong> и гидравлических цилиндров. Убедитесь, что нет следов масла в районе клапанной крышки, что может свидетельствовать о нарушении герметичности сальников. Также проверьте целостность электрических разъемов на двигателе.</p>
+
+<p>Для проверки работы системы можно использовать метод "на слух" при работе на холостом ходу (если это разрешено условиями безопасности) или на низких оборотах в движении. Включите горный тормоз и послушайте звук работы двигателя. Он должен стать более глухим и ровным. Если вы слышите резкие хлопки или пропуски, значит, один из цилиндров не работает. В этом случае часто требуется замена соленоида или чистка клапана.</p>
+
+<p> Откройте краны слива воздуха и отсоедините аккумулятор перед началом любых работ с электроникой. Используйте только оригинальные запчасти или сертифицированные аналоги, так как дешевые соленоиды могут не выдержать высоких температур и давлений, характерных для двигателей <em>Scania</em>.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика горного тормоза</h4><label class="check-item"><input type="checkbox"><span>Проверить уровень масла в двигателе</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть пневмошланги на наличие трещин</span></label><label class="check-item"><input type="checkbox"><span>Проверить разъемы на клапанной крышке</span></label><label class="check-item"><input type="checkbox"><span>Визуально оценить состояние клапанов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="технические-характеристики-и-сравнение">Технические характеристики и сравнение</h2>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Параметр</th>
+   <th>Значение для Scania 5 серии</th>
+   <th>Особенности</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Тип системы</td>
+   <td>Комбинированный (Двигатель + Тормоз)</td>
+   <td>Интегрирована с EMS</td>
+  </tr>
+  <tr>
+   <td>Максимальная мощность торможения</td>
+   <td>до 450 кВт (зависит от модели)</td>
+   <td>Работает на всех оборотах выше 1200</td>
+  </tr>
+  <tr>
+   <td>Количество режимов</td>
+   <td>3 уровня интенсивности</td>
+   <td>Выбор через меню водителя</td>
+  </tr>
+  <tr>
+   <td>Время отклика</td>
+   <td>< 0.2 секунды</td>
+   <td>Мгновенное срабатывание</td>
+  </tr>
+  <tr>
+   <td>Рабочее давление воздуха</td>
+   <td>8-10 бар</td>
+   <td>Требуется стабильная пневматика</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<p>Сравнение с предыдущими поколениями показывает, что <em>Scania</em> 5 серии значительно улучшила время отклика системы. Если раньше задержка могла составлять до 0.5 секунды, то теперь она сведена к минимуму благодаря цифровому управлению клапанами. Это позволяет водителю чувствовать себя увереннее на крутых спусках и реже прибегать к использованию ножного тормоза.</p>
+
+<p>Особое внимание стоит уделить совместимости с автоматической коробкой передач <em>Opticruise</em>. Система автоматически переключает передачи для поддержания оптимальных оборотов при работе <strong>горного тормоза</strong>. Это предотвращает перегрев двигателя и обеспечивает максимальное замедление. Если коробка передач работает некорректно, это может негативно сказаться на эффективности торможения.</p>
+
+<blockquote>⚠️ Внимание: При замене турбины или впускного коллектора обязательно проверьте работу системы горного тормоза, так как изменение геометрии воздушного тракта может нарушить баланс давления.</blockquote>
+
+<h2 id="влияние-на-ресурс-двигателя-и-безопасность">Влияние на ресурс двигателя и безопасность</h2>
+
+<p>Использование <strong>горного тормоза</strong> не только экономит колодки, но и положительно влияет на ресурс двигателя при правильном использовании. Он помогает снизить температуру выхлопных газов и уменьшает износ кривошипно-шатунного механизма за счет снижения нагрузки на тормоза. Однако, частое использование на низких оборотах без нагрузки может привести к нагарообразованию в цилиндрах.</p>
+
+<p>Безопасность дорожного движения напрямую зависит от исправности этой системы. На крутых спусках, таких как перевалы в горах, <strong>горный тормоз</strong> является единственным способом контролировать скорость тяжеловесного грузовика. Отказ системы в таких условиях может привести к тяжелым авариям. Поэтому регулярное техническое обслуживание — это не просто рекомендация, а необходимость.</p>
+
+<p>Не забывайте, что система должна быть отключена при движении по льду или снегу, чтобы избежать блокировки ведущих колес и потери управляемости. В некоторых случаях, при экстренном торможении, водителю приходится вручную отключать горный тормоз, чтобы избежать рывков. Это требует высокой квалификации и внимания к дорожной ситуации.</p>
+
+<details class="pb-accordion"><summary>Влияние на выхлопные газы</summary><div class="pb-accordion-body"><p>При работе горного тормоза температура выхлопных газов может резко изменяться, что влияет на работу сажевого фильтра (DPF). Рекомендуется периодически прогонять систему в режиме регенерации при активной эксплуатации на спусках.</p></div></details>
+
+<h2 id="профессиональные-советы-по-эксплуатации">Профессиональные советы по эксплуатации</h2>
+
+<p>Опытные водители рекомендуют включать горный тормоз заранее, еще до начала спуска, чтобы система успела выйти на рабочий режим. Не пытайтесь активировать её на уже набранной высокой скорости, так как это может вызвать ударную нагрузку на трансмиссию. Плавное включение и выключение — залог долгой службы <em>Scania</em> и её систем.</p>
+
+<p>Если вы замечаете, что система работает нестабильно, не пытайтесь исправить это самостоятельно, если у вас нет соответствующего оборудования. Диагностика требует подключения к <strong>сервисному компьютеру</strong> и анализа данных с датчиков в реальном времени. Неправильные манипуляции могут привести к ошибкам в памяти ECM и даже отказу двигателя.</p>
+
+<p>Всегда проверяйте давление в пневмосистеме перед началом длительного рейса. Недостаточное давление может привести к тому, что <strong>горный тормоз</strong> просто не активируется. Используйте манометр на приборной панели и следите за показаниями в движении. Если давление падает быстрее нормы, это сигнал к поиску утечки.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед длительным спуском проверьте работу системы на ровном участке дороги. Включите горный тормоз и убедитесь, что стрелка тахометра не падает резко, а обороты остаются стабильными.</p></aside>
+
+<p>Интеграция системы с другими электронными помощниками, такими как адаптивный круиз-контроль, делает вождение более комфортным. Однако, при поломке одного из блоков, вся цепочка может работать некорректно. Поэтому при обнаружении любой неисправности необходимо проводить комплексную диагностику всех связанных систем.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка и обслуживание горного тормоза — это гарантия вашей безопасности и экономия средств на ремонте тормозной системы в будущем.</p></aside>
+
+<blockquote>⚠️ Внимание: Параметры работы системы могут меняться в зависимости от версии прошивки ECM и модификации двигателя. Всегда сверяйтесь с актуальной технической документацией производителя перед внесением изменений в настройки.</blockquote>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+
+<details>
+ <summary>Почему горный тормоз Scania не работает при низких оборотах?</summary>
+ <p>Система <strong>горного тормоза</strong> Scania 5 серии предназначена для работы на оборотах выше 1200 об/мин. При более низких оборотах электроника блокирует активацию, чтобы избежать перегрузки двигателя и нестабильной работы. Это штатная защита.</p>
+</details>
+
+<details>
+ <summary>Как часто нужно менять соленоиды горного тормоза?</summary>
+ <p>Официального регламента замены нет, но при появлении признаков неравномерной работы или утечек воздуха, их следует проверять. Обычно ресурс соленоидов составляет 300-400 тысяч км пробега, но зависит от условий эксплуатации и качества топлива.</p>
+</details>
+
+<details>
+ <summary>Можно ли использовать горный тормоз на льду?</summary>
+ <p>Категорически не рекомендуется. Работа <strong>горного тормоза</strong> на скользком покрытии может привести к блокировке колес и потере управляемости. В таких условиях следует использовать только ножной тормоз с системой ABS.</p>
+</details>
+
+<details>
+ <summary>Что делать, если слышен свист при работе системы?</summary>
+ <p>Свист может указывать на утечку воздуха в пневматических магистралях или проблемы с турбиной. Необходимо немедленно остановить грузовик, проверить уровень давления и осмотреть пневмошланги на наличие повреждений.</p>
+</details>
+
+<details>
+ <summary>Влияет ли работа горного тормоза на расход топлива?</summary>
+ <p>Да, использование <strong>горного тормоза</strong> позволяет снизить расход топлива при спусках, так как двигатель перестает получать топливо (режим отсечки) и работает только на сжатии воздуха. Это экономит около 10-15% топлива на горных маршрутах.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/khrust-tormozov-pri-tormozhenii-na-maloj-skorosti.html" class="pb-related-card">
+                <span class="pb-related-title">Хруст тормозов при торможении на малой скорости: причины и устранение</span>
+                <span class="pb-related-desc">Почему скрипят или хрустят тормоза на малой скорости? Разбор причин: колодки, диск, пыль, коррозия. </span>
+            </a><a href="/articles/v/vi/vibratsiya-pri-vklyuchenii-d.html" class="pb-related-card">
+                <span class="pb-related-title">Вибрация при включении D: причины, диагностика и ремонт АКПП</span>
+                <span class="pb-related-desc">Почему трясет машину при переключении в режим D? Узнайте о причинах: масло, соленоиды, гидротрансфор</span>
+            </a><a href="/articles/u/ur/ural-4320-skhema-stop-signalov.html" class="pb-related-card">
+                <span class="pb-related-title">Схема стоп-сигналов Урал 4320: устройство, диагностика и схема проводки</span>
+                <span class="pb-related-desc">Подробная схема стоп-сигналов автомобиля Урал 4320. Разбор электрической цепи, датчика тормоза, пров</span>
+            </a><a href="/articles/k/ka/kak-proverit-iznos-tormoznykh-kolodok.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить износ тормозных колодок: 5 способов и признаки замены</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно определить износ тормозных колодок по звуку, визуальным признакам и элек</span>
+            </a><a href="/articles/p/po/pochemu-svistyat-tormoza-pri-tormozhenii-na-avto.html" class="pb-related-card">
+                <span class="pb-related-title">Почему свистят тормоза при торможении: причины, ремонт и профилактика</span>
+                <span class="pb-related-desc">Полный разбор причин свиста тормозов: износ колодок, вибрация, качество материалов. Узнайте, когда з</span>
+            </a><a href="/articles/p/pr/pri-tormozhenii-mashina-tormozit-ryvkami-prichina.html" class="pb-related-card">
+                <span class="pb-related-title">Машина трясется при торможении: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему авто дергается при нажатии на педаль? Разбираем деформацию дисков, проблемы суппортов и ABS. </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

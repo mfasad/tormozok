@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип работы гидравлических тормозов: устройство и КПД — ТормозОК</title>
+    <meta name="description" content="Подробный разбор физики работы гидравлических тормозов. Изучите закон Паскаля, конструкцию суппортов, типы жидкостей и причины потери эффективности.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/printsip-raboty-gidravlicheskikh-tormozov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы гидравлических тормозов: устройство и КПД">
+    <meta property="og:description" content="Подробный разбор физики работы гидравлических тормозов. Изучите закон Паскаля, конструкцию суппортов, типы жидкостей и причины потери эффективности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/" class="pb-nav-active">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diskovye-tormoza/">Дисковые тормоза</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы гидравлических тормозов: устройство и КПД</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физическая-основа-и-закон-паскаля">Физическая основа и закон Паскаля</a></li><li><a href="#ключевые-компоненты-гидравлической-цепи">Ключевые компоненты гидравлической цепи</a></li><li><a href="#типы-тормозных-жидкостей-и-их-свойства">Типы тормозных жидкостей и их свойства</a></li><li><a href="#технология-стравливания-воздуха-прокачка">Технология стравливания воздуха (Прокачка)</a></li><li><a href="#частые-неисправности-и-методы-диагностики">Частые неисправности и методы диагностики</a></li><li><a href="#обслуживание-и-профилактика">Обслуживание и профилактика</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-kolodok-perednikh-kalina-1.html">Замена передних колодок на Лада Калина: Инструкция и подбор</a></li><li><a href="/articles/t/to/tormoznye-diski-dzhetta-5.html">Тормозные диски на VW Jetta 5: выбор, замена и цены</a></li><li><a href="/articles/b/br/brake-rotor-tormoznye-diski.html">Тормозные диски (brake rotor): виды, выбор и замена</a></li><li><a href="/articles/p/po/pochemu-nachinayut-skripet-tormoza.html">Почему скрипят тормоза: основные причины шума и методы устранения</a></li><li><a href="/articles/t/te/temperatura-nagreva-tormoznykh-diskov.html">Температура нагрева тормозных дисков: нормы, критические значения и последствия</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы гидравлических тормозов: физика, устройство и обслуживание</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физическая-основа-и-закон-паскаля">Физическая основа и закон Паскаля</a></li><li><a href="#ключевые-компоненты-гидравлической-цепи">Ключевые компоненты гидравлической цепи</a></li><li><a href="#типы-тормозных-жидкостей-и-их-свойства">Типы тормозных жидкостей и их свойства</a></li><li><a href="#технология-стравливания-воздуха-прокачка">Технология стравливания воздуха (Прокачка)</a></li><li><a href="#частые-неисправности-и-методы-диагностики">Частые неисправности и методы диагностики</a></li><li><a href="#обслуживание-и-профилактика">Обслуживание и профилактика</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Гидравлическая тормозная система является стандартом для большинства современных автомобилей и высокопроизводительных велосипедов. В отличие от механических аналогов, она использует несжимаемую жидкость для передачи усилия от педали или ручки управления непосредственно к тормозным колодкам.</p>
+
+<p>Эта технология обеспечивает высокую чувствительность и модуляцию, позволяя водителю илиcyclist точно дозировать тормозное усилие. Эффективность системы напрямую зависит от герметичности контура и правильности выбора <strong>тормозной жидкости</strong>. Понимание физических процессов, происходящих внутри системы, критически важно для безопасной эксплуатации.</p>
+
+<p>Несмотря на кажущуюся простоту, гидравлика скрывает в себе сложную инженерную задачу по преобразованию небольшого усилия пальца в огромную силу сжатия колодок. Мы разберем каждый элемент цепи, от главного цилиндра до суппорта, чтобы вы могли диагностировать неисправности и поддерживать систему в идеальном состоянии.</p>
+
+<h2 id="физическая-основа-и-закон-паскаля">Физическая основа и закон Паскаля</h2>
+
+<p>В основе работы любой гидравлической системы лежит фундаментальный физический принцип, открытый Блезом Паскалем. Закон гласит, что давление, приложенное к ограниченной несжимаемой жидкости, передается без изменения в каждую точку сосуда или трубки. Это свойство позволяет умножать силу, приложенную к малому поршню, на большом поршне.</p>
+
+<p>В тормозной системе автомобиля или велосипеда вы нажимаете на педаль, создавая давление в <strong>главном тормозном цилиндре</strong>. Это давление мгновенно распространяется по всей длине <strong>тормозных трубок</strong> и шлангов, достигая рабочих цилиндров суппортов. Поскольку площадь поршня в суппорте обычно значительно больше площади поршня в главном цилиндре, сила сжатия колодок многократно возрастает.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Если в системе присутствует даже микроскопический пузырь воздуха, принцип Паскаля нарушается. Воздух сжимаем, в отличие от жидкости, что приведет к «проваливанию» педали и полной потере тормозного усилия.</p>
+</blockquote>
+
+<p>Именно поэтому качество сборки и отсутствие воздушных пробок являются критическими факторами. Процесс удаления воздуха из системы называется <strong>прокачкой</strong>. Без качественного прокачивания эффективность торможения может упасть на 50-70%. Важно следить за уровнем жидкости в расширительном бачке, так как его снижение может свидетельствовать о наличии утечки.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Используйте только жидкость, указанную производителем (DOT 3, DOT 4, DOT 5.1 или минеральное масло). Смешивание разных типов жидкостей приводит к химической реакции, разрушающей резиновые уплотнители и вызывающей коррозию металлических деталей.</p>
+</blockquote>
+
+
+
+<h2 id="ключевые-компоненты-гидравлической-цепи">Ключевые компоненты гидравлической цепи</h2>
+
+<p>Система состоит из нескольких взаимосвязанных узлов, каждый из которых выполняет свою функцию. Начнем с <em>главного тормозного цилиндра</em> (ГТЦ), который является «сердцем» системы. ГТЦ преобразует механическое усилие ноги водителя в гидравлическое давление. Внутри него находится поршень с манжетой, который при нажатии перекрывает перепускное отверстие и нагнетает жидкость.</p>
+
+<p>Далее жидкость поступает в <strong>тормозные шланги</strong> и <em>металлические трубки</em>. Шланги, идущие к колесам, должны быть гибкими и устойчивыми к расширению под давлением. Обычные резиновые шланги со временем могут раздуваться, что снижает эффективность торможения. Поэтому многие энтузиасты и производители премиум-класса используют <strong>тормозные шланги с оплеткой</strong>, которые практически не деформируются.</p>
+
+<p>Замыкают цепь <em>тормозные суппорты</em>. Они могут быть плавающими или неподвижными. В плавающих суппортах один поршень сдвигает скобу, прижимая колодки с обеих сторон диска. В неподвижных (зажимных) суппортах поршни расположены с обеих сторон диска и работают синхронно. Качество работы суппорта зависит от отсутствия коррозии направляющих и целостности пыльников поршней.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярно очищайте направляющие суппорта и смазывайте их специальной высокотемпературной смазкой. Это предотвратит заклинивание колодок и неравномерный износ тормозного диска.</p></aside>
+
+<h2 id="типы-тормозных-жидкостей-и-их-свойства">Типы тормозных жидкостей и их свойства</h2>
+
+<p>Выбор рабочей среды определяет надежность работы системы. Основным критерием является температура кипения. При интенсивном торможении, например, при спуске с горы или спортивной езде, температура дисков может достигать экстремальных значений, передаваясь на жидкость через поршни.</p>
+
+<p>Если жидкость закипит, в трубках образуются паровые пробки, которые сжимаются вместо жидкости. Это явление называется «паровым замком». Существует два основных типа жидкостей: на гликоле-эфирной основе (стандарты DOT) и на минеральной основе. Они несовместимы друг с другом!</p>
+
+<ul>
+<li>DOT 3 и DOT 4 — самые распространенные, гигроскопичны (впитывают влагу), требуют замены каждые 1-2 года.</li>
+<li>DOT 5 — силиконовая основа, не впитывает влагу, но имеет другие свойства сжатия и несовместима с системами для DOT 3/4.</li>
+<li>Минеральное масло — используется брендами типа <em>Magura</em> или <em>Sram</em>, не гигроскопично, но требует специфических прокладок.</li>
+</ul>
+
+<p>Таблица ниже сравнивает основные характеристики популярных жидкостей:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип жидкости</th>
+<th>Температура кипения (основная), °C</th>
+<th>Гигроскопичность</th>
+<th>Совместимость</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DOT 3</td>
+<td>205</td>
+<td>Высокая</td>
+<td>Только с DOT 3, 4, 5.1</td>
+</tr>
+<tr>
+<td>DOT 4</td>
+<td>230</td>
+<td>Высокая</td>
+<td>Только с DOT 3, 4, 5.1</td>
+</tr>
+<tr>
+<td>DOT 5.1</td>
+<td>270</td>
+<td>Средняя</td>
+<td>Только с DOT 3, 4, 5.1</td>
+</tr>
+<tr>
+<td>Минеральное масло</td>
+<td>180-200</td>
+<td>Отсутствует</td>
+<td>Только для систем под масло</td>
+</tr>
+</tbody>
+</table></div>
+
+<mark>Критический параметр для безопасности — «влажная температура кипения» (содержание влаги 3.5%), так как именно она определяет поведение системы после года эксплуатации.</mark>
+
+<h2 id="технология-стравливания-воздуха-прокачка">Технология стравливания воздуха (Прокачка)</h2>
+
+<p>Процесс удаления воздуха из системы называется прокачкой. Это обязательная процедура при замене жидкости, ремонте суппортов или при появлении «мягкой» педали. Существует несколько методов: классический (вдвоем), с использованием вакуумного насоса и метод «снизу вверх» (для велосипедов).</p>
+
+<p>Суть классического метода заключается в том, чтобы открыть штуцер прокачки на суппорте, пока помощник нажимает на педаль. Жидкость и воздух выходят наружу, после чего штуцер закрывается до отпускания педали. Повторять нужно до тех пор, пока в выходящей струе не исчезнут пузырьки.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Процесс самостоятельной прокачки</h4><label class="check-item"><input type="checkbox"><span>Подготовить емкость и прозрачный шланг</span></label><label class="check-item"><input type="checkbox"><span>Снять крышку бачка и залить свежую жидкость</span></label><label class="check-item"><input type="checkbox"><span>Нажать педаль и удерживать</span></label><label class="check-item"><input type="checkbox"><span>Открыть штуцер и слить воздух</span></label><label class="check-item"><input type="checkbox"><span>Закрыть штуцер и отпустить педаль</span></label><label class="check-item"><input type="checkbox"><span>Повторять до исчезновения пузырьков</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 6</div></div>
+
+<p>Современные системы с ABS требуют использования диагностического сканера для активации насоса модулятора, чтобы прокачать каналы внутри самого блока ABS. Простая прокачка суппортов в таком случае может быть недостаточной.</p>
+
+<details class="pb-accordion"><summary>Почему нельзя просто долить жидкость без прокачки?</summary><div class="pb-accordion-body"><p>Если в системе есть воздух, просто долив жидкости в бачок не поможет. Воздух останется в нижних точках системы (суппортах), так как он легче жидкости и поднимается вверх, но не может выйти через заливную горловину без принудительного вытеснения.</p></div></details>
+
+<p>Важно следить, чтобы уровень жидкости в бачке не упал ниже минимума во время прокачки. Попадание воздуха в главный цилиндр в процессе работы потребует повторного, более сложного цикла прокачки всей системы. <strong>Тормозная жидкость</strong> является агрессивным веществом, поэтому при работе с ней используйте перчатки и защиту для лакокрасочного покрытия автомобиля.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильно выполненная прокачка возвращает педали твердость и обеспечивает мгновенный отклик на нажатие, что является залогом безопасности при экстренном торможении.</p></aside>
+
+<h2 id="частые-неисправности-и-методы-диагностики">Частые неисправности и методы диагностики</h2>
+
+<p>Даже надежная гидравлика со временем теряет эффективность. Самой частой проблемой является потеря герметичности. Утечки могут происходить через изношенные манжеты главного цилиндра, порывы тормозных шлангов или неплотно закрученные штуцеры.</p>
+
+<p>Второй распространенной проблемой является загрязнение системы. Попадание масла, смазки или грязи на <strong>тормозные колодки</strong> или диск приводит к снижению коэффициента трения. Это проявляется в виде свиста, вибрации или отсутствия торможения. <em>Тормозные диски</em> также могут деформироваться от перегрева, вызывая биение руля при торможении.</p>
+
+<ul>
+<li>Мягкая педаль — признак наличия воздуха в системе или подтекания.</li>
+<li>Педаль проваливается до пола — критическая утечка или отказ главного цилиндра.</li>
+<li>Вибрация при торможении — деформация (биение) тормозного диска.</li>
+<li>Визг и скрежет — износ колодок или попадание абразивных частиц.</li>
+</ul>
+
+<p>Диагностика должна проводиться регулярно. Осматривайте шланги на наличие трещин и вздутий. Проверяйте толщину тормозных колодок и состояние дисков. При обнаружении малейших признаков утечки немедленно прекратите эксплуатацию транспорта.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы чувствуете запах гари при длительном спуске, остановитесь и дайте тормозам остыть. Не поливайте раскаленные диски водой — это приведет к их мгновенной деформации и растрескиванию.</p></aside>
+
+<h2 id="обслуживание-и-профилактика">Обслуживание и профилактика</h2>
+
+<p>Регулярное обслуживание — это залог долгой жизни гидравлической системы. Главный враг — влага. Гликолевые жидкости впитывают воду из атмосферы, что снижает температуру кипения и вызывает коррозию стальных трубок и поршней. Рекомендуется менять <strong>тормозную жидкость</strong> каждые 2 года или 40 000 км пробега.</p>
+
+<p>Также необходимо следить за состоянием пыльников поршней суппортов. Если резина порвана, внутрь попадает грязь и влага, что ведет к закисанию поршня. Закисший поршень может не возвращаться в исходное положение, вызывая постоянный износ колодок и перегрев диска.</p>
+
+<p>При замене колодок обязательно очищайте посадочные места и направляющие. Используйте только рекомендованные смазки. Неправильная установка может привести к неравномерному износу и снижению эффективности торможения. Не забывайте проверять затяжку колесных болтов и состояние ступичных подшипников.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Профилактическая замена жидкости и смазка направляющих суппортов обходятся значительно дешевле, чем ремонт или замена заклинившего суппорта и деформированного диска.</p></aside>
+
+<blockquote>
+<p>⚠️ Внимание: При работе с тормозной системой помните, что её отказ в движении может привести к фатальным последствиям. Если вы не уверены в своих силах, доверьте диагностику и ремонт квалифицированным специалистам.</p>
+</blockquote>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему педаль тормоза стала мягкой?</summary>
+<p>Основная причина мягкой педали — наличие воздуха в гидравлической системе. Также это может быть вызвано разрывом тормозного шланга, износом манжет главного цилиндра или слишком большой выработкой тормозных колодок.</p>
+</details>
+
+<details>
+<summary>Можно ли смешивать жидкость DOT 4 и минеральное масло?</summary>
+<p>Категорически нет! Смешивание гликолевой жидкости (DOT 3, 4, 5.1) с минеральным маслом приведет к набуханию и разрушению резиновых уплотнителей, что вызовет полную потерю тормозов. Система потребует полной замены всех резиновых элементов.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость?</summary>
+<p>Производители рекомендуют менять гликолевую жидкость каждые 2 года, так как она впитывает влагу. Минеральное масло имеет больший срок службы, но его также рекомендуется обновлять каждые 3-4 года или при ремонте системы.</p>
+</details>
+
+<details>
+<summary>Почему тормоза свистят при нажатии?</summary>
+<p>Свист часто возникает из-за вибрации колодки в суппорте. Это может быть вызвано отсутствием смазки на тыльной стороне колодки, износом демпфирующих пластинок или попаданием грязи и влаги на рабочие поверхности.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-kolodok-perednikh-kalina-1.html" class="pb-related-card">
+                <span class="pb-related-title">Замена передних колодок на Лада Калина: Инструкция и подбор</span>
+                <span class="pb-related-desc">Полная процедура замены передних тормозных колодок на Лада Калина 1. Подбор деталей, инструменты, по</span>
+            </a><a href="/articles/t/to/tormoznye-diski-dzhetta-5.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозные диски на VW Jetta 5: выбор, замена и цены</span>
+                <span class="pb-related-desc">Полный гайд по выбору тормозных дисков для Volkswagen Jetta 5. Сравнение размеров, брендов, методы з</span>
+            </a><a href="/articles/b/br/brake-rotor-tormoznye-diski.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозные диски (brake rotor): виды, выбор и замена</span>
+                <span class="pb-related-desc">Полный гид по выбору и замене тормозных дисков. Разбор типов, размеров, маркировки и признаков износ</span>
+            </a><a href="/articles/p/po/pochemu-nachinayut-skripet-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Почему скрипят тормоза: основные причины шума и методы устранения</span>
+                <span class="pb-related-desc">Узнайте, почему начинают скрипеть тормоза. Подробный разбор причин: от пыли и влаги до износа колодо</span>
+            </a><a href="/articles/t/te/temperatura-nagreva-tormoznykh-diskov.html" class="pb-related-card">
+                <span class="pb-related-title">Температура нагрева тормозных дисков: нормы, критические значения и последствия</span>
+                <span class="pb-related-desc">Какая допустимая температура тормозных дисков при торможении? Нормы нагрева, признаки перегрева, пос</span>
+            </a><a href="/articles/k/ka/kak-krepitsya-tormoznoj-disk.html" class="pb-related-card">
+                <span class="pb-related-title">Как крепится тормозной диск: виды фиксации и монтаж</span>
+                <span class="pb-related-desc">Подробная инструкция по креплению тормозного диска. Разбор винтовых, заклепочных и посадочных соедин</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

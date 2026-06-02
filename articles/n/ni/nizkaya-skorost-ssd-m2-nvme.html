@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему медленный M.2 NVMe SSD: причины и способы ускорения — ТормозОК</title>
+    <meta name="description" content="Низкая скорость SSD M.2 NVMe? Узнайте реальные причины: перегрев, настройки BIOS, режимы PCIe и методы диагностики. Верните заявленный производительность.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/n/ni/nizkaya-skorost-ssd-m2-nvme.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему медленный M.2 NVMe SSD: причины и способы ускорения">
+    <meta property="og:description" content="Низкая скорость SSD M.2 NVMe? Узнайте реальные причины: перегрев, настройки BIOS, режимы PCIe и методы диагностики. Верните заявленный производительность.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему медленный M.2 NVMe SSD: причины и способы ускорения</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#ошибки-установки-и-физические-ограничения-интерфейса">Ошибки установки и физические ограничения интерфейса</a></li><li><a href="#термический-троттлинг-главный-враг-производительности">Термический троттлинг: главный враг производительности</a></li><li><a href="#настройки-biosuefi-и-режим-работы-контроллера">Настройки BIOS/UEFI и режим работы контроллера</a></li><li><a href="#диагностика-через-программное-обеспечение">Диагностика через программное обеспечение</a></li><li><a href="#влияние-типа-памяти-и-технологии-кэширования">Влияние типа памяти и технологии кэширования</a></li><li><a href="#оптимизация-операционной-системы-windows">Оптимизация операционной системы Windows</a></li><li><a href="#когда-стоит-заменить-оборудование">Когда стоит заменить оборудование</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/pochemu-yutub-ne-gruzit-video-pri-khoroshem-internete.html">Ютуб тормозит при хорошем интернете: причины и решение</a></li><li><a href="/articles/g/go/gornyj-tormoz-yamz-536.html">Горный тормоз ЯМЗ-536: принцип работы, настройки и ремонт</a></li><li><a href="/articles/p/po/podshipnik-s-magnitnym-tsentrirovaniem.html">Подшипник с магнитным центрированием: принцип работы и применение</a></li><li><a href="/articles/p/pr/pri-tendentsii-k-bokovomu-zanosu-zadnikh-koles-motovezdekhoda-upravlyaemost-mozhno-vosstanovit.html">Как восстановить управляемость при боковом заносе мотовездехода</a></li><li><a href="/articles/n/ne/ne-tolko-lish-vse-mogut-smotret-v-zavtrashnij.html">Миф о всеобщем будущем: анализ фразы и философия</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Борьба с низкой скоростью дисков M.2 NVMe: диагностика и оптимизация</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#ошибки-установки-и-физические-ограничения-интерфейса">Ошибки установки и физические ограничения интерфейса</a></li><li><a href="#термический-троттлинг-главный-враг-производительности">Термический троттлинг: главный враг производительности</a></li><li><a href="#настройки-biosuefi-и-режим-работы-контроллера">Настройки BIOS/UEFI и режим работы контроллера</a></li><li><a href="#диагностика-через-программное-обеспечение">Диагностика через программное обеспечение</a></li><li><a href="#влияние-типа-памяти-и-технологии-кэширования">Влияние типа памяти и технологии кэширования</a></li><li><a href="#оптимизация-операционной-системы-windows">Оптимизация операционной системы Windows</a></li><li><a href="#когда-стоит-заменить-оборудование">Когда стоит заменить оборудование</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Вы приобрели современный накопитель, ожидая мгновенной загрузки системы и молниеносного копирования файлов, но реальность оказалась менее впечатляющей. Скорость чтения и записи <strong>M.2 NVMe</strong> диска может падать в разы из-за скрытых программных ограничений или физических барьеров. Часто проблема кроется не в неисправности самого <em>Samsung 980 Pro</em> или <em>WD Black SN850X</em>, а в конфигурации материнской платы и системе охлаждения.</p>
+
+<p>Существует множество факторов, влияющих на то, насколько быстро ваше хранилище будет взаимодействовать с <strong>процессором</strong> и <strong>оперативной памятью</strong>. Игнорирование этих нюансов приводит к тому, что пользователь получает диск класса PCIe 4.0, работающий на скоростях устаревшего SATA SSD. В этой статье мы разберем технические аспекты, которые нужно проверить, чтобы устранить <strong>низкую скорость</strong> и раскрыть потенциал вашего оборудования.</p>
+
+<h2 id="ошибки-установки-и-физические-ограничения-интерфейса">Ошибки установки и физические ограничения интерфейса</h2>
+
+<p>Первое, что необходимо проверить — это физическое подключение накопителя к материнской плате. Многие современные платы имеют несколько слотов M.2, но не все из них поддерживают высокоскоростной протокол <strong>NVMe</strong>. Некоторые разъемы могут быть привязаны к чипсету, что ограничивает пропускную способность, или работать только в режиме PCIe 3.0 вместо 4.0/5.0.</p>
+
+<p>Если вы установили диск в слот, который делит линии с портами SATA или слотами PCIe x16, возможны конфликты ресурсов. Попробуйте переставить накопитель в первичный слот, обычно расположенный ближе всего к <strong>CPU</strong>. Также убедитесь, что диск плотно прижат к плате, а контактные ножки не окислены или не повреждены.</p>
+
+<p>Важно учитывать и тип ключа разъема. Хотя большинство NVMe дисков используют ключ M, существуют гибридные варианты. Неправильный выбор слота может заставить контроллер работать в экстремально медленном режиме или вовсе не определять устройство. Проверьте документацию вашей <em>ASUS ROG</em> или <em>Gigabyte Aorus</em> платы, чтобы убедиться в совместимости.</p>
+
+<blockquote>⚠️ Внимание: Установка диска в неподдерживаемый слот может привести к тому, что система не увидит накопитель при загрузке, даже если он физически исправен.</blockquote>
+
+<h2 id="термический-троттлинг-главный-враг-производительности">Термический троттлинг: главный враг производительности</h2>
+
+<p>Самой распространенной причиной резкого падения скорости после нескольких минут работы является перегрев. Диск начинает интенсивно греться, и встроенный контроллер принудительно снижает тактовую частоту, чтобы избежать повреждения чипов памяти. Это явление называется <strong>термическим троттлингом</strong>. В таких случаях скорость может упасть с 7000 МБ/с до 200-300 МБ/с без видимой причины.</p>
+
+<p>Проверьте температуру накопителя через утилиты вроде <strong>CrystalDiskInfo</strong> или фирменное ПО производителя. Если температура под нагрузкой превышает 70-75 градусов Цельсия, необходимо принять меры по охлаждению. Большинство высокоскоростных моделей требуют наличия радиатора, который часто не входит в комплект или устанавливается некорректно.</p>
+
+<p>Убедитесь, что между корпусом диска и радиатором есть слой термопрокладки. Без нее тепло от контроллера и чипов NAND не будет отводиться эффективно. Также проверьте поток воздуха внутри корпуса: если системный блок забит пылью или нет обдува, даже массивный радиатор не спасет от перегрева.</p>
+
+<div class="pb-poll" id="poll-893e82fd"><div class="pb-poll-question">📊 Какой у вас тип охлаждения для M.2 SSD?</div><div class="pb-poll-option" data-poll="893e82fd" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Радиатор в комплекте</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="893e82fd" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Кастомный радиатор</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="893e82fd" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Без охлаждения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="893e82fd" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройки-biosuefi-и-режим-работы-контроллера">Настройки BIOS/UEFI и режим работы контроллера</h2>
+
+<p>Частая причина низкой скорости — некорректные настройки BIOS. По умолчанию некоторые материнские платы могут устанавливать режим совместимости или ограничивать скорость линий PCIe. Зайдите в <code>BIOS/UEFI</code> и найдите раздел, отвечающий за конфигурацию слотов M.2 или PCIe. Убедитесь, что режим установлен в <em>Gen4</em> или <em>Gen5</em>, а не в <em>Auto</em> или <em>Gen3</em>.</p>
+
+<p>Иногда включенная функция <strong>CSM</strong> (Compatibility Support Module) конфликтует с загрузкой NVMe драйверов или ограничивает работу портa. Рекомендуется перевести систему в чистый <em>UEFI</em> режим, отключив CSM, если ваша операционная система поддерживает этот стандарт. Это обеспечит прямую работу с <strong>аппаратным обеспечением</strong> без лишних эмуляций.</p>
+
+<p>Не забудьте проверить настройки энергосбережения. Функция <code>ASPM</code> (Active State Power Management) может слишком агрессивно отключать питание линий, вызывая задержки и падение скорости при пробуждении. Попробуйте отключить энергосбережение для PCIe устройств в разделе <code>Power Management</code>.</p>
+
+<blockquote>⚠️ Внимание: Изменение настроек BIOS может привести к невозможности загрузки Windows, если система не была установлена в режиме UEFI. Создайте точку восстановления перед изменениями.</blockquote>
+
+<details class="pb-accordion"><summary>Как проверить версию PCIe в системе?</summary><div class="pb-accordion-body"><p>Откройте диспетчер устройств, найдите свой SSD, перейдите на вкладку "Сведения". В списке свойств выберите "Скорость линии" или "Текущая скорость". Должно отображаться значение, соответствующее Gen3, Gen4 или Gen5, например, 250 МБ/с для Gen1 x1 или 1575 МБ/с для Gen3 x4.</p></div></details>
+
+<h2 id="диагностика-через-программное-обеспечение">Диагностика через программное обеспечение</h2>
+
+<p>Чтобы точно понять, где теряется скорость, используйте специализированные бенчмарки. Утилита <strong>CrystalDiskMark</strong> является стандартом де-факто для замера производительности. Запустите тест в режиме 1GiB или 4GiB и сравните полученные результаты с заявленными характеристиками производителя. Обратите внимание не только на последовательное чтение/запись, но и на случайное чтение 4K.</p>
+
+<p>Если результаты теста показывают аномально низкие значения, проверьте драйверы контроллера. В диспетчере устройств Windows раздел <code>Контроллеры памяти</code> может показывать стандартный драйвер, который не раскрывает потенциал <strong>NVMe</strong>. Установите последние драйверы с сайта производителя материнской платы или самого накопителя.</p>
+
+<p>Также стоит обратить внимание на уровень заполнения диска. Флеш-память NAND замедляется при заполнении более чем на 70-80%, так как контроллеру приходится постоянно проводить операции сборки мусора и выравнивания износа. Оставшееся место <strong>свободной области</strong> критически важно для стабильной работы.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка драйверов и ПО</h4><label class="check-item"><input type="checkbox"><span>Установить драйверы чипсета</span></label><label class="check-item"><input type="checkbox"><span>Обновить драйверы контроллера NVMe</span></label><label class="check-item"><input type="checkbox"><span>Выполнить тест CrystalDiskMark</span></label><label class="check-item"><input type="checkbox"><span>Проверить уровень заполнения диска</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="влияние-типа-памяти-и-технологии-кэширования">Влияние типа памяти и технологии кэширования</h2>
+
+<p>Не все NVMe диски созданы одинаково. Различия в архитектуре памяти (SLC, MLC, TLC, QLC) и наличии DRAM-кэша кардинально влияют на поведение при длительных нагрузках. Бюджетные модели без DRAM-буфера часто используют технологию SLC-кэширования. Пока кэш не заполнен, скорость высокая, но после исчерпания запаса она резко падает до уровня флеш-памяти.</p>
+
+<p>Если вы работаете с большими файлами (видеомонтаж, базы данных), отсутствие <strong>DRAM-кэша</strong> может стать узким местом. Диски с DRAM-буфером (например, <em>Samsung 970 EVO Plus</em>) способны поддерживать высокую скорость даже при полной записи, перенаправляя данные через быстрый буфер.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип памяти</th>
+<th>Наличие DRAM</th>
+<th>Скорость при заполнении</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SLC (редко)</td>
+<td>Да</td>
+<td>Стабильно высокая</td>
+<td>Для серверов</td>
+</tr>
+<tr>
+<td>TLC с кэшем</td>
+<td>Да</td>
+<td>Высокая</td>
+<td>Игровые ПК, работа</td>
+</tr>
+<tr>
+<td>TLC без кэша</td>
+<td>Нет</td>
+<td>Резкое падение</td>
+<td>Только под систему</td>
+</tr>
+<tr>
+<td>QLC</td>
+<td>Часто нет</td>
+<td>Сильное падение</td>
+<td>Архивное хранение</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Понимание этих нюансов поможет вам выбрать правильный диск под конкретные задачи. Если вам нужна стабильная скорость при непрерывной записи, выбирайте модели с независимой памятью <strong>DRAM</strong> и качественным контроллером.</p>
+
+<h2 id="оптимизация-операционной-системы-windows">Оптимизация операционной системы Windows</h2>
+
+<p>Windows 10 и 11 имеют встроенную поддержку NVMe, но стандартные настройки могут не быть оптимальными. Убедитесь, что для диска включено <strong>отложенное кэширование записи</strong>. Это можно проверить в свойствах диска в разделе "Политика". Включение этой опции позволяет системе использовать оперативную память для буферизации записей, что значительно повышает скорость.</p>
+
+<p>Также проверьте, не отключена ли функция <strong>TRIM</strong>. Эта команда помогает контроллеру очищать неиспользуемые блоки памяти, поддерживая высокую скорость. В Windows она обычно включена по умолчанию, но стоит проверить это через <code>Оптимизация дисков</code>. Запуск анализа и оптимизации вручную может исправить временные проблемы с производительностью.</p>
+
+<p>Не забудьте о дефрагментации. Для SSD она не требуется и даже вредна, система должна автоматически определять тип диска и запускать команду TRIM вместо классической дефрагментации. Если система считает ваш NVMe диском SATA, это может привести к ненужным операциям.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Периодически обновляйте прошивку NVMe диска через фирменную утилиту. Производители часто выпускают обновления, исправляющие ошибки контроллера и повышающие стабильность работы.</p></aside>
+
+<h2 id="когда-стоит-заменить-оборудование">Когда стоит заменить оборудование</h2>
+
+<p>Если все вышеперечисленные шаги не привели к улучшению, возможно, диск имеет аппаратный дефект или несовместим с вашей системой. В редких случаях проблема может быть в дефекте самого контроллера или чипов памяти. Попробуйте установить диск в другой ПК или ноутбук, чтобы исключить влияние материнской платы.</p>
+
+<p>Иногда низкая скорость объясняется просто: вы используете старый порт или кабель-адаптер (если есть). Убедитесь, что физический интерфейс не является ограничивающим фактором. Если диск работает нормально в другом слоте, но медленно в вашем, скорее всего, проблема в схемотехнике платы.</p>
+
+<blockquote>⚠️ Внимание: Если диск издает странные звуки (хотя NVMe обычно бесшумны) или часто отключается, это верный признак критической неисправности. Немедленно сделайте резервную копию данных.</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярный мониторинг температуры и обновление прошивки — ключевые факторы долгой и быстрой работы любого NVMe накопителя.</p></aside>
+
+<details>
+<summary>Почему мой SSD показывает низкую скорость в CrystalDiskMark, но система работает нормально?</summary>
+<p>Это может быть связано с тем, что бенчмарк измеряет последовательное чтение, которое сильно зависит от размера кэша. В реальной работе операционная система выполняет преимущественно случайное чтение 4K блоков, которое может быть эффективным даже если последовательная скорость ниже заявленной.</p>
+</details>
+
+<details>
+<summary>Можно ли ускорить дешевый NVMe диск программно?</summary>
+<p>Да, до некоторой степени. Отключение энергосбережения, установка правильных драйверов и обеспечение хорошего охлаждения помогут избежать троттлинга. Однако физический предел скорости памяти и контроллера программно преодолеть невозможно.</p>
+</details>
+
+<details>
+<summary>Влияет ли длина кабеля на скорость M.2 SSD?</summary>
+<p>Нет, так как M.2 диски подключаются напрямую к плате через разъем. Однако если вы используете адаптер M.2 в слот PCIe (через переходник), качество печатной платы адаптера и длина трассы могут влиять на стабильность сигнала и скорость.</p>
+</details>
+
+<details>
+<summary>Что делать, если диск не определяется в BIOS?</summary>
+<p>Проверьте, не отключен ли слот в настройках BIOS, и не конфликтует ли он с другими устройствами (например, SATA портами). Попробуйте отключить другие диски и оставить только NVMe для проверки. Если проблема сохраняется, возможно, диск неисправен.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/pochemu-yutub-ne-gruzit-video-pri-khoroshem-internete.html" class="pb-related-card">
+                <span class="pb-related-title">Ютуб тормозит при хорошем интернете: причины и решение</span>
+                <span class="pb-related-desc">Видео не грузятся? Разбираем реальные причины: от кэша DNS до пропускной способности. Пошаговая инст</span>
+            </a><a href="/articles/g/go/gornyj-tormoz-yamz-536.html" class="pb-related-card">
+                <span class="pb-related-title">Горный тормоз ЯМЗ-536: принцип работы, настройки и ремонт</span>
+                <span class="pb-related-desc">Полный гид по работе горного тормоза на двигателе ЯМЗ-536. Разбор конструктивных особенностей, диагн</span>
+            </a><a href="/articles/p/po/podshipnik-s-magnitnym-tsentrirovaniem.html" class="pb-related-card">
+                <span class="pb-related-title">Подшипник с магнитным центрированием: принцип работы и применение</span>
+                <span class="pb-related-desc">Разбор технологии магнитного центрирования в подшипниках. Преимущества бесконтактной работы, сферы п</span>
+            </a><a href="/articles/p/pr/pri-tendentsii-k-bokovomu-zanosu-zadnikh-koles-motovezdekhoda-upravlyaemost-mozhno-vosstanovit.html" class="pb-related-card">
+                <span class="pb-related-title">Как восстановить управляемость при боковом заносе мотовездехода</span>
+                <span class="pb-related-desc">Полное руководство по борьбе с заносом задних колес мотовездехода. Методы восстановления контроля, н</span>
+            </a><a href="/articles/n/ne/ne-tolko-lish-vse-mogut-smotret-v-zavtrashnij.html" class="pb-related-card">
+                <span class="pb-related-title">Миф о всеобщем будущем: анализ фразы и философия</span>
+                <span class="pb-related-desc">Разбор выражения «не только лишь все могут смотреть в завтрашний». Философский смысл, контекст испол</span>
+            </a><a href="/articles/k/ka/kakoj-plastik-luchshe-abs-ili-pla.html" class="pb-related-card">
+                <span class="pb-related-title">ABS или PLA пластик: сравнение, свойства и выбор для 3D печати</span>
+                <span class="pb-related-desc">Какой филамент выбрать: ABS или PLA? Подробное сравнение прочности, термостойкости и печати. Советы </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

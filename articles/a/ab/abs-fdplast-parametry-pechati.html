@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>ABS Fdplast: оптимальные параметры печати, температуры и настройки — ТормозОК</title>
+    <meta name="description" content="Полное руководство по настройке печати ABS Fdplast. Температуры стола и сопла, скорость, охлаждение и борьба с деформацией. Рекомендации для 3D принтеров.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/a/ab/abs-fdplast-parametry-pechati.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="ABS Fdplast: оптимальные параметры печати, температуры и настройки">
+    <meta property="og:description" content="Полное руководство по настройке печати ABS Fdplast. Температуры стола и сопла, скорость, охлаждение и борьба с деформацией. Рекомендации для 3D принтеров.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">ABS Fdplast: оптимальные параметры печати, температуры и настройки</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#подготовка-рабочего-пространства-и-выбор-платформы">Подготовка рабочего пространства и выбор платформы</a></li><li><a href="#температурный-режим-сопло-и-стол">Температурный режим: сопло и стол</a></li><li><a href="#скорость-печати-и-охлаждение">Скорость печати и охлаждение</a></li><li><a href="#настройки-ретрактов-и-устранение-нитей">Настройки ретрактов и устранение нитей</a></li><li><a href="#борьба-с-деформацией-и-внутренними-напряжениями">Борьба с деформацией и внутренними напряжениями</a></li><li><a href="#параметры-для-различных-моделей-и-условий">Параметры для различных моделей и условий</a></li><li><a href="#постобработка-и-финишная-шлифовка">Постобработка и финишная шлифовка</a></li><li><a href="#хранение-и-подготовка-катушки">Хранение и подготовка катушки</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/pr/privod-v-sbore-granta-s-abs.html">Привод в сборе Lada Granta с ABS: выбор, замена и нюансы</a></li><li><a href="/articles/k/ka/kak-uznat-est-li-abs-v-mashine.html">Как узнать есть ли ABS в машине: 5 надежных способов проверки</a></li><li><a href="/articles/n/ne/ne-prokachivaetsya-odin-kontur-tormozov-s-abs.html">Не прокачивается один контур тормозов с ABS: причины и ремонт</a></li><li><a href="/articles/u/us/ustanovka-abs-na-nivu.html">Установка ABS на Ниву: выбор комплекта, схема подключения и нюансы</a></li><li><a href="/articles/r/re/retarda-chto-eto-takoe.html">Ретардер: что это такое в тормозных системах</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Настройка печати ABS Fdplast: параметры, температуры и секреты успеха</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#подготовка-рабочего-пространства-и-выбор-платформы">Подготовка рабочего пространства и выбор платформы</a></li><li><a href="#температурный-режим-сопло-и-стол">Температурный режим: сопло и стол</a></li><li><a href="#скорость-печати-и-охлаждение">Скорость печати и охлаждение</a></li><li><a href="#настройки-ретрактов-и-устранение-нитей">Настройки ретрактов и устранение нитей</a></li><li><a href="#борьба-с-деформацией-и-внутренними-напряжениями">Борьба с деформацией и внутренними напряжениями</a></li><li><a href="#параметры-для-различных-моделей-и-условий">Параметры для различных моделей и условий</a></li><li><a href="#постобработка-и-финишная-шлифовка">Постобработка и финишная шлифовка</a></li><li><a href="#хранение-и-подготовка-катушки">Хранение и подготовка катушки</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>ABS Fdplast — это один из самых популярных и проверенных временем материалов для аддитивного производства, который требует к себе особого внимания при настройке оборудования. В отличие от простого PLA, этот термопласт обладает высокой усадкой и склонностью к деформации при остывании, что делает процесс печати настоящим тестом на мастерство для технолога.</p>
+<p>Чтобы получить качественные детали с идеальной адгезией слоев и отсутствием трещин, необходимо точно соблюсти баланс между температурой экструзии, нагревом рабочего стола и условиями окружающей среды внутри камеры принтера. Правильно подобранные параметры печати ABS Fdplast напрямую влияют на механическую прочность конечного изделия.</p>
+
+<h2 id="подготовка-рабочего-пространства-и-выбор-платформы">Подготовка рабочего пространства и выбор платформы</h2>
+<p>Перед началом работы критически важно подготовить поверхность, на которой будет формироваться первая деталь. Для ABS Fdplast идеально подходят платформы с подогревом, так как материал требует поддержания высокой температуры в зоне контакта с <strong>столом</strong> в течение всего процесса печати. Использование <strong>ATEX</strong> или <strong>PEI</strong> покрытий значительно упрощает задачу, но требует правильной настройки адгезии.</p>
+<p>Если ваш принтер не оснащен закрытой камерой, настоятельно рекомендуется соорудить временный кожух из оргстекла или картона. Это поможет избежать сквозняков, которые являются главными врагами пластика при остывании. Резкое падение температуры приводит к неравномерной усадке и появлению дефектов в виде <strong>отслоения углов</strong>.</p>
+<p>Кроме того, поверхность стола необходимо тщательно обезжирить, чтобы обеспечить максимальное сцепление первого слоя. Часто используется клей-карандаш или специальный спрей-адгезив, который наносится тонким слоем перед запуском геле-профилирования.</p>
+
+<h2 id="температурный-режим-сопло-и-стол">Температурный режим: сопло и стол</h2>
+<p>Оптимальная температура экструзии для ABS Fdplast варьируется в диапазоне от 235°C до 255°C, в зависимости от конкретной модели принтера и диаметра сопла. Слишком низкая температура приведет к плохому смачиванию слоев и низкой прочности, а слишком высокая — к деградации материала, появлению запахов и образованию нитей.</p>
+<p>Температура нагреваемого стола должна быть стабильной и находиться в пределах 95°C - 105°C. Именно такой нагрев позволяет материалу оставаться эластичным в момент укладки и предотвращает быстрое остывание краев детали. Важно следить за тем, чтобы температура не превышала допустимые пределы поверхности стола, чтобы избежать его повреждения.</p>
+<p>Для первых нескольких слоев рекомендуется установить температуру сопла на 5-10 градусов выше стандартной, чтобы улучшить растекание пластика по платформе.</p>
+
+<h2 id="скорость-печати-и-охлаждение">Скорость печати и охлаждение</h2>
+<p>Скорость печати является одним из ключевых факторов, влияющих на качество изделия из ABS. Слишком быстрое движение экструдера может привести к тому, что материал не успеет правильно расплавиться и сцепиться с предыдущим слоем. Оптимальная скорость для внешних контуров составляет 40-50 мм/с, а для заполнения внутренней структуры можно увеличить до 60-80 мм/с.</p>
+<p>Охлаждение вентилятором при печати ABS Fdplast должно быть минимальным или полностью отключенным. Включение обдува на высоких скоростях вызывает мгновенное охлаждение верхних слоев, что провоцирует образование трещин и отслоение от стола. Исключением может быть только печать нависающих элементов, где небольшой обдув (10-15%) допустим для сохранения геометрии.</p>
+<p>Если вы используете принтер с принудительной циркуляцией воздуха внутри камеры, убедитесь, что потоки не направлены напрямую на только что уложенный слой пластика.</p>
+
+<div class="pb-poll" id="poll-f073c473"><div class="pb-poll-question">📊 Какая максимальная скорость печати ABS вы используете?</div><div class="pb-poll-option" data-poll="f073c473" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">30-40 мм/с</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f073c473" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">50-60 мм/с</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f073c473" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">70+ мм/с</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="f073c473" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не печатаю ABS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройки-ретрактов-и-устранение-нитей">Настройки ретрактов и устранение нитей</h2>
+<p>ABS Fdplast склонен к образованию нитей (stringing) при перемещении головки принтера в воздухе. Для борьбы с этим явлением необходимо настроить правильные значения ретрактов. Обычно для прямого экструдера достаточно отката 1-2 мм, а для Bowden-системы этот параметр увеличивается до 4-6 мм.</p>
+<p>Скорость ретракта также играет важную роль: слишком медленный откат не успеет убрать пластик из зоны сопла, а слишком быстрый может привести к засору или поломке шестерен. Рекомендуется экспериментально подобрать значение, при котором нитей становится минимально, но без повышения давления в хотэнде.</p>
+<p>В некоторых случаях помогает увеличение температуры сопла на пару градусов, так как более жидкий пластик легче стягивается обратно в трубку при откате.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист настройки ABS Fdplast</h4><label class="check-item"><input type="checkbox"><span>Проверить температуру стола</span></label><label class="check-item"><input type="checkbox"><span>Отключить обдув</span></label><label class="check-item"><input type="checkbox"><span>Настроить ретракт 4-6 мм</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в закрытой камере</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="борьба-с-деформацией-и-внутренними-напряжениями">Борьба с деформацией и внутренними напряжениями</h2>
+<p>Главная проблема при работе с ABS — это усадка материала при остывании, которая создает внутренние напряжения. Эти напряжения могут привести к тому, что деталь просто оторвется от стола в процессе печати, особенно если она имеет большую площадь или острые углы. <mark>Критически важно обеспечить равномерный прогрев всей камеры принтера до 45-50°C.</mark></p>
+<p>Использование рафта (raft) или суппорта (brim) помогает увеличить площадь контакта детали со столом и распределить напряжение по большей поверхности. Рафт также позволяет избежать проблем с самой первой линией, которая часто страдает от неравномерного прилегания.</p>
+<p>Если деталь начинает отходить от стола в процессе печати, немедленно остановите процесс и проверьте температуру стола или наличие сквозняков.</p>
+
+<blockquote>⚠️ Внимание: ABS Fdplast при нагревании выделяет стирол и другие летучие соединения, которые могут быть вредны для здоровья. Печать должна осуществляться в хорошо вентилируемом помещении или с использованием системы фильтрации воздуха. Не оставляйте работающий принтер без присмотра на длительное время.</blockquote>
+
+<h2 id="параметры-для-различных-моделей-и-условий">Параметры для различных моделей и условий</h2>
+<p>Различные партии пластика могут незначительно отличаться по вязкости и составу, поэтому всегда рекомендуется печатать тестовые образцы перед запуском ответственных деталей. Также стоит учитывать, что диаметр сопла влияет на время нагрева и остывания материала.</p>
+<p>Для стандартного сопла 0.4 мм параметры будут отличаться от сопла 0.6 мм или 0.8 мм. Более толстые слои позволяют быстрее печатать, но требуют более тщательной настройки охлаждения и скорости.</p>
+<p>Если вы используете принтер с открытой камерой, попробуйте увеличить температуру стола на дополнительные 5 градусов и снизить скорость печати на 10-15% для компенсации теплопотерь.</p>
+
+<details class="pb-accordion"><summary>Тайное оружие</summary><div class="pb-accordion-body"><p> использование хлебопечки или термоса:Некоторые пользователи успешно используют старые хлебопечки или термосы в качестве внешней камеры для принтеров, что позволяет добиться идеального температурного режима без покупки дорогого оборудования. Просто поместите принтер внутрь и обеспечьте подачу воздуха через отверстия в корпусе.</p></div></details>
+
+<p>Ниже приведена таблица с рекомендуемыми параметрами для различных сценариев печати ABS Fdplast:</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Минимальное значение</th>
+      <th>Оптимальное значение</th>
+      <th>Максимальное значение</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Температура сопла (°C)</td>
+      <td>235</td>
+      <td>245</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>Температура стола (°C)</td>
+      <td>95</td>
+      <td>100</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>Скорость печати (мм/с)</td>
+      <td>30</td>
+      <td>50</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>Высота слоя (мм)</td>
+      <td>0.1</td>
+      <td>0.2</td>
+      <td>0.3</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="постобработка-и-финишная-шлифовка">Постобработка и финишная шлифовка</h2>
+<p>После завершения печати детали из ABS Fdplast часто требуют дополнительной обработки для достижения идеальной поверхности. Этот материал отлично поддается шлифовке, покраске и химической обработке парами ацетона для придания глянцевой поверхности.</p>
+<p>При шлифовке необходимо использовать наждачную бумагу с разной зернистостью, начиная от крупной (P120-P240) и заканчивая мелкой (P600-P1000). Это позволит удалить следы слоев и подготовить поверхность к покраске.</p>
+<p>Химическая обработка ацетоном может быть опасной, поэтому выполняйте ее в специальной камере с хорошей вентиляцией и защитными перчатками.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед началом печати ABS Fdplast обязательно проведите тест на адгезию, напечатав небольшой квадрат 20x20 мм. Если он отклеивается в процессе, увеличьте температуру стола или нанесите дополнительный слой клея.</p></aside>
+
+<blockquote>⚠️ Внимание: Химическая обработка ацетоном может изменить геометрию мелких деталей и размеров отверстий. Всегда проверяйте допуск на тестовом образце перед обработкой основной детали.</blockquote>
+
+<h2 id="хранение-и-подготовка-катушки">Хранение и подготовка катушки</h2>
+<p>ABS Fdplast, как и многие другие инженерные пластики, гигроскопичен и впитывает влагу из воздуха. Наличие влаги в материале приводит к появлению пузырей, трещин и ухудшению качества печати. Хранить катушку необходимо в герметичном контейнере с силикагелем.</p>
+<p>Если вы подозреваете, что пластик набрал влагу, его необходимо просушить перед печатью. Для этого можно использовать сушилку для филамента или обычную духовку (при температуре не выше 60°C) в течение 4-6 часов.</p>
+<p>Перед загрузкой в экструдер убедитесь, что кончик катушки полностью сухой и не имеет признаков деградации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильное хранение пластика в герметичных контейнерах с влагопоглотителем — это залог стабильного качества печати и отсутствия дефектов, связанных с влагой.</p></aside>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+
+<details>
+  <summary>Почему углы детали загибаются вверх при печати ABS?</summary>
+  <p>Это явление называется «короблением» (warping) и вызвано неравномерным остыванием материала. Рекомендуется увеличить температуру стола, использовать рафт или суппорт, а также обеспечить отсутствие сквозняков в камере принтера. Проверьте, достаточно ли прилипает первый слой к поверхности.</p>
+</details>
+
+<details>
+  <summary>Можно ли печатать ABS Fdplast на открытых принтерах?</summary>
+  <p>Технически можно, но это потребует значительных усилий по созданию искусственной камеры и регулировке температур. Открытые принтеры сильно теряют тепло, что может привести к плохому качеству слоев и отслоению. Лучше использовать закрытые камеры или самодельные кожухи.</p>
+</details>
+
+<details>
+  <summary>Какую температуру стола выбрать для ABS Fdplast?</summary>
+  <p>Оптимальным диапазоном является 95-105°C. Если стол не нагревается выше 100°C, попробуйте увеличить время прогрева перед началом печати или используйте клей для лучшей адгезии.</p>
+</details>
+
+<details>
+  <summary>Нужно ли охлаждать ABS при печати?</summary>
+  <p>В большинстве случаев охлаждение должно быть отключено или минимальным (до 10-15% для нависающих элементов). Включение вентилятора на полную мощность приведет к трещинам и отслоению.</p>
+</details>
+
+<details>
+  <summary>Что делать, если принтер не может нагреть стол до нужной температуры?</summary>
+  <p>Проверьте целостность нагревательного элемента и термопары. Если стол не греется выше 70-80°C, возможно, он неисправен или использует некачественный нагреватель. В таком случае печать ABS невозможна без замены стола или установки дополнительного нагревателя.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/pr/privod-v-sbore-granta-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Привод в сборе Lada Granta с ABS: выбор, замена и нюансы</span>
+                <span class="pb-related-desc">Полный гид по замене переднего привода Lada Granta с системой ABS. Ошибки датчиков, выбор ремня, цен</span>
+            </a><a href="/articles/k/ka/kak-uznat-est-li-abs-v-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как узнать есть ли ABS в машине: 5 надежных способов проверки</span>
+                <span class="pb-related-desc">Узнайте, оснащена ли ваша система антиблокировочной системой. Методы проверки по VIN, панели приборо</span>
+            </a><a href="/articles/n/ne/ne-prokachivaetsya-odin-kontur-tormozov-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Не прокачивается один контур тормозов с ABS: причины и ремонт</span>
+                <span class="pb-related-desc">Почему не откачивается воздух из одного контура тормозной системы с ABS? Разбор неисправностей клапа</span>
+            </a><a href="/articles/u/us/ustanovka-abs-na-nivu.html" class="pb-related-card">
+                <span class="pb-related-title">Установка ABS на Ниву: выбор комплекта, схема подключения и нюансы</span>
+                <span class="pb-related-desc">Пошаговая инструкция по модернизации тормозной системы. Разбор совместимости датчиков, настройка ЭБУ</span>
+            </a><a href="/articles/r/re/retarda-chto-eto-takoe.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер: что это такое в тормозных системах</span>
+                <span class="pb-related-desc">Подробный разбор ретардеров: типы, принцип работы, отличия от традиционных тормозов и правила эксплу</span>
+            </a><a href="/articles/a/ab/abs-v-mashine-gorit-chto-znachit.html" class="pb-related-card">
+                <span class="pb-related-title">ABS в машине горит: что значит, причины и порядок действий</span>
+                <span class="pb-related-desc">Загорелась лампа ABS? Разбираем основные причины неисправности, последствия езды с горящей лампой и </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

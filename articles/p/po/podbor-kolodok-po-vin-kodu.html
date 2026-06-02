@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как подобрать тормозные колодки по VIN-коду: точный алгоритм — ТормозОК</title>
+    <meta name="description" content="Полное руководство по подбору автозапчастей. Узнайте, как расшифровать VIN, найти каталожный номер и избежать ошибок при замене тормозных колодок.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/po/podbor-kolodok-po-vin-kodu.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как подобрать тормозные колодки по VIN-коду: точный алгоритм">
+    <meta property="og:description" content="Полное руководство по подбору автозапчастей. Узнайте, как расшифровать VIN, найти каталожный номер и избежать ошибок при замене тормозных колодок.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/podbor-zapchastej/">Подбор запчастей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как подобрать тормозные колодки по VIN-коду: точный алгоритм</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#почему-стандартный-каталожный-подбор-часто-дает-сбой">Почему стандартный каталожный подбор часто дает сбой</a></li><li><a href="#где-найти-и-как-правильно-считать-vin-код">Где найти и как правильно считать VIN-код</a></li><li><a href="#алгоритм-поиска-каталожного-номера-через-базу-данных">Алгоритм поиска каталожного номера через базу данных</a></li><li><a href="#сравнение-оригинальных-номеров-и-качественных-аналогов">Сравнение оригинальных номеров и качественных аналогов</a></li><li><a href="#визуальная-проверка-и-сверка-характеристик">Визуальная проверка и сверка характеристик</a></li><li><a href="#особенности-подбора-для-систем-abs-и-esp">Особенности подбора для систем ABS и ESP</a></li><li><a href="#типичные-ошибки-при-самостоятельном-подборе">Типичные ошибки при самостоятельном подборе</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kakie-firmy-tormoznykh-kolodok-khoroshie.html">Топ-10 фирм тормозных колодок 2026: какие лучше выбрать для авто</a></li><li><a href="/articles/c/ch/chto-takoe-gtts-v-avtomobile.html">ГТЦ в автомобиле: устройство, принцип работы и ремонт тормозного цилиндра</a></li><li><a href="/articles/d/dz/dzhi-brejk-tormoznye-diski.html">Тормозные диски G-Brake: обзор, характеристики и выбор для авто</a></li><li><a href="/articles/z/zi/zil-157-na-uralovskikh-kolesakh.html">ЗиЛ-157 на ураловских колесах: модернизация ходовой и проходимость</a></li><li><a href="/articles/p/pr/privod-v-sbore-kalina.html">Привод в сборе на Лада Калина: выбор, диагностика и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Точный подбор тормозных колодок по VIN-коду: руководство эксперта</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#почему-стандартный-каталожный-подбор-часто-дает-сбой">Почему стандартный каталожный подбор часто дает сбой</a></li><li><a href="#где-найти-и-как-правильно-считать-vin-код">Где найти и как правильно считать VIN-код</a></li><li><a href="#алгоритм-поиска-каталожного-номера-через-базу-данных">Алгоритм поиска каталожного номера через базу данных</a></li><li><a href="#сравнение-оригинальных-номеров-и-качественных-аналогов">Сравнение оригинальных номеров и качественных аналогов</a></li><li><a href="#визуальная-проверка-и-сверка-характеристик">Визуальная проверка и сверка характеристик</a></li><li><a href="#особенности-подбора-для-систем-abs-и-esp">Особенности подбора для систем ABS и ESP</a></li><li><a href="#типичные-ошибки-при-самостоятельном-подборе">Типичные ошибки при самостоятельном подборе</a></li><li><a href="#заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Тормозная система автомобиля является критическим элементом безопасности, и ошибка при выборе расходных материалов может привести к печальным последствиям. Многие автовладельцы пытаются подобрать запчасти, ориентируясь лишь на марку <em>Toyota</em> или <em>BMW</em> и год выпуска, но этого часто недостаточно.</p>
+
+<p>В реальной практике один и тот же кузовной код может скрывать различные комплектации с отличающимися тормозными механизмами. Использование <strong>VIN-кода</strong> (Vehicle Identification Number) — это единственный способ гарантировать 100% совместимость <strong>тормозных колодок</strong> с вашим конкретным автомобилем.</p>
+
+<h2 id="почему-стандартный-каталожный-подбор-часто-дает-сбой">Почему стандартный каталожный подбор часто дает сбой</h2>
+
+<p>Автомобильные гиганты выпускают миллионы единиц техники, и даже в пределах одной модели могут быть существенные различия в технической начинке. Производители часто используют несколько типов тормозных суппортов в зависимости от года выпуска, типа кузова или уровня оснащения.</p>
+
+<p>Например, автомобиль <em>Mercedes-Benz E-Class</em> одного года может быть укомплектован стандартными тормозами, а его «собрать» с пакетом AMG или спортивной подвеской — усиленными дисками и колодками другого размера. Попытка купить детали по названию модели без учета <strong>VIN-decoder</strong> часто заканчивается тем, что купленные колодки просто не встанут в суппорт.</p>
+
+<p>Кроме того, производители автомобилей могут менять поставщиков компонентов в середине модельного года. То, что стояло на машину в январе, может отличаться от комплектующих, установленных в июне. <strong>Тормозные колодки</strong> от разных заводов-поставщиков (даже для одной модели) могут иметь разные посадочные места или форму фрикционной накладки.</p>
+
+<h2 id="где-найти-и-как-правильно-считать-vin-код">Где найти и как правильно считать VIN-код</h2>
+
+<p>Для начала необходимо locate <strong>VIN-код</strong> вашего автомобиля. Обычно это 17-значный набор цифр и букв, который наносится на шильдик в моторном отсеке, на стойке водительской двери или в паспорте транспортного средства (ПТС).</p>
+
+<p>Ошибки при переписывании кода недопустимы. Обратите внимание на то, что в VIN-коде никогда не используются буквы <code>I</code>, <code>O</code> и <code>Q</code>, чтобы не путать их с цифрами <code>1</code> и <code>0</code>. Если вы передаете код оператору или вводите его в базу, перепроверьте каждую букву.</p>
+
+<p>Самый надежный способ получить информацию — воспользоваться официальным дилерским каталогом, где специалист введет код в систему <code>EPC (Electronic Parts Catalog)</code>. Это позволит увидеть именно ту деталь, которая была установлена на заводе-изготовителе.</p>
+
+<blockquote>⚠️ Внимание: Никогда не доверяйте подбору по «признакам» в непроверенных интернет-магазинах. Если сайт предлагает подобрать по модели без указания VIN, знайте, что там используется усредненная база данных, которая может не учитывать редкие заводские модификации.</blockquote>
+
+<h2 id="алгоритм-поиска-каталожного-номера-через-базу-данных">Алгоритм поиска каталожного номера через базу данных</h2>
+
+<p>Прежде чем зайти в поиск, убедитесь, что у вас есть доступ к качественной базе данных. Профессиональные подборщики используют такие системы, как TecDoc, Autodoc или специализированные каталоги брендов вроде <em>TRW</em>, <em>Brembo</em> или <em>ATE</em>.</p>
+
+<p>Процесс начинается с ввода <strong>VIN-кода</strong> в соответствующее поле. Система расшифрует комплектацию и предложит список доступных узлов. Вам нужно найти раздел «Тормозная система» -> «Передние/Задние тормозные колодки».</p>
+
+<p>Именно здесь вы увидите оригинальный номер (OEM), например, <code>34116789012</code>. Этот номер — ключ к поиску аналогов. Зная оригинальный артикул, вы можете найти эквиваленты от других производителей, которые подходят по геометрическим размерам и составу фрикционного материала.</p>
+
+<div class="pb-poll" id="poll-a0415bc2"><div class="pb-poll-question">📊 Какой метод подбора вы используете чаще?</div><div class="pb-poll-option" data-poll="a0415bc2" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только по VIN-коду</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a0415bc2" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">По модели и году</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a0415bc2" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Смотрю номер на старой колодке</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="a0415bc2" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Покупаю «на авось»</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="сравнение-оригинальных-номеров-и-качественных-аналогов">Сравнение оригинальных номеров и качественных аналогов</h2>
+
+<p>Зная оригинальный номер, вы можете открыть каталоги производителей aftermarket-запчастей. Многие бренды имеют перекрестные таблицы соответствия (interchange lists). Например, если ваш оригинал — <code>51713-38000</code> от <em>Hyundai</em>, то аналогичную деталь может выпускать <em>Textar</em> под номером <code>2440601</code>.</p>
+
+<p>Важно понимать, что <strong>тормозные колодки</strong> — это расходный материал, но не все аналоги одинаково хороши. Дешевые подделки могут не иметь нужной сертификации или использовать некачественный фрикционный состав, который приведет к перегреву и потере эффективности торможения.</p>
+
+<p>При выборе аналога обращайте внимание на класс качества. Для тяжелых внедорожников или спортивных седанов не стоит покупать бюджетные серии, предназначенные для городских малолитражек. Геометрия может совпадать, но характеристики трения будут совершенно иными.</p>
+
+<p>Ниже приведена таблица, демонстрирующая, как один и тот же VIN может скрывать разные типы тормозов в зависимости от опций:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Марка и модель</th>
+<th>Год выпуска</th>
+<th>Опция / Двигатель</th>
+<th>Тип тормозов (передние)</th>
+<th>Размер дисков (мм)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Volkswagen Golf VII</em></td>
+<td>2016</td>
+<td>1.4 TSI, базовая версия</td>
+<td>Вентилируемые</td>
+<td>288 × 22</td>
+</tr>
+<tr>
+<td><em>Volkswagen Golf VII</em></td>
+<td>2016</td>
+<td>2.0 GTI, спортивная версия</td>
+<td>Вентилируемые (улучшенные)</td>
+<td>340 × 30</td>
+</tr>
+<tr>
+<td><em>BMW X5 F15</em></td>
+<td>2015</td>
+<td>xDrive30d</td>
+<td>Вентилируемые</td>
+<td>348 × 30</td>
+</tr>
+<tr>
+<td><em>BMW X5 F15</em></td>
+<td>2015</td>
+<td>M-Sport Package</td>
+<td>Перфорированные, увеличенные</td>
+<td>395 × 36</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед заказом аналога обязательно сверьте диаметр тормозного диска и толщину фрикционной накладки. Даже если артикул подходит по базе, физическая посадка может отличаться из-за производственных допусков у разных поставщиков.</p></aside>
+
+<h2 id="визуальная-проверка-и-сверка-характеристик">Визуальная проверка и сверка характеристик</h2>
+
+<p>Даже после успешного подбора по VIN, перед установкой или окончательным заказом рекомендуется провести визуальную сверку, если у вас уже снята старая деталь. Сравните форму скобы, расположение пильцев и количество датчиков износа.</p>
+
+<p>Особое внимание уделите датчикам износа. В одних комплектациях он может быть электрическим, в других — механическим, а в третьих — отсутствовать вовсе. Неправильный выбор приводит к тому, что после замены вам придется менять и сам датчик, и проводку.</p>
+
+<p>Также проверьте наличие металлической скобы или клипс, которые часто идут в комплекте с <strong>тормозными колодками</strong>. Некоторые производители меняют конструкцию крепления в ходе модернизации, и старые скобы могут не подойти к новым накладкам.</p>
+
+
+
+<h2 id="особенности-подбора-для-систем-abs-и-esp">Особенности подбора для систем ABS и ESP</h2>
+
+<p>Современные автомобили оснащены сложными электронными системами стабилизации, которые сильно зависят от характеристик тормозных компонентов. Если вы установите колодки с неправильным коэффициентом трения, система <strong>ABS</strong> или <strong>ESP</strong> может начать работать некорректно.</p>
+
+<p>Электроника рассчитывает время торможения и усилие на педали, исходя из заводских параметров. Использование <strong>спортивных колодок</strong> без перепрограммирования блока управления может привести к ложным срабатываниям аварийных сигналов или «дерганому» торможению на льду.</p>
+
+<p>Для автомобилей с системами рекуперации энергии (гибриды, электромобили) подбор колодок еще более критичен. Здесь часто используются специальные составы, устойчивые к частым включениям/выключениям, так как электродвигатель берет на себя часть работы по замедлению.</p>
+
+<blockquote>⚠️ Внимание: Если вы меняете тормозные колодки на автомобиль с системой электронного ручного тормоза (EPB), убедитесь, что купленный комплект совместим с этой системой. В некоторых случаях требуется специальный режим «сервисного обслуживания» для разведения поршней.</blockquote>
+
+
+
+<h2 id="типичные-ошибки-при-самостоятельном-подборе">Типичные ошибки при самостоятельном подборе</h2>
+
+<p>Самая распространенная ошибка — игнорирование того факта, что VIN-код может меняться при замене кузова или агрегатов. Если автомобиль был восстановлен после серьезной аварии, заводские метки могут не соответствовать текущей комплектации.</p>
+
+<p>Другая частая проблема — покупка «универсального» комплекта. В каталогах иногда встречаются группы кодов, которые подходят к нескольким моделям. Однако в реальности нюансы конструкции суппорта могут отличаться на 1-2 миллиметра, что делает установку невозможной без доработки.</p>
+
+<p>Не стоит также полагаться на отзывы в интернете. То, что колодки подошли владельцу <em>Toyota Camry 2018 года</em> с двигателем 2.5, не гарантирует, что они встанут на вашу версию с двигателем 3.5, если у них разные тормозные механизмы.</p>
+
+<blockquote>⚠️ Внимание: Если при заказе вам предлагают подождать поставку «под заказ» более двух недель — это повод насторожиться. Возможно, продавец не уверен в совместимости и пытается избежать возврата некондиционного товара, который вам не подойдет.</blockquote>
+
+<h2 id="заключение-и-итоговые-рекомендации">Заключение и итоговые рекомендации</h2>
+
+<p>Подбор <strong>тормозных колодок</strong> по VIN-коду остается золотым стандартом в автосервисе и при самостоятельной закупке запчастей. Это единственный метод, который минимизирует риски ошибки и гарантирует безопасность эксплуатации автомобиля.</p>
+
+<p>Не экономьте время на расшифровке кода и сверке артикулов. Потратить 15 минут на проверку в каталоге дешевле и безопаснее, чем менять не подошедшие запчасти или, что хуже, ремонтировать испорченные тормозные диски и суппорты.</p>
+
+<p>Помните, что качество торможения зависит не только от цены колодок, но и от их точности подбора. Используйте профессиональные инструменты и базы данных, чтобы быть уверенным в надежности вашего автомобиля.</p>
+
+<details>
+<summary>Можно ли подобрать колодки только по марке и модели?</summary>
+<p>Технически это возможно, но крайне не рекомендуется. Существует высокий риск ошибки из-за различных комплектаций, годов выпуска и опций. Без VIN-кода вы не сможете точно определить размер и тип тормозного механизма.</p>
+</details>
+
+<details>
+<summary>Что делать, если VIN-код поврежден и не читается?</summary>
+<p>В этом случае необходимо обратиться к официальному дилеру. Они могут найти информацию о комплектации по серийному номеру двигателя или шасси, а также по данным в базе производителя.</p>
+</details>
+
+<details>
+<summary>Нужно ли скидывать ошибку датчика износа после замены?</summary>
+<p>Да, для большинства современных автомобилей требуется процедура сброса счетчика износа через диагностический сканер или специальный сервисный режим, иначе на приборной панели будет гореть значок неисправности.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип тормозных дисков на выбор колодок?</summary>
+<p>Да, тип дисков (вентилируемые, перфорированные, с насечками) часто определяет конструкцию колодки. Кроме того, размер диска напрямую влияет на размер тормозных накладок и скобы суппорта.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kakie-firmy-tormoznykh-kolodok-khoroshie.html" class="pb-related-card">
+                <span class="pb-related-title">Топ-10 фирм тормозных колодок 2026: какие лучше выбрать для авто</span>
+                <span class="pb-related-desc">Рейтинг производителей тормозных колодок: сравнение качества, цены и ресурса. Какие бренды выбрать д</span>
+            </a><a href="/articles/c/ch/chto-takoe-gtts-v-avtomobile.html" class="pb-related-card">
+                <span class="pb-related-title">ГТЦ в автомобиле: устройство, принцип работы и ремонт тормозного цилиндра</span>
+                <span class="pb-related-desc">Подробный разбор ГТЦ (главного тормозного цилиндра). Узнайте, как работает гидравлика, признаки неис</span>
+            </a><a href="/articles/d/dz/dzhi-brejk-tormoznye-diski.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозные диски G-Brake: обзор, характеристики и выбор для авто</span>
+                <span class="pb-related-desc">Подробный анализ тормозных дисков G-Brake. Как выбрать, установить и обслуживать. Сравнение с аналог</span>
+            </a><a href="/articles/z/zi/zil-157-na-uralovskikh-kolesakh.html" class="pb-related-card">
+                <span class="pb-related-title">ЗиЛ-157 на ураловских колесах: модернизация ходовой и проходимость</span>
+                <span class="pb-related-desc">Установка колес Урал на ЗиЛ-157: влияние на проходимость, технические нюансы переделки, плюсы и мину</span>
+            </a><a href="/articles/p/pr/privod-v-sbore-kalina.html" class="pb-related-card">
+                <span class="pb-related-title">Привод в сборе на Лада Калина: выбор, диагностика и замена</span>
+                <span class="pb-related-desc">Полный гид по приводу в сборе для Лада Калина. Симптомы неисправности, отличия OEM от аналогов, поша</span>
+            </a><a href="/articles/m/mo/mozhno-li-postavit-tormoznye-diski-14-vmesto-13.html" class="pb-related-card">
+                <span class="pb-related-title">Меняем 13 на 14: можно ли установить диски большего размера?</span>
+                <span class="pb-related-desc">Разбираем техническую совместимость тормозных дисков 13 и 14 дюймов. Влияние на суппорты, ступицы и </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

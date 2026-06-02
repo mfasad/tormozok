@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Почему маленькая скорость записи на SSD: причины и способы решения — ТормозОК</title>
+    <meta name="description" content="Узнайте, почему падает скорость записи на SSD накопителях. Разбор причин: переполнение, перегрев, режим SLC-кэш. Инструкция по диагностике и восстановлению.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/m/ma/malenkaya-skorost-zapisi-na-ssd.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Почему маленькая скорость записи на SSD: причины и способы решения">
+    <meta property="og:description" content="Узнайте, почему падает скорость записи на SSD накопителях. Разбор причин: переполнение, перегрев, режим SLC-кэш. Инструкция по диагностике и восстановлению.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Почему маленькая скорость записи на SSD: причины и способы решения</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-slc-кэша-и-его-влияние-на-производительность">Принцип работы SLC-кэша и его влияние на производительность</a></li><li><a href="#температурный-режим-и-троттлинг-контроллера">Температурный режим и троттлинг контроллера</a></li><li><a href="#настройки-ос-и-драйверов-скрытые-ограничения">Настройки ОС и драйверов: скрытые ограничения</a></li><li><a href="#износ-памяти-и-деградация-ячеек">Износ памяти и деградация ячеек</a></li><li><a href="#таблица-типичных-скоростей-и-причин-их-снижения">Таблица типичных скоростей и причин их снижения</a></li><li><a href="#методы-восстановления-производительности">Методы восстановления производительности</a></li><li><a href="#выбор-режима-работы-и-профилактика">Выбор режима работы и профилактика</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/p/po/podvizhnaya-chast-kryla-samoleta-6-bukv-skanvord.html">Подвижная часть крыла самолета 6 букв: Ответ на сканворд и</a></li><li><a href="/articles/k/kr/kraska-kotoraya-derzhit-temperaturu.html">Жаропрочная краска для печей и котлов: виды, применение и выбор</a></li><li><a href="/articles/l/ly/lyagushka-pedali-tormoza-vesta.html">Петух на тормоз Lada Vesta: установка, регулировка и отзывы</a></li><li><a href="/articles/n/ni/nizkaya-skorost-chteniya-hdd.html">Низкая скорость чтения HDD: причины, диагностика и методы ускорения</a></li><li><a href="/articles/k/ka/kak-pravilno-ezdit-na-mekhanike-v-probkakh.html">Как ездить на механике в пробках: Износ сцепления и правила движения</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Маленькая скорость записи на SSD: диагностика и устранение проблем</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-slc-кэша-и-его-влияние-на-производительность">Принцип работы SLC-кэша и его влияние на производительность</a></li><li><a href="#температурный-режим-и-троттлинг-контроллера">Температурный режим и троттлинг контроллера</a></li><li><a href="#настройки-ос-и-драйверов-скрытые-ограничения">Настройки ОС и драйверов: скрытые ограничения</a></li><li><a href="#износ-памяти-и-деградация-ячеек">Износ памяти и деградация ячеек</a></li><li><a href="#таблица-типичных-скоростей-и-причин-их-снижения">Таблица типичных скоростей и причин их снижения</a></li><li><a href="#методы-восстановления-производительности">Методы восстановления производительности</a></li><li><a href="#выбор-режима-работы-и-профилактика">Выбор режима работы и профилактика</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Пользователи, которые выбирают твердотельные накопители (SSD) ради молниеносной работы системы, часто сталкиваются с парадоксальной ситуацией. Компьютер загружается быстро, но при копировании больших файлов или установке игр скорость записи внезапно падает до значений, характерных для старых жестких дисков (HDD). Это явление не является признаком поломки устройства в большинстве случаев, но требует внимательного анализа конфигурации системы и состояния самого накопителя.</p>
+
+<p>Снижение производительности может быть вызвано несколькими факторами: от программных сбоев и неправильных настроек BIOS до физических ограничений технологии NAND-памяти. Понимание механизмов работы контроллера и алгоритмов кэширования поможет вам выявить истинную причину того, что <strong>маленькая скорость записи на SSD</strong> стала нормой для вашей системы.</p>
+
+<h2 id="принцип-работы-slc-кэша-и-его-влияние-на-производительность">Принцип работы SLC-кэша и его влияние на производительность</h2>
+<p>Современные накопители используют технологию SLC-кэширования для обеспечения высоких скоростей записи в краткосрочной перспективе. В этом режиме контроллер временно использует часть памяти MLC или TLC как более быстрый SLC-кэш, записывая туда данные с максимальной скоростью. Как только этот буфер заполняется, скорость записи резко снижается до базового уровня памяти, что и воспринимается пользователем как сбой.</p>
+<p>Этот механизм критически важен для понимания поведения <em>Samsung 970 EVO</em> или <em>Kingston A400</em> при длительной передаче файлов. Если вы копируете один огромный файл объемом 100 ГБ, то первые 20-30 ГБ могут лететь на скорости 2000 МБ/с, а остаток — еле ползти со скоростью 50 МБ/с. Это не ошибка, а физическое ограничение технологии, призванное удешевить производство при сохранении приемлемой отзывчивости в бытовых сценариях.</p>
+<p>Размер этого скрытого кэша зависит от свободного места на диске. Чем меньше свободного пространства, тем быстрее заканчивается «быстрый» этап записи. Для преодоления этого ограничения необходимо регулярно освобождать место на диске, оставляя как минимум 15-20% от общего объема пустыми.</p>
+
+<blockquote>⚠️ Внимание: Никогда не используйте SSD в режиме «наполнения под завязку» для работы с высокими нагрузками. В таких условиях <strong>контроллер</strong> вынужден постоянно заниматься сборкой мусора (Garbage Collection) в реальном времени, что вызывает колоссальные задержки и падение скорости записи до минимума.</blockquote>
+
+<h2 id="температурный-режим-и-троттлинг-контроллера">Температурный режим и троттлинг контроллера</h2>
+<p>Одной из самых частых причин внезапного падения производительности является перегрев. SSD-накопители, особенно компактные форматы M.2, при интенсивной работе выделяют значительное количество тепла. Когда температура чипов памяти или контроллера достигает критического порога (обычно около 70-75°C), срабатывает механизм троттлинга.</p>
+<p>Троттлинг — это принудительное снижение тактовой частоты контроллера для защиты компонентов от теплового разрушения. В этот момент скорость записи может упасть в десятки раз. Если вы работаете в корпусе без вентиляции или SSD установлен без радиатора в узком слоте материнской платы, вероятность перегрева возрастает кратно.</p>
+<p>Чтобы избежать этого, необходимо обеспечить надлежащий отвод тепла. Используйте специальные радиаторы для M.2 накопителей или улучшите циркуляцию воздуха внутри системного блока. Проверка температурной статистики должна стать регулярной процедурой при диагностике проблем с производительностью.</p>
+
+<div class="pb-poll" id="poll-0c1478b3"><div class="pb-poll-question">📊 Какой объем свободного места сейчас на вашем SSD?</div><div class="pb-poll-option" data-poll="0c1478b3" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее 10%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c1478b3" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">10-20%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c1478b3" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">20-50%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0c1478b3" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 50%</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="настройки-ос-и-драйверов-скрытые-ограничения">Настройки ОС и драйверов: скрытые ограничения</h2>
+<p>Иногда проблема кроется не в «железе», а в программном обеспечении. Отключение службы индексации поиска, неправильная настройка файла подкачки или устаревшие драйверы чипсета могут стать причиной того, что система не может использовать потенциал накопителя. Особенно это актуально для бюджетных моделей <em>ADATA</em> или <em>Transcend</em>, чувствительных к настройкам энергосбережения.</p>
+<p>Проверьте, включена ли функция AHCI в BIOS. Работа в режиме IDE или совместимости (Compatibility) значительно ограничивает пропускную способность шины и снижает скорость записи. Кроме того, убедитесь, что отключено отключение питания SATA-портов в настройках электропитания Windows, так как это может вызывать задержки при пробуждении диска.</p>
+<p>Драйверы также играют ключевую роль. Старые стандарты NVMe могут не корректно работать с новыми накопителями без обновленного ПО. Зайдите на сайт производителя материнской платы и скачайте актуальные драйверы для чипсета и контроллера хранения данных.</p>
+
+<blockquote>⚠️ Внимание: Если ваш SSD имеет интерфейс SATA III, убедитесь, что кабель не поврежден и подключен в порт, поддерживающий скорость 6 Гбит/с. Использование старых кабелей SATA II или поврежденных контактов может искусственно ограничивать скорость до 300 МБ/с, независимо от характеристик самого диска.</blockquote>
+
+<h2 id="износ-памяти-и-деградация-ячеек">Износ памяти и деградация ячеек</h2>
+<p>Утверждение о том, что SSD не подвержены износу, ошибочно. Ячейки памяти NAND Flash имеют ограниченное количество циклов перезаписи (P/E cycles). По мере накопления износа контроллеру становится сложнее записывать данные, что приводит к увеличению времени отклика и снижению скорости записи. Это естественный процесс старения устройства.</p>
+<p>Для оценки состояния здоровья диска используйте утилиты от производителя, такие как <em>CrystalDiskInfo</em> или <em>Samsung Magician</em>. Обратите внимание на параметр «Available Reserve» или «Health Status». Если эти значения близки к нулю, диск находится в критическом состоянии.</p>
+<p>Важно различать временное замедление из-за заполнения кэша и постоянное снижение скорости из-за деградации. В первом случае скорость восстанавливается после паузы и очистки кэша, во втором — падение носит необратимый характер до тех пор, пока не будет отформатирован диск или не заменены изношенные блоки.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика состояния SSD</h4><label class="check-item"><input type="checkbox"><span>Проверить температуру в утилите мониторинга</span></label><label class="check-item"><input type="checkbox"><span>Освободить 20% места на диске</span></label><label class="check-item"><input type="checkbox"><span>Обновить драйверы контроллера</span></label><label class="check-item"><input type="checkbox"><span>Запустить функцию TRIM вручную</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="таблица-типичных-скоростей-и-причин-их-снижения">Таблица типичных скоростей и причин их снижения</h2>
+<p>Ниже приведена сравнительная таблица, демонстрирующая разницу между заявленными характеристиками и реальными значениями при различных проблемах. Это поможет вам ориентироваться в том, что является нормой, а что требует вмешательства.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Тип накопителя</th>
+      <th>Заявленная скорость записи</th>
+      <th>Реальная скорость (проблема)</th>
+      <th>Вероятная причина</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SATA III SSD</td>
+      <td>до 550 МБ/с</td>
+      <td>< 100 МБ/с</td>
+      <td>Переполнение SLC-кэша или поврежденный кабель</td>
+    </tr>
+    <tr>
+      <td>NVMe Gen3</td>
+      <td>до 3500 МБ/с</td>
+      <td>500 МБ/с</td>
+      <td>Троттлинг из-за перегрева</td>
+    </tr>
+    <tr>
+      <td>NVMe Gen4</td>
+      <td>до 7000 МБ/с</td>
+      <td>1500 МБ/с</td>
+      <td>Диск заполнен более чем на 80%</td>
+    </tr>
+    <tr>
+      <td>Бюджетный QLC</td>
+      <td>до 1800 МБ/с</td>
+      <td>80 МБ/с</td>
+      <td>Истощение кэша при записи больших файлов</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<h2 id="методы-восстановления-производительности">Методы восстановления производительности</h2>
+<p>Если вы определили причину низкой скорости, можно предпринять шаги для её устранения. Первым делом выполните команду TRIM, которая подскажет контроллеру, какие блоки памяти освобождены и могут быть использованы для записи. В Windows это делается автоматически, но принудительный запуск через <code>Optimize Drives</code> может ускорить процесс.</p>
+<p>Для продвинутых пользователей доступен сброс накопителя до заводских настроек, который полностью очищает карту блоков и восстанавливает скорость до начальных значений. Однако это действие стирает все данные, поэтому требует обязательного резервного копирования. Используйте <code>Sanitize</code> или <code>Secure Erase</code> только через фирменные утилиты производителя.</p>
+<p>Также стоит проверить, не установлен ли ваш диск в качестве основного для системы и игр одновременно. Постоянная фоновая запись логов и кэша операционной системы в сочетании с активной записью игр может перегружать контроллер, особенно на моделях начального уровня.</p>
+
+<details class="pb-accordion"><summary>Что такое Secure Erase и как он работает?</summary><div class="pb-accordion-body"><p>Secure Erase — это команда, которая подает электрический импульс на все ячейки памяти, мгновенно сбрасывая их в заводское состояние. Это восстанавливает скорость записи, но уничтожает все данные безвозвратно.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед выполнением любых операций по сбросу или глубокому форматированию сделайте полную резервную копию важных данных на внешний носитель.</p></aside>
+
+<h2 id="выбор-режима-работы-и-профилактика">Выбор режима работы и профилактика</h2>
+<p>Для систем, где критична скорость записи больших объемов данных (например, видеомонтаж или базы данных), рекомендуется использовать накопители с DRAM-кэшем. Модели без DRAM (DRAM-less) гораздо сильнее зависят от алгоритмов хост-памяти и быстрее теряют скорость при насыщении кэша. При выборе нового SSD обращайте внимание на наличие собственного буфера DRAM.</p>
+<p>Регулярное обслуживание — залог стабильной работы. Не заполняйте диск полностью, обновляйте прошивку контроллера, следите за температурой. Эти простые правила помогут избежать ситуации, когда ваш дорогой <strong>NVMe накопитель</strong> по скорости записи начинает напоминать старый USB-флешку.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Ключевым фактором стабильной высокой скорости записи является наличие свободного места (минимум 20%) и отсутствие перегрева контроллера.</p></aside>
+
+<blockquote>⚠️ Внимание: Характеристики накопителей могут меняться в зависимости от партии и ревизии контроллера. Всегда сверяйте фактические показатели с официальными характеристиками на сайте производителя перед началом интенсивной работы.</blockquote>
+
+<details>
+  <summary>Почему скорость записи падает только при копировании больших файлов?</summary>
+  <p>Это связано с механизмом SLC-кэширования. При записи маленьких файлов данные помещаются в быстрый кэш. При записи большого файла кэш заканчивается, и данные начинают писаться напрямую в медленные ячейки памяти, что вызывает резкое падение скорости.</p>
+</details>
+<details>
+  <summary>Можно ли восстановить скорость SSD после полного износа?</summary>
+  <p>Частично. Команда Secure Erase может вернуть скорость к заводским значениям, если износ не привел к физическому отказу ячеек. Однако, если диск достиг предела циклов перезаписи (TBW), производительность будет нестабильной.</p>
+</details>
+<details>
+  <summary>Влияет ли интерфейс SATA на скорость записи?</summary>
+  <p>Да, интерфейс SATA III имеет физический предел скорости около 550-600 МБ/с. Если ваш SSD показывает меньше, проблема может быть в кабеле, порте или включенном режиме AHCI/IDE.</p>
+</details>
+<details>
+  <summary>Нужно ли отключать файл подкачки для SSD?</summary>
+  <p>Нет, отключение файла подкачки может привести к ошибкам в работе программ. Лучше вынести его на отдельный раздел или жесткий диск, если SSD загружен на 100% при работе с тяжелыми приложениями.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/p/po/podvizhnaya-chast-kryla-samoleta-6-bukv-skanvord.html" class="pb-related-card">
+                <span class="pb-related-title">Подвижная часть крыла самолета 6 букв: Ответ на сканворд и</span>
+                <span class="pb-related-desc">Ищете ответ на сканворд: подвижная часть крыла самолета 6 букв? Узнайте про элероны, закрылки и спой</span>
+            </a><a href="/articles/k/kr/kraska-kotoraya-derzhit-temperaturu.html" class="pb-related-card">
+                <span class="pb-related-title">Жаропрочная краска для печей и котлов: виды, применение и выбор</span>
+                <span class="pb-related-desc">Обзор термостойких красок для металлических поверхностей. Как выбрать состав для печей, котлов и ман</span>
+            </a><a href="/articles/l/ly/lyagushka-pedali-tormoza-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Петух на тормоз Lada Vesta: установка, регулировка и отзывы</span>
+                <span class="pb-related-desc">Всё о установке модифицированной педали тормоза (петуха) на Лада Веста. Инструкция, сравнение с заво</span>
+            </a><a href="/articles/n/ni/nizkaya-skorost-chteniya-hdd.html" class="pb-related-card">
+                <span class="pb-related-title">Низкая скорость чтения HDD: причины, диагностика и методы ускорения</span>
+                <span class="pb-related-desc">Почему жесткий диск стал работать медленно? Разбор причин, диагностика ошибок поверхности и советы п</span>
+            </a><a href="/articles/k/ka/kak-pravilno-ezdit-na-mekhanike-v-probkakh.html" class="pb-related-card">
+                <span class="pb-related-title">Как ездить на механике в пробках: Износ сцепления и правила движения</span>
+                <span class="pb-related-desc">Полное руководство по управлению механической КПП в заторах. Как не сжечь сцепление, избежать перегр</span>
+            </a><a href="/articles/d/du/dulnyj-tormoz-kompensator-kak-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Дульный тормоз-компенсатор: принцип работы, устройство и эффективность</span>
+                <span class="pb-related-desc">Подробный разбор того, как работает дульный тормоз-компенсатор. Изучите физику отдачи, типы конструк</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Как рассчитать время реакции водителя: формулы и таблица — ТормозОК</title>
+    <meta name="description" content="Узнайте, как рассчитать время реакции водителя по формулам, от чего зависит этот параметр и как тормозной путь влияет на безопасность движения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-rasschitat-vremya-reaktsii-voditelya.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать время реакции водителя: формулы и таблица">
+    <meta property="og:description" content="Узнайте, как рассчитать время реакции водителя по формулам, от чего зависит этот параметр и как тормозной путь влияет на безопасность движения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/bezopasnost-i-normy/">Безопасность и нормы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Как рассчитать время реакции водителя: формулы и таблица</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физиология-восприятия-и-принятия-решения">Физиология восприятия и принятия решения</a></li><li><a href="#базовые-формулы-расчета-времени">Базовые формулы расчета времени</a></li><li><a href="#факторы-влияющие-на-скорость-реакции">Факторы, влияющие на скорость реакции</a></li><li><a href="#влияние-технического-состояния-автомобиля">Влияние технического состояния автомобиля</a></li><li><a href="#расчет-тормозного-пути-при-разных-скоростях">Расчет тормозного пути при разных скоростях</a></li><li><a href="#практические-методы-оценки-навыков">Практические методы оценки навыков</a></li><li><a href="#особенности-работы-с-электронными-системами">Особенности работы с электронными системами</a></li><li><a href="#правовые-аспекты-и-стандарты">Правовые аспекты и стандарты</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-rabotaet-retarder-na-gruzovikakh.html">Как работает ретардер на грузовиках: принцип действия и виды</a></li><li><a href="/articles/k/ka/kak-obsluzhivat-tormoznuyu-sistemu.html">Как обслуживать тормозную систему: полный гайд по проверке и замене</a></li><li><a href="/articles/k/ka/kak-opredelit-skorost-avtomobilya-po-tormoznomu-puti.html">Как рассчитать скорость по тормозному пути: формулы и примеры</a></li><li><a href="/articles/c/ch/chto-ne-vliyaet-na-dlinu-tormoznogo-puti.html">Что НЕ влияет на длину тормозного пути: развенчание мифов</a></li><li><a href="/articles/r/re/rezkoe-tormozhenie-povlekshee-dtp.html">Резкое торможение повлекшее ДТП: Как доказать вину и избежать штрафа</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Методика расчета времени реакции водителя и тормозного пути</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физиология-восприятия-и-принятия-решения">Физиология восприятия и принятия решения</a></li><li><a href="#базовые-формулы-расчета-времени">Базовые формулы расчета времени</a></li><li><a href="#факторы-влияющие-на-скорость-реакции">Факторы, влияющие на скорость реакции</a></li><li><a href="#влияние-технического-состояния-автомобиля">Влияние технического состояния автомобиля</a></li><li><a href="#расчет-тормозного-пути-при-разных-скоростях">Расчет тормозного пути при разных скоростях</a></li><li><a href="#практические-методы-оценки-навыков">Практические методы оценки навыков</a></li><li><a href="#особенности-работы-с-электронными-системами">Особенности работы с электронными системами</a></li><li><a href="#правовые-аспекты-и-стандарты">Правовые аспекты и стандарты</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Каждый раз, садясь за руль, вы принимаете на себя ответственность за жизнь людей. Никто не застрахован от внезапного появления препятствия на дороге, будь то пешеход или внезапно выскочившая игрушка. В такие критические секунды именно физика и физиология определяют исход ситуации.</p>
+
+<p>Время реакции — это задержка между моментом, когда вы увидели опасность, и моментом начала вашего физического действия, например, нажатия на педаль тормоза. Это не мистическая величина, а конкретный физиологический показатель, который можно рассчитать и учесть при планировании безопасного расстояния.</p>
+
+<h2 id="физиология-восприятия-и-принятия-решения">Физиология восприятия и принятия решения</h2>
+
+<p>Процесс движения начинается не с нажатия педали, а с работы мозга. Сначала свет отражается от объекта и попадает на сетчатку, затем нервный импульс передается в зрительную кору, где происходит <strong>распознавание образа</strong>. После этого мозг анализирует ситуацию и отдает команду мышцам ног.</p>
+
+<p>Этот комплекс действий занимает от 0,2 до 1,5 секунды в зависимости от множества факторов. Для обычного <em>среднего водителя</em> в спокойной обстановке принято считать нормой показатель в 0,8–1,0 секунды. Однако на высокой скорости даже десятая доля секунды превращается в десятки метров пути, который автомобиль проедет накатом.</p>
+
+<p>Сложность задачи заключается в том, что при усталости или стрессе время реакции может удваиваться. Это значит, что при скорости 60 км/ч машина проедет около 17 метров, пока водитель только осознает опасность и начнет тянуть ногу к педали.</p>
+
+<h2 id="базовые-формулы-расчета-времени">Базовые формулы расчета времени</h2>
+
+<p>Для точного определения дистанции необходимо использовать математический подход. Существует общепринятая формула расчета времени реакции, которая переводит скорость из км/ч в метры в секунду. Основное уравнение выглядит следующим образом: $S = V \times t$, где $S$ — путь, $V$ — скорость, $t$ — время реакции.</p>
+
+<p>Чтобы перевести скорость из километров в часы в метры в секунду, нужно разделить значение на 3,6. Например, при скорости <code>50 км/ч</code> это будет примерно 13,8 м/с. Если умножить это число на стандартное время реакции 1 секунду, получаем, что за время принятия решения автомобиль проедет почти 14 метров.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Стандартное время реакции 1 секунда является усредненным показателем. В реальных аварийных ситуациях, особенно при наличии алкоголя или утомления, этот период может увеличиваться до 2-3 секунд, что критически меняет расчет тормозного пути.</p>
+</blockquote>
+
+<p>Если вы хотите проверить свои показатели, можно воспользоваться простыми тестами, но не стоит полагаться на них полностью. Лучше использовать консервативные значения при планировании дистанции. </p>
+
+<div class="pb-poll" id="poll-588acc90"><div class="pb-poll-question">📊 Какой у вас стаж вождения?</div><div class="pb-poll-option" data-poll="588acc90" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Менее года</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="588acc90" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">1-3 года</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="588acc90" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">3-10 лет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="588acc90" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Более 10 лет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="факторы-влияющие-на-скорость-реакции">Факторы, влияющие на скорость реакции</h2>
+
+<p>На скорость принятия решения влияет не только состояние водителя, но и окружающая среда. Плохая видимость, дождь или туман заставляют мозг тратить больше времени на распознавание объекта. В таких условиях расчетное время нужно увеличивать.</p>
+
+<p>Особое внимание следует уделить состоянию <strong>тонуса мышц</strong> и уровню концентрации. Если вы только что проснулись или, наоборот, провели за рулем более 4 часов, ваши показатели будут ниже средних. Также критическое влияние оказывают лекарственные препараты, которые могут вызывать сонливость.</p>
+
+<ul>
+<li>🌧️ Погодные условия: дождь и снег снижают видимость и увеличивают время распознавания.</li>
+<li>🚦 Сложность трафика: в пробках реакция может быть быстрее из-за привычки, но выше риск ошибки.</li>
+<li>💊 Состояние здоровья: прием успокоительных или антигистаминных препаратов замедляет ЦНС.</li>
+</ul>
+
+<p>Многие водители недооценивают влияние эмоций. Агрессивное вождение или сильное волнение заставляют мышцы быть в постоянном напряжении, что paradoxically может замедлить реакцию или привести к ложному нажатию педали.</p>
+
+<details class="pb-accordion"><summary>Влияние возраста на реакцию</summary><div class="pb-accordion-body"><p>Молодые водители часто имеют более быструю моторную реакцию, но хуже оценивают риск. Пожилые водители могут медленнее реагировать моторно, но лучше прогнозировать опасные ситуации за счет опыта.</p></div></details>
+
+<h2 id="влияние-технического-состояния-автомобиля">Влияние технического состояния автомобиля</h2>
+
+<p>Даже если ваш мозг сработал мгновенно, машина должна отреагировать на команду. Тормозная система имеет свою инерцию. Время срабатывания гидравлики или электроники добавляет к общему времени остановки дополнительные доли секунды.</p>
+
+<p>Важно учитывать зазоры в тормозных механизмах. Если тормозные колодки <em>сильно изношены</em>, поршню нужно больше времени, чтобы переместиться и прижать деталь к диску. Это напрямую влияет на <strong>эффективность торможения</strong> и общий путь остановки.</p>
+
+<p>В современных автомобилях с <em>ABS</em> и <em>ESP</em> электроника также вносит свой вклад в задержку. Система сначала проверяет состояние колес, блокирует их кратковременно и отпускает, что занимает время. В аварийной ситуации эти мили-секунды могут быть решающими.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка тормозной системы</h4><label class="check-item"><input type="checkbox"><span>Проверить износ колодок</span></label><label class="check-item"><input type="checkbox"><span>Оценить состояние дисков</span></label><label class="check-item"><input type="checkbox"><span>Проверить уровень тормозной жидкости</span></label><label class="check-item"><input type="checkbox"><span>Оценить работу вакуумного усилителя</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="расчет-тормозного-пути-при-разных-скоростях">Расчет тормозного пути при разных скоростях</h2>
+
+<p>Чтобы наглядно показать опасность недооценки времени реакции, приведем сравнительную таблицу. Здесь учтено среднее время реакции водителя 1,0 секунду и стандартное замедление для сухого асфальта.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Скорость движения (км/ч)</th>
+<th>Путь за время реакции (м)</th>
+<th>Путь торможения (м)</th>
+<th>Общий путь остановки (м)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>30</td>
+<td>8,3</td>
+<td>5,5</td>
+<td>13,8</td>
+</tr>
+<tr>
+<td>50</td>
+<td>13,9</td>
+<td>15,3</td>
+<td>29,2</td>
+</tr>
+<tr>
+<td>70</td>
+<td>19,4</td>
+<td>29,8</td>
+<td>49,2</td>
+</tr>
+<tr>
+<td>90</td>
+<td>25,0</td>
+<td>49,2</td>
+<td>74,2</td>
+</tr>
+<tr>
+<td>110</td>
+<td>30,5</td>
+<td>73,7</td>
+<td>104,2</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Обратите внимание на экспоненциальный рост пути торможения при увеличении скорости. Удвоение скорости приводит к учетверению тормозного пути, а путь, пройденный за время реакции, увеличивается линейно. </p>
+
+<p>Именно поэтому на скоростных трассах дистанция должна быть значительно больше, чем в городе. Ошибка в расчете на 10 км/ч при высокой скорости может стоить жизни, так как запас прочности становится нулевым.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Приведенные данные являются теоретическими и рассчитываются для идеальных условий (сухой асфальт, исправные тормоза). На мокром или обледенелом покрытии тормозной путь может увеличиваться в 2-3 раза.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>На скорости 90 км/ч автомобиль преодолевает более 25 метров только за то время, пока водитель осознает опасность и нажмет на педаль.</p></aside>
+
+<h2 id="практические-методы-оценки-навыков">Практические методы оценки навыков</h2>
+
+<p>Существуют специальные тренажеры и тесты, позволяющие оценить вашу индивидуальную скорость реакции. Они часто используются в автошколах и для профессиональных гонщиков. Простейший метод — это тест с линейкой, где второй человек отпускает линейку, а вы должны поймать её.</p>
+
+<p>Для более точных результатов стоит использовать специализированное ПО или приложения, которые замеряют время от визуального сигнала до действия. Однако помните, что результаты в игре могут не совпадать с реальностью на дороге из-за отсутствия стресс-фактора.</p>
+
+<p>Регулярные проверки помогают отследить динамику. Если вы заметили, что стали хуже реагировать, возможно, пришло время отдохнуть или пересмотреть режим работы. Это не признак слабости, а проявление профессионализма и заботы о безопасности.</p>
+
+<ul>
+<li>🧪 Пройдите онлайн-тест на реакцию в спокойной обстановке.</li>
+<li>🚗 Проконсультируйтесь с инструктором по экстремальному вождению.</li>
+<li>🏥 Пройдите медкомиссию при подозрении на ухудшение зрения или слуха.</li>
+</ul>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если вы чувствуете, что реакция замедлилась, увеличьте дистанцию до впереди идущего автомобиля минимум в полтора раза от стандартной.</p></aside>
+
+<h2 id="особенности-работы-с-электронными-системами">Особенности работы с электронными системами</h2>
+
+<p>Современные автомобили оснащены системами <em>автоматического экстренного торможения</em> (AEB). Они могут сработать быстрее человека, так как радары и камеры не устают. Однако полагаться только на них нельзя.</p>
+
+<p>Электроника может не распознать препятствие в сложных погодных условиях или при резком маневре. Человек обязан оставаться в контуре управления и быть готовым вмешаться. <strong>Системы помощи</strong> — это ассистенты, а не замена водителю.</p>
+
+<p>При расчете безопасности всегда закладывайте время на реакцию человека, даже если у вас стоит топовая комплектация. Никогда не доверяйте свою жизнь полностью алгоритмам, которые могут дать сбой.</p>
+
+<details class="pb-accordion"><summary>Как работают датчики торможения</summary><div class="pb-accordion-body"><p>Радары работают на радиоволнах и видят сквозь туман, а камеры используют оптическое распознавание образов. Комбинация этих данных позволяет системе принимать решения.</p></div></details>
+
+<h2 id="правовые-аспекты-и-стандарты">Правовые аспекты и стандарты</h2>
+
+<p>В правилах дорожного движения нет жесткой формулы для каждого водителя, но есть общие рекомендации по дистанции. Например, правило "двух секунд" является практическим воплощением расчета времени реакции.</p>
+
+<p>При расследовании ДТП эксперты часто используют расчеты времени реакции для определения вины. Если доказано, что водитель мог остановиться, но не сделал этого из-за невнимательности, это отягчающее обстоятельство.</p>
+
+<p>Знание своих физиологических возможностей и умение их рассчитать — залог того, что вы не попадете в неприятную статистику. Всегда держите под контролем свой автомобиль и свое состояние.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При проведении технической экспертизы после ДТП используются усредненные нормативы времени реакции (обычно 0,8–1,2 с). Если ваш реальный показатель был выше из-за болезни, это должно быть зафиксировано медицинским заключением.</p>
+</blockquote>
+
+<details>
+<summary>Какое время реакции считается нормой?</summary>
+<p>Нормальным временем реакции для трезвого и отдохнувшего водителя считается показатель от 0,7 до 1,2 секунды. Все, что выше этого диапазона, требует внимания к состоянию здоровья и усталости.</p>
+</details>
+
+<details>
+<summary>Влияет ли возраст на время реакции?</summary>
+<p>Да, с возрастом скорость обработки информации и моторная реакция замедляются. У пожилых водителей время реакции может увеличиваться до 1,5–2,0 секунд, поэтому им рекомендуется соблюдать большую дистанцию.</p>
+</details>
+
+<details>
+<summary>Можно ли тренировать время реакции?</summary>
+<p>Тренировки могут слегка улучшить показатели и скорость принятия решений, но фундаментальная физиология имеет пределы. Лучшая "тренировка" — это концентрация, отсутствие отвлекающих факторов и правильное состояние организма.</p>
+</details>
+
+<details>
+<summary>Что делать, если я ехал быстро и не успел затормозить?</summary>
+<p>Никогда не пытайтесь восстановить ситуацию рывком руля или паническим нажатием педали. Главное — сохранять управление машиной и постараться минимизировать скорость удара. Лучше врезаться в мягкое препятствие на низкой скорости, чем пытаться уйти от удара на высокой.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-rabotaet-retarder-na-gruzovikakh.html" class="pb-related-card">
+                <span class="pb-related-title">Как работает ретардер на грузовиках: принцип действия и виды</span>
+                <span class="pb-related-desc">Полный разбор работы ретардера на грузовиках. Виды тормозных систем, принцип действия, преимущества </span>
+            </a><a href="/articles/k/ka/kak-obsluzhivat-tormoznuyu-sistemu.html" class="pb-related-card">
+                <span class="pb-related-title">Как обслуживать тормозную систему: полный гайд по проверке и замене</span>
+                <span class="pb-related-desc">Пошаговая инструкция по техническому обслуживанию тормозов автомобиля. Проверка колодок, замена жидк</span>
+            </a><a href="/articles/k/ka/kak-opredelit-skorost-avtomobilya-po-tormoznomu-puti.html" class="pb-related-card">
+                <span class="pb-related-title">Как рассчитать скорость по тормозному пути: формулы и примеры</span>
+                <span class="pb-related-desc">Узнайте, как определить начальную скорость автомобиля по длине тормозного следа. Подробный разбор фо</span>
+            </a><a href="/articles/c/ch/chto-ne-vliyaet-na-dlinu-tormoznogo-puti.html" class="pb-related-card">
+                <span class="pb-related-title">Что НЕ влияет на длину тормозного пути: развенчание мифов</span>
+                <span class="pb-related-desc">Узнайте, какие факторы на самом деле не меняют дистанцию остановки автомобиля. Разбор популярных заб</span>
+            </a><a href="/articles/r/re/rezkoe-tormozhenie-povlekshee-dtp.html" class="pb-related-card">
+                <span class="pb-related-title">Резкое торможение повлекшее ДТП: Как доказать вину и избежать штрафа</span>
+                <span class="pb-related-desc">Разбор ситуаций резкого торможения с ДТП. Как работают датчики, что говорит закон, как доказать неоп</span>
+            </a><a href="/articles/p/po/polnyj-tormoznoj-put-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Полный тормозной путь: что это, от чего зависит и как рассчитать</span>
+                <span class="pb-related-desc">Разбираем понятие полного тормозного пути. Формулы расчета, влияние скорости и реакции водителя. Таб</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

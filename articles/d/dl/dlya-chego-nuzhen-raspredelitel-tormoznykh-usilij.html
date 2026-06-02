@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Для чего нужен распределитель тормозных усилий: устройство и неисправности — ТормозОК</title>
+    <meta name="description" content="Разберём устройство и принцип работы регулятора тормозных сил (RABS). Узнайте, как избежать блокировки задних колес и повысить безопасность торможения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/d/dl/dlya-chego-nuzhen-raspredelitel-tormoznykh-usilij.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Для чего нужен распределитель тормозных усилий: устройство и неисправности">
+    <meta property="og:description" content="Разберём устройство и принцип работы регулятора тормозных сил (RABS). Узнайте, как избежать блокировки задних колес и повысить безопасность торможения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Для чего нужен распределитель тормозных усилий: устройство и неисправности</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-торможения-и-проблема-блокировки">Физика процесса торможения и проблема блокировки</a></li><li><a href="#устройство-и-типы-регуляторов-давления">Устройство и типы регуляторов давления</a></li><li><a href="#признаки-неисправности-распределителя">Признаки неисправности распределителя</a></li><li><a href="#влияние-состояния-подвески-на-работу-регулятора">Влияние состояния подвески на работу регулятора</a></li><li><a href="#сравнение-механических-и-электронных-систем">Сравнение механических и электронных систем</a></li><li><a href="#регулировка-и-обслуживание-узла">Регулировка и обслуживание узла</a></li><li><a href="#безопасность-и-диагностика-в-сервисе">Безопасность и диагностика в сервисе</a></li><li><a href="#частые-вопросы-о-работе-регуляторов">Частые вопросы о работе регуляторов</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/e/es/est-li-na-grante-abs.html">Абсолютна ли система ABS на гранте? Вся правда о комплектациях</a></li><li><a href="/articles/n/ne/ne-prokachivaetsya-odin-kontur-tormozov-s-abs.html">Не прокачивается один контур тормозов с ABS: причины и ремонт</a></li><li><a href="/articles/k/ka/kak-otklyuchit-lampochku-abs-na-larguse.html">Как отключить лампочку ABS на Lada Largus: диагностика и сброс ошибок</a></li><li><a href="/articles/n/nu/nuzhen-li-obduv-pri-pechati-abs.html">Нужен ли обдув при печати ABS: полное руководство по настройкам</a></li><li><a href="/articles/p/pr/proverka-magnitnogo-koltsa-abs.html">Как проверить магнитное кольцо ABS: признаки износа и диагностика</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Распределитель тормозных усилий: Зачем он нужен и как работает?</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-торможения-и-проблема-блокировки">Физика процесса торможения и проблема блокировки</a></li><li><a href="#устройство-и-типы-регуляторов-давления">Устройство и типы регуляторов давления</a></li><li><a href="#признаки-неисправности-распределителя">Признаки неисправности распределителя</a></li><li><a href="#влияние-состояния-подвески-на-работу-регулятора">Влияние состояния подвески на работу регулятора</a></li><li><a href="#сравнение-механических-и-электронных-систем">Сравнение механических и электронных систем</a></li><li><a href="#регулировка-и-обслуживание-узла">Регулировка и обслуживание узла</a></li><li><a href="#безопасность-и-диагностика-в-сервисе">Безопасность и диагностика в сервисе</a></li><li><a href="#частые-вопросы-о-работе-регуляторов">Частые вопросы о работе регуляторов</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Тормозная система автомобиля — это сложный механизм, где безопасность зависит от слаженной работы всех узлов. Одним из критически важных компонентов является <strong>распределитель тормозных усилий</strong>, который часто называют регулятором давления или вентилем. Его главная задача — обеспечить оптимальное соотношение тормозных сил между передней и задней осью в зависимости от загрузки транспортного средства.</p>
+
+<p>Без этого устройства при резком нажатии на педаль задние колеса часто блокируются раньше передних, что приводит к заносу и потере управляемости. В современных автомобилях функции распределения часто берет на себя электроника, однако в классических схемах и на коммерческом транспорте механические <em>распределители тормозных усилий</em> остаются незаменимыми элементами.</p>
+
+<p>Понимание принципа работы этого узла поможет вам вовремя заметить признаки неисправности и предотвратить аварийную ситуацию на дороге.</p>
+
+<h2 id="физика-процесса-торможения-и-проблема-блокировки">Физика процесса торможения и проблема блокировки</h2>
+
+<p>Когда автомобиль замедляется, его вес переносится на переднюю ось из-за инерции. Это физическое явление называется развесовкой. При этом нагрузка на заднюю ось существенно снижается, а сцепление задних колес с дорогой падает.</p>
+
+<p>Если бы <strong>тормозной цилиндр</strong> сзади получал такое же давление, как и спереди, задние колеса неизбежно заблокировались бы при интенсивном торможении. Блокировка задних колес при движущемся вперед автомобиле — это очень опасное состояние, ведущее к развороту машины в штопор.</p>
+
+<p>Именно здесь вступает в работу <em>распределитель тормозных усилий</em>, который ограничивает рост давления в задних контурах, не давая колесам застопориться, даже если передняя ось тормозит на максимуме своих возможностей.</p>
+
+<h2 id="устройство-и-типы-регуляторов-давления">Устройство и типы регуляторов давления</h2>
+
+<p>Существует несколько конструкций распределителей, но принцип их действия схож. Механические регуляторы реагируют на перемещение задней подвески. Специальный рычаг, соединенный с мостом или задней балкой, меняет свое положение в зависимости от загрузки автомобиля.</p>
+
+<p>Внутри корпуса находится поршень или клапан, который перекрывает или дросселирует поток тормозной жидкости. При пустом автомобиле рычаг поднимается, позволяя давлению расти быстрее. При полной загрузке рычаг опускается, и клапан начинает ограничивать давление уже при меньшем нажатии на педаль.</p>
+
+<p>В современных легковых авто часто применяются электронные системы, такие как <em>EBD (Electronic Brakeforce Distribution)</em>, которые являются частью <strong>антиблокировочной системы (ABS)</strong>. Они используют датчики скорости вращения колес и вычисляют оптимальное усилиено.</p>
+
+<blockquote>⚠️ Внимание: Механические регуляторы подвержены коррозии и заклиниванию. Если рычаг регулятора оборван или закис, система перестает дозировать давление, что может привести к заносу даже при легком торможении на сухом асфальте.</blockquote>
+
+<div class="pb-poll" id="poll-7fa09c46"><div class="pb-poll-question">📊 Как часто вы проверяете состояние тормозной системы?</div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Каждое ТО</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при неисправности</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="7fa09c46" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="признаки-неисправности-распределителя">Признаки неисправности распределителя</h2>
+
+<p>Определить поломку без специального оборудования сложно, так как симптомы могут быть схожи с другими проблемами тормозов. Однако есть характерные признаки, указывающие именно на сбой в работе <strong>распределителя тормозных усилий</strong>.</p>
+
+<p>Если при торможении заднюю часть автомобиля сильно заносит, а передние колеса продолжают крутиться, скорее всего, регулятор не ограничивает давление, и задние колодки блокируют колеса. Это происходит из-за заклинивания клапана в открытом положении.</p>
+
+<p>Другая ситуация — когда тормозной путь значительно увеличился, и педаль тормоза становится «ватной». Это может указывать на то, что клапан заклинил в закрытом положении, не пропуская тормозную жидкость в задние контуры. В таком случае тормозят только передние колеса.</p>
+
+<p>Обратите внимание и на поведение автомобиля при полной загрузке. Если пустая машина тормозит нормально, но как только вы садите пассажиров или грузите багажник, задняя ось начинает «рыскать» или машину тащит в сторону, причина кроется в рычаге привода регулятора.</p>
+
+<h2 id="влияние-состояния-подвески-на-работу-регулятора">Влияние состояния подвески на работу регулятора</h2>
+
+<p>Работа механического распределителя напрямую зависит от геометрии задней подвески. Любая деформация рычагов, просадка пружин или поломка амортизаторов искажает сигналы, подаваемые на клапан.</p>
+
+<p>Если пружины задней подвески просели от старости, рычаг регулятора будет находиться в положении, характерном для перегруженного автомобиля. В результате система будет сильно ограничивать давление, и вы получите недостаточное торможение задней оси при обычной езде.</p>
+
+<p>Напротив, установка более жестких пружин или пружин от внедорожников («лифт подвески») без регулировки рычага приведет к тому, что регулятор будет считать автомобиль пустым всегда. При торможении это гарантированно вызовет блокировку задних колес.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка исправности привода регулятора</h4><label class="check-item"><input type="checkbox"><span>Осмотрите рычаг на предмет коррозии</span></label><label class="check-item"><input type="checkbox"><span>Проверьте крепление тяги к мосту</span></label><label class="check-item"><input type="checkbox"><span>Убедитесь в отсутствии деформации рычага</span></label><label class="check-item"><input type="checkbox"><span>Попробуйте покачать рычаг рукой</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="сравнение-механических-и-электронных-систем">Сравнение механических и электронных систем</h2>
+
+<p>Развитие технологий привело к тому, что механические регуляторы постепенно уступают место электронным. Однако у каждой системы есть свои преимущества и недостатки, которые важно понимать при выборе запчастей или ремонте.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Характеристика</th>
+<th>Механический регулятор</th>
+<th>Электронная система (EBD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Зависимость от состояния подвески</strong></td>
+<td>Высокая (требует регулировки)</td>
+<td>Отсутствует (реакция на датчики)</td>
+</tr>
+<tr>
+<td><strong>Сложность ремонта</strong></td>
+<td>Низкая (замена рычага/клапана)</td>
+<td>Высокая (требует диагностики ЭБУ)</td>
+</tr>
+<tr>
+<td><strong>Точность срабатывания</strong></td>
+<td>Средняя (ступенчатая)</td>
+<td>Высокая (непрерывная регулировка)</td>
+</tr>
+<tr>
+<td><strong>Стоимость</strong></td>
+<td>Низкая</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Механические системы надежны и не требуют электричества, но они менее точны. Электроника может адаптироваться к любым условиям: гололед, мокрый асфальт или резкий поворот, мгновенно перераспределяя момент. <mark></mark></p>
+
+<details class="pb-accordion"><summary>Что будет, если отключить рычаг регулятора?</summary><div class="pb-accordion-body"><p>Если механический рычаг отключить, распределитель перестанет реагировать на загрузку. В зависимости от конструкции, это приведет либо к постоянному ограничению давления (плохое торможение сзади), либо к его полному отсутствию (блокировка задних колес). Оба варианта опасны.</p></div></details>
+
+<h2 id="регулировка-и-обслуживание-узла">Регулировка и обслуживание узла</h2>
+
+<p>Многие владельцы автомобилей с механическим регулятором игнорируют необходимость периодической проверки его рычага. Пыль, грязь и влага со временем превращают шарнирные соединения в монолит. Регулировка должна проводиться не реже одного раза в два года или при замене пружин задней подвески.</p>
+
+<p>Процесс регулировки обычно заключается в установке автомобиля на ровную поверхность с нормальной загрузкой. Затем рычаг регулятора переводится в положение, соответствующее текущему состоянию подвески, и фиксируется. Некоторые производители требуют использования специального калибра для точной настройки угла рычага.</p>
+
+<p>Если вы заметили, что рычаг двигается с трудом, не пытайтесь просто залить его WD-40. Часто требуется полная разборка, очистка от ржавчины и замена смазки на специальную, несовместимую с тормозной жидкостью. Иначе смазка может попасть в гидравлическую систему и разрушить резиновые уплотнения.</p>
+
+<blockquote>⚠️ Внимание: Неправильная регулировка угла рычага может сделать систему торможения полностью неэффективной при полной загрузке автомобиля. Всегда сверяйте углы установки с технической документацией производителя вашего авто.</blockquote>
+
+<p>Также необходимо следить за целостностью тормозных трубок, идущих к регулятору. Механическое воздействие вибрации рычага может привести к трещинам в металле трубок, что чревато утечкой тормозной жидкости и отказом всей системы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене задних пружин или амортизаторов обязательно перерегулируйте положение рычага распределителя тормозных усилий. Игнорирование этого шага — частая причина заносов на пустой машине.</p></aside>
+
+<h2 id="безопасность-и-диагностика-в-сервисе">Безопасность и диагностика в сервисе</h2>
+
+<p>При диагностике тормозной системы мастера часто используют манометры для проверки давления в переднем и заднем контурах. На графике работы <strong>распределителя тормозных усилий</strong> это выглядит как излом линии давления в заднем контуре при достижении определенного порога.</p>
+
+<p>Если график давления в заднем контуре идет параллельно переднему без излома, значит, регулятор не работает. Если же давление в заднем контуре не растет вообще — клапан заклинил в закрытом состоянии. Эти тесты позволяют точно локализовать проблему.</p>
+
+<p>Для владельцев автомобилей с ABS важно понимать, что система EBD является частью общей логики работы антиблокировочной системы. При возникновении ошибок в работе датчиков скорости, модулятор ABS может отключить функцию распределения усилий, и на приборной панели загорится лампочка неисправности тормозов.</p>
+
+
+
+<p>Не стоит пренебрегать обслуживанием этого узла. Даже малейшая неисправность может превратить экстренное торможение в непредсказуемый маневр с потерей контроля над автомобилем.</p>
+
+<h2 id="частые-вопросы-о-работе-регуляторов">Частые вопросы о работе регуляторов</h2>
+
+<details>
+<summary>Можно ли ездить без распределителя тормозных усилий?</summary>
+<p>Технически езда возможна, но крайне опасна. Без регулятора задние колеса будут блокироваться первыми, что приведет к резкому заносу задней оси и возможному развороту автомобиля, особенно на скользкой дороге или при полной загрузке.</p>
+</details>
+
+<details>
+<summary>Почему тормоза работают нормально, но машину заносит при торможении?</summary>
+<p>Скорее всего, заклинил рычаг механического регулятора в положении «пустой автомобиль», либо он неправильно отрегулирован. В результате система не снижает давление на задние колеса при разгрузке задней оси.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять сам распределитель?</summary>
+<p>Сам корпус регулятора служит весь срок эксплуатации автомобиля. Однако рычаги и шарниры привода требуют проверки и обслуживания каждые 40-60 тысяч километров. Замена производится только при обнаружении механических повреждений или необратимой коррозии.</p>
+</details>
+
+<details>
+<summary>Влияет ли тип тормозной жидкости на работу регулятора?</summary>
+<p>Косвенно. Тормозная жидкость должна соответствовать стандарту DOT, указанному производителем. Использование некачественной жидкости может привести к коррозии внутренних каналов клапана, что нарушит его герметичность и плавность хода.</p>
+</details>
+
+<details>
+<summary>Можно ли заменить механический регулятор на электронный?</summary>
+<p>В подавляющем большинстве случаев — нет. Это требует полной перестройки тормозной системы, установки модуля ABS, датчиков и перепрошивки ЭБУ. Такие модификации запрещены техническими регламентами большинства стран.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/e/es/est-li-na-grante-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Абсолютна ли система ABS на гранте? Вся правда о комплектациях</span>
+                <span class="pb-related-desc">Есть ли ABS на Лада Гранта? Полный разбор комплектаций, особенности работы системы и нюансы безопасн</span>
+            </a><a href="/articles/n/ne/ne-prokachivaetsya-odin-kontur-tormozov-s-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Не прокачивается один контур тормозов с ABS: причины и ремонт</span>
+                <span class="pb-related-desc">Почему не откачивается воздух из одного контура тормозной системы с ABS? Разбор неисправностей клапа</span>
+            </a><a href="/articles/k/ka/kak-otklyuchit-lampochku-abs-na-larguse.html" class="pb-related-card">
+                <span class="pb-related-title">Как отключить лампочку ABS на Lada Largus: диагностика и сброс ошибок</span>
+                <span class="pb-related-desc">Полная инструкция по устранению индикатора ABS на Лада Ларгус. Разбор причин, методы сброса ошибок и</span>
+            </a><a href="/articles/n/nu/nuzhen-li-obduv-pri-pechati-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Нужен ли обдув при печати ABS: полное руководство по настройкам</span>
+                <span class="pb-related-desc">Разбираем роль обдува в печати ABS-пластиком. Почему охлаждение деталей вредно, как избежать деформа</span>
+            </a><a href="/articles/p/pr/proverka-magnitnogo-koltsa-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить магнитное кольцо ABS: признаки износа и диагностика</span>
+                <span class="pb-related-desc">Полное руководство по диагностике зубчатого кольца датчика ABS. Узнайте признаки неисправности, мето</span>
+            </a><a href="/articles/p/pr/pri-tormozhenii-srabatyvaet-abs-na-sukhoj-doroge.html" class="pb-related-card">
+                <span class="pb-related-title">Почему ABS срабатывает на сухой дороге при торможении? Причины и решение</span>
+                <span class="pb-related-desc">Разбираемся, почему антиблокировочная система ABS активируется на сухом асфальте: неисправности датч</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

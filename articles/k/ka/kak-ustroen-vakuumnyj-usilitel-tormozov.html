@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип работы вакуумного усилителя тормозов: устройство и диагностика — ТормозОК</title>
+    <meta name="description" content="Подробный разбор устройства вакуумного усилителя тормозов (ВУТ). Узнайте, как работает клапан, диафрагма и педаль. Признаки неисправности и порядок проверки.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-ustroen-vakuumnyj-usilitel-tormozov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы вакуумного усилителя тормозов: устройство и диагностика">
+    <meta property="og:description" content="Подробный разбор устройства вакуумного усилителя тормозов (ВУТ). Узнайте, как работает клапан, диафрагма и педаль. Признаки неисправности и порядок проверки.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-nav-active">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/vakuumnyj-usilitel/">Вакуумный усилитель</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы вакуумного усилителя тормозов: устройство и диагностика</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основы-работы-системы-торможения">Основы работы системы торможения</a></li><li><a href="#ключевые-элементы-внутреннего-устройства">Ключевые элементы внутреннего устройства</a></li><li><a href="#алгоритм-работы-в-режимах-торможения">Алгоритм работы в режимах торможения</a></li><li><a href="#признаки-неисправности-и-диагностика">Признаки неисправности и диагностика</a></li><li><a href="#особенности-обслуживания-и-замены">Особенности обслуживания и замены</a></li><li><a href="#современные-технологии-и-будущее">Современные технологии и будущее</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-otregulirovat-shtok-vut.html">Регулировка штока ВУТ: пошаговая инструкция с фото и советами</a></li><li><a href="/articles/k/ka/kak-proverit-rabotosposobnost-vakuumnogo-usilitelya-tormozov.html">Как проверить вакуумный усилитель тормозов: 5 способов диагностики</a></li><li><a href="/articles/v/va/vakuumnyj-nasos-tormoznoj-sistemy.html">Вакуумный насос тормозной системы: виды, поломки и замена</a></li><li><a href="/articles/e/el/elektricheskij-vakuumnyj-nasos-dlya-avtomobilya.html">Электрический вакуумный насос для авто: устройство, выбор и замена</a></li><li><a href="/articles/s/sh/shipenie-pri-nazhatii-na-pedal-tormoza.html">Почему шипит педаль тормоза: причины, диагностика, ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как устроен вакуумный усилитель тормозов: принцип работы и диагностика</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основы-работы-системы-торможения">Основы работы системы торможения</a></li><li><a href="#ключевые-элементы-внутреннего-устройства">Ключевые элементы внутреннего устройства</a></li><li><a href="#алгоритм-работы-в-режимах-торможения">Алгоритм работы в режимах торможения</a></li><li><a href="#признаки-неисправности-и-диагностика">Признаки неисправности и диагностика</a></li><li><a href="#особенности-обслуживания-и-замены">Особенности обслуживания и замены</a></li><li><a href="#современные-технологии-и-будущее">Современные технологии и будущее</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="основы-работы-системы-торможения">Основы работы системы торможения</h2>
+
+<p>Современный автомобиль невозможно представить без эффективной системы торможения, где ключевую роль играет не только сила водительской ноги, но и вспомогательные механизмы, усиливающие это воздействие. Именно <strong>вакуумный усилитель</strong> (ВУТ) делает процесс остановки машины комфортным и безопасным, позволяя прикладывать минимальное усилие к педали для создания огромного давления в гидравлике. Без этого устройства тормозная педаль была бы настолько жесткой, что остановка требовала бы физической подготовки атлета, что в экстренной ситуации недопустимо.</p>
+
+<p>Принцип действия механизма базируется на использовании разницы давлений: атмосферного давления снаружи и разрежения (вакуума) внутри корпуса. Когда вы нажимаете на педаль, вы открываете клапан, который пропускает воздух в одну из полостей, создавая перепад сил, толкающих шток главного тормозного цилиндра. Это позволяет системе <strong>ГТЦ</strong> (главного тормозного цилиндра) работать с максимальной эффективностью, обеспечивая короткую дистанцию остановки даже на тяжелых внедорожниках или грузовиках.</p>
+
+<p>Важно понимать, что вакуумный усилитель не работает в одиночку; он неразрывно связан с двигателем или электрическим насосом, создающим разрежение. В обычных бензиновых двигателях источником вакуума служит впускной коллектор, где в такте впуска создается сильное разрежение. Однако в дизельных моторах или современных гибридных силовых установках, где разрежение может быть недостаточным, устанавливается отдельный <em>вакуумный насос</em>, который гарантирует стабильную работу тормозов даже при выключенном двигателе.</p>
+
+<h2 id="ключевые-элементы-внутреннего-устройства">Ключевые элементы внутреннего устройства</h2>
+
+<p>Если заглянуть внутрь корпуса, то основным рабочим органом является гибкая <strong>диафрагма</strong>, которая делит камеру на две секции: переднюю и заднюю. Передняя камера постоянно соединена с источником вакуума (впускным коллектором или насосом), а задняя может сообщаться либо с вакуумом, либо с атмосферой через специализированный клапан. Именно движение этой резиновой мембраны под действием разницы давлений преобразует усилие педали в механическое давление на шток.</p>
+
+<p>Управление потоками воздуха осуществляется сложной системой <strong>клапанов</strong>, которые часто объединены в единый блок, называемый клапаном управления. Этот механизм содержит впускной клапан, соединяющий камеру с атмосферой, и обратный клапан, предотвращающий подачу газов из двигателя в усилитель при резком сбросе газа. Качество материалов, из которых изготовлены уплотнения и клапаны, напрямую влияет на долговечность узла и отсутствие посторонних звуков при торможении.</p>
+
+<p>Корпус устройства обычно состоит из двух половин, соединенных герметично винтами или методом фланцевого соединения. Внутри также расположен возвратный механизм, который возвращает диафрагму и клапан в исходное состояние после отпускания педали. В современных конструкциях, таких как усилители от <em>Bosch</em> или <em>TRW</em>, применяется усиленная конструкция с дополнительными ребрами жесткости для предотвращения деформации при высоких нагрузках.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Если вы слышите шипящий звук при нажатии на педаль тормоза, это может указывать на нарушение герметичности диафрагмы или износ уплотнительных колец клапана, что требует немедленной проверки.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-40b63481"><div class="pb-poll-question">📊 Какой тип двигателя установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="40b63481" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Бензиновый атмосферный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40b63481" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Дизельный</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40b63481" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Гибрид/Электро</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="40b63481" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Газ/Метан</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="алгоритм-работы-в-режимах-торможения">Алгоритм работы в режимах торможения</h2>
+
+<p>Рассмотрим процесс, когда вы плавно нажимаете на педаль тормоза. В этот момент трос или шток педали перемещает клапан управления, отрезая заднюю камеру от источника вакуума и открывая доступ атмосферному воздуху. Воздух поступает в заднюю полость, создавая давление на внутреннюю сторону диафрагмы, в то время как наружная сторона продолжает находиться под вакуумом. Эта разница давлений толкает диафрагму вперед, усиливая движение штока, который упирается в поршень <strong>главного тормозного цилиндра</strong>.</p>
+
+<p>Сила торможения прямо пропорциональна усилию, приложенному к педали: чем сильнее вы давите, тем больше воздуха поступает в камеру, и тем больше усилие на штоке. В режиме <strong>полного торможения</strong> клапан полностью открывается, и разница давлений достигает максимума, обеспечивая мгновенную блокировку колес при срабатывании АБС (антиблокировочной системы). Если вы уберете ногу с педали, пружины возвращают клапан в нейтральное положение, задняя камера снова соединяется с вакуумом, и диафрагма возвращается в исходную точку.</p>
+
+<p>Интересно, что система работает даже при заглушенном двигателе, но с ограниченным ресурсом. В запасе остается несколько нажатий на педаль, так как вакуум, накопленный в рабочей камере, расходуется на создание усилия. Именно поэтому при заглохшем моторе тормоза становятся жесткими после двух-трех попыток остановки. В современных авто с электронным управлением этот процесс может дублироваться электрическими насосами для поддержания <strong>бустера</strong> в рабочем состоянии.</p>
+
+<details class="pb-accordion"><summary>Что происходит при отказе двигателя?При остановке двигателя вакуумный насос (если он есть) перестает работать, и накопленный вакуум расходуется. Обычно водитель получает 2-3 эффективных нажатия на педаль, после чего торможение становится исключительно за счет мускульной силы, что требует значительно большего усилия.-->
+
+<h2 id="признаки-неисправности-и-диагностика">Признаки неисправности и диагностика</h2>
+
+<p>Понять, что <strong>вакуумный усилитель</strong> вышел из строя, можно по ряду характерных симптомов, проявляющихся в процессе вождения. Самым очевидным признаком является резкое увеличение усилия на педали тормоза</summary><div class="pb-accordion-body"><p> она становится «дубовой», и чтобы остановить машину, приходится давить на нее обеими ногами. Это свидетельствует о том, что система перестала усиливать давление, и водитель вынужден компенсировать отсутствие буста собственной силой.</p>
+
+<p>Другим важным симптомом является «провал» педали или ее мягкость, при которой тормозной путь удлиняется, а эффективность работы системы падает. Иногда проблема сопровождается характерным шипением при нажатии на педаль или во время работы двигателя, что указывает на подсос воздуха через трещины в шланге или поврежденную диафрагму. Также возможен сбой работы двигателя: холостые обороты могут плавать или глохнуть, если вакуумный шланг от ВУТ имеет негерметичность и подмешивает лишний воздух во впускной коллектор.</p>
+
+<p>Для точной диагностики часто требуется визуальный осмотр и проверка герметичности. Необходимо проверить состояние вакуумного шланга, который соединяет усилитель с двигателем, на наличие трещин и пробоин. Если шланг в порядке, следует проверить работу обратного клапана: при выключенном двигателе и нажатой педали тормоза следует отсоединить шланг — если вы услышите характерный звук всасывания воздуха, значит, вакуум в системе сохранился, и проблема может быть в самом клапане управления.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Симптом</th>
+   <th>Вероятная причина</th>
+   <th>Сложность ремонта</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Жесткая педаль тормоза</td>
+   <td>Потеря вакуума, неисправность обратного клапана</td>
+   <td>Средняя</td>
+  </tr>
+  <tr>
+   <td>Шипение при нажатии</td>
+   <td>Разрыв диафрагмы, износ уплотнений</td>
+   <td>Высокая</td>
+  </tr>
+  <tr>
+   <td>Неустойчивые обороты ХХ</td>
+   <td>Подсос воздуха через шланг ВУТ</td>
+   <td>Низкая</td>
+  </tr>
+  <tr>
+   <td>Тормоза «ватные», мягкие</td>
+   <td>Заклинивание клапана управления, воздух в системе</td>
+   <td>Высокая</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка герметичности системы</h4><label class="check-item"><input type="checkbox"><span>Осмотреть вакуумный шланг на предмет трещин</span></label><label class="check-item"><input type="checkbox"><span>Прощупать шланг на ощупь (мягкость/твердость)</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу обратного клапана</span></label><label class="check-item"><input type="checkbox"><span>Сравнить усилие на педали с исправным авто</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="особенности-обслуживания-и-замены">Особенности обслуживания и замены</h2>
+
+<p>Вакуумный усилитель считается узлом, не требующим планового технического обслуживания в большинстве случаев. Его ресурс часто сопоставим с ресурсом самого автомобиля, однако при появлении признаков износа <strong>диафрагмы</strong> или клапана требуется полная замена узла. Ремонт отдельных компонентов, таких как замена резиновой мембраны, возможен, но на практике часто экономически нецелесообразен из-за сложности разборки и риска нарушения герметичности.</p>
+
+<p>При замене усилителя необходимо особое внимание уделить установке и затяжке креплений. <em>Главный тормозной цилиндр</em> должен быть установлен строго перпендикулярно штоку усилителя, чтобы избежать перекоса и преждевременного износа уплотнений. Также критически важно проверить стопорное кольцо на штоке педали: если оно изношено, может возникнуть люфт, который приведет к появлению свободного хода педали и снижению эффективности торможения.</p>
+
+<p> Этот элемент предотвращает попадание горячих выхлопных газов во впускной коллектор при обрыве шланга и поддерживает вакуум при остановке двигателя. Использование неоригинальных запчастей низкого качества может привести к быстрому выходу из строя всей системы, что недопустимо с точки зрения безопасности.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Категорически запрещено эксплуатировать автомобиль с неисправным ВУТ, так как это требует колоссального усилия для остановки и значительно увеличивает тормозной путь, особенно на мокрой дороге.</p>
+</blockquote>
+
+
+
+<h2 id="современные-технологии-и-будущее">Современные технологии и будущее</h2>
+
+<p>С развитием электромобильности и гибридных технологий традиционные вакуумные усилители сталкиваются с вызовами. Электромоторы не создают разрежения во впускном коллекторе, поэтому в таких авто устанавливаются компактные электрические вакуумные насосы. Эти устройства работают автономно, создавая необходимое давление в резервуаре <strong>усилителя</strong> по мере необходимости, что позволяет сохранить классический принцип работы тормозов без потери эффективности.</p>
+
+<p>Однако будущее за системами <em>электромеханического бустинга</em> (e-boost). Такие системы, как Bosch iBooster, полностью отказываются от вакуума, заменяя его электродвигателем, который напрямую толкает шток главного цилиндра. Это позволяет интегрировать тормозную систему с системами автопилотирования и рекуперации энергии, обеспечивая мгновенное срабатывание и более тонкое управление усилием. В таких системах <strong>педаль тормоза</strong> может быть отделена от гидравлики, создавая тактильную отдачу программно.</p>
+
+<p>Несмотря на прогресс, вакуумные усилители остаются стандартом для миллионов автомобилей на дорогах мира благодаря своей надежности, простоте и дешевизне. Понимание принципов их работы позволяет водителям вовремя замечать неисправности и принимать правильные решения при обслуживании. Важно регулярно проверять состояние вакуумных линий, так как даже небольшая трещина может привести к критическим последствиям в экстренной ситуации.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Электромеханические усилители обеспечивают более быстрое срабатывание и интеграцию с системами автопилота, но вакуумные системы остаются эталоном надежности для классических ДВС.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+ <summary>Можно ли ездить без вакуумного усилителя?</summary>
+ <p>Технически — да, но это крайне опасно. Тормозная педаль станет очень жесткой, и для остановки автомобиля придется прикладывать значительное физическое усилие. Тормозной путь увеличится в разы, что недопустимо в городском трафике.</p>
+</details>
+
+<details>
+ <summary>Как проверить вакуумный усилитель без снятия с автомобиля?</summary>
+ <p>Заведите двигатель, дайте ему поработать минуту, затем заглушите. Нажмите на педаль тормоза несколько раз. Если на первое нажатие педаль мягкая, а на последующие становится жестче — система исправна и удерживает вакуум. Если педаль жесткая сразу — вакуум потерян.</p>
+</details>
+
+<details>
+ <summary>Почему педаль тормоза вибрирует при нажатии?</summary>
+ <p>Вибрация может быть вызвана не только неисправностью ВУТ, но и проблемами с тормозными дисками (биение), неисправностью ABS или люфтом в механизмах педали. Если вибрация сопровождается шипением, проблема скорее всего в усилителе.</p>
+</details>
+
+<details>
+ <summary>Сколько времени занимает замена ВУТ?</summary>
+ <p>В среднем замена занимает от 1 до 3 часов в зависимости от модели автомобиля и доступности места в моторном отсеке. Снятие и установка трубопроводов, а также проверка герметичности требуют аккуратности и времени.</p>
+</details>
+
+<details>
+ <summary>Влияет ли неисправный ВУТ на расход топлива?</summary>
+ <p>Да, если нарушена герметичность вакуумного шланга или самого усилителя, двигатель может работать на обедненной или обогащенной смеси из-за подсоса лишнего воздуха, что приведет к повышенному расходу топлива и нестабильной работе на холостых оборотах.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-otregulirovat-shtok-vut.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка штока ВУТ: пошаговая инструкция с фото и советами</span>
+                <span class="pb-related-desc">Как правильно отрегулировать шток вакуумного усилителя тормозов (ВУТ) своими руками: признаки неиспр</span>
+            </a><a href="/articles/k/ka/kak-proverit-rabotosposobnost-vakuumnogo-usilitelya-tormozov.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить вакуумный усилитель тормозов: 5 способов диагностики</span>
+                <span class="pb-related-desc">Пошаговая инструкция: как проверить работоспособность вакуумного усилителя тормозов. Симптомы неиспр</span>
+            </a><a href="/articles/v/va/vakuumnyj-nasos-tormoznoj-sistemy.html" class="pb-related-card">
+                <span class="pb-related-title">Вакуумный насос тормозной системы: виды, поломки и замена</span>
+                <span class="pb-related-desc">Полный разбор вакуумного насоса тормозов: принципы работы, признаки неисправности, диагностика и пош</span>
+            </a><a href="/articles/e/el/elektricheskij-vakuumnyj-nasos-dlya-avtomobilya.html" class="pb-related-card">
+                <span class="pb-related-title">Электрический вакуумный насос для авто: устройство, выбор и замена</span>
+                <span class="pb-related-desc">Подробный гид по электрическим вакуумным насосам. Принцип работы, признаки неисправности, самостояте</span>
+            </a><a href="/articles/s/sh/shipenie-pri-nazhatii-na-pedal-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Почему шипит педаль тормоза: причины, диагностика, ремонт</span>
+                <span class="pb-related-desc">Шипение при нажатии на педаль тормоза? Узнайте основные причины утечки вакуума и износа суппортов. П</span>
+            </a><a href="/articles/k/ka/kak-proverit-vakuumnik-na-rabotosposobnost.html" class="pb-related-card">
+                <span class="pb-related-title">Как проверить вакуумный усилитель тормозов: 7 способов диагностики</span>
+                <span class="pb-related-desc">Пошаговая инструкция по проверке вакуумника тормозов своими руками: признаки неисправности, тесты бе</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

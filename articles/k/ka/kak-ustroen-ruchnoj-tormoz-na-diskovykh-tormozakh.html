@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Устройство ручного тормоза на дисковых тормозах: схемы и принципы — ТормозОК</title>
+    <meta name="description" content="Разбираем конструкцию, типы приводов и принцип работы ручного тормоза на дисковых механизмах. Инструкция по регулировке и устранению неисправностей.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/k/ka/kak-ustroen-ruchnoj-tormoz-na-diskovykh-tormozakh.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Устройство ручного тормоза на дисковых тормозах: схемы и принципы">
+    <meta property="og:description" content="Разбираем конструкцию, типы приводов и принцип работы ручного тормоза на дисковых механизмах. Инструкция по регулировке и устранению неисправностей.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Устройство ручного тормоза на дисковых тормозах: схемы и принципы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#основные-схемы-реализации-ручного-тормоза">Основные схемы реализации ручного тормоза</a></li><li><a href="#механический-привод-через-трос-и-рычаг">Механический привод через трос и рычаг</a></li><li><a href="#электронный-стояночный-тормоз-epb">Электронный стояночный тормоз (EPB)</a></li><li><a href="#конструктивные-особенности-суппортов-с-ручным-приводом">Конструктивные особенности суппортов с ручным приводом</a></li><li><a href="#типы-приводов-и-их-отличия">Типы приводов и их отличия</a></li><li><a href="#симптомы-неисправности-и-диагностика">Симптомы неисправности и диагностика</a></li><li><a href="#регулировка-и-обслуживание-системы">Регулировка и обслуживание системы</a></li><li><a href="#безопасность-и-эксплуатационные-нюансы">Безопасность и эксплуатационные нюансы</a></li><li><a href="#faq-частые-вопросы">FAQ: Частые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-kolodok-ruchnika-w203.html">Замена колодок ручного тормоза Mercedes W203: Инструкция и нюансы</a></li><li><a href="/articles/z/za/zamena-trosov-ruchnika-oktaviya-tur.html">Замена тросов ручника Skoda Octavia Tour: пошаговая инструкция</a></li><li><a href="/articles/o/ok/oktaviya-a5-zamena-trosov-ruchnika.html">Замена тросов ручника на Octavia A5: пошаговая инструкция</a></li><li><a href="/articles/r/ru/ruchnik-daster-4kh4-kak-podtyanut.html">Как подтянуть ручной тормоз на Renault Duster 4x4: инструкция</a></li><li><a href="/articles/p/po/podtyanut-ruchnik-fokus-3.html">Подтянуть ручник Ford Focus 3: инструкция по регулировке</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Как устроен ручной тормоз на дисковых тормозах: принцип работы и устройство</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#основные-схемы-реализации-ручного-тормоза">Основные схемы реализации ручного тормоза</a></li><li><a href="#механический-привод-через-трос-и-рычаг">Механический привод через трос и рычаг</a></li><li><a href="#электронный-стояночный-тормоз-epb">Электронный стояночный тормоз (EPB)</a></li><li><a href="#конструктивные-особенности-суппортов-с-ручным-приводом">Конструктивные особенности суппортов с ручным приводом</a></li><li><a href="#типы-приводов-и-их-отличия">Типы приводов и их отличия</a></li><li><a href="#симптомы-неисправности-и-диагностика">Симптомы неисправности и диагностика</a></li><li><a href="#регулировка-и-обслуживание-системы">Регулировка и обслуживание системы</a></li><li><a href="#безопасность-и-эксплуатационные-нюансы">Безопасность и эксплуатационные нюансы</a></li><li><a href="#faq-частые-вопросы">FAQ: Частые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Многие автолюбители ошибочно полагают, что ручной тормоз на автомобилях с дисковыми механизмами задних колес работает так же, как и на старых барабанных системах. На самом деле, здесь кроется существенная разница в передаче усилия и конструкции узла. В современных машинах стояночная система часто интегрирована в сам суппорт или использует отдельный привод, требующий специфических навыков для обслуживания.</p>
+
+<p>Понимание того, как именно <strong>тросовый привод</strong> преобразует усилие рычага в зажатие колодок, критически важно для качественного ремонта. Игнорирование конструктивных особенностей может привести к перетяжке тросов, их обрыву или, что хуже, к перегреву и заклиниванию колес при движении. В этой статье мы детально разберем основные схемы реализации, механизмы саморегулировки и тонкости настройки.</p>
+
+<h2 id="основные-схемы-реализации-ручного-тормоза">Основные схемы реализации ручного тормоза</h2>
+
+<p>В зависимости от класса автомобиля и стоимости комплектации, производители используют несколько принципиально разных подходов к организации стояночного тормоза. Самый простой и распространенный вариант на бюджетных моделях — использование <strong>отдельного тросового механизма</strong>, который действует на задние суппорты независимо от гидравлической системы.</p>
+
+<p>Более прогрессивные решения подразумевают интеграцию привода непосредственно в конструкцию суппорта, что позволяет экономить место и упрощать компоновку задней оси. В таких системах часто используется электромотор вместо троса, что требует подключения к бортовой сети и наличия специального управления. Выбор схемы определяет не только удобство эксплуатации, но и сложность самостоятельного обслуживания.</p>
+
+<p>Ключевым фактором при выборе метода торможения является надежность и способность системы удерживать автомобиль на уклоне при любых погодных условиях. Механические тросы требуют периодической подтяжки, тогда как электрические приводы оснащены функциями <strong>автоматической регулировки</strong> зазора.</p>
+
+<blockquote>Внимание: ⚠️ Если вы устанавливаете комплектующие от другой модели, убедитесь, что совместимость суппортов и тросового привода подтверждена производителем, так как геометрия крепления может отличаться даже в рамках одного бренда.</blockquote>
+
+<h2 id="механический-привод-через-трос-и-рычаг">Механический привод через трос и рычаг</h2>
+
+<p>Классическая схема механического ручного тормоза на дисковых колесах строится на передаче физического усилия от рычага в салоне к задним суппортам. Внутри суппорта обычно установлен специальный <strong>рычаг-привод</strong>, который при натяжении троса поворачивает поршень или разжимной механизм.</p>
+
+<p>Существует два основных типа реализации этого узла. Первый вариант использует отдельный <strong>разжимной механизм</strong> (экспандер), который выталкивает поршни, прижимая колодки к диску. Второй вариант, более распространенный на современных иномарках, предполагает ввинчивание поршня внутрь корпуса с помощью резьбы при повороте рычага.</p>
+
+<p>Конструкция рычага внутри суппорта часто оснащена храповым механизмом, который позволяет удерживать тормоз в зажатом состоянии даже при ослаблении натяжения троса. Это обеспечивает безопасность при парковке на склоне. Однако, со временем этот механизм может загрязняться или ржаветь, требуя чистки и смазки.</p>
+
+<blockquote>Внимание: ⚠️ При замене тросов не забывайте использовать специальные смазки для тормозных систем, обычная литиевая смазка может привести к разбуханию манжет и выходу узла из строя.</blockquote>
+
+<h2 id="электронный-стояночный-тормоз-epb">Электронный стояночный тормоз (EPB)</h2>
+
+<p>Электрический стояночный тормоз, часто называемый EPB (<em>Electric Parking Brake</em>), полностью исключает использование длинных стальных тросов. Вместо них используются компактные электродвигатели, установленные непосредственно на суппортах задних колес. Управление осуществляется через блок <strong>электронного управления</strong> и кнопки на панели приборов.</p>
+
+<p>Система EPB позволяет реализовать функции автоматического удержания автомобиля (Auto Hold) и автоматического отпускания при начале движения. Это значительно повышает комфорт при езде в пробках и на светофорах. Электроника сама контролирует усилие и положение колодок, исключая человеческий фактор при затяжке.</p>
+
+<p>Регулировка зазора в таких системах происходит автоматически при каждом цикле торможения, что избавляет владельца от необходимости периодической подтяжки. Однако, диагностика неисправностей требует подключения сканера, способного считывать ошибки из модуля управления тормозной системой.</p>
+
+<div class="pb-poll" id="poll-b46036c2"><div class="pb-poll-question">📊 Каким типом ручного тормоза оснащена ваша машина?</div><div class="pb-poll-option" data-poll="b46036c2" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Механический тросовый</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b46036c2" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Электронный (кнопка)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b46036c2" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Смешанный (трос + электрика)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b46036c2" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю точного типа</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="конструктивные-особенности-суппортов-с-ручным-приводом">Конструктивные особенности суппортов с ручным приводом</h2>
+
+<p>Суппорты с механическим ручным тормозом имеют уникальную конструкцию внутреннего механизма. Чаще всего здесь применяется принцип "винт-гайка", где при повороте рычага поршень ввинчивается в корпус, создавая усилие прижатия. Это требует использования <strong>специального адаптера</strong> для замены колодок, так как обычный шприц или струбцина не сработают.</p>
+
+<p>Важно отметить, что резьба на поршне должна быть идеально чистой и смазанной. Любые задиры или коррозия могут привести к тому, что рычаг ручного тормоза заклинит в верхнем положении. В некоторых моделях суппортов, например от <em>Brembo</em> или <em>Akebono</em>, используется двухпоршневая схема с отдельным механизмом для стояночного тормоза.</p>
+
+<p>При обслуживании таких суппортов необходимо уделять особое внимание состоянию пыльников и направляющих. Загрязнение в этих зонах часто становится причиной неравномерного износа колодок и снижения эффективности торможения. Регулярная чистка и смазка — залог долгой службы узла.</p>
+
+<details class="pb-accordion"><summary>Особенности замены колодок на суппортах с ручным тормозом</summary><div class="pb-accordion-body"><p>Для вдавливания поршня суппорта с ручным тормозом нельзя использовать обычные инструменты. Необходимо использовать специализированный инструмент (трещотку с адаптером), который одновременно вращает поршень и давит на него. Попытка вдавить поршень силой может сломать механизм винта внутри.</p></div></details>
+
+<h2 id="типы-приводов-и-их-отличия">Типы приводов и их отличия</h2>
+
+<p>Различают три основных типа приводов ручного тормоза на дисковых механизмах, каждый из которых имеет свои плюсы и минусы. Первый тип — это <strong>внешний механизм</strong>, расположенный на задней крышке суппорта, который через рычаг воздействует на поршень. Второй тип — встроенный электромотор в корпусе суппорта. Третий — раздельный барабанный механизм внутри ступицы диска (редкий случай на дисковых тормозах).</p>
+
+<p>Внешний механизм проще в ремонте, но более подвержен коррозии и механическим повреждениям. Встроенный электромотор защищен от внешних воздействий, но сложен в диагностике и замене. Барабанный механизм внутри диска является самым надежным, но занимает много места и усложняет конструкцию ступицы.</p>
+
+<p>При выборе запасных частей важно учитывать тип привода, так как они не взаимозаменяемы. Ошибка при подборе может привести к невозможности установки суппорта или некорректной работе ручного тормоза. Всегда сверяйте каталожные номера деталей.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип привода</th>
+<th>Принцип действия</th>
+<th>Плюсы</th>
+<th>Минусы</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Тросовый механический</strong></td>
+<td>Передает усилие от рычага через стальную тросовую передачу</td>
+<td>Низкая стоимость, простота ремонта</td>
+<td>Растяжение троса, риск коррозии</td>
+</tr>
+<tr>
+<td><strong>Электромеханический (EPB)</strong></td>
+<td>Электромотор в суппорте прижимает поршень</td>
+<td>Автоматическая регулировка, функции Auto Hold</td>
+<td>Высокая цена, сложная диагностика</td>
+</tr>
+<tr>
+<td><strong>Встроенный барабан</strong></td>
+<td>Отдельные колодки внутри ступицы диска</td>
+<td>Высокая надежность, не зависит от диска</td>
+<td>Сложная конструкция, занимает место</td>
+</tr>
+<tr>
+<td><strong>Рычажный механизм</strong></td>
+<td>Винтовой поршень, приводимый в действие рычагом на суппорте</td>
+<td>Компактность, отсутствие отдельного барабана</td>
+<td>Сложность замены колодок, требует спец. инструмента</td>
+</tr>
+</tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка работоспособности ручного тормоза</h4><label class="check-item"><input type="checkbox"><span>Поднять автомобиль на подъемнике или домкратах</span></label><label class="check-item"><input type="checkbox"><span>Затянуть рычаг до упора</span></label><label class="check-item"><input type="checkbox"><span>Попробовать провернуть колеса вручную</span></label><label class="check-item"><input type="checkbox"><span>Опустить рычаг и проверить свободный ход</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="симптомы-неисправности-и-диагностика">Симптомы неисправности и диагностика</h2>
+
+<p>Понимание симптомов неисправности поможет вовремя выявить проблему и избежать серьезных поломок. Самым первым признаком выхода из строя ручного тормоза является <strong>увеличенный ход рычага</strong> при затяжке. Если рычаг поднимается выше обычного и машина все еще не держит на уклоне, это верный сигнал о необходимости регулировки или замены тросов.</p>
+
+<p>Другой частой проблемой является заклинивание суппорта после отпускания ручного тормоза. В этом случае ощущается запах гари, а автомобиль тянет в сторону при движении. Причиной может быть заедание поршня, коррозия рычага или обрыв троса внутри оплетки. Также стоит обратить внимание на неравномерный износ колодок.</p>
+
+<p>При диагностике обязательно проверяйте состояние <strong>направляющих суппорта</strong> и пыльников. Загрязнение в этих местах часто приводит к тому, что суппорт не разжимается полностью. Используйте сканер для считывания ошибок, если на панели загорелся индикатор неисправности тормозной системы.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед заменой тросов ручного тормоза обязательно очистите резьбовые соединения и нанесите термостойкую смазку, чтобы предотвратить прикипание в будущем.</p></aside>
+
+<h2 id="регулировка-и-обслуживание-системы">Регулировка и обслуживание системы</h2>
+
+<p>Процесс регулировки ручного тормоза на дисковых системах требует внимательности и соблюдения последовательности действий. Сначала необходимо обеспечить правильную настройку в салоне, подтянув регулировочную гайку под полом или в тоннеле. Затем следует проверить свободный ход рычага, который должен составлять обычно 3-5 щелчков.</p>
+
+<p> Слишком слабый натяжение сделает тормоз неэффективным. Используйте <strong>динамометрический ключ</strong> для затяжки крепежных элементов, чтобы не повредить резьбу. В некоторых случаях требуется снятие суппорта для чистки механизма.</p>
+
+<p>Для электронных систем регулировка производится автоматически, но иногда требуется программная инициализация через диагностический сканер. Это необходимо после замены колодок или суппорта. Процедура называется <em>«сброс зазора»</em> и выполняется через меню диагностики.</p>
+
+<blockquote>Внимание: ⚠️ Если вы производите регулировку самостоятельно, убедитесь, что задние колеса вращаются свободно после отпускания рычага, иначе тормозные колодки могут перегреться при движении.</blockquote>
+
+<h2 id="безопасность-и-эксплуатационные-нюансы">Безопасность и эксплуатационные нюансы</h2>
+
+<p>Эксплуатация ручного тормоза требует соблюдения определенных правил безопасности. Никогда не используйте ручной тормоз для остановки движущегося автомобиля на высокой скорости, за исключением экстренных случаев. Это может привести к блокировке колес и заносу.</p>
+
+<p>На автомобилях с электромеханическим тормозом никогда не пытайтесь отпустить тормоз механически без подачи питания. Это может повредить электромотор или механизм редуктора. Всегда используйте <strong>диагностический инструмент</strong> для отключения тормоза при замене колодок.</p>
+
+<p>Регулярно проверяйте эффективность системы, особенно перед длительными поездками. Убедитесь, что автомобиль надежно удерживается на уклоне. Игнорирование неисправностей ручного тормоза может привести к серьезным авариям и травмам.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильная регулировка ручного тормоза обеспечивает надежное удержание автомобиля на уклоне и предотвращает перегрев тормозных механизмов при движении.</p></aside>
+
+<h2 id="faq-частые-вопросы">FAQ: Частые вопросы</h2>
+
+<details>
+<summary>Почему рычаг ручного тормоза не возвращается в исходное положение?</summary>
+<p>Причиной может быть заедание механизма в суппорте из-за коррозии, обрыв возвратной пружины троса или сильное натяжение троса. Необходимо проверить состояние тросов и механизма на суппорте.</p>
+</details>
+
+<details>
+<summary>Можно ли ехать с включенным ручным тормозом?</summary>
+<p>Категорически не рекомендуется. Это приведет к перегреву тормозных колодок и дисков, их быстрому износу и возможному возгоранию. На машинах с EPB система часто сама отключит тормоз при начале движения, но полагаться на это не стоит.</p>
+</details>
+
+<details>
+<summary>Как часто нужно регулировать ручной тормоз?</summary>
+<p>Регулировка требуется при увеличении хода рычага или если автомобиль не удерживается на уклоне. Для механических систем это может быть раз в 20-30 тысяч км, для электронных — только при неисправности.</p>
+</details>
+
+<details>
+<summary>Что делать, если ручник заклинил колесо?</summary>
+<p>Не пытайтесь разблокировать его усилием. Осмотрите механизм на предмет обрыва троса или заклинивания поршня. Может потребоваться снятие суппорта и смазка механизма или замена троса.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-kolodok-ruchnika-w203.html" class="pb-related-card">
+                <span class="pb-related-title">Замена колодок ручного тормоза Mercedes W203: Инструкция и нюансы</span>
+                <span class="pb-related-desc">Полная инструкция по замене тормозных колодок ручного тормоза на Mercedes-Benz W203. Разбор конструк</span>
+            </a><a href="/articles/z/za/zamena-trosov-ruchnika-oktaviya-tur.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросов ручника Skoda Octavia Tour: пошаговая инструкция</span>
+                <span class="pb-related-desc">Руководство по замене тросов стояночного тормоза на Шкода Октавия Тур. Диагностика износа, подбор за</span>
+            </a><a href="/articles/o/ok/oktaviya-a5-zamena-trosov-ruchnika.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросов ручника на Octavia A5: пошаговая инструкция</span>
+                <span class="pb-related-desc">Как самостоятельно поменять тросы стояночного тормоза на Škoda Octavia A5: выбор запчастей, инструме</span>
+            </a><a href="/articles/r/ru/ruchnik-daster-4kh4-kak-podtyanut.html" class="pb-related-card">
+                <span class="pb-related-title">Как подтянуть ручной тормоз на Renault Duster 4x4: инструкция</span>
+                <span class="pb-related-desc">Пошаговая инструкция по регулировке ручника на Renault Duster 4x4. Устранение люфта, замена тросов, </span>
+            </a><a href="/articles/p/po/podtyanut-ruchnik-fokus-3.html" class="pb-related-card">
+                <span class="pb-related-title">Подтянуть ручник Ford Focus 3: инструкция по регулировке</span>
+                <span class="pb-related-desc">Пошаговая инструкция по регулировке стояночного тормоза на Ford Focus 3. Устранение провисания тросо</span>
+            </a><a href="/articles/p/pr/prado-150-regulirovka-ruchnogo-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка ручного тормоза на Toyota Prado 150: Пошаговая инструкция</span>
+                <span class="pb-related-desc">Как отрегулировать стояночный тормоз на Prado 150 своими руками. Диагностика износа колодок, натяжен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

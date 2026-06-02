@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Тормозной резистор: принцип работы, монтаж и выбор для частотных преобразователей — ТормозОК</title>
+    <meta name="description" content="Подробный обзор тормозного резистора: зачем он нужен, как работает, схемы подключения и ошибки монтажа. Технические характеристики и расчет мощности.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/c/ch/chto-takoe-tormoznoj-rezistor.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тормозной резистор: принцип работы, монтаж и выбор для частотных преобразователей">
+    <meta property="og:description" content="Подробный обзор тормозного резистора: зачем он нужен, как работает, схемы подключения и ошибки монтажа. Технические характеристики и расчет мощности.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тормозной резистор: принцип работы, монтаж и выбор для частотных преобразователей</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#введение-в-мир-рекуперативного-торможения">Введение в мир рекуперативного торможения</a></li><li><a href="#физика-процесса-почему-возникает-перенапряжение">Физика процесса: почему возникает перенапряжение</a></li><li><a href="#ключевые-технические-характеристики-и-типы-исполнения">Ключевые технические характеристики и типы исполнения</a></li><li><a href="#схемы-подключения-и-монтаж-в-шкафу-управления">Схемы подключения и монтаж в шкафу управления</a></li><li><a href="#ошибки-эксплуатации-и-методы-диагностики">Ошибки эксплуатации и методы диагностики</a></li><li><a href="#расчет-параметров-и-подбор-аналогов">Расчет параметров и подбор аналогов</a></li><li><a href="#перспективы-и-альтернативные-решения">Перспективы и альтернативные решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/mo/mobilnyj-internet-plokho-gruzit.html">Мобильный интернет плохо грузит: причины и способы ускорения связи</a></li><li><a href="/articles/k/ka/kak-sdelat-velik-dlya-stanta.html">Как сделать велик для станта: выбор рамы, колес и настройка</a></li><li><a href="/articles/r/re/regulirovka-podshipnikov-zadnego-kolesa-velosipeda.html">Регулировка подшипников заднего колеса велосипеда: Инструкция</a></li><li><a href="/articles/p/po/pochemu-tormozit-besprovodnaya-mysh.html">Почему тормозит беспроводная мышь: причины задержек и способы решения</a></li><li><a href="/articles/c/ch/chto-delat-esli-besprovodnaya-myshka-plokho-rabotaet.html">Беспроводная мышка плохо работает: 7 шагов для устранения проблем</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тормозной резистор: полный гид по назначению, расчету и установке</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#введение-в-мир-рекуперативного-торможения">Введение в мир рекуперативного торможения</a></li><li><a href="#физика-процесса-почему-возникает-перенапряжение">Физика процесса: почему возникает перенапряжение</a></li><li><a href="#ключевые-технические-характеристики-и-типы-исполнения">Ключевые технические характеристики и типы исполнения</a></li><li><a href="#схемы-подключения-и-монтаж-в-шкафу-управления">Схемы подключения и монтаж в шкафу управления</a></li><li><a href="#ошибки-эксплуатации-и-методы-диагностики">Ошибки эксплуатации и методы диагностики</a></li><li><a href="#расчет-параметров-и-подбор-аналогов">Расчет параметров и подбор аналогов</a></li><li><a href="#перспективы-и-альтернативные-решения">Перспективы и альтернативные решения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><h2 id="введение-в-мир-рекуперативного-торможения">Введение в мир рекуперативного торможения</h2>
+<p>В современном промышленном оборудовании управление скоростью двигателей осуществляется с помощью частотных преобразователей, которые позволяют плавно разгонять и останавливать механизмы. Однако в процессе экстренного или быстрого останова возникает серьезная физическая проблема: кинетическая энергия вращающегося двигателя превращается в электричество.</p>
+<p>Это явление называется <strong>рекуперацией энергии</strong>, и если не найти для неё выход, напряжение на шине постоянного тока преобразователя подскочит до критических значений. Именно здесь на сцену выходит <em>тормозной резистор</em>, выполняющий роль «пожарного щита» для электроники, рассеивая избыточную энергию в виде тепла.</p>
+<p>Без этого устройства система управления могла бы мгновенно выйти из строя, выдав ошибку перенапряжения и аварийно отключив привод. Понимание принципов работы тормозного резистора критически важно для инженеров-наладчиков и проектировщиков автоматизированных систем.</p>
+
+<h2 id="физика-процесса-почему-возникает-перенапряжение">Физика процесса: почему возникает перенапряжение</h2>
+<p>Когда частотный преобразователь снижает частоту тока, подаваемого на двигатель, ротор продолжает вращаться по инерции, действуя как генератор. Вращаясь в магнитном поле, он вырабатывает электрический ток, который течет обратно в шину постоянного тока преобразователя. Это явление фундаментально отличается от режима работы, когда двигатель потребляет энергию из сети.</p>
+<p>Если потребляемая нагрузка в этот момент мала, а инерция вращающихся масс (маховиков, барабанов, конвейерных лент) велика, напряжение может вырасти до 700-800 вольт для сетей 380В. Внутренние конденсаторы <strong>штыревой шины</strong> не способны поглотить такой объем энергии, и если не сработает защита, произойдет пробой.</p>
+<p>Тормозной резистор подключается параллельно шине постоянного тока через специальный ключевой элемент — <em>тормозной прерыватель</em> (braking chopper). Как только напряжение достигает порога срабатывания (обычно около 650-720В), ключ замыкается, и ток начинает течь через резистор, нагревая его и снижая напряжение в цепи.</p>
+
+<blockquote>⚠️ Внимание: При использовании мощных двигателей в режиме рекуперации неизбежно происходит нагрев тормозного резистора до температур, превышающих 200°C. Необходимо обеспечить достаточный воздушный зазор и защиту от случайного прикосновения.</blockquote>
+
+<h2 id="ключевые-технические-характеристики-и-типы-исполнения">Ключевые технические характеристики и типы исполнения</h2>
+<p>При выборе тормозного компонента нельзя ориентироваться только на сопротивление. Критически важным параметром является <strong>мощность рассеивания</strong>, которая указывается в ваттах (Вт) для различных режимов работы. Существует понятие «рабочего цикла» (ED%), которое определяет, сколько времени резистор может работать на пределе своих возможностей.</p>
+<p>Наиболее распространенным типом являются <em>алюминиевые корпусные резисторы</em>, которые имеют ребристую конструкцию для улучшения теплоотдачи. Они компактны и позволяют устанавливать их непосредственно на раму оборудования или на специальные кронштейны. Для экстремальных условий используются проволочные резисторы, погруженные в песчаную или керамическую среду.</p>
+<p>Важно различать <strong>номинальную мощность</strong> и <strong>пиковую мощность</strong>. Номинальная мощность указывается для режима непрерывной работы, а пиковая — для кратковременных импульсов торможения. Производители часто указывают мощность для 5% или 10% рабочего цикла, что позволяет использовать компактные элементы в тяжелых условиях.</p>
+
+<div class="pb-poll" id="poll-63509796"><div class="pb-poll-question">📊 Какой тип тормозного резистора чаще всего используется в вашей промышленности?</div><div class="pb-poll-option" data-poll="63509796" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Алюминиевый корпусной</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63509796" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Проволочный в кожухе</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63509796" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Керамический</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="63509796" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Печатная плата</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип резистора</th>
+<th>Материал</th>
+<th>Макс. температура</th>
+<th>Применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Алюминиевый корпусной</td>
+<td>Алюминий + Нихром</td>
+<td>+250°C</td>
+<td>Общие промышленные приводы</td>
+</tr>
+<tr>
+<td>Трубчатый</td>
+<td>Нержавеющая сталь</td>
+<td>+450°C</td>
+<td>Высокие температуры, агрессивные среды</td>
+</tr>
+<tr>
+<td>Пленочный</td>
+<td>Оксидная пленка</td>
+<td>+150°C</td>
+<td>Маломощные системы, низкие шумы</td>
+</tr>
+<tr>
+<td>Керамический</td>
+<td>Керамика</td>
+<td>+600°C</td>
+<td>Сверхтяжелые нагрузки, лифты</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="схемы-подключения-и-монтаж-в-шкафу-управления">Схемы подключения и монтаж в шкафу управления</h2>
+<p>Монтаж тормозного резистора требует строгого соблюдения правил электробезопасности и тепловых режимов. Резистор подключается к выводам <code>B+ и B-</code> (или <code>P+ и PB</code>) на клеммной колодке частотного преобразователя. Никогда не подключайте его напрямую к фазным проводам двигателя!</p>
+<p>Провода, используемые для соединения, должны быть термостойкими и иметь сечение, соответствующее пиковому току торможения. Длинна кабеля играет роль: слишком длинный провод увеличит индуктивность и сопротивление, что может замедлить срабатывание тормозного ключа. Рекомендуется использовать экранированные кабели, чтобы избежать электромагнитных помех.</p>
+<p>При установке в шкафу управления необходимо соблюдать <strong>минимальные расстояния</strong> от других компонентов. Резистор не должен нагревать neighboring чувствительную электронику, такие как контакторы, реле или сам преобразователь частоты. В идеале его следует выносить в отдельный отсек или на внешнюю панель.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка перед подачей питания</h4><label class="check-item"><input type="checkbox"><span>Проверить затяжку клемм на резисторе</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии замыкания на корпус</span></label><label class="check-item"><input type="checkbox"><span>Проверить сечение кабеля</span></label><label class="check-item"><input type="checkbox"><span>Установить термостат защиты</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="ошибки-эксплуатации-и-методы-диагностики">Ошибки эксплуатации и методы диагностики</h2>
+<p>Самая частая проблема, с которой сталкиваются сервисные инженеры, — это сгоревший резистор из-за превышения допустимого рабочего цикла. Если вы запрашиваете торможение чаще, чем указано в паспорте (например, 100% вместо 10%), элемент просто перегревается и меняет сопротивление, либо полностью разрушается.</p>
+<p>Другой распространенной ошибкой является неправильный расчет сопротивления. Слишком низкое сопротивление приведет к тому, что ток через тормозной ключ превысит его номинал, и ключ сгорит. Слишком высокое сопротивление не сможет эффективно сбросить напряжение, и сработает защита по перенапряжению.</p>
+<p>Для диагностики состояния тормозного резистора используйте мультиметр в режиме измерения сопротивления (Ом). Отключите питание и разрядите конденсаторы перед проверкой. Если сопротивление значительно отличается от номинального значения (например, бесконечность), элемент требует замены.</p>
+
+<blockquote>⚠️ Внимание: Если при эксплуатации вы слышите треск или видите искрение из корпуса резистора, немедленно отключите оборудование. Это может свидетельствовать о пробое изоляции или возгорании внутренних элементов.</blockquote>
+
+<h2 id="расчет-параметров-и-подбор-аналогов">Расчет параметров и подбор аналогов</h2>
+<p>Для правильного расчета тормозного резистора необходимо знать значение мощности двигателя и требуемое время торможения. Формула расчета пиковой мощности выглядит так: <code>P = (T * n) / 9550</code>, где T — тормозной момент, n — скорость. Однако на практике чаще используют коэффициент рекуперации, который обычно составляет 20-40% от мощности двигателя для стандартных задач.</p>
+<p>Если вы выбираете аналог от другого производителя, убедитесь, что сопротивление совпадает с точностью до 5%, а мощность рассеивания равна или выше оригинальной. Не стоит экономить на качестве, так как дешевые китайские аналоги часто не выдерживают заявленных пиковых нагрузок.</p>
+<p>Важно учитывать и индуктивность резистора. Для высокочастотных преобразователей индуктивные резисторы могут создавать паразитные ЭДС, влияющие на работу защиты. В таких случаях лучше выбирать <strong>безиндуктивные</strong> модели.</p>
+
+<details class="pb-accordion"><summary>Что делать, если нет оригинального резистора?</summary><div class="pb-accordion-body"><p>Можно использовать два резистора с двойным сопротивлением, соединив их параллельно, или два с половинным сопротивлением, соединив их последовательно. Главное — сохранить общую мощность и сопротивление цепи.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед установкой нового резистора обязательно очистите контакты от окислов и нанесите токопроводящую пасту. Это снизит переходное сопротивление и предотвратит локальный перегрев в месте контакта.</p></aside>
+
+<blockquote>⚠️ Внимание: Технические характеристики тормозных резисторов могут меняться в зависимости от партии и производителя. Всегда сверяйтесь с datasheet (техническим листом) конкретной модели перед монтажом.</blockquote>
+
+<h2 id="перспективы-и-альтернативные-решения">Перспективы и альтернативные решения</h2>
+<p>Несмотря на повсеместное использование резисторов, существуют и альтернативные способы утилизации энергии регенерации. Активные выпрямители (AFE) позволяют возвращать энергию обратно в сеть, что значительно повышает энергоэффективность системы.</p>
+<p>Однако такие решения стоят в разы дороже и требуют сложной настройки. В большинстве стандартных промышленных применений, где энергия торможения не превышает 15-20% от общей потребляемой, использование <em>тормозного резистора</em> остается самым экономичным и надежным решением.</p>
+<p>Развитие технологий не отменяет необходимости в простых и эффективных решениях. Правильно подобранный резистор обеспечит стабильную работу привода на протяжении десятилетий, защищая дорогостоящее оборудование от аварийных остановок.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Тормозной резистор — это не просто расходный материал, а критически важный элемент безопасности, предотвращающий разрушение силовой части частотного преобразователя при рекуперации энергии.</p></aside>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать обычный проволочный резистор вместо специального тормозного?</summary>
+<p>Нет, не рекомендуется. Обычные резисторы не рассчитаны на короткие импульсы высокой мощности и быстрое изменение температуры, что может привести к их быстрому разрушению. Специализированные тормозные резисторы имеют особую конструкцию для рассеивания пиковых нагрузок.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять состояние тормозного резистора?</summary>
+<p>Рекомендуется проводить визуальный осмотр и проверку сопротивления раз в 6 месяцев. Если резистор работает в условиях высокой запыленности или вибрации, проверку следует проводить чаще, раз в квартал.</p>
+</details>
+
+<details>
+<summary>Что произойдет, если подключить резистор к неправильным выводам?</summary>
+<p>Подключение к фазным выводам двигателя или неправильная полярность могут привести к мгновенному сгоранию тормозного ключа внутри преобразователя и выходу из строя всей силовой платы. Всегда следуйте схеме подключения в инструкции к ПЧ.</p>
+</details>
+
+<details>
+<summary>Можно ли увеличить мощность торможения, подключив два резистора?</summary>
+<p>Да, подключив два резистора параллельно, вы уменьшите общее сопротивление и увеличите ток, но это потребует проверки способности тормозного ключа преобразователя выдерживать такой ток. Лучше увеличить мощность за счет увеличения рабочего цикла или использования более мощного резистора.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/mo/mobilnyj-internet-plokho-gruzit.html" class="pb-related-card">
+                <span class="pb-related-title">Мобильный интернет плохо грузит: причины и способы ускорения связи</span>
+                <span class="pb-related-desc">Почему мобильный интернет работает медленно? Разбираем причины плохого сигнала, перегрузку сетей и н</span>
+            </a><a href="/articles/k/ka/kak-sdelat-velik-dlya-stanta.html" class="pb-related-card">
+                <span class="pb-related-title">Как сделать велик для станта: выбор рамы, колес и настройка</span>
+                <span class="pb-related-desc">Пошаговая инструкция по сборке дерт-байка. Выбор рамы, колес, трансмиссии и тормозов. Советы по безо</span>
+            </a><a href="/articles/r/re/regulirovka-podshipnikov-zadnego-kolesa-velosipeda.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка подшипников заднего колеса велосипеда: Инструкция</span>
+                <span class="pb-related-desc">Пошаговый гайд по устранению люфта и регулировке конуса заднего колеса. Как настроить ось, проверить</span>
+            </a><a href="/articles/p/po/pochemu-tormozit-besprovodnaya-mysh.html" class="pb-related-card">
+                <span class="pb-related-title">Почему тормозит беспроводная мышь: причины задержек и способы решения</span>
+                <span class="pb-related-desc">Мышь лагает или прыгает? Разбираем основные причины задержек курсора: от помех 2.4 ГГц до разряда ба</span>
+            </a><a href="/articles/c/ch/chto-delat-esli-besprovodnaya-myshka-plokho-rabotaet.html" class="pb-related-card">
+                <span class="pb-related-title">Беспроводная мышка плохо работает: 7 шагов для устранения проблем</span>
+                <span class="pb-related-desc">Мышка зависает, отстает или отключается? Узнайте, как исправить lag, смену приемника, драйверы и про</span>
+            </a><a href="/articles/t/te/temperatura-svarki-pp-plastika.html" class="pb-related-card">
+                <span class="pb-related-title">Температура сварки PP пластика: режимы для труб и фитингов</span>
+                <span class="pb-related-desc">Полное руководство по температуре сварки полипропилена. Режимы для PPR, PPH, PP-RCT, выбор инструмен</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

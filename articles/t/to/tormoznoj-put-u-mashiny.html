@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Тормозной путь автомобиля: Факторы, расчёты и безопасность — ТормозОК</title>
+    <meta name="description" content="Изучите, от чего зависит тормозной путь машины. Влияние скорости, шин, загрузки и состояния системы. Таблицы, формулы и советы для безопасного вождения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/t/to/tormoznoj-put-u-mashiny.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тормозной путь автомобиля: Факторы, расчёты и безопасность">
+    <meta property="og:description" content="Изучите, от чего зависит тормозной путь машины. Влияние скорости, шин, загрузки и состояния системы. Таблицы, формулы и советы для безопасного вождения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/bezopasnost-i-normy/">Безопасность и нормы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тормозной путь автомобиля: Факторы, расчёты и безопасность</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-из-чего-складывается-дистанция-остановки">Физика процесса: Из чего складывается дистанция остановки</a></li><li><a href="#влияние-скорости-и-состояния-дорожного-покрытия">Влияние скорости и состояния дорожного покрытия</a></li><li><a href="#роль-шин-и-технического-состояния-автомобиля">Роль шин и технического состояния автомобиля</a></li><li><a href="#влияние-загрузки-автомобиля-и-загрузки">Влияние загрузки автомобиля и загрузки</a></li><li><a href="#системы-активной-безопасности-abs-и-esp">Системы активной безопасности: ABS и ESP</a></li><li><a href="#мифы-и-реальность-что-на-самом-деле-влияет-на-расстояние">Мифы и реальность: Что на самом деле влияет на расстояние</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-trogatsya-na-mekhanike-v-gorku-na-avtodrome-pravilno.html">Как трогаться в горку на механике: инструкция для автодрома 2026</a></li><li><a href="/articles/t/to/tormoznoj-put-formula-fizika.html">Формула тормозного пути: физика процесса и расчеты</a></li><li><a href="/articles/t/to/tormoznoj-put-avtomobilya-pri-skorosti-90-km-ch.html">Тормозной путь при 90 км/ч: расчет, факторы и безопасность</a></li><li><a href="/articles/p/po/pochemu-perednie-tormoza-srabatyvayut-bystree-chem-zadnie.html">Почему передние тормоза срабатывают эффективнее задних: физика и устройство</a></li><li><a href="/articles/v/v-/v-budushchee-smotret-mogut-ne-tolko-lish-vse.html">Философия и практика прогнозирования в автотормозной индустрии</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Тормозной путь у машины: Полный гид по безопасности и физике процесса</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-из-чего-складывается-дистанция-остановки">Физика процесса: Из чего складывается дистанция остановки</a></li><li><a href="#влияние-скорости-и-состояния-дорожного-покрытия">Влияние скорости и состояния дорожного покрытия</a></li><li><a href="#роль-шин-и-технического-состояния-автомобиля">Роль шин и технического состояния автомобиля</a></li><li><a href="#влияние-загрузки-автомобиля-и-загрузки">Влияние загрузки автомобиля и загрузки</a></li><li><a href="#системы-активной-безопасности-abs-и-esp">Системы активной безопасности: ABS и ESP</a></li><li><a href="#мифы-и-реальность-что-на-самом-деле-влияет-на-расстояние">Мифы и реальность: Что на самом деле влияет на расстояние</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Каждый водитель хотя бы раз в жизни оказывался в ситуации, когда секундное промедление или неверная оценка дистанции могли привести к фатальным последствиям. Способность автомобиля остановиться за короткий отрезок дороги определяет не только эффективность системы, но и безопасность всех участников движения. Понимание физики процесса позволяет прогнозировать поведение <em>автомобиля</em> в экстренных ситуациях.</p>
+
+<p>Многие водители ошибочно полагают, что достаточно нажать на педаль, чтобы машина мгновенно остановилась. На самом деле, <strong>тормозной путь</strong> — это сложный параметр, зависящий от множества переменных. От состояния дорожного покрытия до реакции водителя — всё играет критическую роль в конечном результате остановки.</p>
+
+<p>В этой статье мы разберем не только формулы, но и реальные факторы, влияющие на эффективность торможения. Вы узнаете, почему <strong>скорость</strong> влияет не линейно, а в квадрате, и как состояние резины может изменить картину ДТП.</p>
+
+<h2 id="физика-процесса-из-чего-складывается-дистанция-остановки">Физика процесса: Из чего складывается дистанция остановки</h2>
+
+<p>Чтобы реально оценить ситуацию на дороге, необходимо разделить процесс остановки на две составляющие. Первая — это расстояние, которое проходит машина за время реакции водителя, пока он осознает опасность и переносит ногу на педаль. Вторая — это непосредственно <strong>tормозной путь</strong>, пройденный автомобилем после начала работы тормозной системы.</p>
+
+<p>Время реакции человека варьируется от 0,5 до 2 секунд в зависимости от усталости, возраста и внешних раздражителей. Если вы едете со скоростью 90 км/ч, то даже за одну секунду машина проедет 25 метров. Это расстояние вы добавите к тормозному пути неизбежно. <strong>Динамические характеристики</strong> машины не могут компенсировать человеческий фактор.</p>
+
+<p>Суммарная дистанция остановки — это критический показатель, который должен учитывать каждый. Безопасная дистанция рассчитывается исходя из того, что у вас должно хватить места для полной остановки при внезапном появлении препятствия. Игнорирование этого правила часто приводит к столкновениям «в задний бампер».</p>
+
+<blockquote>⚠️ Внимание: В зимний период время реакции может увеличиваться из-за необходимости более тщательной оценки ситуации на скользкой дороге, а физическая дистанция скольжения возрастает в разы. Увеличивайте дистанцию минимум в три раза!</blockquote>
+
+<h2 id="влияние-скорости-и-состояния-дорожного-покрытия">Влияние скорости и состояния дорожного покрытия</h2>
+
+<p>Скорость является главным фактором, влияющим на длину остановки. Физика утверждает, что при увеличении скорости в два раза тормозной путь увеличивается в четыре раза. Это происходит потому, что <strong>кинетическая энергия</strong> растет пропорционально квадрату скорости. Машина на 100 км/ч требует в четыре раза больше энергии для остановки, чем на 50 км/ч.</p>
+
+<p>Состояние дорожного полотна определяет коэффициент сцепления шин с асфальтом. Сухой асфальт обладает высоким коэффициентом трения, обеспечивая эффективное торможение. Однако, как только поверхность становится мокрой, этот показатель резко падает, и <strong>эффективность тормозов</strong> снижается.</p>
+
+<p>Лед и снег — это экстремальные условия, где коэффициент сцепления может быть в 5-10 раз ниже, чем на сухом асфальте. В таких условиях даже современные системы помощи не гарантируют мгновенной остановки. <strong>Сцепление шин</strong> становится определяющим фактором выживания.</p>
+
+<p>Следите за качеством дорожного покрытия заранее. Ямы, гравий или масляные пятна могут привести к потере управления при попытке экстренного торможения. <em>ABS</em> помогает сохранить управляемость, но не может отменить законы физики.</p>
+
+<div class="pb-poll" id="poll-ca048bd9"><div class="pb-poll-question">📊 Какая погода чаще всего становится причиной вашего резкого торможения?</div><div class="pb-poll-option" data-poll="ca048bd9" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Сухая погода</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ca048bd9" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Дождь</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ca048bd9" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Снег</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="ca048bd9" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Гололед</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="роль-шин-и-технического-состояния-автомобиля">Роль шин и технического состояния автомобиля</h2>
+
+<p>Шины — это единственная точка контакта автомобиля с дорогой, поэтому их состояние критически важно. Износ протектора снижает способность отводить воду и цепляться за покрытие. На летней резине с остаточной высотой протектора менее 1,6 мм тормозной путь на мокрой дороге возрастает катастрофически.</p>
+
+<p>Давление в шинах также играет роль. Слишком высокое давление уменьшает площадь пятна контакта, а слишком низкое может привести к перегреву и деформации. Правильная накачка обеспечивает оптимальное пятно контакта для передачи тормозных усилий. <strong>Давление в шинах</strong> нужно проверять ежемесячно.</p>
+
+<p>Состояние тормозной системы не менее важно. Изношенные колодки, подтормаживающие суппорты или некачественная тормозная жидкость могут свести на нет все преимущества хороших шин. Регулярная диагностика <strong>тормозных механизмов</strong> обязательна перед каждым сезоном.</p>
+
+<p>Не забывайте про сезонность резины. Летняя резина на холоде дубеет и теряет сцепление, а зимняя летом перегревается и быстро стирается. Выбор <em>сезонной резины</em> — это базовое требование безопасности.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка готовности к торможению</h4><label class="check-item"><input type="checkbox"><span>Измерение протектора</span></label><label class="check-item"><input type="checkbox"><span>Проверка давления</span></label><label class="check-item"><input type="checkbox"><span>Визуальный осмотр дисков</span></label><label class="check-item"><input type="checkbox"><span>Тест жидкости в бачке</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="влияние-загрузки-автомобиля-и-загрузки">Влияние загрузки автомобиля и загрузки</h2>
+
+<p>Грузоподъемность автомобиля напрямую влияет на его инерцию. Пустой автомобиль останавливается быстрее, чем груженый. При полной загрузке масса машины увеличивается, что требует большей энергии для остановки. <strong>Инерция нагрузки</strong> может существенно увеличить дистанцию. </p>
+
+<p>Распределение веса также имеет значение. Если груз смещен к задней оси, передние колеса, которые обеспечивают основную тормозную силу при стандартной схеме, теряют сцепление. Это может привести к заносу или блокировке передних колес. Неправильная <strong>развесовка</strong> опасна при резком торможении.</p>
+
+<p>При буксировке прицепа ситуация усугубляется. Прицеп добавляет массу, а если у него нет собственных тормозов, вся нагрузка ложится на автомобиль-тягач. <strong>Масса прицепа</strong> может превышать допустимые пределы торможения легкового авто, требуя особого стиля вождения.</p>
+
+<p>Всегда учитывайте фактическую загрузку при выборе дистанции. Если вы везете ремонтный инструмент или семью с багажом, дистанцию нужно увеличивать пропорционально увеличению массы. Не доверяйте ощущениям, доверяйте физике.</p>
+
+<details class="pb-accordion"><summary>Как работает система распределения тормозных усилий (EBD)</summary><div class="pb-accordion-body"><p>Современные автомобили оснащены электроникой, которая перераспределяет тормозное усилие между осями в зависимости от нагрузки. Это предотвращает блокировку задних колес при пустом багажнике и улучшает эффективность при полной загрузке.</p></div></details>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед долгой поездкой с большим грузом обязательно проверьте тормоза и давление в шинах. Изменение нагрузки требует корректировки параметров вождения.</p></aside>
+
+<h2 id="системы-активной-безопасности-abs-и-esp">Системы активной безопасности: ABS и ESP</h2>
+
+<p>Антиблокировочная система (ABS) предотвращает блокировку колес при экстренном торможении, позволяя водителю сохранять управление. Без ABS заблокированные колеса начинают скользить, и машина теряет курсовую устойчивость. <strong>ABS</strong> — это стандарт безопасности, который нельзя отключать в штатной езде.</p>
+
+<p>Электронная система стабилизации (ESP) дополняет ABS, подтормаживая отдельные колеса для предотвращения заноса. При экстренном маневре система может автоматически снизить мощность двигателя и притормозить нужное колесо. <strong>ESP</strong> помогает удерживать траекторию.</p>
+
+<p>Несмотря на наличие электроники, водителю важно понимать её ограничения. На льду или рыхлом снегу ABS может увеличить тормозной путь, так как блокировка колес иногда помогает «зарыться» в снег и остановиться быстрее. В таких условиях <strong>физика движения</strong> может противоречить работе электроники.</p>
+
+<p>Системы не заменяют водителя. Они лишь помогают избежать ошибок. Однако, если система неисправна, её эффективность равна нулю. Проверяйте наличие световых индикаторов ошибок на панели приборов при запуске двигателя. <em>Индикатор ABS</em> должен гаснуть после включения зажигания.</p>
+
+<blockquote>⚠️ Внимание: В условиях глубокого снега или рыхлой целины система ABS может увеличить тормозной путь. В таких специфических ситуациях опытные водители иногда используют метод «длительного торможения» с блокировкой колес, но это требует высокой квалификации.</blockquote>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Условия покрытия</th>
+<th>Коэффициент сцепления</th>
+<th>Тормозной путь (а/м 60 км/ч)</th>
+<th>Рекомендация</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Сухой асфальт</td>
+<td>0.7 - 0.9</td>
+<td>~20-25 метров</td>
+<td>Стандартная дистанция</td>
+</tr>
+<tr>
+<td>Мокрый асфальт</td>
+<td>0.4 - 0.5</td>
+<td>~35-45 метров</td>
+<td>Увеличить в 1.5 раза</td>
+</tr>
+<tr>
+<td>Снег (укатанный)</td>
+<td>0.2 - 0.3</td>
+<td>~60-70 метров</td>
+<td>Увеличить в 3 раза</td>
+</tr>
+<tr>
+<td>Лед</td>
+<td>0.05 - 0.1</td>
+<td>~120-150 метров</td>
+<td>Двигаться без резких движений</td>
+</tr>
+</tbody>
+</table></div>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Системы ABS и ESP не гарантируют мгновенную остановку, но значительно повышают управляемость при экстренном торможении на сухом и мокром покрытии.</p></aside>
+
+<h2 id="мифы-и-реальность-что-на-самом-деле-влияет-на-расстояние">Мифы и реальность: Что на самом деле влияет на расстояние</h2>
+
+<p>Существует множество мифов о том, как быстрее остановить машину. Одни водители считают, что плавное нажатие на педаль эффективнее резкого, другие верят, что переключение на пониженную передачу может заменить тормоза. В реальности <strong>экстренное торможение</strong> требует максимума усилие на педаль.</p>
+
+<p>Многие забывают о влиянии аэродинамики и состояния дорожного полотна. Грязь, масло или опавшие листья могут создать эффект «масляной пленки», снижающей сцепление. <strong>Тормозная способность</strong> падает даже при хорошем состоянии шин.</p>
+
+<p>Использование системы «аварийной остановки» или экстренного торможения без ABS на старых автомобилях требует особого мастерства. Метод «качания» педали (качание) позволяет избежать полной блокировки, но он сложен в исполнении и менее эффективен, чем <em>ABS</em>.</p>
+
+<p>Не доверяйте слепо цифрам из интернета. Реальные условия на дороге могут отличаться от лабораторных тестов. Всегда закладывайте запас прочности в свои расчеты. <strong>Безопасность</strong> — это приоритет, а не математическая точность.</p>
+
+<p> <strong>Психологическая готовность</strong> и скорость реакции часто важнее технического оснащения.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Миф о том, что переключение на пониженную передачу сильно сокращает тормозной путь, неверен. Это помогает контролировать скорость, но не заменяет работу тормозной системы при экстренной остановке.</p></aside>
+
+<details>
+<summary>Почему на льду тормозной путь на машине с ABS длиннее, чем без неё?</summary>
+<p>На льду и рыхлом снеге заблокированное колесо «загребает» перед собой снежный бруствер, который создает дополнительное сопротивление и останавливает машину быстрее. Система ABS не дает колесу блокироваться, предотвращая образование этого барьера, что в некоторых случаях увеличивает дистанцию остановки на скользких поверхностях.</p>
+</details>
+
+<details>
+<summary>Влияет ли цвет автомобиля на тормозной путь?</summary>
+<p>Нет, цвет автомобиля никак не влияет на физические характеристики торможения. Однако светлые автомобили лучше заметны в сумерках и плохую погоду, что может косвенно повлиять на время реакции водителей, движущихся сзади.</p>
+</details>
+
+<details>
+<summary>Что делать, если при торможении машину уводит в сторону?</summary>
+<p>Если машину уводит, значит, тормозное усилие распределено неравномерно. Это может быть вызвано заклинившим суппортом, износом шин или различием в давлении. Немедленно прекратите движение и обратитесь в сервис для диагностики тормозной системы.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать ручной тормоз (ручник) для остановки?</summary>
+<p>Использование ручного тормоза для экстренной остановки на высокой скорости крайне опасно и может привести к заносу и потере управления. Ручник предназначен только для стоянки или экстренной остановки при полном отказе основных тормозов, и даже тогда требует осторожности.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-trogatsya-na-mekhanike-v-gorku-na-avtodrome-pravilno.html" class="pb-related-card">
+                <span class="pb-related-title">Как трогаться в горку на механике: инструкция для автодрома 2026</span>
+                <span class="pb-related-desc">Пошаговое руководство для начинающих водителей: как правильно трогаться на механике в горку без отка</span>
+            </a><a href="/articles/t/to/tormoznoj-put-formula-fizika.html" class="pb-related-card">
+                <span class="pb-related-title">Формула тормозного пути: физика процесса и расчеты</span>
+                <span class="pb-related-desc">Разбираем физическую формулу тормозного пути. От коэффициента трения до реакции водителя. Узнайте, к</span>
+            </a><a href="/articles/t/to/tormoznoj-put-avtomobilya-pri-skorosti-90-km-ch.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной путь при 90 км/ч: расчет, факторы и безопасность</span>
+                <span class="pb-related-desc">Узнайте реальный тормозной путь автомобиля при скорости 90 км/ч. Расчет дистанции, влияние реакции в</span>
+            </a><a href="/articles/p/po/pochemu-perednie-tormoza-srabatyvayut-bystree-chem-zadnie.html" class="pb-related-card">
+                <span class="pb-related-title">Почему передние тормоза срабатывают эффективнее задних: физика и устройство</span>
+                <span class="pb-related-desc">Разбираем физику торможения, нагрузку на оси и устройство систем. Узнайте, почему передняя ось берет</span>
+            </a><a href="/articles/v/v-/v-budushchee-smotret-mogut-ne-tolko-lish-vse.html" class="pb-related-card">
+                <span class="pb-related-title">Философия и практика прогнозирования в автотормозной индустрии</span>
+                <span class="pb-related-desc">Как автоспециалисты и инженеры планируют развитие тормозных систем. Технологии, материалы и безопасн</span>
+            </a><a href="/articles/t/to/tormoznoj-put-pri-ekstrennom-tormozhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Тормозной путь при экстренном торможении: Формулы, Факторы, Безопасность</span>
+                <span class="pb-related-desc">Как рассчитывается тормозной путь? Влияние скорости, погоды и состояния шин на экстренное торможение</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

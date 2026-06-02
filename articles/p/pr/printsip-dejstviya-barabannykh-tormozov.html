@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип действия барабанных тормозов: устройство, работа и нюансы — ТормозОК</title>
+    <meta name="description" content="Подробный разбор принципа действия барабанных тормозов. Изучите устройство механизма, эффект самоусиления, особенности обслуживания и сравнение с другими системами.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/printsip-dejstviya-barabannykh-tormozov.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип действия барабанных тормозов: устройство, работа и нюансы">
+    <meta property="og:description" content="Подробный разбор принципа действия барабанных тормозов. Изучите устройство механизма, эффект самоусиления, особенности обслуживания и сравнение с другими системами.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-nav-active">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип действия барабанных тормозов: устройство, работа и нюансы</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#архитектура-механизма-и-ключевые-компоненты">Архитектура механизма и ключевые компоненты</a></li><li><a href="#физика-процесса-торможения-и-эффект-самоусиления">Физика процесса торможения и эффект самоусиления</a></li><li><a href="#особенности-теплоотвода-и-влияние-на-эффективность">Особенности теплоотвода и влияние на эффективность</a></li><li><a href="#техническое-обслуживание-и-диагностика-неисправностей">Техническое обслуживание и диагностика неисправностей</a></li><li><a href="#сравнительный-анализ-с-дисковыми-системами">Сравнительный анализ с дисковыми системами</a></li><li><a href="#роль-в-системе-стояночного-тормоза">Роль в системе стояночного тормоза</a></li><li><a href="#перспективы-развития-и-современные-модификации">Перспективы развития и современные модификации</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pokrasit-zadnie-barabany-na-mashine.html">Как покрасить задние барабаны: инструкция по защите от ржавчины</a></li><li><a href="/articles/z/za/zadnij-baraban-lanos-15-artikul.html">Задний барабан Ланос 1.5: артикул, выбор и замена тормозов</a></li><li><a href="/articles/m/me/mekhanizm-razvoda-zadnikh-tormoznykh-kolodok-vesta.html">Механизм развода тормозных колодок Lada Vesta: устройство и регулировка</a></li><li><a href="/articles/b/ba/barabannye-tormoza-na-mashine.html">Барабанные тормоза: устройство, плюсы, минусы и замена колодок</a></li><li><a href="/articles/z/za/zamena-tormoznykh-kolodok-na-veste-zadnikh.html">Замена задних тормозных колодок на Lada Vesta: Инструкция и цены</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип действия барабанных тормозов: как это работает внутри колеса</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#архитектура-механизма-и-ключевые-компоненты">Архитектура механизма и ключевые компоненты</a></li><li><a href="#физика-процесса-торможения-и-эффект-самоусиления">Физика процесса торможения и эффект самоусиления</a></li><li><a href="#особенности-теплоотвода-и-влияние-на-эффективность">Особенности теплоотвода и влияние на эффективность</a></li><li><a href="#техническое-обслуживание-и-диагностика-неисправностей">Техническое обслуживание и диагностика неисправностей</a></li><li><a href="#сравнительный-анализ-с-дисковыми-системами">Сравнительный анализ с дисковыми системами</a></li><li><a href="#роль-в-системе-стояночного-тормоза">Роль в системе стояночного тормоза</a></li><li><a href="#перспективы-развития-и-современные-модификации">Перспективы развития и современные модификации</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Барабанные тормоза остаются одним из самых массовых и надежных решений в automotive-индустрии, несмотря на доминирование дисковых систем на передней оси современных автомобилей. Этот механизм, появившийся более века назад, до сих пор используется на грузовиках, автобусах и многих легковых автомобилях в задней части, обеспечивая эффективное замедление при меньших затратах на обслуживание.</p>
+
+<p>Вам может показаться, что такая конструкция архаична, однако её физика и механика обладают уникальными преимуществами, которые инженеры не спешат полностью исключать из проектов. <strong>Принцип действия барабанных тормозов</strong> основан на трении, возникающем между неподвижными фрикционными накладками и вращающимся полым цилиндром, что отличает его от работы дисковых аналогов.</p>
+
+<h2 id="архитектура-механизма-и-ключевые-компоненты">Архитектура механизма и ключевые компоненты</h2>
+
+<p>В основе конструкции лежит <strong>барабан</strong>, жестко закрепленный на ступице колеса и вращающийся вместе с ним. Внутри этого вращающегося "колокола" находится неподвижная <strong>защитная плита</strong>, к которой крепятся все рабочие элементы. Именно здесь размещаются <strong>тормозные колодки</strong>, выполненные в виде дуг, покрытых фрикционным материалом высокой износостойкости.</p>
+
+<p>Для приведения колодок в движение используется <strong>рабочий цилиндр</strong> (колесный цилиндр), который под давлением <strong>тормозной жидкости</strong> раздвжает поршни, упирающиеся в торцы колодок. Вспомогательную роль играют возвратные <strong>пружина</strong> и <strong>регулятор зазора</strong>, обеспечивающие отвод колодок от барабана после отпускания педали и компенсацию износа фрикционного слоя.</p>
+
+<p>Особое внимание стоит уделить <em>тормозному механизму</em> как единому узлу, где малейшая деформация плиты или коррозия поршня может нарушить весь цикл работы системы.</p>
+
+<h2 id="физика-процесса-торможения-и-эффект-самоусиления">Физика процесса торможения и эффект самоусиления</h2>
+
+<p>Когда вы нажимаете на педаль тормоза, гидравлическое давление воздействует на поршни рабочего цилиндра, заставляя колодки прижиматься к внутренней поверхности вращающегося барабана. Ключевой особенностью здесь является направление вращения барабана относительно точек опоры колодок, что порождает удивительный физический феномен — <strong>эффект самоусиления</strong> (самоподхват).</p>
+
+<p>Первая колодка, которую называют "ведущей", в процессе торможения пытается провернуться вместе с барабаном вокруг своей точки опоры (пальца). Это действие дополнительно прижимает её к поверхности барабана с силой, превышающей усилие от гидравлического цилиндра. Именно этот момент позволяет барабанным тормозам создавать огромное <strong>тормозное усилие</strong> при относительно малом давлении в системе.</p>
+
+<p>Вторая колодка, или "ведомая", работает иначе: вращение барабана стремится оторвать её от поверхности, что требует больших усилий от поршня цилиндра для её прижатия. Однако суммарный эффект от двух колодок делает механизм очень эффективным для задних колес, где нагрузка при торможении меньше, чем на переднюю ось.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Эффект самоусиления имеет обратную сторону медали. При перегреве фрикционных накладок коэффициент трения падает, и из-за геометрических особенностей механизма торможение может резко ослабнуть, что требует от водителя дополнительного давления на педаль.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-0837ad2a"><div class="pb-poll-question">📊 Какой тип тормозов установлен на вашем автомобиле?</div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Передние и задние дисковые</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только передние дисковые, задние барабанные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только барабанные на всех колесах</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0837ad2a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не знаю, не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="особенности-теплоотвода-и-влияние-на-эффективность">Особенности теплоотвода и влияние на эффективность</h2>
+
+<p>Главным недостатком закрытой конструкции является проблема <strong>теплоотвода</strong>. В отличие от открытых дисковых систем, где воздух свободно обдувает рабочую поверхность, тепло внутри барабана накапливается крайне интенсивно. При интенсивном торможении, например, при спуске с горы, фрикционные накладки могут нагреться до температур, вызывающих <strong>эффект затухания</strong> (fading).</p>
+
+<p>В этот момент фрикционный материал теряет свои свойства, и тормозной путь увеличивается. Кроме того, нагретый воздух внутри барабана расширяется, что может привести к временному отрыву колодок от поверхности и потере контакта, пока температура не стабилизируется. Именно поэтому <strong>барабанные тормоза</strong> редко ставят на переднюю ось мощных автомобилей.</p>
+
+<p>Тем не менее, в городских условиях, где циклы торможения редки, этот недостаток не является критичным. Для тяжелых грузовиков и фургонов, где важна плавность и отсутствие заклинивания, закрытый тип защиты от грязи и влаги перевешивает проблему перегрева при нормальных режимах эксплуатации.</p>
+
+<details class="pb-accordion"><summary>Как барабан защищает от грязи?</summary><div class="pb-accordion-body"><p>Внутри барабана создается замкнутое пространство, куда практически не попадают вода, реагенты и дорожная пыль. Это значительно продлевает срок службы пружин и поршней по сравнению с открытыми дисковыми механизмами, которые требуют частой промывки.</p></div></details>
+
+<h2 id="техническое-обслуживание-и-диагностика-неисправностей">Техническое обслуживание и диагностика неисправностей</h2>
+
+<p>Обслуживание <em>барабанных тормозов</em> требует периодической разборки узла, так как износ колодок нельзя оценить визуально через окошко, как в дисковых системах. Вам необходимо снять барабан, чтобы проверить толщину фрикционных накладок и состояние рабочего цилиндра. Часто именно здесь кроются проблемы с <strong>закисанием поршней</strong> из-за попадания влаги под защитный чехол.</p>
+
+<p>Типичными проблемами являются неравномерный износ накладок, образование канавок на внутренней поверхности барабана и ослабление возвратных пружин. Если пружины теряют упругость, колодки не отводятся полностью, что приводит к постоянному трению, перегреву и повышенному расходу топлива. Также критично состояние <strong>регулятора зазора</strong>, который должен автоматически компенсировать износ.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Чек-лист проверки барабанных тормозов</h4><label class="check-item"><input type="checkbox"><span>Снять колесо и барабан</span></label><label class="check-item"><input type="checkbox"><span>Визуально оценить толщину накладок</span></label><label class="check-item"><input type="checkbox"><span>Проверить состояние пружин</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть рабочий цилиндр на предмет течей</span></label><label class="check-item"><input type="checkbox"><span>Измерить внутренний диаметр барабана на предмет биения</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Регулировка зазора между колодками и барабаном — это важная процедура, особенно на старых моделях автомобилей с ручной регулировкой. Если зазор слишком велик, педаль тормоза ходит очень низко, а если слишком мал — механизм может самопроизвольно затормаживать. Проверку лучше проводить после каждого снятия барабана для планового ТО.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Используйте только специализированные смазочные материалы для тормозных механизмов. Обычная смазка может разъесть резиновые уплотнения поршней или вызвать их разбухание, что приведет к отказу тормозов.</p>
+</blockquote>
+
+<h2 id="сравнительный-анализ-с-дисковыми-системами">Сравнительный анализ с дисковыми системами</h2>
+
+<p>Сравнивая <strong>дисковые</strong> и барабанные механизмы, нельзя сказать, что один из них однозначно лучше. Дисковые системы выигрывают в эффективности охлаждения и скорости реакции, что делает их идеальными для передних колес и высокопроизводительных авто. Барабанные же выигрывают в надежности, простоте конструкции и стоимости производства, а также в способности удерживать автомобиль на месте при включенном ручном тормозе.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Критерий сравнения</th>
+<th>Барабанные тормоза</th>
+<th>Дисковые тормоза</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Эффективность охлаждения</td>
+<td>Низкая (замкнутый объем)</td>
+<td>Высокая (открытый доступ воздуха)</td>
+</tr>
+<tr>
+<td>Сила самоусиления</td>
+<td>Обладает (высокий КПД)</td>
+<td>Отсутствует или минимальна</td>
+</tr>
+<tr>
+<td>Защита от загрязнений</td>
+<td>Высокая (закрытый корпус)</td>
+<td>Низкая (открытые элементы)</td>
+</tr>
+<tr>
+<td>Стоимость обслуживания</td>
+<td>Ниже (проще механизм)</td>
+<td>Выше (дороже комплектующие)</td>
+</tr>
+<tr>
+<td>Реакция на нажатие</td>
+<td>Медленнее (инерция)</td>
+<td>Мгновенная</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>В современных автомобилях компромисс часто выглядит как комбинация: дисковые спереди для максимальной эффективности и безопасности на высоких скоростях, и барабанные сзади для экономии средств и надежного стояночного тормоза. Инженеры <em>Tesla</em> или <em>BMW</em> часто используют эту схему для баланса характеристик.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Барабанные тормоза идеальны для установки стояночного тормоза, так как их механизм компактен и позволяет легко интегрировать тросовый привод без сложных дополнительных узлов.</p></aside>
+
+<h2 id="роль-в-системе-стояночного-тормоза">Роль в системе стояночного тормоза</h2>
+
+<p>Одним из главных преимуществ <strong>барабанных тормозов</strong> является их интеграция с ручным тормозом. В большинстве конструкций внутри барабанных колодок предусмотрен отдельный рычажный механизм, который через тросы разводит колодки при затягивании ручника. Это позволяет использовать одни и те же фрикционные накладки как для рабочего, так и для стояночного торможения.</p>
+
+<p>В дисковых системах реализация ручного тормоза сложнее: либо нужен отдельный маленький барабан внутри ступицы (что утяжеляет узел), либо сложный механизм винтового разведения колодок внутри суппорта, который часто заклинивает со временем. Простота и надежность механической связи в барабанном узле делают его королем в вопросах удержания автомобиля на склоне.</p>
+
+<p>Вам стоит знать, что при длительной стоянке на уклоне колодки могут "прикипеть" к барабану, особенно если они влажные. Поэтому рекомендуется использовать подставку под колеса при парковке на льду или снегу, чтобы избежать заедания механизма при следующем запуске двигателя.</p>
+
+<h2 id="перспективы-развития-и-современные-модификации">Перспективы развития и современные модификации</h2>
+
+<p>Несмотря на возраст технологии, <em>барабанные тормоза</em> не исчезают. Инженеры разрабатывают новые виды фрикционных материалов, способные выдерживать более высокие температуры и обеспечивать стабильный коэффициент трения. Также внедряются автоматические регуляторы зазоров, исключающие необходимость ручной подстройки при износе.</p>
+
+<p>В электромобилях, где рекуперативное торможение берет на себя основную нагрузку при замедлении, барабанные тормоза используются еще активнее, так как они почти не изнашиваются при обычной езде. Механически они нужны только для полной остановки и аварийных ситуаций, что продлевает их ресурс до сотен тысяч километров без замены.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: При замене тормозных колодок на электромобилях с барабанными механизмами убедитесь, что возвратные пружины установлены правильно, так как отсутствие постоянного торможения может привести к коррозии и заклиниванию поршней при длительной эксплуатации.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене барабанных колодок всегда заменяйте и возвратные пружины, даже если они визуально не потеряли упругости. Старые пружины могут не отвести колодки полностью, что приведет к перегреву и отказу тормозов.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему задние барабанные тормоза скрипят при движении?</summary>
+<p>Скрип часто возникает из-за износа фрикционных накладок, попадания пыли или грязи между накладкой и барабаном, а также из-за отсутствия смазки в местах контакта колодок с опорной плитой. Иногда проблема решается чисткой и смазкой точек контакта, а иногда требует замены изношенных элементов.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать барабанные тормоза на передних колесах грузовика?</summary>
+<p>Да, на тяжелых грузовиках и автобусах часто встречаются полные комплекты барабанных тормозов на всех осях. Это связано с их способностью выдерживать огромные нагрузки и создавать необходимое усилие для остановки тонныгруза, а также с простотой обслуживания в полевых условиях.</p>
+</details>
+
+<details>
+<summary>Как часто нужно проверять износ барабанных тормозов?</summary>
+<p>Рекомендуется проводить визуальный осмотр барабанных тормозов при каждом техническом обслуживании автомобиля, то есть раз в 10-15 тысяч километров. Однако, если вы заметили увод автомобиля в сторону при торможении или снизившуюся эффективность, проверку нужно провести немедленно.</p>
+</details>
+
+<details>
+<summary>Влияет ли износ барабана на тормозной путь?</summary>
+<p>Да, износ барабана (увеличение его внутреннего диаметра) меняет геометрию прилегания колодок и может снизить эффективность торможения. Если диаметр превышает допустимые нормы, указанные производителем, барабан подлежит замене, так как дальнейшая эксплуатация опасна.</p>
+</details>
+
+<details>
+<summary>Что такое "эффект затухания" в барабанных тормозах?</summary>
+<p>Это явление, при котором тормозная способность резко падает из-за перегрева. Фрикционные накладки при высоких температурах выделяют газы, создающие прослойку между накладкой и барабаном, либо меняют свои физические свойства, что приводит к увеличению тормозного пути.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-pokrasit-zadnie-barabany-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Как покрасить задние барабаны: инструкция по защите от ржавчины</span>
+                <span class="pb-related-desc">Подробная инструкция как покрасить задние тормозные барабаны. Подготовка поверхности, выбор термосто</span>
+            </a><a href="/articles/z/za/zadnij-baraban-lanos-15-artikul.html" class="pb-related-card">
+                <span class="pb-related-title">Задний барабан Ланос 1.5: артикул, выбор и замена тормозов</span>
+                <span class="pb-related-desc">Полный обзор задних тормозных барабанов для Daewoo Lanos 1.5. Актуальные артикулы, каталожные номера</span>
+            </a><a href="/articles/m/me/mekhanizm-razvoda-zadnikh-tormoznykh-kolodok-vesta.html" class="pb-related-card">
+                <span class="pb-related-title">Механизм развода тормозных колодок Lada Vesta: устройство и регулировка</span>
+                <span class="pb-related-desc">Подробный разбор механизма развода задних тормозных колодок на Lada Vesta. Инструкция по регулировке</span>
+            </a><a href="/articles/b/ba/barabannye-tormoza-na-mashine.html" class="pb-related-card">
+                <span class="pb-related-title">Барабанные тормоза: устройство, плюсы, минусы и замена колодок</span>
+                <span class="pb-related-desc">Полный гид по барабанным тормозам: принцип работы, отличия от дисковых, инструкция по замене колодок</span>
+            </a><a href="/articles/z/za/zamena-tormoznykh-kolodok-na-veste-zadnikh.html" class="pb-related-card">
+                <span class="pb-related-title">Замена задних тормозных колодок на Lada Vesta: Инструкция и цены</span>
+                <span class="pb-related-desc">Пошаговая инструкция по замене задних тормозных колодок на Lada Vesta. Разбор отличий барабанных и д</span>
+            </a><a href="/articles/p/po/pochemu-skripyat-barabannye-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Почему скрипят барабанные тормоза: основные причины и устранение</span>
+                <span class="pb-related-desc">Узнайте, почему скрипят барабанные тормоза, как найти источник звука и устранить проблему самостояте</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

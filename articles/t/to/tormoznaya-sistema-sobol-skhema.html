@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Тормозная система Соболь: схема, устройство и ремонт ГАЗ — ТормозОК</title>
+    <meta name="description" content="Подробная схема тормозной системы Газель Соболь. Обзор гидравлики, вакуумного усилителя, ABS и барабанных механизмов. Инструкция по диагностике.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/t/to/tormoznaya-sistema-sobol-skhema.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Тормозная система Соболь: схема, устройство и ремонт ГАЗ">
+    <meta property="og:description" content="Подробная схема тормозной системы Газель Соболь. Обзор гидравлики, вакуумного усилителя, ABS и барабанных механизмов. Инструкция по диагностике.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diagnostika-neispravnostej/">Диагностика неисправностей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Тормозная система Соболь: схема, устройство и ремонт ГАЗ</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#общая-архитектура-гидравлического-контура">Общая архитектура гидравлического контура</a></li><li><a href="#ключевые-узлы-и-их-взаимодействие">Ключевые узлы и их взаимодействие</a></li><li><a href="#особенности-работы-abs-и-электронного-контроля">Особенности работы ABS и электронного контроля</a></li><li><a href="#техническое-обслуживание-и-регламентные-работы">Техническое обслуживание и регламентные работы</a></li><li><a href="#диагностика-частых-неисправностей">Диагностика частых неисправностей</a></li><li><a href="#таблица-совместимости-и-параметров">Таблица совместимости и параметров</a></li><li><a href="#специфика-обслуживания-задних-барабанов">Специфика обслуживания задних барабанов</a></li><li><a href="#безопасность-и-меры-предосторожности">Безопасность и меры предосторожности</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/m/my/myagkaya-pedal-tormoza-prichiny.html">Мягкая педаль тормоза: основные причины и способы ремонта</a></li><li><a href="/articles/z/zv/zvuk-pri-tormozhenii-avtomobilya.html">Крики, свист и скрежет: почему шумит машина при торможении</a></li><li><a href="/articles/p/po/posle-zameny-kolodok-plokho-tormozit-mashina-prichiny.html">Почему плохо тормозит машина после замены колодок: основные причины</a></li><li><a href="/articles/p/po/postoronnij-zvuk-pri-tormozhenii.html">Посторонний звук при торможении: причины, диагностика и способы устранения</a></li><li><a href="/articles/p/pe/pedal-tormoza-propuskaet-vozdukh.html">Педаль тормоза пропускает воздух: причины, самостоятельная диагностика и ремонт</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Полная схема и устройство тормозной системы ГАЗ Соболь</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#общая-архитектура-гидравлического-контура">Общая архитектура гидравлического контура</a></li><li><a href="#ключевые-узлы-и-их-взаимодействие">Ключевые узлы и их взаимодействие</a></li><li><a href="#особенности-работы-abs-и-электронного-контроля">Особенности работы ABS и электронного контроля</a></li><li><a href="#техническое-обслуживание-и-регламентные-работы">Техническое обслуживание и регламентные работы</a></li><li><a href="#диагностика-частых-неисправностей">Диагностика частых неисправностей</a></li><li><a href="#таблица-совместимости-и-параметров">Таблица совместимости и параметров</a></li><li><a href="#специфика-обслуживания-задних-барабанов">Специфика обслуживания задних барабанов</a></li><li><a href="#безопасность-и-меры-предосторожности">Безопасность и меры предосторожности</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Эксплуатация грузового автомобиля <em>ГАЗ Соболь</em> требует постоянного внимания к одной из самых критических систем — гидроприводу тормозов. Именно от исправности этого узла зависит безопасность водителя, пассажиров и других участников движения на дороге. Понимание того, как устроена <strong>тормозная система</strong>, позволяет быстрее находить и устранять неисправности, не допуская критических ситуаций в пути.</p>
+
+<p>Схема <strong>привода тормозов</strong> на этих машинах претерпевала изменения в зависимости от года выпуска и модификации двигателя. Владельцам необходимо знать, какая именно конфигурация установлена на их авто: с ABS или без неё, с двухконтурной системой или с вакуумным усилителем старого образца. <strong>Гидравлический контур</strong> разделяет функции торможения задних и передних колёс, что обеспечивает сохранение управляемости при отказе одной из частей системы.</p>
+
+<h2 id="общая-архитектура-гидравлического-контура">Общая архитектура гидравлического контура</h2>
+
+<p>Основой безопасности является <strong>раздельный привод</strong>, который гарантирует работу тормозов даже при разрыве одной из магистралей. В классической схеме <em>ГАЗ Соболь</em> используется диагональное разделение контуров. Это означает, что один контур отвечает за переднее левое и заднее правое колесо, а второй — за переднее правое и заднее левое.</p>
+
+<p>Педаль тормоза через тягу воздействует на поршень <strong>главного тормозного цилиндра</strong>, создавая давление в системе. Это давление по стальным трубкам и резиновым шлангам передаётся к рабочим цилиндрам колёс. Особенностью конструкции является то, что система работает под высоким давлением, требующим использования специальных <strong>тормозных жидкостей</strong> с высокой температурой кипения.</p>
+
+<p>Важным элементом является <strong>вакуумный усилитель</strong>, который снижает усилие, необходимое для нажатия на педаль. Без него управление грузовым автомобилем стало бы физически тяжелым занятием, особенно при экстренном торможении. Усилитель использует разрежение во впускном коллекторе двигателя для создания дополнительной силы, прижимающей колодки к барабанам.</p>
+
+<h2 id="ключевые-узлы-и-их-взаимодействие">Ключевые узлы и их взаимодействие</h2>
+
+<p>В системе работают несколько критически важных компонентов, каждый из которых выполняет свою функцию. <strong>Главный тормозной цилиндр</strong> преобразует механическое усилие в гидравлическое. Он соединён с бачком для жидкостей, уровень которой необходимо контролировать регулярно. Если уровень падает, это сигнал о возможной утечке или сильном износе колодок.</p>
+
+<p>На задних мостах <em>Соболь</em> чаще всего устанавливаются <strong>барабанные механизмы</strong>. В них поршни разжимных цилиндров расходятся в стороны, раздвигая тормозные колодки, которые трутся о внутреннюю поверхность вращающегося барабана. Такая конструкция проще и дешевле в обслуживании, но требует точной регулировки зазора между колодками и барабаном.</p>
+
+<p>Передние колёса оборудованы <strong>дисковыми тормозами</strong>, которые обеспечивают более эффективное охлаждение и стабильность при интенсивной нагрузке. Суппорт переднего колеса перемещает колодки к диску, создавая мощное трение. В современных модификациях также присутствует <strong>ABS</strong>, предотвращающая блокировку колёс на скользкой дороге.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При замене тормозной жидкости обязательно соблюдайте последовательность прокачки контуров, указанную в руководстве. Неправильный порядок может привести к попаданию воздуха в систему и полному отказу тормозов.</p>
+</blockquote>
+
+<div class="pb-poll" id="poll-3595fd0a"><div class="pb-poll-question">📊 Какая тормозная система установлена на вашем автомобиле?</div><div class="pb-poll-option" data-poll="3595fd0a" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Только барабанные</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3595fd0a" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Только дисковые</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3595fd0a" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Комбинированная (перед дисковые, зад барабанные)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="3595fd0a" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Система с ABS</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="особенности-работы-abs-и-электронного-контроля">Особенности работы ABS и электронного контроля</h2>
+
+<p>На автомобилях <em>ГАЗ Соболь</em> с системой <strong>Anti-lock Braking System</strong> (ABS) схема усложняется добавлением датчиков скорости вращения колёс. Эти датчики передают информацию в электронный блок управления, который мгновенно регулирует давление в контурах при обнаружении блокировки колеса.</p>
+
+<p>Система работает циклично: при срабатывании датчика блок управления открывает электромагнитные клапаны, сбрасывая давление, а затем снова его нагнетает. Этот процесс повторяется десятки раз в секунду, позволяя колесу продолжать вращение и сохранять сцепление с дорогой. <strong>Гидроагрегат ABS</strong> является сложным узлом, требующим профессиональной диагностики при появлении ошибок на приборной панели.</p>
+
+<p>Если загорелся индикатор неисправности ABS, это не всегда означает полный отказ тормозной системы. В большинстве случаев срабатывает резервный режим работы, и гидравлика функционирует как обычная система без антиблокировки. Однако эффективность торможения на льду или мокром асфальте может снизиться.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене датчиков ABS на ГАЗ Соболь используйте оригинальные или сертифицированные аналоги, так как некачественные датчики могут выдавать ложные сигналы и блокировать работу всей системы безопасности.</p></aside>
+
+<h2 id="техническое-обслуживание-и-регламентные-работы">Техническое обслуживание и регламентные работы</h2>
+
+<p>Регулярное обслуживание — залог долгой службы тормозной системы. Необходимо проверять состояние <strong>шлангов и трубок</strong> на предмет трещин, вздутий и подтёков. Металлические магистрали часто подвергаются коррозии из-за реагентов на дорогах, поэтому их осмотр должен быть тщательным.</p>
+
+<p>Тормозные колодки и диски имеют ограниченный ресурс. <strong>Износ колодок</strong> можно определить по характерному скрипу или по визуальной оценке толщины фрикционного накладки. Если накладка стерлась до металлической основы, дальнейшая эксплуатация запрещена, так как это может привести к разрушению тормозного диска.</p>
+
+<p>Смена тормозной жидкости должна проводиться раз в два года или после 40 тысяч километров пробега. Жидкость гигроскопична и со временем впитывает влагу из воздуха, что снижает её температуру кипения. При сильном нагреве в системе может образоваться паровая пробка, и педаль станет мягкой и неэффективной.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Регулярный осмотр тормозной системы</h4><label class="check-item"><input type="checkbox"><span>Проверка уровня жидкости в бачке</span></label><label class="check-item"><input type="checkbox"><span>Осмотр колёсных дисков на предмет утечек</span></label><label class="check-item"><input type="checkbox"><span>Оценка толщины колодок и дисков</span></label><label class="check-item"><input type="checkbox"><span>Проверка состояния вакуумного шланга</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="диагностика-частых-неисправностей">Диагностика частых неисправностей</h2>
+
+<p>Одна из самых распространённых проблем — проваливающаяся педаль тормоза. Это может быть вызвано попаданием <strong>воздуха в систему</strong>, износом поршней главного цилиндра или утечкой жидкостей. Часто проблема кроется в неисправном <strong>вакуумном усилителе</strong>, когда мембрана теряет герметичность.</p>
+
+<p>Если автомобиль уводит в сторону при торможении, это говорит о неравномерном износе колодок или заклинивании поршней в <strong>суппортах</strong>. Также причиной может быть загрязнение тормозной жидкости или попадание масла на фрикционные накладки барабанов. В таком случае необходимо промыть систему и заменить загрязнения.</p>
+
+<p>Скрип и скрежет при торможении обычно свидетельствуют о том, что фрикционные накладки полностью стерлись и металл трется о металл. Это аварийная ситуация, требующая немедленной остановки и замены узлов. Игнорирование звуков может привести к дорогостоящему ремонту дисков или барабанов.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Никогда не смешивайте тормозные жидкости разных марок и стандартов (DOT 3, DOT 4, DOT 5). Химическая несовместимость может вызвать коррозию уплотнителей и разрушение системы.</p>
+</blockquote>
+
+<details class="pb-accordion"><summary>Причины стука в тормозах на кочках</summary><div class="pb-accordion-body"><p>Частой причиной стука является люфт в направляющих суппорта или износ тормозных колодок, из-за чего они болтаются в пазах. Также стук может исходить от изношенных сайлентблоков подвески, которые меняют геометрию установки колеса при нагрузке. Для точной диагностики необходимо снять колесо и проверить зазоры вручную.</p></div></details>
+
+<h2 id="таблица-совместимости-и-параметров">Таблица совместимости и параметров</h2>
+
+<p>Для правильного подбора запчастей необходимо ориентироваться в технических характеристиках узлов. Ниже приведена таблица основных параметров для различных модификаций <em>Соболь</em>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Тип механизма</th>
+<th>Диаметр (мм)</th>
+<th>Тип жидкости</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Передний суппорт</td>
+<td>Дисковый плавающий</td>
+<td>235 (диск)</td>
+<td>DOT 4</td>
+<td>С абс/без ABS</td>
+</tr>
+<tr>
+<td>Задний механизм</td>
+<td>Барабанный</td>
+<td>280 (барабан)</td>
+<td>DOT 4</td>
+<td>С ручником</td>
+</tr>
+<tr>
+<td>Главный цилиндр</td>
+<td>Двухконтурный</td>
+<td>22,22 (3/4")</td>
+<td>DOT 4</td>
+<td>С вакуумным усилителем</td>
+</tr>
+<tr>
+<td>Вакуумный усилитель</td>
+<td>Однодисковый</td>
+<td>203 мм (8")</td>
+<td>-</td>
+<td>Для моторов 2,4л</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Выбор размера дисков и барабанов критичен для корректной работы системы. Установка деталей от других моделей без доработок невозможна из-за различий в посадочных местах и креплении. <strong>Оригинальные запчасти</strong> гарантируют совпадение всех размеров и материалов.</p>
+
+<h2 id="специфика-обслуживания-задних-барабанов">Специфика обслуживания задних барабанов</h2>
+
+<p>Задние барабаны требуют особого внимания при замене колодок. Механизм должен быть отрегулирован так, чтобы педаль тормоза не проваливалась слишком глубоко, но и не создавала чрезмерного сопротивления при вращении колеса. <strong>Автоматическая регулировка</strong> в некоторых моделях работает через храповой механизм, но на старых авто регулировка выполняется вручную.</p>
+
+<p>При разборке барабана важно не повредить пружины и разжимные рычаги. Эти элементы находятся под напряжением, поэтому работать нужно аккуратно. <strong>Пружины возврата</strong> со временем теряют упругость, что приводит к неполному растормаживанию и перегреву барабанов.</p>
+
+<p>Очистка барабана от тормозной пыли обязательна перед установкой новых колодок. Пыль абразивна и может повредить новые фрикционные накладки. Используйте специальные очистители, не содержащие масел. <mark>Никогда не используйте сжатый воздух для удаления пыли без защиты органов дыхания, так как асбестовая пыль крайне вредна.</mark></p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная проверка и чистка задних барабанных механизмов продлевает срок их службы и предотвращает перегрев при длительных спусках.</p></aside>
+
+<h2 id="безопасность-и-меры-предосторожности">Безопасность и меры предосторожности</h2>
+
+<p>Работа с тормозной системой требует строгого соблюдения техники безопасности. Остаточное давление может быть опасно при разборке узлов. Всегда используйте <strong>специальные инструменты</strong> для сжатия поршней суппортов и не применяйте монтировку или зубило, которые могут повредить детали.</p>
+
+<p>Тормозная жидкость агрессивна к лакокрасочным покрытиям и резиновым изделиям. Если она попала на кузов, немедленно смойте её водой. При работе с узлами под нагрузкой используйте подпорки, никогда не находитесь под автомобилем, опирающимся только на домкрат. <strong>Надежная фиксация</strong> авто — обязательное условие.</p>
+
+<p>После завершения любых работ по ремонту тормозов обязательно проведите тестовую поездку на безопасном участке дороги. Проверьте работу педали на предмет мягкости и эффективность торможения на разных скоростях. Убедитесь, что нет посторонних звуков и запахов гари.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> После замены тормозных колодок или дисков требуется период приработки. Первые 200-300 километров избегайте резких и экстренных торможений, чтобы обеспечить плотное прилегание фрикционных накладок.</p>
+</blockquote>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Почему педаль тормоза становится мягкой при длительном нажатии?</summary>
+<p>Это явление называется "проваливанием" и чаще всего вызвано попаданием воздуха в систему или перегревом тормозной жидкости, что приводит к её вскипанию и образованию паровых пробок. Также причиной может быть износ уплотнителей главного тормозного цилиндра.</p>
+</details>
+
+<details>
+<summary>Как часто нужно менять тормозную жидкость на ГАЗ Соболь?</summary>
+<p>Производитель рекомендует менять тормозную жидкость каждые 2 года или 40 000 км пробега, whichever comes first. Однако при интенсивной эксплуатации или в условиях высокой влажности воздуха срок замены может сокращаться.</p>
+</details>
+
+<details>
+<summary>Можно ли смешивать тормозные жидкости DOT 3 и DOT 4?</summary>
+<p>Технически смешивать их можно, так как они основаны на гликоле, но этого не рекомендуется делать. Жидкость DOT 4 имеет более высокую температуру кипения и лучшие эксплуатационные характеристики. Смешивание может снизить общие свойства системы.</p>
+</details>
+
+<details>
+<summary>Что делать, если загорелась лампа ABS?</summary>
+<p>Если загорелась лампа ABS, система переходит в режим обычного торможения без антиблокировки. Необходимо как можно скорее провести компьютерную диагностику для выявления неисправного датчика или клапана. Ездить с горящей лампой можно, но с осторожностью.</p>
+</details>
+
+<details>
+<summary>Как определить износ колодок без снятия колеса?</summary>
+<p>На многих моделях есть смотровые окошки в суппортах, через которые можно оценить толщину колодки. Также о сильном износе свидетельствует характерный металлический скрип при торможении и увеличение хода педали тормоза.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/m/my/myagkaya-pedal-tormoza-prichiny.html" class="pb-related-card">
+                <span class="pb-related-title">Мягкая педаль тормоза: основные причины и способы ремонта</span>
+                <span class="pb-related-desc">Почему проваливается педаль тормоза? Разбор 7 причин: от воздуха в системе до износа суппортов. Как </span>
+            </a><a href="/articles/z/zv/zvuk-pri-tormozhenii-avtomobilya.html" class="pb-related-card">
+                <span class="pb-related-title">Крики, свист и скрежет: почему шумит машина при торможении</span>
+                <span class="pb-related-desc">Диагностика скрипов и стуков в тормозной системе. Причины шума при торможении, методы устранения и к</span>
+            </a><a href="/articles/p/po/posle-zameny-kolodok-plokho-tormozit-mashina-prichiny.html" class="pb-related-card">
+                <span class="pb-related-title">Почему плохо тормозит машина после замены колодок: основные причины</span>
+                <span class="pb-related-desc">Машина не тормозит после замены колодок? Узнайте 7 главных причин: от воздуха в системе до некачеств</span>
+            </a><a href="/articles/p/po/postoronnij-zvuk-pri-tormozhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Посторонний звук при торможении: причины, диагностика и способы устранения</span>
+                <span class="pb-related-desc">Почему скрипят или звенят тормоза? Полный разбор причин: износ колодок, пыльники, коррозия. Инструкц</span>
+            </a><a href="/articles/p/pe/pedal-tormoza-propuskaet-vozdukh.html" class="pb-related-card">
+                <span class="pb-related-title">Педаль тормоза пропускает воздух: причины, самостоятельная диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему педаль тормоза становится мягкой или проваливается? Разбор основных причин попадания воздуха </span>
+            </a><a href="/articles/u/uk/ukhodit-tormoznaya-zhidkost-granta-prichiny.html" class="pb-related-card">
+                <span class="pb-related-title">Почему уходит тормозная жидкость на Lada Granta: 7 главных причин</span>
+                <span class="pb-related-desc">Разбираем основные причины утечки тормозной жидкости на Lada Granta. Где искать течи, как проверить </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

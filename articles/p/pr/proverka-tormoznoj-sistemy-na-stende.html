@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Проверка тормозной системы на стенде: методики, нормы и расшифровка — ТормозОК</title>
+    <meta name="description" content="Полный гид по диагностике тормозов на роликовом стенде. Разбор методик, допустимые отклонения, влияние ABS и интерпретация результатов теста.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/proverka-tormoznoj-sistemy-na-stende.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Проверка тормозной системы на стенде: методики, нормы и расшифровка">
+    <meta property="og:description" content="Полный гид по диагностике тормозов на роликовом стенде. Разбор методик, допустимые отклонения, влияние ABS и интерпретация результатов теста.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/diagnostika-neispravnostej/">Диагностика неисправностей</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Проверка тормозной системы на стенде: методики, нормы и расшифровка</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#принцип-работы-и-виды-тормозных-стендов">Принцип работы и виды тормозных стендов</a></li><li><a href="#подготовка-автомобиля-к-диагностике-на-стенде">Подготовка автомобиля к диагностике на стенде</a></li><li><a href="#методики-проведения-теста-инерционные-и-статические">Методики проведения теста: инерционные и статические</a></li><li><a href="#критерии-оценки-и-расшифровка-результатов">Критерии оценки и расшифровка результатов</a></li><li><a href="#влияние-abs-и-электронных-систем-на-результаты">Влияние ABS и электронных систем на результаты</a></li><li><a href="#распространенные-причины-снижения-эффективности">Распространенные причины снижения эффективности</a></li><li><a href="#эксплуатационные-нюансы-и-безопасность">Эксплуатационные нюансы и безопасность</a></li><li><a href="#частые-вопросы-о-диагностике-тормозов">Частые вопросы о диагностике тормозов</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/kh/khrust-pri-nazhatii-pedali-tormoza.html">Хруст при нажатии на педаль тормоза: причины, диагностика и ремонт</a></li><li><a href="/articles/k/ka/kak-najti-utechku-tormoznoj-zhidkosti.html">Как найти утечку тормозной жидкости: пошаговая диагностика</a></li><li><a href="/articles/p/pi/pisk-tormozov-pri-tormozhenii.html">Писк тормозов при торможении: причины и решения (2026)</a></li><li><a href="/articles/s/sh/shum-pri-nazhatii-pedali-tormoza.html">Шум при нажатии педали тормоза: причины, диагностика и устранение</a></li><li><a href="/articles/p/pr/pri-nazhatii-na-tormoz-slyshen-khrust.html">Хруст при торможении: причины, диагностика и способы устранения</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Проверка тормозной системы на стенде: полный разбор методики диагностики</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#принцип-работы-и-виды-тормозных-стендов">Принцип работы и виды тормозных стендов</a></li><li><a href="#подготовка-автомобиля-к-диагностике-на-стенде">Подготовка автомобиля к диагностике на стенде</a></li><li><a href="#методики-проведения-теста-инерционные-и-статические">Методики проведения теста: инерционные и статические</a></li><li><a href="#критерии-оценки-и-расшифровка-результатов">Критерии оценки и расшифровка результатов</a></li><li><a href="#влияние-abs-и-электронных-систем-на-результаты">Влияние ABS и электронных систем на результаты</a></li><li><a href="#распространенные-причины-снижения-эффективности">Распространенные причины снижения эффективности</a></li><li><a href="#эксплуатационные-нюансы-и-безопасность">Эксплуатационные нюансы и безопасность</a></li><li><a href="#частые-вопросы-о-диагностике-тормозов">Частые вопросы о диагностике тормозов</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body"><p>Тормозная система является критическим элементом активной безопасности любого транспортного средства, будь то легковой автомобиль, грузовик или двухколесный транспорт. Эксплуатация машины с неэффективным замедлением создает прямую угрозу жизни водителя, пассажиров и окружающих участников движения. Визуальный осмотр и проверка «на ощупь» не способны выявить скрытые дефекты, такие как снижение коэффициента трения колодок или неравномерность усилия в контурах.</p>
+<p>Именно поэтому профессиональная <strong>проверка тормозной системы на стенде</strong> остается золотым стандартом в автосервисах и на техническом осмотре. Роликовые стенды позволяют имитировать движение автомобиля, измеряя фактическую тормозную силу каждой оси и колеса в отдельности. Это дает возможность количественно оценить эффективность работы агрегатов, выявить скрытые неисправности и подтвердить соответствие техническим регламентам безопасности.</p>
+<p>Современное оборудование оснащается системами <strong>автоматической фиксации</strong> показаний и интеграцией с базами данных нормативов. В отличие от простого теста на дороге, где результаты зависят от покрытия и погоды, стенд обеспечивает повторяемость и точность измерений в контролируемых условиях. Понимание принципов работы стенда и методик оценки результатов поможет владельцу авто грамотно интерпретировать диагноз, полученный в сервисе.</p>
+
+<h2 id="принцип-работы-и-виды-тормозных-стендов">Принцип работы и виды тормозных стендов</h2>
+<p>Основой любого диагностического оборудования для проверки тормозов является система роликов, на которые устанавливаются колеса автомобиля. При вращении колес ролики создают сопротивление, имитирующее торможение на дороге. <strong>Гидравлические</strong> и <strong>электромеханические приводы</strong> позволяют плавно увеличивать нагрузку, фиксируя момент начала проскальзывания шин.</p>
+<p>Существует два основных типа стендов: разгрузочные и неразгрузочные. Неразгрузочные (роликовые) наиболее распространены для легковых авто, так как они компактны и просты в эксплуатации. Разгрузочные стенды используются для тяжелого транспорта, так как они способны имитировать нагрузку на ось, аналогичную реальной массе автомобиля на дороге.</p>
+<p>Важно учитывать, что <strong>нагрузка на ось</strong> критически влияет на результаты теста. Если автомобиль слишком легкий для конкретного стенда, колеса могут проскальзывать раньше, чем сработает эффективное тормозное усилие. Это приводит к заниженным показателям и ложным диагнозам о неисправности <em>тормозных дисков</em> или колодок, хотя проблема может быть лишь в методе измерений.</p>
+
+<h2 id="подготовка-автомобиля-к-диагностике-на-стенде">Подготовка автомобиля к диагностике на стенде</h2>
+<p>Качество диагностики напрямую зависит от правильной подготовки транспортного средства. Перед заездом на ролики необходимо убедиться, что <strong>давление в шинах</strong> соответствует заводским рекомендациям. Разница в давлении между колесами одной оси может исказить результаты, создав искусственный перекос тормозных усилий.</p>
+<p>Следует проверить состояние ходовой части: люфты в подвеске или разбитые сайлентблоки могут привести к тому, что колесо «полезет» с роликов во время резкого торможения. Также важно очистить тормозные механизмы от грязи и ржавчины, которая могла накопиться после длительного простоя. <strong>Тормозные диски</strong> и барабаны должны быть сухими и чистыми для обеспечения корректного коэффициента трения.</p>
+<p>В некоторых случаях требуется отключение систем активной безопасности. Если вы проводите тест <em>ABS</em> на старом типе оборудования, датчики могут некорректно считывать скорость вращения. В таких ситуациях необходимо проконсультироваться с оператором стенда о необходимости отключения системы стабилизации или режима холостого хода двигателя.</p>
+
+<div class="pb-poll" id="poll-875e04a8"><div class="pb-poll-question">📊 Как часто вы проходите полную диагностику тормозов?</div><div class="pb-poll-option" data-poll="875e04a8" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Раз в год</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="875e04a8" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Перед каждым ТО</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="875e04a8" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Только при проблемах</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="875e04a8" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда не проверял</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Неправильная фиксация автомобиля на стенде может привести к его сходу с роликов во время теста. Убедитесь, что оператор использовал страховочные тросы или упоры, особенно при проверке заднеприводных моделей с высокой динамикой разгона колеса.</p>
+</blockquote>
+
+<h2 id="методики-проведения-теста-инерционные-и-статические">Методики проведения теста: инерционные и статические</h2>
+<p>Современные стенды используют преимущественно статическую методику, при которой колеса вращаются, а торможение инициируется водителем или автоматически. Оператор подает команду на нажатие педали, и датчики фиксируют <strong>максимальное тормозное усилие</strong>. Результаты выводятся на экран в реальном времени в Ньютонах или килограммах силы.</p>
+<p>Инерционные методики более сложны и требуют свободного пробега стенда перед остановкой. Колеса разгоняются до определенной скорости, после чего происходит резкое торможение. Этот метод лучше имитирует реальную ситуацию на дороге, особенно при проверке эффективности <strong>тормозного пути</strong> и работы антиблокировочной системы.</p>
+<p>При тестировании автомобилей с <em>электронным стояночным тормозом</em> (EPB) процедура имеет свои нюансы. Часто требуется специальный режим «смягчения» усилия, чтобы не повредить приводные механизмы при резкой остановке на скорости вращения роликов. Программное обеспечение стенда должно поддерживать протоколы взаимодействия с бортовой электроникой.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Подготовка к тесту тормозов</h4><label class="check-item"><input type="checkbox"><span>Проверить давление в шинах</span></label><label class="check-item"><input type="checkbox"><span>Убедиться в отсутствии люфтов подвески</span></label><label class="check-item"><input type="checkbox"><span>Очистить диски и барабаны</span></label><label class="check-item"><input type="checkbox"><span>Отключить лишние электронные системы</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="критерии-оценки-и-расшифровка-результатов">Критерии оценки и расшифровка результатов</h2>
+<p>Результаты теста оцениваются не только по абсолютным значениям силы, но и по соотношению усилий на разных колесах. Ключевым параметром является <strong>разность тормозных сил</strong> на колесах одной оси. Если разница превышает допустимые нормы, автомобиль будет уводить в сторону при экстренном торможении, что крайне опасно.</p>
+<p>Также анализируется <strong>эффективность торможения</strong> всей машины в целом. Этот показатель рассчитывается как отношение суммы тормозных сил всех колес к массе автомобиля. Для легковых авто норма обычно составляет не менее 50-60%, в зависимости от типа привода и возраста конструкции.</p>
+<p>Особое внимание уделяется <strong>растяжке кривой торможения</strong>. Если пик усилия достигается слишком медленно или плавно, это может указывать на проблемы с вакуумным усилителем, воздушными пробками в гидравлике или износом суппортов. Оператор видит этот график в динамике и может дать точный совет по ремонту.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Параметр</th>
+      <th>Допустимое отклонение</th>
+      <th>Возможная причина отклонения</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Разность сил на одной оси</td>
+      <td>до 15-20%</td>
+      <td>Закисший суппорт, неравномерный износ колодок</td>
+    </tr>
+    <tr>
+      <td>Эффективность торможения</td>
+      <td>не менее 50%</td>
+      <td>Износ дисков, плохая тормозная жидкость, воздух в системе</td>
+    </tr>
+    <tr>
+      <td>Коэффициент сцепления</td>
+      <td>до 0.8-0.9</td>
+      <td>Грязные или масляные диски, износ резины</td>
+    </tr>
+    <tr>
+      <td>Срабатывание ручника</td>
+      <td>не менее 18-25%</td>
+      <td>Растянутый трос, износ колодок барабана</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<details class="pb-accordion"><summary>Что такое «растяжка» кривой?</summary><div class="pb-accordion-body"><p>Если график торможения имеет пологий подъем, это говорит о том, что система не набирает усилие мгновенно. Это часто бывает при наличии воздуха в гидроприводе или при износе поршней суппорта, которые не могут быстро выдвинуться.</p></div></details>
+
+<h2 id="влияние-abs-и-электронных-систем-на-результаты">Влияние ABS и электронных систем на результаты</h2>
+<p>Наличие системы <strong>ABS (Anti-lock Braking System)</strong> значительно усложняет диагностику на простых стендах. При резком нажатии педали система пытается предотвратить блокировку колеса, снижая давление в контуре. На роликах это может привести к тому, что тормозное усилие будет постоянно «срываться» и не достигнет пика.</p>
+<p>Для корректного тестирования автомобилей с ABS необходимо использовать стенды с возможностью имитации <em>реальной дороги</em> или специальные режимы тестирования. В некоторых случаях требуется физическое отключение датчиков скорости, чтобы система не вмешивалась в процесс торможения во время замера.</p>
+<p>Современные стенды с <strong>интегрированным сканером</strong> могут считывать ошибки из блока управления ABS. Это позволяет увидеть не только механические проблемы, но и программные сбои, такие как неверные показания датчиков или неисправности клапанов. Однако, если датчики загрязнены или повреждены, даже самый продвинутый стенд не даст точных данных.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Не пытайтесь провести тест тормозной системы с активированной ABS на обычном роликовом стенде без соответствующего программного обеспечения. Это может привести к ложному срабатыванию системы и некорректным данным, а в редких случаях — к повреждению гидроблока ABS из-за циклических нагрузок.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Если у автомобиля стоит система ESP или курсовой устойчивости, обязательно сообщите об этом оператору. Часто требуется заглушить двигатель или перевести систему в сервисный режим, иначе тест будет прерван ошибкой.</p></aside>
+
+<h2 id="распространенные-причины-снижения-эффективности">Распространенные причины снижения эффективности</h2>
+<p>Снижение показателей на стенде чаще всего вызвано механическим износом компонентов. <strong>Истирание фрикционных накладок</strong> колодок до металла или их замасливание приводит к резкому падению коэффициента трения. Также частой причиной является перегрев дисков, вызывающий их коробление и потерю контакта.</p>
+<p>Гидравлическая система может страдать от <strong>кипения тормозной жидкости</strong> или попадания воздуха. В результате педаль становится «ватной», и усилие не передается полностью на суппорта. Это особенно актуально для старых автомобилей или машин с некачественным ремонтом системы.</p>
+<p>Неравномерный износ часто связан с неисправностью <em>направляющих суппортов</em>. Если колодка не отходит от диска, происходит постоянный нагрев и потеря эффективности. Стенд четко покажет разницу в силе торможения между колесами одной оси, укажет на проблему с конкретным механизмом.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Основной вывод: Стендовая диагностика выявляет не только полную неисправность, но и скрытые дефекты, такие как заклинивание направляющих или незначительные утечки, которые сложно заметить при визуальном осмотре.</p></aside>
+
+<h2 id="эксплуатационные-нюансы-и-безопасность">Эксплуатационные нюансы и безопасность</h2>
+<p>При проведении теста важно соблюдать технику безопасности. Водитель должен быть готов к резкому торможению и фиксации руля, чтобы автомобиль не сходил с траектории. <strong>Страховочные ремни</strong> и упоры являются обязательными элементами защиты. Оператор должен иметь возможность мгновенно остановить двигатель или отключить приводы роликов.</p>
+<p>Особое внимание следует уделять состоянию <strong>покрышки</strong>. Если протектор изношен до минимума или имеет повреждения, колесо может проскользнуть на роликах, не создав нужного усилия. Это приведет к ошибке диагностики, когда проблема будет приписана тормозам, хотя дело в шинах.</p>
+<p>После завершения теста рекомендуется проверить температуру тормозных дисков. Если одно колесо значительно горячее другого, это подтверждает диагноз о заклинивании суппорта или проблеме с гидравликой. <strong>Термография</strong> может быть полезным дополнением к данным стенда.</p>
+
+<details class="pb-accordion"><summary>Почему колеса нагреваются?</summary><div class="pb-accordion-body"><p>При торможении кинетическая энергия автомобиля преобразуется в тепловую. Если диск перегревается, это может привести к его деформации (биению) и снижению эффективности торможения.</p></div></details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Не используйте тормоза сразу после интенсивного теста на стенде. Диски могут быть раскалены до критических температур, и резкое торможение может привести к их разрушению или ожогам. Дайте системе остыть в течение 5-10 минут.</p>
+</blockquote>
+
+<h2 id="частые-вопросы-о-диагностике-тормозов">Частые вопросы о диагностике тормозов</h2>
+<details>
+  <summary>Почему на стенде показывают меньшее тормозное усилие, чем на дороге?</summary>
+  <p>Это может быть связано с отсутствием реальной нагрузки на оси (особенно на переднеприводных авто) или с проскальзыванием шин на роликах. Также роль играет температура дисков и состояние резины.</p>
+</details>
+<details>
+  <summary>Нужно ли отключать ABS перед тестом?</summary>
+  <p>Для простых роликовых стендов — да, так как ABS не даст колесам заблокироваться, и усилие не наберет пик. Для специализированных стендов с имитацией дороги это не требуется.</p>
+</details>
+<details>
+  <summary>Как часто нужно проходить проверку тормозной системы?</summary>
+  <p>Рекомендуется проводить диагностику при каждом плановом ТО, а также при появлении любых симптомов: вибрации, шума, увода руля или изменения хода педали.</p>
+</details>
+<details>
+  <summary>Можно ли проверить тормоза на стенде, если есть неисправность ABS?</summary>
+  <p>Да, но результаты могут быть искажены. Лучше сначала устранить ошибку в блоке управления, чтобы исключить влияние электроники на механический тест.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/kh/khrust-pri-nazhatii-pedali-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Хруст при нажатии на педаль тормоза: причины, диагностика и ремонт</span>
+                <span class="pb-related-desc">Почему скрипит и хрустит тормоз? Разбираем износ колодок, деформацию дисков и проблемы с направляющи</span>
+            </a><a href="/articles/k/ka/kak-najti-utechku-tormoznoj-zhidkosti.html" class="pb-related-card">
+                <span class="pb-related-title">Как найти утечку тормозной жидкости: пошаговая диагностика</span>
+                <span class="pb-related-desc">Узнайте, как самостоятельно обнаружить течь в тормозной системе автомобиля. Инструкция по проверке у</span>
+            </a><a href="/articles/p/pi/pisk-tormozov-pri-tormozhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Писк тормозов при торможении: причины и решения (2026)</span>
+                <span class="pb-related-desc">Узнайте, почему скрипят и пищат тормоза при торможении: износ колодок, коррозия дисков или ошибки ре</span>
+            </a><a href="/articles/s/sh/shum-pri-nazhatii-pedali-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Шум при нажатии педали тормоза: причины, диагностика и устранение</span>
+                <span class="pb-related-desc">Почему скрипит или пищит тормоз? Разбор основных причин шума: износ колодок, задиры, пыль. Инструкци</span>
+            </a><a href="/articles/p/pr/pri-nazhatii-na-tormoz-slyshen-khrust.html" class="pb-related-card">
+                <span class="pb-related-title">Хруст при торможении: причины, диагностика и способы устранения</span>
+                <span class="pb-related-desc">Почему слышен хруст при нажатии на педаль тормоза? Разбор основных причин, диагностика износа и поша</span>
+            </a><a href="/articles/r/ra/raspredelitel-tormoznykh-usilij-lachetti.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор тормозных усилий на Chevrolet Lacetti: устройство, замена и настройка</span>
+                <span class="pb-related-desc">Детальный разбор работы распределителя тормозных усилий на Chevrolet Lacetti. Признаки неисправности</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

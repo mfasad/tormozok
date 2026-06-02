@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Рекуперативное торможение на ЖД: принцип работы и экономия энергии — ТормозОК</title>
+    <meta name="description" content="Подробный разбор рекуперативного торможения на железной дороге. Как работает система, разница с реостатным, преимущества и технические нюансы.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/r/re/rekuperativnoe-tormozhenie-eto-na-zhd.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Рекуперативное торможение на ЖД: принцип работы и экономия энергии">
+    <meta property="og:description" content="Подробный разбор рекуперативного торможения на железной дороге. Как работает система, разница с реостатным, преимущества и технические нюансы.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Рекуперативное торможение на ЖД: принцип работы и экономия энергии</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физические-основы-работы-системы">Физические основы работы системы</a></li><li><a href="#сравнение-рекуперативного-и-реостатного-торможения">Сравнение рекуперативного и реостатного торможения</a></li><li><a href="#техническая-реализация-и-управление">Техническая реализация и управление</a></li><li><a href="#экономические-и-эксплуатационные-преимущества">Экономические и эксплуатационные преимущества</a></li><li><a href="#ограничения-и-проблемы-эксплуатации">Ограничения и проблемы эксплуатации</a></li><li><a href="#перспективы-развития-технологий">Перспективы развития технологий</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/d/da/datchik-abs-perednij-granta.html">Датчик ABS передний на Lada Granta: неисправности, замена и проверка</a></li><li><a href="/articles/k/ka/kak-sbrosit-oshibku-abs-largus.html">Как сбросить ошибку ABS на Chevrolet Lacetti (Largus): Полное руководство</a></li><li><a href="/articles/p/pr/prokachka-tormozov-cherez-vasyu.html">Прокачка тормозов через Васю: пошаговая инструкция 2026</a></li><li><a href="/articles/p/po/pochemu-na-paneli-gorit-abs.html">Почему горит лампочка ABS: причины, диагностика и что делать</a></li><li><a href="/articles/r/re/regulyator-tormoznykh-sil-sobol.html">Регулятор тормозных сил ГАЗ Соболь: устройство, неисправности и замена</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Рекуперативное торможение: как электрички возвращают энергию в сеть</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физические-основы-работы-системы">Физические основы работы системы</a></li><li><a href="#сравнение-рекуперативного-и-реостатного-торможения">Сравнение рекуперативного и реостатного торможения</a></li><li><a href="#техническая-реализация-и-управление">Техническая реализация и управление</a></li><li><a href="#экономические-и-эксплуатационные-преимущества">Экономические и эксплуатационные преимущества</a></li><li><a href="#ограничения-и-проблемы-эксплуатации">Ограничения и проблемы эксплуатации</a></li><li><a href="#перспективы-развития-технологий">Перспективы развития технологий</a></li><li><a href="#faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Представьте ситуацию, когда поезд, спускающийся с горки или замедляющийся перед станцией, не просто выбрасывает энергию в атмосферу в виде тепла, а превращает её обратно в электричество. Именно так работает <strong>рекуперативное торможение</strong> — технология, кардинально меняющая энергоэффективность современного железнодорожного транспорта. Это не просто способ остановить состав, а сложный инженерный процесс взаимодействия тяговых двигателей и контактной сети.</p>
+
+<p>Многие путают этот механизм с обычным механическим торможением, но суть процесса фундаментально отличается. Вместо того чтобы сточить тормозные колодки и нагреть колеса, <em>электродвигатели</em> трамвая, метро или электрички переходят в режим генераторов. Они улавливают кинетическую энергию движения локомотива и преобразуют её в электрический ток.</p>
+
+<p>Для вас, как для специалиста или энтузиаста, важно понимать, что это явление создает уникальную нагрузку на энергосистему. <strong>Энергия</strong>, выработанная при торможении, может быть немедленно использована другими поездами на том же участке пути или возвращена в общую сеть. Это снижает потребление от подстанций и уменьшает износ механических узлов.</p>
+
+<h2 id="физические-основы-работы-системы">Физические основы работы системы</h2>
+
+<p>В основе процесса лежит принцип обратимости электрических машин. Когда вы переводите <strong>тяговый электродвигатель</strong> в режим генерации, ротор продолжает вращаться под воздействием инерции состава, но теперь он вырабатывает ток, а не потребляет его. Этот ток должен куда-то деться, иначе напряжение в системе взлетит до критических значений.</p>
+
+<p>Существует два основных пути для этой энергии. Первый и самый эффективный — это <strong>рекуперация</strong>, когда ток возвращается в контактный провод. Второй вариант — <em>реостатное торможение</em>, при котором энергия сжигается в специальных нагревательных резисторах, установленных на крыше локомотива. Рекуперация всегда предпочтительнее с точки зрения экономии, но она требует сложной электроники.</p>
+
+<p>Ключевым условием для возврата энергии является синхронизация напряжения. Если напряжение в контактной сети уже выше, чем вырабатывает поезд, рекуперация становится невозможной. В таких случаях система автоматически переключается на <strong>реостатный режим</strong> или механическое торможение, чтобы обеспечить безопасность остановки.</p>
+
+<h2 id="сравнение-рекуперативного-и-реостатного-торможения">Сравнение рекуперативного и реостатного торможения</h2>
+
+<p>Понимание разницы между этими двумя режимами критично для оценки эффективности подвижного состава. При <strong>рекуперативном торможении</strong> электрическая энергия возвращается в сеть переменного или постоянного тока, питающую участок. Это позволяет экономить до 20-30% электроэнергии в городском транспорте, таком как метрополитен.</p>
+
+<p>В отличие от него, <em>реостатное торможение</em> рассеивает энергию в виде тепла. Хотя оно не требует наличия других поездов поблизости для поглощения энергии, оно не дает экономического эффекта. Современные системы управления часто комбинируют оба метода, выбирая оптимальный путь в зависимости от загруженности сети.</p>
+
+<p>Вот основные различия в работе систем:</p>
+
+<ul>
+<li>🌍 <strong>Экологичность</strong>: рекуперация снижает выбросы CO2 за счет экономии выработки на ТЭЦ, реостат лишь нагревает воздух.</li>
+<li>⚡ <strong>Энергоэффективность</strong>: при рекуперации энергия используется повторно, при реостате она теряется безвозвратно.</li>
+<li>🔧 <strong>Износ оборудования</strong>: рекуперация бережет тормозные колодки и диски, реостат требует усиленного охлаждения резисторов.</li>
+</ul>
+
+<p>Важно отметить, что на некоторых видах подвижного состава, например, старых моделях электровозов, рекуперация может работать только в определенных диапазонах скоростей. Низкие скорости часто требуют подключения механических тормозов, так как генераторы не могут эффективно работать при очень малых оборотах.</p>
+
+<div class="pb-poll" id="poll-c122f268"><div class="pb-poll-question">📊 Как часто вы замечаете, что электровозы тормозят без звука скрежета?</div><div class="pb-poll-option" data-poll="c122f268" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Часто, почти всегда</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c122f268" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Иногда, зависит от участка</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c122f268" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Никогда, всегда слышен скрежет</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="c122f268" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Не обращаю внимания</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="техническая-реализация-и-управление">Техническая реализация и управление</h2>
+
+<p>Для реализации рекуперации необходима сложная система управления <strong>силовой электроникой</strong>. В современных электричках и электровозах используются тиристорные или IGBT-преобразователи, которые регулируют ток и напряжение. Они следят за тем, чтобы параметры вырабатываемого тока идеально совпадали с параметрами контактной сети.</p>
+
+<p>Если вы изучаете устройство локомотива, обратите внимание на <code>Систему управления тяговыми двигателями</code>. Именно этот блок решает, когда включить режим генерации и как плавно передать энергию в сеть. Ошибки в алгоритмах могут привести к скачкам напряжения или нестабильной работе подстанций.</p>
+
+<p>Особую роль играет <strong>автоматическое переключение</strong> режимов. Когда скорость падает ниже определенного порога (обычно около 30-40 км/ч), эффективность рекуперации резко снижается. Система должна мгновенно перейти на <em>электродинамическое</em> или механическое торможение, чтобы не допустить остановки состава на маршруте.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Проверка работоспособности рекуперативного торможения</h4><label class="check-item"><input type="checkbox"><span>Проверить напряжение под нагрузкой</span></label><label class="check-item"><input type="checkbox"><span>Осмотреть контактные резисторы</span></label><label class="check-item"><input type="checkbox"><span>Проверить работу преобразователей</span></label><label class="check-item"><input type="checkbox"><span>Протестировать автоматическое переключение</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>В некоторых случаях, особенно при работе на участках с постоянным током, могут возникнуть проблемы с "перенапряжением". Если рядом нет другого поезда, который мог бы принять энергию, системы защиты могут отключить рекуперацию, чтобы не повредить оборудование.</p>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: На участках с нестабильной сетью или при отсутствии попутного движения система может принудительно отключить рекуперацию, переведя локомотив на реостатный режим во избежание скачков напряжения.</p>
+</blockquote>
+
+<h2 id="экономические-и-эксплуатационные-преимущества">Экономические и эксплуатационные преимущества</h2>
+
+<p>Экономическая выгода от внедрения <strong>рекуперативного торможения</strong> огромна. Электростанции, вырабатывающие ток для железной дороги, работают с меньшими нагрузками, что снижает расход топлива и износ генераторов. Для транспортных операторов это прямая экономия на счетах за электроэнергию.</p>
+
+<p>Кроме того, снижается износ <em>механических тормозных систем</em>. Колодки и диски изнашиваются гораздо медленнее, так как основная нагрузка приходится на электрический контур. Это уменьшает затраты на обслуживание и увеличивает межремонтные пробеги подвижного состава.</p>
+
+<p>В таблице ниже представлены сравнительные данные по эффективности различных методов торможения:</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Тип торможения</th>
+<th>Потребление энергии</th>
+<th>Износ механики</th>
+<th>Экологичность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Рекуперативное</td>
+<td>Отрицательное (генерация)</td>
+<td>Минимальный</td>
+<td>Высокая</td>
+</tr>
+<tr>
+<td>Реостатное</td>
+<td>Нулевое (потеря в тепло)</td>
+<td>Средний</td>
+<td>Средняя</td>
+</tr>
+<tr>
+<td>Механическое</td>
+<td>Нулевое</td>
+<td>Высокий</td>
+<td>Низкая (пыль)</td>
+</tr>
+<tr>
+<td>Комбинированное</td>
+<td>Переменное</td>
+<td>Сниженный</td>
+<td>Высокая</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно учитывать, что экономия зависит не только от технологии, но и от режима движения. Участки с частыми остановками (городские электрички, метро) дают максимальный эффект, тогда как на длинных перегонах с постоянной скоростью выгода от рекуперации минимальна.</p>
+
+<details class="pb-accordion"><summary>Как работает рекуперация на переменном токе?При переменном токе сложность заключается в частоте и фазе. Преобразователи должны синхронизироваться с сетью, чтобы отдавать энергию того же качества. Если фаза не совпадает, произойдет короткое замыкание или сбой в подстанции.-->
+
+<h2 id="ограничения-и-проблемы-эксплуатации">Ограничения и проблемы эксплуатации</h2>
+
+<p>Несмотря на очевидные плюсы, <strong>рекуперативное торможение</strong> имеет свои ограничения. Главная проблема — необходимость наличия потребителя энергии в сети. Если вы ведете поезд в одиночку на пустом участке, возвращать энергию некуда. В такой ситуации система должна быть готова к мгновенному переключению на <em>реостатное</em> торможение.</p>
+
+<p>Еще одним фактором является качество контактной сети. Скачки напряжения, плохие контакты или перегрузка подстанций могут мешать эффективной работе системы. Инженерам приходится проектировать сложные схемы защиты, которые отсекают рекуперацию при малейших отклонениях параметров.</p>
+
+<p>Также стоит помнить о безопасности. При отказе систем управления возникает риск потери тормозного усилия. Поэтому всегда должен быть резервный механизм — <strong>пневматический тормоз</strong>, который сработает в любом случае, если электрическая часть откажет.</p>
+
+<!--WIDGET</summary><div class="pb-accordion-body"><p>tip:При планировании графика движения поездов учитывайте, что рекуперативное торможение наиболее эффективно при массовом движении. Плотный поток позволяет одному поезду отдавать энергию другому в режиме "срезания" пиков потребления.</p></div></details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: В зимнее время, когда нагрузка на сеть возрастает из-за систем отопления и освещения, возможности для рекуперации могут быть ограничены из-за риска перегрузки подстанций.</p>
+</blockquote>
+
+<p>Иногда возникают вопросы о влиянии рекуперации на путевые устройства сигнализации. Мощные токи, возвращаемые в сеть, могут создавать помехи для автосцепных устройств и рельсовых цепей. Современные системы фильтрации решают эту проблему, но это требует дополнительных затрат на оборудование.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Рекуперативное торможение — это не просто "тормоз", а сложный процесс обмена энергией, требующий стабильной сети и синхронизации с другими потребителями.</p></aside>
+
+<h2 id="перспективы-развития-технологий">Перспективы развития технологий</h2>
+
+<p>Будущее железнодорожного транспорта неразрывно связано с совершенствованием систем рекуперации. Разрабатываются <em>гибридные накопители</em> энергии, которые позволяют запасать избыточную энергию торможения в специальных конденсаторах или батареях, установленных прямо на локомотиве.</p>
+
+<p>Это решает главную проблему — отсутствие потребителя в сети. Поезд сможет накапливать энергию и использовать её для дальнейшего разгона, делая движение практически автономным в короткие промежутки времени. Такие системы уже тестируются на современных моделях <strong>электропоездов</strong> в Европе и Азии.</p>
+
+<p>Также ожидается внедрение более мощных полупроводниковых элементов, которые позволят управлять большими токами с меньшими потерями. Это повысит КПД системы и расширит диапазон скоростей, на которых возможна эффективная рекуперация.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Интеграция накопителей энергии на борту поезда позволит сделать рекуперацию независимой от наличия других составов в сети, что кардинально повысит её эффективность.</p></aside>
+
+<h2 id="faq-часто-задаваемые-вопросы">FAQ: Часто задаваемые вопросы</h2>
+
+<details>
+<summary>В чем главная разница между рекуперацией и реостатным торможением?</summary>
+<p>Рекуперация возвращает энергию в сеть для использования другими поездами, тогда как реостатное торможение преобразует энергию в тепло, рассеивая её в атмосфере.</p>
+</details>
+
+<details>
+<summary>Может ли рекуперация полностью заменить механические тормоза?</summary>
+<p>Нет. На низких скоростях эффективность генерации падает, поэтому механические тормоза обязательны для полной остановки и в аварийных ситуациях.</p>
+</details>
+
+<details>
+<summary>Почему иногда рекуперативное торможение не работает?</summary>
+<p>Основная причина — отсутствие потребителей энергии в контактной сети или слишком высокое напряжение в ней, что требует переключения на реостатный режим.</p>
+</details>
+
+<details>
+<summary>Как рекуперация влияет на износ колесных пар?</summary>
+<p>Она значительно снижает износ, так как основная нагрузка по замедлению ложится на электрическую систему, уменьшая трение тормозных колодок о диски.</p>
+</details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание</strong>: Технические характеристики систем рекуперации могут различаться в зависимости от модели подвижного состава и требований инфраструктуры конкретной железной дороги. Всегда сверяйтесь с технической документацией производителя.</p>
+</blockquote>
+</div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/d/da/datchik-abs-perednij-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик ABS передний на Lada Granta: неисправности, замена и проверка</span>
+                <span class="pb-related-desc">Полный гайд по переднему датчику ABS Lada Granta. Симптомы поломки, пошаговая инструкция замены, про</span>
+            </a><a href="/articles/k/ka/kak-sbrosit-oshibku-abs-largus.html" class="pb-related-card">
+                <span class="pb-related-title">Как сбросить ошибку ABS на Chevrolet Lacetti (Largus): Полное руководство</span>
+                <span class="pb-related-desc">Полная инструкция по удалению кодов ошибок системы ABS на Chevrolet Lacetti. Методы сброса, диагност</span>
+            </a><a href="/articles/p/pr/prokachka-tormozov-cherez-vasyu.html" class="pb-related-card">
+                <span class="pb-related-title">Прокачка тормозов через Васю: пошаговая инструкция 2026</span>
+                <span class="pb-related-desc">Полный гайд по диагностике и прокачке тормозной системы с помощью сканера Васю. Разбор ошибок, алгор</span>
+            </a><a href="/articles/p/po/pochemu-na-paneli-gorit-abs.html" class="pb-related-card">
+                <span class="pb-related-title">Почему горит лампочка ABS: причины, диагностика и что делать</span>
+                <span class="pb-related-desc">Горит индикатор ABS на панели? Разбираем основные причины: от датчиков до насоса. Инструкция по само</span>
+            </a><a href="/articles/r/re/regulyator-tormoznykh-sil-sobol.html" class="pb-related-card">
+                <span class="pb-related-title">Регулятор тормозных сил ГАЗ Соболь: устройство, неисправности и замена</span>
+                <span class="pb-related-desc">Подробный обзор регулятора тормозных сил на ГАЗ Соболь. Причины поломки, признаки неисправности, инс</span>
+            </a><a href="/articles/p/po/pochemu-srabatyvaet-abs-na-malenkoj-skorosti-pri-tormozhenii.html" class="pb-related-card">
+                <span class="pb-related-title">Почему ABS срабатывает на малой скорости: причины и диагностика</span>
+                <span class="pb-related-desc">Разбираем причины ложного срабатывания антиблокировочной системы при низких скоростях. Ошибки датчик</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Подключение тормозного резистора к частотнику: схема и расчёт — ТормозОК</title>
+    <meta name="description" content="Полная инструкция по монтажу тормозного резистора к частотному преобразователю. Расчёт мощности, выбор сечения кабеля, типичные ошибки и схемы подключения.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/po/podklyuchenie-tormoznogo-rezistora-k-chastotniku.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Подключение тормозного резистора к частотнику: схема и расчёт">
+    <meta property="og:description" content="Полная инструкция по монтажу тормозного резистора к частотному преобразователю. Расчёт мощности, выбор сечения кабеля, типичные ошибки и схемы подключения.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/abs-i-elektronika/">ABS и электроника</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Подключение тормозного резистора к частотнику: схема и расчёт</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#физика-процесса-и-роль-тормозного-резистора">Физика процесса и роль тормозного резистора</a></li><li><a href="#критерии-выбора-мощности-и-сопротивления">Критерии выбора мощности и сопротивления</a></li><li><a href="#схемы-подключения-и-монтаж">Схемы подключения и монтаж</a></li><li><a href="#таблица-совместимости-и-типовые-значения">Таблица совместимости и типовые значения</a></li><li><a href="#типичные-ошибки-и-методы-диагностики">Типичные ошибки и методы диагностики</a></li><li><a href="#защита-и-безопасность-эксплуатации">Защита и безопасность эксплуатации</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pravilno-tormozit-s-abs-na-avtomate.html">Как правильно тормозить с ABS на автоматической коробке: Полное руководство</a></li><li><a href="/articles/d/da/datchik-polozheniya-tormoza-granta.html">Датчик положения тормоза Лада Гранта: признаки неисправности и замена</a></li><li><a href="/articles/c/ch/chto-takoe-retarder-na-gruzovikakh-i-dlya-chego-on.html">Ретардер на грузовике: что это, виды и как работает система</a></li><li><a href="/articles/g/gi/gidravlicheskij-i-gidrodinamicheskij-v-chem-raznitsa.html">Гидравлический и гидродинамический привод: главные отличия и применение</a></li><li><a href="/articles/k/ko/koldun-v-avtomobile-chto-eto.html">Колдун в автомобиле: что это, принцип работы и неисправности</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Корректное подключение тормозного резистора к частотному преобразователю</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#физика-процесса-и-роль-тормозного-резистора">Физика процесса и роль тормозного резистора</a></li><li><a href="#критерии-выбора-мощности-и-сопротивления">Критерии выбора мощности и сопротивления</a></li><li><a href="#схемы-подключения-и-монтаж">Схемы подключения и монтаж</a></li><li><a href="#таблица-совместимости-и-типовые-значения">Таблица совместимости и типовые значения</a></li><li><a href="#типичные-ошибки-и-методы-диагностики">Типичные ошибки и методы диагностики</a></li><li><a href="#защита-и-безопасность-эксплуатации">Защита и безопасность эксплуатации</a></li><li><a href="#вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Мощный двигатель, разгоняющий тяжелый груз, обладает колоссальной кинетической энергией. При резком останове или форсированном торможении эта энергия не исчезает бесследно, а возвращается в электрическую цепь, вызывая рост напряжения на шине постоянного тока.</p>
+
+<p>Если не обеспечить путь для сброса этой энергии, <strong>частотный преобразователь</strong> уйдет в аварийный режим по перенапряжению или, что хуже, выйдет из строя безвозвратно. Тормозной резистор становится тем самым буфером, который преобразует лишнюю электрическую энергию в тепло, защищая дорогостоящее оборудование.</p>
+
+<p>Задача инженера или монтажника — правильно подобрать этот элемент и корректно интегрировать его в схему управления. Ошибки в расчете мощности или неправильное сечение кабеля могут привести к перегреву, возгоранию или нестабильной работе всей системы привода.</p>
+
+<h2 id="физика-процесса-и-роль-тормозного-резистора">Физика процесса и роль тормозного резистора</h2>
+
+<p>В основе работы системы лежит принцип рекуперации энергии. Когда <em>инвертор</em> переходит в режим торможения, двигатель переключается в режим генератора. Ток начинает течь в обратном направлении, заряжая конденсаторы шины постоянного тока.</p>
+
+<p>Напряжение на шине (обычно около 540 В для 380В сети) начинает расти. Как только оно достигает порога срабатывания <strong>транзистора торможения</strong> (Braking IGBT), встроенного в частотник, цепь замыкается. Ток устремляется через внешний <code>тормозной резистор</code>, рассеиваясь в виде тепла.</p>
+
+<p>Критически важно понимать: резистор не работает постоянно. Он включается импульсами, длительность и частота которых зависят от массы вращающихся частей и требуемого времени остановки. Неправильный подбор приведет к тому, что резистор перегреется раньше, чем двигатель полностью остановится.</p>
+
+<p>В современных системах управления параметрами <code>Параметр торможения</code> в меню частотника определяет чувствительность схемы. Если установить слишком низкий порог срабатывания, транзистор начнет работать в постоянном режиме, что гарантированно выведет его из строя даже при использовании мощного резистора.</p>
+
+<blockquote>⚠️ Внимание: Не все частотные преобразователи имеют встроенный транзистор торможения. Для мощных устройств (обычно свыше 22-30 кВт) часто требуется внешний блок, управляемый сигналом с частотника.</blockquote>
+
+<h2 id="критерии-выбора-мощности-и-сопротивления">Критерии выбора мощности и сопротивления</h2>
+
+<p>Первым шагом при подборе компонента является расчет необходимого сопротивления. Оно должно быть таким, чтобы ток через <strong>тормозной транзистор</strong> не превышал его предельно допустимое значение. Формула проста: сопротивление равно напряжению шины, деленному на максимальный ток.</p>
+
+<p>Второй, не менее важный параметр — мощность. Здесь работает нелинейная зависимость. Пиковая мощность рассеивания может быть в 5-10 раз выше средней, если требуется экстренная остановка. Но если вы выберете резистор с завышенным сопротивлением, ток будет слишком мал, и тормозной момент окажется недостаточным.</p>
+
+<p>Производители частотников (например, <em>Delta, Schneider, Siemens</em>) всегда указывают в документации минимально допустимое сопротивление. Превышение этого значения недопустимо, так как это создает опасную нагрузку на силовой ключ. Использование резистора с меньшим сопротивлением может мгновенно сжечь транзистор.</p>
+
+<div class="pb-poll" id="poll-b7a22786"><div class="pb-poll-question">📊 Как часто вы сталкиваетесь с необходимостью торможения двигателя?</div><div class="pb-poll-option" data-poll="b7a22786" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Редко (раз в месяц)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b7a22786" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Иногда (раз в неделю)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b7a22786" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Часто (каждый день)</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="b7a22786" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Постоянный режим работы</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<p>Для расчета средней мощности резистора необходимо знать коэффициент нагрузки и время цикла работы. Если цикл короткий (разгон-торможение), средняя мощность может быть близка к пиковой. При длительных интервалах работы резистор успевает остыть, и можно использовать более компактные модели.</p>
+
+<h2 id="схемы-подключения-и-монтаж">Схемы подключения и монтаж</h2>
+
+<p>Существует два основных варианта монтажа: использование встроенного транзистора (для малых мощностей) и подключение внешнего силового модуля. В первом случае резистор подключается напрямую к клеммам <code>P+</code> и <code>PB</code> на силовой колодке преобразователя.</p>
+
+<p>Важно соблюдать полярность подключения, если в схеме используются диоды защиты, хотя для чисто резистивной нагрузки она часто не имеет значения. Кабель должен быть термостойким, так как при работе он будет нагреваться. Обычные бытовые провода не подойдут.</p>
+
+<p>При подключении к внешнему блоку торможения схема усложняется. Необходимо подать управляющий сигнал на модуль и обеспечить силовую цепь. Ошибки в маркировке клемм могут привести к короткому замыканию на входе. Всегда сверяйтесь со схемой в паспорте устройства.</p>
+
+<p>Монтаж должен производиться с соблюдением зазоров для вентиляции. Горячий воздух от резистора не должен попадать на чувствительные электронные платы или другие компоненты шкафа управления. Также нельзя устанавливать резистор в непосредственной близости от легковоспламеняющихся материалов.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по монтажу</h4><label class="check-item"><input type="checkbox"><span>Очистить клеммы от окислов</span></label><label class="check-item"><input type="checkbox"><span>Замерить сопротивление резистора мультиметром</span></label><label class="check-item"><input type="checkbox"><span>Затянуть болты с рекомендуемым моментом</span></label><label class="check-item"><input type="checkbox"><span>Проверить изоляцию кабеля</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<p>Длина кабеля между частотником и резистором также играет роль. Хоть это и не высокочастотная цепь, слишком длинные неэкранированные провода могут стать антенной для помех, влияющих на работу датчиков двигателя. Рекомендуется укладывать силовые кабели в отдельный лоток.</p>
+
+<blockquote>⚠️ Внимание: Категорически запрещено заземлять корпус резистора через общий проводник с сигнальными цепями. Это может вызвать ложные срабатывания защиты и нестабильную работу системы.</blockquote>
+
+<h2 id="таблица-совместимости-и-типовые-значения">Таблица совместимости и типовые значения</h2>
+
+<p>Ниже приведена сводная таблица типовых параметров для распространенных серий частотников. Эти данные являются ориентировочными и должны быть уточнены в технической документации конкретного производителя.</p>
+
+<div class="pb-table-wrap"><table>
+  <thead>
+    <tr>
+      <th>Мощность ЧП (кВт)</th>
+      <th>Напряжение цепи (В)</th>
+      <th>Мин. сопротивление (Ом)</th>
+      <th>Рекомендуемая мощность (Вт)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.2 - 3.0</td>
+      <td>380-415</td>
+      <td>50</td>
+      <td>300 - 500</td>
+    </tr>
+    <tr>
+      <td>4.0 - 5.5</td>
+      <td>380-415</td>
+      <td>40</td>
+      <td>500 - 750</td>
+    </tr>
+    <tr>
+      <td>7.5 - 11</td>
+      <td>380-415</td>
+      <td>30</td>
+      <td>1000 - 1500</td>
+    </tr>
+    <tr>
+      <td>15 - 22</td>
+      <td>380-415</td>
+      <td>20</td>
+      <td>2000 - 3000</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Обратите внимание, что для однофазных сетей (220В) значения сопротивления и мощности будут отличаться в связи с меньшим напряжением шины постоянного тока. Использование трехфазных резисторов в однофазных цепях требует пересключения обмоток.</p>
+
+<p>Если вы планируете использовать несколько резисторов параллельно для увеличения мощности, убедитесь, что их сопротивление идентично. Разброс параметров приведет к тому, что один из элементов будет работать с перегрузкой и быстро выйдет из строя.</p>
+
+<details class="pb-accordion"><summary>Почему греется резистор?</summary><div class="pb-accordion-body"><p>Резистор нагревается до 150-200 градусов Цельсия при активной работе. Это нормальное явление. Если корпус холодный при торможении — значит, цепь не замкнулась или параметры настроены неверно.</p></div></details>
+
+<h2 id="типичные-ошибки-и-методы-диагностики">Типичные ошибки и методы диагностики</h2>
+
+<p>Самая распространенная ошибка — попытка заменить штатный резистор на аналог с большим сопротивлением "для надежности". На самом деле, это снижает ток торможения и уменьшает тормозной момент, что может быть критичным для лифтов или кранов.</p>
+
+<p>Другая проблема — использование проводников с недостаточным сечением. При больших токах (<strong>до 10-20 Ампер</strong> в пике) тонкий провод начинает греться, оплавляет изоляцию и может замкнуть на корпус шкафа. Это прямая причина пожаров в электрощитах.</p>
+
+<p>При диагностике неисправности первым делом проверьте сопротивление резистора мультиметром. Сопротивление должно быть в пределах допустимых отклонений (обычно ±5-10%). Если прибор показывает бесконечность — резистор перегорел.</p>
+
+<p>Также стоит проверить целостность транзистора торможения внутри частотника. Если транзистор пробит, частотник может выдавать ошибку перенапряжения даже при отключенном резисторе или, наоборот, замыкать шину на землю.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Перед заменой резистора обязательно отключите питание и подождите 10-15 минут. Конденсаторы шины постоянного тока сохраняют смертельно опасное напряжение даже после выключения автомата.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Правильный подбор сопротивления и мощности — это баланс между эффективностью торможения и безопасностью силовой электроники.</p></aside>
+
+<p>Иногда ошибка возникает из-за неправильных настроек коэффициента торможения в меню. Если параметр установлен на значение "0" или "выключено", транзистор просто не откроется, и энергия будет накапливаться в конденсаторах до срабатывания защиты.</p>
+
+<h2 id="защита-и-безопасность-эксплуатации">Защита и безопасность эксплуатации</h2>
+
+<p>Работа с силовым оборудованием требует соблюдения строгих норм безопасности. Тормозной резистор — это устройство, которое в процессе работы становится источником высокой температуры.</p>
+
+<p>Необходимо обеспечить надежную защиту от случайного прикосновения. Металлический кожух или специальная решетка обязательны, если оборудование находится в доступной зоне. Это особенно актуально в цехах, где работает неквалифицированный персонал.</p>
+
+<p>В системах с высоким потенциалом заземления необходимо использовать <strong>изолированные крепления</strong> для резистора. Контакты клемм должны быть защищены от попадания пыли и металлической стружки, которая может вызвать короткое замыкание.</p>
+
+<p>Регулярный осмотр соединений должен включать проверку на предмет окисления и ослабления контактов. Вибрация от работающего оборудования со временем раскручивает болтовые соединения, что ведет к искрению и перегреву.</p>
+
+<blockquote>⚠️ Внимание: Если вы заметили запах гари или сильное потемнение изоляции на кабеле питания резистора, немедленно отключите питание и замените провод. Игнорирование этих признаков приведет к возгоранию.</blockquote>
+
+<p>Также важно учитывать климатические условия. В помещениях с высокой влажностью или агрессивными парами резистор должен иметь соответствующий класс защиты (IP54 и выше) или быть вынесен в отдельный отсек с принудительной вентиляцией.</p>
+
+<h2 id="вопросы-и-ответы-faq">Вопросы и ответы (FAQ)</h2>
+
+<details>
+  <summary>Можно ли подключить тормозной резистор без транзистора торможения?</summary>
+  <p>Нет, напрямую подключать резистор к шине постоянного тока нельзя. Он должен управляться транзистором, который открывается только при достижении определенного уровня напряжения. Иначе резистор будет постоянно нагружать инвертор, вызывая его перегрев и выход из строя.</p>
+</details>
+
+<details>
+  <summary>Как определить, что резистор перегорел?</summary>
+  <p>Основной признак — мультиметр покажет бесконечное сопротивление (обрыв). Также визуально можно увидеть почернение корпуса или оплавление керамического основания. В процессе работы частотник может выдавать ошибку "Low Voltage" или "Braking Fault".</p>
+</details>
+
+<details>
+  <summary>Какой кабель использовать для подключения резистора?</summary>
+  <p>Рекомендуется использовать термостойкий кабель с силиконовой изоляцией (типа РКГМ или аналог) или специальный кабель для резисторов. Обычный ПВ-3 или ВВГ может оплавиться при нагреве корпуса. Сечение должно соответствовать максимальному току торможения.</p>
+</details>
+
+<details>
+  <summary>Нужно ли заземлять корпус тормозного резистора?</summary>
+  <p>Да, корпус обязательно должен быть надежно заземлен для защиты персонала от поражения током в случае пробоя изоляции. Заземление должно быть выполнено отдельным проводником, не проходящим через разъемные соединения.</p>
+</details>
+
+<details>
+  <summary>Можно ли использовать два резистора вместо одного?</summary>
+  <p>Да, можно соединять резисторы параллельно или последовательно. При параллельном соединении общая мощность увеличивается, а сопротивление уменьшается вдвое. При последовательном — сопротивление удваивается, а мощность остается суммарной. Важно подбирать идентичные модели.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/k/ka/kak-pravilno-tormozit-s-abs-na-avtomate.html" class="pb-related-card">
+                <span class="pb-related-title">Как правильно тормозить с ABS на автоматической коробке: Полное руководство</span>
+                <span class="pb-related-desc">Узнайте отличие работы ABS на автомате от механики. Пошаговая инструкция экстренного торможения, осо</span>
+            </a><a href="/articles/d/da/datchik-polozheniya-tormoza-granta.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик положения тормоза Лада Гранта: признаки неисправности и замена</span>
+                <span class="pb-related-desc">Полный разбор работы датчика стоп-сигналов на Lada Granta. Симптомы поломки, пошаговая инструкция по</span>
+            </a><a href="/articles/c/ch/chto-takoe-retarder-na-gruzovikakh-i-dlya-chego-on.html" class="pb-related-card">
+                <span class="pb-related-title">Ретардер на грузовике: что это, виды и как работает система</span>
+                <span class="pb-related-desc">Полный гид по ретардерам: принцип работы, отличия от эстафет, виды ретардеров и правила эксплуатации</span>
+            </a><a href="/articles/g/gi/gidravlicheskij-i-gidrodinamicheskij-v-chem-raznitsa.html" class="pb-related-card">
+                <span class="pb-related-title">Гидравлический и гидродинамический привод: главные отличия и применение</span>
+                <span class="pb-related-desc">Разбираем разницу между гидравлической и гидродинамической системами. Принцип работы, КПД, области п</span>
+            </a><a href="/articles/k/ko/koldun-v-avtomobile-chto-eto.html" class="pb-related-card">
+                <span class="pb-related-title">Колдун в автомобиле: что это, принцип работы и неисправности</span>
+                <span class="pb-related-desc">Разбираемся, что такое «колдун» в тормозной системе автомобиля, как он работает, признаки неисправно</span>
+            </a><a href="/articles/d/da/datchik-abs-granta-fl.html" class="pb-related-card">
+                <span class="pb-related-title">Датчик ABS Lada Granta: симптомы, диагностика и замена</span>
+                <span class="pb-related-desc">Полное руководство по диагностике и замене датчика АБС на Лада Гранта. Признаки неисправности, прове</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

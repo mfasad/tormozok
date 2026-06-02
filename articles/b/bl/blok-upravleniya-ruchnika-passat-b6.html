@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Блок управления ручника Passat B6: диагностика, прошивка и замена — ТормозОК</title>
+    <meta name="description" content="Полный гайд по электронному блоку управления Ручного Тормоза VW Passat B6. Причины ошибок, методы ремонта, прошивка и замена модуля EPB с инструкциями.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/b/bl/blok-upravleniya-ruchnika-passat-b6.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Блок управления ручника Passat B6: диагностика, прошивка и замена">
+    <meta property="og:description" content="Полный гайд по электронному блоку управления Ручного Тормоза VW Passat B6. Причины ошибок, методы ремонта, прошивка и замена модуля EPB с инструкциями.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/ruchnoj-tormoz/">Ручной тормоз</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Блок управления ручника Passat B6: диагностика, прошивка и замена</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#устройство-и-принцип-работы-электронного-ручника">Устройство и принцип работы электронного ручника</a></li><li><a href="#типичные-неисправности-модуля-epb">Типичные неисправности модуля EPB</a></li><li><a href="#диагностика-и-чтение-ошибок-сканером">Диагностика и чтение ошибок сканером</a></li><li><a href="#процедура-ремонта-и-замены-блока">Процедура ремонта и замены блока</a></li><li><a href="#процедура-калибровки-и-адаптации">Процедура калибровки и адаптации</a></li><li><a href="#влияние-качества-деталей-на-надежность-системы">Влияние качества деталей на надежность системы</a></li><li><a href="#профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</a></li><li><a href="#резюме-и-важность-профессионального-подхода">Резюме и важность профессионального подхода</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/z/za/zamena-trosov-ruchnika-fokus-3.html">Замена тросов ручного тормоза Ford Focus 3: Инструкция и нюансы</a></li><li><a href="/articles/t/tr/tros-ruchnika-golf-2.html">Трос ручника Golf 2: признаки износа, подбор и замена своими руками</a></li><li><a href="/articles/k/ka/kak-snyat-ruchku-ruchnogo-tormoza.html">Как снять ручку ручного тормоза: пошаговая инструкция по разборке</a></li><li><a href="/articles/k/ka/kak-podtyanut-ruchnik-na-nive-21214.html">Регулировка ручного тормоза на Ниве 21214: пошаговая инструкция</a></li><li><a href="/articles/c/ch/chem-smazat-tros-ruchnika-pered-ustanovkoj.html">Чем смазать трос ручника перед установкой: выбор состава и инструкция</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Блок управления ручника Passat B6: Диагностика, Ремонт и Замена</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#устройство-и-принцип-работы-электронного-ручника">Устройство и принцип работы электронного ручника</a></li><li><a href="#типичные-неисправности-модуля-epb">Типичные неисправности модуля EPB</a></li><li><a href="#диагностика-и-чтение-ошибок-сканером">Диагностика и чтение ошибок сканером</a></li><li><a href="#процедура-ремонта-и-замены-блока">Процедура ремонта и замены блока</a></li><li><a href="#процедура-калибровки-и-адаптации">Процедура калибровки и адаптации</a></li><li><a href="#влияние-качества-деталей-на-надежность-системы">Влияние качества деталей на надежность системы</a></li><li><a href="#профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</a></li><li><a href="#резюме-и-важность-профессионального-подхода">Резюме и важность профессионального подхода</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Электронный стояночный тормоз (EPB) — одна из самых капризных систем в <em>Volkswagen Passat B6</em>, которая часто становится источником нервов для владельцев. Вместо привычного рычага здесь установлен сервопривод, управляемый сложным электронным блоком, который может выйти из строя как из-за внешних факторов, так и по внутренним причинам. Когда на приборной панели загорается индикатор неисправности тормоза, проблема часто кроется именно в <strong>электронном блоке управления</strong>, а не в самих механизмах на колесах.</p>
+<p>Многие автовладельцы путают симптомы, пытаясь смазать суппорта или заменить колодки, хотя реальная причина кроется в потере связи с <strong>модулем EPB</strong> или сбое прошивки. Понимание архитектуры этой системы и особенностей работы контроллера помогает избежать замены дорогостоящих узлов и правильно диагностировать поломку.</p>
+
+<h2 id="устройство-и-принцип-работы-электронного-ручника">Устройство и принцип работы электронного ручника</h2>
+<p>В основе системы лежит <strong>блок управления электромеханическим тормозом</strong>, который получает сигналы от переключателя на туннеле и датчиков положения поршней суппортов. Этот модуль обрабатывает запрос водителя и подает напряжение на электродвигатели, встроенные в задние суппорты <em>Passat B6</em>. Процесс занимает доли секунды, но требует высокой точности управления током.</p>
+<p>Блок управления постоянно мониторит токи потребления двигателей. Если сопротивление поршня слишком высокое (заедание) или слишком низкое (обрыв цепи), система фиксирует ошибку и блокирует дальнейшие действия. Важно понимать, что <strong>электроника</strong> здесь защищает механику, но сама же является первым узлом, требующим внимания при сбоях.</p>
+<p>Система также включает в себя функцию автоматического отключения при трогании с места: как только вы нажимаете на газ, блок управления отдает команду на разблокировку колодок. Если этот алгоритм нарушен, автомобиль может ехать с подтормаживанием, что приводит к перегреву <strong>тормозных дисков</strong>.</p>
+
+<h2 id="типичные-неисправности-модуля-epb">Типичные неисправности модуля EPB</h2>
+<p>Самая распространенная проблема — выход из строя внутренних силовых транзисторов или реле, управляющих подачей напряжения. При этом машина может перестать реагировать на кнопку включения ручника, или же загорится индикатор «Park Brake Fault» на приборной панели. Диагностика показывает код ошибки, указывающий на <strong>обрыв цепи</strong> или <strong>короткое замыкание</strong>.</p>
+<p>Второй по частоте сценарий — потеря калибровочных данных или сбой программного обеспечения. Это происходит после скачков напряжения в бортовой сети или некорректного отключения аккумулятора. В таком случае механизм физически исправен, но <strong>контроллер</strong> не знает, в каком положении находятся поршни, и отказывается их двигать.</p>
+<p>Иногда проблема кроется в разъеме подключения. Из-за попадания влаги или вибрации контакты окисляются, что вызывает потерю контакта. В этом случае блок управления может периодически отключаться, вызывая мигание индикатора ручника. Проверка <strong>контактной группы</strong> часто решает проблему без сложного ремонта электроники.</p>
+
+<blockquote>⚠️ Внимание: Перед началом любых работ с <strong>электронным блоком управления</strong> необходимо убедиться, что аккумулятор автомобиля полностью заряжен. Падение напряжения ниже 12 вольт во время диагностики может привести к необратимому сбою прошивки.</blockquote>
+
+<div class="pb-poll" id="poll-841e18bc"><div class="pb-poll-question">📊 Какая ошибка чаще всего встречается на вашем Passat B6?</div><div class="pb-poll-option" data-poll="841e18bc" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Нет реакции на кнопку</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="841e18bc" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Саморазблокировка ручника</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="841e18bc" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Ошибка датчика положения</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="841e18bc" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Код неисправности двигателя</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="диагностика-и-чтение-ошибок-сканером">Диагностика и чтение ошибок сканером</h2>
+<p>Для точного определения причины поломки необходим профессиональный диагностический сканер, способный работать с системой <strong>EPB</strong>. Обычные дешевые адаптеры могут считывать только общие коды ошибок двигателя, игнорируя специфические статусы тормозной системы. Используйте ПО типа VCDS (VAG-COM) или VAS-PC, подключившись через порт OBD-II.</p>
+<p>В меню диагностики выберите блок <code>53 — Parking Brake</code> (Управление парковочным тормозом). Здесь вы увидите не только текущие ошибки, но и статус калибровки. Если вы видите сообщение «No Signal Communication» (Нет сигнала связи), проблема точно в блоке управления или проводке. Ошибки типа «Open Circuit» (Обрыв цепи) могут указывать на неисправность моторов или проводки.</p>
+<p>Обратите внимание на значения адаптации. В режиме измерения вы можете увидеть параметры, показывающие усилие затяжки и текущее положение поршней. Если значения выходят за допустимые пределы, <strong>блок управления</strong> может блокировать работу системы до проведения процедуры адаптации.</p>
+
+<h2 id="процедура-ремонта-и-замены-блока">Процедура ремонта и замены блока</h2>
+<p>Если диагностика подтвердила неисправность самого модуля, у вас есть два пути: профессиональный ремонт платы или полная замена устройства. Ремонт часто дешевле, но требует высокой квалификации паяльника и знаний схемотехники <em>Continental</em> или <em>Bosch</em>, которые устанавливались на <strong>Passat B6</strong>.</p>
+<p>При замене важно правильно подобрать аналог. Номер детали на корпусе должен совпадать с оригинальным, либо быть допустимой заменой по каталогам. После установки нового блока обязательно потребуется кодирование и базовая настройка. Без этих шагов система не будет работать корректно, даже с новым <strong>электронным модулем</strong>.</p>
+<p>Процесс замены включает в себя снятие обшивки тоннеля, отключение разъема и откручивание креплений. Будьте осторожны с разъемами, так как пин-контакты хрупкие. Установите новый блок, подключите питание и запустите процедуру инициализации через диагностическое оборудование.</p>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Инструкция по замене блока</h4><label class="check-item"><input type="checkbox"><span>Отключить минусовую клемму АКБ</span></label><label class="check-item"><input type="checkbox"><span>Снять декоративную накладку тоннеля</span></label><label class="check-item"><input type="checkbox"><span>Отсоединить шлейф от модуля EPB</span></label><label class="check-item"><input type="checkbox"><span>Установить новый блок и провести адаптацию</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<blockquote>⚠️ Внимание: После замены блока управления необходимо провести процедуру <strong>калибровки датчика положения</strong> поршней. Если это не сделать, ручник может не отпускаться до конца или отпускаться слишком рано, что приведет к перегреву тормозов.</blockquote>
+
+<h2 id="процедура-калибровки-и-адаптации">Процедура калибровки и адаптации</h2>
+<p>После установки нового или отремонтированного блока управление необходимо провести процедуру адаптации. Это не просто сброс ошибок, а процесс, при котором <strong>контроллер</strong> изучает ход поршней и запоминает точки начала и конца затяжки. Игнорирование этого этапа приведет к нестабильной работе системы.</p>
+<p>Для адаптации используйте диагностический сканер и войдите в меню базовых настроек. Выберите функцию «Адаптация тормозных колодок» или «Инициализация EPB». Следуйте инструкциям на экране устройства. Процесс займет несколько минут, и вы услышите характерный звук работы моторов суппортов.</p>
+<p>Во время адаптации автомобиль должен стоять на ровной поверхности, а стояночный тормоз должен быть отпущен. После завершения процедуры проверьте работу ручника несколько раз: затяните и отпустите его, убедившись, что индикаторы на панели загораются и гаснут четко. Если адаптация прошла успешно, <strong>блок управления</strong> перейдет в рабочий режим.</p>
+
+<details class="pb-accordion"><summary>Что делать, если адаптация не проходит?</summary><div class="pb-accordion-body"><p>Если процедура адаптации не завершается успешно, проверьте состояние аккумуляторов и качество контактов в разъеме. Часто проблема кроется в низком напряжении или плохом контакте, который мешает передаче данных. Попробуйте провести процедуру снова, предварительно прогрев двигатель до рабочей температуры, чтобы стабилизировать напряжение в бортовой сети.</p></div></details>
+
+<h2 id="влияние-качества-деталей-на-надежность-системы">Влияние качества деталей на надежность системы</h2>
+<p>Надежность работы всей системы EPB напрямую зависит от качества используемых расходников. Электродвигатели суппортов, соединенные с блоком управления, требуют качественной смазки и исправных поршней. Если механизм закис, <strong>блок управления</strong> пытается преодолеть сопротивление, что ведет к перегреву и выходу из строя силовых ключей.</p>
+<p>Используйте только оригинальные колодки или качественные аналоги, которые имеют правильную геометрию и состав фрикционного материала. Дешевые колодки могут крошиться или иметь неравномерный износ, что создает разную нагрузку на левый и правый суппорт. Блок управления фиксирует эту разницу как аномалию и может заблокировать систему.</p>
+<p>Регулярная очистка направляющих и смазка поршней помогает снизить нагрузку на <strong>электронику</strong>. Не забывайте проверять состояние проводки, особенно в местах прохода через гофру двери или тоннеля, где провода часто переламываются от вибрации. Профилактика дешевле, чем замена <strong>модуля управления</strong>.</p>
+
+<div class="pb-table-wrap"><table>
+<thead>
+<tr>
+<th>Неисправность</th>
+<th>Симптом</th>
+<th>Вероятная причина</th>
+<th>Решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Нет реакции на кнопку</td>
+<td>Индикатор мигает, звук отсутствует</td>
+<td>Сбой прошивки или предохранитель</td>
+<td>Проверка предохранителя, перепрошивка</td>
+</tr>
+<tr>
+<td>Ручник не отпускается</td>
+<td>Автомобиль не едет, слышен гул</td>
+<td>Блокировка поршней или сбой адаптации</td>
+<td>Принудительное откручивание, адаптация</td>
+</tr>
+<tr>
+<td>Ошибка по цепи</td>
+<td>Код ошибки "Open Circuit"</td>
+<td>Обрыв провода или неисправность мотора</td>
+<td>Замена проводки или двигателя суппорта</td>
+</tr>
+<tr>
+<td>Самостоятельное срабатывание</td>
+<td>Ручник включается без нажатия</td>
+<td>Неисправность выключателя или датчика</td>
+<td>Замена выключателя на туннеле</td>
+</tr>
+<tr>
+<td>Перегрев моторов</td>
+<td>Запах гари, дым</td>
+<td>Закисание поршней суппортов</td>
+<td>Ремонт суппортов, замена смазки</td>
+</tr>
+</tbody>
+</table></div>
+
+<h2 id="профилактика-и-советы-по-эксплуатации">Профилактика и советы по эксплуатации</h2>
+<p>Чтобы продлить жизнь <strong>модулю управления</strong>, избегайте частых циклов включения и выключения ручника на горячем двигателе, если это не требуется. Также старайтесь не оставлять автомобиль надолго с включенным ручником на крутых склонах, если система не работает корректно — это создает чрезмерную нагрузку на механизм.</p>
+<p>В холодное время года, перед началом движения, обязательно проверяйте, отключился ли ручной тормоз. Иногда из-за обледенения колодок механизм может не отпустить их полностью, что приведет к перегреву. В этом случае проведите краткую проверку работы системы после прогрева.</p>
+<p>Если вы планируете замену аккумулятора, обязательно используйте внешний источник питания (бустер), чтобы напряжение в сети не падало ниже критического уровня. Резкое падение напряжения может «сжечь» память <strong>контроллера</strong> или вызвать сбой в работе микропроцессора.</p>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Регулярная диагностика и чистка механизма суппортов продлят жизнь электронному блоку управления в 2-3 раза, так как снизится нагрузка на силовые транзисторы.</p></aside>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>При замене аккумулятора всегда используйте стабилизатор напряжения (бустер) — это критически важно для сохранения данных в блоке управления EPB.</p></aside>
+
+<h2 id="резюме-и-важность-профессионального-подхода">Резюме и важность профессионального подхода</h2>
+<p>Система электронного ручника на <em>Passat B6</em> — это сложный комплекс, где механика и электроника неразрывно связаны. Попытки ремонта своими руками без понимания принципов работы могут привести к еще более серьезным поломкам. Если вы не уверены в своих силах, лучше доверить диагностику и ремонт <strong>специализированному сервису</strong>.</p>
+<p>Правильная диагностика, использование оригинальных запчастей и соблюдение процедур адаптации — залог долгой и надежной работы системы. Игнорирование ошибок и попытка «закрыть глаза» на мигающую лампочку может привести к полной неработоспособности тормозной системы в критический момент.</p>
+<p>Помните, что <strong>блок управления ручника</strong> является критически важным элементом безопасности. Его своевременный ремонт или замена обеспечат вам спокойствие на дороге и уверенность в надежности автомобиля. Не откладывайте решение проблемы, если заметили первые признаки неисправности.</p>
+
+<details>
+<summary>Почему ручник на Passat B6 не отпускается?</summary>
+<p>Причинами могут быть разряженный аккумулятор, заклинившие поршни суппортов, сбой прошивки блока управления или обрыв проводки. Чаще всего проблема решается проведением адаптации через диагностический сканер или заменой изношенных компонентов суппорта.</p>
+</details>
+
+<details>
+<summary>Можно ли ездить с неисправным блоком управления ручника?</summary>
+<p>Ездить технически можно, но это небезопасно. Система может заблокировать колеса в любой момент или, наоборот, не включиться при стоянке. Кроме того, постоянные ошибки могут влиять на работу других систем, связанных с ABS и ESP.</p>
+</details>
+
+<details>
+<summary>Сколько стоит ремонт блока управления EPB?</summary>
+<p>Стоимость ремонта зависит от типа неисправности. Замена предохранителей или перепрошивка обойдется недорого, тогда как замена силовых транзисторов или всего модуля может стоить значительную сумму. Ориентируйтесь на цены в вашем регионе и статус сервиса.</p>
+</details>
+
+<details>
+<summary>Нужна ли адаптация после замены блока?</summary>
+<p>Да, адаптация обязательна. Новый блок управления не знает положения поршней суппортов и не сможет корректно управлять затяжкой и отпуском тормоза без проведения процедуры базовой настройки через диагностическое оборудование.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/z/za/zamena-trosov-ruchnika-fokus-3.html" class="pb-related-card">
+                <span class="pb-related-title">Замена тросов ручного тормоза Ford Focus 3: Инструкция и нюансы</span>
+                <span class="pb-related-desc">Полное руководство по замене тросов РТ на Ford Focus 3. Диагностика износа, подбор запчастей, пошаго</span>
+            </a><a href="/articles/t/tr/tros-ruchnika-golf-2.html" class="pb-related-card">
+                <span class="pb-related-title">Трос ручника Golf 2: признаки износа, подбор и замена своими руками</span>
+                <span class="pb-related-desc">Полный гайд по замене троса ручного тормоза на VW Golf 2. Как определить износ, выбрать качественный</span>
+            </a><a href="/articles/k/ka/kak-snyat-ruchku-ruchnogo-tormoza.html" class="pb-related-card">
+                <span class="pb-related-title">Как снять ручку ручного тормоза: пошаговая инструкция по разборке</span>
+                <span class="pb-related-desc">Узнайте, как аккуратно снять ручку стояночного тормоза для замены кожуха или ремонта механизма. Подр</span>
+            </a><a href="/articles/k/ka/kak-podtyanut-ruchnik-na-nive-21214.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка ручного тормоза на Ниве 21214: пошаговая инструкция</span>
+                <span class="pb-related-desc">Узнайте, как правильно подтянуть ручник на Ниве 21214 своими руками. Пошаговый алгоритм, необходимые</span>
+            </a><a href="/articles/c/ch/chem-smazat-tros-ruchnika-pered-ustanovkoj.html" class="pb-related-card">
+                <span class="pb-related-title">Чем смазать трос ручника перед установкой: выбор состава и инструкция</span>
+                <span class="pb-related-desc">Узнайте, чем правильно смазать трос стояночного тормоза. Обзор составов, пошаговая инструкция замены</span>
+            </a><a href="/articles/r/ra/rav-4-regulirovka-ruchnika.html" class="pb-related-card">
+                <span class="pb-related-title">Регулировка ручника Toyota RAV4: Пошаговая инструкция и нюансы</span>
+                <span class="pb-related-desc">Как отрегулировать стояночный тормоз на RAV4 самостоятельно. Причины износа, инструменты, пошаговый </span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

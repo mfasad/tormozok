@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🛑</text></svg>">
+    <title>Принцип работы пневматической системы: устройство и физика процесса — ТормозОК</title>
+    <meta name="description" content="Подробный разбор принципа работы пневматической тормозной системы автомобиля. Изучите физические основы, компоненты и особенности управления давлением.">
+    <link rel="canonical" href="https://tormozok.vercel.app/articles/p/pr/printsip-raboty-pnevmaticheskoj-sistemy.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Принцип работы пневматической системы: устройство и физика процесса">
+    <meta property="og:description" content="Подробный разбор принципа работы пневматической тормозной системы автомобиля. Изучите физические основы, компоненты и особенности управления давлением.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    
+</head>
+<body class="pb-body">
+    
+    <div class="pb-topbar"></div>
+    <header class="pb-header">
+        <div class="pb-container pb-header-inner">
+            <a href="/" class="pb-logo">
+                <span class="pb-logo-icon">🛑</span>
+                <span class="pb-logo-text">ТормозОК</span>
+            </a>
+            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <nav class="pb-nav" id="pbMainNav">
+                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
+<div class="pb-nav-dropdown">
+            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
+<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
+<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
+<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
+<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
+<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
+<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
+<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
+<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
+<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
+<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
+<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
+<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
+<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="pb-breadcrumbs" aria-label="Навигация">
+        <div class="pb-container"><a href="/">Главная</a><span class="pb-bc-sep">/</span><a href="/category/drugoe/">Другое</a><span class="pb-bc-sep">/</span><span class="pb-bc-current">Принцип работы пневматической системы: устройство и физика процесса</span></div>
+    </nav>
+
+    <main class="pb-main">
+        <div class="pb-container">
+            <div class="pb-article-layout">
+                <aside class="pb-sidebar">
+                    
+                    <nav class="pb-sidebar-search"><div class="pb-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav>
+                    <nav class="pb-sidebar-toc"><h3>📋 Содержание</h3><ul><li><a href="#устройство-и-основные-компоненты-системы">Устройство и основные компоненты системы</a></li><li><a href="#физика-процесса-торможения-и-передачи-усилия">Физика процесса торможения и передачи усилия</a></li><li><a href="#функционирование-системы-в-аварийном-режиме">Функционирование системы в аварийном режиме</a></li><li><a href="#влияние-качества-воздуха-и-влажности-на-работу">Влияние качества воздуха и влажности на работу</a></li><li><a href="#ремонт-и-обслуживание-пневматических-контуров">Ремонт и обслуживание пневматических контуров</a></li><li><a href="#особенности-работы-с-прицепами-и-полуприцепами">Особенности работы с прицепами и полуприцепами</a></li><li><a href="#перспективы-развития-и-электронизация-систем">Перспективы развития и электронизация систем</a></li></ul></nav>
+                    
+                    <nav class="pb-sidebar-related"><h3>📰 Похожие статьи</h3><ul><li><a href="/articles/g/gd/gde-tormoza-u-cheloveka.html">Где находятся тормоза у человека: анатомия и психология</a></li><li><a href="/articles/c/ch/chto-takoe-revers-v-samolete-pri-posadke.html">Реверс в самолете при посадке: принцип работы и назначение</a></li><li><a href="/articles/s/sa/samyj-prokhodimyj-gruzovik-v-mire-zil-157-i-131.html">ЗиЛ-157 и 131: самый проходимый грузовик в мире и его особенности</a></li><li><a href="/articles/m/ma/malenkaya-skorost-zapisi-na-ssd.html">Почему маленькая скорость записи на SSD: причины и способы решения</a></li><li><a href="/articles/k/kl/klichko-ne-tolko-lish-vse-tsitata.html">Цитата «Кличко не только лишь все»: происхождение и смысл мема</a></li></ul></nav>
+                    
+                </aside>
+                <article class="pb-article">
+                    <h1>Принцип работы пневматической системы в транспортных средствах</h1>
+                    <nav class="pb-mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#устройство-и-основные-компоненты-системы">Устройство и основные компоненты системы</a></li><li><a href="#физика-процесса-торможения-и-передачи-усилия">Физика процесса торможения и передачи усилия</a></li><li><a href="#функционирование-системы-в-аварийном-режиме">Функционирование системы в аварийном режиме</a></li><li><a href="#влияние-качества-воздуха-и-влажности-на-работу">Влияние качества воздуха и влажности на работу</a></li><li><a href="#ремонт-и-обслуживание-пневматических-контуров">Ремонт и обслуживание пневматических контуров</a></li><li><a href="#особенности-работы-с-прицепами-и-полуприцепами">Особенности работы с прицепами и полуприцепами</a></li><li><a href="#перспективы-развития-и-электронизация-систем">Перспективы развития и электронизация систем</a></li></ul></details></nav>
+                    
+                    <div class="pb-article-body">
+
+<p>Пневматическая система является фундаментальным элементом безопасности для тяжелого коммерческого транспорта, обеспечивая надежное замедление и полную остановку при огромных массах. В отличие от гидравлики, здесь в качестве рабочего тела используется сжатый воздух, что позволяет передавать усилие на большие расстояния без потерь и обеспечивает работу вспомогательных узлов. Понимание того, как именно воздух превращается в тормозное усилие, критически важно для любого специалиста, занимающегося обслуживанием грузовиков и автобусов.</p>
+
+<p>Физическая основа процесса базируется на законах термодинамики и гидравлики газов. Когда <strong>компрессор</strong> нагнетает воздух в ресиверы, создается запас потенциальной энергии, которая мгновенно преобразуется в кинетическую энергию движения поршней при нажатии педали. Эта система обладает уникальной особенностью: при разгерметизации она автоматически срабатывает, что делает принцип работы пневматики безопасным в аварийных ситуациях.</p>
+
+<h2 id="устройство-и-основные-компоненты-системы">Устройство и основные компоненты системы</h2>
+
+<p>Любая современная <strong>пневматическая тормозная система</strong> представляет собой сложный комплекс узлов, каждый из которых выполняет строго определенную функцию. Центральным элементом, создающим рабочее давление, является <em>воздухонагнетатель</em>, приводимый в движение двигателем транспортного средства. Он закачивает атмосферный воздух, очищает его от примесей и направляет в накопительные баллоны.</p>
+
+<p>Для обеспечения стабильной работы в системе присутствуют различные виды клапанов, регулирующих поток и давление. <strong>Редукционный клапан</strong> отвечает за поддержание оптимального уровня сжатия, сбрасывая излишки в атмосферу, чтобы предотвратить разрыв шлангов. Без этого элемента работа всей схемы была бы невозможна из-за критического роста давления.</p>
+
+<p>Кроме того, система включает в себя осушители воздуха, которые удаляют влагу, способную превратиться в лед зимой и заблокировать клапаны. <em>Тормозные камеры</strong> с мембранами или поршнями являются конечным звеном, где сжатый газ толкает шток, передающий усилие на тормозные колодки.</p>
+
+<h2 id="физика-процесса-торможения-и-передачи-усилия">Физика процесса торможения и передачи усилия</h2>
+
+<p>Процесс начинается с водителя, нажимающего на <strong>педаль тормоза</strong>. Это механическое действие открывает клапан в <em>телевальном кране</strong>, соединяя линию управления с линией подачи воздуха из ресивера. Сжатый воздух мгновенно поступает в тормозные камеры, расположенные у каждого колеса.</p>
+
+<p>Здесь работает принцип преобразования энергии: давление воздуха действует на большую площадь мембраны, создавая значительное усилие на штоке. Это усилие через <strong>тормозной механизм</strong> прижимает колодки к тормозному диску или барабану, создавая силу трения, которая и останавливает транспортное средство.</p>
+
+<p>Интересно, что система спроектирована так, чтобы усилие нарастало плавно, но при необходимости могло быть приложено максимально быстро. <em>Тормозная камера</strong> имеет специфический ход, который учитывает износ накладок и обеспечивает постоянный контакт.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Неправильная регулировка зазора в тормозных механизмах может привести к неполному растормаживанию колес, что вызывает перегрев системы и потерю управляемости при длительном движении.</p>
+</blockquote>
+
+<h2 id="функционирование-системы-в-аварийном-режиме">Функционирование системы в аварийном режиме</h2>
+
+<p>Одним из главных преимуществ пневматики является принцип "открытой системы" в контексте безопасности. Если происходит разрыв шланга или полный отказ компрессора, давление в магистрали падает. Специальные <strong>запорные клапаны</strong> срабатывают автоматически, выпуская воздух из тормозных камер.</p>
+
+<p>Поскольку в нормальном состоянии (при наличии давления) пневматические камеры расторможены с помощью пружин, падение давления приводит к тому, что мощные <em>упругие пружины</strong> внутри камер разжимаются и прижимают тормозные колодки к дискам. Это явление называется автоматическим торможением.</p>
+
+<p>Таким образом, система не просто перестает работать, а переходит в режим полной блокировки колес. Это гарантирует, что транспортное средство остановится даже при полной потере управления или отказе водителя. Это фундаментальное отличие от гидравлики, где отказ насоса часто означает потерю тормозов.</p>
+
+<div class="pb-poll" id="poll-0d25f792"><div class="pb-poll-question">📊 Какая проблема с пневматикой встречается чаще всего?</div><div class="pb-poll-option" data-poll="0d25f792" data-idx="0" onclick="pbPollVote(this)"><span class="pb-poll-label">Падение давления</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0d25f792" data-idx="1" onclick="pbPollVote(this)"><span class="pb-poll-label">Коррозия трубок</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0d25f792" data-idx="2" onclick="pbPollVote(this)"><span class="pb-poll-label">Негерметичность клапанов</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div><div class="pb-poll-option" data-poll="0d25f792" data-idx="3" onclick="pbPollVote(this)"><span class="pb-poll-label">Износ мембран</span><span class="pb-poll-bar"></span><span class="pb-poll-pct"></span></div></div>
+
+<h2 id="влияние-качества-воздуха-и-влажности-на-работу">Влияние качества воздуха и влажности на работу</h2>
+
+<p>Сжатый воздух, поступающий из атмосферы, неизбежно содержит влагу, масло и пыль. Если эти примеси не удалять перед попаданием в <strong>ресиверы</strong>, они будут конденсироваться внутри системы. В зимний период вода замерзает, перекрывая каналы и блокируя работу клапанов управления.</p>
+
+<p>Современные системы оснащаются <em>осушителями воздуха</strong> с картриджами, которые задерживают влагу и масло. Регулярная замена этих фильтров является обязательной процедурой. Игнорирование этого требования ведет к преждевременному выходу из строя всей пневмоаппаратуры.</p>
+
+<p>Коррозия стенок ресиверов также является серьезной проблемой. Влага, смешанная с кислотами из выхлопных газов, разъедает металл изнутри, образуя отложения. Эти отложения могут закупорить тонкие каналы в распределительных клапанах.</p>
+
+<div class="pb-table-wrap"><table>
+ <thead>
+  <tr>
+   <th>Компонент</th>
+   <th>Основная функция</th>
+   <th>Частая неисправность</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>Компрессор</td>
+   <td>Нагнетание сжатого воздуха</td>
+   <td>Износ поршневых колец</td>
+  </tr>
+  <tr>
+   <td>Ресивер</td>
+   <td>Накопление и охлаждение воздуха</td>
+   <td>Внутренняя коррозия</td>
+  </tr>
+  <tr>
+   <td>Кран тормозной</td>
+   <td>Регулировка потока к камерам</td>
+   <td>Закисание золотника</td>
+  </tr>
+  <tr>
+   <td>Осушитель</td>
+   <td>Удаление влаги и масла</td>
+   <td>Забитый картридж</td>
+  </tr>
+ </tbody>
+</table></div>
+
+<div class="pb-steps"><h4 class="pb-steps-title">☑️ Диагностика герметичности системы</h4><label class="check-item"><input type="checkbox"><span>Заглушить двигатель</span></label><label class="check-item"><input type="checkbox"><span>Следить за манометром</span></label><label class="check-item"><input type="checkbox"><span>Искать шипение</span></label><label class="check-item"><input type="checkbox"><span>Проверить клапан сброса</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="ремонт-и-обслуживание-пневматических-контуров">Ремонт и обслуживание пневматических контуров</h2>
+
+<p>Обслуживание системы требует строгого соблюдения регламента. В первую очередь необходимо проверять уровень масла в <strong>компрессоре</strong> и целостность приводного ремня. Регулярный слив конденсата из ресиверов предотвращает коррозию и замерзание.</p>
+
+<p>При диагностике утечек используются специальные методы. Например, нанесение мыльного раствора на соединения позволяет визуально определить место выхода воздуха. Также применяются <em>акустические детекторы</strong> для поиска микро-утечек в шумных условиях цеха.</p>
+
+<p>Замена уплотнителей и мембран должна производиться только с использованием оригинальных материалов. Дешевые аналоги могут не выдержать давления или высокой температуры, что приведет к повторному отказу системы в самое неподходящее время.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При работе с высоконагретыми элементами пневмосистемы (например, компрессором) необходимо соблюдать предельную осторожность, так как риск ожога при внезапном выбросе горячего воздуха крайне высок.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Всегда проверяйте давление воздуха перед началом рабочего дня: падение ниже номинального значения может свидетельствовать о скрытой утечке в магистрали.</p></aside>
+
+<h2 id="особенности-работы-с-прицепами-и-полуприцепами">Особенности работы с прицепами и полуприцепами</h2>
+
+<p>При движении в составе с прицепом система работает в режиме двух контуров: управляющего и питательного. <strong>Питательная линия</strong> подает сжатый воздух для работы тормозов прицепа, а управляющая передает сигнал от педали водителя.</p>
+
+<p>Соединение кабелей прицепов осуществляется через стандартные разъемы. При отстегивании прицепа <em>аварийные клапаны</strong> автоматически перекрывают подачу воздуха и блокируют тормоза прицепа, предотвращая его самостоятельное движение.</p>
+
+<p> Любые скачки могут привести к преждевременному износу тормозных механизмов полуприцепа или, наоборот, к отсутствию торможения.</p>
+
+<details class="pb-accordion"><summary>Что такое "защита от отрыва прицепа??</summary><div class="pb-accordion-body"><p>При разрыве соединительных шлангов давление в управляющей линии резко падает, что вызывает срабатывание аварийного клапана на прицепе. Это мгновенно блокирует колеса грузового отсека, не давая ему уехать вперед или откатиться назад.</p></div></details>
+
+<h2 id="перспективы-развития-и-электронизация-систем">Перспективы развития и электронизация систем</h2>
+
+<p>Современные пневматические системы все чаще интегрируются с электронными блоками управления. Технология <strong>EBS</strong> (электронная тормозная система) позволяет управлять тормозами с помощью электрических сигналов, которые затем преобразуются в пневматические команды.</p>
+
+<p>Это обеспечивает более быстрое срабатывание тормозов и точную дозировку усилия. Системы <em>ABS</em> и <em>ESP</em>, работающие на базе пневматики, предотвращают блокировку колес при экстренном торможении, сохраняя курсовую устойчивость.</p>
+
+<p>Будущее за полностью электронными системами, где воздух используется только как исполнительное усилие, а управление осуществляется через цифровые шлюзы. Это повышает надежность и позволяет внедрять интеллектуальные алгоритмы распределения тормозного усилия.</p>
+
+<blockquote>
+<p>⚠️ Внимание: При замене старых пневматических узлов на электронно-управляемые необходимо убедиться в совместимости разъемов и протоколов обмена данными с основным блоком управления автомобиля.</p>
+</blockquote>
+
+<aside class="pb-callout pb-callout-note"><span class="pb-callout-icon">💡</span><p>Интеграция электроники в пневматические системы позволяет достичь максимальной эффективности торможения, но требует квалифицированной диагностики специализированным оборудованием.</p></aside>
+
+<details>
+ <summary>Почему пневматика лучше гидравлики для грузовиков?</summary>
+ <p>Пневматика позволяет передавать энергию на большие расстояния без существенных потерь и имеет встроенную систему безопасности: при разрыве линии тормоза срабатывают автоматически, тогда как гидравлика просто перестает работать.</p>
+</details>
+
+<details>
+ <summary>Как часто нужно сливать воду из ресиверов?</summary>
+ <p>Рекомендуется сливать конденсат ежедневно при открытых кранах, а зимой — несколько раз за смену, чтобы предотвратить замерзание влаги в магистралях.</p>
+</details>
+
+<details>
+ <summary>Что делать, если система не набирает давление?</summary>
+ <p>Необходимо проверить работу компрессора, ремень привода и наличие утечек в магистралях. Если компрессор работает нормально, возможно, проблема в редукторе или забитом фильтре.</p>
+</details>
+
+<details>
+ <summary>Можно ли использовать обычную воду вместо тормозной жидкости в пневматике?</summary>
+ <p>В пневматической системе нет тормозной жидкости, там используется сжатый воздух. Однако вода в виде конденсата крайне не желательна и должна удаляться осушителями, так как она вызывает коррозию и обледенение.</p>
+</details></div>
+                    
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <section class="pb-related-bottom">
+        <div class="pb-container">
+            <h2 class="pb-related-heading">📖 Читайте также</h2>
+            <div class="pb-related-list"><a href="/articles/g/gd/gde-tormoza-u-cheloveka.html" class="pb-related-card">
+                <span class="pb-related-title">Где находятся тормоза у человека: анатомия и психология</span>
+                <span class="pb-related-desc">Анатомическое расположение и психологическая природа «тормозов» у человека. Как работает система сам</span>
+            </a><a href="/articles/c/ch/chto-takoe-revers-v-samolete-pri-posadke.html" class="pb-related-card">
+                <span class="pb-related-title">Реверс в самолете при посадке: принцип работы и назначение</span>
+                <span class="pb-related-desc">Разбираем, что такое реверс тяги в авиации. Как работают двигатели, зачем нужен механизм и почему он</span>
+            </a><a href="/articles/s/sa/samyj-prokhodimyj-gruzovik-v-mire-zil-157-i-131.html" class="pb-related-card">
+                <span class="pb-related-title">ЗиЛ-157 и 131: самый проходимый грузовик в мире и его особенности</span>
+                <span class="pb-related-desc">Сравнение легендарных ЗиЛ-157 и ЗиЛ-131. Анализ шестиколесной схемы, централизованной подкачки шин и</span>
+            </a><a href="/articles/m/ma/malenkaya-skorost-zapisi-na-ssd.html" class="pb-related-card">
+                <span class="pb-related-title">Почему маленькая скорость записи на SSD: причины и способы решения</span>
+                <span class="pb-related-desc">Узнайте, почему падает скорость записи на SSD накопителях. Разбор причин: переполнение, перегрев, ре</span>
+            </a><a href="/articles/k/kl/klichko-ne-tolko-lish-vse-tsitata.html" class="pb-related-card">
+                <span class="pb-related-title">Цитата «Кличко не только лишь все»: происхождение и смысл мема</span>
+                <span class="pb-related-desc">Разбор происхождения цитаты Владимира Кличко. Узнайте, как фраза из интервью стала культовым мемом и</span>
+            </a><a href="/articles/p/po/pochemu-mozhet-lagat-myshka.html" class="pb-related-card">
+                <span class="pb-related-title">Лаги мышки: причины задержки и способы устранения</span>
+                <span class="pb-related-desc">Почему лагает мышка на Windows и в играх? Разбираем драйверы, частоту опроса и помехи. Полное руково</span>
+            </a></div>
+        </div>
+    </section>
+
+    <footer class="pb-footer">
+        <div class="pb-container">
+            <div class="pb-footer-top">
+                <div class="pb-footer-brand">🛑 ТормозОК</div>
+                <p class="pb-footer-desc"></p>
+            </div>
+            <div class="pb-footer-links">
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
+                <div class="pb-footer-info">
+                    <a href="/">Главная</a> · 
+                    <a href="/about.html">О проекте</a> · 
+                    <a href="/contact.html">Контакты</a> · 
+                    <a href="/privacy.html">Конфиденциальность</a>
+                </div>
+            </div>
+            <div class="pb-footer-bottom">
+                <p>© ТормозОК. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="pb-cookie">
+        <div class="pb-cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
+        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    });
+    // Dropdown menu toggle (click for touch devices)
+    document.querySelectorAll('.pb-dropdown-toggle').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            btn.closest('.pb-nav-dropdown').classList.toggle('pb-dd-open');
+        });
+    });
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.pb-nav-dropdown.pb-dd-open').forEach(d => d.classList.remove('pb-dd-open'));
+    });
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            setTimeout(() => popup.classList.add('pb-cookie-visible'), 1500);
+            btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.pb-poll');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.pb-poll-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.pb-poll-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.pb-poll-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

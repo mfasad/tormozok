@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/static/css/style.css?v=1780400118">
+    <link rel="stylesheet" href="/static/css/home-brake-log.css">
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -33,332 +34,145 @@
     }
     </script>
 </head>
-<body class="pb-body">
+<body class="pb-body tb-home">
     <div class="pb-topbar"></div>
     <header class="pb-header">
         <div class="pb-container pb-header-inner">
-            <a href="/" class="pb-logo">
-                <span class="pb-logo-icon">🛑</span>
-                <span class="pb-logo-text">ТормозОК</span>
-            </a>
-            <button class="pb-menu-btn" aria-label="Меню" id="pbMenuBtn">☰</button>
+            <a href="/" class="pb-logo"><span class="pb-logo-icon">🛑</span><span class="pb-logo-text">ТормозОК</span></a>
+            <button class="pb-menu-btn" aria-label="Открыть меню" aria-controls="pbMainNav" aria-expanded="false" id="pbMenuBtn">☰</button>
             <nav class="pb-nav" id="pbMainNav">
-                <a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a>
-<a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a>
-<a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a>
-<a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a>
-<div class="pb-nav-dropdown">
-            <button class="pb-dropdown-toggle">📂 Все разделы ▾</button>
-            <div class="pb-dropdown-menu"><a href="/category/diskovye-tormoza/" class="pb-dropdown-item">💿 Дисковые тормоза</a>
-<a href="/category/barabannye-mekhanizmy/" class="pb-dropdown-item">🥁 Барабанные механизмы</a>
-<a href="/category/tormoznaya-zhidkost/" class="pb-dropdown-item">💧 Тормозная жидкость</a>
-<a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">🌬️ Вакуумный усилитель</a>
-<a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">🅿️ Ручной тормоз</a>
-<a href="/category/supporty-i-porshni/" class="pb-dropdown-item">🔧 Суппорты и поршни</a>
-<a href="/category/tormoznye-trubki/" class="pb-dropdown-item">🔩 Тормозные трубки</a>
-<a href="/category/diagnostika-neispravnostej/" class="pb-dropdown-item">🔍 Диагностика неисправностей</a>
-<a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">🚲 Велосипедные тормоза</a>
-<a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">🛠️ Инструменты и расходники</a>
-<a href="/category/abs-i-elektronika/" class="pb-dropdown-item">⚡ ABS и электроника</a>
-<a href="/category/podbor-zapchastej/" class="pb-dropdown-item">📦 Подбор запчастей</a>
-<a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">📏 Безопасность и нормы</a>
-<a href="/category/drugoe/" class="pb-dropdown-item">📁 Другое</a></div>
-        </div>
+                <a href="/category/diskovye-tormoza/">Дисковые тормоза</a>
+                <a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a>
+                <a href="/category/tormoznaya-zhidkost/">Тормозная жидкость</a>
+                <a href="/category/diagnostika-neispravnostej/">Диагностика</a>
+                <div class="pb-nav-dropdown">
+                    <button class="pb-dropdown-toggle">Все разделы ▾</button>
+                    <div class="pb-dropdown-menu">
+                        <a href="/category/ruchnoj-tormoz/" class="pb-dropdown-item">Ручной тормоз</a>
+                        <a href="/category/supporty-i-porshni/" class="pb-dropdown-item">Суппорты и поршни</a>
+                        <a href="/category/tormoznye-trubki/" class="pb-dropdown-item">Трубки и шланги</a>
+                        <a href="/category/vakuumnyj-usilitel/" class="pb-dropdown-item">Вакуумный усилитель</a>
+                        <a href="/category/abs-i-elektronika/" class="pb-dropdown-item">ABS и электроника</a>
+                        <a href="/category/velosipednye-tormoza/" class="pb-dropdown-item">Велосипедные тормоза</a>
+                        <a href="/category/instrumenty-i-raskhodniki/" class="pb-dropdown-item">Инструменты и расходники</a>
+                        <a href="/category/podbor-zapchastej/" class="pb-dropdown-item">Подбор запчастей</a>
+                        <a href="/category/bezopasnost-i-normy/" class="pb-dropdown-item">Безопасность и нормы</a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
 
-    <!-- BLOCK 1: Hero -->
-    <section class="pb-hp-hero">
-        <div class="pb-hp-hero-bg"></div>
-        <div class="pb-container pb-hp-hero-inner">
-            <div class="pb-hp-hero-icon-wrap"><span class="pb-hp-hero-icon">🛑</span></div>
-            <h1>ТормозОК — <span class="pb-hp-hero-accent">полная техническая энциклопедия</span></h1>
-            <p class="pb-hp-hero-desc">Найдите надежные инструкции по ремонту, диагностике и подбору запчастей для любых тормозных систем.</p>
-            <div class="pb-hp-hero-search">
-                <div class="pb-search-box">
-                    <input type="text" id="globalSearchInput" placeholder="🔍 Найти статью..." autocomplete="off">
-                    <div class="search-dropdown" id="globalSearchDropdown"></div>
+    <main>
+        <section class="tb-hero">
+            <div class="tb-wrap">
+                <div class="tb-ticket">
+                    <div class="tb-ticket-main">
+                        <h1>Тормоза: понять, проверить, исправить</h1>
+                        <p class="tb-lead">Практический справочник для автомобиля и велосипеда — от первого симптома до выбора деталей и безопасного ремонта.</p>
+                        <div class="tb-search">
+                            <label class="tb-search-label" for="globalSearchInput">Что нужно найти</label>
+                            <div class="pb-search-box">
+                                <input type="text" id="globalSearchInput" placeholder="Например: скрипят колодки" autocomplete="off">
+                                <div class="search-dropdown" id="globalSearchDropdown"></div>
+                            </div>
+                            <span class="tb-search-mark">⌕</span>
+                        </div>
+                    </div>
+                    <aside class="tb-ticket-stub" aria-label="Быстрый выбор">
+                        <div class="tb-stub-title">Начните с ситуации</div>
+                        <ul class="tb-stub-list">
+                            <li><a href="/category/diagnostika-neispravnostej/"><span>Появился звук</span><b>01</b></a></li>
+                            <li><a href="/category/diagnostika-neispravnostej/"><span>Педаль изменилась</span><b>02</b></a></li>
+                            <li><a href="/category/tormoznaya-zhidkost/"><span>Есть утечка</span><b>03</b></a></li>
+                            <li><a href="/category/podbor-zapchastej/"><span>Нужно выбрать детали</span><b>04</b></a></li>
+                        </ul>
+                        <div class="tb-safety">Тормозная система отвечает за безопасность. Если неисправность нельзя оценить уверенно, прекратите поездку и обратитесь к специалисту.</div>
+                    </aside>
                 </div>
             </div>
-            <div class="pb-hp-hero-pills">
-                <a href="/category/diskovye-tormoza/" class="pb-hero-pill">💿 Дисковые тормоза</a> <a href="/category/barabannye-mekhanizmy/" class="pb-hero-pill">🥁 Барабанные механизмы</a> <a href="/category/tormoznaya-zhidkost/" class="pb-hero-pill">💧 Тормозная жидкость</a> <a href="/category/vakuumnyj-usilitel/" class="pb-hero-pill">🌬️ Вакуумный усилитель</a> <a href="/category/ruchnoj-tormoz/" class="pb-hero-pill">🅿️ Ручной тормоз</a> <a href="/category/supporty-i-porshni/" class="pb-hero-pill">🔧 Суппорты и поршни</a> <a href="/category/tormoznye-trubki/" class="pb-hero-pill">🔩 Тормозные трубки</a> <a href="/category/diagnostika-neispravnostej/" class="pb-hero-pill">🔍 Диагностика неисправностей</a> <a href="/category/velosipednye-tormoza/" class="pb-hero-pill">🚲 Велосипедные тормоза</a> <a href="/category/instrumenty-i-raskhodniki/" class="pb-hero-pill">🛠️ Инструменты и расходники</a> <a href="/category/abs-i-elektronika/" class="pb-hero-pill">⚡ ABS и электроника</a> <a href="/category/podbor-zapchastej/" class="pb-hero-pill">📦 Подбор запчастей</a> <a href="/category/bezopasnost-i-normy/" class="pb-hero-pill">📏 Безопасность и нормы</a> <a href="/category/drugoe/" class="pb-hero-pill">📁 Другое</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- BLOCK 2: Trust line -->
-    <div class="pb-hp-trust-line">
-        <div class="pb-container">
-            <div class="pb-hp-trust-items">
-                <span class="pb-hp-trust-item">✓ Проверено экспертами</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Обновляемые материалы</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Без лишней воды</span>
-                <span class="pb-hp-trust-sep">·</span>
-                <span class="pb-hp-trust-item">✓ Бесплатный доступ</span>
-            </div>
-        </div>
-    </div>
-
-    <main class="pb-main">
-        <div class="pb-container">
-
-            <!-- BLOCK 3: Feature Grid -->
-            <section class="pb-hp-section" data-animate>
-                <div class="pb-hp-features">
-                    <div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">⚙️</div><div class="pb-hp-feature-title">Точные схемы узлов</div><div class="pb-hp-feature-desc">Детальные разборы внутренней конструкции суппортов и механизмов</div></div>
-<div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">🔍</div><div class="pb-hp-feature-title">Глубокая диагностика</div><div class="pb-hp-feature-desc">Пошаговые алгоритмы поиска неисправностей без спецоборудования</div></div>
-<div class="pb-hp-feature-card"><div class="pb-hp-feature-icon">📋</div><div class="pb-hp-feature-title">Проверенные списки</div><div class="pb-hp-feature-desc">Актуальные рекомендации по выбору совместимых запчастей</div></div>
+        <section class="tb-board">
+            <div class="tb-wrap">
+                <div class="tb-section-head">
+                    <div><div class="tb-kicker">Карта симптомов</div><h2>Что изменилось?</h2></div>
+                    <p class="tb-section-note">Выберите наблюдение, которое ближе всего к вашей ситуации. Проверки идут от простых и безопасных к более сложным.</p>
                 </div>
-            </section>
-
-            <!-- BLOCK 4: Categories -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">📂 Разделы</h2>
-                <div class="pb-hp-cat-list">
-                    <a href="/category/diskovye-tormoza/" class="pb-hp-cat-card" style="--cat-hue:27">
-            <span class="pb-hp-cat-emoji">💿</span>
-            <span class="pb-hp-cat-name">Дисковые тормоза</span>
-            <span class="pb-hp-cat-desc">Инструкция по ремонту и обслуживанию дисковых тормозных систем</span>
-        </a>
-<a href="/category/barabannye-mekhanizmy/" class="pb-hp-cat-card" style="--cat-hue:72">
-            <span class="pb-hp-cat-emoji">🥁</span>
-            <span class="pb-hp-cat-name">Барабанные механизмы</span>
-            <span class="pb-hp-cat-desc">Строение, диагностика и замена барабанных тормозных механизмов</span>
-        </a>
-<a href="/category/tormoznaya-zhidkost/" class="pb-hp-cat-card" style="--cat-hue:6">
-            <span class="pb-hp-cat-emoji">💧</span>
-            <span class="pb-hp-cat-name">Тормозная жидкость</span>
-            <span class="pb-hp-cat-desc">Выбор, замена и свойства тормозной жидкости разных классов</span>
-        </a>
-<a href="/category/vakuumnyj-usilitel/" class="pb-hp-cat-card" style="--cat-hue:26">
-            <span class="pb-hp-cat-emoji">🌬️</span>
-            <span class="pb-hp-cat-name">Вакуумный усилитель</span>
-            <span class="pb-hp-cat-desc">Принцип работы, ремонт и замена вакуумного усилителя тормозов</span>
-        </a>
-<a href="/category/ruchnoj-tormoz/" class="pb-hp-cat-card" style="--cat-hue:284">
-            <span class="pb-hp-cat-emoji">🅿️</span>
-            <span class="pb-hp-cat-name">Ручной тормоз</span>
-            <span class="pb-hp-cat-desc">Регулировка, обслуживание и устранение неисправностей ручного тормоза</span>
-        </a>
-<a href="/category/supporty-i-porshni/" class="pb-hp-cat-card" style="--cat-hue:324">
-            <span class="pb-hp-cat-emoji">🔧</span>
-            <span class="pb-hp-cat-name">Суппорты и поршни</span>
-            <span class="pb-hp-cat-desc">Диагностика, ремонт и замена суппортов и тормозных поршней</span>
-        </a>
-<a href="/category/tormoznye-trubki/" class="pb-hp-cat-card" style="--cat-hue:85">
-            <span class="pb-hp-cat-emoji">🔩</span>
-            <span class="pb-hp-cat-name">Тормозные трубки</span>
-            <span class="pb-hp-cat-desc">Замена, гибка и герметизация тормозных трубок и шлангов</span>
-        </a>
-<a href="/category/diagnostika-neispravnostej/" class="pb-hp-cat-card" style="--cat-hue:100">
-            <span class="pb-hp-cat-emoji">🔍</span>
-            <span class="pb-hp-cat-name">Диагностика неисправностей</span>
-            <span class="pb-hp-cat-desc">Выявление и устранение неисправностей в тормозной системе</span>
-        </a>
-<a href="/category/velosipednye-tormoza/" class="pb-hp-cat-card" style="--cat-hue:100">
-            <span class="pb-hp-cat-emoji">🚲</span>
-            <span class="pb-hp-cat-name">Велосипедные тормоза</span>
-            <span class="pb-hp-cat-desc">Ремонт и настройка велосипедных дисковых и ободных тормозов</span>
-        </a>
-<a href="/category/instrumenty-i-raskhodniki/" class="pb-hp-cat-card" style="--cat-hue:254">
-            <span class="pb-hp-cat-emoji">🛠️</span>
-            <span class="pb-hp-cat-name">Инструменты и расходники</span>
-            <span class="pb-hp-cat-desc">Обзор необходимого инструмента и расходных материалов для ремонта</span>
-        </a>
-<a href="/category/abs-i-elektronika/" class="pb-hp-cat-card" style="--cat-hue:229">
-            <span class="pb-hp-cat-emoji">⚡</span>
-            <span class="pb-hp-cat-name">ABS и электроника</span>
-            <span class="pb-hp-cat-desc">Диагностика, обслуживание и ремонт систем ABS и электроники</span>
-        </a>
-<a href="/category/podbor-zapchastej/" class="pb-hp-cat-card" style="--cat-hue:296">
-            <span class="pb-hp-cat-emoji">📦</span>
-            <span class="pb-hp-cat-name">Подбор запчастей</span>
-            <span class="pb-hp-cat-desc">Помощь в подборе совместимых запчастей для тормозных систем</span>
-        </a>
-<a href="/category/bezopasnost-i-normy/" class="pb-hp-cat-card" style="--cat-hue:235">
-            <span class="pb-hp-cat-emoji">📏</span>
-            <span class="pb-hp-cat-name">Безопасность и нормы</span>
-            <span class="pb-hp-cat-desc">Требования безопасности и действующие нормы обслуживания тормозов</span>
-        </a>
-<a href="/category/drugoe/" class="pb-hp-cat-card" style="--cat-hue:41">
-            <span class="pb-hp-cat-emoji">📁</span>
-            <span class="pb-hp-cat-name">Другое</span>
-            <span class="pb-hp-cat-desc">Дополнительные материалы и статьи по теме тормозных систем</span>
-        </a>
-
-                </div>
-            </section>
-
-            <!-- BLOCK 5: Intro + Trust -->
-            <section class="pb-hp-section pb-hp-intro-trust" data-animate>
-        <div class="pb-container">
-            <div class="pb-hp-two-col">
-                <div class="pb-hp-col">
-                    <h2 class="pb-hp-col-title">📖 О проекте</h2>
-                    <p>ТормозОК — это специализированная энциклопедия, объединяющая знания о тормозных системах автомобилей и велосипедов в единую базу знаний. Проект помогает владельцам транспорта самостоятельно диагностировать неисправности, выполнять качественный ремонт и грамотно подбирать необходимые запчасти.</p>
-                </div>
-                <div class="pb-hp-col">
-                    <h2 class="pb-hp-col-title">🛡️ Почему нам доверяют</h2>
-                    <p>Мы обеспечиваем удобную навигацию по сложным техническим вопросам и тщательно вычитываем каждый материал для максимальной понятности изложения. Практические инструкции основаны на реальном опыте мастеров, что позволяет читателям избегать типичных ошибок при обслуживании. Важно помнить, что технические регламенты могут меняться, поэтому перед покупкой сложных узлов рекомендуем сверяться с официальной документацией производителя.</p>
+                <div class="tb-symptoms">
+                    <a class="tb-symptom" href="/articles/p/pr/pri-nazhatii-na-tormoz-khrust.html"><span class="tb-code">ЗВУК / 01</span><span class="tb-arrow">↗</span><h3>Скрип, хруст или стук</h3><p>Разбираемся, когда виноваты колодки, диск, крепёж или посторонний предмет.</p></a>
+                    <a class="tb-symptom" href="/category/diagnostika-neispravnostej/"><span class="tb-code">ПЕДАЛЬ / 02</span><span class="tb-arrow">↗</span><h3>Мягкая или тугая педаль</h3><p>Проверка жидкости, воздуха в системе и усилителя.</p></a>
+                    <a class="tb-symptom" href="/category/diskovye-tormoza/"><span class="tb-code">ДВИЖЕНИЕ / 03</span><span class="tb-arrow">↗</span><h3>Машину уводит в сторону</h3><p>Ищем неравномерное торможение и заклинивание механизма.</p></a>
+                    <a class="tb-symptom" href="/category/abs-i-elektronika/"><span class="tb-code">СИГНАЛ / 04</span><span class="tb-arrow">↗</span><h3>Горит ABS или предупреждение</h3><p>Что можно проверить самостоятельно и когда нужна компьютерная диагностика.</p></a>
+                    <a class="tb-symptom" href="/category/tormoznaya-zhidkost/"><span class="tb-code">ЖИДКОСТЬ / 05</span><span class="tb-arrow">↗</span><h3>Уровень падает</h3><p>Осмотр бачка, магистралей, цилиндров и суппортов.</p></a>
+                    <a class="tb-symptom" href="/category/ruchnoj-tormoz/"><span class="tb-code">СТОЯНКА / 06</span><span class="tb-arrow">↗</span><h3>Ручник не держит</h3><p>Регулировка, тросы и состояние задних механизмов.</p></a>
+                    <a class="tb-symptom" href="/category/velosipednye-tormoza/"><span class="tb-code">ВЕЛО / 07</span><span class="tb-arrow">↗</span><h3>Тормоз велосипеда слабый</h3><p>Настройка колодок, ротора, троса или гидролинии.</p></a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-            <!-- BLOCK 6: Latest articles -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">📰 Популярные материалы</h2>
-                <div class="pb-hp-articles-list">
-                    <a href="/articles/z/za/zamena-tormoznykh-shlangov-lachetti.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🔩 Тормозные трубки</span>
-                <span class="pb-hp-article-meta">⏱ 11 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Замена тормозных шлангов на Chevrolet Lacetti: пошаговая инструкция</span>
-        </a>
-<a href="/articles/c/ch/chem-zakleit-abs-plastik.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">⚡ ABS и электроника</span>
-                <span class="pb-hp-article-meta">⏱ 13 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Чем заклеить ABS-пластик: 7 проверенных способов и ошибки ремонта</span>
-        </a>
-<a href="/articles/t/to/tormoznye-diski-ff2-perednie.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">💿 Дисковые тормоза</span>
-                <span class="pb-hp-article-meta">⏱ 13 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Передние тормозные диски Ford Focus 2: выбор, замена, диагностика</span>
-        </a>
-<a href="/articles/p/pr/pri-nazhatii-na-tormoz-khrust.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🔍 Диагностика неисправностей</span>
-                <span class="pb-hp-article-meta">⏱ 8 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Почему хрустят тормоза при нажатии: причины, диагностика и ремонт</span>
-        </a>
-<a href="/articles/k/ka/kak-prokachat-tormoza-na-kaline-2-s-abs.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">⚡ ABS и электроника</span>
-                <span class="pb-hp-article-meta">⏱ 11 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как прокачать тормоза на Лада Калина 2 с ABS: полная инструкция</span>
-        </a>
-<a href="/articles/k/ka/kak-pravilno-zalivat-tormoznuyu-zhidkost.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">💧 Тормозная жидкость</span>
-                <span class="pb-hp-article-meta">⏱ 10 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как правильно залить тормозную жидкость: полная инструкция</span>
-        </a>
-<a href="/articles/u/us/ustrojstvo-ruchnika-na-diskovykh-tormozakh.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🅿️ Ручной тормоз</span>
-                <span class="pb-hp-article-meta">⏱ 12 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Устройство ручника на дисковых тормозах: схемы, механизмы и ремонт</span>
-        </a>
-<a href="/articles/k/ka/kakie-tormoznye-mekhanizmy-chashche-vsego-stavyat-na-gruzovye-avtomobili.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">💿 Дисковые тормоза</span>
-                <span class="pb-hp-article-meta">⏱ 12 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Какие тормозные механизмы ставят на грузовики: Дисковые или Барабанные?</span>
-        </a>
-<a href="/articles/z/za/zamena-glavnogo-tormoznogo-tsilindra-bez-prokachki-tormozov.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">💧 Тормозная жидкость</span>
-                <span class="pb-hp-article-meta">⏱ 11 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Замена главного тормозного цилиндра без прокачки: реальный метод</span>
-        </a>
-<a href="/articles/k/ka/kak-otklyuchit-avtomaticheskij-ruchnik-na-moskvich-3.html" class="pb-hp-article-card">
-            <div class="pb-hp-article-card-top">
-                <span class="pb-hp-article-cat">🅿️ Ручной тормоз</span>
-                <span class="pb-hp-article-meta">⏱ 8 мин</span>
-            </div>
-            <span class="pb-hp-article-title">Как отключить авто-ручник на Москвич 3: Пошаговая инструкция</span>
-        </a>
-
+        <section class="tb-index">
+            <div class="tb-wrap tb-index-grid">
+                <div>
+                    <div class="tb-kicker">Устройство системы</div>
+                    <h2>Справочник по узлам</h2>
+                    <p class="tb-index-intro">Перейдите к конкретной детали, если причина уже понятна или вы готовитесь к обслуживанию.</p>
                 </div>
-            </section>
-
-            <!-- BLOCK 7: FAQ Teaser -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">❓ Частые вопросы</h2>
-                <div class="pb-hp-faq">
-                    <details class="pb-hp-faq-item"><summary>Можно ли доверять инструкциям по замене тормозной жидкости?</summary><div class="pb-hp-faq-answer">Все материалы проходят редакционную проверку и основаны на стандартах производителей автомобилей и велосипедов. Мы описываем пошаговые процессы с учетом нюансов разных типов систем и плотности жидкостей. Однако перед началом работы всегда сверяйтесь с конкретной инструкцией для вашей модели транспорта.</div></details>
-<details class="pb-hp-faq-item"><summary>Как помогает сайт в подборе запчастей для тормозов?</summary><div class="pb-hp-faq-answer">Раздел подбора содержит каталоги аналогов и оригинальных деталей с описанием совместимости. Вы сможете изучить каталожные номера и характеристики, чтобы выбрать оптимальный вариант по цене и качеству. Это снижает риск покупки неподходящих колодок или дисков.</div></details>
-<details class="pb-hp-faq-item"><summary>Есть ли информация по велосипедам, а только по автомобилям?</summary><div class="pb-hp-faq-answer">Сайт полностью охватывает обе ниши, включая секцию для велосипедных тормозных систем. Вы найдете инструкции по настройке ободных и дисковых тормозов на горных и шоссейных велосипедах. Разделы разделены для удобства навигации и быстрого поиска нужной информации.</div></details>
-<details class="pb-hp-faq-item"><summary>Нужно ли специальное оборудование для ремонта по вашим инструкциям?</summary><div class="pb-hp-faq-answer">Большинство инструкций рассчитаны на выполнение стандартными инструментами, которые есть в гараже. Для некоторых процедур, таких как прокачка системы или разборка заклинивших суппортов, может потребоваться специфический инвентарь. Мы всегда указываем необходимый список инструментов перед началом работ.</div></details>
-<details class="pb-hp-faq-item"><summary>Как часто обновляется информация на портале?</summary><div class="pb-hp-faq-answer">Мы регулярно добавляем материалы по новым моделям автомобилей и актуальным технологиям торможения. Авторский коллектив следит за изменениями в конструкции и появлении новых стандартов безопасности. При этом базовые принципы работы механизмов остаются неизменными и актуальными.</div></details>
+                <div class="tb-index-list">
+                    <a class="tb-index-link" href="/category/diskovye-tormoza/"><span class="tb-index-num">01</span><span><strong>Диски и колодки</strong><small>Износ, подбор, замена</small></span></a>
+                    <a class="tb-index-link" href="/category/supporty-i-porshni/"><span class="tb-index-num">02</span><span><strong>Суппорты</strong><small>Поршни, направляющие, пыльники</small></span></a>
+                    <a class="tb-index-link" href="/category/barabannye-mekhanizmy/"><span class="tb-index-num">03</span><span><strong>Барабанные механизмы</strong><small>Колодки, цилиндры, пружины</small></span></a>
+                    <a class="tb-index-link" href="/category/tormoznye-trubki/"><span class="tb-index-num">04</span><span><strong>Трубки и шланги</strong><small>Утечки, развальцовка, замена</small></span></a>
+                    <a class="tb-index-link" href="/category/tormoznaya-zhidkost/"><span class="tb-index-num">05</span><span><strong>Жидкость</strong><small>Допуски, состояние, прокачка</small></span></a>
+                    <a class="tb-index-link" href="/category/vakuumnyj-usilitel/"><span class="tb-index-num">06</span><span><strong>Усилитель</strong><small>Вакуум, клапан, диагностика</small></span></a>
+                    <a class="tb-index-link" href="/category/abs-i-elektronika/"><span class="tb-index-num">07</span><span><strong>ABS и датчики</strong><small>Ошибки, кольца, проводка</small></span></a>
+                    <a class="tb-index-link" href="/category/instrumenty-i-raskhodniki/"><span class="tb-index-num">08</span><span><strong>Инструменты</strong><small>Что подготовить к работе</small></span></a>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- BLOCK 8: CTA -->
-            <section class="pb-hp-section" data-animate>
-                <div class="pb-hp-cta">
-                    <div class="pb-hp-cta-stripe"></div>
-                    <h2>🛠️ Начни ремонт тормозов прямо сейчас</h2>
-                    <p>Доступ к детализированным руководствам и проверенным советам экспертов поможет вам сэкономить на сервисе. Изучите материалы и выполните работу самостоятельно с уверенностью в результате.</p>
+        <section class="tb-reading">
+            <div class="tb-wrap">
+                <div class="tb-section-head">
+                    <div><div class="tb-kicker">Практика</div><h2>С чего часто начинают</h2></div>
                 </div>
-            </section>
-
-            <!-- BLOCK 9: Popular Tags -->
-            <section class="pb-hp-section" data-animate>
-                <h2 class="pb-hp-section-title">🏷️ Темы</h2>
-                <div class="pb-hp-tags">
-                    <span class="pb-hp-tag">подбор колодок</span> <span class="pb-hp-tag">прокачка тормозов</span> <span class="pb-hp-tag">скрип дисков</span> <span class="pb-hp-tag">замена шлангов</span> <span class="pb-hp-tag">настройка ABS</span> <span class="pb-hp-tag">ремонт суппорта</span> <span class="pb-hp-tag">жидкость DOT</span> <span class="pb-hp-tag">тормозной путь</span> <a href="/category/diskovye-tormoza/" class="pb-hp-tag">💿 Дисковые тормоза</a> <a href="/category/barabannye-mekhanizmy/" class="pb-hp-tag">🥁 Барабанные механизмы</a> <a href="/category/tormoznaya-zhidkost/" class="pb-hp-tag">💧 Тормозная жидкость</a> <a href="/category/vakuumnyj-usilitel/" class="pb-hp-tag">🌬️ Вакуумный усилитель</a> <a href="/category/ruchnoj-tormoz/" class="pb-hp-tag">🅿️ Ручной тормоз</a> <a href="/category/supporty-i-porshni/" class="pb-hp-tag">🔧 Суппорты и поршни</a> <a href="/category/tormoznye-trubki/" class="pb-hp-tag">🔩 Тормозные трубки</a> <a href="/category/diagnostika-neispravnostej/" class="pb-hp-tag">🔍 Диагностика неисправностей</a> <a href="/category/velosipednye-tormoza/" class="pb-hp-tag">🚲 Велосипедные тормоза</a> <a href="/category/instrumenty-i-raskhodniki/" class="pb-hp-tag">🛠️ Инструменты и расходники</a> <a href="/category/abs-i-elektronika/" class="pb-hp-tag">⚡ ABS и электроника</a> <a href="/category/podbor-zapchastej/" class="pb-hp-tag">📦 Подбор запчастей</a> <a href="/category/bezopasnost-i-normy/" class="pb-hp-tag">📏 Безопасность и нормы</a> <a href="/category/drugoe/" class="pb-hp-tag">📁 Другое</a>
+                <div class="tb-reading-grid">
+                    <a class="tb-featured" href="/articles/t/to/tormoznye-diski-ff2-perednie.html"><span>Разбор детали</span><h3>Передние тормозные диски Ford Focus 2: выбор, диагностика и замена</h3><p>Как оценить износ, подобрать совместимые диски и избежать типичных ошибок при установке.</p></a>
+                    <div class="tb-article-stack">
+                        <a class="tb-article" href="/articles/z/za/zamena-tormoznykh-shlangov-lachetti.html"><em>Трубки и шланги</em><strong>Замена тормозных шлангов Chevrolet Lacetti</strong></a>
+                        <a class="tb-article" href="/articles/k/ka/kak-prokachat-tormoza-na-kaline-2-s-abs.html"><em>Тормозная жидкость</em><strong>Как прокачать систему с ABS</strong></a>
+                        <a class="tb-article" href="/category/podbor-zapchastej/"><em>Подбор деталей</em><strong>Как сверить совместимость перед покупкой</strong></a>
+                    </div>
                 </div>
-            </section>
-
-        </div>
+                <div class="tb-note"><strong>Перед началом ремонта:</strong> зафиксируйте автомобиль на ровной площадке, используйте надёжные опоры и сверяйтесь с руководством для конкретной модели.</div>
+                <p class="tb-disclaimer">ТормозОК — независимый информационный справочник. Материалы не заменяют диагностику и ремонт у квалифицированного специалиста.</p>
+            </div>
+        </section>
     </main>
 
     <footer class="pb-footer">
         <div class="pb-container">
-            <div class="pb-footer-top">
-                <div class="pb-footer-brand">🛑 ТормозОК</div>
-                <p class="pb-footer-desc">Энциклопедия тормозных систем автомобилей и велосипедов с инструкциями по ремонту и подбору запчастей.</p>
-            </div>
+            <div class="pb-footer-top"><div class="pb-footer-brand">🛑 ТормозОК</div><p class="pb-footer-desc">Справочник по устройству, диагностике и обслуживанию тормозных систем автомобилей и велосипедов.</p></div>
             <div class="pb-footer-links">
-                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">💿 Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">🥁 Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">💧 Тормозная жидкость</a> · <a href="/category/vakuumnyj-usilitel/">🌬️ Вакуумный усилитель</a> · <a href="/category/ruchnoj-tormoz/">🅿️ Ручной тормоз</a> · <a href="/category/supporty-i-porshni/">🔧 Суппорты и поршни</a></div>
-                <div class="pb-footer-info">
-                    <a href="/">Главная</a> · 
-                    <a href="/about.html">О проекте</a> · 
-                    <a href="/contact.html">Контакты</a> · 
-                    <a href="/privacy.html">Конфиденциальность</a>
-                </div>
+                <div class="pb-footer-cats"><a href="/category/diskovye-tormoza/">Дисковые тормоза</a> · <a href="/category/barabannye-mekhanizmy/">Барабанные механизмы</a> · <a href="/category/tormoznaya-zhidkost/">Тормозная жидкость</a> · <a href="/category/diagnostika-neispravnostej/">Диагностика</a></div>
+                <div class="pb-footer-info"><a href="/">Главная</a> · <a href="/about.html">О проекте</a> · <a href="/contact.html">Контакты</a> · <a href="/privacy.html">Конфиденциальность</a></div>
             </div>
             <div class="pb-footer-bottom">
                 <p>© ТормозОК. Все права защищены.</p>
-                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
-                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
-                title="LiveInternet: показано число посетителей за сегодня"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
-                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
-                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
-                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
-                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
-                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click" target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" title="LiveInternet: показано число посетителей за сегодня" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7" alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src="https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+(s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
             </div>
         </div>
     </footer>
-    <div id="cookie-consent" class="pb-cookie">
-        <div class="pb-cookie-inner">
-            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
-            <button id="cookie-accept" class="pb-cookie-btn">Принять</button>
-        </div>
-    </div>
+    <div id="cookie-consent" class="pb-cookie"><div class="pb-cookie-inner"><span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span><button id="cookie-accept" class="pb-cookie-btn">Принять</button></div></div>
     <script src="/static/js/main.js"></script>
     <script>
-    document.getElementById('pbMenuBtn')?.addEventListener('click', () => {
-        document.getElementById('pbMainNav')?.classList.toggle('pb-nav-open');
+    const menuBtn = document.getElementById('pbMenuBtn');
+    const mainNav = document.getElementById('pbMainNav');
+    menuBtn?.addEventListener('click', () => {
+        const isOpen = mainNav?.classList.toggle('pb-nav-open');
+        menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
-    (function() {
+    (() => {
         const popup = document.getElementById('cookie-consent');
         const btn = document.getElementById('cookie-accept');
         if (popup && btn && !localStorage.getItem('cookie-accepted')) {
@@ -366,17 +180,8 @@
             btn.onclick = () => { localStorage.setItem('cookie-accepted','true'); popup.classList.remove('pb-cookie-visible'); };
         }
     })();
-    // Scroll animations
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('pb-visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
     </script>
+    <script src="/static/js/home-brake-log.js"></script>
     <script src="/static/js/inject.js" defer></script>
 </body>
 </html>
